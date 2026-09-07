@@ -1,6 +1,6 @@
 # ROO-002 — breadboard firmware reference, September 7, 2026
 
-The 15 inventoried sketches are preserved unchanged. Erik confirmed during this task that they are old breadboard firmware and that **the PCB designs in The Forge should determine the new firmware pin mapping**. This capture recovers a software reference and its build evidence. It does not establish which files were flashed or prove operation on the current ALEC boards.
+The 15 inventoried sketches are preserved unchanged. Erik confirmed during this task that they are old breadboard firmware and that **the PCB designs in The Forge should determine the new firmware pin mapping**. This capture recovers a software reference and its build evidence. Erik subsequently identified `cube_browns.ino` and `beacon_browns.ino` as the most relevant pair (“I believe”); both compile unchanged as separate targets. [Selection and full hashes](selected-reference.json) preserve that qualified identification. It does not establish the exact last-flashed bytes or prove operation on the current ALEC boards.
 
 Hardware comparison is pinned to `dc57b550ebe8c1943e7830468d73af3f93c5bb73`, the inspected S1.1 worktree revision, on a new local branch `codex/roo-002-firmware-baseline`. It is an inspection reference, not a manufacturing freeze. No board design or original sketch was changed.
 

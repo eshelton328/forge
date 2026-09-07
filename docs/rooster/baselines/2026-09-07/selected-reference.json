@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-07",
+  "evidence_kind": "user-identified preferred historical reference",
+  "user_statement": "I beleive the cube browns and beacon browns are the most relevant",
+  "qualification": "Preferred/most relevant reference pair; not a definite identification of the exact last-flashed bytes or physical board revision.",
+  "port_direction": "Adapt firmware to native PCB contracts in The Forge.",
+  "files": [
+    {
+      "path": "cube_browns/beacon_browns.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_browns/beacon_browns.ino",
+      "sha256": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918",
+      "compile_result": "PASS unchanged as separate inferred S3/C3 targets on ESP32 core 3.3.7"
+    },
+    {
+      "path": "cube_browns/cube_browns.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_browns/cube_browns.ino",
+      "sha256": "257cadfb2cd4fb6482ef522c25d042808a340deacc0eeebddcf10605e8958bb5",
+      "compile_result": "PASS unchanged as separate inferred S3/C3 targets on ESP32 core 3.3.7"
+    }
+  ]
+}

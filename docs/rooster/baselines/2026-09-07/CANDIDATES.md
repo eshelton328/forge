@@ -1,6 +1,6 @@
 # Candidate inventory
 
-All entries are historical breadboard candidates. Roles describe static source contents; no entry has been identified as the exact flashed baseline. Each source remains at the full original path in `manifest.json`. Includes, pin definitions, all struct declarations and protocol constants are preserved with line numbers in `candidate-analysis.json`.
+All entries are historical breadboard candidates. Erik identified cube_browns/beacon_browns as the most relevant reference pair, with “I believe” qualification (see `selected-reference.json`). Roles describe static source contents; no entry has been identified as the exact flashed baseline. Each source remains at the full original path in `manifest.json`. Includes, pin definitions, all struct declarations and protocol constants are preserved with line numbers in `candidate-analysis.json`.
 
 | Candidate under original Arduino root | Target inferred from source | Full SHA-256 | Static role |
 | --- | --- | --- | --- |

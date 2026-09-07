@@ -4,7 +4,7 @@ As of September 7, 2026. No new physical tests, uploads, module queries or wirin
 
 | ID | Physical stage and evidence | Software/source association | Reproduction status and missing evidence |
 | --- | --- | --- | --- |
-| P01 | Breadboard alarm/sensor: Erik reports building a prototype and rough sketches, and explicitly confirms the existing sketches are old breadboard code | Fifteen preserved candidates; which pair was last flashed is still unconfirmed | Host builds in BUILD-REPORT.md; actual boards, wiring, OLED, RTC, amp, radar firmware and demonstrated behavior remain to identify. A source header's “working” claim is not new physical evidence. |
+| P01 | Breadboard alarm/sensor: Erik reports building a prototype and rough sketches, and explicitly confirms the existing sketches are old breadboard code | Erik identifies cube_browns/beacon_browns as the most relevant reference pair, with “I believe” qualification; exact last-flashed bytes remain unconfirmed | Host builds in BUILD-REPORT.md; actual boards, wiring, OLED, RTC, amp, radar firmware and demonstrated behavior remain to identify. A source header's “working” claim is not new physical evidence. |
 | P02 | Standalone buck-boost PCB: Erik reports a JLCPCB order, delivery and successful test | `boards/tps63070-breakout` is a plausible project lineage, not a verified manufactured revision | Need order/export revision, actual part marking, wiring/load/input and any surviving measurements. |
 | P03 | Buck-boost + ESP32-S3 PCB: Erik reports mostly working, with VBAT/header input failure | Strong historical lead: July 18 fix `ad268c04a01746be538a1ff84e6b9e0186a9ef9e` / PR #118 for `esp32s3-devkit` | Commit narrative records a hardware workaround and geometry cause. Erik has not yet connected this exact history to his board/order in this task. Manufactured revision and post-fix retest remain unknown. |
 | P04 | Current ALEC main/controls/front: native design inspected at `dc57b550ebe8c1943e7830468d73af3f93c5bb73` | Destination PCB interface, not a flashed prototype | Design/source evidence only. No physical pass established here. Old breadboard mappings should be adapted to these boards. |
@@ -20,7 +20,7 @@ This is substantially stronger evidence than an invented power-path hypothesis, 
 
 ## Remaining identification
 
-1. Erik identifies the most representative working breadboard pair, if remembered; record confidence and the full manifest hashes. No need to flash a device merely to identify code.
+1. Preferred reference pair identified by Erik: cube_browns/beacon_browns, with “I believe” qualification; see `selected-reference.json` for full hashes. Exact flashed provenance remains open; no need to flash a device merely to identify code.
 2. Tie each available physical prototype to module markings, wiring or an existing sketch/photo and order/export revision where available.
 3. Confirm whether the July 18 VBAT record describes Erik's board, and whether it was repaired/retested.
 4. Record original Arduino/FQBN/upload options and LD2410C module firmware if recoverable. The installed library's support description is not the module's actual firmware version.
