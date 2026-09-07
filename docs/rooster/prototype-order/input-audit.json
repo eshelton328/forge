@@ -1,0 +1,2652 @@
+{
+  "captured_at": "2026-09-07T23:01:25.322050+00:00",
+  "ticket": "ROO-009 / ROO-010",
+  "source_commit": "0d0d8af3b1d2c60616f77a5116eba637098acf98",
+  "checkout": "/Users/erik/Workspaces/the-forge-rooster-orders",
+  "scope": "Current-source and saved-evidence reconciliation plus sourcing inventory. No electrical test, source-design change, vendor availability verification, quote or order.",
+  "source_map_checks": [
+    {
+      "path": ".github/workflows/alec-sensor-study.yml",
+      "expected": "2c1071e0814c881fb933fcf77ae7d45d0ef7c653121c90172839b69016ace83f",
+      "actual": "2c1071e0814c881fb933fcf77ae7d45d0ef7c653121c90172839b69016ace83f",
+      "match": true
+    },
+    {
+      "path": ".github/workflows/pr-checks.yml",
+      "expected": "ebca0ab325013c3d32e3d3ccb7e2a7a218a68e03571d2c807e17ad46e04d07c0",
+      "actual": "ebca0ab325013c3d32e3d3ccb7e2a7a218a68e03571d2c807e17ad46e04d07c0",
+      "match": true
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "expected": "673bda36921d87672919b578308efde9e1f5fbfd8b09ea14e771ed317612f592",
+      "actual": "673bda36921d87672919b578308efde9e1f5fbfd8b09ea14e771ed317612f592",
+      "match": true
+    },
+    {
+      "path": ".github/workflows/update-readmes.yml",
+      "expected": "8c59d88ea2fb6066c00140fea05996b2759bc1b358273bd0e962c4bdb6f9f289",
+      "actual": "8c59d88ea2fb6066c00140fea05996b2759bc1b358273bd0e962c4bdb6f9f289",
+      "match": true
+    },
+    {
+      "path": "Makefile",
+      "expected": "3e61f9ca51160c50a5f0e1c3cc9657c94e80f65dc6bb09433f75e97dd97b1b8b",
+      "actual": "3e61f9ca51160c50a5f0e1c3cc9657c94e80f65dc6bb09433f75e97dd97b1b8b",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/alec-controls.kicad_pcb",
+      "expected": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4",
+      "actual": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/alec-controls.kicad_pro",
+      "expected": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "actual": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/alec-controls.kicad_sch",
+      "expected": "babde019c24a9e8d6d8e37ba2da1eed0d94f982b57d29ea06e4b50cdc9a501c4",
+      "actual": "babde019c24a9e8d6d8e37ba2da1eed0d94f982b57d29ea06e4b50cdc9a501c4",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/board.yml",
+      "expected": "b2fa3c4e6f32f9a9d54e61cf3ab8fedf22073afc36efadda4b84658cb40de644",
+      "actual": "b2fa3c4e6f32f9a9d54e61cf3ab8fedf22073afc36efadda4b84658cb40de644",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/checks.yml",
+      "expected": "4f59d1d2cfcc67237d16254b5d1ea78a954f4c8a49984f3cd37acbdd6b7f9e7a",
+      "actual": "4f59d1d2cfcc67237d16254b5d1ea78a954f4c8a49984f3cd37acbdd6b7f9e7a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/fp-lib-table",
+      "expected": "1be5cbfa7ce31539c95d956a093db991680586524b0119e6fab76a00aeb40b62",
+      "actual": "1be5cbfa7ce31539c95d956a093db991680586524b0119e6fab76a00aeb40b62",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/review/bom.csv",
+      "expected": "556cebc37840f20d6c5f27ab2e68f8dc042886508bb94070cce1c0303155290a",
+      "actual": "556cebc37840f20d6c5f27ab2e68f8dc042886508bb94070cce1c0303155290a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/alec-front.kicad_pcb",
+      "expected": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0",
+      "actual": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/alec-front.kicad_pro",
+      "expected": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "actual": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/alec-front.kicad_sch",
+      "expected": "c1b96a15953fb801559de8dcc0c884e8d090fb42ebfd70af9384590418f39127",
+      "actual": "c1b96a15953fb801559de8dcc0c884e8d090fb42ebfd70af9384590418f39127",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/board.yml",
+      "expected": "e21ae94213c9586e6d18bd67e9cdaae5926dcd2566fb47f30521db550c1352e8",
+      "actual": "e21ae94213c9586e6d18bd67e9cdaae5926dcd2566fb47f30521db550c1352e8",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/checks.yml",
+      "expected": "50ec83283b1fe7ae17f50da17459220831202ccf6d344d02bbd171542bb6f57a",
+      "actual": "50ec83283b1fe7ae17f50da17459220831202ccf6d344d02bbd171542bb6f57a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/fp-lib-table",
+      "expected": "1be5cbfa7ce31539c95d956a093db991680586524b0119e6fab76a00aeb40b62",
+      "actual": "1be5cbfa7ce31539c95d956a093db991680586524b0119e6fab76a00aeb40b62",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/review/bom.csv",
+      "expected": "a11ac5259368f52d5f629027ef7bd9d746e5cbeea54cb4dc2a756c5fc4433961",
+      "actual": "a11ac5259368f52d5f629027ef7bd9d746e5cbeea54cb4dc2a756c5fc4433961",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/sym-lib-table",
+      "expected": "15f1e60852f8b521cf85e9fc21a853377bc283a3a6252573883d0013375844b7",
+      "actual": "15f1e60852f8b521cf85e9fc21a853377bc283a3a6252573883d0013375844b7",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_pcb",
+      "expected": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+      "actual": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_pro",
+      "expected": "83a582a3fae3624640dd863005bab515236b3f1d36f956721f94c43da0c6d65d",
+      "actual": "83a582a3fae3624640dd863005bab515236b3f1d36f956721f94c43da0c6d65d",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_sch",
+      "expected": "c018caa4af4b9e1c447e77db778ceab7783be0a68f3d7afa4315d6d86b4e3536",
+      "actual": "c018caa4af4b9e1c447e77db778ceab7783be0a68f3d7afa4315d6d86b4e3536",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/board.yml",
+      "expected": "0d28c0beededd1ec52722f2f289350f961399e1d1566b514f20962755ecea77f",
+      "actual": "0d28c0beededd1ec52722f2f289350f961399e1d1566b514f20962755ecea77f",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/checks.yml",
+      "expected": "c7599e247f60d43b80d29b26ec3aa6df6460fb00f6f9a82476b435a89a79e1cf",
+      "actual": "c7599e247f60d43b80d29b26ec3aa6df6460fb00f6f9a82476b435a89a79e1cf",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/fp-lib-table",
+      "expected": "58a63147c9f83de1300f6f651e12b0604228dd0579fcdede46c656d376da54ed",
+      "actual": "58a63147c9f83de1300f6f651e12b0604228dd0579fcdede46c656d376da54ed",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/power-monitor.kicad_sch",
+      "expected": "5674222175787fd2235c24711ed66e2b4a5ac528fcaf3b901d96921e13c4d400",
+      "actual": "5674222175787fd2235c24711ed66e2b4a5ac528fcaf3b901d96921e13c4d400",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/TEST-REPORT.md",
+      "expected": "9125e7ec43ddf8c86a03efdd4bb78c44efb070767dbbcbde90fc02c1f8e47514",
+      "actual": "9125e7ec43ddf8c86a03efdd4bb78c44efb070767dbbcbde90fc02c1f8e47514",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/bom.csv",
+      "expected": "6140eed2e0c940306ad539fc3f6377f0f3fa43a7d35b4adde0ca1ed3e484385e",
+      "actual": "6140eed2e0c940306ad539fc3f6377f0f3fa43a7d35b4adde0ca1ed3e484385e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/qa-manifest.json",
+      "expected": "54e43c8eff0bf6c11aa8aaa98955ff2cc5e8c3d828c3fb250b520a63bf86e89a",
+      "actual": "54e43c8eff0bf6c11aa8aaa98955ff2cc5e8c3d828c3fb250b520a63bf86e89a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim.yml",
+      "expected": "2f61cde362837ab3028c4ae7dd07fabf73e2377296d8903e00c9808a378ca92e",
+      "actual": "2f61cde362837ab3028c4ae7dd07fabf73e2377296d8903e00c9808a378ca92e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sym-lib-table",
+      "expected": "f464b240a4ec7d8f91e5a5e9a1e515591d888dccfd8cd98400b8b5a3ddec267a",
+      "actual": "f464b240a4ec7d8f91e5a5e9a1e515591d888dccfd8cd98400b8b5a3ddec267a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/TEST-REPORT.md",
+      "expected": "7bdb8b6f7b2ef42bd0917998f58f893e145197a5e0dbb944d7f9bc44f68dbbc1",
+      "actual": "7bdb8b6f7b2ef42bd0917998f58f893e145197a5e0dbb944d7f9bc44f68dbbc1",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/alec-sensor.kicad_pcb",
+      "expected": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "actual": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/alec-sensor.kicad_pro",
+      "expected": "3c90f5e8ce3cc55f8ee40221d632e37d85033dc90a4c6c45c1387ab706590906",
+      "actual": "3c90f5e8ce3cc55f8ee40221d632e37d85033dc90a4c6c45c1387ab706590906",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/alec-sensor.kicad_sch",
+      "expected": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056",
+      "actual": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/board.yml",
+      "expected": "3ec412c76d71e68824be2f19a6619b6ec6fe1b087db21bd58a0e147c3f424dc0",
+      "actual": "3ec412c76d71e68824be2f19a6619b6ec6fe1b087db21bd58a0e147c3f424dc0",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/fp-lib-table",
+      "expected": "1c134df17d7c0cd9ca0332adc6019e502fb18ac0d4f124c95236a7d9a23c7115",
+      "actual": "1c134df17d7c0cd9ca0332adc6019e502fb18ac0d4f124c95236a7d9a23c7115",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/power-monitor.kicad_sch",
+      "expected": "f8bc8d741149ff7a2b36cf57380ddd0584281a49671968a69116c7904e10a11e",
+      "actual": "f8bc8d741149ff7a2b36cf57380ddd0584281a49671968a69116c7904e10a11e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/radar.kicad_sch",
+      "expected": "9822c4fd2581b4551b14582df515feb72998999da43eacb27df8640339c461f8",
+      "actual": "9822c4fd2581b4551b14582df515feb72998999da43eacb27df8640339c461f8",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/review/bom.csv",
+      "expected": "fd14c1633cb48c0a50a4aba21ec917bb4fdd25cb111b657129c3c2135ba7fef0",
+      "actual": "fd14c1633cb48c0a50a4aba21ec917bb4fdd25cb111b657129c3c2135ba7fef0",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/review/source-hashes.json",
+      "expected": "3578f30fe4a432f35095a80ac1b0391ab3072a34605a647ef3fd677f3a83cf20",
+      "actual": "3578f30fe4a432f35095a80ac1b0391ab3072a34605a647ef3fd677f3a83cf20",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/sym-lib-table",
+      "expected": "3d7302379e5ee592e67c2e964e95d230545f1d2e8bd0c1f7d57e768b1e964601",
+      "actual": "3d7302379e5ee592e67c2e964e95d230545f1d2e8bd0c1f7d57e768b1e964601",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/tools/build_part_models.py",
+      "expected": "d2bcea210126a226e9f6cb01bd16c4723795a245c4233475888d0a30fbdabd16",
+      "actual": "d2bcea210126a226e9f6cb01bd16c4723795a245c4233475888d0a30fbdabd16",
+      "match": true
+    },
+    {
+      "path": "boards/alec-sensor/tools/create_schematic.py",
+      "expected": "a8799ae0b9a94999c7ab0d6ca40107d8cc776fe0bece4808cb4129781c4f9f1c",
+      "actual": "a8799ae0b9a94999c7ab0d6ca40107d8cc776fe0bece4808cb4129781c4f9f1c",
+      "match": true
+    },
+    {
+      "path": "boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb",
+      "expected": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+      "actual": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+      "match": true
+    },
+    {
+      "path": "boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_sch",
+      "expected": "d50864b4f6dba38fa32e1b3fb41f6ad601570cfa2162f0548b070d9ce860e925",
+      "actual": "d50864b4f6dba38fa32e1b3fb41f6ad601570cfa2162f0548b070d9ce860e925",
+      "match": true
+    },
+    {
+      "path": "designs/alec-sensor/README.md",
+      "expected": "4b4f09fb5b8a5d10daf75c46c330a74334c93c7ded0599fd2937373581d7ffe5",
+      "actual": "4b4f09fb5b8a5d10daf75c46c330a74334c93c7ded0599fd2937373581d7ffe5",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec-sensor/alec-sensor-s1-mechanical.step",
+      "expected": "d1cdd961269926b038acbd86d856f3b52f234bc3b1721e6c717483b1fcaf55d1",
+      "actual": "d1cdd961269926b038acbd86d856f3b52f234bc3b1721e6c717483b1fcaf55d1",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec-sensor/alec-sensor-s1.blend",
+      "expected": "099fe29048d623f0e420c95c8f9531e54a33b6d73e536865fc93020c694732b1",
+      "actual": "099fe29048d623f0e420c95c8f9531e54a33b6d73e536865fc93020c694732b1",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec-sensor/assembly-sources.json",
+      "expected": "f393458de88bb0c73e66ba8556bf848ebc782e4f14705c1032c284efc972621e",
+      "actual": "f393458de88bb0c73e66ba8556bf848ebc782e4f14705c1032c284efc972621e",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec-sensor/cad-checks.json",
+      "expected": "df0fa7e9a571d93b6b82f7e359cb0bdc9b44124b87508cf43cd24d75b7bfbc2b",
+      "actual": "df0fa7e9a571d93b6b82f7e359cb0bdc9b44124b87508cf43cd24d75b7bfbc2b",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec-sensor/interface.json",
+      "expected": "501a70da9d140188661a3d764b6535d545e4f6600c0cf182707a4f956b464d73",
+      "actual": "501a70da9d140188661a3d764b6535d545e4f6600c0cf182707a4f956b464d73",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec-sensor/tools/build_blender.py",
+      "expected": "95565916538404972c55cdc48397ec550fc408a99edcc3db4607f6318482f956",
+      "actual": "95565916538404972c55cdc48397ec550fc408a99edcc3db4607f6318482f956",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec-sensor/tools/build_cad.py",
+      "expected": "a740e679c006dfd8786e75f51d5660fc0be4288ad423e56a1d82eaa073bb4497",
+      "actual": "a740e679c006dfd8786e75f51d5660fc0be4288ad423e56a1d82eaa073bb4497",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/alec-cube-v4-1.blend",
+      "expected": "63d3d680f476ae7821f6571d71c453f3bf792233da026adc61df2e3129f4d8f3",
+      "actual": "63d3d680f476ae7821f6571d71c453f3bf792233da026adc61df2e3129f4d8f3",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/geometry_helpers.py",
+      "expected": "8f29a560c5ef64be66055f9d6ea14aa7b454be6543001fbeae1c377c17fdf398",
+      "actual": "8f29a560c5ef64be66055f9d6ea14aa7b454be6543001fbeae1c377c17fdf398",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/alec-cube-v4-2.blend",
+      "expected": "b4448e2ce0be68403220ad63c7c257480f0fd2c16525bf3978cdc57aaebda3ca",
+      "actual": "b4448e2ce0be68403220ad63c7c257480f0fd2c16525bf3978cdc57aaebda3ca",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/assembly-sources.json",
+      "expected": "dc2003db67f0cf0d03d7d03aa8ffde86d2f0a7a7730a1cdd43d791a756079f86",
+      "actual": "dc2003db67f0cf0d03d7d03aa8ffde86d2f0a7a7730a1cdd43d791a756079f86",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/build_assembly.py",
+      "expected": "68158d3872afce0564688d54c1af416370915853d02b4b5131a121474b403539",
+      "actual": "68158d3872afce0564688d54c1af416370915853d02b4b5131a121474b403539",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/verification.json",
+      "expected": "17f414cd0f15ca60330b49a8c1605d918bb32ed2371aaa2ec8d20c5149bc6a37",
+      "actual": "17f414cd0f15ca60330b49a8c1605d918bb32ed2371aaa2ec8d20c5149bc6a37",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/sources/BH3AAW.glb",
+      "expected": "d719dd05c4ca6ecd67e570628a8fc71b31a800d80e2eaa52205336689fc2ed74",
+      "actual": "d719dd05c4ca6ecd67e570628a8fc71b31a800d80e2eaa52205336689fc2ed74",
+      "match": true
+    },
+    {
+      "path": "kibot/jlcpcb.kibot.yaml",
+      "expected": "29299965c6dc58a85a1b5b4f0dbbe5dd57185272458c7223c5768b211878b38a",
+      "actual": "29299965c6dc58a85a1b5b4f0dbbe5dd57185272458c7223c5768b211878b38a",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/create_boards.py",
+      "expected": "962c953192e4e7b66ed608a32dc9fbeba0b32307a31cc715c39f8220fb297dc1",
+      "actual": "962c953192e4e7b66ed608a32dc9fbeba0b32307a31cc715c39f8220fb297dc1",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/design.py",
+      "expected": "0882b68c83a985a1fc08d5288f59f62b3d2942f6abf788feca5ef5227fd2ef8b",
+      "actual": "0882b68c83a985a1fc08d5288f59f62b3d2942f6abf788feca5ef5227fd2ef8b",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/export_review.py",
+      "expected": "e44877a0d1298617daaddf3d73c09a195c6850cbfc4a3f627548f7f238ab418c",
+      "actual": "e44877a0d1298617daaddf3d73c09a195c6850cbfc4a3f627548f7f238ab418c",
+      "match": true
+    },
+    {
+      "path": "tests/test_alarm_pcbs.py",
+      "expected": "60f702db690661eab4153d87add676bb5a13a6948cef1f6ecd63db8f39ad96c0",
+      "actual": "60f702db690661eab4153d87add676bb5a13a6948cef1f6ecd63db8f39ad96c0",
+      "match": true
+    },
+    {
+      "path": "tests/test_alec_sensor.py",
+      "expected": "258cf2881121d9617b7970bf33e723fb783fc9d95b148c53f2328df508dd6bd2",
+      "actual": "258cf2881121d9617b7970bf33e723fb783fc9d95b148c53f2328df508dd6bd2",
+      "match": true
+    },
+    {
+      "path": "tests/test_enclosure_assets.py",
+      "expected": "015e31bcb8a699f90c1947e5818fd298b2424502e4aaa4de0881ab20e4ca300c",
+      "actual": "015e31bcb8a699f90c1947e5818fd298b2424502e4aaa4de0881ab20e4ca300c",
+      "match": true
+    }
+  ],
+  "cube_saved_binding_checks": [
+    {
+      "path": "boards/alec-controls/3dmodels/EG1218_drawing_envelope.step",
+      "expected": "88d4354878a0b96ecbd244fa098eaa3cbd78887b5a956d9bca9c4cefd9755fe0",
+      "actual": "88d4354878a0b96ecbd244fa098eaa3cbd78887b5a956d9bca9c4cefd9755fe0",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/3dmodels/JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical.step",
+      "expected": "9e5e79e7a373b6fb4a22f7dfb4cd2310798b9ec7dc278279e834ec04a13dc90e",
+      "actual": "9e5e79e7a373b6fb4a22f7dfb4cd2310798b9ec7dc278279e834ec04a13dc90e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/3dmodels/SW_TH_Tactile_Omron_B3F-106x.step",
+      "expected": "8ec35b278cb888ea23cfafb7cdf72d814d97730ee38298d2c435bd642caf5571",
+      "actual": "8ec35b278cb888ea23cfafb7cdf72d814d97730ee38298d2c435bd642caf5571",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/alec-controls.kicad_pcb",
+      "expected": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4",
+      "actual": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/alec-controls.kicad_pro",
+      "expected": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "actual": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/alec-controls.kicad_sch",
+      "expected": "babde019c24a9e8d6d8e37ba2da1eed0d94f982b57d29ea06e4b50cdc9a501c4",
+      "actual": "babde019c24a9e8d6d8e37ba2da1eed0d94f982b57d29ea06e4b50cdc9a501c4",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/board.yml",
+      "expected": "b2fa3c4e6f32f9a9d54e61cf3ab8fedf22073afc36efadda4b84658cb40de644",
+      "actual": "b2fa3c4e6f32f9a9d54e61cf3ab8fedf22073afc36efadda4b84658cb40de644",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/checks.yml",
+      "expected": "4f59d1d2cfcc67237d16254b5d1ea78a954f4c8a49984f3cd37acbdd6b7f9e7a",
+      "actual": "4f59d1d2cfcc67237d16254b5d1ea78a954f4c8a49984f3cd37acbdd6b7f9e7a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/3dmodels/JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical.step",
+      "expected": "4b87523f1774db7043fc36653a9b4f34e35ab6821dfeec8b40f7d0056931b6b5",
+      "actual": "4b87523f1774db7043fc36653a9b4f34e35ab6821dfeec8b40f7d0056931b6b5",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/3dmodels/LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100.step",
+      "expected": "8ad96d3b2b78fcb1fc017203142a7488845563b55c6b4b5c699499319a792a3d",
+      "actual": "8ad96d3b2b78fcb1fc017203142a7488845563b55c6b4b5c699499319a792a3d",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/3dmodels/SW_SPST_B3U-1000P.step",
+      "expected": "4b5ee4da023d76030db22a90f5835f3691d5e4e9fc41b3f37b2c5922c65d307b",
+      "actual": "4b5ee4da023d76030db22a90f5835f3691d5e4e9fc41b3f37b2c5922c65d307b",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/alec-front.kicad_pcb",
+      "expected": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0",
+      "actual": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/alec-front.kicad_pro",
+      "expected": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "actual": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/alec-front.kicad_sch",
+      "expected": "c1b96a15953fb801559de8dcc0c884e8d090fb42ebfd70af9384590418f39127",
+      "actual": "c1b96a15953fb801559de8dcc0c884e8d090fb42ebfd70af9384590418f39127",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/board.yml",
+      "expected": "e21ae94213c9586e6d18bd67e9cdaae5926dcd2566fb47f30521db550c1352e8",
+      "actual": "e21ae94213c9586e6d18bd67e9cdaae5926dcd2566fb47f30521db550c1352e8",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/checks.yml",
+      "expected": "50ec83283b1fe7ae17f50da17459220831202ccf6d344d02bbd171542bb6f57a",
+      "actual": "50ec83283b1fe7ae17f50da17459220831202ccf6d344d02bbd171542bb6f57a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/C_0402_1005Metric.step",
+      "expected": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "actual": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/C_0603_1608Metric.step",
+      "expected": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "actual": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/C_0805_2012Metric.step",
+      "expected": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "actual": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/C_1206_3216Metric.step",
+      "expected": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "actual": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/ESP32-S3-WROOM-1.step",
+      "expected": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+      "actual": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/HRO_TYPE-C-31-M-12.step",
+      "expected": "272b7208e6c8beb3f21766a3a1c444a005e1706a99f6e2ab6c035c4f558c2d9d",
+      "actual": "272b7208e6c8beb3f21766a3a1c444a005e1706a99f6e2ab6c035c4f558c2d9d",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/JST_B2B-PH-SM4-TB_simplified.step",
+      "expected": "b527ecf5e87e216a7b05c050062cb16dd69f843c448502d31d1eb0a9bcf52748",
+      "actual": "b527ecf5e87e216a7b05c050062cb16dd69f843c448502d31d1eb0a9bcf52748",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical.step",
+      "expected": "4b87523f1774db7043fc36653a9b4f34e35ab6821dfeec8b40f7d0056931b6b5",
+      "actual": "4b87523f1774db7043fc36653a9b4f34e35ab6821dfeec8b40f7d0056931b6b5",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical.step",
+      "expected": "9e5e79e7a373b6fb4a22f7dfb4cd2310798b9ec7dc278279e834ec04a13dc90e",
+      "actual": "9e5e79e7a373b6fb4a22f7dfb4cd2310798b9ec7dc278279e834ec04a13dc90e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/LED_0603_1608Metric.step",
+      "expected": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "actual": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100.step",
+      "expected": "8ad96d3b2b78fcb1fc017203142a7488845563b55c6b4b5c699499319a792a3d",
+      "actual": "8ad96d3b2b78fcb1fc017203142a7488845563b55c6b4b5c699499319a792a3d",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/MAX98357A_TQFN16_simplified.step",
+      "expected": "e2a24fd8726bd536f577152b9e05e1cc328a4f24023fac27aa20ddad88843574",
+      "actual": "e2a24fd8726bd536f577152b9e05e1cc328a4f24023fac27aa20ddad88843574",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/PinHeader_1x04_P2.54mm_Vertical.step",
+      "expected": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+      "actual": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/RV-3028-C7_simplified.step",
+      "expected": "d29130cd6a67ca604a2bb3db66e7080c8925c08aefef099c014bc4454b02f931",
+      "actual": "d29130cd6a67ca604a2bb3db66e7080c8925c08aefef099c014bc4454b02f931",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/R_0402_1005Metric.step",
+      "expected": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "actual": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/SOT-23-6.step",
+      "expected": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "actual": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/SOT-23.step",
+      "expected": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "actual": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/SW_SPDT_Shouhan_MSK12C02.step",
+      "expected": "05b22e1e8ef01866ddfb2339a6768d839a7a4555372ad2b0435533b77ad01d04",
+      "actual": "05b22e1e8ef01866ddfb2339a6768d839a7a4555372ad2b0435533b77ad01d04",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/TPS63070RNM.step",
+      "expected": "c6ff03bef77cf60877b65ca97012b7a9d96b13bde6fb0f57068b77aecb4125c6",
+      "actual": "c6ff03bef77cf60877b65ca97012b7a9d96b13bde6fb0f57068b77aecb4125c6",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/TS-1187A-B-A-B.step",
+      "expected": "26ea252f47554af12434cb6e19457ce3b670e2cdb2baff6cd4371d388d17a9c8",
+      "actual": "26ea252f47554af12434cb6e19457ce3b670e2cdb2baff6cd4371d388d17a9c8",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "expected": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "actual": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/3dmodels/XFL4020-152MEC.step",
+      "expected": "8721b34b33bb90a15a21e62e64567b68738ad1dc8dd0955c604389e27c309718",
+      "actual": "8721b34b33bb90a15a21e62e64567b68738ad1dc8dd0955c604389e27c309718",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_pcb",
+      "expected": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+      "actual": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_pro",
+      "expected": "83a582a3fae3624640dd863005bab515236b3f1d36f956721f94c43da0c6d65d",
+      "actual": "83a582a3fae3624640dd863005bab515236b3f1d36f956721f94c43da0c6d65d",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_sch",
+      "expected": "c018caa4af4b9e1c447e77db778ceab7783be0a68f3d7afa4315d6d86b4e3536",
+      "actual": "c018caa4af4b9e1c447e77db778ceab7783be0a68f3d7afa4315d6d86b4e3536",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/board.yml",
+      "expected": "0d28c0beededd1ec52722f2f289350f961399e1d1566b514f20962755ecea77f",
+      "actual": "0d28c0beededd1ec52722f2f289350f961399e1d1566b514f20962755ecea77f",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/checks.yml",
+      "expected": "c7599e247f60d43b80d29b26ec3aa6df6460fb00f6f9a82476b435a89a79e1cf",
+      "actual": "c7599e247f60d43b80d29b26ec3aa6df6460fb00f6f9a82476b435a89a79e1cf",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/power-monitor.kicad_sch",
+      "expected": "5674222175787fd2235c24711ed66e2b4a5ac528fcaf3b901d96921e13c4d400",
+      "actual": "5674222175787fd2235c24711ed66e2b4a5ac528fcaf3b901d96921e13c4d400",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/battery_measures.cir",
+      "expected": "c2576c91c666e6a13617ae2a8456fae9dbaa09d6f02bd3a2170b0572e7cdf0ef",
+      "actual": "c2576c91c666e6a13617ae2a8456fae9dbaa09d6f02bd3a2170b0572e7cdf0ef",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r0-l1e-06-c1.2e-07-w0.1.cir",
+      "expected": "ef742ed173100907ad5f73eb481fbe82a79f5c015465197a164f19cd24181d21",
+      "actual": "ef742ed173100907ad5f73eb481fbe82a79f5c015465197a164f19cd24181d21",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r0-l1e-06-c1.2e-07-w1.cir",
+      "expected": "40f93bd0aa7ba8c2bf0c1341f43c8a46234877faa9f85b42e403e775a4484aa9",
+      "actual": "40f93bd0aa7ba8c2bf0c1341f43c8a46234877faa9f85b42e403e775a4484aa9",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r0-l1e-06-c8e-08-w0.1.cir",
+      "expected": "6423904cbbaef83ddcfeb3eeca678668e6ff3c1ecbf97389651e2606102ce243",
+      "actual": "6423904cbbaef83ddcfeb3eeca678668e6ff3c1ecbf97389651e2606102ce243",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r0-l1e-06-c8e-08-w1.cir",
+      "expected": "a83e0261bbeed5ec0cf132cd32a476b78f32e636e5c575848e4ad56812f6bc37",
+      "actual": "a83e0261bbeed5ec0cf132cd32a476b78f32e636e5c575848e4ad56812f6bc37",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r0-l1e-07-c1.2e-07-w0.1.cir",
+      "expected": "04272f218c8c1002434884782fd6078bcf398585964df73d2e7488c452362b0d",
+      "actual": "04272f218c8c1002434884782fd6078bcf398585964df73d2e7488c452362b0d",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r0-l1e-07-c1.2e-07-w1.cir",
+      "expected": "7d8bde61ec64ef464ba20f72cc85380989a4f9239aa0cd3fdccdfab76a997d58",
+      "actual": "7d8bde61ec64ef464ba20f72cc85380989a4f9239aa0cd3fdccdfab76a997d58",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r0-l1e-07-c8e-08-w0.1.cir",
+      "expected": "1ac22450147628c04f2fdfafb73bbf32afdbde75cfa66ce07fddb8ea6bad4c2e",
+      "actual": "1ac22450147628c04f2fdfafb73bbf32afdbde75cfa66ce07fddb8ea6bad4c2e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r0-l1e-07-c8e-08-w1.cir",
+      "expected": "ed12d7293a90d731e821098c371a18b3d8069c11a2181632e665c9600d9877c7",
+      "actual": "ed12d7293a90d731e821098c371a18b3d8069c11a2181632e665c9600d9877c7",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r105-l1e-06-c1.2e-07-w0.1.cir",
+      "expected": "f111f21c71d5c57ac2b5c8d73efa808f3346a1dd8e62e08fbc0a6506a5343267",
+      "actual": "f111f21c71d5c57ac2b5c8d73efa808f3346a1dd8e62e08fbc0a6506a5343267",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r105-l1e-06-c1.2e-07-w1.cir",
+      "expected": "1aa4c3281d6520e3258db1e92efb09d1659ffc22487670b37480050870a91fed",
+      "actual": "1aa4c3281d6520e3258db1e92efb09d1659ffc22487670b37480050870a91fed",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r105-l1e-06-c8e-08-w0.1.cir",
+      "expected": "63a93f125d591ee240c785c02bf03f5c6a62639e050d09a6124bb5b7ef572664",
+      "actual": "63a93f125d591ee240c785c02bf03f5c6a62639e050d09a6124bb5b7ef572664",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r105-l1e-06-c8e-08-w1.cir",
+      "expected": "d359472d547c6c9ae0b9520f3e86fb3c58eeb0161d0a2362451ebc1650287505",
+      "actual": "d359472d547c6c9ae0b9520f3e86fb3c58eeb0161d0a2362451ebc1650287505",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r105-l1e-07-c1.2e-07-w0.1.cir",
+      "expected": "c0b7032bb7e4bbe967cf92a3761f9ab58e0a1ec90c72714d70398b65f6e85c78",
+      "actual": "c0b7032bb7e4bbe967cf92a3761f9ab58e0a1ec90c72714d70398b65f6e85c78",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r105-l1e-07-c1.2e-07-w1.cir",
+      "expected": "baf852fd74b7cfb81cbffaabfdf10f7e4674dbf5501ecaf04420bf089ba3fe1e",
+      "actual": "baf852fd74b7cfb81cbffaabfdf10f7e4674dbf5501ecaf04420bf089ba3fe1e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r105-l1e-07-c8e-08-w0.1.cir",
+      "expected": "a66999668df6ee8a6d1453d24efd55aa755a54fe674df7a217d8033b31907d5a",
+      "actual": "a66999668df6ee8a6d1453d24efd55aa755a54fe674df7a217d8033b31907d5a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r105-l1e-07-c8e-08-w1.cir",
+      "expected": "7b19ce57393a37d23ecc80047d87d38363dfa51b936b838e7268f88da39b8c04",
+      "actual": "7b19ce57393a37d23ecc80047d87d38363dfa51b936b838e7268f88da39b8c04",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r95-l1e-06-c1.2e-07-w0.1.cir",
+      "expected": "0f45ea61a2179a3e7e72661dd072b4d810c661fa67dfb7d5450dc284fc028f80",
+      "actual": "0f45ea61a2179a3e7e72661dd072b4d810c661fa67dfb7d5450dc284fc028f80",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r95-l1e-06-c1.2e-07-w1.cir",
+      "expected": "98ab227469dc1964a28b8466cd33452b0bebebf0ecd5b7960a84b374665982c4",
+      "actual": "98ab227469dc1964a28b8466cd33452b0bebebf0ecd5b7960a84b374665982c4",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r95-l1e-06-c8e-08-w0.1.cir",
+      "expected": "a0f686ebfe687613a264b33eae630b717a701cbe28633827ad0046b8889f5d97",
+      "actual": "a0f686ebfe687613a264b33eae630b717a701cbe28633827ad0046b8889f5d97",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r95-l1e-06-c8e-08-w1.cir",
+      "expected": "95bb6e3fd3a67d5dea61a54b2321c33eddcb4b7a50db7f567efd42dab1fcc67a",
+      "actual": "95bb6e3fd3a67d5dea61a54b2321c33eddcb4b7a50db7f567efd42dab1fcc67a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r95-l1e-07-c1.2e-07-w0.1.cir",
+      "expected": "41d93476348f83307cce23b5ded9525234d9577a5b4deb75b6ed5e7532277044",
+      "actual": "41d93476348f83307cce23b5ded9525234d9577a5b4deb75b6ed5e7532277044",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r95-l1e-07-c1.2e-07-w1.cir",
+      "expected": "56ffe07376cafced7ce949da1e4b9e7e035b203bc26b6a3565a6b7a6cf89f3b6",
+      "actual": "56ffe07376cafced7ce949da1e4b9e7e035b203bc26b6a3565a6b7a6cf89f3b6",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r95-l1e-07-c8e-08-w0.1.cir",
+      "expected": "7563b1df4e8c9821b2667c736b489e481889978240bd4e797e5178e0f1084209",
+      "actual": "7563b1df4e8c9821b2667c736b489e481889978240bd4e797e5178e0f1084209",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/button-r95-l1e-07-c8e-08-w1.cir",
+      "expected": "8ef9a2b88cdeca867632e1d0d19d15cdec4e9cee8c6c54f59472064cf8078a34",
+      "actual": "8ef9a2b88cdeca867632e1d0d19d15cdec4e9cee8c6c54f59472064cf8078a34",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-off-2.7.cir",
+      "expected": "4207c91a1469358aad88b15d5bc28ba4b6fb6b6f42e51c0a5a5cab6144263fb0",
+      "actual": "4207c91a1469358aad88b15d5bc28ba4b6fb6b6f42e51c0a5a5cab6144263fb0",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-off-3.cir",
+      "expected": "9e2cdeab0c5279625d375c948cce38623e384b299683c21e0bc09bd9aeb5ca69",
+      "actual": "9e2cdeab0c5279625d375c948cce38623e384b299683c21e0bc09bd9aeb5ca69",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-off-4.5.cir",
+      "expected": "de7bac51a7c64399d191f6af77cde0705b8ec9e524868b945aef71768272bf0e",
+      "actual": "de7bac51a7c64399d191f6af77cde0705b8ec9e524868b945aef71768272bf0e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-off-5.4.cir",
+      "expected": "eb44b022093d8fa923d9a27c3fc7c05cb13764eff99cdfca899c9d1931a2c82a",
+      "actual": "eb44b022093d8fa923d9a27c3fc7c05cb13764eff99cdfca899c9d1931a2c82a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-on-2.7.cir",
+      "expected": "dfc2ddf4f5fad61d33b451fcc7471342e452c699e9b86cd6d97d31987ddaa539",
+      "actual": "dfc2ddf4f5fad61d33b451fcc7471342e452c699e9b86cd6d97d31987ddaa539",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-on-3.cir",
+      "expected": "36c750b1984d8926ab04e6f3398bf6d2bd0186e24ff0c1f3d8d4526e3d08fb0f",
+      "actual": "36c750b1984d8926ab04e6f3398bf6d2bd0186e24ff0c1f3d8d4526e3d08fb0f",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-on-4.5.cir",
+      "expected": "6d76848a8c770561cda934ff25a324f2cf9b87d8b7fcd22657f6c5bfac0d2038",
+      "actual": "6d76848a8c770561cda934ff25a324f2cf9b87d8b7fcd22657f6c5bfac0d2038",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-on-5.4.cir",
+      "expected": "2bb68d8b7310c69915f2ae970535d70f9e72cff7fc0c344868e0ea2cdadddeae",
+      "actual": "2bb68d8b7310c69915f2ae970535d70f9e72cff7fc0c344868e0ea2cdadddeae",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-unplugged-2.7.cir",
+      "expected": "3d61d50dc01decc32c06437e59bbdebe3d1ecc4066fb04575eca81bb5da2676a",
+      "actual": "3d61d50dc01decc32c06437e59bbdebe3d1ecc4066fb04575eca81bb5da2676a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-unplugged-3.cir",
+      "expected": "942a6cc2d1a7a7dfd2a1496db066ab356ef5a616711741f7d88f577ef679ad14",
+      "actual": "942a6cc2d1a7a7dfd2a1496db066ab356ef5a616711741f7d88f577ef679ad14",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-unplugged-4.5.cir",
+      "expected": "3833c3aea2cfb1072fdb1733a36c3e81275fe30a509986786cf4dbc7070561c6",
+      "actual": "3833c3aea2cfb1072fdb1733a36c3e81275fe30a509986786cf4dbc7070561c6",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/enable-unplugged-5.4.cir",
+      "expected": "dba8ed5b367c723b8095ca815105f42370d28a10d29de0b2b385175e943f4693",
+      "actual": "dba8ed5b367c723b8095ca815105f42370d28a10d29de0b2b385175e943f4693",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/model_assumptions.cir",
+      "expected": "1b2669507da9c7842ee832279346369e7be6a0375c726b365641028de33f909d",
+      "actual": "1b2669507da9c7842ee832279346369e7be6a0375c726b365641028de33f909d",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/overlay.cir",
+      "expected": "975516b7bd87cc6b305d781c8697f396f439cdf6fa369e073e121f3d3cbf20ca",
+      "actual": "975516b7bd87cc6b305d781c8697f396f439cdf6fa369e073e121f3d3cbf20ca",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/tran_dual_rail.cir",
+      "expected": "1feac6abca583e2a42e4c44e82fd4e93f45ee954186565cd1608411528a9b0b7",
+      "actual": "1feac6abca583e2a42e4c44e82fd4e93f45ee954186565cd1608411528a9b0b7",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/tran_espnow_dead.cir",
+      "expected": "25fe7d619f9b20e6ea8102ee6203ae68ddfc0b589f2c0434590a047c6d9355f0",
+      "actual": "25fe7d619f9b20e6ea8102ee6203ae68ddfc0b589f2c0434590a047c6d9355f0",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/tran_espnow_fresh.cir",
+      "expected": "ef01ccaa5dff8cf82f9db0ff4c946615a3f63f15432f1731f7cfafffbcbd3cd5",
+      "actual": "ef01ccaa5dff8cf82f9db0ff4c946615a3f63f15432f1731f7cfafffbcbd3cd5",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/tran_espnow_tired.cir",
+      "expected": "d02948e05bf6be1099ff2b9fabcea1249927f0899860e39d2a3d08f5d18115f3",
+      "actual": "d02948e05bf6be1099ff2b9fabcea1249927f0899860e39d2a3d08f5d18115f3",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/tran_rev2_amp_preview.cir",
+      "expected": "d20abf77175519a2fe73f01e68a6918e5e22cead79625b77e62f49fa97ac859b",
+      "actual": "d20abf77175519a2fe73f01e68a6918e5e22cead79625b77e62f49fa97ac859b",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/tran_startup_3v0.cir",
+      "expected": "628faf0ea7f701e23fd1040512637e8f650d0fa5ada79819419469b9df7d308f",
+      "actual": "628faf0ea7f701e23fd1040512637e8f650d0fa5ada79819419469b9df7d308f",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim/transient_battery_body.cir",
+      "expected": "73fa4db728bca7e952f02d679349c0abcf8203b77564d25201aa8a11095c2eee",
+      "actual": "73fa4db728bca7e952f02d679349c0abcf8203b77564d25201aa8a11095c2eee",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/sim.yml",
+      "expected": "2f61cde362837ab3028c4ae7dd07fabf73e2377296d8903e00c9808a378ca92e",
+      "actual": "2f61cde362837ab3028c4ae7dd07fabf73e2377296d8903e00c9808a378ca92e",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/build_assembly.py",
+      "expected": "68158d3872afce0564688d54c1af416370915853d02b4b5131a121474b403539",
+      "actual": "68158d3872afce0564688d54c1af416370915853d02b4b5131a121474b403539",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/render_views.py",
+      "expected": "2fd766f98020be6ce642030e0e6644fcab615493baf2ec1127a8dcf8282896a5",
+      "actual": "2fd766f98020be6ce642030e0e6644fcab615493baf2ec1127a8dcf8282896a5",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/verify_assembly.py",
+      "expected": "3d277db6847cc0569b00c003a17e7855793128067d1c3148f53d8bf539eb2275",
+      "actual": "3d277db6847cc0569b00c003a17e7855793128067d1c3148f53d8bf539eb2275",
+      "match": true
+    },
+    {
+      "path": "libs/footprints/Alarm.pretty/EG1218.kicad_mod",
+      "expected": "c0a23958597423125d182071b2da0c07dcf3d18677440c899b952b74e3e74a46",
+      "actual": "c0a23958597423125d182071b2da0c07dcf3d18677440c899b952b74e3e74a46",
+      "match": true
+    },
+    {
+      "path": "libs/footprints/Alarm.pretty/Programming_2x03_P2.0mm.kicad_mod",
+      "expected": "f2eec8bb6b5ef2518a1595278c132cf325af4c69766141bb0e7d03c37a8df3f7",
+      "actual": "f2eec8bb6b5ef2518a1595278c132cf325af4c69766141bb0e7d03c37a8df3f7",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/audit_models.py",
+      "expected": "458e9009a5cff86d3d8c3c5005fcc8c8ede65e3e80e7fe554aba42b71cf3aaef",
+      "actual": "458e9009a5cff86d3d8c3c5005fcc8c8ede65e3e80e7fe554aba42b71cf3aaef",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/build_switch_model.py",
+      "expected": "95f40c50e8261caee82e226e1745fcc70795ab4ae4ec6351e86502f0e9737475",
+      "actual": "95f40c50e8261caee82e226e1745fcc70795ab4ae4ec6351e86502f0e9737475",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/check_boards.py",
+      "expected": "acb1d23a79accb8453ce5516ff8d093752a8f807bc45cf023dcebdd1eb0d8e99",
+      "actual": "acb1d23a79accb8453ce5516ff8d093752a8f807bc45cf023dcebdd1eb0d8e99",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/create_boards.py",
+      "expected": "962c953192e4e7b66ed608a32dc9fbeba0b32307a31cc715c39f8220fb297dc1",
+      "actual": "962c953192e4e7b66ed608a32dc9fbeba0b32307a31cc715c39f8220fb297dc1",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/create_schematics.py",
+      "expected": "eeb9504fb0e06634538520418ed736dd9f6bb876e7b413a53f39434cdee05899",
+      "actual": "eeb9504fb0e06634538520418ed736dd9f6bb876e7b413a53f39434cdee05899",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/design.py",
+      "expected": "0882b68c83a985a1fc08d5288f59f62b3d2942f6abf788feca5ef5227fd2ef8b",
+      "actual": "0882b68c83a985a1fc08d5288f59f62b3d2942f6abf788feca5ef5227fd2ef8b",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/export_review.py",
+      "expected": "e44877a0d1298617daaddf3d73c09a195c6850cbfc4a3f627548f7f238ab418c",
+      "actual": "e44877a0d1298617daaddf3d73c09a195c6850cbfc4a3f627548f7f238ab418c",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/finish_boards.py",
+      "expected": "e4a451f682fd70f7b060ef66dd248f9fb1fa038c0054423954532c1e73d2cd5c",
+      "actual": "e4a451f682fd70f7b060ef66dd248f9fb1fa038c0054423954532c1e73d2cd5c",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/package_report.py",
+      "expected": "e84b7b595699e080e341e74622c95302ff0ce90b57ba1316bbf12e1c82de9eff",
+      "actual": "e84b7b595699e080e341e74622c95302ff0ce90b57ba1316bbf12e1c82de9eff",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/route_board.py",
+      "expected": "5f4ddafde5beb7581f7fd547567f0e34c1683db4a56bc8e113df046edbc7761f",
+      "actual": "5f4ddafde5beb7581f7fd547567f0e34c1683db4a56bc8e113df046edbc7761f",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/test_harness.py",
+      "expected": "f5c6d6ccc43102ba0eaf6e6f86e7d6e66c5886f3937ebc9be31f4839eed98f55",
+      "actual": "f5c6d6ccc43102ba0eaf6e6f86e7d6e66c5886f3937ebc9be31f4839eed98f55",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/verify_interfaces.py",
+      "expected": "d2c6d65679f15378227f15ea3a624315bb57767ac740e1ce50367c6997a342ad",
+      "actual": "d2c6d65679f15378227f15ea3a624315bb57767ac740e1ce50367c6997a342ad",
+      "match": true
+    },
+    {
+      "path": "scripts/alarm/verify_layout.py",
+      "expected": "cfe46d7ad3934e54f39fd068f510ba8c1da1d05eec309017995e0b1433472514",
+      "actual": "cfe46d7ad3934e54f39fd068f510ba8c1da1d05eec309017995e0b1433472514",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/review/3d-model-audit.json",
+      "expected": "7265acef944099a0f52b93f5cf1cfe2b977c1cadd12ff2ea27f33b2337425d86",
+      "actual": "7265acef944099a0f52b93f5cf1cfe2b977c1cadd12ff2ea27f33b2337425d86",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/review/bom.csv",
+      "expected": "556cebc37840f20d6c5f27ab2e68f8dc042886508bb94070cce1c0303155290a",
+      "actual": "556cebc37840f20d6c5f27ab2e68f8dc042886508bb94070cce1c0303155290a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/review/drc.json",
+      "expected": "0e6bd218b6a87bc26892a03323e69678cf2285a47044f883e2908f5f7b5de534",
+      "actual": "0e6bd218b6a87bc26892a03323e69678cf2285a47044f883e2908f5f7b5de534",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/review/erc.json",
+      "expected": "272cb11fb379541c14af607d77f53a630c94b29e53b0e2da07ae39620458b338",
+      "actual": "272cb11fb379541c14af607d77f53a630c94b29e53b0e2da07ae39620458b338",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/review/fab-drc.json",
+      "expected": "645216f5cb7666c84c8d1ca0e4c7bc32dde362ef6372d1bc0b8d32f27bdea384",
+      "actual": "645216f5cb7666c84c8d1ca0e4c7bc32dde362ef6372d1bc0b8d32f27bdea384",
+      "match": true
+    },
+    {
+      "path": "boards/alec-controls/review/netlist.xml",
+      "expected": "2aea09556efbb9c21a868182006350bd353e31f1dfa298e977e75ff34d5a85d9",
+      "actual": "2aea09556efbb9c21a868182006350bd353e31f1dfa298e977e75ff34d5a85d9",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/review/3d-model-audit.json",
+      "expected": "ffb321dc130ab55d971028a61f340fcb45f4e007104207aa796810ddccd54797",
+      "actual": "ffb321dc130ab55d971028a61f340fcb45f4e007104207aa796810ddccd54797",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/review/bom.csv",
+      "expected": "a11ac5259368f52d5f629027ef7bd9d746e5cbeea54cb4dc2a756c5fc4433961",
+      "actual": "a11ac5259368f52d5f629027ef7bd9d746e5cbeea54cb4dc2a756c5fc4433961",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/review/drc.json",
+      "expected": "f288c2d958651117d90e1dc2f8d1e02adcb98509b5a87784413acb8cfa0eb0b2",
+      "actual": "f288c2d958651117d90e1dc2f8d1e02adcb98509b5a87784413acb8cfa0eb0b2",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/review/erc.json",
+      "expected": "83918b36d003de3f7f8eff124b958625c8c719d61548c655125c59ea98af1336",
+      "actual": "83918b36d003de3f7f8eff124b958625c8c719d61548c655125c59ea98af1336",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/review/fab-drc.json",
+      "expected": "6bf67632c234ae0b088eebd8b7a683edbfaf791e1ba9a33e8abd19b9b036ce8e",
+      "actual": "6bf67632c234ae0b088eebd8b7a683edbfaf791e1ba9a33e8abd19b9b036ce8e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-front/review/netlist.xml",
+      "expected": "141f8981f6297aae3cef2326e4b48c70060de1ec0e90d041e928fbe00cbfcc65",
+      "actual": "141f8981f6297aae3cef2326e4b48c70060de1ec0e90d041e928fbe00cbfcc65",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/3d-model-audit.json",
+      "expected": "bdf57e97c7886f7a4e27e2bf654cb8c7a5077defcec9ec5ad007bea99062918e",
+      "actual": "bdf57e97c7886f7a4e27e2bf654cb8c7a5077defcec9ec5ad007bea99062918e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/bom.csv",
+      "expected": "6140eed2e0c940306ad539fc3f6377f0f3fa43a7d35b4adde0ca1ed3e484385e",
+      "actual": "6140eed2e0c940306ad539fc3f6377f0f3fa43a7d35b4adde0ca1ed3e484385e",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/drc.json",
+      "expected": "c75800c15a95d20d582006a9a0a2fbceb2056991f96e743c9cc89303040d499a",
+      "actual": "c75800c15a95d20d582006a9a0a2fbceb2056991f96e743c9cc89303040d499a",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/erc.json",
+      "expected": "265f53b255bdb0ca3aa76c20553a6352ee2f3ce8209c8168f92f7537e181edc9",
+      "actual": "265f53b255bdb0ca3aa76c20553a6352ee2f3ce8209c8168f92f7537e181edc9",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/fab-drc.json",
+      "expected": "fa34c9a56751cb903e1f57c5579c085888d8aefb815f5de54306cc674277ef15",
+      "actual": "fa34c9a56751cb903e1f57c5579c085888d8aefb815f5de54306cc674277ef15",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/harness-simulation.json",
+      "expected": "b39849922b9bb4a407455f05a92b73d2e0be11c1492c520bb5261679323fd506",
+      "actual": "b39849922b9bb4a407455f05a92b73d2e0be11c1492c520bb5261679323fd506",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/interface-validation.json",
+      "expected": "b1af6d08414a70cbb3ed6447de7b89095177a79f98c12d96cb56a04e961aaeed",
+      "actual": "b1af6d08414a70cbb3ed6447de7b89095177a79f98c12d96cb56a04e961aaeed",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/layout-validation.json",
+      "expected": "b225e9b61c35698040b49ef54675c83e0576b243ceb23b80cab60f0a7a5b9b62",
+      "actual": "b225e9b61c35698040b49ef54675c83e0576b243ceb23b80cab60f0a7a5b9b62",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/netlist.xml",
+      "expected": "6818c499924dfde0510a367441c0e0063546d32ed85b6ca4e4f3857d6fd83120",
+      "actual": "6818c499924dfde0510a367441c0e0063546d32ed85b6ca4e4f3857d6fd83120",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/physical-screening/name-migration.json",
+      "expected": "2ff8b2c3f73c787ce3482bab97dbfddb4eeef579f3588b09b216e3eb50dffcb8",
+      "actual": "2ff8b2c3f73c787ce3482bab97dbfddb4eeef579f3588b09b216e3eb50dffcb8",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/physical-screening/summary.json",
+      "expected": "aac18008cdffd0d0aeb7fe25b8c480c0883bf992aa7bbaf2addd215c3c4d7869",
+      "actual": "aac18008cdffd0d0aeb7fe25b8c480c0883bf992aa7bbaf2addd215c3c4d7869",
+      "match": true
+    },
+    {
+      "path": "boards/alec-main/review/spice-report.metrics.json",
+      "expected": "988af1d2d28ffcaa710ffd4cbf70f7d054b21c93219b4a46ccf5f4c97d3e567a",
+      "actual": "988af1d2d28ffcaa710ffd4cbf70f7d054b21c93219b4a46ccf5f4c97d3e567a",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/alec-cube-v4-2.blend",
+      "expected": "b4448e2ce0be68403220ad63c7c257480f0fd2c16525bf3978cdc57aaebda3ca",
+      "actual": "b4448e2ce0be68403220ad63c7c257480f0fd2c16525bf3978cdc57aaebda3ca",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/assembly-sources.json",
+      "expected": "dc2003db67f0cf0d03d7d03aa8ffde86d2f0a7a7730a1cdd43d791a756079f86",
+      "actual": "dc2003db67f0cf0d03d7d03aa8ffde86d2f0a7a7730a1cdd43d791a756079f86",
+      "match": true
+    },
+    {
+      "path": "enclosures/alec/pcb-revision/verification.json",
+      "expected": "17f414cd0f15ca60330b49a8c1605d918bb32ed2371aaa2ec8d20c5149bc6a37",
+      "actual": "17f414cd0f15ca60330b49a8c1605d918bb32ed2371aaa2ec8d20c5149bc6a37",
+      "match": true
+    }
+  ],
+  "sensor_original_review_binding_checks": [
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/.github/workflows/alec-sensor-study.yml",
+      "expected": "2c1071e0814c881fb933fcf77ae7d45d0ef7c653121c90172839b69016ace83f",
+      "actual": "2c1071e0814c881fb933fcf77ae7d45d0ef7c653121c90172839b69016ace83f",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/C_0402_1005Metric.step",
+      "expected": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "actual": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/C_0603_1608Metric.step",
+      "expected": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "actual": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/C_0805_2012Metric.step",
+      "expected": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "actual": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/C_1206_3216Metric.step",
+      "expected": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "actual": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/ESP32-S3-WROOM-1.step",
+      "expected": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+      "actual": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/Fuse_0603_1608Metric.step",
+      "expected": "2178c56deff687266eecad5e197b7ab2d230afae45def1320cff0ea839f46b49",
+      "actual": "2178c56deff687266eecad5e197b7ab2d230afae45def1320cff0ea839f46b49",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/HRO_TYPE-C-31-M-12.step",
+      "expected": "272b7208e6c8beb3f21766a3a1c444a005e1706a99f6e2ab6c035c4f558c2d9d",
+      "actual": "272b7208e6c8beb3f21766a3a1c444a005e1706a99f6e2ab6c035c4f558c2d9d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/JST_B2B-PH-SM4-TB_simplified.step",
+      "expected": "b527ecf5e87e216a7b05c050062cb16dd69f843c448502d31d1eb0a9bcf52748",
+      "actual": "b527ecf5e87e216a7b05c050062cb16dd69f843c448502d31d1eb0a9bcf52748",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100.step",
+      "expected": "8ad96d3b2b78fcb1fc017203142a7488845563b55c6b4b5c699499319a792a3d",
+      "actual": "8ad96d3b2b78fcb1fc017203142a7488845563b55c6b4b5c699499319a792a3d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/LICENSE-KiCad.txt",
+      "expected": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+      "actual": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/LICENSE-Malouf-MIT.txt",
+      "expected": "63559595af5ccef1779d7a5e76d9e6d3d2dcf5241633bd60622890abfe47d9db",
+      "actual": "63559595af5ccef1779d7a5e76d9e6d3d2dcf5241633bd60622890abfe47d9db",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/README.md",
+      "expected": "53faaf0b9dfa1f179a5e955c0ab9c8976138c43cc42e26d6fe40f12ecd89edf2",
+      "actual": "53faaf0b9dfa1f179a5e955c0ab9c8976138c43cc42e26d6fe40f12ecd89edf2",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/RV-3028-C7_simplified.step",
+      "expected": "d29130cd6a67ca604a2bb3db66e7080c8925c08aefef099c014bc4454b02f931",
+      "actual": "d29130cd6a67ca604a2bb3db66e7080c8925c08aefef099c014bc4454b02f931",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/R_0402_1005Metric.step",
+      "expected": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "actual": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/SOT-23-6.step",
+      "expected": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "actual": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/SOT-23.step",
+      "expected": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "actual": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/SW_CK_1101M2S3CQE2.step",
+      "expected": "4a30d15dbf53d9e6917145ba548a60a3d9dd4c0d3e9cd4a082d45e3adbd353dd",
+      "actual": "4a30d15dbf53d9e6917145ba548a60a3d9dd4c0d3e9cd4a082d45e3adbd353dd",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/Samtec_SSW-105-01-F-S.step",
+      "expected": "9301242e14a07af124b89de06f63d53b34a1b19bc6efe84e6f21d4bbd0192427",
+      "actual": "9301242e14a07af124b89de06f63d53b34a1b19bc6efe84e6f21d4bbd0192427",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/TPS63070RNM.step",
+      "expected": "c6ff03bef77cf60877b65ca97012b7a9d96b13bde6fb0f57068b77aecb4125c6",
+      "actual": "c6ff03bef77cf60877b65ca97012b7a9d96b13bde6fb0f57068b77aecb4125c6",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/TS-1187A-B-A-B.step",
+      "expected": "26ea252f47554af12434cb6e19457ce3b670e2cdb2baff6cd4371d388d17a9c8",
+      "actual": "26ea252f47554af12434cb6e19457ce3b670e2cdb2baff6cd4371d388d17a9c8",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/TSSOP-14_4.4x5mm_P0.65mm.step",
+      "expected": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245",
+      "actual": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/3dmodels/XFL4020-152MEC.step",
+      "expected": "8721b34b33bb90a15a21e62e64567b68738ad1dc8dd0955c604389e27c309718",
+      "actual": "8721b34b33bb90a15a21e62e64567b68738ad1dc8dd0955c604389e27c309718",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/ENCLOSURE.md",
+      "expected": "5eaafd4c75039651173d5e9120aaa230fbcbdc4f509603a402f0f2318076ee4d",
+      "actual": "5eaafd4c75039651173d5e9120aaa230fbcbdc4f509603a402f0f2318076ee4d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/OPERATION.md",
+      "expected": "182023e9b968bf0d7a15df7d369f7ae8201569a538d599a5ff81a66411169e5b",
+      "actual": "182023e9b968bf0d7a15df7d369f7ae8201569a538d599a5ff81a66411169e5b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/PROTOTYPE-ORDER.md",
+      "expected": "e43cb0cdef8964a76f32695eb1ab2aede3551c77ed1d1be2c86d9152303ade29",
+      "actual": "e43cb0cdef8964a76f32695eb1ab2aede3551c77ed1d1be2c86d9152303ade29",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/README.md",
+      "expected": "d194a0beb1bcd5fc95b855fd344d9b031cbbf7e36ff34c1af8c809e2da4f7d15",
+      "actual": "d194a0beb1bcd5fc95b855fd344d9b031cbbf7e36ff34c1af8c809e2da4f7d15",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/SOURCES.md",
+      "expected": "da2e9ed9de5945f925172a1a7f6b3769ed9cfb5188a1ea3fd0a611e71359bbdd",
+      "actual": "da2e9ed9de5945f925172a1a7f6b3769ed9cfb5188a1ea3fd0a611e71359bbdd",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/TEST-REPORT.md",
+      "expected": "7bdb8b6f7b2ef42bd0917998f58f893e145197a5e0dbb944d7f9bc44f68dbbc1",
+      "actual": "7bdb8b6f7b2ef42bd0917998f58f893e145197a5e0dbb944d7f9bc44f68dbbc1",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/alec-sensor.kicad_pcb",
+      "expected": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "actual": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/alec-sensor.kicad_pro",
+      "expected": "3c90f5e8ce3cc55f8ee40221d632e37d85033dc90a4c6c45c1387ab706590906",
+      "actual": "3c90f5e8ce3cc55f8ee40221d632e37d85033dc90a4c6c45c1387ab706590906",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/alec-sensor.kicad_sch",
+      "expected": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056",
+      "actual": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/board.yml",
+      "expected": "3ec412c76d71e68824be2f19a6619b6ec6fe1b087db21bd58a0e147c3f424dc0",
+      "actual": "3ec412c76d71e68824be2f19a6619b6ec6fe1b087db21bd58a0e147c3f424dc0",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/docs/assembly.glb",
+      "expected": "6b0948581505616bd579b035dec0b9e8153c23ceb48ac9668c7024f02ace20e9",
+      "actual": "6b0948581505616bd579b035dec0b9e8153c23ceb48ac9668c7024f02ace20e9",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/docs/pcb-bottom.png",
+      "expected": "140f45ced87ce493c949740d63a77f97d45f72d8b954a61c85eea63f39f447ed",
+      "actual": "140f45ced87ce493c949740d63a77f97d45f72d8b954a61c85eea63f39f447ed",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/docs/pcb-top.png",
+      "expected": "3682f394094d19b903f0e6dfcb692778e6e251eac8ab585b4173eb98f47f077e",
+      "actual": "3682f394094d19b903f0e6dfcb692778e6e251eac8ab585b4173eb98f47f077e",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/docs/schematic-page1.svg",
+      "expected": "7b120f5aa1f27dbb752a0d24c7168f0dc518da92ad1995fc3e25750a90a8d959",
+      "actual": "7b120f5aa1f27dbb752a0d24c7168f0dc518da92ad1995fc3e25750a90a8d959",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/docs/schematic-page2.svg",
+      "expected": "b8c3d16b0d565fc31960751ec169756605c0c03e885cb2d8b74b5f8c55bcc57c",
+      "actual": "b8c3d16b0d565fc31960751ec169756605c0c03e885cb2d8b74b5f8c55bcc57c",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/docs/schematic.pdf",
+      "expected": "ddd193848cd9b93487bf7ad64123a5ecbee85f9ad0d99e8ef0ed48c3d179c079",
+      "actual": "ddd193848cd9b93487bf7ad64123a5ecbee85f9ad0d99e8ef0ed48c3d179c079",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/docs/schematic.svg",
+      "expected": "6caea2e4e6a7b43da393301fdf4a493a2f7bf23eb500c5590df92a6e68057e5e",
+      "actual": "6caea2e4e6a7b43da393301fdf4a493a2f7bf23eb500c5590df92a6e68057e5e",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/footprints/Board.pretty/ESP32-S3-WROOM-1_Overhang.kicad_mod",
+      "expected": "915670aa915506dae324bda64b742d533c7f71106297f3982aa93bc93e2ad765",
+      "actual": "915670aa915506dae324bda64b742d533c7f71106297f3982aa93bc93e2ad765",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/footprints/Board.pretty/JST_PH_Speaker_Overhang.kicad_mod",
+      "expected": "8dfc9238b7478903261ba1bec4163e5e82a3a0fd895c940f5a6f28859f0faccc",
+      "actual": "8dfc9238b7478903261ba1bec4163e5e82a3a0fd895c940f5a6f28859f0faccc",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/footprints/Board.pretty/USB_C_HRO_Overhang.kicad_mod",
+      "expected": "e848a88f492da1bc77db5091fed9b9bcc3b942b4cb185a74258add06b45ba4a9",
+      "actual": "e848a88f492da1bc77db5091fed9b9bcc3b942b4cb185a74258add06b45ba4a9",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/footprints/Sensor.pretty/SW_CK_1101M2S3CQE2.kicad_mod",
+      "expected": "e0f20ba188a8fc46b6b59116b1d8efc25aa1b4472531664bdd3585f9dd29b7da",
+      "actual": "e0f20ba188a8fc46b6b59116b1d8efc25aa1b4472531664bdd3585f9dd29b7da",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/footprints/Sensor.pretty/Samtec_SSW-105-01-F-S.kicad_mod",
+      "expected": "dd41690f09bcba7de6e553853b1f56fb4ac0cee3471407e26ee59ce4551d86b9",
+      "actual": "dd41690f09bcba7de6e553853b1f56fb4ac0cee3471407e26ee59ce4551d86b9",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/fp-lib-table",
+      "expected": "1c134df17d7c0cd9ca0332adc6019e502fb18ac0d4f124c95236a7d9a23c7115",
+      "actual": "1c134df17d7c0cd9ca0332adc6019e502fb18ac0d4f124c95236a7d9a23c7115",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/power-monitor.kicad_sch",
+      "expected": "f8bc8d741149ff7a2b36cf57380ddd0584281a49671968a69116c7904e10a11e",
+      "actual": "f8bc8d741149ff7a2b36cf57380ddd0584281a49671968a69116c7904e10a11e",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/radar.kicad_sch",
+      "expected": "9822c4fd2581b4551b14582df515feb72998999da43eacb27df8640339c461f8",
+      "actual": "9822c4fd2581b4551b14582df515feb72998999da43eacb27df8640339c461f8",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/3d-model-audit.json",
+      "expected": "dd2dcda4ca32602c0ccf89dc358e5b5f233b80032e907abc4e2f693b977f72c1",
+      "actual": "dd2dcda4ca32602c0ccf89dc358e5b5f233b80032e907abc4e2f693b977f72c1",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/Review.kicad_sym",
+      "expected": "608c287e6a4ef2b724f24580f041c535f4cb4404b4edf5e50c04b683e3d96d96",
+      "actual": "608c287e6a4ef2b724f24580f041c535f4cb4404b4edf5e50c04b683e3d96d96",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/Sensor.kicad_sym",
+      "expected": "fc0c14617715abf3dd6c9bbf9982688227c43830953d596720b5ba47b7fef9ff",
+      "actual": "fc0c14617715abf3dd6c9bbf9982688227c43830953d596720b5ba47b7fef9ff",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/bom-checks.json",
+      "expected": "b3ca16f7cf37cf81df684729e34f4bce3b39eb43a27fb92b8ccc601810144fad",
+      "actual": "b3ca16f7cf37cf81df684729e34f4bce3b39eb43a27fb92b8ccc601810144fad",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/bom.csv",
+      "expected": "fd14c1633cb48c0a50a4aba21ec917bb4fdd25cb111b657129c3c2135ba7fef0",
+      "actual": "fd14c1633cb48c0a50a4aba21ec917bb4fdd25cb111b657129c3c2135ba7fef0",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/copper-cleanup.json",
+      "expected": "91ca73e80265db3480991c25d2d9c2fd8da65dfd9b622b4034390b077d3073d3",
+      "actual": "91ca73e80265db3480991c25d2d9c2fd8da65dfd9b622b4034390b077d3073d3",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/copper-connectivity.txt",
+      "expected": "71c48d877e9639796f9b2ca55fffac0bb0767868973aa4e0b79319c015ed73c8",
+      "actual": "71c48d877e9639796f9b2ca55fffac0bb0767868973aa4e0b79319c015ed73c8",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/drc.json",
+      "expected": "f2016345e99d5d3883926da9e2985eda5ed0ab9ac1e76dbc0fa72cf02196ae10",
+      "actual": "f2016345e99d5d3883926da9e2985eda5ed0ab9ac1e76dbc0fa72cf02196ae10",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/erc.json",
+      "expected": "a0af862fba9727896cb961a36cb17402471360b2de8d877fc7f8f6df59b05b6d",
+      "actual": "a0af862fba9727896cb961a36cb17402471360b2de8d877fc7f8f6df59b05b6d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/fab-jlcpcb-4layer-advanced.json",
+      "expected": "67c2f8bb8aedb989f135c741f0268d9e7d44215aad966aca2cbd503027e12915",
+      "actual": "67c2f8bb8aedb989f135c741f0268d9e7d44215aad966aca2cbd503027e12915",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/interface-checks.json",
+      "expected": "0d3c5a44b0109626fe46607f176db837ef4ed7c3be7aba3d7ee67bc8235d8e13",
+      "actual": "0d3c5a44b0109626fe46607f176db837ef4ed7c3be7aba3d7ee67bc8235d8e13",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/layout-validation.json",
+      "expected": "bf5823d821f68cee6c873adb465ede19e5ff9c87e7fe78a84faf797999c817c3",
+      "actual": "bf5823d821f68cee6c873adb465ede19e5ff9c87e7fe78a84faf797999c817c3",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/migration.json",
+      "expected": "8415046ae41bc6c18115afec2377ad226cecfd784d28343abb5123bbfdb43956",
+      "actual": "8415046ae41bc6c18115afec2377ad226cecfd784d28343abb5123bbfdb43956",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/ordering-metadata-change.json",
+      "expected": "d8a28b30b592973087c300357b0f7548665fbde936c07c261577495d53742055",
+      "actual": "d8a28b30b592973087c300357b0f7548665fbde936c07c261577495d53742055",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-budget.json",
+      "expected": "0db9b7ba93c76d520275d5dd8bee3cb85709a30f05081fc466b4d45c685f5f4b",
+      "actual": "0db9b7ba93c76d520275d5dd8bee3cb85709a30f05081fc466b4d45c685f5f4b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-00.cir",
+      "expected": "fcb8f827a698b2ece14c1ad13fff01bd0f1ed3dee61b05c567f2d614e3fe2cd1",
+      "actual": "fcb8f827a698b2ece14c1ad13fff01bd0f1ed3dee61b05c567f2d614e3fe2cd1",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-00.log",
+      "expected": "74f14e3a351ad8dec2247eea3293133d81cc7b9300652c3accfe6d1ed33d7bfa",
+      "actual": "74f14e3a351ad8dec2247eea3293133d81cc7b9300652c3accfe6d1ed33d7bfa",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-01.cir",
+      "expected": "8ca8738d602852abb76b525523dbb13119dfb2a06e743e3b606d6e2132d85695",
+      "actual": "8ca8738d602852abb76b525523dbb13119dfb2a06e743e3b606d6e2132d85695",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-01.log",
+      "expected": "83106d08d9a929225dc9f9601341bb2cba3b6a1974914a7f2c0ac2066f434c34",
+      "actual": "83106d08d9a929225dc9f9601341bb2cba3b6a1974914a7f2c0ac2066f434c34",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-02.cir",
+      "expected": "7ab9429a26a9dd6d35f623b8594644b921689061a0c5486f28eb4e141a9bd998",
+      "actual": "7ab9429a26a9dd6d35f623b8594644b921689061a0c5486f28eb4e141a9bd998",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-02.log",
+      "expected": "f00767f3da1fe2be3baff0c1cb7e4b8f586076bc27b581c344e038de9c6dc5d6",
+      "actual": "f00767f3da1fe2be3baff0c1cb7e4b8f586076bc27b581c344e038de9c6dc5d6",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-03.cir",
+      "expected": "08d645808c41ca29b3d4d662990506881a23fd402215da5a23965f73ecbec74a",
+      "actual": "08d645808c41ca29b3d4d662990506881a23fd402215da5a23965f73ecbec74a",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-03.log",
+      "expected": "db20e585d32577b18ced7ab9a2f3a46beded0a19b5331b70898f882b74bfd56a",
+      "actual": "db20e585d32577b18ced7ab9a2f3a46beded0a19b5331b70898f882b74bfd56a",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-04.cir",
+      "expected": "2a1544b2f140f8f291346a64a44edab439d8843ea5d6ea58afb61dd4148ef02c",
+      "actual": "2a1544b2f140f8f291346a64a44edab439d8843ea5d6ea58afb61dd4148ef02c",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-04.log",
+      "expected": "f7c2aa05c51c074d991a7d22014ed342f9078996822a4345161cbf4196f0c981",
+      "actual": "f7c2aa05c51c074d991a7d22014ed342f9078996822a4345161cbf4196f0c981",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-05.cir",
+      "expected": "4418b728ed5a9268504037dc4aa79781f52b885326a190ec116e0d5efd16979c",
+      "actual": "4418b728ed5a9268504037dc4aa79781f52b885326a190ec116e0d5efd16979c",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-05.log",
+      "expected": "3640a3067978eb1232c052ef9ca25c74218a3b2706ff9b289a974f9267212815",
+      "actual": "3640a3067978eb1232c052ef9ca25c74218a3b2706ff9b289a974f9267212815",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-06.cir",
+      "expected": "257623bbcfd4000773c54f4cb81788b05e92485b2460b2bcc47ea9ed88d85857",
+      "actual": "257623bbcfd4000773c54f4cb81788b05e92485b2460b2bcc47ea9ed88d85857",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-06.log",
+      "expected": "2100d97d6af7929854b1043717384d7cec747c30634acc42de6c7687cba35519",
+      "actual": "2100d97d6af7929854b1043717384d7cec747c30634acc42de6c7687cba35519",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-07.cir",
+      "expected": "6046af0e491161cf6ed3f3fff98f3dce1a71a04311814d8140154cd13000d3ae",
+      "actual": "6046af0e491161cf6ed3f3fff98f3dce1a71a04311814d8140154cd13000d3ae",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-07.log",
+      "expected": "4e91e2f7606d3e0ff501e2180f625378ca2aaa90fe9f3cabf7ec414de5d8fea4",
+      "actual": "4e91e2f7606d3e0ff501e2180f625378ca2aaa90fe9f3cabf7ec414de5d8fea4",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-08.cir",
+      "expected": "1f6d9b1ea6569edd8b8e6ef5202e164c80aa324a6cbf86d13f1bc274f487f64b",
+      "actual": "1f6d9b1ea6569edd8b8e6ef5202e164c80aa324a6cbf86d13f1bc274f487f64b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-08.log",
+      "expected": "dc2c7ab8100b81a058902cbefe41ad6e6aa12008ace246da4db8f1ba4e7b56bc",
+      "actual": "dc2c7ab8100b81a058902cbefe41ad6e6aa12008ace246da4db8f1ba4e7b56bc",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-09.cir",
+      "expected": "6f823b929548e7e9aee335973d108e66ee627b6bb632767be4966823e1bf9496",
+      "actual": "6f823b929548e7e9aee335973d108e66ee627b6bb632767be4966823e1bf9496",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-09.log",
+      "expected": "d3eb3d9f11951d5e4b8a9fff150e9bbea97f4573b920835449ca21b6143f7a6d",
+      "actual": "d3eb3d9f11951d5e4b8a9fff150e9bbea97f4573b920835449ca21b6143f7a6d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-10.cir",
+      "expected": "0c35ff36df642f9d94c9e32f2c1cfa57e3da9e6691c402a6faea8ea603957dd4",
+      "actual": "0c35ff36df642f9d94c9e32f2c1cfa57e3da9e6691c402a6faea8ea603957dd4",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-10.log",
+      "expected": "161836adc658bbd4b75c9cebb64e9ce1238097ad6f6c08eeff8a4be22af10986",
+      "actual": "161836adc658bbd4b75c9cebb64e9ce1238097ad6f6c08eeff8a4be22af10986",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-11.cir",
+      "expected": "65769a1e64decee7f23890ca6fe1b1e4d2af09708003244d57b634425a19bc2a",
+      "actual": "65769a1e64decee7f23890ca6fe1b1e4d2af09708003244d57b634425a19bc2a",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-11.log",
+      "expected": "54e0c0e759bd134fc1a3438a014f1b5f52ad38fbb33a7af5e650f1c16f7370e4",
+      "actual": "54e0c0e759bd134fc1a3438a014f1b5f52ad38fbb33a7af5e650f1c16f7370e4",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-12.cir",
+      "expected": "e6daa86193e833d9901dffb5320edcbe485b90f2d47ac0e20c866f5c80d123db",
+      "actual": "e6daa86193e833d9901dffb5320edcbe485b90f2d47ac0e20c866f5c80d123db",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-12.log",
+      "expected": "69dd00086079f04e9c7358f7dd7a63958e3d4691a2de63711cbb22f7c640b129",
+      "actual": "69dd00086079f04e9c7358f7dd7a63958e3d4691a2de63711cbb22f7c640b129",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-13.cir",
+      "expected": "1180fc0fd4bebec920cd0acc19fb79efb96fbe872ccfb15a1687530f12223d6b",
+      "actual": "1180fc0fd4bebec920cd0acc19fb79efb96fbe872ccfb15a1687530f12223d6b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-13.log",
+      "expected": "655c7638b890c2f2416409c41116ad85bc7d8d3876733caa79a357a97b9fe147",
+      "actual": "655c7638b890c2f2416409c41116ad85bc7d8d3876733caa79a357a97b9fe147",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-14.cir",
+      "expected": "432c24132a00e26b66eb8e753b72db891610248909c0752664d33b041847e052",
+      "actual": "432c24132a00e26b66eb8e753b72db891610248909c0752664d33b041847e052",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-14.log",
+      "expected": "52b3ba2633dc5affa668316c77ff7dd82c7f5615fd3082d03f209db565d54b85",
+      "actual": "52b3ba2633dc5affa668316c77ff7dd82c7f5615fd3082d03f209db565d54b85",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-15.cir",
+      "expected": "9f25a55f2cbc63041732cab71043efbaba9471f06257b1ca7d98d52943bbea52",
+      "actual": "9f25a55f2cbc63041732cab71043efbaba9471f06257b1ca7d98d52943bbea52",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-15.log",
+      "expected": "bec906a2e4d6c222c2c5db668f2b4e2d9a0d9cb819bdc7782fc87b41a855ebb9",
+      "actual": "bec906a2e4d6c222c2c5db668f2b4e2d9a0d9cb819bdc7782fc87b41a855ebb9",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-16.cir",
+      "expected": "65956601f0809008cb5ce721c1860ed7767c190ecce3125d9573125ac4b85d7a",
+      "actual": "65956601f0809008cb5ce721c1860ed7767c190ecce3125d9573125ac4b85d7a",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-16.log",
+      "expected": "74ddc89c333e81e1109193e567521bf53cec11bce6ad01091f75ea86a0dba900",
+      "actual": "74ddc89c333e81e1109193e567521bf53cec11bce6ad01091f75ea86a0dba900",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-17.cir",
+      "expected": "b63977a39f37fd121d9dae73bb1df0008b85da298a280ff751276b64977068a0",
+      "actual": "b63977a39f37fd121d9dae73bb1df0008b85da298a280ff751276b64977068a0",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-17.log",
+      "expected": "1c0a352ad6023d8de7e502cd0dcc52a7945ca6ea20b1e75a033520a08620f9a1",
+      "actual": "1c0a352ad6023d8de7e502cd0dcc52a7945ca6ea20b1e75a033520a08620f9a1",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-18.cir",
+      "expected": "af9eff6b1899710f0f53892449e8cb248bd1f2270227403e6fecd42b342b84b3",
+      "actual": "af9eff6b1899710f0f53892449e8cb248bd1f2270227403e6fecd42b342b84b3",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-18.log",
+      "expected": "d73eb6c0b59eae559517ec6c300cc385633b30ef395b1e5350c6efcb8b71c4ce",
+      "actual": "d73eb6c0b59eae559517ec6c300cc385633b30ef395b1e5350c6efcb8b71c4ce",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-19.cir",
+      "expected": "0175d8ebce6427ff3fdcb720fa2423f1f8d95aba7f546eaee56e544be8d35cae",
+      "actual": "0175d8ebce6427ff3fdcb720fa2423f1f8d95aba7f546eaee56e544be8d35cae",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-19.log",
+      "expected": "a408bb4b39926f55af94acf356164ed19aef7afdef736a8d340299c54c6949cd",
+      "actual": "a408bb4b39926f55af94acf356164ed19aef7afdef736a8d340299c54c6949cd",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-20.cir",
+      "expected": "c62d674bf5b8fd8b3b9c81fe0daea9f27a8051c69762adca140f0dcdf493d6cd",
+      "actual": "c62d674bf5b8fd8b3b9c81fe0daea9f27a8051c69762adca140f0dcdf493d6cd",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-20.log",
+      "expected": "82d07a663881436b31e6d8d1770104fc6eeb766dff0980d437c6ef4e78c233cb",
+      "actual": "82d07a663881436b31e6d8d1770104fc6eeb766dff0980d437c6ef4e78c233cb",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-21.cir",
+      "expected": "81100be84646af9be398ca7a9ac1ba289643faadbab15faf35baeae4926ce5ae",
+      "actual": "81100be84646af9be398ca7a9ac1ba289643faadbab15faf35baeae4926ce5ae",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-21.log",
+      "expected": "111c5197a2c4a043e0824a960bef92d763a6ca5c762608d50d2ace863e177ef6",
+      "actual": "111c5197a2c4a043e0824a960bef92d763a6ca5c762608d50d2ace863e177ef6",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-22.cir",
+      "expected": "5e15b651480ccb8c7ab96a762cf6525e12929a8e9fa388fd102473c430ee4baf",
+      "actual": "5e15b651480ccb8c7ab96a762cf6525e12929a8e9fa388fd102473c430ee4baf",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-22.log",
+      "expected": "3fe2a1ef04288b959ecc1f7b46957dcbf945b3211ae1200e4a1baf2b2ea0ab98",
+      "actual": "3fe2a1ef04288b959ecc1f7b46957dcbf945b3211ae1200e4a1baf2b2ea0ab98",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-23.cir",
+      "expected": "ee61679eb73b119c510dc26a07cd0c1fd182da48c2fa4cef66ceb9b56e0b8400",
+      "actual": "ee61679eb73b119c510dc26a07cd0c1fd182da48c2fa4cef66ceb9b56e0b8400",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-23.log",
+      "expected": "bd37030d41d5338eb29200f2de5fc12dcf618abd53b37478e2afd73bdf9ba101",
+      "actual": "bd37030d41d5338eb29200f2de5fc12dcf618abd53b37478e2afd73bdf9ba101",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-24.cir",
+      "expected": "fe9f5ff3e2eea024e77e71beef09fc2b7d4967fd76795839b3780d0df52181e3",
+      "actual": "fe9f5ff3e2eea024e77e71beef09fc2b7d4967fd76795839b3780d0df52181e3",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-24.log",
+      "expected": "1e63555a3d2ee228e1f7ff5f443e74b257ad3be9e58ea48d0344a6561515936f",
+      "actual": "1e63555a3d2ee228e1f7ff5f443e74b257ad3be9e58ea48d0344a6561515936f",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-25.cir",
+      "expected": "439ffd5435faeaa1c729328f5a8ab4330ac68c13f573b6df01acc71efa8ca705",
+      "actual": "439ffd5435faeaa1c729328f5a8ab4330ac68c13f573b6df01acc71efa8ca705",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-25.log",
+      "expected": "a909377f9cc8c10b235e50f43bdf670aedcaedbfcaa35086b6dd442496a3acd9",
+      "actual": "a909377f9cc8c10b235e50f43bdf670aedcaedbfcaa35086b6dd442496a3acd9",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-26.cir",
+      "expected": "2a974f81d2f1840669abe3a3129809d03d40b8dd20fbedd325ddb63e483a0df0",
+      "actual": "2a974f81d2f1840669abe3a3129809d03d40b8dd20fbedd325ddb63e483a0df0",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/inrush-26.log",
+      "expected": "ff88eca98c74de8757b0549e375ce6588ee0c95ff27c7d5f4be96e0cac0e7af7",
+      "actual": "ff88eca98c74de8757b0549e375ce6588ee0c95ff27c7d5f4be96e0cac0e7af7",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/power-screening/summary.json",
+      "expected": "156ec5442e161c74302b3829ae4c2ca440294365f6d1da3e382110ace9818e65",
+      "actual": "156ec5442e161c74302b3829ae4c2ca440294365f6d1da3e382110ace9818e65",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/python-tests.txt",
+      "expected": "22756356b523bf1d57f5a55f69b645c4eb0d7ff7e2dc5ea7bcb773345461edcd",
+      "actual": "22756356b523bf1d57f5a55f69b645c4eb0d7ff7e2dc5ea7bcb773345461edcd",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/rear-service-migration.json",
+      "expected": "1d370786814cfaa8caa4f31d4ae9cfd8c5444408ee13ad19ffb309c13f8ed430",
+      "actual": "1d370786814cfaa8caa4f31d4ae9cfd8c5444408ee13ad19ffb309c13f8ed430",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/reference-retrieval-hashes.json",
+      "expected": "57502a1e61f3498320e7a6865b05ad0d4a548642d626454af0135240821b41ce",
+      "actual": "57502a1e61f3498320e7a6865b05ad0d4a548642d626454af0135240821b41ce",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/routing-report.json",
+      "expected": "7d939d8b013ce157aff9134ec58e1a17bc0316f244848e42970f4812564e834e",
+      "actual": "7d939d8b013ce157aff9134ec58e1a17bc0316f244848e42970f4812564e834e",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/review/service-interface-checks.json",
+      "expected": "7f9d3ba63ba7a81fa8f45fa6b71d8bb9ebed8e3b6974bcab045e53a1b3c921ff",
+      "actual": "7f9d3ba63ba7a81fa8f45fa6b71d8bb9ebed8e3b6974bcab045e53a1b3c921ff",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/sym-lib-table",
+      "expected": "3d7302379e5ee592e67c2e964e95d230545f1d2e8bd0c1f7d57e768b1e964601",
+      "actual": "3d7302379e5ee592e67c2e964e95d230545f1d2e8bd0c1f7d57e768b1e964601",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/README.md",
+      "expected": "9d9a3395738e26ee4af47034feb319181951f27cce5f84ec13146287c1bcc44e",
+      "actual": "9d9a3395738e26ee4af47034feb319181951f27cce5f84ec13146287c1bcc44e",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/apply_rear_service.py",
+      "expected": "2980358f84a6096351f4e0a8c7121b6cf753c3f609ed043a204210b89bbc95e5",
+      "actual": "2980358f84a6096351f4e0a8c7121b6cf753c3f609ed043a204210b89bbc95e5",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/audit_models.py",
+      "expected": "7472788cfe73cd9b1c96ad6662259803ad91697f4e602ab3bce38a6543e676f3",
+      "actual": "7472788cfe73cd9b1c96ad6662259803ad91697f4e602ab3bce38a6543e676f3",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/build_part_models.py",
+      "expected": "d2bcea210126a226e9f6cb01bd16c4723795a245c4233475888d0a30fbdabd16",
+      "actual": "d2bcea210126a226e9f6cb01bd16c4723795a245c4233475888d0a30fbdabd16",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/check_bom.py",
+      "expected": "df5f38adbb0ce18858ba54354b23a39f2987d996a91f4b51ba1fa9ad970218d3",
+      "actual": "df5f38adbb0ce18858ba54354b23a39f2987d996a91f4b51ba1fa9ad970218d3",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/check_design.py",
+      "expected": "11ce6b7c87fa4647873939ff8ec4f230df39fba3dab44a1befb1e2b4bfeefe15",
+      "actual": "11ce6b7c87fa4647873939ff8ec4f230df39fba3dab44a1befb1e2b4bfeefe15",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/check_layout.py",
+      "expected": "62f017f9c0f6cbefbf750e1f783f0ac66d7b0c67baf192d4ea5cd26e005c5853",
+      "actual": "62f017f9c0f6cbefbf750e1f783f0ac66d7b0c67baf192d4ea5cd26e005c5853",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/check_service_interface.py",
+      "expected": "5fb8013fc4bcffbe0113bde6c47da49162b155b4e0ff79df8e84138f02e324da",
+      "actual": "5fb8013fc4bcffbe0113bde6c47da49162b155b4e0ff79df8e84138f02e324da",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/clean_retired_copper.py",
+      "expected": "f39fa40c389e6970f7620ed22889fe7c6956cbc7a71573eec8a3fde4ec88982b",
+      "actual": "f39fa40c389e6970f7620ed22889fe7c6956cbc7a71573eec8a3fde4ec88982b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/create_pcb.py",
+      "expected": "f41e164177a82e4897c3fbcddd6187a01857b33c00807bdd188b7b630c8349cc",
+      "actual": "f41e164177a82e4897c3fbcddd6187a01857b33c00807bdd188b7b630c8349cc",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/create_schematic.py",
+      "expected": "a8799ae0b9a94999c7ab0d6ca40107d8cc776fe0bece4808cb4129781c4f9f1c",
+      "actual": "a8799ae0b9a94999c7ab0d6ca40107d8cc776fe0bece4808cb4129781c4f9f1c",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/finish_pcb.py",
+      "expected": "419ef5ad5a211047d5d8c28dc4bc7a430a62f6d8b27fc4f0af125afa61962a8b",
+      "actual": "419ef5ad5a211047d5d8c28dc4bc7a430a62f6d8b27fc4f0af125afa61962a8b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/hash_evidence.py",
+      "expected": "8601fdf65ce25e491377cbbec35a8478e5d657b720633c453f5093dfaa54c513",
+      "actual": "8601fdf65ce25e491377cbbec35a8478e5d657b720633c453f5093dfaa54c513",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/parts.py",
+      "expected": "8a12e99a91b1aa3837570f41d65f94aaa066b0612abc953cc2fcdf0d644a0130",
+      "actual": "8a12e99a91b1aa3837570f41d65f94aaa066b0612abc953cc2fcdf0d644a0130",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/power_budget.py",
+      "expected": "376061ff96950c0e7b75dd0f620f5f83311f071df9d2cf706a717930a1ce6bcd",
+      "actual": "376061ff96950c0e7b75dd0f620f5f83311f071df9d2cf706a717930a1ce6bcd",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/power_screening.py",
+      "expected": "18348707c7619ed476c921218102b80c249da069b26836234b7c4b9fd6a3b301",
+      "actual": "18348707c7619ed476c921218102b80c249da069b26836234b7c4b9fd6a3b301",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/route_pcb.py",
+      "expected": "68e613b4df280f348fdae70a7752f70956a006bbdea31a48226d989bf483fc52",
+      "actual": "68e613b4df280f348fdae70a7752f70956a006bbdea31a48226d989bf483fc52",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/tools/sync_fields.py",
+      "expected": "584ae6e9c06e8739be75af39bb9eac9b75c3ee84e63c800ab02661e916ddfc7f",
+      "actual": "584ae6e9c06e8739be75af39bb9eac9b75c3ee84e63c800ab02661e916ddfc7f",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb",
+      "expected": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+      "actual": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_sch",
+      "expected": "d50864b4f6dba38fa32e1b3fb41f6ad601570cfa2162f0548b070d9ce860e925",
+      "actual": "d50864b4f6dba38fa32e1b3fb41f6ad601570cfa2162f0548b070d9ce860e925",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/boards/esp32s3-devkit-5v/power-monitor.kicad_sch",
+      "expected": "e9abb107bcb8a53473a6082b1e567d3ebe6c7659cd54707bdab2fc84790ab215",
+      "actual": "e9abb107bcb8a53473a6082b1e567d3ebe6c7659cd54707bdab2fc84790ab215",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec/geometry_helpers.py",
+      "expected": "8f29a560c5ef64be66055f9d6ea14aa7b454be6543001fbeae1c377c17fdf398",
+      "actual": "8f29a560c5ef64be66055f9d6ea14aa7b454be6543001fbeae1c377c17fdf398",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec/sources/BH3AAW.glb",
+      "expected": "d719dd05c4ca6ecd67e570628a8fc71b31a800d80e2eaa52205336689fc2ed74",
+      "actual": "d719dd05c4ca6ecd67e570628a8fc71b31a800d80e2eaa52205336689fc2ed74",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/README.md",
+      "expected": "c7120d912e010cb8b29ef68a23baa77e573cadfd9b32ae66e7ae43a867dac21f",
+      "actual": "c7120d912e010cb8b29ef68a23baa77e573cadfd9b32ae66e7ae43a867dac21f",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/alec-sensor-s1-mechanical.step",
+      "expected": "d1cdd961269926b038acbd86d856f3b52f234bc3b1721e6c717483b1fcaf55d1",
+      "actual": "d1cdd961269926b038acbd86d856f3b52f234bc3b1721e6c717483b1fcaf55d1",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/alec-sensor-s1.blend",
+      "expected": "099fe29048d623f0e420c95c8f9531e54a33b6d73e536865fc93020c694732b1",
+      "actual": "099fe29048d623f0e420c95c8f9531e54a33b6d73e536865fc93020c694732b1",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/assembly-sources.json",
+      "expected": "f393458de88bb0c73e66ba8556bf848ebc782e4f14705c1032c284efc972621e",
+      "actual": "f393458de88bb0c73e66ba8556bf848ebc782e4f14705c1032c284efc972621e",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/battery_carrier.step",
+      "expected": "b0640f0b9cda8bc77d572ac237b12fdd38fe43103d57f9a81149828cc0fbf87d",
+      "actual": "b0640f0b9cda8bc77d572ac237b12fdd38fe43103d57f9a81149828cc0fbf87d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/battery_carrier.stl",
+      "expected": "eddb6482bd8a3319c7faf62fa4673a59f24865bac7e8a5ad1955243ec74d0231",
+      "actual": "eddb6482bd8a3319c7faf62fa4673a59f24865bac7e8a5ad1955243ec74d0231",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/battery_holder_envelope.step",
+      "expected": "91af5ba1d3cfd6fd2feda1ac3644f6d6cd379e07dd65167a7232e17c45e7992b",
+      "actual": "91af5ba1d3cfd6fd2feda1ac3644f6d6cd379e07dd65167a7232e17c45e7992b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/battery_holder_envelope.stl",
+      "expected": "9658b918ed1bb87326146ec9a28da57e561aea431d61a6204116a6dabb4ef564",
+      "actual": "9658b918ed1bb87326146ec9a28da57e561aea431d61a6204116a6dabb4ef564",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/button_membrane.step",
+      "expected": "e42c71f7084c530314037bb1568ceef142eb7ec77bd5625e1dac87fced153e0b",
+      "actual": "e42c71f7084c530314037bb1568ceef142eb7ec77bd5625e1dac87fced153e0b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/button_membrane.stl",
+      "expected": "91f9fa6463d5434f337ceedde28102e2817aae9572a9a2ff86e665e5173d2064",
+      "actual": "91f9fa6463d5434f337ceedde28102e2817aae9572a9a2ff86e665e5173d2064",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/button_plunger.step",
+      "expected": "6351729b965b0a58edd76474e13f2ab0e26ffd5da903b0c8ecf4f50b12b428fd",
+      "actual": "6351729b965b0a58edd76474e13f2ab0e26ffd5da903b0c8ecf4f50b12b428fd",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/button_plunger.stl",
+      "expected": "71ac2f4ed85f26d0f4d2a713cb017083f38c4e2b9b384b271d404962873de394",
+      "actual": "71ac2f4ed85f26d0f4d2a713cb017083f38c4e2b9b384b271d404962873de394",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/button_retainer.step",
+      "expected": "9452d1a13687e5e562c086ecdc8e2f14fca6fe80b878b35de1663e526fa00ab7",
+      "actual": "9452d1a13687e5e562c086ecdc8e2f14fca6fe80b878b35de1663e526fa00ab7",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/button_retainer.stl",
+      "expected": "d88c98ce4fdd4ceda764dc58f30de0a99314a31016f50f0334834fba65dcf823",
+      "actual": "d88c98ce4fdd4ceda764dc58f30de0a99314a31016f50f0334834fba65dcf823",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/carrier_screw_1.step",
+      "expected": "0f84d57219550b329c9a11a73209974056c2ea00b74759efa574a8f5ef679539",
+      "actual": "0f84d57219550b329c9a11a73209974056c2ea00b74759efa574a8f5ef679539",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/carrier_screw_1.stl",
+      "expected": "c89bf8f9d99509e31cedc17a72d93669ef3a7b36eb3d5cfcfe9a32c48bd28b7f",
+      "actual": "c89bf8f9d99509e31cedc17a72d93669ef3a7b36eb3d5cfcfe9a32c48bd28b7f",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/carrier_screw_2.step",
+      "expected": "d56a0bbb3076fcfc0304d625a48825edda3de1df864de5cedac601ebae03cac5",
+      "actual": "d56a0bbb3076fcfc0304d625a48825edda3de1df864de5cedac601ebae03cac5",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/carrier_screw_2.stl",
+      "expected": "af95d595f6860736b37968d4ddd80c45b53ce50d16ddb142eff5552cf2599bf9",
+      "actual": "af95d595f6860736b37968d4ddd80c45b53ce50d16ddb142eff5552cf2599bf9",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/carrier_screw_3.step",
+      "expected": "b228672b932da0aacb0080d5fc9d778b483b86d865c4165764e4ab3637598db7",
+      "actual": "b228672b932da0aacb0080d5fc9d778b483b86d865c4165764e4ab3637598db7",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/carrier_screw_3.stl",
+      "expected": "a9ed99250abe5944c0365ff71dc5a0c2c6177b5d0441d94100a8e735314c4c08",
+      "actual": "a9ed99250abe5944c0365ff71dc5a0c2c6177b5d0441d94100a8e735314c4c08",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/front_cup.step",
+      "expected": "1eea3882d00bf826413931e77b53f8beab61c2f32266afd48d672600f72a8bb4",
+      "actual": "1eea3882d00bf826413931e77b53f8beab61c2f32266afd48d672600f72a8bb4",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/front_cup.stl",
+      "expected": "1eb4343d8370b1460eb8185c44818e2660d29821269942bce1e90ff80ba853a6",
+      "actual": "1eb4343d8370b1460eb8185c44818e2660d29821269942bce1e90ff80ba853a6",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/light_pipe.step",
+      "expected": "d451d98e894964c31fa84c437d5ccb1678ea5f41a8276228ef0af558bb6a9f77",
+      "actual": "d451d98e894964c31fa84c437d5ccb1678ea5f41a8276228ef0af558bb6a9f77",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/light_pipe.stl",
+      "expected": "cec9ec95c6818914b4353b2b25a0812ed0382cd8c0027fd649ef777a2934be60",
+      "actual": "cec9ec95c6818914b4353b2b25a0812ed0382cd8c0027fd649ef777a2934be60",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/mounting_cradle.step",
+      "expected": "fe1ccad6ac4af5aeb0e350af8a4c082be00ad6ea724094aab83e19aca222f9f9",
+      "actual": "fe1ccad6ac4af5aeb0e350af8a4c082be00ad6ea724094aab83e19aca222f9f9",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/mounting_cradle.stl",
+      "expected": "dc46cf4678a95095aa81694ad310a3f4bf12550529c2d37b8c586369b0e2030f",
+      "actual": "dc46cf4678a95095aa81694ad310a3f4bf12550529c2d37b8c586369b0e2030f",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/pcb_screw_1.step",
+      "expected": "148566360907d1686e90aa84bbf8bfff2c08942ee91c6c34214280a82bb1437b",
+      "actual": "148566360907d1686e90aa84bbf8bfff2c08942ee91c6c34214280a82bb1437b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/pcb_screw_1.stl",
+      "expected": "45ff5a03cd5b396307836b189c0bf33c921d97989566d7f7642a509041c12004",
+      "actual": "45ff5a03cd5b396307836b189c0bf33c921d97989566d7f7642a509041c12004",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/pcb_screw_2.step",
+      "expected": "c873dc79955bbaba3e8073ee8e925feac49b1ce9255fddd77592540120cb75fb",
+      "actual": "c873dc79955bbaba3e8073ee8e925feac49b1ce9255fddd77592540120cb75fb",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/pcb_screw_2.stl",
+      "expected": "1bc33348d356b83fdbfc6576ebb49f2cceaab36b2e22d92af40801288f3c89a0",
+      "actual": "1bc33348d356b83fdbfc6576ebb49f2cceaab36b2e22d92af40801288f3c89a0",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/pcb_screw_3.step",
+      "expected": "a370368b14fdde7be3ffb3a318353582b8ddf29f04a79632c18b939c7c135318",
+      "actual": "a370368b14fdde7be3ffb3a318353582b8ddf29f04a79632c18b939c7c135318",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/pcb_screw_3.stl",
+      "expected": "8dce7366a3cf1843f65e05e55724ff932a00bcfe4b2f126b2a97c7f70071fde8",
+      "actual": "8dce7366a3cf1843f65e05e55724ff932a00bcfe4b2f126b2a97c7f70071fde8",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/pcb_screw_4.step",
+      "expected": "19ddf9cbdd2f0c9adedc27965d062e9b7ccb617025b6299e2f6837b2ab3e9625",
+      "actual": "19ddf9cbdd2f0c9adedc27965d062e9b7ccb617025b6299e2f6837b2ab3e9625",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/pcb_screw_4.stl",
+      "expected": "ca7c35c6e026d719bba4c27adb968df69e36b276f090abf326aabe9b676fa21d",
+      "actual": "ca7c35c6e026d719bba4c27adb968df69e36b276f090abf326aabe9b676fa21d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/radar_pcb_envelope.step",
+      "expected": "02631740193039062970d2a6392cf59e176cd374d6af1158578383dd0ee4d837",
+      "actual": "02631740193039062970d2a6392cf59e176cd374d6af1158578383dd0ee4d837",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/radar_pcb_envelope.stl",
+      "expected": "f6ecc1edd47b369b98fff7cb844567a691035a0ab9d84f88576d051e4bdffcc8",
+      "actual": "f6ecc1edd47b369b98fff7cb844567a691035a0ab9d84f88576d051e4bdffcc8",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_cover.step",
+      "expected": "9632cb4eb1633255f80fa21b74d836ffb2be23a5a9fd193f1d1c09dcce5f0953",
+      "actual": "9632cb4eb1633255f80fa21b74d836ffb2be23a5a9fd193f1d1c09dcce5f0953",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_cover.stl",
+      "expected": "75b6535b20ddc7da82499ddc882842e1b8cafa697b519d274530d8be3f5619e4",
+      "actual": "75b6535b20ddc7da82499ddc882842e1b8cafa697b519d274530d8be3f5619e4",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_oring_installed_envelope.step",
+      "expected": "588ab3aa15c660f4e03fde17be4a4d3e8a46c4ad939d22b51523a442e07f868a",
+      "actual": "588ab3aa15c660f4e03fde17be4a4d3e8a46c4ad939d22b51523a442e07f868a",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_oring_installed_envelope.stl",
+      "expected": "b8eaf0887cac5dbe2597be2eeefb42c7a3c48ef6f5b970c7495739bb2a817af8",
+      "actual": "b8eaf0887cac5dbe2597be2eeefb42c7a3c48ef6f5b970c7495739bb2a817af8",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_1.step",
+      "expected": "ca5d69f48997d92bb2250e61df085fbcf7b6a482e48a334366f6010913755669",
+      "actual": "ca5d69f48997d92bb2250e61df085fbcf7b6a482e48a334366f6010913755669",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_1.stl",
+      "expected": "047505fccac3907096da72a70d6f649e34fd4c5d0fbe952f256e54a1541f4145",
+      "actual": "047505fccac3907096da72a70d6f649e34fd4c5d0fbe952f256e54a1541f4145",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_2.step",
+      "expected": "3c32d482c13dc6b35517a5c4f3ffc8122a8577674d838f66f931104d82611063",
+      "actual": "3c32d482c13dc6b35517a5c4f3ffc8122a8577674d838f66f931104d82611063",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_2.stl",
+      "expected": "bede1b8436cbe23dfd8341811a9b1416a4f590d188d2b410d802fa4497b68400",
+      "actual": "bede1b8436cbe23dfd8341811a9b1416a4f590d188d2b410d802fa4497b68400",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_3.step",
+      "expected": "32b22c4c2f67a2559c54ec3046be402c875d2af83dbde479a10458bebfa230af",
+      "actual": "32b22c4c2f67a2559c54ec3046be402c875d2af83dbde479a10458bebfa230af",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_3.stl",
+      "expected": "f25afbbd00abadb9c594fd3c91fa0287ae04415c15ab8e6b7019df4518ca70ff",
+      "actual": "f25afbbd00abadb9c594fd3c91fa0287ae04415c15ab8e6b7019df4518ca70ff",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_4.step",
+      "expected": "bdae2a5bdeaf7f3e5a43e1767ccdd67ca225c2a69b3b3f50d8523d10103cc462",
+      "actual": "bdae2a5bdeaf7f3e5a43e1767ccdd67ca225c2a69b3b3f50d8523d10103cc462",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_4.stl",
+      "expected": "6a2fe7ad09b0cd15bb5d4cf380b3b29f096eaf65450737433981d022eedd3f79",
+      "actual": "6a2fe7ad09b0cd15bb5d4cf380b3b29f096eaf65450737433981d022eedd3f79",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_5.step",
+      "expected": "474486aafabb02d574268254af38ce469dfdd7c75e7a969112805b548b8ce8b4",
+      "actual": "474486aafabb02d574268254af38ce469dfdd7c75e7a969112805b548b8ce8b4",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_5.stl",
+      "expected": "1e8713b8a82543452ad9f6d90297b3f4ff644438aeef2408be979c34041a9f1d",
+      "actual": "1e8713b8a82543452ad9f6d90297b3f4ff644438aeef2408be979c34041a9f1d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_6.step",
+      "expected": "be84182756679b0120f19a7cc3692b8ce5be2f207642bd2d1b3d82dc0d4b5036",
+      "actual": "be84182756679b0120f19a7cc3692b8ce5be2f207642bd2d1b3d82dc0d4b5036",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad/rear_screw_6.stl",
+      "expected": "eb1f7df0293ec15d5d709caa495c25b5434685866c4acff85011073fb22e2911",
+      "actual": "eb1f7df0293ec15d5d709caa495c25b5434685866c4acff85011073fb22e2911",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad-checks.json",
+      "expected": "df0fa7e9a571d93b6b82f7e359cb0bdc9b44124b87508cf43cd24d75b7bfbc2b",
+      "actual": "df0fa7e9a571d93b6b82f7e359cb0bdc9b44124b87508cf43cd24d75b7bfbc2b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/cad-parts.json",
+      "expected": "8a92539fb41ff88dec39b65bcd9366c7813040bc259ceb165ee30db238bb88cb",
+      "actual": "8a92539fb41ff88dec39b65bcd9366c7813040bc259ceb165ee30db238bb88cb",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/exterior.png",
+      "expected": "4b2a2450c97deb12c6fc18a22de38aea259abf0fbd663fce3064cbe034891137",
+      "actual": "4b2a2450c97deb12c6fc18a22de38aea259abf0fbd663fce3064cbe034891137",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/interface.json",
+      "expected": "501a70da9d140188661a3d764b6535d545e4f6600c0cf182707a4f956b464d73",
+      "actual": "501a70da9d140188661a3d764b6535d545e4f6600c0cf182707a4f956b464d73",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/internals.png",
+      "expected": "1df0a548dbda50d72b13f50920ee03c0273624e1a40bb7c4c97924d9c8d16f8d",
+      "actual": "1df0a548dbda50d72b13f50920ee03c0273624e1a40bb7c4c97924d9c8d16f8d",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/pcb-service.png",
+      "expected": "008ac8b292dec8ac8af2f860191f30684a552f37e87a7ef9ab10eb26f8cebeae",
+      "actual": "008ac8b292dec8ac8af2f860191f30684a552f37e87a7ef9ab10eb26f8cebeae",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/rear-service.png",
+      "expected": "83fd5ca3e09195ebd73686c8ab76a1fec7f69f11dddd526d877f5e7c0c559418",
+      "actual": "83fd5ca3e09195ebd73686c8ab76a1fec7f69f11dddd526d877f5e7c0c559418",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/sources/HLK-LD2410C.glb",
+      "expected": "de7f421d24d152cf64e84f4a2e3dffbe5a177e970d8b5046974e70905bb97c55",
+      "actual": "de7f421d24d152cf64e84f4a2e3dffbe5a177e970d8b5046974e70905bb97c55",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/sources/provenance.json",
+      "expected": "5103ec0a138e539936021a87918574837812f96cca30f7b726a998ed8ba2b55f",
+      "actual": "5103ec0a138e539936021a87918574837812f96cca30f7b726a998ed8ba2b55f",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/tools/build_blender.py",
+      "expected": "95565916538404972c55cdc48397ec550fc408a99edcc3db4607f6318482f956",
+      "actual": "95565916538404972c55cdc48397ec550fc408a99edcc3db4607f6318482f956",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/tools/build_cad.py",
+      "expected": "a740e679c006dfd8786e75f51d5660fc0be4288ad423e56a1d82eaa073bb4497",
+      "actual": "a740e679c006dfd8786e75f51d5660fc0be4288ad423e56a1d82eaa073bb4497",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/enclosures/alec-sensor/tools/prepare_sources.py",
+      "expected": "03d511c08f103a6c70fc3852960738c3e50e8dfaad06521a5a8560fe6d20becc",
+      "actual": "03d511c08f103a6c70fc3852960738c3e50e8dfaad06521a5a8560fe6d20becc",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/scripts/alarm/design.py",
+      "expected": "0882b68c83a985a1fc08d5288f59f62b3d2942f6abf788feca5ef5227fd2ef8b",
+      "actual": "0882b68c83a985a1fc08d5288f59f62b3d2942f6abf788feca5ef5227fd2ef8b",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/scripts/ci/check_copper_connectivity.py",
+      "expected": "abd3c1616a42098a1286bb8607f303d430c7e6b8496b117ef637c0164c0329ac",
+      "actual": "abd3c1616a42098a1286bb8607f303d430c7e6b8496b117ef637c0164c0329ac",
+      "match": true
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor/tests/test_alec_sensor.py",
+      "expected": "258cf2881121d9617b7970bf33e723fb783fc9d95b148c53f2328df508dd6bd2",
+      "actual": "258cf2881121d9617b7970bf33e723fb783fc9d95b148c53f2328df508dd6bd2",
+      "match": true
+    }
+  ],
+  "merged_prs": {
+    "126": {
+      "headRefOid": "12e2b10ac108d412d1685b41a887bafb3525a4e7",
+      "mergeCommit": {
+        "oid": "88260f41736f3ff96b257adbf595a4925bbb558b"
+      },
+      "mergedAt": "2026-09-07T15:30:18Z",
+      "number": 126,
+      "state": "MERGED",
+      "url": "https://github.com/eshelton328/the-forge/pull/126"
+    },
+    "127": {
+      "headRefOid": "dc57b550ebe8c1943e7830468d73af3f93c5bb73",
+      "mergeCommit": {
+        "oid": "000f4e9d03e258a9904b9106c35a13e5859a6e63"
+      },
+      "mergedAt": "2026-09-07T19:13:41Z",
+      "number": 127,
+      "state": "MERGED",
+      "url": "https://github.com/eshelton328/the-forge/pull/127"
+    }
+  },
+  "open_prs": [],
+  "worktrees": [
+    {
+      "path": "/Users/erik/Workspaces/the-forge",
+      "head": "afede0fd1c440113b4f332d0b8868df619f6027d",
+      "branch": "refs/heads/codex/bedroom-alarm-v4-1",
+      "status_at_capture": ""
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec",
+      "head": "12e2b10ac108d412d1685b41a887bafb3525a4e7",
+      "branch": "refs/heads/codex/alec-project-readmes",
+      "status_at_capture": ""
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-alec-sensor",
+      "head": "dc57b550ebe8c1943e7830468d73af3f93c5bb73",
+      "branch": "refs/heads/codex/alec-sensor-design",
+      "status_at_capture": ""
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-enclosure-pcbs",
+      "head": "c402b2ba552d6075ab2fc289a9dc094b0a9019a8",
+      "branch": "refs/heads/codex/alarm-enclosure-pcbs",
+      "status_at_capture": ""
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-roo-002",
+      "head": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "branch": "refs/heads/codex/roo-002-firmware-baseline",
+      "status_at_capture": ""
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-roo-004",
+      "head": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "branch": "refs/heads/codex/roo-004-cube-acceptance",
+      "status_at_capture": ""
+    },
+    {
+      "path": "/Users/erik/Workspaces/the-forge-rooster-orders",
+      "head": "0d0d8af3b1d2c60616f77a5116eba637098acf98",
+      "branch": "refs/heads/codex/rooster-prototype-orders",
+      "status_at_capture": ""
+    }
+  ],
+  "bom_counts": {
+    "alec-main": {
+      "rows": 112,
+      "explicit_dnp": 1,
+      "missing_mpn_populate_rows": 95,
+      "candidate_mpn_rows": 16
+    },
+    "alec-controls": {
+      "rows": 5,
+      "explicit_dnp": 0,
+      "missing_mpn_populate_rows": 0,
+      "candidate_mpn_rows": 5
+    },
+    "alec-front": {
+      "rows": 3,
+      "explicit_dnp": 0,
+      "missing_mpn_populate_rows": 0,
+      "candidate_mpn_rows": 3
+    },
+    "alec-sensor": {
+      "rows": 88,
+      "explicit_dnp": 0,
+      "missing_mpn_populate_rows": 0,
+      "candidate_mpn_rows": 88
+    }
+  },
+  "board_inputs": {
+    "alec-main": {
+      "bom_path": "boards/alec-main/review/bom.csv",
+      "bom_sha256": "6140eed2e0c940306ad539fc3f6377f0f3fa43a7d35b4adde0ca1ed3e484385e",
+      "pcb_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+      "schematic_sha256": "c018caa4af4b9e1c447e77db778ceab7783be0a68f3d7afa4315d6d86b4e3536"
+    },
+    "alec-controls": {
+      "bom_path": "boards/alec-controls/review/bom.csv",
+      "bom_sha256": "556cebc37840f20d6c5f27ab2e68f8dc042886508bb94070cce1c0303155290a",
+      "pcb_sha256": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4",
+      "schematic_sha256": "babde019c24a9e8d6d8e37ba2da1eed0d94f982b57d29ea06e4b50cdc9a501c4"
+    },
+    "alec-front": {
+      "bom_path": "boards/alec-front/review/bom.csv",
+      "bom_sha256": "a11ac5259368f52d5f629027ef7bd9d746e5cbeea54cb4dc2a756c5fc4433961",
+      "pcb_sha256": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0",
+      "schematic_sha256": "c1b96a15953fb801559de8dcc0c884e8d090fb42ebfd70af9384590418f39127"
+    },
+    "alec-sensor": {
+      "bom_path": "boards/alec-sensor/review/bom.csv",
+      "bom_sha256": "fd14c1633cb48c0a50a4aba21ec917bb4fdd25cb111b657129c3c2135ba7fef0",
+      "pcb_sha256": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "schematic_sha256": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056"
+    }
+  },
+  "summary": {
+    "source_map_matches": 69,
+    "cube_binding_matches": 136,
+    "sensor_binding_matches": 214,
+    "bom_rows": 208
+  }
+}
