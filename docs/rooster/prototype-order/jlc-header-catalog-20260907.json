@@ -1,0 +1,2312 @@
+{
+  "captured_at": "2026-09-07T23:28:27.531460+00:00",
+  "endpoint": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "scope": "Public read-only candidate search; no orders.",
+  "queries": [
+    {
+      "query": "61300411121",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C5184785",
+          "componentModelEn": "61300411121",
+          "componentBrandEn": "Wurth Elektronik",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-40\u2103~+105\u2103 1 1x4P 2.54mm 250V 3A 3mm 4P 6mm Black Copper alloy Gold Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 2418,
+          "canPresaleNumber": 2366,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2331
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1856
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.165
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.1394
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.1282
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1214
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1169
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.1235
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2246
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.159
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.1343
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1787
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 39,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "WurthElektronik-61300411121/C5184785",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2306061152_Wurth-Elektronik-61300411121_C5184785.pdf",
+          "dataManualOfficialLink": "https://www.we-online.com/components/products/datasheet/61300411121.pdf",
+          "url": "https://jlcpcb.com/partdetail/WurthElektronik-61300411121/C5184785",
+          "exact_model_match": true
+        }
+      ]
+    },
+    {
+      "query": "TSW-104-07-G-S",
+      "total_search_matches": 27,
+      "matches": [
+        {
+          "componentCode": "C3335156",
+          "componentModelEn": "TSW-104-07-G-S",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 1x4P 2.54mm 2.54mm 2.54mm 4P 5.84mm Black Gold Phosphor bronze Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 299,
+          "canPresaleNumber": 290,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.6644
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.5442
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.4841
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 0.4256
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.3899
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.372
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.3584
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 0.41
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.4663
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.64
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.3756
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.5242
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 17,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-TSW_104_07_GS/C3335156",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403120910_Samtec-TSW-104-07-G-S_C3335156.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-TSW_104_07_GS/C3335156",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C3335226",
+          "componentModelEn": "HTSW-104-07-G-S",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 1x4P 2.54mm 2.54mm 2.54mm 4P 5.84mm Gold Phosphor bronze Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 2,
+          "canPresaleNumber": -1,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.2713
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.2648
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.2616
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 101,
+              "productPrice": 0.2583
+            },
+            {
+              "startNumber": 102,
+              "endNumber": 103,
+              "productPrice": 0.2583
+            },
+            {
+              "startNumber": 104,
+              "endNumber": -1,
+              "productPrice": 0.2583
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 100,
+              "endNumber": 101,
+              "productPrice": 0.2488
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.252
+            },
+            {
+              "startNumber": 102,
+              "endNumber": 103,
+              "productPrice": 0.2488
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.2614
+            },
+            {
+              "startNumber": 104,
+              "endNumber": -1,
+              "productPrice": 0.2488
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.2551
+            }
+          ],
+          "minPurchaseNum": 35,
+          "preMinPurchaseNum": 35,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-HTSW_104_07_GS/C3335226",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2404070913_Samtec-HTSW-104-07-G-S_C3335226.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-HTSW_104_07_GS/C3335226",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C5654834",
+          "componentModelEn": "HTSW-104-07-G-S-LL",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 4P Gold Phosphor bronze Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.5481
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 1.5481
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 1.5481
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.6173
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.5978
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.5864
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 1.4913
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.5947
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 1.4913
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.4913
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.5649
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.5759
+            }
+          ],
+          "minPurchaseNum": 6,
+          "preMinPurchaseNum": 6,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-HTSW_104_07_G_SLL/C5654834",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-HTSW_104_07_G_SLL/C5654834",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3328148",
+          "componentModelEn": "MTSW-104-07-G-S-170",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 2.54mm 3A 4.06mm 4.32mm 4P Black Gold Phosphor bronze Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 100,
+          "canPresaleNumber": 100,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.973
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.7879
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.6937
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 0.6027
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.5475
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.5182
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.4992
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 0.5806
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.6682
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.9373
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.5274
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.759
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 12,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S170/C3328148",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031741_Samtec-MTSW-104-07-G-S-170_C3328148.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S170/C3328148",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3324487",
+          "componentModelEn": "MTSW-104-07-G-S-145",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 2.54mm 3.7mm 3A 4.7mm 4P Black Gold Phosphor bronze Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1638
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1581
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1552
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1495
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1578
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1523
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.4075
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S145/C3324487",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031719_Samtec-MTSW-104-07-G-S-145_C3324487.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S145/C3324487",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3326593",
+          "componentModelEn": "MTSW-104-07-G-S-100",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 2.54mm 2.54mm 3A 4P 5.84mm Black Gold Phosphor Bronze Pin Header Through Hole Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1638
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1581
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1552
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1495
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1578
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1523
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.4075
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 5,
+          "lossNumber": 5,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S100/C3326593",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031732_Samtec-MTSW-104-07-G-S-100_C3326593.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S100/C3326593",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3336112",
+          "componentModelEn": "MTSW-104-07-G-S-130",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 2.54mm 3.3mm 3A 4P 5.08mm Black Gold Phosphor bronze Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.9194
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.9194
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.9194
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.3558
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.3444
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.3379
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.3255
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.3427
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.8857
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.8857
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.3318
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.8857
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S130/C3336112",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404070917_Samtec-MTSW-104-07-G-S-130_C3336112.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S130/C3336112",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3337967",
+          "componentModelEn": "MTSW-104-07-G-S-120",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 2.54mm 3.05mm 3A 4P 5.33mm Black Gold Phosphor bronze Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1638
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1581
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1552
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1495
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1578
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1523
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.4075
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S120/C3337967",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404070926_Samtec-MTSW-104-07-G-S-120_C3337967.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S120/C3337967",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3347732",
+          "componentModelEn": "MTSW-104-07-G-S-140",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Black Gold Phosphor bronze Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1638
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1581
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1552
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1495
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1578
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1523
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.4075
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S140/C3347732",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404071015_Samtec-MTSW-104-07-G-S-140_C3347732.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S140/C3347732",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3347912",
+          "componentModelEn": "MTSW-104-07-G-S-180",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 2.54mm 3.81mm 3A 4.57mm 4P Black Gold Phosphor bronze Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1638
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1581
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1552
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1495
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1578
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1523
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.4075
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S180/C3347912",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404071016_Samtec-MTSW-104-07-G-S-180_C3347912.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S180/C3347912",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3348445",
+          "componentModelEn": "MTSW-104-07-G-S-150",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 2.54mm 3.81mm 3A 4.57mm 4P Black Gold Phosphor bronze Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.423
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1638
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1581
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1552
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.1495
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.1578
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.4075
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.1523
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.4075
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S150/C3348445",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404071019_Samtec-MTSW-104-07-G-S-150_C3348445.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S150/C3348445",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6321890",
+          "componentModelEn": "MTSW-104-07-G-S-240",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Black Gold Phosphor Bronze Through Hole Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.7294
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.7294
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 0.7294
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.2924
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.2827
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.2778
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 0.7026
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.2817
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.7026
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.7026
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.2676
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.2723
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S240/C6321890",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312100909_Samtec-MTSW-104-07-G-S-240_C6321890.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S240/C6321890",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6608604",
+          "componentModelEn": "MTSW-104-07-G-S-236",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Black Gold Phosphor Bronze Through Hole Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7489
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7229
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7115
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6854
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7214
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6964
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8058
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S236/C6608604",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312141212_Samtec-MTSW-104-07-G-S-236_C6608604.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S236/C6608604",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6696358",
+          "componentModelEn": "MTSW-104-07-G-S-220",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Black Gold Phosphor bronze Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7489
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7229
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7115
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6854
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7214
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6964
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8058
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S220/C6696358",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312240825_Samtec-MTSW-104-07-G-S-220_C6696358.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S220/C6696358",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6696362",
+          "componentModelEn": "MTSW-104-07-G-S-229",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Black Gold Phosphor Bronze Through Hole Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7489
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7229
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7115
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6854
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7214
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6964
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8058
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S229/C6696362",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312240825_Samtec-MTSW-104-07-G-S-229_C6696362.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S229/C6696362",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C20366311",
+          "componentModelEn": "HTSW-104-07-G-S-001",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.9769
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 1.9769
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 1.9769
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.7895
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.7635
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.7505
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 1.9044
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.7605
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 1.9044
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.9044
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.723
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.7355
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-HTSW_104_07_G_S001/C20366311",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2401171310_Samtec-HTSW-104-07-G-S-001_C20366311.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-HTSW_104_07_G_S001/C20366311",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C20378356",
+          "componentModelEn": "MTSW-104-07-G-S-055",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7489
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7229
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7115
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6854
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7214
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6964
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8058
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S055/C20378356",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2401220908_Samtec-MTSW-104-07-G-S-055_C20378356.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S055/C20378356",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C20378358",
+          "componentModelEn": "MTSW-104-07-G-S-178",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7489
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7229
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7115
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6854
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7214
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6964
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8058
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S178/C20378358",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2401220908_Samtec-MTSW-104-07-G-S-178_C20378358.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S178/C20378358",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C20378359",
+          "componentModelEn": "MTSW-104-07-G-S-195",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7489
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7229
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7115
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6854
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7214
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6964
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8058
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S195/C20378359",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2401220908_Samtec-MTSW-104-07-G-S-195_C20378359.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S195/C20378359",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C20378360",
+          "componentModelEn": "MTSW-104-07-G-S-218",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7489
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7229
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7115
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6854
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7214
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6964
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8058
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S218/C20378360",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2401220908_Samtec-MTSW-104-07-G-S-218_C20378360.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S218/C20378360",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C20378361",
+          "componentModelEn": "MTSW-104-07-G-S-248",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7489
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7229
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7115
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6854
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7214
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.8058
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6964
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8058
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S248/C20378361",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2401220908_Samtec-MTSW-104-07-G-S-248_C20378361.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S248/C20378361",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C5757166",
+          "componentModelEn": "HMTSW-104-07-G-S-150",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Gold Phosphor Bronze Through Hole Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.4896
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 1.4896
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 1.4896
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.5946
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.5751
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.5653
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 1.4349
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.5728
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 1.4349
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.4349
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.5446
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.554
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-HMTSW_104_07_G_S150/C5757166",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312021724_Samtec-HMTSW-104-07-G-S-150_C5757166.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-HMTSW_104_07_G_S150/C5757166",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6268941",
+          "componentModelEn": "HMTSW-104-07-G-S-230",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Gold Phosphor Bronze Through Hole Plugin,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.4896
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 1.4896
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 1.4896
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.5946
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.5751
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.5653
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 12,
+              "endNumber": 202,
+              "productPrice": 1.4349
+            },
+            {
+              "startNumber": 203,
+              "endNumber": 496,
+              "productPrice": 0.5728
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 1.4349
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.4349
+            },
+            {
+              "startNumber": 1001,
+              "endNumber": -1,
+              "productPrice": 0.5446
+            },
+            {
+              "startNumber": 497,
+              "endNumber": 1000,
+              "productPrice": 0.554
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-HMTSW_104_07_G_S230/C6268941",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312091806_Samtec-HMTSW-104-07-G-S-230_C6268941.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-HMTSW_104_07_G_S230/C6268941",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6114478",
+          "componentModelEn": "MTSW-104-07-G-S-120-RA",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Push-Pull,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Black Gold Phosphor Bronze Right Angle Push-Pull,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 2.0451
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 2.0451
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 2.0451
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.8155
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7895
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7749
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7464
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7856
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.9701
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.9701
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7605
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.9701
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S_120RA/C6114478",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312072056_Samtec-MTSW-104-07-G-S-120-RA_C6114478.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S_120RA/C6114478",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6608602",
+          "componentModelEn": "MTSW-104-07-G-S-100-RA",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Push-Pull,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 3A 4P Black Gold Phosphor Bronze Right Angle Push-Pull,P=2.54mm Pin Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 2.0451
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 2.0451
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 2.0451
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.8155
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7895
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7749
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.7464
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.7856
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 1.9701
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.9701
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.7605
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.9701
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-MTSW_104_07_G_S_100RA/C6608602",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312141212_Samtec-MTSW-104-07-G-S-100-RA_C6608602.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-MTSW_104_07_G_S_100RA/C6608602",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "GRM31CR61A107ME11L",
+      "total_search_matches": 0,
+      "matches": []
+    }
+  ]
+}

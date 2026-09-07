@@ -7,8 +7,9 @@
 Order preparation has started on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2c60616f77a5116eba637098acf98`. No quote, supplier submission, manufacturing release or order exists yet. The existing design reviews supply the starting evidence; this directory is an order workspace, not an upload-ready release.
 
 - [Input audit](input-audit.json): 69 source-map hashes match this checkout; 136 Cube saved bindings match; 214 Sensor bindings match their preserved review inputs. PRs #126/#127 remain merged, with no open PRs at capture. These checks verify evidence continuity, not electrical or physical performance.
-- [Sourcing inventory](sourcing.csv): 208 source review BOM rows across the four boards, including one explicit DNP. The Cube main review BOM has 95 populated rows without an explicit MPN. Existing MPNs are candidates pending verification; empty supplier and assembly fields are unresolved.
+- [Sourcing inventory](sourcing.csv): 208 source review BOM rows across the four boards, including one explicit DNP. All 207 fitted rows now have proposed exact MPNs and manufacturer-specific catalog IDs, including the 95 populated main-board rows missing MPNs in the original review. [Part selection review](part-selection-review.md) records substitutions, confirmed facts and remaining checks; these proposals are not yet the native or upload BOM. Of the 51 proposed unique parts, the RTC has no ready catalog stock.
 - Native boards, schematics, models and firmware are unchanged by this kickoff. The CSV is a working sourcing list, not a supplier-upload BOM.
+- [Draft quote BOM/CPL inputs](draft-quote-inputs/README.md): four BOMs and four placement files now cover all 207 fitted references, including both faces and through-hole parts. They combine proposed sourcing with native positions; final source-field updates, component checks, supplier rotations and fabrication outputs remain open.
 
 ## Board scope
 

@@ -1,0 +1,999 @@
+{
+  "status": "Working proposal; native MPNs not updated; not an upload BOM or purchase approval",
+  "native_baseline": "0d0d8af3b1d2c60616f77a5116eba637098acf98",
+  "date": "2026-09-07",
+  "count_fitted_references": 207,
+  "fitted_components_two_sets": 414,
+  "quantity_excludes": "Attrition, MOQ, spare parts, sockets mates, harnesses, radar/display modules and other external items",
+  "parts": [
+    {
+      "proposed_mpn": "RC0402FR-074K7L",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C105871",
+      "references": {
+        "alec-main": [
+          "R16",
+          "R17",
+          "R37",
+          "R38"
+        ],
+        "alec-sensor": [
+          "R16",
+          "R17"
+        ]
+      },
+      "fitted_quantity_two_sets": 12,
+      "observed_stock": 7007150,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR074K7L/C105871",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-075K1L",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C105872",
+      "references": {
+        "alec-main": [
+          "R14",
+          "R15"
+        ],
+        "alec-sensor": [
+          "R14",
+          "R15"
+        ]
+      },
+      "fitted_quantity_two_sets": 8,
+      "observed_stock": 2314706,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR075K1L/C105872",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-07330RL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C105875",
+      "references": {
+        "alec-main": [
+          "R28"
+        ],
+        "alec-sensor": [
+          "R28"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 2386202,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07330RL/C105875",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-07100RL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C106232",
+      "references": {
+        "alec-main": [
+          "R50",
+          "R51",
+          "R52",
+          "R53"
+        ]
+      },
+      "fitted_quantity_two_sets": 8,
+      "observed_stock": 4363518,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07100RL/C106232",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "TPS63070RNMR",
+      "manufacturer": "Texas Instruments",
+      "supplier_part_id": "C109322",
+      "references": {
+        "alec-main": [
+          "U1",
+          "U2"
+        ],
+        "alec-sensor": [
+          "U1",
+          "U2"
+        ]
+      },
+      "fitted_quantity_two_sets": 8,
+      "observed_stock": 14200,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/TexasInstruments-TPS63070RNMR/C109322",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-0722RL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C114765",
+      "references": {
+        "alec-main": [
+          "R34",
+          "R35"
+        ],
+        "alec-sensor": [
+          "R34",
+          "R35"
+        ]
+      },
+      "fitted_quantity_two_sets": 8,
+      "observed_stock": 4597461,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR0722RL/C114765",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "LTST-C190KGKT",
+      "manufacturer": "Lite-On",
+      "supplier_part_id": "C125094",
+      "references": {
+        "alec-main": [
+          "D1"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 234326,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/LiteOn-LTSTC190KGKT/C125094",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-07470KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C137976",
+      "references": {
+        "alec-main": [
+          "R4"
+        ],
+        "alec-sensor": [
+          "R4"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 51593,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07470KL/C137976",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-071ML",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C138033",
+      "references": {
+        "alec-main": [
+          "R41"
+        ],
+        "alec-sensor": [
+          "R41"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 1955904,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR071ML/C138033",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "CL31A107MQHNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "supplier_part_id": "C15008",
+      "references": {
+        "alec-sensor": [
+          "C21"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 2560820,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/15681-CL31A107MQHNNNE/C15008",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "AO3401A",
+      "manufacturer": "Alpha & Omega Semicon",
+      "supplier_part_id": "C15127",
+      "references": {
+        "alec-main": [
+          "Q1",
+          "Q2",
+          "Q6"
+        ],
+        "alec-sensor": [
+          "Q1",
+          "Q6"
+        ]
+      },
+      "fitted_quantity_two_sets": 10,
+      "observed_stock": 796402,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/Alpha_OmegaSemicon-AO3401A/C15127",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "B2B-PH-SM4-TB(LF)(SN)",
+      "manufacturer": "JST",
+      "supplier_part_id": "C160352",
+      "references": {
+        "alec-main": [
+          "J1",
+          "J3"
+        ],
+        "alec-sensor": [
+          "J1"
+        ]
+      },
+      "fitted_quantity_two_sets": 6,
+      "observed_stock": 52313,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TB_LF_SN/C160352",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-07680KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C163456",
+      "references": {
+        "alec-main": [
+          "R8"
+        ],
+        "alec-sensor": [
+          "R8"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 699242,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07680KL/C163456",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "TYPE-C-31-M-12",
+      "manufacturer": "Korean Hroparts Elec",
+      "supplier_part_id": "C165948",
+      "references": {
+        "alec-main": [
+          "J2"
+        ],
+        "alec-sensor": [
+          "J2"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 293634,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "SN74LVC2G66DCUR",
+      "manufacturer": "Texas Instruments",
+      "supplier_part_id": "C181970",
+      "references": {
+        "alec-main": [
+          "U7"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 3909,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/TexasInstruments-SN74LVC2G66DCUR/C181970",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "046701.5NRHF",
+      "manufacturer": "Littelfuse",
+      "supplier_part_id": "C187608",
+      "references": {
+        "alec-sensor": [
+          "F1"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 4109,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/Littelfuse-0467015NRHF/C187608",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "BM06B-GHS-TBT(LF)(SN)",
+      "manufacturer": "JST",
+      "supplier_part_id": "C189892",
+      "references": {
+        "alec-front": [
+          "J1"
+        ],
+        "alec-main": [
+          "J6"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 2984,
+      "catalog_capture": "jlc-catalog-followup-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/JST-BM06B_GHS_TBT_LF_SN/C189892",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RT0402BRD0710KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C190095",
+      "references": {
+        "alec-main": [
+          "R49"
+        ],
+        "alec-sensor": [
+          "R49"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 781556,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RT0402BRD0710KL/C190095",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "1101M2S3CQE2",
+      "manufacturer": "C&K",
+      "supplier_part_id": "C221538",
+      "references": {
+        "alec-sensor": [
+          "SW1"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 54,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/CK-1101M2S3CQE2/C221538",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "B3U-1000P",
+      "manufacturer": "Omron Electronics",
+      "supplier_part_id": "C231329",
+      "references": {
+        "alec-front": [
+          "SW1"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 189404,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/OmronElectronics-B3U1000P/C231329",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "0402WGF1500TCE",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "supplier_part_id": "C25082",
+      "references": {
+        "alec-main": [
+          "R29",
+          "R30"
+        ],
+        "alec-sensor": [
+          "R29",
+          "R30"
+        ]
+      },
+      "fitted_quantity_two_sets": 8,
+      "observed_stock": 236733,
+      "catalog_capture": "jlc-resistor-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/25825-0402WGF1500TCE/C25082",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "EG1218",
+      "manufacturer": "E-Switch",
+      "supplier_part_id": "C273394",
+      "references": {
+        "alec-controls": [
+          "SW4"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 188,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/ESwitch-EG1218/C273394",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "TMUX1511PWR",
+      "manufacturer": "Texas Instruments",
+      "supplier_part_id": "C2866750",
+      "references": {
+        "alec-sensor": [
+          "U10"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 5497,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/TexasInstruments-TMUX1511PWR/C2866750",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "ESP32-S3-WROOM-1-N16",
+      "manufacturer": "Espressif Systems",
+      "supplier_part_id": "C2913199",
+      "references": {
+        "alec-main": [
+          "U3"
+        ],
+        "alec-sensor": [
+          "U3"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 229,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/3198297-ESP32_S3_WROOM_1N16/C2913199",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RV-3028-C7-32.768kHz-1ppm-TA-QC",
+      "manufacturer": "Micro Crystal",
+      "supplier_part_id": "C3019759",
+      "references": {
+        "alec-main": [
+          "U5"
+        ],
+        "alec-sensor": [
+          "U5"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 0,
+      "catalog_capture": "jlc-catalog-followup-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/C3019759",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "XFL4020-152MEC",
+      "manufacturer": "Coilcraft",
+      "supplier_part_id": "C3033018",
+      "references": {
+        "alec-main": [
+          "L1",
+          "L2"
+        ],
+        "alec-sensor": [
+          "L1",
+          "L2"
+        ]
+      },
+      "fitted_quantity_two_sets": 8,
+      "observed_stock": 2535,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/Coilcraft-XFL4020152MEC/C3033018",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "TS-1187A-B-A-B",
+      "manufacturer": "XKB Connection",
+      "supplier_part_id": "C318884",
+      "references": {
+        "alec-main": [
+          "SW2",
+          "SW3"
+        ],
+        "alec-sensor": [
+          "SW2",
+          "SW3",
+          "SW7"
+        ]
+      },
+      "fitted_quantity_two_sets": 10,
+      "observed_stock": 849899,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/XKBConnection-TS_1187A_B_AB/C318884",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "TSW-104-07-G-S",
+      "manufacturer": "Samtec",
+      "supplier_part_id": "C3335156",
+      "references": {
+        "alec-main": [
+          "J4"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 299,
+      "catalog_capture": "jlc-header-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/Samtec-TSW_104_07_GS/C3335156",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM21BR61A226ME44L",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C441864",
+      "references": {
+        "alec-main": [
+          "C17"
+        ],
+        "alec-sensor": [
+          "C17"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 9300,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/442088-GRM21BR61A226ME44L/C441864",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM188R71C104KA01D",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C45000",
+      "references": {
+        "alec-sensor": [
+          "C36",
+          "C37"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 71395,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/MurataElectronics-GRM188R71C104KA01D/C45000",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "BM07B-GHS-TBT(LF)(SN)",
+      "manufacturer": "JST",
+      "supplier_part_id": "C5305068",
+      "references": {
+        "alec-controls": [
+          "J1"
+        ],
+        "alec-main": [
+          "J5"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 4069,
+      "catalog_capture": "jlc-catalog-followup-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/JST-BM07B_GHS_TBT_LF_SN/C5305068",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "150141M173100",
+      "manufacturer": "Wurth Elektronik",
+      "supplier_part_id": "C5342281",
+      "references": {
+        "alec-front": [
+          "D1"
+        ],
+        "alec-sensor": [
+          "D2"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 988,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/WurthElektronik-150141M173100/C5342281",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "SSW-105-01-F-S",
+      "manufacturer": "Samtec",
+      "supplier_part_id": "C5930350",
+      "references": {
+        "alec-sensor": [
+          "J3"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 33,
+      "catalog_capture": "jlc-radar-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/Samtec-SSW_105_01_FS/C5930350",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-0710KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C60490",
+      "references": {
+        "alec-main": [
+          "R12",
+          "R13",
+          "R18",
+          "R22",
+          "R24",
+          "R25",
+          "R26",
+          "R27",
+          "R3",
+          "R31",
+          "R33",
+          "R43",
+          "R46",
+          "R7"
+        ],
+        "alec-sensor": [
+          "R3",
+          "R7",
+          "R12",
+          "R13",
+          "R18",
+          "R27",
+          "R31",
+          "R33",
+          "R43",
+          "R46"
+        ]
+      },
+      "fitted_quantity_two_sets": 48,
+      "observed_stock": 9287763,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR0710KL/C60490",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-07100KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C60491",
+      "references": {
+        "alec-main": [
+          "R1",
+          "R10",
+          "R19",
+          "R20",
+          "R21",
+          "R23",
+          "R32",
+          "R36",
+          "R39",
+          "R40",
+          "R45",
+          "R47",
+          "R6"
+        ],
+        "alec-sensor": [
+          "R1",
+          "R6",
+          "R10",
+          "R19",
+          "R32",
+          "R40",
+          "R45",
+          "R47",
+          "R54",
+          "R55",
+          "R56"
+        ]
+      },
+      "fitted_quantity_two_sets": 48,
+      "observed_stock": 5950318,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07100KL/C60491",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM188R61A106KAALD",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C703114",
+      "references": {
+        "alec-main": [
+          "C11",
+          "C13",
+          "C3",
+          "C5"
+        ],
+        "alec-sensor": [
+          "C3",
+          "C5",
+          "C11",
+          "C13",
+          "C35"
+        ]
+      },
+      "fitted_quantity_two_sets": 18,
+      "observed_stock": 4065,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/738543-GRM188R61A106KAALD/C703114",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM155R71C104KA88D",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C71629",
+      "references": {
+        "alec-main": [
+          "C12",
+          "C18",
+          "C20",
+          "C22",
+          "C23",
+          "C24",
+          "C25",
+          "C28",
+          "C29",
+          "C30",
+          "C32",
+          "C33",
+          "C34",
+          "C4"
+        ],
+        "alec-sensor": [
+          "C4",
+          "C12",
+          "C18",
+          "C20",
+          "C25",
+          "C29",
+          "C34"
+        ]
+      },
+      "fitted_quantity_two_sets": 42,
+      "observed_stock": 2603189,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/MurataElectronics-GRM155R71C104KA88D/C71629",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "B3F-1060",
+      "manufacturer": "Omron Electronics",
+      "supplier_part_id": "C726010",
+      "references": {
+        "alec-controls": [
+          "SW1",
+          "SW2",
+          "SW3"
+        ]
+      },
+      "fitted_quantity_two_sets": 6,
+      "observed_stock": 28,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/OmronElectronics-B3F1060/C726010",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RT0402BRD0733KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C728559",
+      "references": {
+        "alec-main": [
+          "R48"
+        ],
+        "alec-sensor": [
+          "R48"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 34332,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RT0402BRD0733KL/C728559",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "USBLC6-2SC6",
+      "manufacturer": "STMicroelectronics",
+      "supplier_part_id": "C7519",
+      "references": {
+        "alec-main": [
+          "U4"
+        ],
+        "alec-sensor": [
+          "U4"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 44883,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/STMicroelectronics-USBLC62SC6/C7519",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM155R61A105KE15D",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C76999",
+      "references": {
+        "alec-main": [
+          "C19"
+        ],
+        "alec-sensor": [
+          "C19"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 481394,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/MurataElectronics-GRM155R61A105KE15D/C76999",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM31CR61C226KE15L",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C77088",
+      "references": {
+        "alec-main": [
+          "C14",
+          "C15",
+          "C16",
+          "C6",
+          "C7",
+          "C8"
+        ],
+        "alec-sensor": [
+          "C6",
+          "C7",
+          "C8",
+          "C14",
+          "C15",
+          "C16"
+        ]
+      },
+      "fitted_quantity_two_sets": 24,
+      "observed_stock": 20784,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/MurataElectronics-GRM31CR61C226KE15L/C77088",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "SN74LVC1T45DBVR",
+      "manufacturer": "Texas Instruments",
+      "supplier_part_id": "C7843",
+      "references": {
+        "alec-main": [
+          "U8"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 79682,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/TexasInstruments-SN74LVC1T45DBVR/C7843",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "MMBT3904LT1G",
+      "manufacturer": "onsemi",
+      "supplier_part_id": "C81464",
+      "references": {
+        "alec-main": [
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q7"
+        ],
+        "alec-sensor": [
+          "Q4",
+          "Q5",
+          "Q7"
+        ]
+      },
+      "fitted_quantity_two_sets": 14,
+      "observed_stock": 1868124,
+      "catalog_capture": "jlc-catalog-followup-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/onsemi-MMBT3904LT1G/C81464",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM21BR61E106KA73L",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C84416",
+      "references": {
+        "alec-main": [
+          "C1",
+          "C10",
+          "C2",
+          "C27",
+          "C9"
+        ],
+        "alec-sensor": [
+          "C1",
+          "C2",
+          "C9",
+          "C10"
+        ]
+      },
+      "fitted_quantity_two_sets": 18,
+      "observed_stock": 14880,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/MurataElectronics-GRM21BR61E106KA73L/C84416",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM188R61A105KA61D",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C86012",
+      "references": {
+        "alec-main": [
+          "C31"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 39591,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/MurataElectronics-GRM188R61A105KA61D/C86012",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "GRM31CR61A107MEA8L",
+      "manufacturer": "Murata Electronics",
+      "supplier_part_id": "C883598",
+      "references": {
+        "alec-main": [
+          "C21",
+          "C26"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 243955,
+      "catalog_capture": "jlc-catalog-followup-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/948963-GRM31CR61A107MEA8L/C883598",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "MAX98357AETE+T",
+      "manufacturer": "Analog Devices Inc./Maxim Integrated",
+      "supplier_part_id": "C910544",
+      "references": {
+        "alec-main": [
+          "U6"
+        ]
+      },
+      "fitted_quantity_two_sets": 2,
+      "observed_stock": 19065,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/978950-MAX98357AETET/C910544",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-0747KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C93943",
+      "references": {
+        "alec-main": [
+          "R42",
+          "R44"
+        ],
+        "alec-sensor": [
+          "R42",
+          "R44"
+        ]
+      },
+      "fitted_quantity_two_sets": 8,
+      "observed_stock": 3459630,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR0747KL/C93943",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-07130KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C93946",
+      "references": {
+        "alec-main": [
+          "R9"
+        ],
+        "alec-sensor": [
+          "R9"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 683097,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07130KL/C93946",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    },
+    {
+      "proposed_mpn": "RC0402FR-07150KL",
+      "manufacturer": "YAGEO",
+      "supplier_part_id": "C93947",
+      "references": {
+        "alec-main": [
+          "R5"
+        ],
+        "alec-sensor": [
+          "R5"
+        ]
+      },
+      "fitted_quantity_two_sets": 4,
+      "observed_stock": 965672,
+      "catalog_capture": "jlc-catalog-20260907.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07150KL/C93947",
+      "status": "PROPOSAL_REVIEW_OPEN"
+    }
+  ]
+}

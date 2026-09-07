@@ -1,0 +1,383 @@
+{
+  "captured_at": "2026-09-07T23:27:25.254357+00:00",
+  "scope": "Public read-only candidate search; no orders.",
+  "endpoint": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "queries": [
+    {
+      "query": "ERJ-2RKF1500X",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C413067",
+          "componentModelEn": "ERJ2RKF1500X",
+          "componentBrandEn": "PANASONIC",
+          "componentSpecificationEn": "0402",
+          "describe": "-55\u2103~+155\u2103 100mW 150\u03a9 Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chip Resistor - Surface Mount ROHS",
+          "stockCount": 36406,
+          "canPresaleNumber": 34218,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0043
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.0034
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0029
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0026
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 99999,
+              "productPrice": 0.0024
+            },
+            {
+              "startNumber": 100000,
+              "endNumber": -1,
+              "productPrice": 0.0022
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0041
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 99999,
+              "productPrice": 0.0023
+            },
+            {
+              "startNumber": 100000,
+              "endNumber": -1,
+              "productPrice": 0.0021
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0028
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0025
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.0033
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 2634,
+          "leastPatchNumber": 20,
+          "lossNumber": 10,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "PANASONIC-ERJ2RKF1500X/C413067",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_PANASONIC-ERJ2RKF1500X_C413067.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/PANASONIC-ERJ2RKF1500X/C413067",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "ERJ2RKF1500X",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C413067",
+          "componentModelEn": "ERJ2RKF1500X",
+          "componentBrandEn": "PANASONIC",
+          "componentSpecificationEn": "0402",
+          "describe": "-55\u2103~+155\u2103 100mW 150\u03a9 Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chip Resistor - Surface Mount ROHS",
+          "stockCount": 36406,
+          "canPresaleNumber": 34218,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0043
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.0034
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0029
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0026
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 99999,
+              "productPrice": 0.0024
+            },
+            {
+              "startNumber": 100000,
+              "endNumber": -1,
+              "productPrice": 0.0022
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0041
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 99999,
+              "productPrice": 0.0023
+            },
+            {
+              "startNumber": 100000,
+              "endNumber": -1,
+              "productPrice": 0.0021
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0028
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0025
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.0033
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 2634,
+          "leastPatchNumber": 20,
+          "lossNumber": 10,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "PANASONIC-ERJ2RKF1500X/C413067",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_PANASONIC-ERJ2RKF1500X_C413067.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/PANASONIC-ERJ2RKF1500X/C413067",
+          "exact_model_match": true
+        }
+      ]
+    },
+    {
+      "query": "AC0402FR-07150RL",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C226790",
+          "componentModelEn": "AC0402FR-07150RL",
+          "componentBrandEn": "YAGEO",
+          "componentSpecificationEn": "0402",
+          "describe": "-55\u2103~+155\u2103 150\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chip Resistor - Surface Mount ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": -7,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0013
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.001
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0009
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0008
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 50199,
+              "productPrice": 0.0007
+            },
+            {
+              "startNumber": 50200,
+              "endNumber": -1,
+              "productPrice": 0.0007
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0012
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0008
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 50199,
+              "productPrice": 0.0007
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0008
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.001
+            },
+            {
+              "startNumber": 50200,
+              "endNumber": -1,
+              "productPrice": 0.0007
+            }
+          ],
+          "minPurchaseNum": 9951,
+          "preMinPurchaseNum": 9951,
+          "leastPatchNumber": 20,
+          "lossNumber": 10,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "YAGEO-AC0402FR07150RL/C226790",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-AC0402FR-07150RL_C226790.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/YAGEO-AC0402FR07150RL/C226790",
+          "exact_model_match": true
+        }
+      ]
+    },
+    {
+      "query": "0402WGF1500TCE",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C25082",
+          "componentModelEn": "0402WGF1500TCE",
+          "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
+          "componentSpecificationEn": "0402",
+          "describe": "-55\u2103~+155\u2103 150\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chip Resistor - Surface Mount ROHS",
+          "stockCount": 236733,
+          "canPresaleNumber": 121332,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0026
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.002
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0018
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0016
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 50199,
+              "productPrice": 0.0014
+            },
+            {
+              "startNumber": 50200,
+              "endNumber": -1,
+              "productPrice": 0.0014
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0025
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0016
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 50199,
+              "productPrice": 0.0014
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0017
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.002
+            },
+            {
+              "startNumber": 50200,
+              "endNumber": -1,
+              "productPrice": 0.0014
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 4976,
+          "leastPatchNumber": 20,
+          "lossNumber": 10,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "25825-0402WGF1500TCE/C25082",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF1500TCE_C25082.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/25825-0402WGF1500TCE/C25082",
+          "exact_model_match": true
+        }
+      ]
+    }
+  ]
+}

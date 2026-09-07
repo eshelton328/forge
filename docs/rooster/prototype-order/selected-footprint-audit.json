@@ -1,0 +1,791 @@
+{
+  "tool": "KiCad pcbnew 10.0.1; read-only extraction",
+  "date": "2026-09-07",
+  "scope": "Selected footprint pad dimensions and local positions, with native source hashes. Back-side local coordinates include the KiCad mirror; manufacturer/assembler zero rotation is not implied.",
+  "footprints": {
+    "alec-main/Q3": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "side": "F.Cu",
+      "angle_degrees": 0.0,
+      "pads": [
+        {
+          "pin": "1",
+          "local_position_mm": [
+            -0.9375,
+            -0.95
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "Net-(Q3-B)"
+        },
+        {
+          "pin": "2",
+          "local_position_mm": [
+            -0.9375,
+            0.95
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "3",
+          "local_position_mm": [
+            0.9375,
+            0.0
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "Net-(Q2-G)"
+        }
+      ],
+      "native_board_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056"
+    },
+    "alec-main/J6": {
+      "footprint": "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical",
+      "side": "F.Cu",
+      "angle_degrees": 0.0,
+      "pads": [
+        {
+          "pin": "1",
+          "local_position_mm": [
+            -3.125,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "2",
+          "local_position_mm": [
+            -1.875,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/3v3"
+        },
+        {
+          "pin": "3",
+          "local_position_mm": [
+            -0.625,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/BTN_BAT"
+        },
+        {
+          "pin": "4",
+          "local_position_mm": [
+            0.625,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/LED_R_K"
+        },
+        {
+          "pin": "5",
+          "local_position_mm": [
+            1.875,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/LED_G_K"
+        },
+        {
+          "pin": "6",
+          "local_position_mm": [
+            3.125,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/LED_B_K"
+        },
+        {
+          "pin": "MP",
+          "local_position_mm": [
+            -4.975,
+            -1.4
+          ],
+          "size_mm": [
+            1.0,
+            2.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": ""
+        },
+        {
+          "pin": "MP",
+          "local_position_mm": [
+            4.975,
+            -1.4
+          ],
+          "size_mm": [
+            1.0,
+            2.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": ""
+        }
+      ],
+      "native_board_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056"
+    },
+    "alec-main/C26": {
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "side": "F.Cu",
+      "angle_degrees": 0.0,
+      "pads": [
+        {
+          "pin": "1",
+          "local_position_mm": [
+            -1.475,
+            0.0
+          ],
+          "size_mm": [
+            1.15,
+            1.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/5v"
+        },
+        {
+          "pin": "2",
+          "local_position_mm": [
+            1.475,
+            0.0
+          ],
+          "size_mm": [
+            1.15,
+            1.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "GND"
+        }
+      ],
+      "native_board_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056"
+    },
+    "alec-main/J4": {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "side": "F.Cu",
+      "angle_degrees": 0.0,
+      "pads": [
+        {
+          "pin": "1",
+          "local_position_mm": [
+            0.0,
+            0.0
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "2",
+          "local_position_mm": [
+            0.0,
+            2.54
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/OLED_3V3"
+        },
+        {
+          "pin": "3",
+          "local_position_mm": [
+            0.0,
+            5.08
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/OLED_SCL"
+        },
+        {
+          "pin": "4",
+          "local_position_mm": [
+            0.0,
+            7.62
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/OLED_SDA"
+        }
+      ],
+      "native_board_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056"
+    },
+    "alec-main/J5": {
+      "footprint": "Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical",
+      "side": "F.Cu",
+      "angle_degrees": 0.0,
+      "pads": [
+        {
+          "pin": "1",
+          "local_position_mm": [
+            -3.75,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "2",
+          "local_position_mm": [
+            -2.5,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/BTN_VOL_MINUS"
+        },
+        {
+          "pin": "3",
+          "local_position_mm": [
+            -1.25,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/BTN_MODE"
+        },
+        {
+          "pin": "4",
+          "local_position_mm": [
+            0.0,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/BTN_VOL_PLUS"
+        },
+        {
+          "pin": "5",
+          "local_position_mm": [
+            1.25,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "6",
+          "local_position_mm": [
+            2.5,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/SW_ON"
+        },
+        {
+          "pin": "7",
+          "local_position_mm": [
+            3.75,
+            1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/EN_3V3"
+        },
+        {
+          "pin": "MP",
+          "local_position_mm": [
+            -5.6,
+            -1.4
+          ],
+          "size_mm": [
+            1.0,
+            2.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": ""
+        },
+        {
+          "pin": "MP",
+          "local_position_mm": [
+            5.6,
+            -1.4
+          ],
+          "size_mm": [
+            1.0,
+            2.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": ""
+        }
+      ],
+      "native_board_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056"
+    },
+    "alec-main/C21": {
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "side": "F.Cu",
+      "angle_degrees": 90.0,
+      "pads": [
+        {
+          "pin": "1",
+          "local_position_mm": [
+            -1.475,
+            0.0
+          ],
+          "size_mm": [
+            1.15,
+            1.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/3v3"
+        },
+        {
+          "pin": "2",
+          "local_position_mm": [
+            1.475,
+            0.0
+          ],
+          "size_mm": [
+            1.15,
+            1.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "GND"
+        }
+      ],
+      "native_board_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056"
+    },
+    "alec-controls/J1": {
+      "footprint": "Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical",
+      "side": "B.Cu",
+      "angle_degrees": 180.0,
+      "pads": [
+        {
+          "pin": "1",
+          "local_position_mm": [
+            -3.75,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/GND"
+        },
+        {
+          "pin": "2",
+          "local_position_mm": [
+            -2.5,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/BTN_VOL_MINUS"
+        },
+        {
+          "pin": "3",
+          "local_position_mm": [
+            -1.25,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/BTN_MODE"
+        },
+        {
+          "pin": "4",
+          "local_position_mm": [
+            0.0,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/BTN_VOL_PLUS"
+        },
+        {
+          "pin": "5",
+          "local_position_mm": [
+            1.25,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/GND"
+        },
+        {
+          "pin": "6",
+          "local_position_mm": [
+            2.5,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/SW_ON"
+        },
+        {
+          "pin": "7",
+          "local_position_mm": [
+            3.75,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/EN_3V3"
+        },
+        {
+          "pin": "MP",
+          "local_position_mm": [
+            -5.6,
+            1.4
+          ],
+          "size_mm": [
+            1.0,
+            2.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": ""
+        },
+        {
+          "pin": "MP",
+          "local_position_mm": [
+            5.6,
+            1.4
+          ],
+          "size_mm": [
+            1.0,
+            2.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": ""
+        }
+      ],
+      "native_board_sha256": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4"
+    },
+    "alec-front/J1": {
+      "footprint": "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical",
+      "side": "B.Cu",
+      "angle_degrees": 180.0,
+      "pads": [
+        {
+          "pin": "1",
+          "local_position_mm": [
+            -3.125,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/GND"
+        },
+        {
+          "pin": "2",
+          "local_position_mm": [
+            -1.875,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/3v3"
+        },
+        {
+          "pin": "3",
+          "local_position_mm": [
+            -0.625,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/BTN_BAT"
+        },
+        {
+          "pin": "4",
+          "local_position_mm": [
+            0.625,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/LED_R_K"
+        },
+        {
+          "pin": "5",
+          "local_position_mm": [
+            1.875,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/LED_G_K"
+        },
+        {
+          "pin": "6",
+          "local_position_mm": [
+            3.125,
+            -1.95
+          ],
+          "size_mm": [
+            0.6,
+            1.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": "/LED_B_K"
+        },
+        {
+          "pin": "MP",
+          "local_position_mm": [
+            -4.975,
+            1.4
+          ],
+          "size_mm": [
+            1.0,
+            2.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": ""
+        },
+        {
+          "pin": "MP",
+          "local_position_mm": [
+            4.975,
+            1.4
+          ],
+          "size_mm": [
+            1.0,
+            2.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "net": ""
+        }
+      ],
+      "native_board_sha256": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0"
+    }
+  }
+}

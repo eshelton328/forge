@@ -1,0 +1,36 @@
+{
+  "captured_at": "2026-09-07T23:42:26.756599+00:00",
+  "command": "python3 docs/rooster/prototype-order/tools/verify_sourcing.py",
+  "result": "PASS_WITH_OPEN_ENGINEERING_AND_PROCUREMENT_GATES",
+  "scope": "Original source BOM fields, catalog manufacturer/MPN identity, independently decoded passive nominal values, declared voltage/dielectric constraints, native board hash continuity. Does not validate DC-bias curves, current/thermal margin, all component drawings, assembly rotations, supplier commitments or final manufacturing files.",
+  "checks": {
+    "manufacturer_and_mpn_catalog_matches": 207,
+    "capacitor_nominal_size_and_declared_rating_checks": 61,
+    "resistor_nominals_checked": 90,
+    "source_dnp_retained": 1,
+    "grouped_unique_parts_reconciled": 51,
+    "source_rows_preserved": 208
+  },
+  "no_ready_catalog_stock_references": [
+    "alec-main/U5",
+    "alec-sensor/U5"
+  ],
+  "input_sha256": {
+    "boards/alec-main/alec-main.kicad_pcb": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+    "boards/alec-main/review/netlist.xml": "6818c499924dfde0510a367441c0e0063546d32ed85b6ca4e4f3857d6fd83120",
+    "boards/alec-controls/alec-controls.kicad_pcb": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4",
+    "boards/alec-controls/review/netlist.xml": "2aea09556efbb9c21a868182006350bd353e31f1dfa298e977e75ff34d5a85d9",
+    "boards/alec-front/alec-front.kicad_pcb": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0",
+    "boards/alec-front/review/netlist.xml": "141f8981f6297aae3cef2326e4b48c70060de1ec0e90d041e928fbe00cbfcc65",
+    "boards/alec-sensor/alec-sensor.kicad_pcb": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+    "boards/alec-sensor/review/netlist.xml": "cce1531ad74592a6bd64e6cfed84fc99fa8340e9adc4e8e7e027d10fd2e9a10d",
+    "docs/rooster/prototype-order/jlc-catalog-20260907.json": "2ed107ce195372f0994844b00e60436065696714fb4c64c79b0998e14a9b4795",
+    "docs/rooster/prototype-order/jlc-catalog-followup-20260907.json": "eae8c9bfe6c80dcd381ff98a2412efcc692a45ca0eb1fc1efd94c576e70bc066",
+    "docs/rooster/prototype-order/jlc-resistor-catalog-20260907.json": "63bb53a37da93dd712c3ea639b39685fa11d373e05ed532204f9a03010fefe09",
+    "docs/rooster/prototype-order/jlc-rtc-detail-20260907.json": "ffb6e5b318bd68a739b04f93d2e6c4e2c38e5e3d3107b84e17c504c73141a7d6",
+    "docs/rooster/prototype-order/jlc-header-catalog-20260907.json": "7be2ddefbd8d162871134495170eec8d4b93427676b7e72e33ef4b2767d34ca1",
+    "docs/rooster/prototype-order/jlc-radar-catalog-20260907.json": "e0ecd8ceeeeaedc496e0ab077a06f0e129b525e1c14c62b7efc3032139bd7c95",
+    "docs/rooster/prototype-order/sourcing.csv": "1035b3d87bfbf42231b618700cf95fa5ff4b7695bd50a1f81aacf1d8963fbca2",
+    "docs/rooster/prototype-order/proposed-parts.json": "9bcae4ab284962c0824991b7f155306b37451aaee0365d916d4914a763ed8e0e"
+  }
+}
