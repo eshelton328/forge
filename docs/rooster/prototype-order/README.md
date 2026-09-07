@@ -19,7 +19,9 @@ Order preparation has started on `codex/rooster-prototype-orders`, based on `0d0
 | Cube | alec-front | 2 |
 | Beacon | alec-sensor | 4 |
 
-Matching quantities refer to complete sets of all four designs. Quantity options await Erik’s answer; comparing two and five assembled sets is a planning option, not a purchase decision. Account separately for bare-board minimum quantities and assembled quantities when quoting.
+Erik’s selected first quote target is **5 fabricated / 2 assembled copies per design at JLCPCB**. Across four separate designs this means 20 fabricated PCBs, 8 assembled PCBs (two complete Cube + Beacon sets) and 12 spare bare PCBs. Confirm any panel/unit counting in the actual quote. Services, final cost and spending decision remain open.
+
+Equipment confirmed by Erik: **multimeter and oscilloscope**. Instrument models/probes, a current-limited source, programming cables/adapters and soldering capability are unconfirmed, not assumed absent. Review practical first-power and bare-board USB/recovery access before adding equipment to procurement. See [JLCPCB assembly preflight](jlcpcb-preflight.md).
 
 ## Remaining order work
 
