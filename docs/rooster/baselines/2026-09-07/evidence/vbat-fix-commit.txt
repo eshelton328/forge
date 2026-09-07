@@ -1,0 +1,42 @@
+commit ad268c04a01746be538a1ff84e6b9e0186a9ef9e
+Author:     Erik Shelton <59482237+eshelton328@users.noreply.github.com>
+AuthorDate: Sat Jul 18 18:12:39 2026 -0500
+Commit:     GitHub <noreply@github.com>
+CommitDate: Sat Jul 18 18:12:39 2026 -0500
+
+    fix(esp32s3-devkit): connect VBAT to Q1 drain — board shipped with a dead battery input (#118)
+    
+    The assembled boards do not power on. Root cause: Q1's drain pad (/VBAT, the
+    battery input) has no copper on it, so the battery never reaches the reverse-
+    protection FET. Confirmed on hardware — injecting battery+ at the /PFET net
+    downstream of Q1 boots the board normally.
+    
+    How it happened:
+    - The entire battery path (/VBAT, /PFET, /VBAT_SW) was routed with copper pours
+      and ZERO tracks.
+    - The /VBAT pour is pinched to 0.17 mm against the neighbouring /PFET pour right
+      where Q1's drain sits, so the fill never reached the pad.
+    - KiCad DRC reported "0 unconnected items" on every run: the ratsnest treats a
+      pad as zone-connected when the zone OUTLINE overlaps it, even though the
+      FILLED copper does not.
+    
+    Fix: route /VBAT explicitly, J1.2 -> Q1.3, 0.8 mm on F.Cu, inside the existing
+    VBAT corridor. /PFET and /VBAT_SW are left as-is: both verified to have their
+    pads inside filled copper, and proven conducting on the hardware.
+    
+    Guard so this cannot ship again: scripts/ci/check_copper_connectivity.py asserts
+    the real invariant geometrically — every pad on a multi-pad net must be inside
+    same-net filled copper or touched by a same-net track/via. Pads sharing a number
+    in one footprint (module thermal pads with heatsink vias, switch double pins)
+    count as one node. Wired into `make check` and the CI drc job.
+    
+    Verified: the guard FAILS on the pre-fix board naming exactly Q1.3, and PASSES
+    on the fixed board and on tps63070-breakout. ERC, DRC, parity, fab-DRC all pass.
+    
+    Co-authored-by: Claude Fable 5 <noreply@anthropic.com>
+
+ .github/workflows/pr-checks.yml                |  16 +++
+ Makefile                                       |  23 ++++-
+ boards/esp32s3-devkit/esp32s3-devkit.kicad_pcb |   8 ++
+ scripts/ci/check_copper_connectivity.py        | 130 +++++++++++++++++++++++++
+ 4 files changed, 174 insertions(+), 3 deletions(-)

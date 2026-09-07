@@ -1,0 +1,54 @@
+commit ad268c04a01746be538a1ff84e6b9e0186a9ef9e
+Author: Erik Shelton <59482237+eshelton328@users.noreply.github.com>
+Date:   Sat Jul 18 18:12:39 2026 -0500
+
+    fix(esp32s3-devkit): connect VBAT to Q1 drain — board shipped with a dead battery input (#118)
+    
+    The assembled boards do not power on. Root cause: Q1's drain pad (/VBAT, the
+    battery input) has no copper on it, so the battery never reaches the reverse-
+    protection FET. Confirmed on hardware — injecting battery+ at the /PFET net
+    downstream of Q1 boots the board normally.
+    
+    How it happened:
+    - The entire battery path (/VBAT, /PFET, /VBAT_SW) was routed with copper pours
+      and ZERO tracks.
+    - The /VBAT pour is pinched to 0.17 mm against the neighbouring /PFET pour right
+      where Q1's drain sits, so the fill never reached the pad.
+    - KiCad DRC reported "0 unconnected items" on every run: the ratsnest treats a
+      pad as zone-connected when the zone OUTLINE overlaps it, even though the
+      FILLED copper does not.
+    
+    Fix: route /VBAT explicitly, J1.2 -> Q1.3, 0.8 mm on F.Cu, inside the existing
+    VBAT corridor. /PFET and /VBAT_SW are left as-is: both verified to have their
+    pads inside filled copper, and proven conducting on the hardware.
+    
+    Guard so this cannot ship again: scripts/ci/check_copper_connectivity.py asserts
+    the real invariant geometrically — every pad on a multi-pad net must be inside
+    same-net filled copper or touched by a same-net track/via. Pads sharing a number
+    in one footprint (module thermal pads with heatsink vias, switch double pins)
+    count as one node. Wired into `make check` and the CI drc job.
+    
+    Verified: the guard FAILS on the pre-fix board naming exactly Q1.3, and PASSES
+    on the fixed board and on tps63070-breakout. ERC, DRC, parity, fab-DRC all pass.
+    
+    Co-authored-by: Claude Fable 5 <noreply@anthropic.com>
+
+diff --git a/boards/esp32s3-devkit/esp32s3-devkit.kicad_pcb b/boards/esp32s3-devkit/esp32s3-devkit.kicad_pcb
+index c94ee77..8b0f2d0 100644
+--- a/boards/esp32s3-devkit/esp32s3-devkit.kicad_pcb
++++ b/boards/esp32s3-devkit/esp32s3-devkit.kicad_pcb
+@@ -11611,6 +11611,14 @@
+ 		(net "Net-(J3-CC1)")
+ 		(uuid "e2b09760-39a7-4723-85c4-428d904d8ad6")
+ 	)
++	(segment
++		(start 128.515 119.09)
++		(end 127.5775 109.115)
++		(width 0.8)
++		(layer "F.Cu")
++		(net "/VBAT")
++		(uuid "9793fe1e-a742-4467-9c86-a75a6aee3653")
++	)
+ 	(segment
+ 		(start 133.01 117.135)
+ 		(end 131.055 119.09)

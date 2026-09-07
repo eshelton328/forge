@@ -1,0 +1,4018 @@
+{
+  "schema": 1,
+  "captured_utc": "2026-09-07T21:23:12.869203+00:00",
+  "source_root": "/Users/erik/Workspaces/Electronics/Arduino",
+  "hardware_reference_commit": "dc57b550ebe8c1943e7830468d73af3f93c5bb73",
+  "candidates": [
+    {
+      "path": "beacon_connected/beacon_connected.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/beacon_connected/beacon_connected.ino",
+      "sha256": "fc16b4a53866a6b9307d038a7cfccba7f2389acca839138b89d17fafbcf30fa9",
+      "bytes": 12542,
+      "source_mtime_ns": 1766032596370858351,
+      "target_inferred": "ESP32-C3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 15,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 16,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 17,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 18,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 19,
+          "text": "#include \"esp_idf_version.h\""
+        },
+        {
+          "line": 21,
+          "text": "#include <MyLD2410.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 134,
+          "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+        },
+        {
+          "line": 135,
+          "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+        },
+        {
+          "line": 138,
+          "text": "static const int UART_RX = 20; // LD2410 TX -> here"
+        },
+        {
+          "line": 139,
+          "text": "static const int UART_TX = 21; // LD2410 RX -> here"
+        }
+      ],
+      "message_layouts": [],
+      "protocol_constants": [
+        {
+          "line": 12,
+          "text": "// - ESPNOW_CHANNEL must match Cube."
+        },
+        {
+          "line": 24,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 1; // MUST MATCH CUBE"
+        },
+        {
+          "line": 26,
+          "text": "static const uint32_t MSG_MAGIC = 0x52535431; // 'RST1'"
+        },
+        {
+          "line": 30,
+          "text": "  MSG_TEST_START = 1,"
+        },
+        {
+          "line": 31,
+          "text": "  MSG_TEST_STOP  = 2,"
+        },
+        {
+          "line": 32,
+          "text": "  MSG_PING       = 3,"
+        },
+        {
+          "line": 35,
+          "text": "  MSG_ROGER      = 101,"
+        },
+        {
+          "line": 36,
+          "text": "  MSG_STATUS     = 102"
+        },
+        {
+          "line": 39,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 61,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 87,
+          "text": "  p.channel = ESPNOW_CHANNEL;"
+        },
+        {
+          "line": 113,
+          "text": "  wifiForceChannel(ESPNOW_CHANNEL);"
+        },
+        {
+          "line": 144,
+          "text": "static const uint32_t MSG_SILENT_MS = 1500;  // if no radar DATA frames arrive, treat raw as \"No\""
+        },
+        {
+          "line": 342,
+          "text": "  Serial.printf(\"ESPNOW_CHANNEL=%u\\n\", ESPNOW_CHANNEL);"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 332,
+          "text": "void setup() {"
+        },
+        {
+          "line": 362,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// Rooster Beacon (ESP32-C3) + LD2410 (UART) + ESP-NOW\n//\n// Behavior:\n// - Receives TEST_START/TEST_STOP from Cube over ESP-NOW.\n// - Replies immediately with ROGER.\n// - Sends STATUS periodically while test is running.\n// - Yellow LED = \"latched filtered presence\": turns OFF only if filtered presence has been lost > 5s (hard-coded).\n// - Green LED  = SUCCESS: turns ON after required held time (from Cube), based on filtered presence.\n// - Held time pauses during brief losses; resets if loss lasts > 5s (hard-coded).\n//\n// IMPORTANT:\n// - ESPNOW_CHANNEL must match Cube.\n// - We do NOT expose loss_grace_ms or dist_stale_ms to the user (hard-coded).\n"
+    },
+    {
+      "path": "beacon_cursor/beacon_cursor.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/beacon_cursor/beacon_cursor.ino",
+      "sha256": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918",
+      "bytes": 19719,
+      "source_mtime_ns": 1771218543390094645,
+      "target_inferred": "ESP32-C3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 18,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 19,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 20,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 21,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 22,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 26,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 34,
+          "text": "#include <MyLD2410.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 49,
+          "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+        },
+        {
+          "line": 50,
+          "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+        },
+        {
+          "line": 56,
+          "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+        },
+        {
+          "line": 57,
+          "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 94,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 1=config\n  uint8_t  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  uint8_t  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  uint32_t seq;             // incrementing\n};"
+        },
+        {
+          "line": 103,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 2=ack\n  uint32_t seq;             // echoes config seq\n  uint8_t  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 111,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 3=presence\n  uint32_t seq;             // current config seq (or 0 if no session)\n  uint8_t  present;         // 0/1 (effective presence for cube)\n  uint16_t distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 120,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 4=success\n  uint32_t seq;             // current config seq\n};"
+        },
+        {
+          "line": 127,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 5=stop\n  uint32_t seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 37,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9;"
+        },
+        {
+          "line": 38,
+          "text": "static const char    MAGIC_ROOS[4]  = {'R','O','O','S'};"
+        },
+        {
+          "line": 39,
+          "text": "static const uint8_t PROTO_VER      = 1;"
+        },
+        {
+          "line": 42,
+          "text": "static const uint8_t MSG_CONFIG    = 1;"
+        },
+        {
+          "line": 43,
+          "text": "static const uint8_t MSG_ACK       = 2;"
+        },
+        {
+          "line": 44,
+          "text": "static const uint8_t MSG_PRESENCE  = 3;"
+        },
+        {
+          "line": 45,
+          "text": "static const uint8_t MSG_SUCCESS   = 4;"
+        },
+        {
+          "line": 46,
+          "text": "static const uint8_t MSG_STOP      = 5;"
+        },
+        {
+          "line": 61,
+          "text": "static const uint32_t MSG_SILENT_MS   = 3'000;   // if no DATA frames arrive, treat raw as \"No\""
+        },
+        {
+          "line": 92,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 134,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 219,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        },
+        {
+          "line": 263,
+          "text": "  memcpy(a.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 264,
+          "text": "  a.version = PROTO_VER;"
+        },
+        {
+          "line": 278,
+          "text": "  memcpy(p.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 279,
+          "text": "  p.version = PROTO_VER;"
+        },
+        {
+          "line": 301,
+          "text": "  memcpy(s.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 302,
+          "text": "  s.version = PROTO_VER;"
+        },
+        {
+          "line": 375,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 376,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 461,
+          "text": "  forceChannel(ESPNOW_CHANNEL);"
+        },
+        {
+          "line": 482,
+          "text": "  Serial.printf(\"ESP-NOW channel=%u\\n\", (unsigned)ESPNOW_CHANNEL);"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 471,
+          "text": "void setup() {"
+        },
+        {
+          "line": 505,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// beacon_rooster_ld2410c_session_event.ino (ESP32-C3 Beacon)\n//\n// Goals:\n// - Always read LD2410C presence + distance while powered\n// - Only transmit to Cube during an active session\n// - TX pattern during session:\n//     * ACK once on CONFIG\n//     * PRESENCE on transitions 0<->1 (effective \"cubePresent\")\n//     * optional HEARTBEAT resend (default 1500ms) for reliability (same state; NOT a \u201cdetected\u201d event)\n//     * SUCCESS once when held-time satisfied\n//     * STOP: send final PRESENCE=0 once then go silent\n//\n// Key fixes vs your earlier session sketch:\n// - Session timeout extended (so you don\u2019t \u201cstop mid-session\u201d if Cube isn\u2019t sending keepalives)\n// - \u201cLost\u201d is only sent after LOSS_GRACE_MS expires (unless STOP/timeout)\n// - Yellow LED shows cubePresent (includes grace), so brief sensor flicker doesn\u2019t look like a hard loss\n"
+    },
+    {
+      "path": "beacon_esp_now/beacon_esp_now.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/beacon_esp_now/beacon_esp_now.ino",
+      "sha256": "cb54c240c9f2121be82c9e22fa479d3094b2a6da75e1c6908167b27e83688028",
+      "bytes": 18811,
+      "source_mtime_ns": 1766381093378440282,
+      "target_inferred": "ESP32-C3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 18,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 19,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 20,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 21,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 22,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 26,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 34,
+          "text": "#include <MyLD2410.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 49,
+          "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+        },
+        {
+          "line": 50,
+          "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+        },
+        {
+          "line": 56,
+          "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+        },
+        {
+          "line": 57,
+          "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 94,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 1=config\n  uint8_t  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  uint8_t  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  uint32_t seq;             // incrementing\n};"
+        },
+        {
+          "line": 103,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 2=ack\n  uint32_t seq;             // echoes config seq\n  uint8_t  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 111,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 3=presence\n  uint32_t seq;             // current config seq (or 0 if no session)\n  uint8_t  present;         // 0/1 (effective presence for cube)\n  uint16_t distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 120,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 4=success\n  uint32_t seq;             // current config seq\n};"
+        },
+        {
+          "line": 127,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 5=stop\n  uint32_t seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 37,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9;"
+        },
+        {
+          "line": 38,
+          "text": "static const char    MAGIC_ROOS[4]  = {'R','O','O','S'};"
+        },
+        {
+          "line": 39,
+          "text": "static const uint8_t PROTO_VER      = 1;"
+        },
+        {
+          "line": 42,
+          "text": "static const uint8_t MSG_CONFIG    = 1;"
+        },
+        {
+          "line": 43,
+          "text": "static const uint8_t MSG_ACK       = 2;"
+        },
+        {
+          "line": 44,
+          "text": "static const uint8_t MSG_PRESENCE  = 3;"
+        },
+        {
+          "line": 45,
+          "text": "static const uint8_t MSG_SUCCESS   = 4;"
+        },
+        {
+          "line": 46,
+          "text": "static const uint8_t MSG_STOP      = 5;"
+        },
+        {
+          "line": 61,
+          "text": "static const uint32_t MSG_SILENT_MS   = 3'000;   // if no DATA frames arrive, treat raw as \"No\""
+        },
+        {
+          "line": 92,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 134,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 214,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        },
+        {
+          "line": 256,
+          "text": "  memcpy(a.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 257,
+          "text": "  a.version = PROTO_VER;"
+        },
+        {
+          "line": 271,
+          "text": "  memcpy(p.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 272,
+          "text": "  p.version = PROTO_VER;"
+        },
+        {
+          "line": 294,
+          "text": "  memcpy(s.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 295,
+          "text": "  s.version = PROTO_VER;"
+        },
+        {
+          "line": 368,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 369,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 456,
+          "text": "  forceChannel(ESPNOW_CHANNEL);"
+        },
+        {
+          "line": 477,
+          "text": "  Serial.printf(\"ESP-NOW channel=%u\\n\", (unsigned)ESPNOW_CHANNEL);"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 466,
+          "text": "void setup() {"
+        },
+        {
+          "line": 500,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// beacon_rooster_ld2410c_session_event.ino (ESP32-C3 Beacon)\n//\n// Goals:\n// - Always read LD2410C presence + distance while powered\n// - Only transmit to Cube during an active session\n// - TX pattern during session:\n//     * ACK once on CONFIG\n//     * PRESENCE on transitions 0<->1 (effective \"cubePresent\")\n//     * optional HEARTBEAT resend (default 1500ms) for reliability (same state; NOT a \u201cdetected\u201d event)\n//     * SUCCESS once when held-time satisfied\n//     * STOP: send final PRESENCE=0 once then go silent\n//\n// Key fixes vs your earlier session sketch:\n// - Session timeout extended (so you don\u2019t \u201cstop mid-session\u201d if Cube isn\u2019t sending keepalives)\n// - \u201cLost\u201d is only sent after LOSS_GRACE_MS expires (unless STOP/timeout)\n// - Yellow LED shows cubePresent (includes grace), so brief sensor flicker doesn\u2019t look like a hard loss\n"
+    },
+    {
+      "path": "beacon_working_backup/beacon_working_backup.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/beacon_working_backup/beacon_working_backup.ino",
+      "sha256": "cb54c240c9f2121be82c9e22fa479d3094b2a6da75e1c6908167b27e83688028",
+      "bytes": 18811,
+      "source_mtime_ns": 1766381511325247511,
+      "target_inferred": "ESP32-C3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 18,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 19,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 20,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 21,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 22,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 26,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 34,
+          "text": "#include <MyLD2410.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 49,
+          "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+        },
+        {
+          "line": 50,
+          "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+        },
+        {
+          "line": 56,
+          "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+        },
+        {
+          "line": 57,
+          "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 94,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 1=config\n  uint8_t  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  uint8_t  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  uint32_t seq;             // incrementing\n};"
+        },
+        {
+          "line": 103,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 2=ack\n  uint32_t seq;             // echoes config seq\n  uint8_t  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 111,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 3=presence\n  uint32_t seq;             // current config seq (or 0 if no session)\n  uint8_t  present;         // 0/1 (effective presence for cube)\n  uint16_t distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 120,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 4=success\n  uint32_t seq;             // current config seq\n};"
+        },
+        {
+          "line": 127,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 5=stop\n  uint32_t seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 37,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9;"
+        },
+        {
+          "line": 38,
+          "text": "static const char    MAGIC_ROOS[4]  = {'R','O','O','S'};"
+        },
+        {
+          "line": 39,
+          "text": "static const uint8_t PROTO_VER      = 1;"
+        },
+        {
+          "line": 42,
+          "text": "static const uint8_t MSG_CONFIG    = 1;"
+        },
+        {
+          "line": 43,
+          "text": "static const uint8_t MSG_ACK       = 2;"
+        },
+        {
+          "line": 44,
+          "text": "static const uint8_t MSG_PRESENCE  = 3;"
+        },
+        {
+          "line": 45,
+          "text": "static const uint8_t MSG_SUCCESS   = 4;"
+        },
+        {
+          "line": 46,
+          "text": "static const uint8_t MSG_STOP      = 5;"
+        },
+        {
+          "line": 61,
+          "text": "static const uint32_t MSG_SILENT_MS   = 3'000;   // if no DATA frames arrive, treat raw as \"No\""
+        },
+        {
+          "line": 92,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 134,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 214,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        },
+        {
+          "line": 256,
+          "text": "  memcpy(a.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 257,
+          "text": "  a.version = PROTO_VER;"
+        },
+        {
+          "line": 271,
+          "text": "  memcpy(p.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 272,
+          "text": "  p.version = PROTO_VER;"
+        },
+        {
+          "line": 294,
+          "text": "  memcpy(s.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 295,
+          "text": "  s.version = PROTO_VER;"
+        },
+        {
+          "line": 368,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 369,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 456,
+          "text": "  forceChannel(ESPNOW_CHANNEL);"
+        },
+        {
+          "line": 477,
+          "text": "  Serial.printf(\"ESP-NOW channel=%u\\n\", (unsigned)ESPNOW_CHANNEL);"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 466,
+          "text": "void setup() {"
+        },
+        {
+          "line": 500,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// beacon_rooster_ld2410c_session_event.ino (ESP32-C3 Beacon)\n//\n// Goals:\n// - Always read LD2410C presence + distance while powered\n// - Only transmit to Cube during an active session\n// - TX pattern during session:\n//     * ACK once on CONFIG\n//     * PRESENCE on transitions 0<->1 (effective \"cubePresent\")\n//     * optional HEARTBEAT resend (default 1500ms) for reliability (same state; NOT a \u201cdetected\u201d event)\n//     * SUCCESS once when held-time satisfied\n//     * STOP: send final PRESENCE=0 once then go silent\n//\n// Key fixes vs your earlier session sketch:\n// - Session timeout extended (so you don\u2019t \u201cstop mid-session\u201d if Cube isn\u2019t sending keepalives)\n// - \u201cLost\u201d is only sent after LOSS_GRACE_MS expires (unless STOP/timeout)\n// - Yellow LED shows cubePresent (includes grace), so brief sensor flicker doesn\u2019t look like a hard loss\n"
+    },
+    {
+      "path": "c3_beacon/c3_beacon.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/c3_beacon/c3_beacon.ino",
+      "sha256": "e2be97701e40f2399c9dabd2278ef0dd17cf79f2aa9bc4e940397b920f194e3a",
+      "bytes": 7545,
+      "source_mtime_ns": 1766028155746514403,
+      "target_inferred": "ESP32-C3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 10,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 11,
+          "text": "#include <MyLD2410.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 14,
+          "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+        },
+        {
+          "line": 15,
+          "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+        },
+        {
+          "line": 18,
+          "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+        },
+        {
+          "line": 19,
+          "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+        }
+      ],
+      "message_layouts": [],
+      "protocol_constants": [
+        {
+          "line": 24,
+          "text": "static const uint32_t MSG_SILENT_MS   = 1'500;  // if no DATA frames arrive, treat raw as \"No\""
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 126,
+          "text": "void setup() {"
+        },
+        {
+          "line": 156,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// ESP32-C3 + LD2410C (UART) using MyLD2410 library\n// Option 2 (recommended): when raw presence is YES but distance is missing (0cm),\n// use the last valid distance briefly (DIST_STALE_MS). If it goes stale, filtered presence = false.\n//\n// - Yellow LED = FILTERED presence\n// - Green LED  = turns on after REQUIRED_ON_MS of accumulated HELD time (based on FILTERED presence)\n// - Held time pauses during brief losses; resets if loss lasts > LOSS_GRACE_MS\n// - Serial prints: Raw + Filtered + Held + DistUsed (feet) + DistRaw + Status\n"
+    },
+    {
+      "path": "cube_MAX98357/cube_MAX98357.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_MAX98357/cube_MAX98357.ino",
+      "sha256": "fb11439c199725b9465059ad57810d5f5676530e611389d89577c8cd6b1c313c",
+      "bytes": 5310,
+      "source_mtime_ns": 1768712679393071881,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 11,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 12,
+          "text": "#include \"driver/i2s.h\""
+        },
+        {
+          "line": 13,
+          "text": "#include <math.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 20,
+          "text": "#define GPIO_I2S_BCLK   15"
+        },
+        {
+          "line": 21,
+          "text": "#define GPIO_I2S_LRCLK  16"
+        },
+        {
+          "line": 22,
+          "text": "#define GPIO_I2S_DATA   17"
+        },
+        {
+          "line": 26,
+          "text": "#define PIN_BOOST_EN    18"
+        },
+        {
+          "line": 29,
+          "text": "#define PIN_AMP_SD      21"
+        }
+      ],
+      "message_layouts": [],
+      "protocol_constants": [],
+      "entry_points": [
+        {
+          "line": 136,
+          "text": "void setup() {"
+        },
+        {
+          "line": 172,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// ESP32-S3 + MAX98357A + TPS61023: Loud + clear alarm tone sequence (sine wave, adjustable amplitude)\n//\n// Uses GPIO to control:\n//  - TPS61023 EN (boost enable)\n//  - MAX98357A SD (shutdown) pin\n//\n// Hardware recommendation:\n//  - 10k pulldown on BOOST_EN (you verified 10k works on your module)\n//  - 100k pulldown on AMP_SD (so amp defaults OFF during reset/boot/deep sleep)\n"
+    },
+    {
+      "path": "cube_browns/beacon_browns.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_browns/beacon_browns.ino",
+      "sha256": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918",
+      "bytes": 19719,
+      "source_mtime_ns": 1771215207263136313,
+      "target_inferred": "ESP32-C3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 18,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 19,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 20,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 21,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 22,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 26,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 34,
+          "text": "#include <MyLD2410.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 49,
+          "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+        },
+        {
+          "line": 50,
+          "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+        },
+        {
+          "line": 56,
+          "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+        },
+        {
+          "line": 57,
+          "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 94,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 1=config\n  uint8_t  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  uint8_t  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  uint32_t seq;             // incrementing\n};"
+        },
+        {
+          "line": 103,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 2=ack\n  uint32_t seq;             // echoes config seq\n  uint8_t  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 111,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 3=presence\n  uint32_t seq;             // current config seq (or 0 if no session)\n  uint8_t  present;         // 0/1 (effective presence for cube)\n  uint16_t distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 120,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 4=success\n  uint32_t seq;             // current config seq\n};"
+        },
+        {
+          "line": 127,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 5=stop\n  uint32_t seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 37,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9;"
+        },
+        {
+          "line": 38,
+          "text": "static const char    MAGIC_ROOS[4]  = {'R','O','O','S'};"
+        },
+        {
+          "line": 39,
+          "text": "static const uint8_t PROTO_VER      = 1;"
+        },
+        {
+          "line": 42,
+          "text": "static const uint8_t MSG_CONFIG    = 1;"
+        },
+        {
+          "line": 43,
+          "text": "static const uint8_t MSG_ACK       = 2;"
+        },
+        {
+          "line": 44,
+          "text": "static const uint8_t MSG_PRESENCE  = 3;"
+        },
+        {
+          "line": 45,
+          "text": "static const uint8_t MSG_SUCCESS   = 4;"
+        },
+        {
+          "line": 46,
+          "text": "static const uint8_t MSG_STOP      = 5;"
+        },
+        {
+          "line": 61,
+          "text": "static const uint32_t MSG_SILENT_MS   = 3'000;   // if no DATA frames arrive, treat raw as \"No\""
+        },
+        {
+          "line": 92,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 134,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 219,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        },
+        {
+          "line": 263,
+          "text": "  memcpy(a.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 264,
+          "text": "  a.version = PROTO_VER;"
+        },
+        {
+          "line": 278,
+          "text": "  memcpy(p.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 279,
+          "text": "  p.version = PROTO_VER;"
+        },
+        {
+          "line": 301,
+          "text": "  memcpy(s.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 302,
+          "text": "  s.version = PROTO_VER;"
+        },
+        {
+          "line": 375,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 376,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 461,
+          "text": "  forceChannel(ESPNOW_CHANNEL);"
+        },
+        {
+          "line": 482,
+          "text": "  Serial.printf(\"ESP-NOW channel=%u\\n\", (unsigned)ESPNOW_CHANNEL);"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 471,
+          "text": "void setup() {"
+        },
+        {
+          "line": 505,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// beacon_rooster_ld2410c_session_event.ino (ESP32-C3 Beacon)\n//\n// Goals:\n// - Always read LD2410C presence + distance while powered\n// - Only transmit to Cube during an active session\n// - TX pattern during session:\n//     * ACK once on CONFIG\n//     * PRESENCE on transitions 0<->1 (effective \"cubePresent\")\n//     * optional HEARTBEAT resend (default 1500ms) for reliability (same state; NOT a \u201cdetected\u201d event)\n//     * SUCCESS once when held-time satisfied\n//     * STOP: send final PRESENCE=0 once then go silent\n//\n// Key fixes vs your earlier session sketch:\n// - Session timeout extended (so you don\u2019t \u201cstop mid-session\u201d if Cube isn\u2019t sending keepalives)\n// - \u201cLost\u201d is only sent after LOSS_GRACE_MS expires (unless STOP/timeout)\n// - Yellow LED shows cubePresent (includes grace), so brief sensor flicker doesn\u2019t look like a hard loss\n"
+    },
+    {
+      "path": "cube_browns/cube_browns.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_browns/cube_browns.ino",
+      "sha256": "257cadfb2cd4fb6482ef522c25d042808a340deacc0eeebddcf10605e8958bb5",
+      "bytes": 70527,
+      "source_mtime_ns": 1774220081173137507,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 119,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 120,
+          "text": "#include <Wire.h>"
+        },
+        {
+          "line": 121,
+          "text": "#include <U8g2lib.h>"
+        },
+        {
+          "line": 122,
+          "text": "#include \"driver/i2s.h\""
+        },
+        {
+          "line": 123,
+          "text": "#include <math.h>"
+        },
+        {
+          "line": 125,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 126,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 127,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 128,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 132,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 136,
+          "text": "#include <nvs.h>"
+        },
+        {
+          "line": 137,
+          "text": "#include <nvs_flash.h>"
+        },
+        {
+          "line": 138,
+          "text": "#include <stddef.h>"
+        },
+        {
+          "line": 139,
+          "text": "#include <string.h>"
+        },
+        {
+          "line": 141,
+          "text": "#include \"esp_sleep.h\""
+        },
+        {
+          "line": 142,
+          "text": "#include \"driver/rtc_io.h\""
+        }
+      ],
+      "pins": [
+        {
+          "line": 154,
+          "text": "#define GPIO_I2S_BCLK    15"
+        },
+        {
+          "line": 155,
+          "text": "#define GPIO_I2S_LRCLK   16"
+        },
+        {
+          "line": 156,
+          "text": "#define GPIO_I2S_DATA    17"
+        },
+        {
+          "line": 159,
+          "text": "#define PIN_VOL_UP       5"
+        },
+        {
+          "line": 160,
+          "text": "#define PIN_VOL_DOWN     6"
+        },
+        {
+          "line": 161,
+          "text": "#define PIN_MODE         4"
+        },
+        {
+          "line": 164,
+          "text": "#define OLED_SDA_PIN     8"
+        },
+        {
+          "line": 165,
+          "text": "#define OLED_SCL_PIN     9"
+        },
+        {
+          "line": 168,
+          "text": "#define PIN_RTC_INT      1   // active-low open-drain"
+        },
+        {
+          "line": 171,
+          "text": "#define PIN_OLED_PWR     7   // HIGH = OLED power ON"
+        },
+        {
+          "line": 174,
+          "text": "#define PIN_BOOST_EN     18"
+        },
+        {
+          "line": 175,
+          "text": "#define PIN_AMP_SD       21"
+        },
+        {
+          "line": 191,
+          "text": "#define USE_AUDIO_MUTE_PIN 0"
+        },
+        {
+          "line": 192,
+          "text": "#define PIN_AUDIO_MUTE     23"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 76,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+        },
+        {
+          "line": 85,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 93,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 102,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+        },
+        {
+          "line": 109,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 31,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 47,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 68,
+          "text": "  MSG_CONFIG   = 1,"
+        },
+        {
+          "line": 69,
+          "text": "  MSG_ACK      = 2,"
+        },
+        {
+          "line": 70,
+          "text": "  MSG_PRESENCE = 3,"
+        },
+        {
+          "line": 71,
+          "text": "  MSG_SUCCESS  = 4,"
+        },
+        {
+          "line": 72,
+          "text": "  MSG_STOP     = 5"
+        },
+        {
+          "line": 75,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 115,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 205,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+        },
+        {
+          "line": 210,
+          "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+        },
+        {
+          "line": 211,
+          "text": "static const uint8_t PROTO_VER     = 1;"
+        },
+        {
+          "line": 1041,
+          "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 1042,
+          "text": "  msg.version     = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 1061,
+          "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 1062,
+          "text": "  st.version = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 1252,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 1253,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 1390,
+          "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+        },
+        {
+          "line": 1400,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 2111,
+          "text": "void setup() {"
+        },
+        {
+          "line": 2234,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// cube_rooster_clock.ino  (ESP32-S3 Cube)\n//\n// Combined requirements implemented:\n//   \u2705 Time/Alarm UI + behavior\n//   \u2705 Settings persistence (NVS blob + CRC)\n//   \u2705 Working Test Mode (Presence Detected / Lost / Success) + always-stoppable\n//   \u2705 SAFE ESP-NOW RX: callbacks only set flags; loop() processes transitions\n//   \u2705 Deep sleep wake for scheduled alarm using RV-3028 INT -> ESP32-S3 GPIO1\n//   \u2705 Send STOP(seq) to Beacon whenever a session ends (success/manual/timeout)\n//   \u2705 OLED is POWER-GATED via PMOS + 2N3904 using PIN_OLED_PWR\n//      - OLED starts OFF (no auto-on in setup, even after wake)\n//      - OLED turns ON on any button press (MODE / UP / DOWN)\n//      - OLED auto-OFF after inactivity (when not editing)\n//\n// Optional (wired power control):\n//   \u2705 Boost enable (PIN_BOOST_EN) + Amp shutdown (PIN_AMP_SD)\n//      - Audio power is enabled only when alarm/test session active OR pre-alarm armed\n//\n// Optional:\n//   \u2705 Wake 1 minute early (pre-alarm): RTC alarm is programmed 1 minute before the next enabled alarm.\n//      - On RTC wake, Cube stays quiet and waits until the actual alarm minute, then starts alarm session.\n//\n// Single-file sketch (no tabs).\n\n// ---- minimal fixed-size types (avoid relying on Arduino.h before includes) ----"
+    },
+    {
+      "path": "cube_connected/cube_connected.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_connected/cube_connected.ino",
+      "sha256": "183c024daeb41500b673cccb5440ca62323f2b2a6ec0bdd286ff3196873a5912",
+      "bytes": 29778,
+      "source_mtime_ns": 1766200451427690284,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 14,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 15,
+          "text": "#include <Wire.h>"
+        },
+        {
+          "line": 16,
+          "text": "#include <U8g2lib.h>"
+        },
+        {
+          "line": 17,
+          "text": "#include \"driver/i2s.h\""
+        },
+        {
+          "line": 18,
+          "text": "#include <math.h>"
+        },
+        {
+          "line": 20,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 21,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 22,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 23,
+          "text": "#include \"esp_idf_version.h\""
+        },
+        {
+          "line": 24,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 26,
+          "text": "#include \"esp_sleep.h\""
+        },
+        {
+          "line": 27,
+          "text": "#include \"driver/rtc_io.h\""
+        }
+      ],
+      "pins": [
+        {
+          "line": 34,
+          "text": "#define GPIO_I2S_BCLK    15"
+        },
+        {
+          "line": 35,
+          "text": "#define GPIO_I2S_LRCLK   16"
+        },
+        {
+          "line": 36,
+          "text": "#define GPIO_I2S_DATA    17"
+        },
+        {
+          "line": 38,
+          "text": "#define PIN_VOL_UP       5"
+        },
+        {
+          "line": 39,
+          "text": "#define PIN_VOL_DOWN     6"
+        },
+        {
+          "line": 40,
+          "text": "#define PIN_MODE         4"
+        },
+        {
+          "line": 42,
+          "text": "#define OLED_SDA_PIN     8"
+        },
+        {
+          "line": 43,
+          "text": "#define OLED_SCL_PIN     9"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 81,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];\n  uint8_t  version;\n  uint8_t  msgType;      // MSG_CONFIG\n  uint8_t  distHalfFt;   // 1..16\n  uint8_t  timeHalfMin;  // 1..10\n  uint32_t seq;\n};"
+        },
+        {
+          "line": 90,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];\n  uint8_t  version;\n  uint8_t  msgType;      // MSG_ACK\n  uint32_t seq;\n  uint8_t  ok;\n};"
+        },
+        {
+          "line": 98,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  uint8_t  version;\n  uint8_t  msgType;      // MSG_PRESENCE\n  uint32_t seq;\n  uint8_t  present;\n  uint16_t distCm;\n};"
+        },
+        {
+          "line": 107,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  uint8_t  version;\n  uint8_t  msgType;      // MSG_SUCCESS\n  uint32_t seq;\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 48,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match beacon"
+        },
+        {
+          "line": 51,
+          "text": "static const char MAGIC_ROOS[4] = { 'R','O','O','S' };"
+        },
+        {
+          "line": 52,
+          "text": "static const uint8_t PROTO_VER  = 1;"
+        },
+        {
+          "line": 55,
+          "text": "  MSG_CONFIG   = 1,"
+        },
+        {
+          "line": 56,
+          "text": "  MSG_ACK      = 2,"
+        },
+        {
+          "line": 57,
+          "text": "  MSG_PRESENCE = 3,"
+        },
+        {
+          "line": 58,
+          "text": "  MSG_SUCCESS  = 4"
+        },
+        {
+          "line": 80,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 113,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 626,
+          "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 627,
+          "text": "  msg.version  = PROTO_VER;"
+        },
+        {
+          "line": 655,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 656,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 724,
+          "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+        },
+        {
+          "line": 734,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 944,
+          "text": "void setup() {"
+        },
+        {
+          "line": 996,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// cube_rooster_espnow_testmode.ino  (ESP32-S3 Cube)\n//\n// OLED UI + I2S alarm + ESP-NOW test mode\n//\n// Test mode behavior (SCREEN_TEST):\n// - \"Start\": send CONFIG to beacon + start sound immediately\n// - Wait for ACK (timeout => Error reaching beacon, stop sound, return to Start)\n// - Presence=1: silence sound immediately\n// - Presence=0: resume sound only after sustained loss (PRESENCE_LOSS_HOLD_MS)\n// - SUCCESS: \"Success\", stop sound, return to Start\n// - Bottom status message auto-clears after 5 seconds\n// - No extra \"(TEST)\" label is drawn\n"
+    },
+    {
+      "path": "cube_cursor/cube_cursor.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_cursor/cube_cursor.ino",
+      "sha256": "865692a83865cab7f1c61a0bbe12b902387472f5ca3003840b8cd915ddf90b55",
+      "bytes": 70467,
+      "source_mtime_ns": 1771218124729072936,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 119,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 120,
+          "text": "#include <Wire.h>"
+        },
+        {
+          "line": 121,
+          "text": "#include <U8g2lib.h>"
+        },
+        {
+          "line": 122,
+          "text": "#include \"driver/i2s.h\""
+        },
+        {
+          "line": 123,
+          "text": "#include <math.h>"
+        },
+        {
+          "line": 125,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 126,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 127,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 128,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 132,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 136,
+          "text": "#include <nvs.h>"
+        },
+        {
+          "line": 137,
+          "text": "#include <nvs_flash.h>"
+        },
+        {
+          "line": 138,
+          "text": "#include <stddef.h>"
+        },
+        {
+          "line": 139,
+          "text": "#include <string.h>"
+        },
+        {
+          "line": 141,
+          "text": "#include \"esp_sleep.h\""
+        },
+        {
+          "line": 142,
+          "text": "#include \"driver/rtc_io.h\""
+        }
+      ],
+      "pins": [
+        {
+          "line": 154,
+          "text": "#define GPIO_I2S_BCLK    15"
+        },
+        {
+          "line": 155,
+          "text": "#define GPIO_I2S_LRCLK   16"
+        },
+        {
+          "line": 156,
+          "text": "#define GPIO_I2S_DATA    17"
+        },
+        {
+          "line": 159,
+          "text": "#define PIN_VOL_UP       5"
+        },
+        {
+          "line": 160,
+          "text": "#define PIN_VOL_DOWN     6"
+        },
+        {
+          "line": 161,
+          "text": "#define PIN_MODE         4"
+        },
+        {
+          "line": 164,
+          "text": "#define OLED_SDA_PIN     8"
+        },
+        {
+          "line": 165,
+          "text": "#define OLED_SCL_PIN     9"
+        },
+        {
+          "line": 168,
+          "text": "#define PIN_RTC_INT      1   // active-low open-drain"
+        },
+        {
+          "line": 171,
+          "text": "#define PIN_OLED_PWR     7   // HIGH = OLED power ON"
+        },
+        {
+          "line": 174,
+          "text": "#define PIN_BOOST_EN     18"
+        },
+        {
+          "line": 175,
+          "text": "#define PIN_AMP_SD       21"
+        },
+        {
+          "line": 191,
+          "text": "#define USE_AUDIO_MUTE_PIN 0"
+        },
+        {
+          "line": 192,
+          "text": "#define PIN_AUDIO_MUTE     23"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 76,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+        },
+        {
+          "line": 85,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 93,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 102,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+        },
+        {
+          "line": 109,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 31,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 47,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 68,
+          "text": "  MSG_CONFIG   = 1,"
+        },
+        {
+          "line": 69,
+          "text": "  MSG_ACK      = 2,"
+        },
+        {
+          "line": 70,
+          "text": "  MSG_PRESENCE = 3,"
+        },
+        {
+          "line": 71,
+          "text": "  MSG_SUCCESS  = 4,"
+        },
+        {
+          "line": 72,
+          "text": "  MSG_STOP     = 5"
+        },
+        {
+          "line": 75,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 115,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 205,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+        },
+        {
+          "line": 210,
+          "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+        },
+        {
+          "line": 211,
+          "text": "static const uint8_t PROTO_VER     = 1;"
+        },
+        {
+          "line": 1041,
+          "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 1042,
+          "text": "  msg.version     = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 1061,
+          "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 1062,
+          "text": "  st.version = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 1252,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 1253,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 1390,
+          "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+        },
+        {
+          "line": 1400,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 2111,
+          "text": "void setup() {"
+        },
+        {
+          "line": 2234,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// cube_rooster_clock.ino  (ESP32-S3 Cube)\n//\n// Combined requirements implemented:\n//   \u2705 Time/Alarm UI + behavior\n//   \u2705 Settings persistence (NVS blob + CRC)\n//   \u2705 Working Test Mode (Presence Detected / Lost / Success) + always-stoppable\n//   \u2705 SAFE ESP-NOW RX: callbacks only set flags; loop() processes transitions\n//   \u2705 Deep sleep wake for scheduled alarm using RV-3028 INT -> ESP32-S3 GPIO1\n//   \u2705 Send STOP(seq) to Beacon whenever a session ends (success/manual/timeout)\n//   \u2705 OLED is POWER-GATED via PMOS + 2N3904 using PIN_OLED_PWR\n//      - OLED starts OFF (no auto-on in setup, even after wake)\n//      - OLED turns ON on any button press (MODE / UP / DOWN)\n//      - OLED auto-OFF after inactivity (when not editing)\n//\n// Optional (wired power control):\n//   \u2705 Boost enable (PIN_BOOST_EN) + Amp shutdown (PIN_AMP_SD)\n//      - Audio power is enabled only when alarm/test session active OR pre-alarm armed\n//\n// Optional:\n//   \u2705 Wake 1 minute early (pre-alarm): RTC alarm is programmed 1 minute before the next enabled alarm.\n//      - On RTC wake, Cube stays quiet and waits until the actual alarm minute, then starts alarm session.\n//\n// Single-file sketch (no tabs).\n\n// ---- minimal fixed-size types (avoid relying on Arduino.h before includes) ----"
+    },
+    {
+      "path": "cube_display_test/cube_display_test.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_display_test/cube_display_test.ino",
+      "sha256": "656b3fa643c13c98734632dd199d98ead355113b250005e8a304413c8f7b0850",
+      "bytes": 4402,
+      "source_mtime_ns": 1768714962725361520,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 18,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 19,
+          "text": "#include <Wire.h>"
+        },
+        {
+          "line": 20,
+          "text": "#include <U8g2lib.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 23,
+          "text": "#define PIN_MODE       4"
+        },
+        {
+          "line": 24,
+          "text": "#define PIN_VOL_UP     5"
+        },
+        {
+          "line": 25,
+          "text": "#define PIN_VOL_DOWN   6"
+        },
+        {
+          "line": 27,
+          "text": "#define OLED_SDA_PIN   8"
+        },
+        {
+          "line": 28,
+          "text": "#define OLED_SCL_PIN   9"
+        },
+        {
+          "line": 31,
+          "text": "#define PIN_OLED_PWR   7"
+        }
+      ],
+      "message_layouts": [],
+      "protocol_constants": [],
+      "entry_points": [
+        {
+          "line": 138,
+          "text": "void setup() {"
+        },
+        {
+          "line": 160,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// cube_oled_gpio7_pmos_gate.ino  (ESP32-S3 Cube)\n//\n// Minimal OLED test that:\n//  - Powers the OLED via PMOS gate using GPIO7\n//  - Uses SSD1306 128x64 @ I2C address 0x3C\n//  - SDA=GPIO8, SCL=GPIO9\n//  - Logs button presses on MODE/UP/DOWN\n//\n// Wiring assumptions:\n//  - OLED GND -> GND\n//  - OLED VCC/VIN -> switched 3.3V output of your PMOS power gate\n//  - OLED SDA -> GPIO8\n//  - OLED SCL -> GPIO9\n//  - GPIO7 -> your PMOS gate driver input (often via NPN), so \"ON\" enables OLED power\n//\n// If your gate logic is inverted, flip OLED_PWR_ACTIVE_HIGH to 0.\n"
+    },
+    {
+      "path": "cube_esp_now/cube_esp_now.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_esp_now/cube_esp_now.ino",
+      "sha256": "6fefee567c2a54232b3b5e5dc72e2302235393c623aabfc6bbb68b7e2dd43f33",
+      "bytes": 59985,
+      "source_mtime_ns": 1766380838599284734,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 110,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 111,
+          "text": "#include <Wire.h>"
+        },
+        {
+          "line": 112,
+          "text": "#include <U8g2lib.h>"
+        },
+        {
+          "line": 113,
+          "text": "#include \"driver/i2s.h\""
+        },
+        {
+          "line": 114,
+          "text": "#include <math.h>"
+        },
+        {
+          "line": 116,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 117,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 118,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 119,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 124,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 128,
+          "text": "#include <nvs.h>"
+        },
+        {
+          "line": 129,
+          "text": "#include <nvs_flash.h>"
+        },
+        {
+          "line": 130,
+          "text": "#include <stddef.h>"
+        },
+        {
+          "line": 131,
+          "text": "#include <string.h>"
+        },
+        {
+          "line": 133,
+          "text": "#include \"esp_sleep.h\""
+        },
+        {
+          "line": 134,
+          "text": "#include \"driver/rtc_io.h\""
+        }
+      ],
+      "pins": [
+        {
+          "line": 145,
+          "text": "#define GPIO_I2S_BCLK    15"
+        },
+        {
+          "line": 146,
+          "text": "#define GPIO_I2S_LRCLK   16"
+        },
+        {
+          "line": 147,
+          "text": "#define GPIO_I2S_DATA    17"
+        },
+        {
+          "line": 149,
+          "text": "#define PIN_VOL_UP       5"
+        },
+        {
+          "line": 150,
+          "text": "#define PIN_VOL_DOWN     6"
+        },
+        {
+          "line": 151,
+          "text": "#define PIN_MODE         4"
+        },
+        {
+          "line": 153,
+          "text": "#define OLED_SDA_PIN     8"
+        },
+        {
+          "line": 154,
+          "text": "#define OLED_SCL_PIN     9"
+        },
+        {
+          "line": 159,
+          "text": "#define PIN_RTC_INT      1   // RTC INT pin wired here (active-low open-drain)"
+        },
+        {
+          "line": 162,
+          "text": "#define USE_AUDIO_MUTE_PIN 0"
+        },
+        {
+          "line": 163,
+          "text": "#define PIN_AUDIO_MUTE     18"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 67,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+        },
+        {
+          "line": 76,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 84,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 93,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+        },
+        {
+          "line": 100,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 22,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 38,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 59,
+          "text": "  MSG_CONFIG   = 1,"
+        },
+        {
+          "line": 60,
+          "text": "  MSG_ACK      = 2,"
+        },
+        {
+          "line": 61,
+          "text": "  MSG_PRESENCE = 3,"
+        },
+        {
+          "line": 62,
+          "text": "  MSG_SUCCESS  = 4,"
+        },
+        {
+          "line": 63,
+          "text": "  MSG_STOP     = 5"
+        },
+        {
+          "line": 66,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 106,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 176,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+        },
+        {
+          "line": 181,
+          "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+        },
+        {
+          "line": 182,
+          "text": "static const uint8_t PROTO_VER     = 1;"
+        },
+        {
+          "line": 900,
+          "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 901,
+          "text": "  msg.version     = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 920,
+          "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 921,
+          "text": "  st.version = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 1073,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 1074,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 1200,
+          "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+        },
+        {
+          "line": 1210,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 1881,
+          "text": "void setup() {"
+        },
+        {
+          "line": 1963,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// cube_rooster_clock.ino  (ESP32-S3 Cube)\n//\n// Combined:\n//   \u2705 Time/Alarm UI + behavior (from your working sketch)\n//   \u2705 Settings persistence (NVS blob + CRC)\n//   \u2705 Working Test Mode (Presence Detected / Lost / Success) + always-stoppable\n//   \u2705 SAFE ESP-NOW RX: callbacks only set flags; loop() processes transitions\n//   \u2705 Deep sleep wake for scheduled alarm using RV-3028 INT -> ESP32-S3 GPIO1\n//\n// NEW (for Beacon session gating):\n//   \u2705 Send STOP(seq) to Beacon whenever a session ends (success/manual/timeout)\n//      so Beacon can stop transmitting immediately without relying on timeouts.\n//\n// Single-file sketch (no tabs).\n\n// ---- minimal fixed-size types (avoid relying on Arduino.h before includes) ----"
+    },
+    {
+      "path": "cube_merge/cube_merge.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_merge/cube_merge.ino",
+      "sha256": "01ae76b3aedee5bdc2d755bdf7ef349cfa568cb7a3b7f1a0bc24b3e353dbc1e6",
+      "bytes": 67689,
+      "source_mtime_ns": 1768863075354171912,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 119,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 120,
+          "text": "#include <Wire.h>"
+        },
+        {
+          "line": 121,
+          "text": "#include <U8g2lib.h>"
+        },
+        {
+          "line": 122,
+          "text": "#include \"driver/i2s.h\""
+        },
+        {
+          "line": 123,
+          "text": "#include <math.h>"
+        },
+        {
+          "line": 125,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 126,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 127,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 128,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 132,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 136,
+          "text": "#include <nvs.h>"
+        },
+        {
+          "line": 137,
+          "text": "#include <nvs_flash.h>"
+        },
+        {
+          "line": 138,
+          "text": "#include <stddef.h>"
+        },
+        {
+          "line": 139,
+          "text": "#include <string.h>"
+        },
+        {
+          "line": 141,
+          "text": "#include \"esp_sleep.h\""
+        },
+        {
+          "line": 142,
+          "text": "#include \"driver/rtc_io.h\""
+        }
+      ],
+      "pins": [
+        {
+          "line": 154,
+          "text": "#define GPIO_I2S_BCLK    15"
+        },
+        {
+          "line": 155,
+          "text": "#define GPIO_I2S_LRCLK   16"
+        },
+        {
+          "line": 156,
+          "text": "#define GPIO_I2S_DATA    17"
+        },
+        {
+          "line": 159,
+          "text": "#define PIN_VOL_UP       5"
+        },
+        {
+          "line": 160,
+          "text": "#define PIN_VOL_DOWN     6"
+        },
+        {
+          "line": 161,
+          "text": "#define PIN_MODE         4"
+        },
+        {
+          "line": 164,
+          "text": "#define OLED_SDA_PIN     8"
+        },
+        {
+          "line": 165,
+          "text": "#define OLED_SCL_PIN     9"
+        },
+        {
+          "line": 168,
+          "text": "#define PIN_RTC_INT      1   // active-low open-drain"
+        },
+        {
+          "line": 171,
+          "text": "#define PIN_OLED_PWR     7   // HIGH = OLED power ON"
+        },
+        {
+          "line": 174,
+          "text": "#define PIN_BOOST_EN     18"
+        },
+        {
+          "line": 175,
+          "text": "#define PIN_AMP_SD       21"
+        },
+        {
+          "line": 191,
+          "text": "#define USE_AUDIO_MUTE_PIN 0"
+        },
+        {
+          "line": 192,
+          "text": "#define PIN_AUDIO_MUTE     23"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 76,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+        },
+        {
+          "line": 85,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 93,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 102,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+        },
+        {
+          "line": 109,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 31,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 47,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 68,
+          "text": "  MSG_CONFIG   = 1,"
+        },
+        {
+          "line": 69,
+          "text": "  MSG_ACK      = 2,"
+        },
+        {
+          "line": 70,
+          "text": "  MSG_PRESENCE = 3,"
+        },
+        {
+          "line": 71,
+          "text": "  MSG_SUCCESS  = 4,"
+        },
+        {
+          "line": 72,
+          "text": "  MSG_STOP     = 5"
+        },
+        {
+          "line": 75,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 115,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 205,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+        },
+        {
+          "line": 210,
+          "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+        },
+        {
+          "line": 211,
+          "text": "static const uint8_t PROTO_VER     = 1;"
+        },
+        {
+          "line": 1013,
+          "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 1014,
+          "text": "  msg.version     = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 1033,
+          "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 1034,
+          "text": "  st.version = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 1205,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 1206,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 1333,
+          "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+        },
+        {
+          "line": 1343,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 2038,
+          "text": "void setup() {"
+        },
+        {
+          "line": 2161,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// cube_rooster_clock.ino  (ESP32-S3 Cube)\n//\n// Combined requirements implemented:\n//   \u2705 Time/Alarm UI + behavior\n//   \u2705 Settings persistence (NVS blob + CRC)\n//   \u2705 Working Test Mode (Presence Detected / Lost / Success) + always-stoppable\n//   \u2705 SAFE ESP-NOW RX: callbacks only set flags; loop() processes transitions\n//   \u2705 Deep sleep wake for scheduled alarm using RV-3028 INT -> ESP32-S3 GPIO1\n//   \u2705 Send STOP(seq) to Beacon whenever a session ends (success/manual/timeout)\n//   \u2705 OLED is POWER-GATED via PMOS + 2N3904 using PIN_OLED_PWR\n//      - OLED starts OFF (no auto-on in setup, even after wake)\n//      - OLED turns ON on any button press (MODE / UP / DOWN)\n//      - OLED auto-OFF after inactivity (when not editing)\n//\n// Optional (wired power control):\n//   \u2705 Boost enable (PIN_BOOST_EN) + Amp shutdown (PIN_AMP_SD)\n//      - Audio power is enabled only when alarm/test session active OR pre-alarm armed\n//\n// Optional:\n//   \u2705 Wake 1 minute early (pre-alarm): RTC alarm is programmed 1 minute before the next enabled alarm.\n//      - On RTC wake, Cube stays quiet and waits until the actual alarm minute, then starts alarm session.\n//\n// Single-file sketch (no tabs).\n\n// ---- minimal fixed-size types (avoid relying on Arduino.h before includes) ----"
+    },
+    {
+      "path": "cube_settings_save/cube_settings_save.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_settings_save/cube_settings_save.ino",
+      "sha256": "d23b436841262388a6f5c538ec2e0c74ddd54a7e5e8dbdc37566d81a6c9c920c",
+      "bytes": 51754,
+      "source_mtime_ns": 1766287638247094732,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 97,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 98,
+          "text": "#include <Wire.h>"
+        },
+        {
+          "line": 99,
+          "text": "#include <U8g2lib.h>"
+        },
+        {
+          "line": 100,
+          "text": "#include \"driver/i2s.h\""
+        },
+        {
+          "line": 101,
+          "text": "#include <math.h>"
+        },
+        {
+          "line": 103,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 104,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 105,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 106,
+          "text": "#include <esp_idf_version.h>"
+        },
+        {
+          "line": 114,
+          "text": "#include \"esp_sleep.h\""
+        },
+        {
+          "line": 115,
+          "text": "#include \"driver/rtc_io.h\""
+        },
+        {
+          "line": 117,
+          "text": "#include <stddef.h>    // offsetof"
+        },
+        {
+          "line": 118,
+          "text": "#include <string.h>    // memcpy"
+        },
+        {
+          "line": 119,
+          "text": "#include <nvs.h>"
+        },
+        {
+          "line": 120,
+          "text": "#include <nvs_flash.h>"
+        }
+      ],
+      "pins": [
+        {
+          "line": 127,
+          "text": "#define GPIO_I2S_BCLK    15"
+        },
+        {
+          "line": 128,
+          "text": "#define GPIO_I2S_LRCLK   16"
+        },
+        {
+          "line": 129,
+          "text": "#define GPIO_I2S_DATA    17"
+        },
+        {
+          "line": 131,
+          "text": "#define PIN_VOL_UP       5"
+        },
+        {
+          "line": 132,
+          "text": "#define PIN_VOL_DOWN     6"
+        },
+        {
+          "line": 133,
+          "text": "#define PIN_MODE         4"
+        },
+        {
+          "line": 135,
+          "text": "#define OLED_SDA_PIN     8"
+        },
+        {
+          "line": 136,
+          "text": "#define OLED_SCL_PIN     9"
+        },
+        {
+          "line": 141,
+          "text": "#define USE_AUDIO_MUTE_PIN 0"
+        },
+        {
+          "line": 142,
+          "text": "#define PIN_AUDIO_MUTE     18"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 61,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+        },
+        {
+          "line": 70,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 78,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 87,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 17,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 33,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 54,
+          "text": "  MSG_CONFIG   = 1,"
+        },
+        {
+          "line": 55,
+          "text": "  MSG_ACK      = 2,"
+        },
+        {
+          "line": 56,
+          "text": "  MSG_PRESENCE = 3,"
+        },
+        {
+          "line": 57,
+          "text": "  MSG_SUCCESS  = 4"
+        },
+        {
+          "line": 60,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 93,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 155,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+        },
+        {
+          "line": 160,
+          "text": "static const char   MAGIC_ROOS[4] = { 'R','O','O','S' };"
+        },
+        {
+          "line": 161,
+          "text": "static const uint8_t PROTO_VER    = 1;"
+        },
+        {
+          "line": 714,
+          "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 715,
+          "text": "  msg.version  = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 854,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 855,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 938,
+          "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+        },
+        {
+          "line": 948,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 1610,
+          "text": "void setup() {"
+        },
+        {
+          "line": 1683,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// cube_rooster_clock.ino  (ESP32-S3 Cube)\n//\n// Time/Alarm screens: EXACT UI + behavior from your provided sketch\n// Screen order: Time, Alarm, Volume, Sensor Time, Sensor Distance, Test\n// Settings persistence: YES (NVS via nvs.h / nvs_flash.h) \u2014 survives unplug/replug\n//\n// NOTE: Everything is in ONE file (this .ino).\n\n// ---- minimal fixed-size types (avoid relying on Arduino.h before includes) ----"
+    },
+    {
+      "path": "cube_working_backup/cube_working_backup.ino",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_working_backup/cube_working_backup.ino",
+      "sha256": "6fefee567c2a54232b3b5e5dc72e2302235393c623aabfc6bbb68b7e2dd43f33",
+      "bytes": 59985,
+      "source_mtime_ns": 1766381489249933059,
+      "target_inferred": "ESP32-S3",
+      "target_evidence": "Source header/name and pin map; physical board/FQBN unconfirmed",
+      "flashed_status": "unverified",
+      "includes": [
+        {
+          "line": 110,
+          "text": "#include <Arduino.h>"
+        },
+        {
+          "line": 111,
+          "text": "#include <Wire.h>"
+        },
+        {
+          "line": 112,
+          "text": "#include <U8g2lib.h>"
+        },
+        {
+          "line": 113,
+          "text": "#include \"driver/i2s.h\""
+        },
+        {
+          "line": 114,
+          "text": "#include <math.h>"
+        },
+        {
+          "line": 116,
+          "text": "#include <WiFi.h>"
+        },
+        {
+          "line": 117,
+          "text": "#include <esp_now.h>"
+        },
+        {
+          "line": 118,
+          "text": "#include <esp_wifi.h>"
+        },
+        {
+          "line": 119,
+          "text": "#include <esp_wifi_types.h>"
+        },
+        {
+          "line": 124,
+          "text": "    #include \"esp_idf_version.h\""
+        },
+        {
+          "line": 128,
+          "text": "#include <nvs.h>"
+        },
+        {
+          "line": 129,
+          "text": "#include <nvs_flash.h>"
+        },
+        {
+          "line": 130,
+          "text": "#include <stddef.h>"
+        },
+        {
+          "line": 131,
+          "text": "#include <string.h>"
+        },
+        {
+          "line": 133,
+          "text": "#include \"esp_sleep.h\""
+        },
+        {
+          "line": 134,
+          "text": "#include \"driver/rtc_io.h\""
+        }
+      ],
+      "pins": [
+        {
+          "line": 145,
+          "text": "#define GPIO_I2S_BCLK    15"
+        },
+        {
+          "line": 146,
+          "text": "#define GPIO_I2S_LRCLK   16"
+        },
+        {
+          "line": 147,
+          "text": "#define GPIO_I2S_DATA    17"
+        },
+        {
+          "line": 149,
+          "text": "#define PIN_VOL_UP       5"
+        },
+        {
+          "line": 150,
+          "text": "#define PIN_VOL_DOWN     6"
+        },
+        {
+          "line": 151,
+          "text": "#define PIN_MODE         4"
+        },
+        {
+          "line": 153,
+          "text": "#define OLED_SDA_PIN     8"
+        },
+        {
+          "line": 154,
+          "text": "#define OLED_SCL_PIN     9"
+        },
+        {
+          "line": 159,
+          "text": "#define PIN_RTC_INT      1   // RTC INT pin wired here (active-low open-drain)"
+        },
+        {
+          "line": 162,
+          "text": "#define USE_AUDIO_MUTE_PIN 0"
+        },
+        {
+          "line": 163,
+          "text": "#define PIN_AUDIO_MUTE     18"
+        }
+      ],
+      "message_layouts": [
+        {
+          "line": 67,
+          "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+        },
+        {
+          "line": 76,
+          "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+        },
+        {
+          "line": 84,
+          "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+        },
+        {
+          "line": 93,
+          "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+        },
+        {
+          "line": 100,
+          "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+        }
+      ],
+      "protocol_constants": [
+        {
+          "line": 22,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 38,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 59,
+          "text": "  MSG_CONFIG   = 1,"
+        },
+        {
+          "line": 60,
+          "text": "  MSG_ACK      = 2,"
+        },
+        {
+          "line": 61,
+          "text": "  MSG_PRESENCE = 3,"
+        },
+        {
+          "line": 62,
+          "text": "  MSG_SUCCESS  = 4,"
+        },
+        {
+          "line": 63,
+          "text": "  MSG_STOP     = 5"
+        },
+        {
+          "line": 66,
+          "text": "#pragma pack(push, 1)"
+        },
+        {
+          "line": 106,
+          "text": "#pragma pack(pop)"
+        },
+        {
+          "line": 176,
+          "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+        },
+        {
+          "line": 181,
+          "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+        },
+        {
+          "line": 182,
+          "text": "static const uint8_t PROTO_VER     = 1;"
+        },
+        {
+          "line": 900,
+          "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 901,
+          "text": "  msg.version     = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 920,
+          "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+        },
+        {
+          "line": 921,
+          "text": "  st.version = (roos_u8)PROTO_VER;"
+        },
+        {
+          "line": 1073,
+          "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+        },
+        {
+          "line": 1074,
+          "text": "  if (data[4] != PROTO_VER) return;"
+        },
+        {
+          "line": 1200,
+          "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+        },
+        {
+          "line": 1210,
+          "text": "  peer.channel = ESPNOW_CHANNEL;"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 1881,
+          "text": "void setup() {"
+        },
+        {
+          "line": 1963,
+          "text": "void loop() {"
+        }
+      ],
+      "behavior_header_static_claims_only": "// cube_rooster_clock.ino  (ESP32-S3 Cube)\n//\n// Combined:\n//   \u2705 Time/Alarm UI + behavior (from your working sketch)\n//   \u2705 Settings persistence (NVS blob + CRC)\n//   \u2705 Working Test Mode (Presence Detected / Lost / Success) + always-stoppable\n//   \u2705 SAFE ESP-NOW RX: callbacks only set flags; loop() processes transitions\n//   \u2705 Deep sleep wake for scheduled alarm using RV-3028 INT -> ESP32-S3 GPIO1\n//\n// NEW (for Beacon session gating):\n//   \u2705 Send STOP(seq) to Beacon whenever a session ends (success/manual/timeout)\n//      so Beacon can stop transmitting immediately without relying on timeouts.\n//\n// Single-file sketch (no tabs).\n\n// ---- minimal fixed-size types (avoid relying on Arduino.h before includes) ----"
+    }
+  ],
+  "snapshot_files": [
+    {
+      "path": "Arduino/beacon_connected/beacon_connected.ino",
+      "sha256": "fc16b4a53866a6b9307d038a7cfccba7f2389acca839138b89d17fafbcf30fa9",
+      "bytes": 12542,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/beacon_connected/beacon_connected.ino"
+    },
+    {
+      "path": "Arduino/beacon_cursor/beacon_cursor.ino",
+      "sha256": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918",
+      "bytes": 19719,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/beacon_cursor/beacon_cursor.ino"
+    },
+    {
+      "path": "Arduino/beacon_esp_now/beacon_esp_now.ino",
+      "sha256": "cb54c240c9f2121be82c9e22fa479d3094b2a6da75e1c6908167b27e83688028",
+      "bytes": 18811,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/beacon_esp_now/beacon_esp_now.ino"
+    },
+    {
+      "path": "Arduino/beacon_working_backup/beacon_working_backup.ino",
+      "sha256": "cb54c240c9f2121be82c9e22fa479d3094b2a6da75e1c6908167b27e83688028",
+      "bytes": 18811,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/beacon_working_backup/beacon_working_backup.ino"
+    },
+    {
+      "path": "Arduino/c3_beacon/c3_beacon.ino",
+      "sha256": "e2be97701e40f2399c9dabd2278ef0dd17cf79f2aa9bc4e940397b920f194e3a",
+      "bytes": 7545,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/c3_beacon/c3_beacon.ino"
+    },
+    {
+      "path": "Arduino/cube_MAX98357/cube_MAX98357.ino",
+      "sha256": "fb11439c199725b9465059ad57810d5f5676530e611389d89577c8cd6b1c313c",
+      "bytes": 5310,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_MAX98357/cube_MAX98357.ino"
+    },
+    {
+      "path": "Arduino/cube_browns/beacon_browns.ino",
+      "sha256": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918",
+      "bytes": 19719,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_browns/beacon_browns.ino"
+    },
+    {
+      "path": "Arduino/cube_browns/cube_browns.ino",
+      "sha256": "257cadfb2cd4fb6482ef522c25d042808a340deacc0eeebddcf10605e8958bb5",
+      "bytes": 70527,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_browns/cube_browns.ino"
+    },
+    {
+      "path": "Arduino/cube_connected/cube_connected.ino",
+      "sha256": "183c024daeb41500b673cccb5440ca62323f2b2a6ec0bdd286ff3196873a5912",
+      "bytes": 29778,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_connected/cube_connected.ino"
+    },
+    {
+      "path": "Arduino/cube_cursor/cube_cursor.ino",
+      "sha256": "865692a83865cab7f1c61a0bbe12b902387472f5ca3003840b8cd915ddf90b55",
+      "bytes": 70467,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_cursor/cube_cursor.ino"
+    },
+    {
+      "path": "Arduino/cube_display_test/cube_display_test.ino",
+      "sha256": "656b3fa643c13c98734632dd199d98ead355113b250005e8a304413c8f7b0850",
+      "bytes": 4402,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_display_test/cube_display_test.ino"
+    },
+    {
+      "path": "Arduino/cube_esp_now/cube_esp_now.ino",
+      "sha256": "6fefee567c2a54232b3b5e5dc72e2302235393c623aabfc6bbb68b7e2dd43f33",
+      "bytes": 59985,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_esp_now/cube_esp_now.ino"
+    },
+    {
+      "path": "Arduino/cube_merge/cube_merge.ino",
+      "sha256": "01ae76b3aedee5bdc2d755bdf7ef349cfa568cb7a3b7f1a0bc24b3e353dbc1e6",
+      "bytes": 67689,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_merge/cube_merge.ino"
+    },
+    {
+      "path": "Arduino/cube_settings_save/cube_settings_save.ino",
+      "sha256": "d23b436841262388a6f5c538ec2e0c74ddd54a7e5e8dbdc37566d81a6c9c920c",
+      "bytes": 51754,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_settings_save/cube_settings_save.ino"
+    },
+    {
+      "path": "Arduino/cube_working_backup/cube_working_backup.ino",
+      "sha256": "6fefee567c2a54232b3b5e5dc72e2302235393c623aabfc6bbb68b7e2dd43f33",
+      "bytes": 59985,
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/cube_working_backup/cube_working_backup.ino"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "U8g2",
+      "version": "2.35.30",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/libraries/U8g2",
+      "archive": "U8g2.tar.gz",
+      "sha256": "a0ed0dc7df4c2b7e6a5b1bb8ed6a5b479dcf89d97e8875477374d28908b25be9",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "8cf13e2fabfb6665de2132f148011fcf4252106f464ea520c001647a71934f5e",
+          "bytes": 3750
+        },
+        {
+          "path": "README.md",
+          "sha256": "dc31425850c23457845554d52e8f9f5a0bc3e7854bbc77cd7dc74524f2e256c1",
+          "bytes": 459
+        },
+        {
+          "path": "examples/full_buffer/FPS/FPS.ino",
+          "sha256": "86639ca01f738881e53cb74252410f652da3ead34f6b08dcc61177e2431704c4",
+          "bytes": 54803
+        },
+        {
+          "path": "examples/full_buffer/FontUsage/FontUsage.ino",
+          "sha256": "00cdfd19f7715882df11ecabcdb44a91daf6a473343e0aa03f8e1305525edbda",
+          "bytes": 49812
+        },
+        {
+          "path": "examples/full_buffer/GraphicsTest/GraphicsTest.ino",
+          "sha256": "b79c9868e7cef978a19784d9220e3754787e8ac536e340cbd147a66b38ce6d3e",
+          "bytes": 50466
+        },
+        {
+          "path": "examples/full_buffer/HelloWorld/HelloWorld.ino",
+          "sha256": "24c3facfaedc15dab3870330fb4b5bfe34c2737f2d3bc77c958656e0a40a9c5d",
+          "bytes": 44420
+        },
+        {
+          "path": "examples/full_buffer/IconMenu/IconMenu.ino",
+          "sha256": "8eed71d120e754e06927f9167b39c30b1855ca74bd01a096e9845008fcf3f5e3",
+          "bytes": 49303
+        },
+        {
+          "path": "examples/full_buffer/PrintUTF8/PrintUTF8.ino",
+          "sha256": "9185945ca5aae9c6514a426e8bfb3cb83b0a5f51bf26c25174b8a233f0ef812b",
+          "bytes": 44622
+        },
+        {
+          "path": "examples/full_buffer/ScreenShot/ScreenShot.ino",
+          "sha256": "362c0d0c83b943d783e4426f743445c26933b3703a12daeb17cf8804fd3003b9",
+          "bytes": 44932
+        },
+        {
+          "path": "examples/full_buffer/SelectionList/SelectionList.ino",
+          "sha256": "63adb31d0a8910b745211c22bbe2c9ae370b0ceb3a2feb4422040ed102dd058a",
+          "bytes": 45583
+        },
+        {
+          "path": "examples/full_buffer/Shennong/Shennong.ino",
+          "sha256": "a3168d090ef11cbb87cb669c1f4bfa920f2952abd7e60e6826654d10ed7b6d1e",
+          "bytes": 51305
+        },
+        {
+          "path": "examples/full_buffer/U8g2Logo/U8g2Logo.ino",
+          "sha256": "7376c55999a0921780c727a586f2c89560fd01be5dab2c317004d0204f360772",
+          "bytes": 45713
+        },
+        {
+          "path": "examples/full_buffer/UpdateArea/UpdateArea.ino",
+          "sha256": "c8ba633b2a99d10f72640c16292e8f1d38bb1165a25c18a24a652e49a5bf1cf6",
+          "bytes": 46372
+        },
+        {
+          "path": "examples/full_buffer/Weather/Weather.ino",
+          "sha256": "57a10a7eaa88f94c9b8528e0475aee0cf1dc03c1e62374979dcbf0aa76654ccd",
+          "bytes": 47760
+        },
+        {
+          "path": "examples/games/LittleRookChess/LittleRookChess.ino",
+          "sha256": "bb92445e057f0624c9fc6f51c61defed92a4171be7d27c20efe9c122674cf263",
+          "bytes": 65048
+        },
+        {
+          "path": "examples/games/SpaceTrash/SpaceTrash.ino",
+          "sha256": "6646e73447fac8c4ef66c914d6dbbd9bb348b3673a3bc90223c8ad8d05aef70c",
+          "bytes": 79010
+        },
+        {
+          "path": "examples/mui/MUIBlink/MUIBlink.ino",
+          "sha256": "0fafbf4d738786b2c9bf487e2b82203051f9792ae012cec8f473c0ba271a6911",
+          "bytes": 51593
+        },
+        {
+          "path": "examples/mui/MUICountDown/MUICountDown.ino",
+          "sha256": "cdc20107537c307e87f847bd3c0e42d877e4a3c385499d5330f951f314b75f35",
+          "bytes": 48147
+        },
+        {
+          "path": "examples/mui/MUIInput1BtnBounce2/MUIInput1BtnBounce2.ino",
+          "sha256": "edea3f020c0de7dde0b3eb054673650f2bd6f13c929b2bdcd945b767336d2e3e",
+          "bytes": 48192
+        },
+        {
+          "path": "examples/mui/MUIInput2BtnBounce2/MUIInput2BtnBounce2.ino",
+          "sha256": "1552fb431e035bfcce4ae0e70bbbccec502cf2df11810c2ad5da740fc964c0b5",
+          "bytes": 48109
+        },
+        {
+          "path": "examples/mui/MUIInput3BtnBounce2/MUIInput3BtnBounce2.ino",
+          "sha256": "109d1292f7886ea35e175a3928a010ca37f018053934e329063917b37ad5ee5c",
+          "bytes": 48464
+        },
+        {
+          "path": "examples/mui/MUIInput3BtnWithU8g2/MUIInput3BtnWithU8g2.ino",
+          "sha256": "8f23285963f368c84393a6c26fa4c9601425c41cca26c843203dfd70a17ab190",
+          "bytes": 48646
+        },
+        {
+          "path": "examples/mui/MUIInputSimpleRotary/MUIInputSimpleRotary.ino",
+          "sha256": "72a9af948bcb6fa8303c5ee3b8d353e3840399e9853e7035a137b86175c417df",
+          "bytes": 47969
+        },
+        {
+          "path": "examples/mui/MUIInputVersatileRotaryEncoder/MUIInputVersatileRotaryEncoder.ino",
+          "sha256": "86faec9b87a80b0a357047ce020a60966e562f8c6752bca2bd2600cd34166687",
+          "bytes": 48871
+        },
+        {
+          "path": "examples/mui/MUIMinimal/MUIMinimal.ino",
+          "sha256": "ba58c9f1c20e263de2d1b727bbabe879fc6b619dadb4cf427f4f68588d5b88e4",
+          "bytes": 46255
+        },
+        {
+          "path": "examples/mui/MUIStopwatch/MUIStopwatch.ino",
+          "sha256": "9f791f097b706fd12845fbb96704933507e974a472a56574b968640c67a81ce7",
+          "bytes": 47954
+        },
+        {
+          "path": "examples/mui/MUIWaveformBounce2/MUIWaveformBounce2.ino",
+          "sha256": "116dd93a7193e06b69cf8f92eb71a333d8b5c176eba00aaae5a919bb69010505",
+          "bytes": 53649
+        },
+        {
+          "path": "examples/mui/MUIWaveformSimpleRotary/MUIWaveformSimpleRotary.ino",
+          "sha256": "bebb7658bb0f367977fadfd592180b3f272c86d13a9472a54dd9328fc2b0de26",
+          "bytes": 53452
+        },
+        {
+          "path": "examples/page_buffer/A2Printer/A2Printer.ino",
+          "sha256": "902d0f63541507ed409a1b939b1274a558e0ffcaf7dbe2423ee5eb7bad7ecb1b",
+          "bytes": 4624
+        },
+        {
+          "path": "examples/page_buffer/ButtonEmoticon/ButtonEmoticon.ino",
+          "sha256": "ea0c9ba9290ac1322e5d66645f8defe8f41216804b1a1a1a971a9b22c6c3c891",
+          "bytes": 45191
+        },
+        {
+          "path": "examples/page_buffer/Chinese/Chinese.ino",
+          "sha256": "008040f410084b2dd28e6eb96aa5ac478c4e1e6737a1af71db8035b1cc26c24e",
+          "bytes": 44425
+        },
+        {
+          "path": "examples/page_buffer/ClipWindow/ClipWindow.ino",
+          "sha256": "a93c885bc71d6fe959857be32877b0055786403b09f9da9a0ab16c8a97442c81",
+          "bytes": 44754
+        },
+        {
+          "path": "examples/page_buffer/Clock/Clock.ino",
+          "sha256": "9a0247ca246b281188676a03edf4c029207929ef996c84dbe4b9910fda641e4a",
+          "bytes": 44709
+        },
+        {
+          "path": "examples/page_buffer/ContrastTest/ContrastTest.ino",
+          "sha256": "6d0de02379c871090fc2e5be35fd7c220e6ea21bd59c48259fe13579da43819f",
+          "bytes": 44775
+        },
+        {
+          "path": "examples/page_buffer/Devanagari/Devanagari.ino",
+          "sha256": "723e1bd4d079d91f0cbc2471f8691f727f60f1918b3fdd1333bf974cf4bf24d4",
+          "bytes": 47912
+        },
+        {
+          "path": "examples/page_buffer/DirectAccess/DirectAccess.ino",
+          "sha256": "d2fb3f73e8e01c32dfe7a44617bb5bcc0a5bad2839cee4055af5cf9681470deb",
+          "bytes": 46581
+        },
+        {
+          "path": "examples/page_buffer/DrawLog/DrawLog.ino",
+          "sha256": "11c1e3f85b18ba6624dacb11d7a06a850617c5bccbe5b57fdebb98d2fb5ec365",
+          "bytes": 45565
+        },
+        {
+          "path": "examples/page_buffer/ExtUTF8/ExtUTF8.ino",
+          "sha256": "45931127bb41c9e59386b6b3dc4f72be3488426a56f3ddf480356a0c90c3ecf5",
+          "bytes": 44607
+        },
+        {
+          "path": "examples/page_buffer/FPS/FPS.ino",
+          "sha256": "179126b60752347e438a31206a2220e04f08322f344ec9486a1b79fb67c3ba3c",
+          "bytes": 63560
+        },
+        {
+          "path": "examples/page_buffer/FlipMode/FlipMode.ino",
+          "sha256": "83f141767ce45831fa4d7ef056810a875826e329d873eb7d2c265fb4c2585d6b",
+          "bytes": 44414
+        },
+        {
+          "path": "examples/page_buffer/GraphicsTest/GraphicsTest.ino",
+          "sha256": "524f5bf8e935a81aceaca459688017487a82f594d4fc41c769e3146557b9258b",
+          "bytes": 51095
+        },
+        {
+          "path": "examples/page_buffer/HelloWorld/HelloWorld.ino",
+          "sha256": "069018e3216f658ba53a0c8032e42fc7c5f41592143f5f1a6ab702b483d139f7",
+          "bytes": 45348
+        },
+        {
+          "path": "examples/page_buffer/IconMenu/IconMenu.ino",
+          "sha256": "33eca55925c9d120f0013cceb36dcb1787df543644ce76484d540a5d3d1c83da",
+          "bytes": 49558
+        },
+        {
+          "path": "examples/page_buffer/Japanese/Japanese.ino",
+          "sha256": "aeadc56d402c4595718ca8ca2772f22e7eca3bf3d853d5df32a8e6293c5f71de",
+          "bytes": 44263
+        },
+        {
+          "path": "examples/page_buffer/Korean/Korean.ino",
+          "sha256": "f4d800e4590ede8c28917d089f36a4f704b62870959d4482d0a52408cdc51726",
+          "bytes": 44156
+        },
+        {
+          "path": "examples/page_buffer/LoadFromSD/LoadFromSD.ino",
+          "sha256": "dc185af2d8d6291c42dcbe4a43e1360de12108189890bc60da70ad546b4bcb4c",
+          "bytes": 52366
+        },
+        {
+          "path": "examples/page_buffer/MechCount/MechCount.ino",
+          "sha256": "cea69d84e3082c6c52a31273b9c38ccf4badd9ebba5d559fda10b5d4552db0e5",
+          "bytes": 47098
+        },
+        {
+          "path": "examples/page_buffer/PowerSaveTest/PowerSaveTest.ino",
+          "sha256": "0f5e3565fbf5bdeae3e9ace52094e29db09349e0566dc9ff2c1c537835a90262",
+          "bytes": 43953
+        },
+        {
+          "path": "examples/page_buffer/PrintHelloWorld/PrintHelloWorld.ino",
+          "sha256": "ab0a29d02d37462d346ad8dcb67c7b9998915314d660d2160d0f0e194eaad620",
+          "bytes": 43978
+        },
+        {
+          "path": "examples/page_buffer/PrintProgmem/PrintProgmem.ino",
+          "sha256": "3069555df8593d07702a3d35f15cea4b9eab26740919705beb914f76ad88a1f1",
+          "bytes": 44496
+        },
+        {
+          "path": "examples/page_buffer/PrintUTF8/PrintUTF8.ino",
+          "sha256": "aef7fe1c164fa4d6f7b5d29e2b71b61ef5ef6d4017b0bee5fb3d66802a40f9c7",
+          "bytes": 44427
+        },
+        {
+          "path": "examples/page_buffer/ScrollingText/ScrollingText.ino",
+          "sha256": "e8e3f4e5c680e34d72812abc81de5263d860bdcacaa4964c024c74c0b63f288c",
+          "bytes": 45702
+        },
+        {
+          "path": "examples/page_buffer/SelectionList/SelectionList.ino",
+          "sha256": "1605ab41bd48dbbb150afb7b47db26925cbd9d7ecd716b0552a7598f4891e236",
+          "bytes": 45301
+        },
+        {
+          "path": "examples/page_buffer/Serial/Serial.ino",
+          "sha256": "38d39a897335c42fb3aafffdb9cf215ae8df4adc1a9d8bb11dbd81a2bc2d50bb",
+          "bytes": 45211
+        },
+        {
+          "path": "examples/page_buffer/Shennong/Shennong.ino",
+          "sha256": "61193bfe1239fb7d92d5cbcaa812f3112494a4d4d82ea5243c726b54ebb8b0c9",
+          "bytes": 50762
+        },
+        {
+          "path": "examples/page_buffer/StateBufferLoop/StateBufferLoop.ino",
+          "sha256": "0e4312b25be009a7bc9f0b260eef259dbec8c84e8e7f2b3e0d0796d7cba92ba2",
+          "bytes": 45536
+        },
+        {
+          "path": "examples/page_buffer/Terminal/Terminal.ino",
+          "sha256": "58bb2e84a0cdf34823370bb2b8fad5129f1eee778d44755d8435f6b2ca03e142",
+          "bytes": 45275
+        },
+        {
+          "path": "examples/page_buffer/U8g2Logo/U8g2Logo.ino",
+          "sha256": "ffa4f67a1ca7275fce7bda09b9b57befe7287de828b01339aad9e72418c0365b",
+          "bytes": 45838
+        },
+        {
+          "path": "examples/page_buffer/UpdatePartly/UpdatePartly.ino",
+          "sha256": "59cc88dbc41364d410e5d4f81f24626df8489787409eca250e8cd1d7089d7d5f",
+          "bytes": 46149
+        },
+        {
+          "path": "examples/page_buffer/Weather/Weather.ino",
+          "sha256": "fdd6c4d28fe1671fd307173fc1834abe9303cc237f7d9027b0a073698765a2f3",
+          "bytes": 47333
+        },
+        {
+          "path": "examples/page_buffer/XBM/XBM.ino",
+          "sha256": "71b1120e1e100f5f0b5290992d0438cc2f92077b50368e4ec15df9704111d1e0",
+          "bytes": 48819
+        },
+        {
+          "path": "examples/page_buffer/XORTest/XORTest.ino",
+          "sha256": "46a01b0af73b69ce126c6eb5321fb84feafed2e79e0222ae69a61407d3d91e6d",
+          "bytes": 45131
+        },
+        {
+          "path": "examples/u8x8/16x16Font/16x16Font.ino",
+          "sha256": "d7684b3d21fb074766fc8380e876dee5efbaf6e6de3fe6d2f574410021908563",
+          "bytes": 30584
+        },
+        {
+          "path": "examples/u8x8/ArduboyTest/ArduboyTest.ino",
+          "sha256": "715651d971c5f9ff25a55d4cd836315db011117507b5c3f4a7cb1d4e51c6fbdc",
+          "bytes": 3981
+        },
+        {
+          "path": "examples/u8x8/FlipMode/FlipMode.ino",
+          "sha256": "eea04e2f42475da1a3fc793210afe794f04f10574410a1263ad90062c08b13f2",
+          "bytes": 30621
+        },
+        {
+          "path": "examples/u8x8/GraphicsTest/GraphicsTest.ino",
+          "sha256": "c89ab9abd433777f210b568af44d44a25c7c1720c2c9879ebeb961186376c441",
+          "bytes": 33058
+        },
+        {
+          "path": "examples/u8x8/HelloWorld/HelloWorld.ino",
+          "sha256": "181b1b3effc71cb092b051ae42a6ca0f47410cb6a297bbb28abac479965da547",
+          "bytes": 30654
+        },
+        {
+          "path": "examples/u8x8/MessageBox/MessageBox.ino",
+          "sha256": "45fea4c79b530d5f6390ee1b83fae8e5bd323c1c29dbc1303cde142d82326956",
+          "bytes": 31319
+        },
+        {
+          "path": "examples/u8x8/Rotate90/Rotate90.ino",
+          "sha256": "68f3e6547328f01eed50d1dd91e02fea8c626c44d9f6d403310617c40a903c00",
+          "bytes": 31422
+        },
+        {
+          "path": "examples/u8x8/Terminal/Terminal.ino",
+          "sha256": "4258fbdab3643a4d523230379e19daccfed92ab942368e919bd79db03366bc62",
+          "bytes": 31051
+        },
+        {
+          "path": "extras/ChangeLog",
+          "sha256": "93a4c411217abb142ee5c72d18296bed040b9a5da97c46056f9c84dfbf6b7bc1",
+          "bytes": 17872
+        },
+        {
+          "path": "keywords.txt",
+          "sha256": "64c517b4f4afc265ffaf2927d9f86674eac69eb59b1917ef35aeb656f622bc9f",
+          "bytes": 72217
+        },
+        {
+          "path": "library.json",
+          "sha256": "ca2b18c37b5c23394642c71c7cc2fc60fc71f40270da1b051f5edacd5e1e712e",
+          "bytes": 528
+        },
+        {
+          "path": "library.properties",
+          "sha256": "3031442ac034482410c7d5427dd19167c620d0d8fdf6dadacbf76f41ecaf39ec",
+          "bytes": 1564
+        },
+        {
+          "path": "src/MUIU8g2.h",
+          "sha256": "6011274fcc2dd673160c766d15482f7b0426a40db77caa5932cb3d02caf6a965",
+          "bytes": 3208
+        },
+        {
+          "path": "src/U8g2lib.cpp",
+          "sha256": "c32caddaddf5c06f1f0d54b3ae20393ecc2fad5ba6bef80a40b92c524f9e9680",
+          "bytes": 2205
+        },
+        {
+          "path": "src/U8g2lib.h",
+          "sha256": "dfaa7eba57c115d8824dc58477725ab7f81e0fbb7be86d9cf0f6df9528dda6d0",
+          "bytes": 1895389
+        },
+        {
+          "path": "src/U8x8lib.cpp",
+          "sha256": "21410d25dc79d93d6a7ae4fd79ed0d98913c6857388c2a1a56c42e95f3fb2a8d",
+          "bytes": 56507
+        },
+        {
+          "path": "src/U8x8lib.h",
+          "sha256": "f45a980b3a267d019b5faf3b9e899bced1d7168ec141bc5497145ac4e4581aff",
+          "bytes": 617459
+        },
+        {
+          "path": "src/clib/mui.c",
+          "sha256": "8b90842cc2700e4df371380dfba232791161d5b0fd74badbf320dc5deaac2802",
+          "bytes": 29799
+        },
+        {
+          "path": "src/clib/mui.h",
+          "sha256": "582d108896b5c5b673a5104c6abc95c020a4de21cea7e898cefbbcd653773e43",
+          "bytes": 19278
+        },
+        {
+          "path": "src/clib/mui_u8g2.c",
+          "sha256": "cb35c85e29a739ca6647f96b8d53cacbde51f15144fb70638dd65167ede7862d",
+          "bytes": 76724
+        },
+        {
+          "path": "src/clib/mui_u8g2.h",
+          "sha256": "e6482d8bd390bf10c65d6b1977d5c3f170d81aa2e0e32adf1b062066726a8a33",
+          "bytes": 14702
+        },
+        {
+          "path": "src/clib/u8g2.h",
+          "sha256": "38f231e6b3f54560886628ef595f3bbe6c463b886c0a69acf7c8aabaf8bd6f30",
+          "bytes": 365534
+        },
+        {
+          "path": "src/clib/u8g2_arc.c",
+          "sha256": "8c3f278a73c803f337d7068d92eb595d9131c29fb546fadbf35480c08a1e9289",
+          "bytes": 4068
+        },
+        {
+          "path": "src/clib/u8g2_bitmap.c",
+          "sha256": "04a85f7ccc9e646a6bafe781c16cc22633d5d2bcd0bf13b18973d72afd56da5d",
+          "bytes": 6787
+        },
+        {
+          "path": "src/clib/u8g2_box.c",
+          "sha256": "d329109913b00cfc42038cec55c07b0d8faf50e5995808fa0e0c132a5afd37c5",
+          "bytes": 4632
+        },
+        {
+          "path": "src/clib/u8g2_buffer.c",
+          "sha256": "9ca065a47345bb6bba3f7a81cad60ad7a15c3f2ca926137ad20f1e0ef1df4609",
+          "bytes": 6830
+        },
+        {
+          "path": "src/clib/u8g2_button.c",
+          "sha256": "2011e2e26636fbaeca46edf9d4942fe88aa5f90a83a7ebac536d4f64f0db7cd5",
+          "bytes": 8639
+        },
+        {
+          "path": "src/clib/u8g2_circle.c",
+          "sha256": "6fbcc0dea8c64389ae6537f3e97722edfb85730480fe39747cf4aa1ebd717148",
+          "bytes": 10504
+        },
+        {
+          "path": "src/clib/u8g2_cleardisplay.c",
+          "sha256": "e1ca6ab2e977d9b1e6c72e020c80f6ea38dcab61eb9177e7b0b68ea5c6847c00",
+          "bytes": 2197
+        },
+        {
+          "path": "src/clib/u8g2_d_memory.c",
+          "sha256": "08a339e9958fcd775e1a16867dc0ac626c45928ac1411cf639a83880360066b8",
+          "bytes": 37397
+        },
+        {
+          "path": "src/clib/u8g2_d_setup.c",
+          "sha256": "783985ecb4a979a580a5aacf9176a15160ae1ce16a3c13188e5cd4ca9fd759c7",
+          "bytes": 431398
+        },
+        {
+          "path": "src/clib/u8g2_font.c",
+          "sha256": "33b1d8611ac13bda84c7639c2d760087811133e22f6fa35a76e7291604f10f66",
+          "bytes": 40641
+        },
+        {
+          "path": "src/clib/u8g2_fonts.c",
+          "sha256": "4320525f309cec957538502a48ac1b86c6fd4fbc7db45335ec48e046618d1494",
+          "bytes": 37737533
+        },
+        {
+          "path": "src/clib/u8g2_hvline.c",
+          "sha256": "e63dad17dfe6501fb4b8f47ea7daaaa75c720a88016cfa9af39cc17523fac808",
+          "bytes": 7078
+        },
+        {
+          "path": "src/clib/u8g2_input_value.c",
+          "sha256": "fd6f4f7b2911bffa36677e6f3cceaa7f40dc0dd8ca589adeec2248354dc3c0bd",
+          "bytes": 4155
+        },
+        {
+          "path": "src/clib/u8g2_intersection.c",
+          "sha256": "ed81a18801dfc27220f09162d8ec2a74cc76467bf672431dd6fac9bde66b46c4",
+          "bytes": 4246
+        },
+        {
+          "path": "src/clib/u8g2_kerning.c",
+          "sha256": "c249d6394de157f6c2914bfafcca9bbcd09197fdac96c36a1d9877c8155e5ccc",
+          "bytes": 2852
+        },
+        {
+          "path": "src/clib/u8g2_line.c",
+          "sha256": "a26d7b7ab8ebe3d48a318a93ae618b04b02623c8d86ee02d18ed47b1f4f0302e",
+          "bytes": 2524
+        },
+        {
+          "path": "src/clib/u8g2_ll_hvline.c",
+          "sha256": "5cbb087c688c29b5704cbf4e2971711da2a945dc6c71d9bb5e868b434a2a97f0",
+          "bytes": 9135
+        },
+        {
+          "path": "src/clib/u8g2_message.c",
+          "sha256": "c8b6e01ccb075e7addeeae9551ccd74f65c29d238890adae13399c8dd9e6335d",
+          "bytes": 5549
+        },
+        {
+          "path": "src/clib/u8g2_polygon.c",
+          "sha256": "2f94dc6f32e0434664de8b30b24dbf98a348230db369b807226311828f6e0249",
+          "bytes": 7405
+        },
+        {
+          "path": "src/clib/u8g2_selection_list.c",
+          "sha256": "4bd54750282d1fb4ff96e684e1fde2beb3eb63e86a9bf4b048add1c65bf9b5a9",
+          "bytes": 7658
+        },
+        {
+          "path": "src/clib/u8g2_setup.c",
+          "sha256": "80bf40f40e35ab010d33ac8bebb9a7035c6293645f6f6b662a31a9fe52321d15",
+          "bytes": 11715
+        },
+        {
+          "path": "src/clib/u8log.c",
+          "sha256": "5daa3f7624d6aa08bc2955678b4790987448249695a8959145abe2e8ddfe620b",
+          "bytes": 6662
+        },
+        {
+          "path": "src/clib/u8log_u8g2.c",
+          "sha256": "c6bc655c973e30fa089df145d8ac9dcae64b8a91db0bd28fe12be18293e16bb0",
+          "bytes": 3255
+        },
+        {
+          "path": "src/clib/u8log_u8x8.c",
+          "sha256": "e45ccc063f2b22a7037c8711fe19edc9ac443d0b501aa12668898f3600f556a2",
+          "bytes": 2417
+        },
+        {
+          "path": "src/clib/u8x8.h",
+          "sha256": "0ed46c69398906c87b4f9304f0a410b246aeedecc1928434ff5b54bf8b61680f",
+          "bytes": 70097
+        },
+        {
+          "path": "src/clib/u8x8_8x8.c",
+          "sha256": "da32dff05050e4b18ea9007fdefc49ef31bf24b85ba2200fa791755aa81b2884",
+          "bytes": 12077
+        },
+        {
+          "path": "src/clib/u8x8_byte.c",
+          "sha256": "bb0f154d4fd7adf26b7f9f4188298d9d3e867627b6edc83385d64e26ec00cf23",
+          "bytes": 17872
+        },
+        {
+          "path": "src/clib/u8x8_cad.c",
+          "sha256": "d01bb8c88a3d151936e67a0d685a5f65ac8db4d31e4fde2e0ede220c6831ec0c",
+          "bytes": 25658
+        },
+        {
+          "path": "src/clib/u8x8_capture.c",
+          "sha256": "36f3b20027f4dec2a48053e1f83034b559cd62723c74f3cabc956567de83d776",
+          "bytes": 6466
+        },
+        {
+          "path": "src/clib/u8x8_d_a2printer.c",
+          "sha256": "114b822079175d860379184586a1e54397a9a5d6e222720bd8b26dcb32ab2438",
+          "bytes": 6481
+        },
+        {
+          "path": "src/clib/u8x8_d_ch1120.c",
+          "sha256": "f7457673c9d325b509c4468968147b1e89212e35f2eabbe7d659a9d96de31192",
+          "bytes": 11110
+        },
+        {
+          "path": "src/clib/u8x8_d_gp1247ai.c",
+          "sha256": "c42ae5a0cd82ae1dc60ff566b716f03663be73735c18c9a969008418623c3643",
+          "bytes": 7424
+        },
+        {
+          "path": "src/clib/u8x8_d_gp1287ai.c",
+          "sha256": "e65d45aa1a6a75b462a4bb01523bd5f0a24c49e81ad7e094faf9cb12be8ac3a0",
+          "bytes": 7651
+        },
+        {
+          "path": "src/clib/u8x8_d_gp1294ai.c",
+          "sha256": "703b35bb9a7c3e7ec11eadf6fd2d62028738b5bb002a2b97177bed6b2f60b78b",
+          "bytes": 6804
+        },
+        {
+          "path": "src/clib/u8x8_d_gu800.c",
+          "sha256": "31e463a27dbc085d6ba5c1cf9bf96d3d3a054b7c148ec7fe36e607a6a89540d9",
+          "bytes": 10393
+        },
+        {
+          "path": "src/clib/u8x8_d_hd44102.c",
+          "sha256": "f54e2727553233d332af17e07c3914bd116daf23ae5053a5ae72200c0b6c7476",
+          "bytes": 10760
+        },
+        {
+          "path": "src/clib/u8x8_d_il3820_296x128.c",
+          "sha256": "96d76076feccdd8f7aa82ffc3eebc333571d5b449105e8533ac59d900be5f1a6",
+          "bytes": 17372
+        },
+        {
+          "path": "src/clib/u8x8_d_ist3020.c",
+          "sha256": "502b690096a31eab38de0a8c04914f7cc7b85b6184db9843b7dd148a261d5c0a",
+          "bytes": 7494
+        },
+        {
+          "path": "src/clib/u8x8_d_ist3088.c",
+          "sha256": "59f30172a56e4b19a04161c1f4ce21e175425be9264c6013f90fb89e46ee1e22",
+          "bytes": 9639
+        },
+        {
+          "path": "src/clib/u8x8_d_ist7920.c",
+          "sha256": "836f98d58ebfdcf65e3628c9dc6748407e54c40b3d1bd1757182729c33294476",
+          "bytes": 7144
+        },
+        {
+          "path": "src/clib/u8x8_d_ks0108.c",
+          "sha256": "60e121abee8b34d39e1eacaab0144af96824f721e1b4310c185cce9e26db30e3",
+          "bytes": 11408
+        },
+        {
+          "path": "src/clib/u8x8_d_lc7981.c",
+          "sha256": "299211017c6deaa2938224db7406ecd261abc4f18daf5f60c30f3949201f8589",
+          "bytes": 18476
+        },
+        {
+          "path": "src/clib/u8x8_d_ld7032_60x32.c",
+          "sha256": "ed9e040bc8444eeb7c4a431b25ef29ac853f26a69b602fa2ed513baa2c11bb7f",
+          "bytes": 17449
+        },
+        {
+          "path": "src/clib/u8x8_d_ls013b7dh03.c",
+          "sha256": "6808521f16fb90e7fc29e1594a91048bff1b5b9d34a6d06e105c82e550bc2a62",
+          "bytes": 9858
+        },
+        {
+          "path": "src/clib/u8x8_d_max7219.c",
+          "sha256": "f410de32688f9187ee58d4ae796dd3e4b703e51b3dd022ed133889c5a133c5a0",
+          "bytes": 16545
+        },
+        {
+          "path": "src/clib/u8x8_d_pcd8544_84x48.c",
+          "sha256": "0ea7cf00237d2c07a9b17b99f0eff1e02313d82a3ae2dcff4ab5a675122ed3ce",
+          "bytes": 6184
+        },
+        {
+          "path": "src/clib/u8x8_d_pcf8812.c",
+          "sha256": "7a2fb7b70497fcc603145d650351c3457fe87f3eec5ac80e5f256a9550f98bbe",
+          "bytes": 10768
+        },
+        {
+          "path": "src/clib/u8x8_d_pcf8814_hx1230.c",
+          "sha256": "0e8d14c58887417b8f54611d4f6e230a3eb97300dc85f94c863aa402c6806715",
+          "bytes": 6778
+        },
+        {
+          "path": "src/clib/u8x8_d_s1d15300.c",
+          "sha256": "e99c43acd03a55bf500c6bbf76c44f251744fc31403e53ceb627e42bafb962ef",
+          "bytes": 16203
+        },
+        {
+          "path": "src/clib/u8x8_d_s1d15721.c",
+          "sha256": "254967509b338808c9e07f61ab445d8f582eb0ce264c452ff86c2214c8e54205",
+          "bytes": 8567
+        },
+        {
+          "path": "src/clib/u8x8_d_s1d15e06.c",
+          "sha256": "3413480965327a9d80d2c4cf23b9801d5a34662f152e690a70bbd7981d20e7d0",
+          "bytes": 9081
+        },
+        {
+          "path": "src/clib/u8x8_d_sbn1661.c",
+          "sha256": "cc6b7a30089754a0b4c9548933e1b51df5dae98f6fc978ca0fe3f8909f36bc9e",
+          "bytes": 7045
+        },
+        {
+          "path": "src/clib/u8x8_d_sed1330.c",
+          "sha256": "3f5a9ecef7004fb88c647e63ef8be361ede130810bbe281e266d8aaa887fbb26",
+          "bytes": 19976
+        },
+        {
+          "path": "src/clib/u8x8_d_sh1106_64x32.c",
+          "sha256": "85fa290b3ccce6248db3bd7d1e42c7b97a72479ada299c0a68976866c7483f6c",
+          "bytes": 8366
+        },
+        {
+          "path": "src/clib/u8x8_d_sh1106_72x40.c",
+          "sha256": "d7467d4b38de3ef64ee2222c92053e80062e05a05c333f2f33e83a143bdf09fc",
+          "bytes": 8377
+        },
+        {
+          "path": "src/clib/u8x8_d_sh1107.c",
+          "sha256": "ab90bcaf517e28089259a008731c392d75f56ed364c2be207cbdebf073f2e05b",
+          "bytes": 29369
+        },
+        {
+          "path": "src/clib/u8x8_d_sh1108.c",
+          "sha256": "6eff2f3479f0a7505a340c2b1ccf3b4f451eeaaa750ed1a0c449193ef2077a5f",
+          "bytes": 10835
+        },
+        {
+          "path": "src/clib/u8x8_d_sh1122.c",
+          "sha256": "68f0993cde61bd6d896150270be81ad93fb962af7f8e42c8063b27f4a5466750",
+          "bytes": 9049
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1305.c",
+          "sha256": "51755e9df8054ea6d19830199e72004447ab7b2d8f370d01e50cf66ebc143faf",
+          "bytes": 18228
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_128x32.c",
+          "sha256": "ad440ba67788159c01f7132c3b1f928d81f05a9daf61d90dcea8b3874304403d",
+          "bytes": 11978
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_128x64_noname.c",
+          "sha256": "dcfaf1582aca38fff9799a592b895ca86680b1c0d34822074d24d2ea5c8cbeac",
+          "bytes": 21181
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_2040x16.c",
+          "sha256": "f8aef778d289e54a13c2d9a43c949d84bb9ebfbe76d291f31a2fd99b3b25d58f",
+          "bytes": 8065
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_48x64.c",
+          "sha256": "40a4762b6a94349510e9882bcfe75ce31b6b5585822f1bbfbf4e521baba37b30",
+          "bytes": 8087
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_64x32.c",
+          "sha256": "4a2d887df33a60ef307de04b8492246759a4b2fc9356bb146fcc86440ff52732",
+          "bytes": 10032
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_64x48.c",
+          "sha256": "97a0d1b0b47706d37ad47ef9e997cb77e325eff2ec1aab420fff7cdde9e48a4d",
+          "bytes": 8181
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_72x40.c",
+          "sha256": "a5bda777b556c215dd2e41e01b75eec06491c5af93b41403738177a80c13fe23",
+          "bytes": 9515
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_96x16.c",
+          "sha256": "35c44213198e16a0bb30bd5f7e3bb4f27e7a5ec1cb23efed015bfb06e3926727",
+          "bytes": 8149
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1306_96x40.c",
+          "sha256": "5bb510c189bfa5671bda630db44965e7b986facc9076b2b2c8c9a534cea7b294",
+          "bytes": 12693
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1309.c",
+          "sha256": "c004671b3907c95125b4cc4fe614e539fcee31c0172d45a75434d8b348c6a880",
+          "bytes": 14221
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1312.c",
+          "sha256": "eedaebbeb8733ce7539c43cbaefaa36f5b00477dd726bd13ef01f6abc2d1aa59",
+          "bytes": 12656
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1316.c",
+          "sha256": "d3f5851b2dcdadbe6efeec84bd3e7a8c58a530fa261d5a7aa7526227686afabb",
+          "bytes": 11732
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1317.c",
+          "sha256": "2b9c4ebff60743b10a5c51e01e6200b3a855418d9e3735f2e0b80d216fe77694",
+          "bytes": 8530
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1318.c",
+          "sha256": "141434ba9c18bb7bc7114afa23431b8706bff383deb1f9cb97cf1883c73ad2c5",
+          "bytes": 11303
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1320.c",
+          "sha256": "a44a91c225c8228c41672be6bc81835dc77079de279f2e084c5370cdd5f3d5e2",
+          "bytes": 26309
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1322.c",
+          "sha256": "e6cd240bb8ab98632c8c4a7d0eb060a1ba28fde3e631c1785945d9b4d6849622",
+          "bytes": 30741
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1325.c",
+          "sha256": "674a68e1d3029add6406d576dbced9e04789edad0a82fa40145daa7b2c424283",
+          "bytes": 16242
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1326.c",
+          "sha256": "56d5cf063c3696e167af4301fe45daf4833d2ae56058ccb504da1b1354290fb0",
+          "bytes": 9349
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1327.c",
+          "sha256": "0794be6de697e736f12af0a58d36050748e15d83f537916e68dba44a65365839",
+          "bytes": 37610
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1329.c",
+          "sha256": "6886c7fd1e31146e79c2c088fcb1e98b4f79d3514eb30ec8df280b4ad539599f",
+          "bytes": 17485
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1362.c",
+          "sha256": "f445422d3f4a614bafc9553ce676b2b67a58cfb4ffa419fbcf27bfd493dc5997",
+          "bytes": 16536
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1363.c",
+          "sha256": "8fa900182b031fa97a110165c91be7aeb2214cd5652421820366457e7f04d368",
+          "bytes": 10786
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1606_172x72.c",
+          "sha256": "83be8d01c335a63549a0563053de983f81e170ec2aaae8d2b00797d5d7e32574",
+          "bytes": 13201
+        },
+        {
+          "path": "src/clib/u8x8_d_ssd1607_200x200.c",
+          "sha256": "3aa62099183c38b0d6177a56392177605449793d596479b7064a2c30e761cb40",
+          "bytes": 21909
+        },
+        {
+          "path": "src/clib/u8x8_d_st7301.c",
+          "sha256": "7ee78091343d66be79d42e0ad8a26d8b7cff248481fad6cfbdf6f387e142e668",
+          "bytes": 14549
+        },
+        {
+          "path": "src/clib/u8x8_d_st7302.c",
+          "sha256": "fa5049a04f93f73b65529d3a4a8703caf0c465d1eb5bd88d5221a79ad51793d9",
+          "bytes": 14549
+        },
+        {
+          "path": "src/clib/u8x8_d_st7511.c",
+          "sha256": "a24147246aa091484b9224a9f57461c4546b78f9e597748d83e1fe09a1efe64b",
+          "bytes": 7451
+        },
+        {
+          "path": "src/clib/u8x8_d_st75160.c",
+          "sha256": "062d667c6a0e440695e3680b66e7277e57998cf92af167aef02da9f436aed834",
+          "bytes": 12323
+        },
+        {
+          "path": "src/clib/u8x8_d_st75161.c",
+          "sha256": "c2e645c779c73098c37172278b9e884e6b6254de4c2fb8bbc48f5df8639b8ca6",
+          "bytes": 14584
+        },
+        {
+          "path": "src/clib/u8x8_d_st75256.c",
+          "sha256": "c9f52a6a5e0c56dca32774a4a88708c48068f653bb444b4cc5d3d78d6c1aae6c",
+          "bytes": 65759
+        },
+        {
+          "path": "src/clib/u8x8_d_st7528.c",
+          "sha256": "6dcdb9e0a02114c5e8fc933f1a1b2bebad0a92cb0c73a84c7d14227b32668319",
+          "bytes": 14673
+        },
+        {
+          "path": "src/clib/u8x8_d_st75320.c",
+          "sha256": "f5d435fdee444d6ca6b8fa7b8b0269e080218b57d9cacac3296592d7e45902c6",
+          "bytes": 9343
+        },
+        {
+          "path": "src/clib/u8x8_d_st7539.c",
+          "sha256": "a4bb0264879a8951e47798b68023ab712b211e94a229be253cd03cb607bcff59",
+          "bytes": 6427
+        },
+        {
+          "path": "src/clib/u8x8_d_st7565.c",
+          "sha256": "abbc47370e55139b970d4a34d6d75b29a4c897342a0675844c0eb0e46292bec1",
+          "bytes": 48550
+        },
+        {
+          "path": "src/clib/u8x8_d_st7567.c",
+          "sha256": "8772bc69a9a0fca96a78c5dfd30ebe7aea189adaed58de4614c529c39b2966e9",
+          "bytes": 54923
+        },
+        {
+          "path": "src/clib/u8x8_d_st7571.c",
+          "sha256": "f94528b379452ccf056349b7802c61aad7ac6322e5319dd438f7f498e333d08c",
+          "bytes": 11672
+        },
+        {
+          "path": "src/clib/u8x8_d_st7586s_erc240160.c",
+          "sha256": "f3e029a7ecffb04dd4d9456efe6fa17539bb99d3837477abc100f131fac16c6a",
+          "bytes": 9086
+        },
+        {
+          "path": "src/clib/u8x8_d_st7586s_jlx320160.c",
+          "sha256": "ffb693684d26abc5d3f6a69c870991413b34cef6306a107517b8195ffc7908d5",
+          "bytes": 8305
+        },
+        {
+          "path": "src/clib/u8x8_d_st7586s_jlx384160.c",
+          "sha256": "2ecdea07a48b6244e539e8fab063f98d90f958898f9a4cbd8b2b8834b052daac",
+          "bytes": 8957
+        },
+        {
+          "path": "src/clib/u8x8_d_st7586s_md240128.c",
+          "sha256": "b9b452032dc597ecb6673a9b2743769f5473593896a31634a19b0fefc482a3a3",
+          "bytes": 8322
+        },
+        {
+          "path": "src/clib/u8x8_d_st7586s_s028hn118a.c",
+          "sha256": "442583940cceaa955d1eabbf74624ed28c3f8b78a7e379028f455af17650136a",
+          "bytes": 8912
+        },
+        {
+          "path": "src/clib/u8x8_d_st7586s_ymc240160.c",
+          "sha256": "cc5d240ae005b0f10eb9ac0e86922edc9e827ee8783d2a466d35b10312e1270f",
+          "bytes": 8319
+        },
+        {
+          "path": "src/clib/u8x8_d_st7588.c",
+          "sha256": "1bed147e711495eaa7e52aecf0fc9a7f829743ec5391e89d9b3b19cc6ed88fdf",
+          "bytes": 8354
+        },
+        {
+          "path": "src/clib/u8x8_d_st7920.c",
+          "sha256": "d47570f6ce462fdb247caaf7a8f9ca971110459775e3f8a67e3430463d33ae5d",
+          "bytes": 14301
+        },
+        {
+          "path": "src/clib/u8x8_d_t6963.c",
+          "sha256": "6ca48ddfbb8fde05259db36aba5dbcead2989943b4e81ec54f22877cec0b23d6",
+          "bytes": 22695
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1601.c",
+          "sha256": "46035f634ede8124fd47e9d186ec85d047dc56b6b901ae5eda832e50df341266",
+          "bytes": 10989
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1604.c",
+          "sha256": "e44411170cf9ce68b72eb1be7c85b1c253bea76d1199f3fcf2b2fd185895de13",
+          "bytes": 11457
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1608.c",
+          "sha256": "c75cc76ee16075ff69eada3b5061eec32d352871ec34ccd24c7d6ed8fb8c52d0",
+          "bytes": 19103
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1609.c",
+          "sha256": "9d84c4a79a141241548651f51cb48fcc759a106fdbc2abf41c30e03d0879ec6d",
+          "bytes": 6967
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1610.c",
+          "sha256": "95ccd441b20280ed9afd41c1afb7340c8362e32994d1f5d0e6689ed8cc542961",
+          "bytes": 8884
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1611.c",
+          "sha256": "1ce749c7c5827d84bf67db02801fcc0ed56785e3c063679953cc51b3c00e877e",
+          "bytes": 27067
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1617.c",
+          "sha256": "fb2d921fc0a35175f8960139e1bfbe07449704e974343e5bfb060792b641e5d6",
+          "bytes": 9896
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1628.c",
+          "sha256": "a8566f03cef9b47f2edb25e31ab7bec298586b7c3e77373b10354593c825a786",
+          "bytes": 14756
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1638.c",
+          "sha256": "b1e83bebc96335a4deb885549d9a4e2b9af2fd4d1045dfa4490f474197787598",
+          "bytes": 13867
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1701_dogs102.c",
+          "sha256": "8e0da4f7b8a436cdda5882e003749add2825a599ed2a90acaeab0e5b6b610ae4",
+          "bytes": 7531
+        },
+        {
+          "path": "src/clib/u8x8_d_uc1701_mini12864.c",
+          "sha256": "bbd7a9958bef00e4ab14a96cf4a4a02156ffc7dd860732fd89e3514fdcfae5c4",
+          "bytes": 7507
+        },
+        {
+          "path": "src/clib/u8x8_debounce.c",
+          "sha256": "6c5a8bd4dff3725fbb6d208b6a106dccf57a0b686b2bd6a37a0a44cf943523a9",
+          "bytes": 5610
+        },
+        {
+          "path": "src/clib/u8x8_display.c",
+          "sha256": "d910fd4a1e7ff55a38e5f266985cd66c891b104630190649f3f060efaa0fa888",
+          "bytes": 7462
+        },
+        {
+          "path": "src/clib/u8x8_fonts.c",
+          "sha256": "aac8896e39d6e5cfa0f2d7418c1bd568e696189ef301903b463c53c1fa6ec9b3",
+          "bytes": 1599361
+        },
+        {
+          "path": "src/clib/u8x8_gpio.c",
+          "sha256": "884bc9f983276256faced6767a942ca5e79a03568b284165c0d1c4f855b0d630",
+          "bytes": 1718
+        },
+        {
+          "path": "src/clib/u8x8_input_value.c",
+          "sha256": "4816e93ae16c41409497ea8b09facc05f4afc297a7868b2655aba12b755108ca",
+          "bytes": 3603
+        },
+        {
+          "path": "src/clib/u8x8_message.c",
+          "sha256": "d24fa19f1f37426b44138a4c22cb9d0342626d735faf2e0a104e9d7dbb95ef18",
+          "bytes": 4425
+        },
+        {
+          "path": "src/clib/u8x8_selection_list.c",
+          "sha256": "e1290066f6ac1a4b6b7d5c86b6082bb8186ba63685c173213f74811514f7231b",
+          "bytes": 4941
+        },
+        {
+          "path": "src/clib/u8x8_setup.c",
+          "sha256": "3f50da0b74fea01a3386a3192d412aceadc09cac3e5cbb0b879c1a7e80a38886",
+          "bytes": 4874
+        },
+        {
+          "path": "src/clib/u8x8_string.c",
+          "sha256": "20cfe514ca42bfa22fb5a52aaf9bac3ab8b1e69c994df3fdeb73e3353e9687cc",
+          "bytes": 3983
+        },
+        {
+          "path": "src/clib/u8x8_u16toa.c",
+          "sha256": "5a6877ecb5b0665a48f952588e5bdd173407cf4dac399bcfa75ba64dad412b42",
+          "bytes": 2080
+        },
+        {
+          "path": "src/clib/u8x8_u8toa.c",
+          "sha256": "ef63a1347a330d064969b925f8af517c29b29ac170a7087e8e1f3c6192f49bdf",
+          "bytes": 2359
+        }
+      ]
+    },
+    {
+      "name": "MyLD2410",
+      "version": "1.2.7",
+      "source_path": "/Users/erik/Workspaces/Electronics/Arduino/libraries/MyLD2410",
+      "archive": "MyLD2410.tar.gz",
+      "sha256": "b160dc75e5a3bed8d606879514d6d33d8176994d5ac11b0547cd58996c5e0430",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "164b95f03fdf4ee31c87dc5c5fc0131a685813e3844e74218c8492f56ec5240e",
+          "bytes": 1071
+        },
+        {
+          "path": "README.md",
+          "sha256": "f6e98fcc2117f8969c180eeeeeb6fbe201642c4628cfa3ac0ef3c1527d82b3de",
+          "bytes": 5788
+        },
+        {
+          "path": "examples/auto_thresholds/auto_thresholds.ino",
+          "sha256": "713dc32bf88946fb69695718fc7ac8c202643f4aaf0660db1cf495111d98695e",
+          "bytes": 5085
+        },
+        {
+          "path": "examples/auto_thresholds/board_select.h",
+          "sha256": "e454268abd6f36ee57499b8a06822aed4f416b9f7998f32384f7901b857d0f52",
+          "bytes": 671
+        },
+        {
+          "path": "examples/factory_reset/board_select.h",
+          "sha256": "e454268abd6f36ee57499b8a06822aed4f416b9f7998f32384f7901b857d0f52",
+          "bytes": 671
+        },
+        {
+          "path": "examples/factory_reset/factory_reset.ino",
+          "sha256": "fe0952f1c8c765e30942ece7ce6074e84d24ab24f38f7857ce73207f6477892b",
+          "bytes": 3983
+        },
+        {
+          "path": "examples/modify_parameters/board_select.h",
+          "sha256": "e454268abd6f36ee57499b8a06822aed4f416b9f7998f32384f7901b857d0f52",
+          "bytes": 671
+        },
+        {
+          "path": "examples/modify_parameters/modify_parameters.ino",
+          "sha256": "f99b558413be1cf72a68bf514f2d8fa4590f4d2698cc0db611621d49299f89e2",
+          "bytes": 5307
+        },
+        {
+          "path": "examples/print_parameters/board_select.h",
+          "sha256": "e454268abd6f36ee57499b8a06822aed4f416b9f7998f32384f7901b857d0f52",
+          "bytes": 671
+        },
+        {
+          "path": "examples/print_parameters/print_parameters.ino",
+          "sha256": "f95c2c558b1f35e3742200dab01715acf55dd8c16e7be516916c8e1d63bf38c7",
+          "bytes": 3778
+        },
+        {
+          "path": "examples/sensor_data/board_select.h",
+          "sha256": "8cf93713b5807029b0fd01bf9d56247ef0a91952e2d98336807c0f5992033631",
+          "bytes": 1078
+        },
+        {
+          "path": "examples/sensor_data/sensor_data.ino",
+          "sha256": "91c4d3b8cea10594771ad24065e736724bcdb7d5a091774c7d2e8ed3e6eb32dd",
+          "bytes": 4037
+        },
+        {
+          "path": "examples/set_baud_rate/board_select.h",
+          "sha256": "e454268abd6f36ee57499b8a06822aed4f416b9f7998f32384f7901b857d0f52",
+          "bytes": 671
+        },
+        {
+          "path": "examples/set_baud_rate/set_baud_rate.ino",
+          "sha256": "57cc55e3fea8edb3dc60c9895659f148b792ac8b5480f0ef54625c1c74d20862",
+          "bytes": 3102
+        },
+        {
+          "path": "examples/set_bt_password/board_select.h",
+          "sha256": "e454268abd6f36ee57499b8a06822aed4f416b9f7998f32384f7901b857d0f52",
+          "bytes": 671
+        },
+        {
+          "path": "examples/set_bt_password/set_bt_password.ino",
+          "sha256": "3faebf3af88200138c6b7b5441f6b127f9e97c0584f92e4753c21032dfa33fb2",
+          "bytes": 2228
+        },
+        {
+          "path": "images/ld2410.jpg",
+          "sha256": "0b8bb052c68894dd25749e6db5ca99db9fce158c8252afd8a8c8d14f0b5c466b",
+          "bytes": 20296
+        },
+        {
+          "path": "images/ld2410.png",
+          "sha256": "55ef81ab7366b398927e6279d7bc154942a07f20965faee0f22d61e215e3da7f",
+          "bytes": 56409
+        },
+        {
+          "path": "images/ld2410c.jpg",
+          "sha256": "f4ee5924fc99582a799b59c1ca54b98afa707249b4f697ae2bdf404b1504f42a",
+          "bytes": 38437
+        },
+        {
+          "path": "images/ld2410c.png",
+          "sha256": "dd382034f6b883baee91c3f4c364e8f489e23848225e121cd3753eaa67ced13e",
+          "bytes": 102243
+        },
+        {
+          "path": "library.properties",
+          "sha256": "74edcae01e86d456bacc54a572851e07e774273808d97d94e53e29d7f434e16b",
+          "bytes": 536
+        },
+        {
+          "path": "src/MyLD2410.cpp",
+          "sha256": "fd2dd92756a9901ab081b8463824c0badb0f7ba0c048e5a878d342db114d20b6",
+          "bytes": 19613
+        },
+        {
+          "path": "src/MyLD2410.h",
+          "sha256": "5b0d1b27d9afd9192e2fb06761333a39e049642e801064ab8db18f2b0c3afb0f",
+          "bytes": 14563
+        }
+      ]
+    }
+  ],
+  "other_sketches_not_in_original_inventory": [
+    {
+      "path": "buzzer_node/buzzer_node.ino",
+      "sha256": "7e414041acbaffd5452f627272d54d38ac15beea33586594c150ce7a9099243b",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "c3_ESPNOW/c3_ESPNOW.ino",
+      "sha256": "9848b58227ac5a3ce014547f108ff515800f5cc1eea5d157e5d921eae196e597",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "dac_amp_working/dac_amp_working.ino",
+      "sha256": "46ade86f6b81849613df7a2cf9de19120494685b87ffaebba0e367f6b475d55e",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "display_border/display_border.ino",
+      "sha256": "1394f40aee906326a37e415a2a328bed9716f25aa3b785ceda557f3ab24fdc6e",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "mac_address_finder/mac_address_finder.ino",
+      "sha256": "9f35aa5527d9590b7e49715d04eea73d9ff789d294f22a7cf1f194493bf6e0f4",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "mac_finder/mac_finder.ino",
+      "sha256": "06331294ff2c5f3d37ba4fd01022450b6bad4f20fb44c398837c463e95681265",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "rooster/software/sketches/display/display_v1.ino",
+      "sha256": "b44f77dc6ca001d6baf0345e2b273468fd7944512091099e7d95a235992076d1",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "rooster/software/sketches/sensor/ultrasonic_sensor_v1.ino",
+      "sha256": "428001137b61263522da36e855b89df4a50b6a153d93dd499fc899e3093288c0",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "rooster/software/sketches/speaker/speaker_v1.ino",
+      "sha256": "16f59b58cc3ce8c148e7e11aec5323200d3967d390d9f2d1cb2aa52a01d6df1b",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "s3_ESPNOW/s3_ESPNOW.ino",
+      "sha256": "06a450bb2a0b0b9be927132a2f263ca5f7906050dc43a721fe9ced3f7457c493",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "s3_alarm/s3_alarm.ino",
+      "sha256": "ac30cf371b5b90a8097046a491087024f3bfdaaa28c278758e7d63de7351f8b4",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "s3_pairing/s3_pairing.ino",
+      "sha256": "e989c009e91e169ea4443bb81269b4152fb61413003dac266b5a790a3caf8d6e",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "sensor_node/sensor_node.ino",
+      "sha256": "1ae4bf6137037caed5024fc752bcf091b244ff129fe8cdc178f08ed3a4426e79",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "simple_led/simple_led.ino",
+      "sha256": "44acae47ac0b4d9c1a56960f617e44dcc1faa80c666867703ccc375f9a44c61c",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "simple_tone/simple_tone.ino",
+      "sha256": "728dcfe4ff3b20d41064a878e25e09c86383d96733d87e18c86b306b4e027c2b",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    },
+    {
+      "path": "sketch_nov18a/sketch_nov18a.ino",
+      "sha256": "ef96df4cf0b1d57cd6510964a9d39ea78dd69d27746f581809ed16b044d0d1b5",
+      "disposition": "Outside the original 15; indexed only, original retained; role unverified"
+    }
+  ],
+  "limitations": [
+    "No flashed pair identified; no hardware testing or upload.",
+    "Current installed dependencies, not proven original build versions.",
+    "Toolchain packages are identified in build records, not vendored.",
+    "Read-only permissions and checksums are tamper evidence, not WORM storage."
+  ]
+}

@@ -1,0 +1,868 @@
+[
+  {
+    "id": "cube_browns_combined",
+    "candidate": "combined original folder",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_browns_combined",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/combined/cube_browns"
+    ],
+    "started_utc": "2026-09-07T21:24:25.021551+00:00",
+    "elapsed_seconds": 13.36,
+    "exit_code": 1,
+    "source_sha256": {
+      "cube_browns.ino": "257cadfb2cd4fb6482ef522c25d042808a340deacc0eeebddcf10605e8958bb5",
+      "beacon_browns.ino": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_browns_combined/cube_browns.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      }
+    ],
+    "log": "cube_browns_combined.log",
+    "properties": "cube_browns_combined.properties.txt"
+  },
+  {
+    "id": "cube_browns__beacon_browns",
+    "candidate": "cube_browns/beacon_browns.ino",
+    "fqbn": "esp32:esp32:esp32c3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32c3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_browns__beacon_browns",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_browns__beacon_browns/beacon_browns"
+    ],
+    "started_utc": "2026-09-07T21:24:38.613580+00:00",
+    "elapsed_seconds": 21.73,
+    "exit_code": 0,
+    "source_sha256": {
+      "beacon_browns.ino": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_browns__beacon_browns/beacon_browns.ino.bin",
+        "sha256": "6356f0fdb4b3a352bd347e8fb944eb771f5011f5036cdc2dfa6ea91e172ef03d",
+        "bytes": 960160
+      },
+      {
+        "path": "build/cube_browns__beacon_browns/beacon_browns.ino.merged.bin",
+        "sha256": "2ef60eb40112113a475518202390036e02dbb63e3751e421c90bfc4b72e96085",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/cube_browns__beacon_browns/beacon_browns.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/cube_browns__beacon_browns/beacon_browns.ino.bootloader.bin",
+        "sha256": "e6397e68487ada6e81a273c4b24966418ef6cbf389bae7801363c97ddcbdaeb9",
+        "bytes": 19520
+      }
+    ],
+    "log": "cube_browns__beacon_browns.log",
+    "properties": "cube_browns__beacon_browns.properties.txt"
+  },
+  {
+    "id": "cube_browns__cube_browns",
+    "candidate": "cube_browns/cube_browns.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_browns__cube_browns",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_browns__cube_browns/cube_browns"
+    ],
+    "started_utc": "2026-09-07T21:25:00.578792+00:00",
+    "elapsed_seconds": 30.35,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_browns.ino": "257cadfb2cd4fb6482ef522c25d042808a340deacc0eeebddcf10605e8958bb5"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_browns__cube_browns/cube_browns.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/cube_browns__cube_browns/cube_browns.ino.bin",
+        "sha256": "379211bce50a0ebd8a24893afbb0cd72f302ae0ccbe2ffd8983e783e2e85a33d",
+        "bytes": 960960
+      },
+      {
+        "path": "build/cube_browns__cube_browns/cube_browns.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      },
+      {
+        "path": "build/cube_browns__cube_browns/cube_browns.ino.merged.bin",
+        "sha256": "c0cd3d5d81ae68be392dfe651b8f8fbe6cef08dc096f2de5d3c6087ee1ca0f7c",
+        "bytes": 4194304
+      }
+    ],
+    "log": "cube_browns__cube_browns.log",
+    "properties": "cube_browns__cube_browns.properties.txt"
+  },
+  {
+    "id": "beacon_connected__beacon_connected",
+    "candidate": "beacon_connected/beacon_connected.ino",
+    "fqbn": "esp32:esp32:esp32c3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32c3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/beacon_connected__beacon_connected",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/beacon_connected__beacon_connected/beacon_connected"
+    ],
+    "started_utc": "2026-09-07T21:25:31.172764+00:00",
+    "elapsed_seconds": 21.5,
+    "exit_code": 0,
+    "source_sha256": {
+      "beacon_connected.ino": "fc16b4a53866a6b9307d038a7cfccba7f2389acca839138b89d17fafbcf30fa9"
+    },
+    "binaries": [
+      {
+        "path": "build/beacon_connected__beacon_connected/beacon_connected.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/beacon_connected__beacon_connected/beacon_connected.ino.merged.bin",
+        "sha256": "66788717b09a85878b4aae5750c5fad45d27254be10287de858c2a9871c534bb",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/beacon_connected__beacon_connected/beacon_connected.ino.bootloader.bin",
+        "sha256": "e6397e68487ada6e81a273c4b24966418ef6cbf389bae7801363c97ddcbdaeb9",
+        "bytes": 19520
+      },
+      {
+        "path": "build/beacon_connected__beacon_connected/beacon_connected.ino.bin",
+        "sha256": "0c6c414a59109f52dd38685f7a73b797c9be49342fde4711b833e80007e83ff6",
+        "bytes": 959632
+      }
+    ],
+    "log": "beacon_connected__beacon_connected.log",
+    "properties": "beacon_connected__beacon_connected.properties.txt"
+  },
+  {
+    "id": "beacon_cursor__beacon_cursor",
+    "candidate": "beacon_cursor/beacon_cursor.ino",
+    "fqbn": "esp32:esp32:esp32c3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32c3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/beacon_cursor__beacon_cursor",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/beacon_cursor__beacon_cursor/beacon_cursor"
+    ],
+    "started_utc": "2026-09-07T21:25:52.917423+00:00",
+    "elapsed_seconds": 21.05,
+    "exit_code": 0,
+    "source_sha256": {
+      "beacon_cursor.ino": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918"
+    },
+    "binaries": [
+      {
+        "path": "build/beacon_cursor__beacon_cursor/beacon_cursor.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/beacon_cursor__beacon_cursor/beacon_cursor.ino.bootloader.bin",
+        "sha256": "e6397e68487ada6e81a273c4b24966418ef6cbf389bae7801363c97ddcbdaeb9",
+        "bytes": 19520
+      },
+      {
+        "path": "build/beacon_cursor__beacon_cursor/beacon_cursor.ino.bin",
+        "sha256": "ddd0cc80a2dcdba682d049344d05489a8ebe6193925239275d2485f3520078ca",
+        "bytes": 960160
+      },
+      {
+        "path": "build/beacon_cursor__beacon_cursor/beacon_cursor.ino.merged.bin",
+        "sha256": "8ca29539b097789ddec94eb17eca86a584d85514afa7422d5baf5f299d50e323",
+        "bytes": 4194304
+      }
+    ],
+    "log": "beacon_cursor__beacon_cursor.log",
+    "properties": "beacon_cursor__beacon_cursor.properties.txt"
+  },
+  {
+    "id": "beacon_esp_now__beacon_esp_now",
+    "candidate": "beacon_esp_now/beacon_esp_now.ino",
+    "fqbn": "esp32:esp32:esp32c3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32c3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/beacon_esp_now__beacon_esp_now",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/beacon_esp_now__beacon_esp_now/beacon_esp_now"
+    ],
+    "started_utc": "2026-09-07T21:26:14.211473+00:00",
+    "elapsed_seconds": 21.31,
+    "exit_code": 0,
+    "source_sha256": {
+      "beacon_esp_now.ino": "cb54c240c9f2121be82c9e22fa479d3094b2a6da75e1c6908167b27e83688028"
+    },
+    "binaries": [
+      {
+        "path": "build/beacon_esp_now__beacon_esp_now/beacon_esp_now.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/beacon_esp_now__beacon_esp_now/beacon_esp_now.ino.bin",
+        "sha256": "4f816037201b6f1f6b19198067783519067f911a0b270938a774d7a2ac691353",
+        "bytes": 960000
+      },
+      {
+        "path": "build/beacon_esp_now__beacon_esp_now/beacon_esp_now.ino.merged.bin",
+        "sha256": "5b06ca646a896c0fce0ca878e6950ec71c0a860258045a29b3685dbdd090d390",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/beacon_esp_now__beacon_esp_now/beacon_esp_now.ino.bootloader.bin",
+        "sha256": "e6397e68487ada6e81a273c4b24966418ef6cbf389bae7801363c97ddcbdaeb9",
+        "bytes": 19520
+      }
+    ],
+    "log": "beacon_esp_now__beacon_esp_now.log",
+    "properties": "beacon_esp_now__beacon_esp_now.properties.txt"
+  },
+  {
+    "id": "beacon_working_backup__beacon_working_backup",
+    "candidate": "beacon_working_backup/beacon_working_backup.ino",
+    "fqbn": "esp32:esp32:esp32c3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32c3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/beacon_working_backup__beacon_working_backup",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/beacon_working_backup__beacon_working_backup/beacon_working_backup"
+    ],
+    "started_utc": "2026-09-07T21:26:35.770883+00:00",
+    "elapsed_seconds": 21.4,
+    "exit_code": 0,
+    "source_sha256": {
+      "beacon_working_backup.ino": "cb54c240c9f2121be82c9e22fa479d3094b2a6da75e1c6908167b27e83688028"
+    },
+    "binaries": [
+      {
+        "path": "build/beacon_working_backup__beacon_working_backup/beacon_working_backup.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/beacon_working_backup__beacon_working_backup/beacon_working_backup.ino.bin",
+        "sha256": "20c675c468063f36b9bb415cd12f8df2f4b8e13803eded6327894c7448a4aa29",
+        "bytes": 960000
+      },
+      {
+        "path": "build/beacon_working_backup__beacon_working_backup/beacon_working_backup.ino.bootloader.bin",
+        "sha256": "e6397e68487ada6e81a273c4b24966418ef6cbf389bae7801363c97ddcbdaeb9",
+        "bytes": 19520
+      },
+      {
+        "path": "build/beacon_working_backup__beacon_working_backup/beacon_working_backup.ino.merged.bin",
+        "sha256": "e9a9e77466f135e0bd613d48348974336135e09ca8a53bb1d06d80ea9ff8b5e8",
+        "bytes": 4194304
+      }
+    ],
+    "log": "beacon_working_backup__beacon_working_backup.log",
+    "properties": "beacon_working_backup__beacon_working_backup.properties.txt"
+  },
+  {
+    "id": "c3_beacon__c3_beacon",
+    "candidate": "c3_beacon/c3_beacon.ino",
+    "fqbn": "esp32:esp32:esp32c3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32c3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/c3_beacon__c3_beacon",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/c3_beacon__c3_beacon/c3_beacon"
+    ],
+    "started_utc": "2026-09-07T21:26:57.413448+00:00",
+    "elapsed_seconds": 15.49,
+    "exit_code": 0,
+    "source_sha256": {
+      "c3_beacon.ino": "e2be97701e40f2399c9dabd2278ef0dd17cf79f2aa9bc4e940397b920f194e3a"
+    },
+    "binaries": [
+      {
+        "path": "build/c3_beacon__c3_beacon/c3_beacon.ino.bootloader.bin",
+        "sha256": "e6397e68487ada6e81a273c4b24966418ef6cbf389bae7801363c97ddcbdaeb9",
+        "bytes": 19520
+      },
+      {
+        "path": "build/c3_beacon__c3_beacon/c3_beacon.ino.bin",
+        "sha256": "416e4648093ca2e936eaa45b45646e55f0ec1b2f7dbf219146becc706eefc7db",
+        "bytes": 306144
+      },
+      {
+        "path": "build/c3_beacon__c3_beacon/c3_beacon.ino.merged.bin",
+        "sha256": "e261fd63cf44ff77d755d2f736b50a26550ba9232e306359f00a60dad9a8e419",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/c3_beacon__c3_beacon/c3_beacon.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      }
+    ],
+    "log": "c3_beacon__c3_beacon.log",
+    "properties": "c3_beacon__c3_beacon.properties.txt"
+  },
+  {
+    "id": "cube_MAX98357__cube_MAX98357",
+    "candidate": "cube_MAX98357/cube_MAX98357.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_MAX98357__cube_MAX98357",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_MAX98357__cube_MAX98357/cube_MAX98357"
+    ],
+    "started_utc": "2026-09-07T21:27:13.147433+00:00",
+    "elapsed_seconds": 15.09,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_MAX98357.ino": "fb11439c199725b9465059ad57810d5f5676530e611389d89577c8cd6b1c313c"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_MAX98357__cube_MAX98357/cube_MAX98357.ino.merged.bin",
+        "sha256": "a29a1f5c618ab7b605b9a0d2afc0dc82e5eb048e1f8e8f0a75a9671194ac4afc",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/cube_MAX98357__cube_MAX98357/cube_MAX98357.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/cube_MAX98357__cube_MAX98357/cube_MAX98357.ino.bin",
+        "sha256": "dbde7f161704c3bd85ce1d074eb15ed79610957617025ba71b463de1c626c2b6",
+        "bytes": 333968
+      },
+      {
+        "path": "build/cube_MAX98357__cube_MAX98357/cube_MAX98357.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      }
+    ],
+    "log": "cube_MAX98357__cube_MAX98357.log",
+    "properties": "cube_MAX98357__cube_MAX98357.properties.txt"
+  },
+  {
+    "id": "cube_connected__cube_connected",
+    "candidate": "cube_connected/cube_connected.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_connected__cube_connected",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_connected__cube_connected/cube_connected"
+    ],
+    "started_utc": "2026-09-07T21:27:28.481043+00:00",
+    "elapsed_seconds": 28.8,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_connected.ino": "183c024daeb41500b673cccb5440ca62323f2b2a6ec0bdd286ff3196873a5912"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_connected__cube_connected/cube_connected.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/cube_connected__cube_connected/cube_connected.ino.merged.bin",
+        "sha256": "215a30d172712b695d384bee5ce64c9925eb9ae74430cfec416b000b3da76c01",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/cube_connected__cube_connected/cube_connected.ino.bin",
+        "sha256": "68f42c4a5b283d88f9feda3101def9081c27ffe2529de9c0dc97c0ecc7311aef",
+        "bytes": 942144
+      },
+      {
+        "path": "build/cube_connected__cube_connected/cube_connected.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      }
+    ],
+    "log": "cube_connected__cube_connected.log",
+    "properties": "cube_connected__cube_connected.properties.txt"
+  },
+  {
+    "id": "cube_cursor__cube_cursor",
+    "candidate": "cube_cursor/cube_cursor.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_cursor__cube_cursor",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_cursor__cube_cursor/cube_cursor"
+    ],
+    "started_utc": "2026-09-07T21:27:57.534057+00:00",
+    "elapsed_seconds": 29.61,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_cursor.ino": "865692a83865cab7f1c61a0bbe12b902387472f5ca3003840b8cd915ddf90b55"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_cursor__cube_cursor/cube_cursor.ino.merged.bin",
+        "sha256": "e827c507fa674df57a88338280386f7c50092ebb80aae33733ac74710e9f8d0b",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/cube_cursor__cube_cursor/cube_cursor.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/cube_cursor__cube_cursor/cube_cursor.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      },
+      {
+        "path": "build/cube_cursor__cube_cursor/cube_cursor.ino.bin",
+        "sha256": "9734a049c12cf80d7bce3a2870c432e94bff0a9d0f3deb18199d3c8474b7cb24",
+        "bytes": 960960
+      }
+    ],
+    "log": "cube_cursor__cube_cursor.log",
+    "properties": "cube_cursor__cube_cursor.properties.txt"
+  },
+  {
+    "id": "cube_display_test__cube_display_test",
+    "candidate": "cube_display_test/cube_display_test.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_display_test__cube_display_test",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_display_test__cube_display_test/cube_display_test"
+    ],
+    "started_utc": "2026-09-07T21:28:27.380464+00:00",
+    "elapsed_seconds": 22.49,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_display_test.ino": "656b3fa643c13c98734632dd199d98ead355113b250005e8a304413c8f7b0850"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_display_test__cube_display_test/cube_display_test.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/cube_display_test__cube_display_test/cube_display_test.ino.bin",
+        "sha256": "360ae80680ae478f8bb0f1d8b37345ce5be261aad8157e0850689bc5396ce454",
+        "bytes": 348048
+      },
+      {
+        "path": "build/cube_display_test__cube_display_test/cube_display_test.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      },
+      {
+        "path": "build/cube_display_test__cube_display_test/cube_display_test.ino.merged.bin",
+        "sha256": "1a8e1371ccc7676671a5bdee0b5da71287509e9a1eecb7319f249899cca8c5e8",
+        "bytes": 4194304
+      }
+    ],
+    "log": "cube_display_test__cube_display_test.log",
+    "properties": "cube_display_test__cube_display_test.properties.txt"
+  },
+  {
+    "id": "cube_esp_now__cube_esp_now",
+    "candidate": "cube_esp_now/cube_esp_now.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_esp_now__cube_esp_now",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_esp_now__cube_esp_now/cube_esp_now"
+    ],
+    "started_utc": "2026-09-07T21:28:50.116102+00:00",
+    "elapsed_seconds": 30.03,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_esp_now.ino": "6fefee567c2a54232b3b5e5dc72e2302235393c623aabfc6bbb68b7e2dd43f33"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_esp_now__cube_esp_now/cube_esp_now.ino.bin",
+        "sha256": "9351403443198e4de1acf3def67b2f31c39baa636a9e93426a6bdd85d60e8015",
+        "bytes": 959616
+      },
+      {
+        "path": "build/cube_esp_now__cube_esp_now/cube_esp_now.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      },
+      {
+        "path": "build/cube_esp_now__cube_esp_now/cube_esp_now.ino.merged.bin",
+        "sha256": "1beb0424a942a13417551bb8520eeb0f9c56badcbea0b9a92573c79e52cda852",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/cube_esp_now__cube_esp_now/cube_esp_now.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      }
+    ],
+    "log": "cube_esp_now__cube_esp_now.log",
+    "properties": "cube_esp_now__cube_esp_now.properties.txt"
+  },
+  {
+    "id": "cube_merge__cube_merge",
+    "candidate": "cube_merge/cube_merge.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_merge__cube_merge",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_merge__cube_merge/cube_merge"
+    ],
+    "started_utc": "2026-09-07T21:29:20.396344+00:00",
+    "elapsed_seconds": 29.25,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_merge.ino": "01ae76b3aedee5bdc2d755bdf7ef349cfa568cb7a3b7f1a0bc24b3e353dbc1e6"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_merge__cube_merge/cube_merge.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      },
+      {
+        "path": "build/cube_merge__cube_merge/cube_merge.ino.merged.bin",
+        "sha256": "9df43632cc64486f1abfd453041cfc5f1d9c3cb01c848194069f8039f323ff50",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/cube_merge__cube_merge/cube_merge.ino.bin",
+        "sha256": "39d394a6eed416ae1d26cee9b9d6b91da96bd99cd4ff0333be76d93c3e04c226",
+        "bytes": 960480
+      },
+      {
+        "path": "build/cube_merge__cube_merge/cube_merge.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      }
+    ],
+    "log": "cube_merge__cube_merge.log",
+    "properties": "cube_merge__cube_merge.properties.txt"
+  },
+  {
+    "id": "cube_settings_save__cube_settings_save",
+    "candidate": "cube_settings_save/cube_settings_save.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_settings_save__cube_settings_save",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_settings_save__cube_settings_save/cube_settings_save"
+    ],
+    "started_utc": "2026-09-07T21:29:49.892108+00:00",
+    "elapsed_seconds": 29.13,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_settings_save.ino": "d23b436841262388a6f5c538ec2e0c74ddd54a7e5e8dbdc37566d81a6c9c920c"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_settings_save__cube_settings_save/cube_settings_save.ino.merged.bin",
+        "sha256": "56a36334c339c708da0e13482de938c426e4f82c57a2da1991173bc033821625",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/cube_settings_save__cube_settings_save/cube_settings_save.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/cube_settings_save__cube_settings_save/cube_settings_save.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      },
+      {
+        "path": "build/cube_settings_save__cube_settings_save/cube_settings_save.ino.bin",
+        "sha256": "d0b1ea7af36f5b9ce39905215273776941f67f0bc7a3e5ccc4ad6cd847129aca",
+        "bytes": 957872
+      }
+    ],
+    "log": "cube_settings_save__cube_settings_save.log",
+    "properties": "cube_settings_save__cube_settings_save.properties.txt"
+  },
+  {
+    "id": "cube_working_backup__cube_working_backup",
+    "candidate": "cube_working_backup/cube_working_backup.ino",
+    "fqbn": "esp32:esp32:esp32s3",
+    "fqbn_status": "inferred generic development target; not recovered upload settings",
+    "command": [
+      "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+      "--config-file",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/arduino-cli.yaml",
+      "--no-color",
+      "compile",
+      "--fqbn",
+      "esp32:esp32:esp32s3",
+      "--libraries",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/libraries",
+      "--jobs",
+      "4",
+      "--build-path",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/build/cube_working_backup__cube_working_backup",
+      "--warnings",
+      "default",
+      "--verbose",
+      "/Users/erik/Workspaces/the-forge-roo-002/docs/rooster/baselines/2026-09-07/.work/installed-core-3.3.7/targets/cube_working_backup__cube_working_backup/cube_working_backup"
+    ],
+    "started_utc": "2026-09-07T21:30:19.267336+00:00",
+    "elapsed_seconds": 29.22,
+    "exit_code": 0,
+    "source_sha256": {
+      "cube_working_backup.ino": "6fefee567c2a54232b3b5e5dc72e2302235393c623aabfc6bbb68b7e2dd43f33"
+    },
+    "binaries": [
+      {
+        "path": "build/cube_working_backup__cube_working_backup/cube_working_backup.ino.merged.bin",
+        "sha256": "dc20210672efbcc2c302f19eca164d8265f8e3c4599ce99bd75d60012d70f211",
+        "bytes": 4194304
+      },
+      {
+        "path": "build/cube_working_backup__cube_working_backup/cube_working_backup.ino.partitions.bin",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      {
+        "path": "build/cube_working_backup__cube_working_backup/cube_working_backup.ino.bin",
+        "sha256": "bc35acf1cbb743fbe8f83e2808149a3004cba4526af142a357a0853d03aefd41",
+        "bytes": 959616
+      },
+      {
+        "path": "build/cube_working_backup__cube_working_backup/cube_working_backup.ino.bootloader.bin",
+        "sha256": "670896258d62395f1986940214cc4a3223d1b05ab90f43666ec6a712639de516",
+        "bytes": 19984
+      }
+    ],
+    "log": "cube_working_backup__cube_working_backup.log",
+    "properties": "cube_working_backup__cube_working_backup.properties.txt"
+  }
+]

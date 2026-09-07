@@ -1,0 +1,71 @@
+{
+  "reference_commit": "dc57b550ebe8c1943e7830468d73af3f93c5bb73",
+  "files": [
+    {
+      "path": "boards/alec-main/HARNESS.md",
+      "sha256": "8b9e3a9ce7394d0d724c0b935ec66aed4a3e2cf7ad1ce6eb41149afef3d7338c",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_sch",
+      "sha256": "c018caa4af4b9e1c447e77db778ceab7783be0a68f3d7afa4315d6d86b4e3536",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_pcb",
+      "sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-main/power-monitor.kicad_sch",
+      "sha256": "5674222175787fd2235c24711ed66e2b4a5ac528fcaf3b901d96921e13c4d400",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-controls/alec-controls.kicad_sch",
+      "sha256": "babde019c24a9e8d6d8e37ba2da1eed0d94f982b57d29ea06e4b50cdc9a501c4",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-front/alec-front.kicad_sch",
+      "sha256": "c1b96a15953fb801559de8dcc0c884e8d090fb42ebfd70af9384590418f39127",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-sensor/alec-sensor.kicad_sch",
+      "sha256": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-sensor/alec-sensor.kicad_pcb",
+      "sha256": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-sensor/OPERATION.md",
+      "sha256": "182023e9b968bf0d7a15df7d369f7ae8201569a538d599a5ff81a66411169e5b",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/alec-sensor/tools/check_design.py",
+      "sha256": "11ce6b7c87fa4647873939ff8ec4f230df39fba3dab44a1befb1e2b4bfeefe15",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/esp32s3-devkit-5v/review/gpio-map.csv",
+      "sha256": "abc2d4b81ff0f237f36d89d5a64fed103977f81813bfa47514be3532d650dc4f",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/esp32s3-devkit-5v/review/design-review.md",
+      "sha256": "dd3b4eff788299a86fa5a9e70a9e049248891341bfb17ab4c7b7dabc4ae74c82",
+      "matches_reference_commit": true
+    },
+    {
+      "path": "boards/esp32s3-devkit/esp32s3-devkit.kicad_pcb",
+      "sha256": "cffc4a576a43fd2ce0a466d633ca9c478f8d6c0c00d383fccd4131d955b8b2f9",
+      "matches_reference_commit": true
+    }
+  ],
+  "scope": "Static source comparison only; no fresh ERC/DRC/netlist export or physical test."
+}

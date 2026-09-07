@@ -1,0 +1,2537 @@
+[
+  {
+    "path": "beacon_connected/beacon_connected.ino",
+    "sha256": "fc16b4a53866a6b9307d038a7cfccba7f2389acca839138b89d17fafbcf30fa9",
+    "includes": [
+      {
+        "line": 15,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 16,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 17,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 18,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 19,
+        "text": "#include \"esp_idf_version.h\""
+      },
+      {
+        "line": 21,
+        "text": "#include <MyLD2410.h>"
+      }
+    ],
+    "target_inferred": "ESP32-C3",
+    "pins": [
+      {
+        "line": 134,
+        "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+      },
+      {
+        "line": 135,
+        "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+      },
+      {
+        "line": 138,
+        "text": "static const int UART_RX = 20; // LD2410 TX -> here"
+      },
+      {
+        "line": 139,
+        "text": "static const int UART_TX = 21; // LD2410 RX -> here"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 40,
+        "text": "struct CubeToBeacon {\n  uint32_t magic;\n  uint8_t  version;\n  uint8_t  type;\n  uint16_t seq;\n\n  // Only user-facing contract fields:\n  uint8_t  maxDistHalfFt;   // 0.5ft units\n  uint16_t hold15sUnits;    // 15s units\n};"
+      },
+      {
+        "line": 51,
+        "text": "struct BeaconToCube {\n  uint32_t magic;\n  uint8_t  version;\n  uint8_t  type;\n  uint16_t seq;\n\n  uint8_t  presence;   // 0/1 (we send \"latched presence\" = yellow LED state)\n  uint8_t  success;    // 0/1 (green LED state)\n  uint16_t held15s;    // how many 15s units accumulated (for display)\n};"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 12,
+        "text": "// - ESPNOW_CHANNEL must match Cube."
+      },
+      {
+        "line": 24,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 1; // MUST MATCH CUBE"
+      },
+      {
+        "line": 26,
+        "text": "static const uint32_t MSG_MAGIC = 0x52535431; // 'RST1'"
+      },
+      {
+        "line": 30,
+        "text": "  MSG_TEST_START = 1,"
+      },
+      {
+        "line": 31,
+        "text": "  MSG_TEST_STOP  = 2,"
+      },
+      {
+        "line": 32,
+        "text": "  MSG_PING       = 3,"
+      },
+      {
+        "line": 35,
+        "text": "  MSG_ROGER      = 101,"
+      },
+      {
+        "line": 36,
+        "text": "  MSG_STATUS     = 102"
+      },
+      {
+        "line": 39,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 61,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 87,
+        "text": "  p.channel = ESPNOW_CHANNEL;"
+      },
+      {
+        "line": 113,
+        "text": "  wifiForceChannel(ESPNOW_CHANNEL);"
+      },
+      {
+        "line": 144,
+        "text": "static const uint32_t MSG_SILENT_MS = 1500;  // if no radar DATA frames arrive, treat raw as \"No\""
+      },
+      {
+        "line": 248,
+        "text": "  msg.magic = MSG_MAGIC;"
+      },
+      {
+        "line": 264,
+        "text": "  msg.magic = MSG_MAGIC;"
+      },
+      {
+        "line": 284,
+        "text": "  if (msg.magic != MSG_MAGIC) return;"
+      },
+      {
+        "line": 342,
+        "text": "  Serial.printf(\"ESPNOW_CHANNEL=%u\\n\", ESPNOW_CHANNEL);"
+      }
+    ]
+  },
+  {
+    "path": "beacon_cursor/beacon_cursor.ino",
+    "sha256": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918",
+    "includes": [
+      {
+        "line": 18,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 19,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 20,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 21,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 22,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 26,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 34,
+        "text": "#include <MyLD2410.h>"
+      }
+    ],
+    "target_inferred": "ESP32-C3",
+    "pins": [
+      {
+        "line": 49,
+        "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+      },
+      {
+        "line": 50,
+        "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+      },
+      {
+        "line": 56,
+        "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+      },
+      {
+        "line": 57,
+        "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 94,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 1=config\n  uint8_t  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  uint8_t  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  uint32_t seq;             // incrementing\n};"
+      },
+      {
+        "line": 103,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 2=ack\n  uint32_t seq;             // echoes config seq\n  uint8_t  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 111,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 3=presence\n  uint32_t seq;             // current config seq (or 0 if no session)\n  uint8_t  present;         // 0/1 (effective presence for cube)\n  uint16_t distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 120,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 4=success\n  uint32_t seq;             // current config seq\n};"
+      },
+      {
+        "line": 127,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 5=stop\n  uint32_t seq;             // session/config seq to stop\n};"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 37,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9;"
+      },
+      {
+        "line": 38,
+        "text": "static const char    MAGIC_ROOS[4]  = {'R','O','O','S'};"
+      },
+      {
+        "line": 39,
+        "text": "static const uint8_t PROTO_VER      = 1;"
+      },
+      {
+        "line": 42,
+        "text": "static const uint8_t MSG_CONFIG    = 1;"
+      },
+      {
+        "line": 43,
+        "text": "static const uint8_t MSG_ACK       = 2;"
+      },
+      {
+        "line": 44,
+        "text": "static const uint8_t MSG_PRESENCE  = 3;"
+      },
+      {
+        "line": 45,
+        "text": "static const uint8_t MSG_SUCCESS   = 4;"
+      },
+      {
+        "line": 46,
+        "text": "static const uint8_t MSG_STOP      = 5;"
+      },
+      {
+        "line": 61,
+        "text": "static const uint32_t MSG_SILENT_MS   = 3'000;   // if no DATA frames arrive, treat raw as \"No\""
+      },
+      {
+        "line": 92,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 134,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 219,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      },
+      {
+        "line": 263,
+        "text": "  memcpy(a.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 264,
+        "text": "  a.version = PROTO_VER;"
+      },
+      {
+        "line": 278,
+        "text": "  memcpy(p.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 279,
+        "text": "  p.version = PROTO_VER;"
+      },
+      {
+        "line": 301,
+        "text": "  memcpy(s.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 302,
+        "text": "  s.version = PROTO_VER;"
+      },
+      {
+        "line": 375,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 376,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 461,
+        "text": "  forceChannel(ESPNOW_CHANNEL);"
+      },
+      {
+        "line": 482,
+        "text": "  Serial.printf(\"ESP-NOW channel=%u\\n\", (unsigned)ESPNOW_CHANNEL);"
+      }
+    ]
+  },
+  {
+    "path": "beacon_esp_now/beacon_esp_now.ino",
+    "sha256": "cb54c240c9f2121be82c9e22fa479d3094b2a6da75e1c6908167b27e83688028",
+    "includes": [
+      {
+        "line": 18,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 19,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 20,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 21,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 22,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 26,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 34,
+        "text": "#include <MyLD2410.h>"
+      }
+    ],
+    "target_inferred": "ESP32-C3",
+    "pins": [
+      {
+        "line": 49,
+        "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+      },
+      {
+        "line": 50,
+        "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+      },
+      {
+        "line": 56,
+        "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+      },
+      {
+        "line": 57,
+        "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 94,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 1=config\n  uint8_t  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  uint8_t  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  uint32_t seq;             // incrementing\n};"
+      },
+      {
+        "line": 103,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 2=ack\n  uint32_t seq;             // echoes config seq\n  uint8_t  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 111,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 3=presence\n  uint32_t seq;             // current config seq (or 0 if no session)\n  uint8_t  present;         // 0/1 (effective presence for cube)\n  uint16_t distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 120,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 4=success\n  uint32_t seq;             // current config seq\n};"
+      },
+      {
+        "line": 127,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 5=stop\n  uint32_t seq;             // session/config seq to stop\n};"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 37,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9;"
+      },
+      {
+        "line": 38,
+        "text": "static const char    MAGIC_ROOS[4]  = {'R','O','O','S'};"
+      },
+      {
+        "line": 39,
+        "text": "static const uint8_t PROTO_VER      = 1;"
+      },
+      {
+        "line": 42,
+        "text": "static const uint8_t MSG_CONFIG    = 1;"
+      },
+      {
+        "line": 43,
+        "text": "static const uint8_t MSG_ACK       = 2;"
+      },
+      {
+        "line": 44,
+        "text": "static const uint8_t MSG_PRESENCE  = 3;"
+      },
+      {
+        "line": 45,
+        "text": "static const uint8_t MSG_SUCCESS   = 4;"
+      },
+      {
+        "line": 46,
+        "text": "static const uint8_t MSG_STOP      = 5;"
+      },
+      {
+        "line": 61,
+        "text": "static const uint32_t MSG_SILENT_MS   = 3'000;   // if no DATA frames arrive, treat raw as \"No\""
+      },
+      {
+        "line": 92,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 134,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 214,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      },
+      {
+        "line": 256,
+        "text": "  memcpy(a.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 257,
+        "text": "  a.version = PROTO_VER;"
+      },
+      {
+        "line": 271,
+        "text": "  memcpy(p.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 272,
+        "text": "  p.version = PROTO_VER;"
+      },
+      {
+        "line": 294,
+        "text": "  memcpy(s.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 295,
+        "text": "  s.version = PROTO_VER;"
+      },
+      {
+        "line": 368,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 369,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 456,
+        "text": "  forceChannel(ESPNOW_CHANNEL);"
+      },
+      {
+        "line": 477,
+        "text": "  Serial.printf(\"ESP-NOW channel=%u\\n\", (unsigned)ESPNOW_CHANNEL);"
+      }
+    ]
+  },
+  {
+    "path": "beacon_working_backup/beacon_working_backup.ino",
+    "sha256": "cb54c240c9f2121be82c9e22fa479d3094b2a6da75e1c6908167b27e83688028",
+    "includes": [
+      {
+        "line": 18,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 19,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 20,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 21,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 22,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 26,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 34,
+        "text": "#include <MyLD2410.h>"
+      }
+    ],
+    "target_inferred": "ESP32-C3",
+    "pins": [
+      {
+        "line": 49,
+        "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+      },
+      {
+        "line": 50,
+        "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+      },
+      {
+        "line": 56,
+        "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+      },
+      {
+        "line": 57,
+        "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 94,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 1=config\n  uint8_t  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  uint8_t  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  uint32_t seq;             // incrementing\n};"
+      },
+      {
+        "line": 103,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 2=ack\n  uint32_t seq;             // echoes config seq\n  uint8_t  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 111,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 3=presence\n  uint32_t seq;             // current config seq (or 0 if no session)\n  uint8_t  present;         // 0/1 (effective presence for cube)\n  uint16_t distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 120,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 4=success\n  uint32_t seq;             // current config seq\n};"
+      },
+      {
+        "line": 127,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 5=stop\n  uint32_t seq;             // session/config seq to stop\n};"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 37,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9;"
+      },
+      {
+        "line": 38,
+        "text": "static const char    MAGIC_ROOS[4]  = {'R','O','O','S'};"
+      },
+      {
+        "line": 39,
+        "text": "static const uint8_t PROTO_VER      = 1;"
+      },
+      {
+        "line": 42,
+        "text": "static const uint8_t MSG_CONFIG    = 1;"
+      },
+      {
+        "line": 43,
+        "text": "static const uint8_t MSG_ACK       = 2;"
+      },
+      {
+        "line": 44,
+        "text": "static const uint8_t MSG_PRESENCE  = 3;"
+      },
+      {
+        "line": 45,
+        "text": "static const uint8_t MSG_SUCCESS   = 4;"
+      },
+      {
+        "line": 46,
+        "text": "static const uint8_t MSG_STOP      = 5;"
+      },
+      {
+        "line": 61,
+        "text": "static const uint32_t MSG_SILENT_MS   = 3'000;   // if no DATA frames arrive, treat raw as \"No\""
+      },
+      {
+        "line": 92,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 134,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 214,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      },
+      {
+        "line": 256,
+        "text": "  memcpy(a.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 257,
+        "text": "  a.version = PROTO_VER;"
+      },
+      {
+        "line": 271,
+        "text": "  memcpy(p.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 272,
+        "text": "  p.version = PROTO_VER;"
+      },
+      {
+        "line": 294,
+        "text": "  memcpy(s.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 295,
+        "text": "  s.version = PROTO_VER;"
+      },
+      {
+        "line": 368,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 369,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 456,
+        "text": "  forceChannel(ESPNOW_CHANNEL);"
+      },
+      {
+        "line": 477,
+        "text": "  Serial.printf(\"ESP-NOW channel=%u\\n\", (unsigned)ESPNOW_CHANNEL);"
+      }
+    ]
+  },
+  {
+    "path": "c3_beacon/c3_beacon.ino",
+    "sha256": "e2be97701e40f2399c9dabd2278ef0dd17cf79f2aa9bc4e940397b920f194e3a",
+    "includes": [
+      {
+        "line": 10,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 11,
+        "text": "#include <MyLD2410.h>"
+      }
+    ],
+    "target_inferred": "ESP32-C3",
+    "pins": [
+      {
+        "line": 14,
+        "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+      },
+      {
+        "line": 15,
+        "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+      },
+      {
+        "line": 18,
+        "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+      },
+      {
+        "line": 19,
+        "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+      }
+    ],
+    "all_structs": [],
+    "protocol_lines": [
+      {
+        "line": 24,
+        "text": "static const uint32_t MSG_SILENT_MS   = 1'500;  // if no DATA frames arrive, treat raw as \"No\""
+      }
+    ]
+  },
+  {
+    "path": "cube_MAX98357/cube_MAX98357.ino",
+    "sha256": "fb11439c199725b9465059ad57810d5f5676530e611389d89577c8cd6b1c313c",
+    "includes": [
+      {
+        "line": 11,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 12,
+        "text": "#include \"driver/i2s.h\""
+      },
+      {
+        "line": 13,
+        "text": "#include <math.h>"
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 20,
+        "text": "#define GPIO_I2S_BCLK   15"
+      },
+      {
+        "line": 21,
+        "text": "#define GPIO_I2S_LRCLK  16"
+      },
+      {
+        "line": 22,
+        "text": "#define GPIO_I2S_DATA   17"
+      },
+      {
+        "line": 26,
+        "text": "#define PIN_BOOST_EN    18"
+      },
+      {
+        "line": 29,
+        "text": "#define PIN_AMP_SD      21"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 44,
+        "text": "struct Note { float freq; float duration; };"
+      }
+    ],
+    "protocol_lines": []
+  },
+  {
+    "path": "cube_browns/beacon_browns.ino",
+    "sha256": "c238b971415345d635cb00615c7123737c712b885b03462250e32f94d4cb9918",
+    "includes": [
+      {
+        "line": 18,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 19,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 20,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 21,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 22,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 26,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 34,
+        "text": "#include <MyLD2410.h>"
+      }
+    ],
+    "target_inferred": "ESP32-C3",
+    "pins": [
+      {
+        "line": 49,
+        "text": "static const uint8_t PIN_LED_YELLOW = 4;"
+      },
+      {
+        "line": 50,
+        "text": "static const uint8_t PIN_LED_GREEN  = 3;"
+      },
+      {
+        "line": 56,
+        "text": "static const int UART_RX = 20; // ESP32 RX  (LD2410 TX -> here)"
+      },
+      {
+        "line": 57,
+        "text": "static const int UART_TX = 21; // ESP32 TX  (LD2410 RX -> here)"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 94,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 1=config\n  uint8_t  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  uint8_t  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  uint32_t seq;             // incrementing\n};"
+      },
+      {
+        "line": 103,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 2=ack\n  uint32_t seq;             // echoes config seq\n  uint8_t  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 111,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 3=presence\n  uint32_t seq;             // current config seq (or 0 if no session)\n  uint8_t  present;         // 0/1 (effective presence for cube)\n  uint16_t distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 120,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 4=success\n  uint32_t seq;             // current config seq\n};"
+      },
+      {
+        "line": 127,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];        // \"ROOS\"\n  uint8_t  version;         // 1\n  uint8_t  msgType;         // 5=stop\n  uint32_t seq;             // session/config seq to stop\n};"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 37,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9;"
+      },
+      {
+        "line": 38,
+        "text": "static const char    MAGIC_ROOS[4]  = {'R','O','O','S'};"
+      },
+      {
+        "line": 39,
+        "text": "static const uint8_t PROTO_VER      = 1;"
+      },
+      {
+        "line": 42,
+        "text": "static const uint8_t MSG_CONFIG    = 1;"
+      },
+      {
+        "line": 43,
+        "text": "static const uint8_t MSG_ACK       = 2;"
+      },
+      {
+        "line": 44,
+        "text": "static const uint8_t MSG_PRESENCE  = 3;"
+      },
+      {
+        "line": 45,
+        "text": "static const uint8_t MSG_SUCCESS   = 4;"
+      },
+      {
+        "line": 46,
+        "text": "static const uint8_t MSG_STOP      = 5;"
+      },
+      {
+        "line": 61,
+        "text": "static const uint32_t MSG_SILENT_MS   = 3'000;   // if no DATA frames arrive, treat raw as \"No\""
+      },
+      {
+        "line": 92,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 134,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 219,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      },
+      {
+        "line": 263,
+        "text": "  memcpy(a.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 264,
+        "text": "  a.version = PROTO_VER;"
+      },
+      {
+        "line": 278,
+        "text": "  memcpy(p.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 279,
+        "text": "  p.version = PROTO_VER;"
+      },
+      {
+        "line": 301,
+        "text": "  memcpy(s.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 302,
+        "text": "  s.version = PROTO_VER;"
+      },
+      {
+        "line": 375,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 376,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 461,
+        "text": "  forceChannel(ESPNOW_CHANNEL);"
+      },
+      {
+        "line": 482,
+        "text": "  Serial.printf(\"ESP-NOW channel=%u\\n\", (unsigned)ESPNOW_CHANNEL);"
+      }
+    ]
+  },
+  {
+    "path": "cube_browns/cube_browns.ino",
+    "sha256": "257cadfb2cd4fb6482ef522c25d042808a340deacc0eeebddcf10605e8958bb5",
+    "includes": [
+      {
+        "line": 119,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 120,
+        "text": "#include <Wire.h>"
+      },
+      {
+        "line": 121,
+        "text": "#include <U8g2lib.h>"
+      },
+      {
+        "line": 122,
+        "text": "#include \"driver/i2s.h\""
+      },
+      {
+        "line": 123,
+        "text": "#include <math.h>"
+      },
+      {
+        "line": 125,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 126,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 127,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 128,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 132,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 136,
+        "text": "#include <nvs.h>"
+      },
+      {
+        "line": 137,
+        "text": "#include <nvs_flash.h>"
+      },
+      {
+        "line": 138,
+        "text": "#include <stddef.h>"
+      },
+      {
+        "line": 139,
+        "text": "#include <string.h>"
+      },
+      {
+        "line": 141,
+        "text": "#include \"esp_sleep.h\""
+      },
+      {
+        "line": 142,
+        "text": "#include \"driver/rtc_io.h\""
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 154,
+        "text": "#define GPIO_I2S_BCLK    15"
+      },
+      {
+        "line": 155,
+        "text": "#define GPIO_I2S_LRCLK   16"
+      },
+      {
+        "line": 156,
+        "text": "#define GPIO_I2S_DATA    17"
+      },
+      {
+        "line": 159,
+        "text": "#define PIN_VOL_UP       5"
+      },
+      {
+        "line": 160,
+        "text": "#define PIN_VOL_DOWN     6"
+      },
+      {
+        "line": 161,
+        "text": "#define PIN_MODE         4"
+      },
+      {
+        "line": 164,
+        "text": "#define OLED_SDA_PIN     8"
+      },
+      {
+        "line": 165,
+        "text": "#define OLED_SCL_PIN     9"
+      },
+      {
+        "line": 168,
+        "text": "#define PIN_RTC_INT      1   // active-low open-drain"
+      },
+      {
+        "line": 171,
+        "text": "#define PIN_OLED_PWR     7   // HIGH = OLED power ON"
+      },
+      {
+        "line": 174,
+        "text": "#define PIN_BOOST_EN     18"
+      },
+      {
+        "line": 175,
+        "text": "#define PIN_AMP_SD       21"
+      },
+      {
+        "line": 191,
+        "text": "#define USE_AUDIO_MUTE_PIN 0"
+      },
+      {
+        "line": 192,
+        "text": "#define PIN_AUDIO_MUTE     23"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 32,
+        "text": "struct PersistAlarm {\n  roos_u8 enabled;\n  roos_u8 hour24;\n  roos_u8 minute;\n};"
+      },
+      {
+        "line": 38,
+        "text": "struct SettingsBlob {\n  roos_u32 magic;\n  roos_u16 ver;\n  roos_u8  volume;\n  roos_u8  distHalfFt;\n  roos_u8  timeHalfMin;\n  PersistAlarm alarms[7];\n  roos_u32 crc32;\n};"
+      },
+      {
+        "line": 76,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+      },
+      {
+        "line": 85,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 93,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 102,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+      },
+      {
+        "line": 109,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+      },
+      {
+        "line": 265,
+        "text": "struct DayAlarm {\n  bool    enabled;\n  uint8_t hour24;\n  uint8_t minute;\n};"
+      },
+      {
+        "line": 733,
+        "text": "struct Note { float freq; float duration; };"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 31,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 47,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 68,
+        "text": "  MSG_CONFIG   = 1,"
+      },
+      {
+        "line": 69,
+        "text": "  MSG_ACK      = 2,"
+      },
+      {
+        "line": 70,
+        "text": "  MSG_PRESENCE = 3,"
+      },
+      {
+        "line": 71,
+        "text": "  MSG_SUCCESS  = 4,"
+      },
+      {
+        "line": 72,
+        "text": "  MSG_STOP     = 5"
+      },
+      {
+        "line": 75,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 115,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 205,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+      },
+      {
+        "line": 210,
+        "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+      },
+      {
+        "line": 211,
+        "text": "static const uint8_t PROTO_VER     = 1;"
+      },
+      {
+        "line": 1041,
+        "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 1042,
+        "text": "  msg.version     = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 1061,
+        "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 1062,
+        "text": "  st.version = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 1252,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 1253,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 1390,
+        "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+      },
+      {
+        "line": 1400,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      }
+    ]
+  },
+  {
+    "path": "cube_connected/cube_connected.ino",
+    "sha256": "183c024daeb41500b673cccb5440ca62323f2b2a6ec0bdd286ff3196873a5912",
+    "includes": [
+      {
+        "line": 14,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 15,
+        "text": "#include <Wire.h>"
+      },
+      {
+        "line": 16,
+        "text": "#include <U8g2lib.h>"
+      },
+      {
+        "line": 17,
+        "text": "#include \"driver/i2s.h\""
+      },
+      {
+        "line": 18,
+        "text": "#include <math.h>"
+      },
+      {
+        "line": 20,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 21,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 22,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 23,
+        "text": "#include \"esp_idf_version.h\""
+      },
+      {
+        "line": 24,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 26,
+        "text": "#include \"esp_sleep.h\""
+      },
+      {
+        "line": 27,
+        "text": "#include \"driver/rtc_io.h\""
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 34,
+        "text": "#define GPIO_I2S_BCLK    15"
+      },
+      {
+        "line": 35,
+        "text": "#define GPIO_I2S_LRCLK   16"
+      },
+      {
+        "line": 36,
+        "text": "#define GPIO_I2S_DATA    17"
+      },
+      {
+        "line": 38,
+        "text": "#define PIN_VOL_UP       5"
+      },
+      {
+        "line": 39,
+        "text": "#define PIN_VOL_DOWN     6"
+      },
+      {
+        "line": 40,
+        "text": "#define PIN_MODE         4"
+      },
+      {
+        "line": 42,
+        "text": "#define OLED_SDA_PIN     8"
+      },
+      {
+        "line": 43,
+        "text": "#define OLED_SCL_PIN     9"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 81,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];\n  uint8_t  version;\n  uint8_t  msgType;      // MSG_CONFIG\n  uint8_t  distHalfFt;   // 1..16\n  uint8_t  timeHalfMin;  // 1..10\n  uint32_t seq;\n};"
+      },
+      {
+        "line": 90,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];\n  uint8_t  version;\n  uint8_t  msgType;      // MSG_ACK\n  uint32_t seq;\n  uint8_t  ok;\n};"
+      },
+      {
+        "line": 98,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  uint8_t  version;\n  uint8_t  msgType;      // MSG_PRESENCE\n  uint32_t seq;\n  uint8_t  present;\n  uint16_t distCm;\n};"
+      },
+      {
+        "line": 107,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  uint8_t  version;\n  uint8_t  msgType;      // MSG_SUCCESS\n  uint32_t seq;\n};"
+      },
+      {
+        "line": 220,
+        "text": "struct DayAlarm {\n  bool    enabled;\n  uint8_t hour24;\n  uint8_t minute;\n};"
+      },
+      {
+        "line": 257,
+        "text": "struct Note { float freq; float duration; };"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 48,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match beacon"
+      },
+      {
+        "line": 51,
+        "text": "static const char MAGIC_ROOS[4] = { 'R','O','O','S' };"
+      },
+      {
+        "line": 52,
+        "text": "static const uint8_t PROTO_VER  = 1;"
+      },
+      {
+        "line": 55,
+        "text": "  MSG_CONFIG   = 1,"
+      },
+      {
+        "line": 56,
+        "text": "  MSG_ACK      = 2,"
+      },
+      {
+        "line": 57,
+        "text": "  MSG_PRESENCE = 3,"
+      },
+      {
+        "line": 58,
+        "text": "  MSG_SUCCESS  = 4"
+      },
+      {
+        "line": 80,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 113,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 626,
+        "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 627,
+        "text": "  msg.version  = PROTO_VER;"
+      },
+      {
+        "line": 655,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 656,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 724,
+        "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+      },
+      {
+        "line": 734,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      }
+    ]
+  },
+  {
+    "path": "cube_cursor/cube_cursor.ino",
+    "sha256": "865692a83865cab7f1c61a0bbe12b902387472f5ca3003840b8cd915ddf90b55",
+    "includes": [
+      {
+        "line": 119,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 120,
+        "text": "#include <Wire.h>"
+      },
+      {
+        "line": 121,
+        "text": "#include <U8g2lib.h>"
+      },
+      {
+        "line": 122,
+        "text": "#include \"driver/i2s.h\""
+      },
+      {
+        "line": 123,
+        "text": "#include <math.h>"
+      },
+      {
+        "line": 125,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 126,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 127,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 128,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 132,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 136,
+        "text": "#include <nvs.h>"
+      },
+      {
+        "line": 137,
+        "text": "#include <nvs_flash.h>"
+      },
+      {
+        "line": 138,
+        "text": "#include <stddef.h>"
+      },
+      {
+        "line": 139,
+        "text": "#include <string.h>"
+      },
+      {
+        "line": 141,
+        "text": "#include \"esp_sleep.h\""
+      },
+      {
+        "line": 142,
+        "text": "#include \"driver/rtc_io.h\""
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 154,
+        "text": "#define GPIO_I2S_BCLK    15"
+      },
+      {
+        "line": 155,
+        "text": "#define GPIO_I2S_LRCLK   16"
+      },
+      {
+        "line": 156,
+        "text": "#define GPIO_I2S_DATA    17"
+      },
+      {
+        "line": 159,
+        "text": "#define PIN_VOL_UP       5"
+      },
+      {
+        "line": 160,
+        "text": "#define PIN_VOL_DOWN     6"
+      },
+      {
+        "line": 161,
+        "text": "#define PIN_MODE         4"
+      },
+      {
+        "line": 164,
+        "text": "#define OLED_SDA_PIN     8"
+      },
+      {
+        "line": 165,
+        "text": "#define OLED_SCL_PIN     9"
+      },
+      {
+        "line": 168,
+        "text": "#define PIN_RTC_INT      1   // active-low open-drain"
+      },
+      {
+        "line": 171,
+        "text": "#define PIN_OLED_PWR     7   // HIGH = OLED power ON"
+      },
+      {
+        "line": 174,
+        "text": "#define PIN_BOOST_EN     18"
+      },
+      {
+        "line": 175,
+        "text": "#define PIN_AMP_SD       21"
+      },
+      {
+        "line": 191,
+        "text": "#define USE_AUDIO_MUTE_PIN 0"
+      },
+      {
+        "line": 192,
+        "text": "#define PIN_AUDIO_MUTE     23"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 32,
+        "text": "struct PersistAlarm {\n  roos_u8 enabled;\n  roos_u8 hour24;\n  roos_u8 minute;\n};"
+      },
+      {
+        "line": 38,
+        "text": "struct SettingsBlob {\n  roos_u32 magic;\n  roos_u16 ver;\n  roos_u8  volume;\n  roos_u8  distHalfFt;\n  roos_u8  timeHalfMin;\n  PersistAlarm alarms[7];\n  roos_u32 crc32;\n};"
+      },
+      {
+        "line": 76,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+      },
+      {
+        "line": 85,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 93,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 102,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+      },
+      {
+        "line": 109,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+      },
+      {
+        "line": 265,
+        "text": "struct DayAlarm {\n  bool    enabled;\n  uint8_t hour24;\n  uint8_t minute;\n};"
+      },
+      {
+        "line": 733,
+        "text": "struct Note { float freq; float duration; };"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 31,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 47,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 68,
+        "text": "  MSG_CONFIG   = 1,"
+      },
+      {
+        "line": 69,
+        "text": "  MSG_ACK      = 2,"
+      },
+      {
+        "line": 70,
+        "text": "  MSG_PRESENCE = 3,"
+      },
+      {
+        "line": 71,
+        "text": "  MSG_SUCCESS  = 4,"
+      },
+      {
+        "line": 72,
+        "text": "  MSG_STOP     = 5"
+      },
+      {
+        "line": 75,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 115,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 205,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+      },
+      {
+        "line": 210,
+        "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+      },
+      {
+        "line": 211,
+        "text": "static const uint8_t PROTO_VER     = 1;"
+      },
+      {
+        "line": 1041,
+        "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 1042,
+        "text": "  msg.version     = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 1061,
+        "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 1062,
+        "text": "  st.version = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 1252,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 1253,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 1390,
+        "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+      },
+      {
+        "line": 1400,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      }
+    ]
+  },
+  {
+    "path": "cube_display_test/cube_display_test.ino",
+    "sha256": "656b3fa643c13c98734632dd199d98ead355113b250005e8a304413c8f7b0850",
+    "includes": [
+      {
+        "line": 18,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 19,
+        "text": "#include <Wire.h>"
+      },
+      {
+        "line": 20,
+        "text": "#include <U8g2lib.h>"
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 23,
+        "text": "#define PIN_MODE       4"
+      },
+      {
+        "line": 24,
+        "text": "#define PIN_VOL_UP     5"
+      },
+      {
+        "line": 25,
+        "text": "#define PIN_VOL_DOWN   6"
+      },
+      {
+        "line": 27,
+        "text": "#define OLED_SDA_PIN   8"
+      },
+      {
+        "line": 28,
+        "text": "#define OLED_SCL_PIN   9"
+      },
+      {
+        "line": 31,
+        "text": "#define PIN_OLED_PWR   7"
+      }
+    ],
+    "all_structs": [],
+    "protocol_lines": []
+  },
+  {
+    "path": "cube_esp_now/cube_esp_now.ino",
+    "sha256": "6fefee567c2a54232b3b5e5dc72e2302235393c623aabfc6bbb68b7e2dd43f33",
+    "includes": [
+      {
+        "line": 110,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 111,
+        "text": "#include <Wire.h>"
+      },
+      {
+        "line": 112,
+        "text": "#include <U8g2lib.h>"
+      },
+      {
+        "line": 113,
+        "text": "#include \"driver/i2s.h\""
+      },
+      {
+        "line": 114,
+        "text": "#include <math.h>"
+      },
+      {
+        "line": 116,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 117,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 118,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 119,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 124,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 128,
+        "text": "#include <nvs.h>"
+      },
+      {
+        "line": 129,
+        "text": "#include <nvs_flash.h>"
+      },
+      {
+        "line": 130,
+        "text": "#include <stddef.h>"
+      },
+      {
+        "line": 131,
+        "text": "#include <string.h>"
+      },
+      {
+        "line": 133,
+        "text": "#include \"esp_sleep.h\""
+      },
+      {
+        "line": 134,
+        "text": "#include \"driver/rtc_io.h\""
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 145,
+        "text": "#define GPIO_I2S_BCLK    15"
+      },
+      {
+        "line": 146,
+        "text": "#define GPIO_I2S_LRCLK   16"
+      },
+      {
+        "line": 147,
+        "text": "#define GPIO_I2S_DATA    17"
+      },
+      {
+        "line": 149,
+        "text": "#define PIN_VOL_UP       5"
+      },
+      {
+        "line": 150,
+        "text": "#define PIN_VOL_DOWN     6"
+      },
+      {
+        "line": 151,
+        "text": "#define PIN_MODE         4"
+      },
+      {
+        "line": 153,
+        "text": "#define OLED_SDA_PIN     8"
+      },
+      {
+        "line": 154,
+        "text": "#define OLED_SCL_PIN     9"
+      },
+      {
+        "line": 159,
+        "text": "#define PIN_RTC_INT      1   // RTC INT pin wired here (active-low open-drain)"
+      },
+      {
+        "line": 162,
+        "text": "#define USE_AUDIO_MUTE_PIN 0"
+      },
+      {
+        "line": 163,
+        "text": "#define PIN_AUDIO_MUTE     18"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 23,
+        "text": "struct PersistAlarm {\n  roos_u8 enabled;\n  roos_u8 hour24;\n  roos_u8 minute;\n};"
+      },
+      {
+        "line": 29,
+        "text": "struct SettingsBlob {\n  roos_u32 magic;\n  roos_u16 ver;\n  roos_u8  volume;\n  roos_u8  distHalfFt;\n  roos_u8  timeHalfMin;\n  PersistAlarm alarms[7];\n  roos_u32 crc32;\n};"
+      },
+      {
+        "line": 67,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+      },
+      {
+        "line": 76,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 84,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 93,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+      },
+      {
+        "line": 100,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+      },
+      {
+        "line": 239,
+        "text": "struct DayAlarm {\n  bool    enabled;\n  uint8_t hour24;\n  uint8_t minute;\n};"
+      },
+      {
+        "line": 695,
+        "text": "struct Note { float freq; float duration; };"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 22,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 38,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 59,
+        "text": "  MSG_CONFIG   = 1,"
+      },
+      {
+        "line": 60,
+        "text": "  MSG_ACK      = 2,"
+      },
+      {
+        "line": 61,
+        "text": "  MSG_PRESENCE = 3,"
+      },
+      {
+        "line": 62,
+        "text": "  MSG_SUCCESS  = 4,"
+      },
+      {
+        "line": 63,
+        "text": "  MSG_STOP     = 5"
+      },
+      {
+        "line": 66,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 106,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 176,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+      },
+      {
+        "line": 181,
+        "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+      },
+      {
+        "line": 182,
+        "text": "static const uint8_t PROTO_VER     = 1;"
+      },
+      {
+        "line": 900,
+        "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 901,
+        "text": "  msg.version     = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 920,
+        "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 921,
+        "text": "  st.version = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 1073,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 1074,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 1200,
+        "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+      },
+      {
+        "line": 1210,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      }
+    ]
+  },
+  {
+    "path": "cube_merge/cube_merge.ino",
+    "sha256": "01ae76b3aedee5bdc2d755bdf7ef349cfa568cb7a3b7f1a0bc24b3e353dbc1e6",
+    "includes": [
+      {
+        "line": 119,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 120,
+        "text": "#include <Wire.h>"
+      },
+      {
+        "line": 121,
+        "text": "#include <U8g2lib.h>"
+      },
+      {
+        "line": 122,
+        "text": "#include \"driver/i2s.h\""
+      },
+      {
+        "line": 123,
+        "text": "#include <math.h>"
+      },
+      {
+        "line": 125,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 126,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 127,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 128,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 132,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 136,
+        "text": "#include <nvs.h>"
+      },
+      {
+        "line": 137,
+        "text": "#include <nvs_flash.h>"
+      },
+      {
+        "line": 138,
+        "text": "#include <stddef.h>"
+      },
+      {
+        "line": 139,
+        "text": "#include <string.h>"
+      },
+      {
+        "line": 141,
+        "text": "#include \"esp_sleep.h\""
+      },
+      {
+        "line": 142,
+        "text": "#include \"driver/rtc_io.h\""
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 154,
+        "text": "#define GPIO_I2S_BCLK    15"
+      },
+      {
+        "line": 155,
+        "text": "#define GPIO_I2S_LRCLK   16"
+      },
+      {
+        "line": 156,
+        "text": "#define GPIO_I2S_DATA    17"
+      },
+      {
+        "line": 159,
+        "text": "#define PIN_VOL_UP       5"
+      },
+      {
+        "line": 160,
+        "text": "#define PIN_VOL_DOWN     6"
+      },
+      {
+        "line": 161,
+        "text": "#define PIN_MODE         4"
+      },
+      {
+        "line": 164,
+        "text": "#define OLED_SDA_PIN     8"
+      },
+      {
+        "line": 165,
+        "text": "#define OLED_SCL_PIN     9"
+      },
+      {
+        "line": 168,
+        "text": "#define PIN_RTC_INT      1   // active-low open-drain"
+      },
+      {
+        "line": 171,
+        "text": "#define PIN_OLED_PWR     7   // HIGH = OLED power ON"
+      },
+      {
+        "line": 174,
+        "text": "#define PIN_BOOST_EN     18"
+      },
+      {
+        "line": 175,
+        "text": "#define PIN_AMP_SD       21"
+      },
+      {
+        "line": 191,
+        "text": "#define USE_AUDIO_MUTE_PIN 0"
+      },
+      {
+        "line": 192,
+        "text": "#define PIN_AUDIO_MUTE     23"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 32,
+        "text": "struct PersistAlarm {\n  roos_u8 enabled;\n  roos_u8 hour24;\n  roos_u8 minute;\n};"
+      },
+      {
+        "line": 38,
+        "text": "struct SettingsBlob {\n  roos_u32 magic;\n  roos_u16 ver;\n  roos_u8  volume;\n  roos_u8  distHalfFt;\n  roos_u8  timeHalfMin;\n  PersistAlarm alarms[7];\n  roos_u32 crc32;\n};"
+      },
+      {
+        "line": 76,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+      },
+      {
+        "line": 85,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 93,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 102,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+      },
+      {
+        "line": 109,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+      },
+      {
+        "line": 265,
+        "text": "struct DayAlarm {\n  bool    enabled;\n  uint8_t hour24;\n  uint8_t minute;\n};"
+      },
+      {
+        "line": 733,
+        "text": "struct Note { float freq; float duration; };"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 31,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 47,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 68,
+        "text": "  MSG_CONFIG   = 1,"
+      },
+      {
+        "line": 69,
+        "text": "  MSG_ACK      = 2,"
+      },
+      {
+        "line": 70,
+        "text": "  MSG_PRESENCE = 3,"
+      },
+      {
+        "line": 71,
+        "text": "  MSG_SUCCESS  = 4,"
+      },
+      {
+        "line": 72,
+        "text": "  MSG_STOP     = 5"
+      },
+      {
+        "line": 75,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 115,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 205,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+      },
+      {
+        "line": 210,
+        "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+      },
+      {
+        "line": 211,
+        "text": "static const uint8_t PROTO_VER     = 1;"
+      },
+      {
+        "line": 1013,
+        "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 1014,
+        "text": "  msg.version     = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 1033,
+        "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 1034,
+        "text": "  st.version = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 1205,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 1206,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 1333,
+        "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+      },
+      {
+        "line": 1343,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      }
+    ]
+  },
+  {
+    "path": "cube_settings_save/cube_settings_save.ino",
+    "sha256": "d23b436841262388a6f5c538ec2e0c74ddd54a7e5e8dbdc37566d81a6c9c920c",
+    "includes": [
+      {
+        "line": 97,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 98,
+        "text": "#include <Wire.h>"
+      },
+      {
+        "line": 99,
+        "text": "#include <U8g2lib.h>"
+      },
+      {
+        "line": 100,
+        "text": "#include \"driver/i2s.h\""
+      },
+      {
+        "line": 101,
+        "text": "#include <math.h>"
+      },
+      {
+        "line": 103,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 104,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 105,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 106,
+        "text": "#include <esp_idf_version.h>"
+      },
+      {
+        "line": 114,
+        "text": "#include \"esp_sleep.h\""
+      },
+      {
+        "line": 115,
+        "text": "#include \"driver/rtc_io.h\""
+      },
+      {
+        "line": 117,
+        "text": "#include <stddef.h>    // offsetof"
+      },
+      {
+        "line": 118,
+        "text": "#include <string.h>    // memcpy"
+      },
+      {
+        "line": 119,
+        "text": "#include <nvs.h>"
+      },
+      {
+        "line": 120,
+        "text": "#include <nvs_flash.h>"
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 127,
+        "text": "#define GPIO_I2S_BCLK    15"
+      },
+      {
+        "line": 128,
+        "text": "#define GPIO_I2S_LRCLK   16"
+      },
+      {
+        "line": 129,
+        "text": "#define GPIO_I2S_DATA    17"
+      },
+      {
+        "line": 131,
+        "text": "#define PIN_VOL_UP       5"
+      },
+      {
+        "line": 132,
+        "text": "#define PIN_VOL_DOWN     6"
+      },
+      {
+        "line": 133,
+        "text": "#define PIN_MODE         4"
+      },
+      {
+        "line": 135,
+        "text": "#define OLED_SDA_PIN     8"
+      },
+      {
+        "line": 136,
+        "text": "#define OLED_SCL_PIN     9"
+      },
+      {
+        "line": 141,
+        "text": "#define USE_AUDIO_MUTE_PIN 0"
+      },
+      {
+        "line": 142,
+        "text": "#define PIN_AUDIO_MUTE     18"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 18,
+        "text": "struct PersistAlarm {\n  roos_u8 enabled;\n  roos_u8 hour24;\n  roos_u8 minute;\n};"
+      },
+      {
+        "line": 24,
+        "text": "struct SettingsBlob {\n  roos_u32 magic;\n  roos_u16 ver;\n  roos_u8  volume;\n  roos_u8  distHalfFt;\n  roos_u8  timeHalfMin;\n  PersistAlarm alarms[7];\n  roos_u32 crc32;\n};"
+      },
+      {
+        "line": 61,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+      },
+      {
+        "line": 70,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 78,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 87,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+      },
+      {
+        "line": 219,
+        "text": "struct DayAlarm {\n  bool    enabled;\n  uint8_t hour24;\n  uint8_t minute;\n};"
+      },
+      {
+        "line": 531,
+        "text": "struct Note { float freq; float duration; };"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 17,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 33,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 54,
+        "text": "  MSG_CONFIG   = 1,"
+      },
+      {
+        "line": 55,
+        "text": "  MSG_ACK      = 2,"
+      },
+      {
+        "line": 56,
+        "text": "  MSG_PRESENCE = 3,"
+      },
+      {
+        "line": 57,
+        "text": "  MSG_SUCCESS  = 4"
+      },
+      {
+        "line": 60,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 93,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 155,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+      },
+      {
+        "line": 160,
+        "text": "static const char   MAGIC_ROOS[4] = { 'R','O','O','S' };"
+      },
+      {
+        "line": 161,
+        "text": "static const uint8_t PROTO_VER    = 1;"
+      },
+      {
+        "line": 714,
+        "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 715,
+        "text": "  msg.version  = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 854,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 855,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 938,
+        "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+      },
+      {
+        "line": 948,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      }
+    ]
+  },
+  {
+    "path": "cube_working_backup/cube_working_backup.ino",
+    "sha256": "6fefee567c2a54232b3b5e5dc72e2302235393c623aabfc6bbb68b7e2dd43f33",
+    "includes": [
+      {
+        "line": 110,
+        "text": "#include <Arduino.h>"
+      },
+      {
+        "line": 111,
+        "text": "#include <Wire.h>"
+      },
+      {
+        "line": 112,
+        "text": "#include <U8g2lib.h>"
+      },
+      {
+        "line": 113,
+        "text": "#include \"driver/i2s.h\""
+      },
+      {
+        "line": 114,
+        "text": "#include <math.h>"
+      },
+      {
+        "line": 116,
+        "text": "#include <WiFi.h>"
+      },
+      {
+        "line": 117,
+        "text": "#include <esp_now.h>"
+      },
+      {
+        "line": 118,
+        "text": "#include <esp_wifi.h>"
+      },
+      {
+        "line": 119,
+        "text": "#include <esp_wifi_types.h>"
+      },
+      {
+        "line": 124,
+        "text": "    #include \"esp_idf_version.h\""
+      },
+      {
+        "line": 128,
+        "text": "#include <nvs.h>"
+      },
+      {
+        "line": 129,
+        "text": "#include <nvs_flash.h>"
+      },
+      {
+        "line": 130,
+        "text": "#include <stddef.h>"
+      },
+      {
+        "line": 131,
+        "text": "#include <string.h>"
+      },
+      {
+        "line": 133,
+        "text": "#include \"esp_sleep.h\""
+      },
+      {
+        "line": 134,
+        "text": "#include \"driver/rtc_io.h\""
+      }
+    ],
+    "target_inferred": "ESP32-S3",
+    "pins": [
+      {
+        "line": 145,
+        "text": "#define GPIO_I2S_BCLK    15"
+      },
+      {
+        "line": 146,
+        "text": "#define GPIO_I2S_LRCLK   16"
+      },
+      {
+        "line": 147,
+        "text": "#define GPIO_I2S_DATA    17"
+      },
+      {
+        "line": 149,
+        "text": "#define PIN_VOL_UP       5"
+      },
+      {
+        "line": 150,
+        "text": "#define PIN_VOL_DOWN     6"
+      },
+      {
+        "line": 151,
+        "text": "#define PIN_MODE         4"
+      },
+      {
+        "line": 153,
+        "text": "#define OLED_SDA_PIN     8"
+      },
+      {
+        "line": 154,
+        "text": "#define OLED_SCL_PIN     9"
+      },
+      {
+        "line": 159,
+        "text": "#define PIN_RTC_INT      1   // RTC INT pin wired here (active-low open-drain)"
+      },
+      {
+        "line": 162,
+        "text": "#define USE_AUDIO_MUTE_PIN 0"
+      },
+      {
+        "line": 163,
+        "text": "#define PIN_AUDIO_MUTE     18"
+      }
+    ],
+    "all_structs": [
+      {
+        "line": 23,
+        "text": "struct PersistAlarm {\n  roos_u8 enabled;\n  roos_u8 hour24;\n  roos_u8 minute;\n};"
+      },
+      {
+        "line": 29,
+        "text": "struct SettingsBlob {\n  roos_u32 magic;\n  roos_u16 ver;\n  roos_u8  volume;\n  roos_u8  distHalfFt;\n  roos_u8  timeHalfMin;\n  PersistAlarm alarms[7];\n  roos_u32 crc32;\n};"
+      },
+      {
+        "line": 67,
+        "text": "struct BeaconCfgMsg {\n  char     magic[4];        // \"ROOS\"\n  roos_u8  version;         // 1\n  roos_u8  msgType;         // 1=config\n  roos_u8  distHalfFt;      // 1..16 (0.5..8.0 ft)\n  roos_u8  timeHalfMin;     // 1..10 (0.5..5.0 min)\n  roos_u32 seq;             // incrementing\n};"
+      },
+      {
+        "line": 76,
+        "text": "struct BeaconAckMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 2=ack\n  roos_u32 seq;             // echoes config seq\n  roos_u8  ok;              // 1=accepted, 0=bad\n};"
+      },
+      {
+        "line": 84,
+        "text": "struct BeaconPresenceMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 3=presence\n  roos_u32 seq;             // current config seq (or 0 if none yet)\n  roos_u8  present;         // 0/1\n  roos_u16 distCm;          // 0 if unknown\n};"
+      },
+      {
+        "line": 93,
+        "text": "struct BeaconSuccessMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 4=success\n  roos_u32 seq;             // current config seq\n};"
+      },
+      {
+        "line": 100,
+        "text": "struct BeaconStopMsg {\n  char     magic[4];\n  roos_u8  version;\n  roos_u8  msgType;         // 5=stop\n  roos_u32 seq;             // session/config seq to stop\n};"
+      },
+      {
+        "line": 239,
+        "text": "struct DayAlarm {\n  bool    enabled;\n  uint8_t hour24;\n  uint8_t minute;\n};"
+      },
+      {
+        "line": 695,
+        "text": "struct Note { float freq; float duration; };"
+      }
+    ],
+    "protocol_lines": [
+      {
+        "line": 22,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 38,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 59,
+        "text": "  MSG_CONFIG   = 1,"
+      },
+      {
+        "line": 60,
+        "text": "  MSG_ACK      = 2,"
+      },
+      {
+        "line": 61,
+        "text": "  MSG_PRESENCE = 3,"
+      },
+      {
+        "line": 62,
+        "text": "  MSG_SUCCESS  = 4,"
+      },
+      {
+        "line": 63,
+        "text": "  MSG_STOP     = 5"
+      },
+      {
+        "line": 66,
+        "text": "#pragma pack(push, 1)"
+      },
+      {
+        "line": 106,
+        "text": "#pragma pack(pop)"
+      },
+      {
+        "line": 176,
+        "text": "static const uint8_t ESPNOW_CHANNEL = 9; // must match Beacon"
+      },
+      {
+        "line": 181,
+        "text": "static const char    MAGIC_ROOS[4] = { 'R','O','O','S' };"
+      },
+      {
+        "line": 182,
+        "text": "static const uint8_t PROTO_VER     = 1;"
+      },
+      {
+        "line": 900,
+        "text": "  memcpy(msg.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 901,
+        "text": "  msg.version     = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 920,
+        "text": "  memcpy(st.magic, MAGIC_ROOS, 4);"
+      },
+      {
+        "line": 921,
+        "text": "  st.version = (roos_u8)PROTO_VER;"
+      },
+      {
+        "line": 1073,
+        "text": "  if (memcmp(data, MAGIC_ROOS, 4) != 0) return;"
+      },
+      {
+        "line": 1074,
+        "text": "  if (data[4] != PROTO_VER) return;"
+      },
+      {
+        "line": 1200,
+        "text": "  esp_wifi_set_channel(ESPNOW_CHANNEL, WIFI_SECOND_CHAN_NONE);"
+      },
+      {
+        "line": 1210,
+        "text": "  peer.channel = ESPNOW_CHANNEL;"
+      }
+    ]
+  }
+]

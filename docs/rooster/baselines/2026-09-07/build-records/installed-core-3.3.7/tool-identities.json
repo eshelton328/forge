@@ -1,0 +1,26 @@
+[
+  {
+    "target": "cube_browns__cube_browns",
+    "compiler": "/Users/erik/Library/Arduino15/packages/esp32/tools/esp-x32/2511/bin/xtensa-esp32s3-elf-g++",
+    "compiler_sha256": "c6f5c560b9d2206b3030ab2aa4e0da46d700305e76274658746382afed082d38",
+    "version": "xtensa-esp-elf-g++ (crosstool-NG esp-14.2.0_20251107) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  {
+    "target": "cube_browns__beacon_browns",
+    "compiler": "/Users/erik/Library/Arduino15/packages/esp32/tools/esp-rv32/2511/bin/riscv32-esp-elf-g++",
+    "compiler_sha256": "ba2d11db6e6d13cd80517f43d98133c3ea69828b866a91cc402e34e1a4c319eb",
+    "version": "riscv32-esp-elf-g++ (crosstool-NG esp-14.2.0_20251107) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  {
+    "path": "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli",
+    "sha256": "01e38a909b5e3e4bdd30164cf0ee01164d6a5223b0bd03e2b2ea7dbc840974e1"
+  },
+  {
+    "path": "/Users/erik/Library/Arduino15/packages/esp32/hardware/esp32/3.3.7/platform.txt",
+    "sha256": "19537d6cadb9b67d00577719b8d9758935daa1e0dfad7563b013f5a90222a224"
+  },
+  {
+    "path": "/Users/erik/Library/Arduino15/packages/esp32/hardware/esp32/3.3.7/boards.txt",
+    "sha256": "c6b42689263e6fbe4689a551aa6adb8dd8d025eddf036552d419906a7e459beb"
+  }
+]
