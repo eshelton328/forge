@@ -23,6 +23,8 @@ Erik’s selected first quote target is **5 fabricated / 2 assembled copies per 
 
 Equipment confirmed by Erik: **multimeter and oscilloscope**. Instrument models/probes, a current-limited source, programming cables/adapters and soldering capability are unconfirmed, not assumed absent. Review practical first-power and bare-board USB/recovery access before adding equipment to procurement. See [JLCPCB assembly preflight](jlcpcb-preflight.md).
 
+The Beacon uses a **purchased Hi-Link LD2410C radar module plugged into J3**, not a custom radar built into our PCB. J3's BOM MPN identifies the **Samtec socket only**. Two compatible radar modules are required for the two assembled Beacon units, accounting for verified existing inventory; their separate purchase/installation is not included merely by ordering PCB assembly. Retain the current header/socket version for this prototype; the LD2410C-P surface-mount variant is not a drop-in substitution. See [radar procurement and variant checks](beacon-radar-procurement.md).
+
 ## Remaining order work
 
 | Item | Work and closure evidence | Owner |
