@@ -1,5 +1,10 @@
 # September 8 — shortest path to the prototype orders
 
+**Subsequent sourcing comparison:** [RTC alternatives](rtc-alternatives-2026-09-08.md)
+identifies stocked RV-3028 TA-QA parts at DigiKey and stocked RV-3032 TA-QA at
+JLCPCB. QA sourcing into JLCPCB is not yet arranged; RV-3032 needs a design
+revision. Neither has replaced the current BOM or cleared the order gate.
+
 **The complete four-design assembly order is not ready for payment.** The exact
 RTC is still unavailable in JLCPCB's assembly matcher. Buying its preorder today
 starts sourcing; it does not make main/Beacon assembly orderable tonight.
