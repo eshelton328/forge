@@ -1,5 +1,13 @@
 # September 8 — shortest path to the prototype orders
 
+**Later scope update: Cube first.** The [Cube-first plan](cube-first-pass-2026-09-08.md)
+supersedes the four-design purchasing scope in this earlier readiness capture.
+Main, controls and front are the immediate order; Beacon is deferred. The retained
+five-fabricated/two-assembled quantity gives two Cube PCB sets at a dated $473.47
+incomplete manufacturing estimate. Main RTC and placement issues still apply.
+The four-design figures and staged preorder below remain historical evidence,
+not the current purchase proposal. No order is authorized or placed.
+
 **Subsequent sourcing comparison:** [RTC alternatives](rtc-alternatives-2026-09-08.md)
 identifies stocked RV-3028 TA-QA parts at DigiKey and stocked RV-3032 TA-QA at
 JLCPCB. QA sourcing into JLCPCB is not yet arranged; RV-3032 needs a design

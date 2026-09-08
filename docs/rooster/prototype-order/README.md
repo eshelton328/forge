@@ -1,6 +1,6 @@
 # Rooster Cube + Beacon prototype PCB order
 
-**Goal: place the factory-assembled PCB orders so the Cube and Beacon can be tested while firmware development continues.** The order-placement milestone ends with submitted orders and confirmations for the selected four-board set. Delivery, bring-up and complete firmware acceptance follow under their existing tickets.
+**Immediate goal: order the Cube's main, controls and front boards first, test the Cube and continue firmware development.** Erik chose a Cube-first pass on September 8; Beacon manufacture follows a later decision. The [Cube-first plan](cube-first-pass-2026-09-08.md) records the $473.47 incomplete three-design estimate and remaining work. Earlier four-design evidence below is retained for the eventual Cube + Beacon system. Delivery, bring-up and complete firmware acceptance follow under their existing tickets.
 
 ## Order approval
 
