@@ -69,6 +69,13 @@ capability, not complete local mask clearance or compliance with ADI's preferenc
 for NSMD pads. Verify the final mask treatment consistently across U6, along with
 the thermal-via treatment and solder process. [JLCPCB PCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities).
 
+Follow-up: the [0.09 mm mask-to-copper rule check](mask-review/README.md) reports
+no mask violations on the unchanged board, with a separate negative control
+confirming the rule is active. It does not establish minimum mask-bridge width
+or turn 1:1 openings into NSMD geometry. The [via-process specification](via-process/README.md)
+now includes epoxy filling and copper capping of U6's central 0.2 mm hole and
+the other small plated holes; the earlier Plugged quote option is superseded.
+
 Sources: [ADI datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf)
 (pages 15 and 37 visually read in the browser),
 [21-0136 Rev.V](https://mds.analog.com/api/public/content/tqfn_21-0136.pdf)

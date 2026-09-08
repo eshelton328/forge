@@ -12,6 +12,13 @@ Order preparation is on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2
 
 Separate [supplier CPL candidates](supplier-placement-candidates/README.md) correct the controls buttons and main/Beacon header centers; main J4 also rotates to match its vertical holes. Native geometry is unchanged. U3 model/placement alignment, remaining manufacturing dispositions and missing-model orientation checks remain open. [Quote progress](quote-progress.md) records exact inputs, services, prices and review scope.
 
+The [via-process review](via-process/README.md) supersedes the large boards'
+Plugged quote setting with epoxy fill and copper cap. It specifies 255 main and
+199 Beacon holes while keeping component holes open. A separate fabrication
+comparison indicates **$40.82 extra across both batches**, or **$791.07** before
+the same exclusions if other charges hold. The assembly drafts require actual
+repricing; this is not a new landed quote or purchase request.
+
 - [Input audit](input-audit.json): at kickoff, 69 source-map hashes matched the baseline checkout, 136 Cube saved bindings matched, and 214 Sensor bindings matched their preserved review inputs. PRs #126/#127 were merged, with no open PRs at capture. The subsequent native purchasing-field changes are recorded separately below.
 - [Sourcing inventory](sourcing.csv): 208 original review BOM rows across the four boards, including one explicit DNP. All 207 fitted rows have exact selected MPNs and manufacturer-specific catalog IDs, including the 95 populated main-board rows missing MPNs in the original review. [Part selection review](part-selection-review.md) records substitutions and remaining checks. Of the 51 selected unique parts, the RTC has no ready catalog stock in the dated capture.
 - [Source integration](source-integration-review.md): selected purchasing fields now reconcile across the eleven native files, fresh netlists and review BOMs. Independent source-token and KiCad geometry checks confirm that values, circuits, copper, fit flags and models are preserved. The CSV remains a sourcing record, not a supplier-upload BOM.

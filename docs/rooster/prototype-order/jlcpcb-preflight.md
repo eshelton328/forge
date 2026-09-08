@@ -23,6 +23,18 @@ After switching the main quote to Standard, JLCPCB proposed a **74 × 70 mm proc
 
 ## Remaining preflight work
 
+The [via-process specification](via-process/README.md) now calls for epoxy fill
+and copper cap on main/Beacon, preserving all component holes. Their draft
+Plugged setting is superseded and needs updating/repricing; controls/front retain
+tenting. The separate calculator indicates $20.41 extra fabrication per large
+board batch. This establishes the process requirement and an indicative cost,
+not supplier acceptance of the final CAM files.
+
+The [mask review](mask-review/README.md) found no violations at 0.09 mm
+mask-to-copper clearance in isolated copies of all four boards. Its independent
+negative control verifies that rule is active. The separate minimum bridge-width
+check remains open; no whole-board mask sign-off is inferred from it.
+
 - Available fitted parts are matched on all four designs, including both faces and through-hole parts. Resolve RTC procurement/assembly intake and restore U5 in both incomplete supplier previews, then recheck final eligibility. JLCPCB’s FAQ describes supported through-hole assembly through its assembly-parts library. [Assembly FAQ](https://jlcpcb.com/help/article/pcb-assembly-faqs).
 - Account for detachable rails/panelization and final board outline/clearance on the small Standard boards. Do not enlarge the functional PCB or move connectors merely to meet a processing-size requirement.
 - The dedicated BOM/CPL files include both faces and THT locations, covering 111/5/3/88 fitted references. Use the corrected [controls r2 and headers r2 CPLs](supplier-placement-candidates/README.md), which correct the button/header centers and main J4 rotation. The shared repository exporter uses `only_smd: true` and omits THT locations. U3 model alignment, other origins, rotations and final placement review remain open.

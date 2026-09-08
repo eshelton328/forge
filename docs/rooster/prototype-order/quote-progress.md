@@ -13,6 +13,15 @@ action was submitted. The estimate including separately listed rail removal is
 **$750.25 before RTCs, any related assembly-fee changes, shipping, tax and external
 parts**. This is arithmetic from draft pages, not a complete quote or final bill.
 
+**Via-process correction:** the $750.25 draft estimate uses solder-mask plugging
+on the large boards, which does not resolve their exposed thermal vias. The
+[source-bound fill/cap specification](via-process/README.md) now calls for
+Epoxy Filled & Capped on main/Beacon. A separate fabrication calculator shows
+$99.41 per large-board batch versus the earlier $79.00: an indicative **$40.82
+increase across both**, giving **$791.07 before RTCs, related assembly changes,
+shipping, tax and external items**, if all other draft charges hold. This is
+comparison arithmetic; the saved assembly drafts still require actual repricing.
+
 Erik supplied a USA shipping destination; the postal code and account-specific
 draft URL are in the private Rooster task note. Postal-code-specific shipping/tax
 has not been reached. These are live UI observations from September 7; stock,
@@ -40,7 +49,9 @@ pricing and lead times may change.
   these settings on the final candidate before purchase.
 - Retained candidate fabrication settings: 1.6 mm, green/white, ENIG 1 µin,
   1 oz outer and inner copper, plugged vias, 0.2 mm minimum drill option,
-  ±0.2 mm outline tolerance and flying-probe test. The 0.2 mm option requires
+  ±0.2 mm outline tolerance and flying-probe test. The recorded Plugged setting
+  is superseded by the fill/cap specification above and is not release-ready.
+  The 0.2 mm option requires
   TG155 and extra 4-wire Kelvin testing. Stackup/via/stencil treatment remain
   open engineering decisions; this form is a cost-comparison draft.
 
@@ -239,3 +250,29 @@ lead option; its finished-hole fit remains open. No native source or manufacturi
 package changed. The supplier viewer remained on **Generating PCB...** during
 the follow-up and was returned to the BOM tab; this provides no new placement
 verification or basis to change U6's rotation.
+
+## Via-process cost comparison
+
+The native hole audit identified 255 main and 199 Beacon holes for epoxy fill
+and copper capping, including each board's twelve U3 thermal holes; all component
+lead holes, USB slots and NPTH remain open. Controls/front retain tenting. The
+new process attachments are bound to the unchanged r1 fabrication candidate.
+
+Opening the main draft's **Change PCB specifications** link produced a blank
+100 × 100 mm calculator, including after one reload. No defaults were saved
+over the main draft. Returned to its original assembly URL and used a separate
+unsubmitted calculator at 74 × 70 mm, five boards, four layers, 1.6 mm, generic
+FR4 TG155, ENIG 1 µin, 1 oz outer/inner copper, 0.2 mm minimum via option,
+Kelvin test, regular outline tolerance and production review. Epoxy Filled &
+Capped automatically requires Horizontal Electroless Copper Plating. The
+Do not confirm automatically checkbox was checked before confirming that
+review preference. No Gerbers were uploaded or order/cart submitted in this
+comparison. It therefore does not replace the four saved assembly drafts.
+
+Settled fabrication breakdown: special offer $7.00; fill/cap $17.06; ENIG
+$17.10; generic TG155 $3.41; inner copper $16.63; minimum via option $17.06;
+Kelvin $16.76; horizontal electroless plating $3.35; production review $1.04.
+Total **$99.41**. A named S1000H laminate initially added $4.01; it was changed
+back to generic FR4 TG155 to match the earlier estimate. Do not carry that
+intermediate $102.38 observation into the selected comparison. No assembly,
+shipping, tax or RTC-price update is implied.
