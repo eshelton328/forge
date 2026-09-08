@@ -110,3 +110,76 @@ in the harness scope; main J3 carries the two active BTL speaker signals.
 
 Source: [JST PH catalog](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf), SHA-256
 `447624f4f2f7d37c58c1eaa7ee314ad757fe7aff48f6186491ef6f69fbc00b96`.
+
+
+## Main D1: LTST-C190KGKT
+
+The exact Lite-On manufacturer PDF was opened successfully in the browser after
+command-line retrieval failed. Pages 2 and 7 were visually read. The package is
+1.6 × 0.8 mm; its cathode marking agrees with native pad 1 on GND at
+(117.2125, 92) mm. Pad 2 at (118.7875, 92) mm is the anode. R11 remains DNP,
+so the fitted optional LED has no normal current path.
+
+Retain the native copper pads: the recommended 0.8 × 0.8 mm pads have a 0.7 mm
+inner gap; native 0.875 × 0.95 mm pads retain that same gap and add 0.075 mm
+outward reach and lateral margin. Supplier assembly must put the marked cathode
+on the native GND side. The manufacturer specifies 30 mA maximum DC current,
+75 mW maximum dissipation and lead-free reflow constraints; these are limits,
+not a proposed LED operating current. The initial BOM's R11 omission remains
+part of the release requirements. Final lot/process and placement review remain
+manual. [Lite-On DS22-2000-074](https://optoelectronics.liteon.com/upload/download/DS22-2000-074/LTST-C190KGKT.PDF).
+
+## Beacon F1: 046701.5NRHF
+
+The manufacturer’s 467-series sheet (February 27, 2023 revision) was visually read
+in the browser, pages 1–3. The selected 1.5 A fast fuse has marking **K**,
+nominal cold resistance 0.0385 Ω and nominal melting I²t 0.0766 A²s. Use the
+sheet's conservative 32 V rating for this ≤5.4 V battery circuit; catalog wording
+about a 65 V interrupt test is not needed to establish the voltage margin.
+The specified opening times are at most 5 s at 3 A and 0.2 s at 4.5 A.
+[Littelfuse 467 datasheet](https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d).
+
+**Retain F1 for the dry prototype evaluation, with a measured current envelope.**
+The manufacturer's 25% continuous-current derating gives **1.125 A at 25°C**;
+its 70°C example gives **0.9 A** after additional temperature derating. This
+is a fuse-selection allowance, not a fast electronic current limit or proof that
+all downstream faults will be cleared. Start on a current-limited bench source;
+verify startup inrush and temperatures before battery operation or sustained
+high-load testing. Do not infer pulse endurance merely from the melting-I²t value.
+The fuse does not protect the holder/wire upstream of F1 against a harness short.
+
+Native F1 is nonpolar, between VBAT and VBAT_FUSED. Its 0.875 × 0.95 mm pads
+have 1.575 mm center spacing and a 0.7 mm gap. The example reflow lands in the
+sheet are 0.762 × 1.09 mm, with a 1.02 mm gap and 2.54 mm overall reach. Native
+lands are therefore not a literal copy. They extend to ±1.225 mm around the
+1.60 ±0.102 mm body; their 0.95 mm width exceeds the 0.813 ±0.076 mm maximum
+body width. Both native lands cover the terminal areas without joining. This
+supports retaining the generic 0603 pattern for the prototype; final paste and
+solder-joint inspection remain the assembler's process work. Reflow must respect
+the fuse's 250°C target peak (245–250°C range) and other limits in the sheet.
+
+## Main J4: TSW-104-07-G-S
+
+The exact selected part is a straight, single-row, four-position Samtec header,
+without the **-LL** locking-lead option. The catalog's 1.02 ±0.03 mm recommendation
+is explicitly in the -LL section; do not apply that tolerance as if a locking
+lead had been selected. The separate general footprint nevertheless recommends
+1.02 mm nominal holes, so native 1.00 mm holes still merit an assembly-fit
+review rather than a claim of exact drawing agreement.
+
+The source has four 1.00 mm plated holes on 2.54 mm pitch and 1.70 mm lands.
+The nominal 0.635 mm square pin diagonal is 0.898 mm, leaving about 0.102 mm
+nominal diametral clearance. JLCPCB's standard negative hole tolerance can reduce
+that clearance; nominal arithmetic is not a worst-case fit guarantee. Preserve
+the selected part and source while finishing the finished-hole/process disposition.
+No locking lead, alternate socket, hole enlargement or purchasing substitution
+was silently applied. The **-07** drawing specifies a 5.84 mm mating post; the
+external display cable still needs a female contact that accepts this post.
+
+Sources visually read: [Samtec footprint Rev.A](https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf),
+[series print Rev.DS, page 6](https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf),
+and [catalog, page 2](https://suddendocs.samtec.com/catalog_english/tsw_th.pdf).
+Downloaded drawing SHA-256 values are respectively
+`264658121ff2dad25ebd6259e726b123bf1ea31f9145bc695607999181af028f`,
+`047ecedcc921fb0aed7127f08b9ba0fc1200d92d33fb7ded1b311d0ed8f42063`,
+and `3a5770b11668f4e5a11ba9ceeb4817a23f467b8507e3592f55fb6bd8f96e71bc`.

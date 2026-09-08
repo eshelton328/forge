@@ -8,7 +8,7 @@ Erik must explicitly approve the exact items, quantities and total before any
 order or paid parts procurement.
 
 Controls and front have all fitted parts matched. The four price previews and
-the controls/header placement corrections are recorded below. No Save to Cart
+the controls/header placement corrections are recorded below. No PCB Save to Cart
 action was submitted. The estimate including separately listed rail removal is
 **$750.25 before RTCs, any related assembly-fee changes, shipping, tax and external
 parts**. This is arithmetic from draft pages, not a complete quote or final bill.
@@ -139,8 +139,14 @@ part fields changed.
 
 The full hyphenated MPN returned no Global Sourcing results; searching
 **RV-3028-C7** exposed the QC offers alongside distinct QA and evaluation boards.
-No Add, preorder, reservation, RFQ, checkout or payment was submitted. The Global
-Sourcing cart remained empty.
+Two reversible **Add** attempts were made for the seven-part CoreStaff QC offer,
+with an intervening visit to the Global Sourcing cart confirming it was empty.
+The refreshed search still shows **Cart (0)** after the second attempt; neither
+attempt produced a confirmed RTC cart line. Browser logs also contain UI errors,
+but they do not establish the cause. Do not repeat Add without checking the cart
+again. An existing, unselected JLCPCB-parts line for a different regulator was
+left untouched. No preorder, reservation, RFQ, checkout submission or payment
+was made. The $20.66 remains a search-page offer, not a checkout total.
 
 The [RTC page](https://jlcpcb.com/partdetail/C3019759) supplies the preorder
 estimate. JLCPCB says the price becomes firm only after initial payment and may
@@ -214,7 +220,7 @@ cannot prove RGB pin orientation. Neither draft is a full placement sign-off.
 All four archives have been uploaded. The [amplifier review](assembly-drawing-review.md)
 now supports retaining its native copper land pattern and verifies all 17 pad
 nets; rounded thermal paste coverage is 62.552%, correcting the earlier 66.1%.
-The live U6 model marking still differs from the native pin-1 corner; no CPL
+The previously loaded U6 model marking differs from the native pin-1 corner; no CPL
 rotation was changed in this pass. Resolve this, U3's supplier model/placement
 origin discrepancy and missing-model orientation checks. Finish mask/via/stackup,
 pin/rotation, rail clearance,
@@ -225,3 +231,11 @@ Record stencil constraints before purchase; actual JLCPCB stencil production
 data follows the order and belongs to manual production review. The updated
 drawing review records this sequencing. No order, paid parts procurement or
 production approval was submitted during this review.
+
+The latest drawing pass supports retaining main D1's LED pads and Beacon F1 for
+dry prototype evaluation with the recorded current and temperature envelope.
+Main J4's nonlocking header variant was distinguished from the catalog's locking
+lead option; its finished-hole fit remains open. No native source or manufacturing
+package changed. The supplier viewer remained on **Generating PCB...** during
+the follow-up and was returned to the BOM tab; this provides no new placement
+verification or basis to change U6's rotation.
