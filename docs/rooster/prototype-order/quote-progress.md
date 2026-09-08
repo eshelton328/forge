@@ -1,5 +1,7 @@
 # JLCPCB quote progress — September 7–8, 2026
 
+**Current purchasing scope is Cube only:** see the [Cube-first plan](cube-first-pass-2026-09-08.md) and [September 8 alternative supplier quote record](cube-supplier-quotes-2026-09-08/README.md). The four-design figures below remain historical full-system comparisons. Seeed, MacroFab and PCBWay RFQs now use a quote-only QA RTC selection; native sources and JLCPCB drafts were not changed by that comparison.
+
 **No complete four-board landed quote, paid reservation, payment or submitted order exists.**
 All four signed-in drafts now contain Gerbers, BOMs and complete placement files.
 Main has **41 of 42 BOM groups confirmed** and Beacon **37 of 38**; the remaining

@@ -2,6 +2,8 @@
 
 **Cube + Beacon prototypes | September 8, 2026 | Austin, Texas 78704**
 
+> **Later September 8 update:** the active purchase is now Cube only. The [current supplier quote record](cube-supplier-quotes-2026-09-08/README.md) supersedes this report’s four-design enquiry, unsent-outreach status and older PCBWay minimum statement. It records OSH Park’s fabrication mismatch, MacroFab’s incomplete main-only price and full RFQs sent to Seeed, MacroFab and PCBWay. This report and its original PDF remain the earlier broad supplier comparison.
+
 ## Recommendation
 
 **Keep JLCPCB as the current baseline. Obtain comparable PCBWay and MacroFab offers before deciding to move.** PCBWay is the most relevant alternative to investigate for flexible turnkey sourcing; MacroFab is the most relevant North American comparison. Seeed Fusion and Screaming Circuits provide useful additional benchmarks. This is an engineering assessment, not a finding that one supplier has lower measured defect rates.

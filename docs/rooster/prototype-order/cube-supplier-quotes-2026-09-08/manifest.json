@@ -1,0 +1,43 @@
+{
+  "purpose": "Quotation only; not a manufacturing release",
+  "native_source": "090b207",
+  "rtc_quote_selection": "RV-3028-C7 32.768KHZ 1PPM-TA-QA",
+  "native_bom_changed": false,
+  "boards": {
+    "alec-main": {
+      "fitted": 111,
+      "bom_groups": 42,
+      "files": {
+        "alec-main-gerbers.zip": "fdf29a45b08e7f7863141c78b3ecf48b4a34069a986c37b83001055218727ae0",
+        "alec-main-native-placement.csv": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188",
+        "alec-main-quote-bom.csv": "2e53562eba4f059fd732fc261747ceb062a257430674af23f48be8a05388001f",
+        "alec-main-quote-bom.xlsx": "81d141e94d429919602c97eb42deec872f24da0f8ef5980125fb56cd65ee64d8",
+        "alec-main-seeed-bom.csv": "26a7e2fd4448db6a93a2cf4d7395d458ff663caa0026560d74064013c7571e11",
+        "alec-main-fill-holes.csv": "23963364d46125bd0ba7e6a2c8013a29c5e269f72cc32cbd61ade0db344eddb7",
+        "alec-main-via-process.svg": "4206a310c27dcb54efae18881225b38af5961645dd57b9efcf39fb106ef1536c"
+      }
+    },
+    "alec-controls": {
+      "fitted": 5,
+      "bom_groups": 3,
+      "files": {
+        "alec-controls-gerbers.zip": "529461b9adb3052c03213ddea4c40104b1ca71ff780083a8c29e3018234f3cef",
+        "alec-controls-native-placement.csv": "36bf46703c9fad097278a26ef31dbb926549fe4f63c4d01e60ef65d9c00439a7",
+        "alec-controls-quote-bom.csv": "fd81274a9a09ed0fafcfba82a3c9d854f39c7a8701ea8305d07d6000b69b8d88",
+        "alec-controls-quote-bom.xlsx": "80be709b0d3e75250b37e10864308f568c24c3bc3ddc2d811bc69d3c27adb781",
+        "alec-controls-seeed-bom.csv": "933df4bc2b18add52e048bc16848c5b588fd2036689dc5f6d5fa2a61be0d8b65"
+      }
+    },
+    "alec-front": {
+      "fitted": 3,
+      "bom_groups": 3,
+      "files": {
+        "alec-front-gerbers.zip": "e4cda9bedc90f52dd172ddd6269f6b90651437c1e56ac7e96f1588ad0200f8ea",
+        "alec-front-native-placement.csv": "e34cd5a56e41e99f62d1fb0a1f658c430032dd233e04b873a47fcd25b6e53d04",
+        "alec-front-quote-bom.csv": "10c3a546a172df332da3c83041ba370c6d74fa86508ea5a3b21ff09a4e7f552a",
+        "alec-front-quote-bom.xlsx": "1e1af3d49329d8410c0315b43eaa684e807024ab5b077e00f5213591b0dddfba",
+        "alec-front-seeed-bom.csv": "69085850891cbbf8ce9a93aece01aee938e2a73dc99ce829884c0e40a2795f5b"
+      }
+    }
+  }
+}
