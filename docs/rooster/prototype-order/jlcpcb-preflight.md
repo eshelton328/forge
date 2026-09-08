@@ -32,8 +32,11 @@ not supplier acceptance of the final CAM files.
 
 The [mask review](mask-review/README.md) found no violations at 0.09 mm
 mask-to-copper clearance in isolated copies of all four boards. Its independent
-negative control verifies that rule is active. The separate minimum bridge-width
-check remains open; no whole-board mask sign-off is inferred from it.
+negative control verifies that rule is active. The separate actual-Gerber check
+now establishes at least 0.15 mm between distinct mask openings on all eight
+layers, above the 0.10 mm requirement. Retain uniform native 1:1 openings for the
+prototype, including U6, with supplier mask changes subject to manual production
+review. This does not claim NSMD geometry or whole-board fabrication acceptance.
 
 - Available fitted parts are matched on all four designs, including both faces and through-hole parts. Resolve RTC procurement/assembly intake and restore U5 in both incomplete supplier previews, then recheck final eligibility. JLCPCB’s FAQ describes supported through-hole assembly through its assembly-parts library. [Assembly FAQ](https://jlcpcb.com/help/article/pcb-assembly-faqs).
 - Account for detachable rails/panelization and final board outline/clearance on the small Standard boards. Do not enlarge the functional PCB or move connectors merely to meet a processing-size requirement.

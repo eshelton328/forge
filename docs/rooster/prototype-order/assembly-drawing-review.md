@@ -62,19 +62,22 @@ top-view, downward-positive Y convention. Reconcile the model orientation with
 the numbered package pins and final supplier placement data; the preview dot
 alone is not a numbered pin map. [JLCPCB's placement conventions](https://jlcpcb.com/help/article/pcb-assembly-faqs-part-2).
 
-The default native mask opening is 1:1 with copper. JLCPCB's current capabilities
-allow 1:1 openings and require at least 0.09 mm clearance to neighboring traces;
-the green, 1 oz mask-bridge minimum is 0.10 mm. This establishes supplier
-capability, not complete local mask clearance or compliance with ADI's preference
-for NSMD pads. Verify the final mask treatment consistently across U6, along with
-the thermal-via treatment and solder process. [JLCPCB PCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities).
+**Prototype mask disposition: retain the uniform native 1:1 openings, including
+all U6 pads.** JLCPCB supports 1:1 openings. The [mask review](mask-review/README.md)
+reports no violations at 0.09 mm mask-to-copper clearance, with an independent
+negative control establishing that the rule is active. Actual Gerber geometry
+also has at least 0.15 mm between distinct openings across all eight mask layers,
+above the green, 1 oz requirement of 0.10 mm. This supplier-supported prototype
+choice differs from ADI's preferred NSMD expansion; it does not relabel 1:1
+openings as NSMD or claim solder-joint qualification. Supplier mask alterations
+must preserve consistent treatment of U6 and be reviewed before production.
+[JLCPCB PCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities).
 
-Follow-up: the [0.09 mm mask-to-copper rule check](mask-review/README.md) reports
-no mask violations on the unchanged board, with a separate negative control
-confirming the rule is active. It does not establish minimum mask-bridge width
-or turn 1:1 openings into NSMD geometry. The [via-process specification](via-process/README.md)
-now includes epoxy filling and copper capping of U6's central 0.2 mm hole and
-the other small plated holes; the earlier Plugged quote option is superseded.
+The [via-process specification](via-process/README.md) includes epoxy filling and
+copper capping of U6's central 0.2 mm hole and the other small plated holes; the
+earlier Plugged quote option is superseded. Together these close the source mask
+and exposed-hole process decisions for this prototype. Final placement and
+supplier stencil/process data still require their recorded manual reviews.
 
 Sources: [ADI datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf)
 (pages 15 and 37 visually read in the browser),

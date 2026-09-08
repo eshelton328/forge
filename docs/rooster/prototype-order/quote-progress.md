@@ -144,7 +144,7 @@ part fields changed.
 
 | Route | Live observation | Remaining qualification |
 | --- | --- | --- |
-| JLCPCB C3019759 preorder | Stock 0; minimum 5; estimated $2.2337 each; displayed **$11.17 for five** | No firm date shown; price is an estimate. |
+| JLCPCB C3019759 preorder | Stock 0; minimum 5. Product page estimates $11.17; the staged cart and settled checkout show **$10.76 for five** ($2.1517 each, rounded total). | Exact part and two-order quantity calculation verified; no firm date. Initial payment precedes confirmed pricing. Awaiting Erik's explicit approval; no order submitted. |
 | Global Sourcing → CoreStaff | MICRO CRYSTAL **RV-3028-C7 32.768kHz 1PPM TA QC**; stock 2,190; MOQ 7; $2.9518 each; **$20.66 for seven**; **10–16 business days** | Candidate for the same QC part, with spacing/case differences in its name. Pkg field says “franchised”; actual packing/assembly intake need confirmation. Displayed attrition 0 is not final four-board allocation approval. |
 | Global Sourcing → Verical | QC part; stock 13,000; MOQ 1,000; $1,812.20; 12–20 business days | Unsuitable minimum for this prototype batch; not selected. |
 
@@ -156,12 +156,38 @@ The refreshed search still shows **Cart (0)** after the second attempt; neither
 attempt produced a confirmed RTC cart line. Browser logs also contain UI errors,
 but they do not establish the cause. Do not repeat Add without checking the cart
 again. An existing, unselected JLCPCB-parts line for a different regulator was
-left untouched. No preorder, reservation, RFQ, checkout submission or payment
+left untouched. No order, reservation, RFQ, checkout submission or payment
 was made. The $20.66 remains a search-page offer, not a checkout total.
+
+The direct JLCPCB **Pre-order** button subsequently added exact C3019759 to the
+JLCPCB-parts cart successfully. On September 7 the cart was reopened and still
+contained five RTCs, with only that row selected. **Secure Checkout** opens a
+review page; its settled merchandise and grand totals both read **$10.76**, with
+no separately displayed charge. The Customer Compliance Statement remained
+unchecked and **Submit Order was not clicked**. Opening this page did not place
+an order. Billing/contact details are not copied into this repository; this is
+parts storage at JLCPCB, not a PCB shipping/tax quote.
+
+The exact part's **Order Guide** calculator was run with two separate orders:
+
+| Intended order | Assembly side | Assembled PCBs | RTCs per PCB | Calculated attrition | Recommended parts |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Main | Single-Sided | 2 | 1 | 0 | 2 |
+| Beacon | Double-Sided | 2 | 1 | 0 | 2 |
+
+It reports **Total Rec. Order Qty: 4**, with minimum-assembly fields shown as
+`/`. The product's purchase MOQ of five therefore covers this calculation with
+one excess part. Retain five in the draft cart. This is current calculator
+evidence, not received stock; recheck allocation when parts enter the private
+library and U5 is restored in both PCBA drafts. Do not click the calculator's
+Add to My Part Lib again: the five-part cart row already exists.
 
 The [RTC page](https://jlcpcb.com/partdetail/C3019759) supplies the preorder
 estimate. JLCPCB says the price becomes firm only after initial payment and may
-need adjustment. That payment requires Erik's approval.
+need adjustment. The reviewable proposal is **five exact RTCs at the displayed
+$10.76 initial total**, held at JLCPCB for the two assembly orders, with no firm
+arrival date. Both order submission and payment require Erik's approval. Any
+later price increase requires a further decision, not an automatic top-up.
 [Preorder workflow](https://jlcpcb.com/help/article/how-to-build-your-own-parts-library-in-jlcpcb).
 
 Global Sourcing is not ready JLCPCB warehouse stock. Its parts must arrive at
@@ -233,7 +259,10 @@ now supports retaining its native copper land pattern and verifies all 17 pad
 nets; rounded thermal paste coverage is 62.552%, correcting the earlier 66.1%.
 The previously loaded U6 model marking differs from the native pin-1 corner; no CPL
 rotation was changed in this pass. Resolve this, U3's supplier model/placement
-origin discrepancy and missing-model orientation checks. Finish mask/via/stackup,
+origin discrepancy and missing-model orientation checks. The source mask decision
+is now recorded: retain uniform 1:1 openings, with the actual-Gerber separation
+check passing on all eight masks. The via process is specified separately.
+Finish stackup,
 pin/rotation, rail clearance,
 external-parts and first-power dispositions. Final quantities, services/exclusions,
 shipping/tax and exact totals still precede Erik's purchase approval.
