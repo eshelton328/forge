@@ -1,6 +1,6 @@
 # JLCPCB prototype assembly preflight
 
-September 7, 2026. Quote target: five fabricated and two assembled copies of each design. All four Gerber/BOM/CPL sets are uploaded with actual Standard-service price previews. Controls/front have all fitted parts matched. Main and Beacon retain their full required BOM/CPLs but remain short of RTCs; their temporary incomplete price previews exclude U5 and are labeled accordingly. No complete four-board landed quote or order exists. [Quote progress](quote-progress.md).
+September 7–8, 2026. Quote target: five fabricated and two assembled copies of each design. All four Gerber/BOM/CPL sets are uploaded with actual Standard-service price previews. Controls/front have all fitted parts matched. Main and Beacon retain their full required BOM/CPLs but remain short of RTCs; their temporary incomplete price previews exclude U5 and are labeled accordingly. No complete four-board landed quote or order exists. [Quote progress](quote-progress.md).
 
 JLCPCB publishes a five-board fabrication minimum and assembly quantities starting at two. [Fabrication FAQ](https://jlcpcb.com/resources/pcb-prototyping), [PCBA capabilities](https://jlcpcb.com/capabilities/pcb-assembly-capabilities).
 
@@ -29,14 +29,14 @@ previous uploaded Gerber archive is superseded. The new
 [090b207-r1 fabrication candidate](fabrication-candidates/README.md) passes the
 independent native/CAM checks, with the same supplier placement corrections
 rebound to its hashes. Source-bound via attachments now match this candidate, including the enlarged
-open J4 holes. Replace/reprice the supplier draft before ordering.
+open J4 holes. Main and Beacon now have new supplier drafts using these current
+files; see quote progress for hashes, settings and prices.
 
 The [via-process specification](via-process/README.md) now calls for epoxy fill
-and copper cap on main/Beacon, preserving all component holes. Their draft
-Plugged setting is superseded and needs updating/repricing; controls/front retain
-tenting. The separate calculator indicates $20.41 extra fabrication per large
-board batch. This establishes the process requirement and an indicative cost,
-not supplier acceptance of the final CAM files.
+and copper cap on main/Beacon, preserving all component holes. Both refreshed
+drafts now select it; controls/front retain tenting. Each large-board draft
+confirms $20.41 extra fabrication. This establishes the selected process and
+draft cost, not supplier acceptance of the final CAM files.
 
 The [mask review](mask-review/README.md) found no violations at 0.09 mm
 mask-to-copper clearance in isolated copies of all four boards. Its independent
@@ -51,14 +51,15 @@ JLC041611-7628 at nominal 1.6 mm and 1 oz outer/inner copper for main/Beacon.
 It retains the short native full-speed USB routes for prototype testing, with
 explicitly unverified 90 Ω impedance and possible rework disclosed in the
 purchase proposal. This does not certify Espressif layout compliance. Record
-the named stackup in the actual quotes; historical physical screening remains
+the named stackup in the actual quotes (done for both large boards September 8);
+historical physical screening remains
 based on its original assumed stackup. Beacon has no routed UART0 service pads.
 
 - Available fitted parts are matched on all four designs, including both faces and through-hole parts. Resolve RTC procurement/assembly intake and restore U5 in both incomplete supplier previews, then recheck final eligibility. JLCPCB’s FAQ describes supported through-hole assembly through its assembly-parts library. [Assembly FAQ](https://jlcpcb.com/help/article/pcb-assembly-faqs).
 - Account for detachable rails/panelization and final board outline/clearance on the small Standard boards. Do not enlarge the functional PCB or move connectors merely to meet a processing-size requirement.
 - The dedicated BOM/CPL files include both faces and THT locations, covering 111/5/3/88 fitted references. Use the corrected [controls r2 and headers r2 CPLs](supplier-placement-candidates/README.md), which correct the button/header centers and main J4 rotation. The shared repository exporter uses `only_smd: true` and omits THT locations. U3 model alignment, other origins, rotations and final placement review remain open.
 - Confirm actual stock, component attrition/minimums, fabrication versus assembly counts, services and total cost for the selected order options. The published fee table is not a quote for these boards.
-- Establish the first-power source and USB/recovery procedure using Erik’s confirmed multimeter and oscilloscope, with remaining equipment/probe capabilities recorded explicitly.
+- The [first-power access handoff](first-power-access.md) records the pack-input, controls enable and USB/recovery paths and required external items. Confirm equipment availability and complete numerical limits/probe points in ROO-011 before energizing delivered boards; completed diagnostics do not gate PCB purchase.
 
 ## Purchase versus production approval
 

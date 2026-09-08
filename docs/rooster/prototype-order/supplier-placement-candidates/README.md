@@ -17,8 +17,10 @@ The three corrected CSVs are byte-for-byte identical to the prior reviewed
 corrections. Their new manifests bind them to the new fabrication archive/BOM
 hashes and current native sources, including J4's 1.10 mm holes. No component
 position or rotation changed in this rebinding, and U5 remains included. These
-packages have **not been re-uploaded or approved in the supplier UI**. The older
-sections below explain the correction geometry and previous preview checks.
+main/Beacon packages were uploaded to new supplier drafts on September 8;
+controls/front still use their preserved earlier uploads. **No placement or
+production approval has been submitted.** The older sections below explain the
+correction geometry and previous preview checks.
 
 Both builders accept `--base <fabrication-candidate-directory>` and refuse an
 existing output directory. For this set, the base is

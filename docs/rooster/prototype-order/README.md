@@ -8,16 +8,17 @@ Erik explicitly instructed on September 7: **"Please don't place the order witho
 
 ## Current state
 
-Order preparation is on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2c60616f77a5116eba637098acf98`. All four designs have signed-in Standard-assembly drafts and price previews. Controls/front have all fitted parts matched; main has 41 of 42 BOM groups and Beacon 37 of 38, with only the RTC unavailable. Main/Beacon previews are explicitly **INCOMPLETE RTC - REVIEW ONLY**. Their full BOMs still require U5. The four draft estimates sum to **$750.25 including separately listed rail removal, before RTCs and related fee changes, shipping, tax and external parts**. No complete landed quote, manufacturing release or order exists.
+Order preparation is on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2c60616f77a5116eba637098acf98`. All four designs have signed-in Standard-assembly drafts and price previews. Controls/front have all fitted parts matched; main has 41 of 42 BOM groups and Beacon 37 of 38, with only the RTC unavailable. Main/Beacon previews are explicitly **INCOMPLETE RTC - REVIEW ONLY**. Their full BOMs still require U5. The current four draft estimates sum to **$791.07 including separately listed rail removal, before RTCs and related fee changes, shipping, tax and external parts**. Main/Beacon now use the current source and fill/cap process; controls/front retain September 7 observations. No complete landed quote, manufacturing release or order exists.
 
 Separate [supplier CPL candidates](supplier-placement-candidates/README.md) correct the controls buttons and main/Beacon header centers; main J4 also rotates to match its vertical holes. Native geometry is unchanged. U3 model/placement alignment, remaining manufacturing dispositions and missing-model orientation checks remain open. [Quote progress](quote-progress.md) records exact inputs, services, prices and review scope.
 
 The [via-process review](via-process/README.md) supersedes the large boards'
 Plugged quote setting with epoxy fill and copper cap. It specifies 255 main and
-199 Beacon holes while keeping component holes open. A separate fabrication
-comparison indicates **$40.82 extra across both batches**, or **$791.07** before
-the same exclusions if other charges hold. The assembly drafts require actual
-repricing; this is not a new landed quote or purchase request.
+199 Beacon holes while keeping component holes open. Both refreshed assembly
+drafts now confirm **$99.41 fabrication per batch**, a combined $40.82 increase.
+They also select the [named prototype stackup](stackup-review/README.md), with
+the recorded USB test/rework risk. The total above is draft arithmetic, not a
+landed quote or purchase request.
 
 - [Input audit](input-audit.json): at kickoff, 69 source-map hashes matched the baseline checkout, 136 Cube saved bindings matched, and 214 Sensor bindings matched their preserved review inputs. PRs #126/#127 were merged, with no open PRs at capture. The subsequent native purchasing-field changes are recorded separately below.
 - [Sourcing inventory](sourcing.csv): 208 original review BOM rows across the four boards, including one explicit DNP. All 207 fitted rows have exact selected MPNs and manufacturer-specific catalog IDs, including the 95 populated main-board rows missing MPNs in the original review. [Part selection review](part-selection-review.md) records substitutions and remaining checks. Of the 51 selected unique parts, the RTC has no ready catalog stock in the dated capture.
@@ -37,7 +38,7 @@ repricing; this is not a new landed quote or purchase request.
 
 Erik’s selected first quote target is **5 fabricated / 2 assembled copies per design at JLCPCB**. Across four separate designs this means 20 fabricated PCBs, 8 assembled PCBs (two complete Cube + Beacon sets) and 12 spare bare PCBs. Confirm any panel/unit counting in the actual quote. Services, final cost and spending decision remain open.
 
-Equipment confirmed by Erik: **multimeter and oscilloscope**. Instrument models/probes, a current-limited source, programming cables/adapters and soldering capability are unconfirmed, not assumed absent. Review practical first-power and bare-board USB/recovery access before adding equipment to procurement. See [JLCPCB assembly preflight](jlcpcb-preflight.md).
+Equipment confirmed by Erik: **multimeter and oscilloscope**. Instrument models/probes, a current-limited source, programming cables/adapters and soldering capability are unconfirmed, not assumed absent. The [first-power access handoff](first-power-access.md) records feasible connections, required external items and the later run-sheet work; it does not claim equipment availability or completed tests. See [JLCPCB assembly preflight](jlcpcb-preflight.md).
 
 The Beacon uses a **purchased Hi-Link LD2410C radar module plugged into J3**, not a custom radar built into our PCB. J3's BOM MPN identifies the **Samtec socket only**. Two compatible radar modules are required for the two assembled Beacon units, accounting for verified existing inventory; their separate purchase/installation is not included merely by ordering PCB assembly. Retain the current header/socket version for this prototype; the LD2410C-P surface-mount variant is not a drop-in substitution. See [radar procurement and variant checks](beacon-radar-procurement.md).
 

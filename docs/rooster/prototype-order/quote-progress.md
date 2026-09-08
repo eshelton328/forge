@@ -11,8 +11,66 @@ September 8: [stackup/USB requirements](stackup-review/README.md) now recommend
 the named JLC041611-7628 construction for the main/Beacon prototype quotes.
 The native USB routing is retained as a disclosed functional-test risk; it has
 not been certified at 90 Ω. The current via attachments were reproduced exactly
-and committed as `b3818f9`; stackup/USB evidence is in `d957338`. Main's new upload
-and revised price are recorded immediately below. Beacon's update remains open.
+and committed as `b3818f9`; stackup/USB evidence is in `d957338`. Main and Beacon
+now both have current uploads and revised prices, recorded below.
+
+## Current four-design estimate
+
+| Design | PCB fabrication/options | Assembly preview | Rail-removal adjustment outside preview | Estimate including rail removal |
+| --- | ---: | ---: | ---: | ---: |
+| Main | $99.41 | $157.90 | Included | $257.31 |
+| Controls | $22.04 | $93.61 | Included | $115.65 |
+| Front | $22.04 | $76.17 | $2.30 | $100.51 |
+| Beacon | $99.41 | $215.89 | $2.30 | $317.60 |
+| **Total** | | | | **$791.07** |
+
+Each design is five fabricated / two assembled. Main/Beacon now use the actual
+filled-and-capped draft settings. Controls/front retain the September 7 price
+observations. This sum includes the separately listed advanced-option charges;
+it is **not a settled cart or landed quote**. RTCs, related assembly-fee changes,
+shipping, tax and external modules/harnesses remain excluded. Do not add the
+country-only shipping estimate or treat the RTC preorder as already purchased.
+
+## September 8 — current Beacon draft, 090b207-r1
+
+Saved title: **alec-sensor 090b207 - INCOMPLETE RTC - REVIEW ONLY**. Its private
+draft URL is recorded in ROO-010. The old Beacon draft is historical.
+
+| Uploaded input | SHA-256 |
+| --- | --- |
+| `fabrication-candidates/090b207-r1/alec-sensor/alec-sensor-gerbers.zip` | `ec6e25d9eb399ee1a5e95eb94d4714c771c721c467dbd2f87d9307b50056540f` |
+| Adjacent `alec-sensor-bom.csv` | `c7a9010b88b9de347d351e8ef81565ee74a5a164eebab3a9e8bcc791b92a947b` |
+| `supplier-placement-candidates/090b207-r1-headers/alec-sensor-cpl.csv` | `f0f5540f6d4730df6a70341bc655e5509eb487768cac2a0f7cf5dac1813e9b6c` |
+
+Gerber detection reports four layers / 64 × 56 mm. Selected five fabricated,
+two assembled, Standard / **Both Sides**, with 74 × 70 mm supplier processing
+dimensions and factory depaneling. Fabrication settings match the new main draft:
+1.6 mm, green/white, FR4 TG155, 1 oz outer/inner, ENIG 1 µin, JLC041611-7628,
+impedance **No requirement**, Epoxy Filled & Capped, required Horizontal
+Electroless Copper Plating, 0.2 mm minimum via option, Kelvin/flying-probe tests,
+regular ±0.2 mm outline tolerance. Selected button states and actual input values
+were checked before saving. Both manual-review dialogs had **Do not confirm
+automatically checked**. The saved PCB tab confirms Standard / Both Sides / 2.
+
+The full BOM/CPL covers 88 fitted placements and matches **38 detected / 37
+confirmed / one shortage**. U5 is exact C3019759 with two parts short; there is
+no unchecked available BOM row. No substitute was selected. U5 was temporarily
+excluded only to reach the incomplete price preview; it remains required by the
+uploaded/native BOM and CPL. This does not authorize an RTC-free assembly.
+
+The settled page shows **$315.30 = $99.41 PCB + $215.89 Standard assembly**.
+It separately lists $2.30 depaneling and warns that some advanced options are
+excluded. Including that charge gives $317.60 for comparison, subject to the
+eventual cart. Assembly fees remain setup $51.12; stencil $16.42; components
+(37 items) $71.43; feeders $53.55; SMT $2.17; placement review $0.45; hand
+soldering $3.58; manual assembly $0.26; fixture $16.42; packaging $0.49.
+PCB time is 3 days; assembly 5–6 days plus three advanced-option days, with
+no rush selected. These are production estimates, not delivery dates.
+
+This pass verifies file intake, matching and quote settings, not final placement
+alignment. Existing U3/model and missing-model questions remain subject to the
+native-pad comparison and manual production review. **Save to Cart was not
+clicked; no PCB/parts order, payment or production approval was submitted.**
 
 ## September 8 — current main draft, 090b207-r1
 
@@ -63,7 +121,9 @@ placement issues remain for reconciliation against native pad coordinates and
 supplier production data with manual approval. No Save to Cart, order, paid
 reservation, payment, supplier outreach or production approval was submitted.
 
-Controls and front have all fitted parts matched. The four price previews and
+## Historical four-design comparison before the September 8 uploads
+
+Controls and front have all fitted parts matched. The earlier four price previews and
 the controls/header placement corrections are recorded below. No PCB Save to Cart
 action was submitted. The estimate including separately listed rail removal is
 **$750.25 before RTCs, any related assembly-fee changes, shipping, tax and external
@@ -76,7 +136,8 @@ Epoxy Filled & Capped on main/Beacon. A separate fabrication calculator shows
 $99.41 per large-board batch versus the earlier $79.00: an indicative **$40.82
 increase across both**, giving **$791.07 before RTCs, related assembly changes,
 shipping, tax and external items**, if all other draft charges hold. This is
-comparison arithmetic; the saved assembly drafts still require actual repricing.
+comparison arithmetic. The September 8 main/Beacon sections above now replace
+this provisional calculation with actual refreshed fabrication-price previews.
 
 Erik supplied a USA shipping destination; the postal code and account-specific
 draft URL are in the private Rooster task note. Postal-code-specific shipping/tax
@@ -313,10 +374,10 @@ cannot prove RGB pin orientation. Neither draft is a full placement sign-off.
 The [J4 hole correction](header-fit/README.md) now changes main's four plated
 header holes from 1.00 to 1.10 mm, preserving its lands and placement. The new
 [090b207-r1 candidate](fabrication-candidates/README.md) has passed native/CAM
-checks and has rebound supplier CPLs. Main's uploaded original archive is
-historical only; replace it before ordering. The via attachments now match
-the new source; update/reprice the fabrication process. The saved price remains
-an incomplete observation.
+checks and has rebound supplier CPLs. Main's original uploaded archive is
+historical only; both large boards now have new drafts with current files,
+fill/cap and the named stackup. The via attachments match the current source.
+Prices remain incomplete until RTCs and landed charges are resolved.
 
 All four archives have been uploaded. The [amplifier review](assembly-drawing-review.md)
 now supports retaining its native copper land pattern and verifies all 17 pad
@@ -326,7 +387,7 @@ rotation was changed in this pass. Resolve this, U3's supplier model/placement
 origin discrepancy and missing-model orientation checks. The source mask decision
 is now recorded: retain uniform 1:1 openings, with the actual-Gerber separation
 check passing on all eight masks. The via process is specified separately.
-Finish stackup,
+The stackup prototype disposition is recorded. Finish
 pin/rotation, rail clearance,
 external-parts and first-power dispositions. Final quantities, services/exclusions,
 shipping/tax and exact totals still precede Erik's purchase approval.

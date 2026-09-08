@@ -5,16 +5,17 @@ Current source: native PCB commit `090b207` and fabrication candidate
 vias for main and Beacon.** This supersedes the solder-mask **Plugged** option
 used in the earlier cost drafts. Retain tented vias on controls and front.
 No native copper, drill, mask or placement geometry changes in this disposition.
-The saved assembly drafts still require updated fabrication settings and prices.
+Both new main/Beacon assembly drafts now select these fabrication settings.
 
 The separate, unsubmitted fabrication calculator shows **$99.41 per five-board
 large-board batch** at 74 × 70 mm processing size with the matching 4-layer,
 1.6 mm, generic FR4 TG155, ENIG 1 µin, 1 oz outer/inner copper, 0.2 mm minimum
 drill option, Kelvin test and manual production review. This is **$20.41 above**
 the earlier $79.00 fabrication estimate: $17.06 via fill/cap plus $3.35 required
-horizontal electroless copper plating. It is not a recalculated assembly draft
-or a landed quote. The two large-board batches imply a $40.82 fabrication
-adjustment if all other quoted charges stay the same.
+horizontal electroless copper plating. The September 8 refreshed assembly drafts
+now independently show the same $99.41 fabrication amount for each large-board
+batch. The combined $40.82 increase is reflected in the current
+[quote comparison](../quote-progress.md); shipping, tax and RTCs remain excluded.
 
 ## Why the earlier process needs changing
 

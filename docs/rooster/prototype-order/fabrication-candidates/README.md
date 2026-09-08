@@ -6,8 +6,8 @@
 `090b207`, including main's [four 1.10 mm J4 holes](../header-fit/README.md).
 All four new archives pass the [native/CAM hole, slot, outline, layer and
 BOM/CPL checks](../cam-review/090b207-r1/cam-check.json). This is a checked quote
-candidate, not an approved order release. **Main was uploaded into a new supplier
-draft on September 8; the other supplier drafts still use the historical files.**
+candidate, not an approved order release. **Main and Beacon were uploaded into
+new supplier drafts on September 8; controls/front retain historical files.**
 Use the explicitly rebound [supplier CPLs](../supplier-placement-candidates/README.md)
 for main, controls and Beacon; front uses its native CPL in this directory.
 
@@ -30,9 +30,9 @@ small export contour differences do not change the prototype disposition.
 
 The mask comparison preserves the earlier 0.10 mm bridge-separation evidence.
 The [via attachments](../via-process/README.md) now match this candidate and
-record J4's 1.10 mm holes as open; fill locations are unchanged. Main's new draft
-now selects fill/cap and the [named prototype stackup](../stackup-review/README.md).
-Beacon still needs those quote updates. Remaining placement, RTC supply, rail
+record J4's 1.10 mm holes as open; fill locations are unchanged. Both new large-board
+drafts select fill/cap and the [named prototype stackup](../stackup-review/README.md).
+Their current files/settings/prices are recorded in quote progress. Remaining placement, RTC supply, rail
 and first-power work is recorded in preflight.
 
 ## Historical candidate: 4d8e65d-r1
