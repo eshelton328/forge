@@ -8,6 +8,14 @@ Erik explicitly instructed on September 7: **"Please don't place the order witho
 
 ## Current state
 
+The [September 8 manufacturing supplier report](manufacturing-supplier-report-2026-09-08.md)
+compares JLCPCB, PCBWay, MacroFab, Seeed and Screaming Circuits against the same
+four-board scope. It separates priced components, fabrication, assembly and
+delivery charges, and records inspection/lead-time evidence and uncertainties.
+JLCPCB remains the baseline; PCBWay and MacroFab are the priority comparisons.
+The [comparison enquiry](supplier-comparison-enquiry-draft.md) is prepared locally
+and unsent. No alternative quote or supplier quality winner is established.
+
 The [September 8 order checklist](order-readiness-2026-09-08.md) records the
 critical path: RTC warehouse receipt, placement reconciliation, final quote,
 Erik's purchase decision, then manual production confirmation. A parts preorder
