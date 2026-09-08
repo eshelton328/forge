@@ -100,6 +100,11 @@ geometry or manufacturing archive changed.
 
 ## Remaining preview discrepancies
 
+Use the [manual placement review sheet](../placement-review/README.md) and its
+current native reference for exact MPNs, pad coordinates, nets and CPL rows. It
+covers all 207 fitted references and preserves bottom-side coordinate conventions.
+Creating this reference does not resolve the supplier-origin ambiguities below.
+
 Both U3 ESP32 models appear above their actual board pads. Native F.Fab body
 bounds are X=124…142 and board Y=63.75…89.25 mm, centered at **(133, 76.5)**,
 which agrees with the unchanged CPL (133, −76.5). The bottom row (pins 15–26)

@@ -63,6 +63,12 @@ based on its original assumed stackup. Beacon has no routed UART0 service pads.
 
 ## Purchase versus production approval
 
+The [manual review sheet](placement-review/README.md) consolidates the exact
+placement comparisons and fabrication/stencil/rail requirements. The
+[external-parts inventory](external-parts.md) preserves already recorded candidates
+and distinguishes complete-system quantities from unconfirmed owned inventory.
+Both are local preparation; neither is supplier acceptance or purchase permission.
+
 Before requesting purchase approval, resolve actual design and testability issues,
 identify exact fitted parts and quantities, define mask/via/stackup and stencil
 requirements, and present the complete priced scope. The amplifier's copper-pad

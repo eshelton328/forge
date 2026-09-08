@@ -30,11 +30,13 @@ Initial rail/USB checks leave display, speaker and radar disconnected. The Cube
 controls cable is needed for the normal power-enable route; the front cable is
 needed for later front-button/RGB tests.
 
-Exact harness requirements and signal order remain in
+The [external-parts inventory](external-parts.md) carries the existing MPD BH3AAW
+holder and Visaton 2235 speaker candidates, gross quantities and remaining cable
+selections. Exact harness requirements and signal order remain in
 [main HARNESS.md](../../../boards/alec-main/HARNESS.md). The selected display is
 the four-pin ER-OLEDM013-1W-I2C; the Beacon module variant is described in the
-[radar procurement note](beacon-radar-procurement.md). Battery holder and speaker
-procurement still need exact item/inventory confirmation. Firmware can develop
+[radar procurement note](beacon-radar-procurement.md). The recorded holder/speaker
+candidates still need inventory and purchase-offer confirmation. Firmware can develop
 while these external items are being arranged.
 
 ## Physical connection and programming access

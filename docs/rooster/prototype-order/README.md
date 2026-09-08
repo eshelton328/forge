@@ -12,6 +12,13 @@ Order preparation is on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2
 
 Separate [supplier CPL candidates](supplier-placement-candidates/README.md) correct the controls buttons and main/Beacon header centers; main J4 also rotates to match its vertical holes. Native geometry is unchanged. U3 model/placement alignment, remaining manufacturing dispositions and missing-model orientation checks remain open. [Quote progress](quote-progress.md) records exact inputs, services, prices and review scope.
 
+The [manual placement review sheet](placement-review/README.md) now supplies a
+source-bound reference for all 207 fitted components and exact targets for the
+observed supplier-preview ambiguities. It is prepared locally, not a supplier
+sign-off. The [external-parts inventory](external-parts.md) reuses the existing
+holder, speaker, display and radar candidates and gives gross cable/part counts
+before checking owned inventory.
+
 The [via-process review](via-process/README.md) supersedes the large boards'
 Plugged quote setting with epoxy fill and copper cap. It specifies 255 main and
 199 Beacon holes while keeping component holes open. Both refreshed assembly
