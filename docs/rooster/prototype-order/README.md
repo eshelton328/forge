@@ -2,6 +2,10 @@
 
 **Goal: place the factory-assembled PCB orders so the Cube and Beacon can be tested while firmware development continues.** The order-placement milestone ends with submitted orders and confirmations for the selected four-board set. Delivery, bring-up and complete firmware acceptance follow under their existing tickets.
 
+## Order approval
+
+Erik explicitly instructed on September 7: **"Please don't place the order without my permission."** Preparing files, supplier quotes and reviewable order details may continue. Do not submit a PCB order, parts preorder/reservation requiring payment, checkout or payment until Erik explicitly approves the exact items, quantities and total. Quote preparation or sign-in is not permission to purchase. No order has been placed by the agent.
+
 ## Current state
 
 Order preparation is on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2c60616f77a5116eba637098acf98`. Four source-bound fabrication candidates now exist; the main-board ZIP has been uploaded for quoting and correctly recognized by JLCPCB. Component/assembly pricing requires sign-in. No complete quote, manufacturing release or order exists. [Quote progress](quote-progress.md) records the exact submitted archive and incomplete cost observations.
