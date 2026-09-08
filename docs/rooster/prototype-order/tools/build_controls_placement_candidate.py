@@ -24,10 +24,11 @@ def sha(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--base', type=Path, default=HERE / 'fabrication-candidates/4d8e65d-r1')
     args = parser.parse_args()
     dst = args.output.resolve()
     assert not dst.exists(), 'Refusing to overwrite a placement candidate'
-    base = HERE / 'fabrication-candidates/4d8e65d-r1'
+    base = args.base.resolve()
     board = 'alec-controls'
     candidate = json.loads((base / 'manifest.json').read_text())['boards'][board]
     native = ROOT / 'boards' / board / (board + '.kicad_pcb')

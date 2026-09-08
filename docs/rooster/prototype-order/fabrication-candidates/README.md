@@ -1,10 +1,43 @@
 # Fabrication candidates for quote review
 
-**Main r1 is now historical only:** the [J4 finished-hole correction](../header-fit/README.md)
-changes its four connector drills to 1.10 mm. A newly named main fabrication
-candidate and placement binding are required before order release. The three
-other boards' native geometry remains unchanged. The r1 inventory below describes
-the preserved original files, not the corrected main board.
+## Current candidate: 090b207-r1
+
+[090b207-r1](090b207-r1/manifest.json) is exported from native source commit
+`090b207`, including main's [four 1.10 mm J4 holes](../header-fit/README.md).
+All four new archives pass the [native/CAM hole, slot, outline, layer and
+BOM/CPL checks](../cam-review/090b207-r1/cam-check.json). This is a checked quote
+candidate, not an approved order release. **It has not yet replaced the supplier
+uploads.** Use the explicitly rebound [supplier CPLs](../supplier-placement-candidates/README.md)
+for main, controls and Beacon; front uses its native CPL in this directory.
+
+| Board | Gerber ZIP SHA-256 |
+| --- | --- |
+| Main | `fdf29a45b08e7f7863141c78b3ecf48b4a34069a986c37b83001055218727ae0` |
+| Controls | `529461b9adb3052c03213ddea4c40104b1ca71ff780083a8c29e3018234f3cef` |
+| Front | `e4cda9bedc90f52dd172ddd6269f6b90651437c1e56ac7e96f1588ad0200f8ea` |
+| Beacon | `ec6e25d9eb399ee1a5e95eb94d4714c771c721c467dbd2f87d9307b50056540f` |
+
+[Parsed graphic-layer comparison](../cam-review/090b207-r1/graphic-layer-continuity.json)
+confirms exact primitive equality on all mask, paste, silk and outline layers.
+All controls/front/Beacon copper primitives also match. Main's export has seven
+minor filled-region contour differences: maximum measured areal-boundary distance
+0.002343 mm and maximum symmetric-difference area 0.00004594 mm². These exports
+are therefore not described as byte-identical copper. The native saved copper
+remains identical; the two current main copper/drill overviews were visually
+inspected, and current native fabrication/DRC/connectivity checks pass. These
+small export contour differences do not change the prototype disposition.
+
+The mask comparison preserves the earlier 0.10 mm bridge-separation evidence.
+The via fill/cap **requirement** remains applicable, but regenerate its source-bound
+attachments for this candidate so J4's open-hole diameter is recorded correctly.
+Then replace/reprice supplier drafts with the selected fill/cap process. Remaining
+placement, RTC supply, stackup, rail and first-power work is recorded in preflight.
+
+## Historical candidate: 4d8e65d-r1
+
+Main's original archive is now superseded and must not be ordered. The inventory
+below describes those preserved original files. The other three native boards
+remain unchanged.
 
 `4d8e65d-r1` contains four Gerber/drill archives plus matching BOM/CPL pairs,
 exported from committed native sources at `4d8e65d327e1dd0e45adc906855b9b2ccb610a91`.

@@ -255,9 +255,12 @@ cannot prove RGB pin orientation. Neither draft is a full placement sign-off.
 ## Next work
 
 The [J4 hole correction](header-fit/README.md) now changes main's four plated
-header holes from 1.00 to 1.10 mm, preserving its lands and placement. Main's
-uploaded r1 archive is historical only and must be replaced by a newly named
-candidate before ordering. The saved price remains an incomplete observation.
+header holes from 1.00 to 1.10 mm, preserving its lands and placement. The new
+[090b207-r1 candidate](fabrication-candidates/README.md) has passed native/CAM
+checks and has rebound supplier CPLs. Main's uploaded original archive is
+historical only; replace it before ordering. Regenerate the via attachments for
+the new source and update/reprice the fabrication process. The saved price remains
+an incomplete observation.
 
 All four archives have been uploaded. The [amplifier review](assembly-drawing-review.md)
 now supports retaining its native copper land pattern and verifies all 17 pad

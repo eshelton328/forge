@@ -27,9 +27,11 @@ def sha(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
-    dst = parser.parse_args().output.resolve()
+    parser.add_argument('--base', type=Path, default=HERE / 'fabrication-candidates/4d8e65d-r1')
+    args = parser.parse_args()
+    dst = args.output.resolve()
     assert not dst.exists(), 'Refusing to overwrite a placement candidate'
-    base = HERE / 'fabrication-candidates/4d8e65d-r1'
+    base = args.base.resolve()
     manifest = json.loads((base / 'manifest.json').read_text())
     report = {'status': 'SUPPLIER_PLACEMENT_CANDIDATE_NOT_ORDER_RELEASE',
               'generator_sha256': sha(Path(__file__)), 'boards': {}}
@@ -47,7 +49,12 @@ def main():
         pcb = pcbnew.LoadBoard(str(native))
         assert pcb.GetDesignSettings().GetAuxOrigin() == pcbnew.VECTOR2I(0, 0)
         f = next(f for f in pcb.GetFootprints() if f.GetReference() == ref)
-        assert f.GetFPID().GetLibItemName() == footprint
+        item = str(f.GetFPID().GetLibItemName())
+        allowed = {footprint: 1.0}
+        if board == 'alec-main':
+            allowed['Samtec_TSW-104-07-G-S_Drill1.10mm'] = 1.1
+        assert item in allowed
+        drill_mm = allowed[item]
         assert f.GetLayer() == pcbnew.F_Cu and f.GetOrientationDegrees() == 0
         assert [pcbnew.ToMM(f.GetPosition().x), pcbnew.ToMM(f.GetPosition().y)] == anchor
         pads = sorted(f.Pads(), key=lambda p: int(p.GetNumber()))
@@ -57,7 +64,7 @@ def main():
             expected = [anchor[0], anchor[1] + i * 2.54] if board == 'alec-main' else [anchor[0] + i * 2.54, anchor[1]]
             assert all(abs(a - b) < 1e-6 for a, b in zip(point, expected))
             assert p.GetAttribute() == pcbnew.PAD_ATTRIB_PTH
-            assert p.GetDrillSize() == pcbnew.VECTOR2I(pcbnew.FromMM(1), pcbnew.FromMM(1))
+            assert p.GetDrillSize() == pcbnew.VECTOR2I(pcbnew.FromMM(drill_mm), pcbnew.FromMM(drill_mm))
         center = [(xy[0][axis] + xy[-1][axis]) / 2 for axis in (0, 1)]
         row = next(r for r in rows if r['Designator'] == ref)
         assert [float(row['Mid X']), -float(row['Mid Y'])] == anchor
@@ -72,6 +79,7 @@ def main():
             'gerber_zip_sha256': candidate['file_sha256'][board + '-gerbers.zip'],
             'bom_sha256': candidate['file_sha256'][board + '-bom.csv'],
             'changed_reference': ref, 'native_holes_mm': xy,
+            'native_footprint': f.GetFPIDAsString(), 'native_finished_drill_mm': drill_mm,
             'body_center_board_mm': center, 'before': originals[ref], 'after': dict(row),
             'unchanged_reference_count': len(rows) - 1,
             'reason': ('Native pin-one origin differs from body center. Main supplier model is horizontal '

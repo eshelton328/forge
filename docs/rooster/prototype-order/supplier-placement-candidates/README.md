@@ -4,6 +4,28 @@ These files record supplier-specific placement corrections without moving native
 footprints, copper, drills, or functional outlines. They are review candidates,
 not manufacturing releases. Preserve the original candidate files and their hashes.
 
+## Current files for fabrication candidate 090b207-r1
+
+| Board | CPL to pair with its new Gerber ZIP/BOM |
+| --- | --- |
+| Main | [090b207-r1-headers/alec-main-cpl.csv](090b207-r1-headers/alec-main-cpl.csv) |
+| Controls | [090b207-r1-controls/alec-controls-cpl.csv](090b207-r1-controls/alec-controls-cpl.csv) |
+| Front | [Native front CPL](../fabrication-candidates/090b207-r1/alec-front/alec-front-cpl.csv) |
+| Beacon | [090b207-r1-headers/alec-sensor-cpl.csv](090b207-r1-headers/alec-sensor-cpl.csv) |
+
+The three corrected CSVs are byte-for-byte identical to the prior reviewed
+corrections. Their new manifests bind them to the new fabrication archive/BOM
+hashes and current native sources, including J4's 1.10 mm holes. No component
+position or rotation changed in this rebinding, and U5 remains included. These
+packages have **not been re-uploaded or approved in the supplier UI**. The older
+sections below explain the correction geometry and previous preview checks.
+
+Both builders accept `--base <fabrication-candidate-directory>` and refuse an
+existing output directory. For this set, the base is
+`docs/rooster/prototype-order/fabrication-candidates/090b207-r1`. The header builder
+checks the selected native footprint's corresponding 1.00 or 1.10 mm drill rather
+than weakening its geometry assertions to accept arbitrary holes.
+
 ## Controls r2 — B3F pushbutton centers
 
 Use [controls-r2/alec-controls-cpl.csv](controls-r2/alec-controls-cpl.csv) with

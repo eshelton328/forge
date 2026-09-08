@@ -25,9 +25,11 @@ After switching the main quote to Standard, JLCPCB proposed a **74 × 70 mm proc
 
 Main's [J4 finished-hole correction](header-fit/README.md) is checked in native
 source: four 1.10 mm plated holes, with existing pads/placement preserved. Its
-previous uploaded Gerber archive is superseded. Generate and independently check
-a newly named fabrication candidate and rebind the supplier placement corrections
-before replacing that draft.
+previous uploaded Gerber archive is superseded. The new
+[090b207-r1 fabrication candidate](fabrication-candidates/README.md) passes the
+independent native/CAM checks, with the same supplier placement corrections
+rebound to its hashes. Regenerate source-bound via attachments and replace the
+supplier draft before ordering.
 
 The [via-process specification](via-process/README.md) now calls for epoxy fill
 and copper cap on main/Beacon, preserving all component holes. Their draft
