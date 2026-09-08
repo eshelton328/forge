@@ -28,3 +28,19 @@ After switching the main quote to Standard, JLCPCB proposed a **74 × 70 mm proc
 - The dedicated BOM/CPL files include both faces and THT locations, covering 111/5/3/88 fitted references. Use the corrected [controls r2 and headers r2 CPLs](supplier-placement-candidates/README.md), which correct the button/header centers and main J4 rotation. The shared repository exporter uses `only_smd: true` and omits THT locations. U3 model alignment, other origins, rotations and final placement review remain open.
 - Confirm actual stock, component attrition/minimums, fabrication versus assembly counts, services and total cost for the selected order options. The published fee table is not a quote for these boards.
 - Establish the first-power source and USB/recovery procedure using Erik’s confirmed multimeter and oscilloscope, with remaining equipment/probe capabilities recorded explicitly.
+
+## Purchase versus production approval
+
+Before requesting purchase approval, resolve actual design and testability issues,
+identify exact fitted parts and quantities, define mask/via/stackup and stencil
+requirements, and present the complete priced scope. The amplifier's copper-pad
+disposition and 17-pin map are recorded in the [drawing review](assembly-drawing-review.md).
+Its supplier preview orientation still needs reconciliation.
+
+JLCPCB prepares its actual SMT/stencil production data after an order. Review
+those files, final placements and rail geometry through the manual confirmation
+steps before production; automatic confirmation stays disabled. The finished
+supplier stencil is not a pre-purchase prerequisite. [Supplier stencil workflow](https://jlcpcb.com/help/article/smt-stencil-data-prepared-for-smt-orders).
+
+Erik's explicit permission is required before any PCB order, paid parts
+procurement or checkout/payment submission. Draft quotes do not grant it.

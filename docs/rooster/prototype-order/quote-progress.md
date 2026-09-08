@@ -211,8 +211,17 @@ cannot prove RGB pin orientation. Neither draft is a full placement sign-off.
 
 ## Next work
 
-All four archives have been uploaded. Resolve U3's supplier model/placement
-origin discrepancy and missing-model orientation checks. Finish amplifier/pad,
-stencil/via/stackup, pin/rotation, rail clearance,
+All four archives have been uploaded. The [amplifier review](assembly-drawing-review.md)
+now supports retaining its native copper land pattern and verifies all 17 pad
+nets; rounded thermal paste coverage is 62.552%, correcting the earlier 66.1%.
+The live U6 model marking still differs from the native pin-1 corner; no CPL
+rotation was changed in this pass. Resolve this, U3's supplier model/placement
+origin discrepancy and missing-model orientation checks. Finish mask/via/stackup,
+pin/rotation, rail clearance,
 external-parts and first-power dispositions. Final quantities, services/exclusions,
 shipping/tax and exact totals still precede Erik's purchase approval.
+
+Record stencil constraints before purchase; actual JLCPCB stencil production
+data follows the order and belongs to manual production review. The updated
+drawing review records this sequencing. No order, paid parts procurement or
+production approval was submitted during this review.

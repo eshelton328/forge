@@ -1,0 +1,374 @@
+{
+  "status": "RETAIN_FOR_PROTOTYPE_ORDER_PREPARATION",
+  "scope": "Engineering disposition from package dimensions and assembly guidance; no supplier approval or solder-joint qualification.",
+  "native_pcb_sha256": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+  "generator_sha256": "3a0dcfa351bad626bc02eea28cc9d2a76f912572715c5ef3961615f767fa6a91",
+  "sources": {
+    "package": {
+      "url": "https://mds.analog.com/api/public/content/tqfn_21-0136.pdf",
+      "revision": "V",
+      "page_visually_read": 2,
+      "sha256": "8d5551d518227724b29191e4f4c884115ba9d4540bf09d4cdcccfb31da13f52d"
+    },
+    "land_pattern": {
+      "url": "https://mds.analog.com/api/public/content/90-0031.pdf",
+      "revision": "C",
+      "sha256": "5661318725986f79e664adb5fd24d80c2b444c1d48d3aa4c1b0d51ebfa53f4c8"
+    },
+    "assembly_guidance": "https://www.analog.com/en/resources/app-notes/smt-assembly-and-pcb-design-guidelines-for-maxims-standard-wirebonded-quad-flatpack.html"
+  },
+  "selected_package": {
+    "code": "T1633+4",
+    "body_mm": [
+      3,
+      3
+    ],
+    "pitch_mm": 0.5,
+    "terminal_width_min_nom_max_mm": [
+      0.2,
+      0.25,
+      0.3
+    ],
+    "terminal_length_min_nom_max_mm": [
+      0.3,
+      0.4,
+      0.5
+    ]
+  },
+  "native_anchor_board_mm": [
+    153.0,
+    106.0
+  ],
+  "peripheral_pads": [
+    {
+      "pin": 1,
+      "net": "/GPIO14",
+      "center_board_mm": [
+        151.5625,
+        105.25
+      ],
+      "local_mm": [
+        -1.4375,
+        -0.75
+      ],
+      "size_mm": [
+        0.825,
+        0.25
+      ]
+    },
+    {
+      "pin": 2,
+      "net": "GND",
+      "center_board_mm": [
+        151.5625,
+        105.75
+      ],
+      "local_mm": [
+        -1.4375,
+        -0.25
+      ],
+      "size_mm": [
+        0.825,
+        0.25
+      ]
+    },
+    {
+      "pin": 3,
+      "net": "GND",
+      "center_board_mm": [
+        151.5625,
+        106.25
+      ],
+      "local_mm": [
+        -1.4375,
+        0.25
+      ],
+      "size_mm": [
+        0.825,
+        0.25
+      ]
+    },
+    {
+      "pin": 4,
+      "net": "/AMP_SD",
+      "center_board_mm": [
+        151.5625,
+        106.75
+      ],
+      "local_mm": [
+        -1.4375,
+        0.75
+      ],
+      "size_mm": [
+        0.825,
+        0.25
+      ]
+    },
+    {
+      "pin": 5,
+      "net": "unconnected-(U6-NC-Pad5)",
+      "center_board_mm": [
+        152.25,
+        107.4375
+      ],
+      "local_mm": [
+        -0.75,
+        1.4375
+      ],
+      "size_mm": [
+        0.25,
+        0.825
+      ]
+    },
+    {
+      "pin": 6,
+      "net": "unconnected-(U6-NC-Pad6)",
+      "center_board_mm": [
+        152.75,
+        107.4375
+      ],
+      "local_mm": [
+        -0.25,
+        1.4375
+      ],
+      "size_mm": [
+        0.25,
+        0.825
+      ]
+    },
+    {
+      "pin": 7,
+      "net": "/5v",
+      "center_board_mm": [
+        153.25,
+        107.4375
+      ],
+      "local_mm": [
+        0.25,
+        1.4375
+      ],
+      "size_mm": [
+        0.25,
+        0.825
+      ]
+    },
+    {
+      "pin": 8,
+      "net": "/5v",
+      "center_board_mm": [
+        153.75,
+        107.4375
+      ],
+      "local_mm": [
+        0.75,
+        1.4375
+      ],
+      "size_mm": [
+        0.25,
+        0.825
+      ]
+    },
+    {
+      "pin": 9,
+      "net": "/speaker +",
+      "center_board_mm": [
+        154.4375,
+        106.75
+      ],
+      "local_mm": [
+        1.4375,
+        0.75
+      ],
+      "size_mm": [
+        0.825,
+        0.25
+      ]
+    },
+    {
+      "pin": 10,
+      "net": "/speaker -",
+      "center_board_mm": [
+        154.4375,
+        106.25
+      ],
+      "local_mm": [
+        1.4375,
+        0.25
+      ],
+      "size_mm": [
+        0.825,
+        0.25
+      ]
+    },
+    {
+      "pin": 11,
+      "net": "GND",
+      "center_board_mm": [
+        154.4375,
+        105.75
+      ],
+      "local_mm": [
+        1.4375,
+        -0.25
+      ],
+      "size_mm": [
+        0.825,
+        0.25
+      ]
+    },
+    {
+      "pin": 12,
+      "net": "unconnected-(U6-NC-Pad12)",
+      "center_board_mm": [
+        154.4375,
+        105.25
+      ],
+      "local_mm": [
+        1.4375,
+        -0.75
+      ],
+      "size_mm": [
+        0.825,
+        0.25
+      ]
+    },
+    {
+      "pin": 13,
+      "net": "unconnected-(U6-NC-Pad13)",
+      "center_board_mm": [
+        153.75,
+        104.5625
+      ],
+      "local_mm": [
+        0.75,
+        -1.4375
+      ],
+      "size_mm": [
+        0.25,
+        0.825
+      ]
+    },
+    {
+      "pin": 14,
+      "net": "/GPIO48",
+      "center_board_mm": [
+        153.25,
+        104.5625
+      ],
+      "local_mm": [
+        0.25,
+        -1.4375
+      ],
+      "size_mm": [
+        0.25,
+        0.825
+      ]
+    },
+    {
+      "pin": 15,
+      "net": "GND",
+      "center_board_mm": [
+        152.75,
+        104.5625
+      ],
+      "local_mm": [
+        -0.25,
+        -1.4375
+      ],
+      "size_mm": [
+        0.25,
+        0.825
+      ]
+    },
+    {
+      "pin": 16,
+      "net": "/GPIO47",
+      "center_board_mm": [
+        152.25,
+        104.5625
+      ],
+      "local_mm": [
+        -0.75,
+        -1.4375
+      ],
+      "size_mm": [
+        0.25,
+        0.825
+      ]
+    }
+  ],
+  "land_pattern": {
+    "native_width_mm": 0.25,
+    "drawing_90_0031_width_mm": 0.3,
+    "native_length_mm": 0.825,
+    "drawing_90_0031_length_mm": 0.8,
+    "inner_edge_from_center_mm": 1.025,
+    "outer_edge_from_center_mm": 1.85,
+    "nominal_outward_extension_mm": 0.3500000000000001,
+    "nominal_heel_extension_mm": 0.07500000000000018,
+    "adjacent_pad_gap_mm": 0.25,
+    "thermal_copper_mm": [
+      1.23,
+      1.23
+    ]
+  },
+  "paste": {
+    "window_centers_local_mm": [
+      [
+        -0.31,
+        -0.31
+      ],
+      [
+        -0.31,
+        0.31
+      ],
+      [
+        0.31,
+        -0.31
+      ],
+      [
+        0.31,
+        0.31
+      ]
+    ],
+    "rounded_window": {
+      "area_mm2": 0.23658738521234052,
+      "perimeter_mm": 1.7853981633974483
+    },
+    "thermal_coverage_fraction": 0.6255202200075102,
+    "peripheral_aperture": {
+      "area_mm2": 0.20289684630308513,
+      "perimeter_mm": 2.042699081698724
+    },
+    "native_aperture_stencil_examples_not_supplier_specification": [
+      {
+        "assumed_thickness_mm": 0.1,
+        "area_ratios": {
+          "peripheral": 0.9932781980513476,
+          "thermal_window": 1.3251239418894467
+        }
+      },
+      {
+        "assumed_thickness_mm": 0.12,
+        "area_ratios": {
+          "peripheral": 0.8277318317094564,
+          "thermal_window": 1.1042699515745389
+        }
+      },
+      {
+        "assumed_thickness_mm": 0.127,
+        "area_ratios": {
+          "peripheral": 0.782108817363266,
+          "thermal_window": 1.0434046786531075
+        }
+      }
+    ]
+  },
+  "disposition": "Retain the native land pattern. Its 0.25 mm width matches nominal package terminals at 0.5 mm pitch, consistent with ADI fine-pitch guidance. The 0.35 mm toe extension lies in ADI guidance; the inner edge and exposed land match 90-0031. It is not a literal copy of 90-0031.",
+  "production_requirements": [
+    "Verify all pins and orientation on supplier production data.",
+    "Use separated thermal apertures with 50-80% coverage and adequate release area ratio.",
+    "Resolve consistent solder-mask and thermal-via treatment; this report does not verify local mask clearance.",
+    "Supplier determines actual stencil thickness/apertures and reflow process; native F.Paste is not proof of the production stencil."
+  ]
+}

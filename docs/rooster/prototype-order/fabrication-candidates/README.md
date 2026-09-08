@@ -39,12 +39,20 @@ The copper overviews were visually inspected for gross truncation, outline/hole
 alignment and recognizable placement. The per-layer SVGs support the remaining
 stencil, mask and assembly review; their existence does not close that review.
 
-Still required before order release: remaining component dispositions (including
-the [amplifier land-pattern difference](../assembly-drawing-review.md)), supplier
+The [amplifier copper-pad review](../assembly-drawing-review.md) now records a
+prototype disposition retaining the native pattern and verifies its 17-pin map.
+Its supplier orientation and mask/via/process checks remain open.
+
+Still required before order release: remaining component dispositions, supplier
 pin-1/rotation review, stackup and via treatment, Standard-board rails/fiducials
 and detachment, complete THT/both-face assembly coverage, RTC supply, external
 parts and first-power readiness, final checks and an accepted complete quote.
 No rails or panels have been added to the functional board outlines.
+
+Specify stencil requirements before purchase; JLCPCB creates actual production
+stencil data after the order. Preserve manual production/placement review for
+those later files rather than requiring a finished supplier stencil to request
+spending approval. See the drawing review for the supplier's documented workflow.
 
 All four ZIPs have been uploaded to JLCPCB for quoting. See
 [quote progress](../quote-progress.md) for matching, placement findings and prices.
