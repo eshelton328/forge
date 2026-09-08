@@ -1,6 +1,6 @@
 # JLCPCB prototype assembly preflight
 
-September 7, 2026. Quote target: five fabricated and two assembled copies of each design. Main has its full BOM/CPL uploaded but remains short of RTCs. Controls and front have all fitted parts matched and assembly prices captured; Beacon is the remaining upload. All four designs require or are planned for Standard service. No complete four-board landed quote or order exists. [Quote progress](quote-progress.md).
+September 7, 2026. Quote target: five fabricated and two assembled copies of each design. All four Gerber/BOM/CPL sets are uploaded with actual Standard-service price previews. Controls/front have all fitted parts matched. Main and Beacon retain their full required BOM/CPLs but remain short of RTCs; their temporary incomplete price previews exclude U5 and are labeled accordingly. No complete four-board landed quote or order exists. [Quote progress](quote-progress.md).
 
 JLCPCB publishes a five-board fabrication minimum and assembly quantities starting at two. [Fabrication FAQ](https://jlcpcb.com/resources/pcb-prototyping), [PCBA capabilities](https://jlcpcb.com/capabilities/pcb-assembly-capabilities).
 
@@ -15,16 +15,16 @@ The read-only KiCad footprint inventory in [assembly-audit.json](assembly-audit.
 | alec-main | 110 front SMD, front THT J4; 64 × 56 mm | Standard required by actual JLCPCB eligibility for ESP32-S3-WROOM-1-N16 / C2913199; saved draft is top-side assembly, quantity 2 |
 | alec-controls | Back SMD J1; front THT SW1–SW4; 27 × 34 mm | Actual Standard / Both Sides / qty 2 quote includes all five fitted parts, hand soldering and fixture fees; processing proposal 71 × 70 mm |
 | alec-front | Front SMD D1/SW1; back SMD J1; 24 × 10 mm | Actual Standard / Both Sides / qty 2 quote includes all three fitted parts; processing proposal 70 × 70 mm |
-| alec-sensor | 84 front SMD, front THT J3, back THT SW1, back SMD SW2/SW3; 64 × 56 mm | Complete factory assembly uses both sides; plan Standard |
+| alec-sensor | 84 front SMD, front THT J3, back THT SW1, back SMD SW2/SW3; 64 × 56 mm | Actual Standard / Both Sides / qty 2 draft, 74 × 70 mm processing proposal, hand-soldering and fixture charges; U5 RTC is the only shortage |
 
-The main-board service restriction is an actual supplier-matcher result, superseding the earlier Economic candidate. Controls/front have actual assembly quote breakdowns; Sensor remains a service inference until uploaded. None is an accepted manufacturing release. The Sensor front-SMD count is 84; the remaining four fitted references bring its total to 88.
+The main-board service restriction is an actual supplier-matcher result, superseding the earlier Economic candidate. All four drafts have actual assembly-price breakdowns; main/Beacon prices currently exclude the unavailable RTC. None is an accepted manufacturing release. The Sensor front-SMD count is 84; the remaining four fitted references bring its total to 88.
 
 After switching the main quote to Standard, JLCPCB proposed a **74 × 70 mm processing size** with its own rails/fiducials around the native 64 × 56 mm board. The source outline has not changed. Five fabricated / two assembled remained selected. Factory depaneling was added to the draft, and production-file and placement review were confirmed with automatic approval disabled. Actual rail geometry, connector/antenna clearance, finished-board count and detachment still need review.
 
 ## Remaining preflight work
 
-- Confirm the complete fitted-part list for both sides, through-hole service and exact part eligibility. JLCPCB’s FAQ describes supported through-hole assembly through its assembly-parts library. [Assembly FAQ](https://jlcpcb.com/help/article/pcb-assembly-faqs).
+- Available fitted parts are matched on all four designs, including both faces and through-hole parts. Resolve RTC procurement/assembly intake and restore U5 in both incomplete supplier previews, then recheck final eligibility. JLCPCB’s FAQ describes supported through-hole assembly through its assembly-parts library. [Assembly FAQ](https://jlcpcb.com/help/article/pcb-assembly-faqs).
 - Account for detachable rails/panelization and final board outline/clearance on the small Standard boards. Do not enlarge the functional PCB or move connectors merely to meet a processing-size requirement.
-- The dedicated BOM/CPL files include both faces and THT locations, covering 111/5/3/88 fitted references. Use the corrected [controls r2 CPL](supplier-placement-candidates/README.md), which replaces its three native corner-pin coordinates with actual button centers. The shared repository exporter uses `only_smd: true` and omits THT locations. Other origins, rotations and final placement review remain open.
+- The dedicated BOM/CPL files include both faces and THT locations, covering 111/5/3/88 fitted references. Use the corrected [controls r2 and headers r2 CPLs](supplier-placement-candidates/README.md), which correct the button/header centers and main J4 rotation. The shared repository exporter uses `only_smd: true` and omits THT locations. U3 model alignment, other origins, rotations and final placement review remain open.
 - Confirm actual stock, component attrition/minimums, fabrication versus assembly counts, services and total cost for the selected order options. The published fee table is not a quote for these boards.
 - Establish the first-power source and USB/recovery procedure using Erik’s confirmed multimeter and oscilloscope, with remaining equipment/probe capabilities recorded explicitly.

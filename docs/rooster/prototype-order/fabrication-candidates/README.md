@@ -5,7 +5,9 @@ exported from committed native sources at `4d8e65d327e1dd0e45adc906855b9b2ccb610
 These are quote candidates, not an approved manufacturing release. **The r1
 controls CPL is superseded for JLCPCB quotation by the [controls r2 placement
 candidate](../supplier-placement-candidates/README.md)**, which corrects the three
-B3F button centers while keeping this archive and BOM unchanged. The manifest
+B3F button centers. **Main and sensor CPLs are superseded by headers r2** at that
+same link, correcting main J4's center/rotation and Beacon J3's center. All ZIPs
+and BOMs remain unchanged. The manifest
 binds the native inputs, exporter, layer list and every output file by SHA-256.
 Archives contain fabrication layers and separate plated/unplated drill files;
 the export logs, drill reports and job metadata remain outside the uploaded ZIP.
@@ -44,7 +46,7 @@ and detachment, complete THT/both-face assembly coverage, RTC supply, external
 parts and first-power readiness, final checks and an accepted complete quote.
 No rails or panels have been added to the functional board outlines.
 
-Main, controls and front ZIPs have been uploaded to JLCPCB for quoting. See
+All four ZIPs have been uploaded to JLCPCB for quoting. See
 [quote progress](../quote-progress.md) for matching, placement findings and prices.
 Candidate files must not be replaced in place when sources or supplier placements
 change; preserve the original hashes and name the replacement explicitly.

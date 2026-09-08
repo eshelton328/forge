@@ -1,14 +1,17 @@
 # JLCPCB quote progress — September 7, 2026
 
 **No complete four-board landed quote, reservation, checkout, payment or order exists.**
-The signed-in main-board draft contains its Gerbers, BOM and all 111 component
-positions: **41 of 42 BOM groups are confirmed**, with the RTC still unavailable.
+All four signed-in drafts now contain Gerbers, BOMs and complete placement files.
+Main has **41 of 42 BOM groups confirmed** and Beacon **37 of 38**; the remaining
+group in each is the unavailable RTC. Their incomplete price previews exclude it.
 Erik must explicitly approve the exact items, quantities and total before any
 order or paid parts procurement.
 
-Controls and front have now reached the supplier's Quote & Order step, with
-both-face assembly and all fitted parts matched. Their prices and the controls
-placement correction are recorded below. No Save to Cart action was submitted.
+Controls and front have all fitted parts matched. The four price previews and
+the controls/header placement corrections are recorded below. No Save to Cart
+action was submitted. The estimate including separately listed rail removal is
+**$750.25 before RTCs, any related assembly-fee changes, shipping, tax and external
+parts**. This is arithmetic from draft pages, not a complete quote or final bill.
 
 Erik supplied a USA shipping destination; the postal code and account-specific
 draft URL are in the private Rooster task note. Postal-code-specific shipping/tax
@@ -54,9 +57,73 @@ A catalog match is not completed orientation or assembly review.
 | U3 | ESP32-S3-WROOM-1-N16 / C2913199 | Selected after switching to Standard; 2 parts, $10.4476. |
 | U5 | RV-3028-C7-32.768kHz-1ppm-TA-QC / C3019759 | **2 shortfall** in this draft. Kept in the required assembly scope. |
 
-Advancing with the RTC unavailable offered to omit unselected parts. Chose
-**Select parts**, preserving the requirement. Component Placements and Quote &
-Order remain incomplete. No RTC omission was accepted.
+Initially chose **Select parts** when advancing offered to omit the RTC. Later,
+to inspect placements and capture the remaining assembly costs, renamed both
+main and Beacon drafts **INCOMPLETE RTC - REVIEW ONLY** and used **Do not place**
+for the temporary RTC-excluded preview. **This is an incomplete supplier draft,
+not authorization to omit the RTC from the ordered boards.** The full required
+native and uploaded BOM/CPL files still include U5; no DNP or source change was
+made. Restore/select sourced RTCs and recalculate before purchase approval.
+
+## Beacon draft and main/Beacon price previews
+
+Beacon Gerber ZIP SHA-256:
+`0763d0b54402151a925ea1437c293f5484da0f6d5a1f63483d3d5ebcf1df1f85`.
+The supplier recognized 4 layers and the native **64 × 56 mm** outline. The
+draft requests **5 fabricated / 2 assembled**, Standard, Both Sides, supplier
+processing dimensions **74 × 70 mm**, and depaneling. Production-file and
+placement reviews were set to Yes with automatic confirmation disabled. It uses
+the same four-layer fabrication options as main above. The complete 88-reference
+placement file includes rear SW1; J3 purchases the radar socket only.
+
+All available Beacon parts are selected: 37 of 38 BOM groups. J1 PH connector:
+5 parts/$1.0985; J3 SSW-105-01-F-S / C5930350: 2/$1.9002; rear SW1
+1101M2S3CQE2 / C221538: 2/$20.4006; U3 ESP32: 2/$10.4476. U5 has a two-part
+shortfall, matching main's RTC dependency. Catalog matching does not certify
+placement or the whole assembly process.
+
+The following were captured again after the header CPL corrections:
+
+| Item | Main | Beacon |
+| --- | --- | --- |
+| PCB fabrication/options | $79.00 | $79.00 |
+| Standard assembly, **excluding U5 RTC** | $157.90 | $215.89 |
+| Displayed total | **$236.90** | **$294.89** |
+| Rail removal | $2.30 included | $2.30 separately listed; page warns some advanced options are excluded |
+| Parts priced | 40 unique items ($55.08); 41 BOM groups share one PH part | 37 items ($71.43) |
+| Build-time observation | PCB 3–4 days; assembly 5–6 days plus 1 advanced-option day | PCB 3 days; assembly 5–6 days plus 3 advanced-option days |
+
+No rush option selected. Beacon would be $297.19 if its separately listed $2.30
+rail removal is the only adjustment. The four displayed totals sum to $745.65;
+adding front and Beacon's separate $2.30 options gives **$750.25**. RTC procurement
+and any changed feeder/stencil/assembly costs must be added through a revised
+supplier quote, not assumed to be the bare RTC purchase price alone. Shipping,
+tax, radar/display modules, cables, holders, cells, speaker and equipment remain
+outside these estimates. No combined-cart total or delivery date is claimed.
+
+Main assembly breakdown: setup $25.56, stencil $8.21, components $55.08, feeder
+loading $59.67, SMT $2.44, placement review $0.45, hand soldering $3.58, manual
+assembly $0.13, packaging $0.49 and depaneling $2.30. Beacon: setup $51.12,
+stencil $16.42, components $71.43, feeders $53.55, SMT $2.17, placement review
+$0.45, hand soldering $3.58, manual assembly $0.26, fixture $16.42, packaging
+$0.49; depaneling separately as above. Four-layer fabrication breakdown on both:
+special offer $7.00, ENIG $17.10, inner copper $16.63, material $3.41, Kelvin
+test $16.76, minimum drill option $17.06, production review $1.04.
+
+Uploaded [headers r2](supplier-placement-candidates/README.md): main J4 changes
+to CPL (161, −89.81), 270°; Beacon J3 to (150.08, −108), 0°. Main J5's exact
+C5305068 match and both PH selections were restored after reprocessing. A
+fresh DOM check found no unselected available component rows on either board;
+the only shortage remains U5. Main J4 now overlays its vertical four-hole row.
+Beacon J3's placeholder now lies on the middle hole, but no socket body model
+exists in this preview. U3 still appears shifted in both boards' supplier views;
+its native body-center coordinates have not been changed speculatively.
+Returning to main's BOM tab after restoring both PH rows produced an inconsistent
+summary counter (43 confirmed against 42 detected). The actual DOM contains
+**41 selected component rows**, plus the U5 shortage row; the price page contains
+40 unique priced items because J1/J3 share C160352. Use the reconciled rows and
+file references, not that counter, when checking coverage. Both drafts were left
+on their full BOM views with U5 still showing two-part shortfalls and cart count 0.
 
 ## RTC procurement candidates
 
@@ -86,7 +153,7 @@ and delivery. Paid global orders cannot be canceled or returned under its terms.
 Offers were observed in the [Global Sourcing UI](https://jlcpcb.com/user-center/smtPrivateLibrary/orderParts/?global=1).
 [Global Sourcing workflow](https://jlcpcb.com/help/article/how-to-use-jlcpcb-global-sourcing-parts-service).
 
-## Incomplete prices and next quotes
+## Earlier fabrication-only price observations
 
 The original Economic fabrication/options page showed $78.38 before parts or
 assembly. After switching to Standard with 74 × 70 mm processing dimensions,
@@ -144,9 +211,8 @@ cannot prove RGB pin orientation. Neither draft is a full placement sign-off.
 
 ## Next work
 
-Beacon is the remaining archive to upload, with complete both-face/THT coverage
-and the same RTC sourcing dependency. Review its socket and the main display
-header for native-anchor versus supplier-centroid differences before accepting
-their CPLs. Finish amplifier/pad, stencil/via/stackup, pin/rotation, rail clearance,
+All four archives have been uploaded. Resolve U3's supplier model/placement
+origin discrepancy and missing-model orientation checks. Finish amplifier/pad,
+stencil/via/stackup, pin/rotation, rail clearance,
 external-parts and first-power dispositions. Final quantities, services/exclusions,
 shipping/tax and exact totals still precede Erik's purchase approval.

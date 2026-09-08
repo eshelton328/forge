@@ -4,8 +4,10 @@
 
 **Known supplier correction:** the controls B3F origins are corner pins, not body
 centers. Use the [controls r2 supplier CPL](../supplier-placement-candidates/README.md)
-for the active JLCPCB draft. Re-running this native-position builder does not apply
-that correction; it must not silently replace the supplier-reviewed candidate.
+for the active JLCPCB draft. Main J4 and Beacon J3 also need the **headers r2**
+CPLs documented at that link. Re-running this native-position builder does not
+apply those corrections; it must not silently replace the supplier-reviewed
+candidates.
 
 - Both faces and through-hole parts are included. R11 DNP and unpopulated test pads are excluded by native flags.
 - BOM quantities are for one board of each design; request two assembled and five fabricated copies per design in the quote.
