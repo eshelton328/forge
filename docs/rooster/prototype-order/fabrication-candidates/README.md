@@ -2,7 +2,10 @@
 
 `4d8e65d-r1` contains four Gerber/drill archives plus matching BOM/CPL pairs,
 exported from committed native sources at `4d8e65d327e1dd0e45adc906855b9b2ccb610a91`.
-These are quote candidates, not an approved manufacturing release. The manifest
+These are quote candidates, not an approved manufacturing release. **The r1
+controls CPL is superseded for JLCPCB quotation by the [controls r2 placement
+candidate](../supplier-placement-candidates/README.md)**, which corrects the three
+B3F button centers while keeping this archive and BOM unchanged. The manifest
 binds the native inputs, exporter, layer list and every output file by SHA-256.
 Archives contain fabrication layers and separate plated/unplated drill files;
 the export logs, drill reports and job metadata remain outside the uploaded ZIP.
@@ -41,9 +44,10 @@ and detachment, complete THT/both-face assembly coverage, RTC supply, external
 parts and first-power readiness, final checks and an accepted complete quote.
 No rails or panels have been added to the functional board outlines.
 
-The first main-board ZIP was uploaded to JLCPCB for quoting on September 7, 2026.
-See [quote progress](../quote-progress.md) for the supplier response and sign-in
-boundary. Candidate files must not be replaced in place if source geometry changes.
+Main, controls and front ZIPs have been uploaded to JLCPCB for quoting. See
+[quote progress](../quote-progress.md) for matching, placement findings and prices.
+Candidate files must not be replaced in place when sources or supplier placements
+change; preserve the original hashes and name the replacement explicitly.
 
 Reproduce with `tools/build_fabrication_candidate.py`; run
 `tools/review_fabrication_candidate.py native <candidate> <review-dir>` using

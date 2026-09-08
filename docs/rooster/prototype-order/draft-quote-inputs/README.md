@@ -2,6 +2,11 @@
 
 **Review only. Do not submit as a manufacturing release.** These eight CSV files use the native MPN/LCSC fields and native footprint positions, reconciled against the selected purchasing overlay. They provide complete reference coverage for pricing and assembly review; final part/rotation/assembly checks remain open. [Source integration](../source-integration-review.md) records the exact native update and checks.
 
+**Known supplier correction:** the controls B3F origins are corner pins, not body
+centers. Use the [controls r2 supplier CPL](../supplier-placement-candidates/README.md)
+for the active JLCPCB draft. Re-running this native-position builder does not apply
+that correction; it must not silently replace the supplier-reviewed candidate.
+
 - Both faces and through-hole parts are included. R11 DNP and unpopulated test pads are excluded by native flags.
 - BOM quantities are for one board of each design; request two assembled and five fabricated copies per design in the quote.
 - PCB-mounted socket/header parts are included; external radar/display modules, mating cables, holders, cells, speaker and other loose items are separate procurement.

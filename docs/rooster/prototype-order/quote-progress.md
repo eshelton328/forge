@@ -1,10 +1,14 @@
 # JLCPCB quote progress — September 7, 2026
 
-**No complete assembly quote, reservation, checkout, payment or order exists.**
+**No complete four-board landed quote, reservation, checkout, payment or order exists.**
 The signed-in main-board draft contains its Gerbers, BOM and all 111 component
 positions: **41 of 42 BOM groups are confirmed**, with the RTC still unavailable.
 Erik must explicitly approve the exact items, quantities and total before any
 order or paid parts procurement.
+
+Controls and front have now reached the supplier's Quote & Order step, with
+both-face assembly and all fitted parts matched. Their prices and the controls
+placement correction are recorded below. No Save to Cart action was submitted.
 
 Erik supplied a USA shipping destination; the postal code and account-specific
 draft URL are in the private Rooster task note. Postal-code-specific shipping/tax
@@ -92,9 +96,57 @@ Do not add or multiply these incomplete one-board observations into a four-board
 landed total. The service-switch dialog mentioned $25 setup per assembly side;
 a completed quote must establish actual fees and discounts.
 
-The other three archives have not been uploaded. Next quote controls and front
-independently of RTC procurement, then Beacon with complete both-face and THT
-coverage. Finish amplifier/pad, stencil/via/stackup, external-parts and first-power
-dispositions alongside quoting. Final review must include supplier rotations,
-rail detachment, fitted/bare counts, services/exclusions, shipping/tax and exact
-approval-ready totals.
+## Controls and front — assembly prices captured
+
+Both drafts retain **5 fabricated / 2 assembled**, one design, Single PCB,
+Standard, Both Sides, supplier rails/fiducials, and factory rail removal. Both
+production-file and placement review have automatic confirmation disabled.
+Two-layer settings: 1.6 mm, TG135, green/white, ENIG 1 µin, 1 oz copper, tented
+vias, minimum drill option 0.3 mm, ±0.2 mm outline and flying-probe test. Native
+drill reports confirm the 0.3 mm minimum. These are quote settings pending final
+manufacturing review.
+
+| Item | Controls | Front |
+| --- | --- | --- |
+| Native outline / proposed processing size | 27 × 34 / 71 × 70 mm | 24 × 10 / 70 × 70 mm |
+| Matched BOM / fitted placements per board | 3 groups / 5 placements; four top THT switches and rear SMD J1 | 3 groups / 3 placements; front D1/SW1 and rear J1 |
+| PCB fabrication/options | $22.04 | $22.04 |
+| Standard assembly displayed | $93.61 | $76.17 |
+| Displayed total | **$115.65** | **$98.21** |
+| Rail removal | $2.30 included in the displayed assembly total | $2.30 listed separately; the page says some advanced options are excluded from its total |
+| Build-time observation | PCB 24 hours; assembly 4–5 days plus 1 day for advanced options | PCB 24 hours; assembly 3–4 days plus 3 days for advanced options |
+
+These are board/assembly estimates, **excluding shipping and tax**. Front would
+be $100.51 if its displayed $2.30 rail-removal charge is the only adjustment;
+confirm the actual cart total rather than treating that arithmetic as a final bill.
+No rush option was selected. No cart, checkout or order was submitted.
+
+Controls assembly breakdown: setup $51.12, stencil $8.21, parts $8.99, feeder
+loading $1.53, SMT $0.03, placement review $0.45, hand soldering $3.58, manual
+assembly $0.49, fixture $16.42, packaging $0.49, and rail removal $2.30. Front:
+setup $51.12, stencil $16.42, parts $3.05, feeder loading $4.59, SMT $0.05,
+placement review $0.45, packaging $0.49; rail removal separately as above.
+
+Controls exact matches: six B3F-1060 / C726010 ($4.6854), two EG1218 / C273394
+($3.0520), and two BM07B-GHS-TBT(LF)(SN) / C5305068 ($1.2496). J1 needed exact-ID
+search; re-uploading the CPL reset that match, which was restored. Front exact
+matches: two 150141M173100 / C5342281 ($1.5164), two BM06B-GHS-TBT(LF)(SN) /
+C189892 ($0.6018), and five B3U-1000P / C231329 ($0.9330, including excess over
+the two fitted units). All rows were selected; no omission or substitute accepted.
+
+The initial controls preview exposed a B3F centroid mismatch. Replaced only its
+CPL with [controls r2](supplier-placement-candidates/README.md), SHA-256
+`e9d49c056b6b012c332c8ca27a95382bf7f17ff4d8ce052d39db43d77efc5de9`.
+All three button centers now align with their native four-hole patterns in the
+supplier preview. J1/SW4, BOM, Gerbers and native geometry remain unchanged.
+The front preview shows SW1 and J1 bodies, but D1 has no rendered LED body; it
+cannot prove RGB pin orientation. Neither draft is a full placement sign-off.
+
+## Next work
+
+Beacon is the remaining archive to upload, with complete both-face/THT coverage
+and the same RTC sourcing dependency. Review its socket and the main display
+header for native-anchor versus supplier-centroid differences before accepting
+their CPLs. Finish amplifier/pad, stencil/via/stackup, pin/rotation, rail clearance,
+external-parts and first-power dispositions. Final quantities, services/exclusions,
+shipping/tax and exact totals still precede Erik's purchase approval.
