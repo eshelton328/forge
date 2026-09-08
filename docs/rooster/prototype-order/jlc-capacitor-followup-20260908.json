@@ -1,0 +1,101 @@
+{
+  "captured_at": "2026-09-08T00:07:24.980815+00:00",
+  "endpoint": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "scope": "Public read-only catalog search; no order or reservation",
+  "queries": [
+    {
+      "query": "GRT188R61A106KE13D",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C782172",
+          "componentModelEn": "GRT188R61A106KE13D",
+          "componentBrandEn": "Murata Electronics",
+          "componentSpecificationEn": "0603",
+          "describe": "10V 10uF X5R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "stockCount": 9799,
+          "canPresaleNumber": 9653,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1777
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.148
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1332
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.122
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 3999,
+              "productPrice": 0.1131
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.099
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 2500,
+              "endNumber": 3999,
+              "productPrice": 0.109
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1284
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1426
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1176
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1712
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.0953
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 61,
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "835294-GRT188R61A106KE13D/C782172",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2009161209_Murata-Electronics-GRT188R61A106KE13D_C782172.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/835294-GRT188R61A106KE13D/C782172",
+          "exact_model_match": true
+        }
+      ]
+    }
+  ]
+}

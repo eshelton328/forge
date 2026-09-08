@@ -10,6 +10,7 @@ Order preparation has started on `codex/rooster-prototype-orders`, based on `0d0
 - [Sourcing inventory](sourcing.csv): 208 source review BOM rows across the four boards, including one explicit DNP. All 207 fitted rows now have proposed exact MPNs and manufacturer-specific catalog IDs, including the 95 populated main-board rows missing MPNs in the original review. [Part selection review](part-selection-review.md) records substitutions, confirmed facts and remaining checks; these proposals are not yet the native or upload BOM. Of the 51 proposed unique parts, the RTC has no ready catalog stock.
 - Native boards, schematics, models and firmware are unchanged by this kickoff. The CSV is a working sourcing list, not a supplier-upload BOM.
 - [Draft quote BOM/CPL inputs](draft-quote-inputs/README.md): four BOMs and four placement files now cover all 207 fitted references, including both faces and through-hole parts. They combine proposed sourcing with native positions; final source-field updates, component checks, supplier rotations and fabrication outputs remain open.
+- [Power-component review](power-component-review.md): eight local converter capacitor banks pass the source-bound selection calculation using manufacturer bias models and explicit tolerance/reserve assumptions. Nine proposed 0603 capacitor references change to GRT188R61A106KE13D; inductors and layout are retained. Actual startup, transients, depleted-cell operation and temperatures remain first-board measurements.
 
 ## Board scope
 
@@ -31,7 +32,7 @@ The Beacon uses a **purchased Hi-Link LD2410C radar module plugged into J3**, no
 | Item | Work and closure evidence | Owner |
 | --- | --- | --- |
 | Current source/evidence | Source continuity checked in input-audit.json; consume the reviewed board findings at the recorded revision | ROO-009 handoff |
-| Exact components | Resolve every fitted reference’s exact MPN/package/ratings/pins; verify capacitor effective values and power-component limits; maintain DNP/excluded-pad treatment | ROO-010; Cube O01, Beacon O02 |
+| Exact components | Apply accepted sourcing metadata; finish remaining IC/package/pin/ratings checks. Local capacitor-bank and inductor selection now has a recorded disposition; maintain DNP/excluded-pad treatment | ROO-010; Cube O01, Beacon O02 |
 | Supply and assembly | Supplier IDs/availability, substitutions, both-side SMD and through-hole coverage; explicit factory-fitted versus local work | ROO-010; Cube O01, Beacon O03 |
 | Battery and external parts | Establish intended cell/load envelope; exact holders/leads, display/socket, speaker, GH/PH mates/harnesses, radar module/socket and ratings/orientation | ROO-013/010; Cube O02/O03, Beacon O02/O03/O05 |
 | Hardware and service interfaces | Version pins, power sequencing, board-dependent geometry and service access; use native USB plus accessible reset/boot if it provides a viable bare-board recovery route | ROO-013/011; Cube O04, Beacon O04/O05 |

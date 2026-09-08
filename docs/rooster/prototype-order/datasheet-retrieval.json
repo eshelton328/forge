@@ -51,6 +51,36 @@
         3
       ],
       "retrieved_on": "2026-09-07"
+    },
+    {
+      "file": ".cache/prototype-order/datasheets/ti-tps63070.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps63070.pdf",
+      "sha256": "a88ef66f3493156ff6e7da0849de0e0e1068647f2553d08c1844d4a90c5c65ef",
+      "bytes": 1680561,
+      "reviewed_visual_pages_1_based": [
+        7,
+        17,
+        18
+      ],
+      "retrieved_on": "2026-09-07"
+    },
+    {
+      "file": ".cache/prototype-order/datasheets/murata-grt-10uf.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf",
+      "sha256": "0ed01d67e4346bc4c37636aa418b72f2ada04056cd7717024f41bd927a5b7c32",
+      "bytes": 1959807,
+      "reviewed_visual_pages_1_based": [
+        2
+      ],
+      "retrieved_on": "2026-09-08"
+    },
+    {
+      "file": ".cache/prototype-order/datasheets/murata-measurement-conditions.pdf",
+      "url": "https://ds.murata.com/simsurfing_data/pdf/en-us/mlcc/sim_mlcc_measuringcond_e.pdf",
+      "sha256": "487b3281b6015f8c865d502c594e12f07cf0bccdeeefcd042cd068c6a0e51027",
+      "bytes": 908286,
+      "reviewed_visual_pages_1_based": [],
+      "retrieved_on": "2026-09-08"
     }
   ],
   "unresolved_retrievals": [
@@ -69,5 +99,6 @@
       "url": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf",
       "error": "HTTP Error 403: Forbidden"
     }
-  ]
+  ],
+  "updated_at": "2026-09-08T00:16:57.198950+00:00"
 }

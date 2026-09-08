@@ -42,8 +42,8 @@ def resistor(mpn):
 
 
 def capacitor(mpn):
-    if mpn.startswith('GRM'):
-        m = re.fullmatch(r'GRM(.{3})(R6|R7)(.{2})(\d{3})([KM]).+', mpn)
+    if mpn.startswith(('GRM', 'GRT')):
+        m = re.fullmatch(r'GR[MT](.{3})(R6|R7)(.{2})(\d{3})([KM]).+', mpn)
         assert m, mpn
         size = {'15': '0402', '18': '0603', '21': '0805', '31': '1206'}[m[1][:2]]
         farads = int(m[4][:2]) * 10 ** int(m[4][2]) * 1e-12
@@ -116,7 +116,7 @@ def main():
     assert sum(x['fitted_quantity_two_sets'] for x in grouped['parts']) == 414
     counts['grouped_unique_parts_reconciled'] = len(grouped['parts'])
     counts['source_rows_preserved'] = len(rows)
-    for capture in HERE.glob('jlc-*-20260907.json'):
+    for capture in HERE.glob('jlc-*.json'):
         assert not re.search(r'x-oss-|access_token|signature=', capture.read_text(), re.I), capture
         hashes[str(capture.relative_to(ROOT))] = sha(capture)
     hashes[str((HERE / 'sourcing.csv').relative_to(ROOT))] = sha(HERE / 'sourcing.csv')

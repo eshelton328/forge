@@ -3,7 +3,7 @@
   "tool_version": "10.0.1",
   "source_mpn_fields_updated": false,
   "placement_basis": "Native KiCad auxiliary drill/place origin, both faces, no bottom X negation. Native rotation preserved; no supplier-specific rotation or centroid correction has been verified. Fabrication files must use a matching origin.",
-  "sourcing_sha256": "1035b3d87bfbf42231b618700cf95fa5ff4b7695bd50a1f81aacf1d8963fbca2",
+  "sourcing_sha256": "b566e2de004563efa81bfa4c7a2ab09860e29121fe074b9c362e6ce77e3d407b",
   "boards": {
     "alec-controls": {
       "fitted_references": 5,
@@ -39,7 +39,7 @@
       },
       "native_pcb_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
       "files": {
-        "alec-main-bom.csv": "ccd7bae238d4287603a430174afd5a7d199e3375f5188bee03b5ad0a89145c5e",
+        "alec-main-bom.csv": "153ec012b9fe56b4870893b4fa386cf9a4153043c0a8c51719e08ce69e8b8154",
         "alec-main-cpl.csv": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188"
       }
     },
@@ -52,7 +52,7 @@
       },
       "native_pcb_sha256": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
       "files": {
-        "alec-sensor-bom.csv": "277d802d054d4e519b3cba7452b1c5e8ff8a219e4faa8c3f6d66b7a5853bba90",
+        "alec-sensor-bom.csv": "c7a9010b88b9de347d351e8ef81565ee74a5a164eebab3a9e8bcc791b92a947b",
         "alec-sensor-cpl.csv": "edfcaef0ea36800f88cd003cc8c3064e933b5b7dc2554b1f834cb7963b12426d"
       }
     }

@@ -670,9 +670,9 @@
       "status": "PROPOSAL_REVIEW_OPEN"
     },
     {
-      "proposed_mpn": "GRM188R61A106KAALD",
+      "proposed_mpn": "GRT188R61A106KE13D",
       "manufacturer": "Murata Electronics",
-      "supplier_part_id": "C703114",
+      "supplier_part_id": "C782172",
       "references": {
         "alec-main": [
           "C11",
@@ -689,9 +689,9 @@
         ]
       },
       "fitted_quantity_two_sets": 18,
-      "observed_stock": 4065,
-      "catalog_capture": "jlc-catalog-20260907.json",
-      "supplier_url": "https://jlcpcb.com/partdetail/738543-GRM188R61A106KAALD/C703114",
+      "observed_stock": 9799,
+      "catalog_capture": "jlc-capacitor-followup-20260908.json",
+      "supplier_url": "https://jlcpcb.com/partdetail/835294-GRT188R61A106KE13D/C782172",
       "status": "PROPOSAL_REVIEW_OPEN"
     },
     {
@@ -995,5 +995,6 @@
       "supplier_url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07150KL/C93947",
       "status": "PROPOSAL_REVIEW_OPEN"
     }
-  ]
+  ],
+  "updated_at": "2026-09-08"
 }

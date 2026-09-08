@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-07T23:42:26.756599+00:00",
+  "captured_at": "2026-09-08T00:17:40.360292+00:00",
   "command": "python3 docs/rooster/prototype-order/tools/verify_sourcing.py",
   "result": "PASS_WITH_OPEN_ENGINEERING_AND_PROCUREMENT_GATES",
   "scope": "Original source BOM fields, catalog manufacturer/MPN identity, independently decoded passive nominal values, declared voltage/dielectric constraints, native board hash continuity. Does not validate DC-bias curves, current/thermal margin, all component drawings, assembly rotations, supplier commitments or final manufacturing files.",
@@ -27,10 +27,11 @@
     "docs/rooster/prototype-order/jlc-catalog-20260907.json": "2ed107ce195372f0994844b00e60436065696714fb4c64c79b0998e14a9b4795",
     "docs/rooster/prototype-order/jlc-catalog-followup-20260907.json": "eae8c9bfe6c80dcd381ff98a2412efcc692a45ca0eb1fc1efd94c576e70bc066",
     "docs/rooster/prototype-order/jlc-resistor-catalog-20260907.json": "63bb53a37da93dd712c3ea639b39685fa11d373e05ed532204f9a03010fefe09",
+    "docs/rooster/prototype-order/jlc-capacitor-followup-20260908.json": "d2e14e4f60e50424453a80b49716b835a063dd0c47c28f79c033296062d3215b",
     "docs/rooster/prototype-order/jlc-rtc-detail-20260907.json": "ffb6e5b318bd68a739b04f93d2e6c4e2c38e5e3d3107b84e17c504c73141a7d6",
     "docs/rooster/prototype-order/jlc-header-catalog-20260907.json": "7be2ddefbd8d162871134495170eec8d4b93427676b7e72e33ef4b2767d34ca1",
     "docs/rooster/prototype-order/jlc-radar-catalog-20260907.json": "e0ecd8ceeeeaedc496e0ab077a06f0e129b525e1c14c62b7efc3032139bd7c95",
-    "docs/rooster/prototype-order/sourcing.csv": "1035b3d87bfbf42231b618700cf95fa5ff4b7695bd50a1f81aacf1d8963fbca2",
-    "docs/rooster/prototype-order/proposed-parts.json": "9bcae4ab284962c0824991b7f155306b37451aaee0365d916d4914a763ed8e0e"
+    "docs/rooster/prototype-order/sourcing.csv": "b566e2de004563efa81bfa4c7a2ab09860e29121fe074b9c362e6ce77e3d407b",
+    "docs/rooster/prototype-order/proposed-parts.json": "6e063388744e5cbe9b0e6f000252c2636a05ef15889ed197761176670d1a7dd7"
   }
 }
