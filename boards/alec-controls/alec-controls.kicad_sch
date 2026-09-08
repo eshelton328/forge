@@ -707,7 +707,7 @@
 				(hide yes)))
 		(property
 			"MPN"
-			"BM07B-GHS-TBT"
+			"BM07B-GHS-TBT(LF)(SN)"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -741,7 +741,9 @@
 			(uuid a977a102-db64-5eda-9c7e-99e6c08e01b9))
 		(pin
 			"7"
-			(uuid d7ae9df4-d43d-591e-a428-0e35f6d5c0fc)))
+			(uuid d7ae9df4-d43d-591e-a428-0e35f6d5c0fc))
+	(property "Manufacturer" "JST" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C5305068" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 114.3 49.53)
@@ -806,7 +808,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf"
 			(at 119.38 49.53 0)
 			(effects
 				(font
@@ -832,7 +834,9 @@
 			(uuid 4b3601d9-d2c9-57b0-acea-38bce2e0f932))
 		(pin
 			"2"
-			(uuid e77492c8-a572-571f-8bf8-8ad3d42daa1d)))
+			(uuid e77492c8-a572-571f-8bf8-8ad3d42daa1d))
+	(property "Manufacturer" "Omron Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C726010" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 114.3 90.17)
@@ -897,7 +901,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf"
 			(at 119.38 90.17 0)
 			(effects
 				(font
@@ -923,7 +927,9 @@
 			(uuid 84c25e62-2385-5f34-bfd3-55e4c90d7290))
 		(pin
 			"2"
-			(uuid 216b4ba9-d846-5afb-be76-ef814a28a3ba)))
+			(uuid 216b4ba9-d846-5afb-be76-ef814a28a3ba))
+	(property "Manufacturer" "Omron Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C726010" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 114.3 129.54)
@@ -988,7 +994,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf"
 			(at 119.38 129.54 0)
 			(effects
 				(font
@@ -1014,7 +1020,9 @@
 			(uuid 9487644b-c791-5f92-9091-b5c8b37dc1bb))
 		(pin
 			"2"
-			(uuid 5e6e26b9-830b-5c4e-852f-2a53056e8b44)))
+			(uuid 5e6e26b9-830b-5c4e-852f-2a53056e8b44))
+	(property "Manufacturer" "Omron Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C726010" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 209.55 62.23)
@@ -1095,7 +1103,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1810091750_E-Switch-EG1218_C273394.pdf"
 			(at 204.47 64.77 0)
 			(effects
 				(font
@@ -1124,7 +1132,9 @@
 			(uuid 029289a6-3dca-59b1-b788-ccb27c1aebf2))
 		(pin
 			"3"
-			(uuid d05411d1-1c7c-52f9-8220-bfe3bc9491b8)))
+			(uuid d05411d1-1c7c-52f9-8220-bfe3bc9491b8))
+	(property "Manufacturer" "E-Switch" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C273394" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(text
 		"1:1 GH harness to main J5"
 		(at 40 170 0)

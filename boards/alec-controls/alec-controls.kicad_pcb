@@ -225,7 +225,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -459,6 +459,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Omron Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "eba2d356-1dee-5182-a6df-ce85bd422ad2") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C726010" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "2e50c0af-7be0-5a52-9c25-d45a2f171338") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "MountingHole_2.2mm_M2"
 		(layer "F.Cu")
@@ -598,7 +600,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -832,6 +834,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Omron Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f2bc7404-476c-5ba5-a860-932aed47da43") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C726010" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "51def963-20fe-53e7-a29c-8adf4a0b8f5c") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x"
 		(layer "F.Cu")
@@ -863,7 +867,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1097,6 +1101,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Omron Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "d108dfc2-895c-5cdf-9967-43df64453c65") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C726010" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "dd75f177-324c-5199-8841-1c89f94fa461") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Alarm:EG1218"
 		(layer "F.Cu")
@@ -1124,7 +1130,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810091750_E-Switch-EG1218_C273394.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1282,6 +1288,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "E-Switch" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "cd9be360-e6ac-5c55-9b76-6c8e836020b0") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C273394" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e36eef2d-4fcb-5c02-a7e0-3b665965a75a") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "MountingHole_2.2mm_M2"
 		(layer "F.Cu")
@@ -1568,7 +1576,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "BM07B-GHS-TBT"
+		(property "MPN" "BM07B-GHS-TBT(LF)(SN)"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -2037,6 +2045,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "JST" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "8da27ec3-b3a3-5bdd-bab8-4f1061570f61") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C5305068" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "ff396c90-b7a7-5420-a2fb-5cb27bdd4c0c") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(gr_line
 		(start 0 0)

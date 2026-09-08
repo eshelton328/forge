@@ -1,5 +1,5 @@
 {
-  "status": "Working proposal; native MPNs not updated; not an upload BOM or purchase approval",
+  "status": "Prototype selections synchronized into native schematics/PCBs and review BOMs; remaining engineering/assembly checks open; not an upload BOM or purchase approval",
   "native_baseline": "0d0d8af3b1d2c60616f77a5116eba637098acf98",
   "date": "2026-09-07",
   "count_fitted_references": 207,

@@ -1,6 +1,6 @@
 # Draft quote BOM and placement inputs
 
-**Review only. Do not submit as a manufacturing release.** These eight CSV files combine the proposed manufacturer selections with the current native footprint positions. They provide complete reference coverage for pricing and assembly review; the source MPN fields and final part/rotation/assembly checks remain open.
+**Review only. Do not submit as a manufacturing release.** These eight CSV files use the native MPN/LCSC fields and native footprint positions, reconciled against the selected purchasing overlay. They provide complete reference coverage for pricing and assembly review; final part/rotation/assembly checks remain open. [Source integration](../source-integration-review.md) records the exact native update and checks.
 
 - Both faces and through-hole parts are included. R11 DNP and unpopulated test pads are excluded by native flags.
 - BOM quantities are for one board of each design; request two assembled and five fabricated copies per design in the quote.

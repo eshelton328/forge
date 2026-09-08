@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build review-only BOM/CPL drafts including THT and both board faces.
 
-Uses proposed sourcing fields, not native MPN fields. It cannot make a fabrication
-release: electrical review, source metadata, rotations and supplier coverage remain
+Uses reconciled native MPN and LCSC fields. It cannot make a fabrication
+release: final part review, rotations and supplier coverage remain
 open. Run verify_sourcing.py first. No network or supplier action is performed.
 """
 import argparse
@@ -11,10 +11,13 @@ import csv
 import hashlib
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parents[1]
 ROOT = HERE.parents[2]
+sys.path.insert(0, str(ROOT / 'scripts/alarm'))
+from order_parts import native_order_fields
 
 
 def sha(p):
@@ -42,12 +45,13 @@ def main():
     cache.mkdir(parents=True, exist_ok=True)
     report = {'status': 'DRAFT_REVIEW_ONLY_NOT_MANUFACTURING_RELEASE',
               'tool_version': subprocess.check_output([args.kicad_cli, 'version'], text=True).strip(),
-              'source_mpn_fields_updated': False,
+              'source_mpn_fields_updated': True,
               'placement_basis': 'Native KiCad auxiliary drill/place origin, both faces, no bottom X negation. Native rotation preserved; no supplier-specific rotation or centroid correction has been verified. Fabrication files must use a matching origin.',
               'sourcing_sha256': sha(HERE / 'sourcing.csv'), 'boards': {}}
     for board in sorted({r['board'] for r in rows}):
         fitted = {r['reference']: r for r in rows if r['board'] == board and r['proposed_mpn']}
         native = ROOT / 'boards' / board / (board + '.kicad_pcb')
+        native_fields = native_order_fields(board)
         raw = cache / (board + '.csv')
         cmd = [args.kicad_cli, 'pcb', 'export', 'pos', '--format', 'csv', '--units', 'mm',
                '--side', 'both', '--use-drill-file-origin', '--exclude-dnp', '-o', str(raw), str(native)]
@@ -60,7 +64,8 @@ def main():
         for pos in positions:
             r = fitted[pos['Ref']]
             assert pos['Val'] == r['value'] and pos['Package'] == r['footprint'].split(':')[-1], (board, pos['Ref'])
-            groups[r['proposed_mpn'], r['supplier_part_id'], pos['Package']].append(pos['Ref'])
+            fields = native_fields[pos['Ref']]
+            groups[fields['MPN'], fields['LCSC#'], pos['Package']].append(pos['Ref'])
             assert pos['Side'] in ['top', 'bottom']
             cpl.append({'Designator': pos['Ref'], 'Mid X': pos['PosX'], 'Mid Y': pos['PosY'],
                         'Layer': pos['Side'], 'Rotation': pos['Rot']})

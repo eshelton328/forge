@@ -8,7 +8,7 @@ The nine affected references are main **C3/C5/C11/C13** and Beacon **C3/C5/C11/C
 
 Sources: [original Murata specification](https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61A106KAAL-01A.pdf), [replacement Murata specification](https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf), [JLCPCB replacement](https://jlcpcb.com/partdetail/C782172), [dated catalog response](jlc-capacitor-followup-20260908.json).
 
-The proposal and draft BOMs identify the replacement. **Native KiCad files and their source generators still await the coordinated exact-MPN/LCSC update.** No component moves, changes of capacitance or change of voltage rating are needed for this substitution.
+The native KiCad files, purchasing overlay, source generators and draft BOMs now identify the replacement. [Source integration](source-integration-review.md) confirms that every non-ordering source token and the independent KiCad copper/placement geometry are preserved. No component moved; nominal capacitance and voltage constraints are unchanged.
 
 ## Effective capacitance
 
@@ -61,7 +61,7 @@ At 2 V input, the depleted-battery stress cases fall below TI's recommended 400 
 
 ## Order disposition and first-board evidence
 
-- **Component selection:** accept the four unchanged local bank layouts and selected Coilcraft inductor for the stated prototype evaluation, with the nine-reference 0603 MPN substitution. Complete the source metadata/export update and supplier assembly review.
+- **Component selection:** accept the four unchanged local bank layouts and selected Coilcraft inductor for the stated prototype evaluation, with the nine-reference 0603 MPN substitution. Source metadata is integrated; supplier assembly review remains.
 - **Before payment:** finish the separate battery/holder/speaker/load disposition and remaining package/pin/assembly checks. This review does not clear the complete BOM.
 - **After delivery:** start with a current-limited source at ≥3 V protected VIN and modest loads; measure actual startup, radio/radar/audio load steps, PFM ripple, rail overshoot and temperatures. Then test depleted cells and the shared-load cases. Use those measurements to establish operating limits; they are not prerequisites that can be fabricated through more simulation before boards exist.
 

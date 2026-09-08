@@ -1,0 +1,34 @@
+{
+  "scope": "Fresh KiCad XML compared with the original reviewed export: all reference/value/footprint/fit flags and every named-net/reference/pin tuple. Ordering fields are checked separately against sourcing selections.",
+  "verifier_sha256": "aa04d70509be6a06ed5a7778c750e479905a9adf119d5c1b2802a4bbc8e0559a",
+  "boards": [
+    {
+      "board": "alec-main",
+      "netlist_sha256": "20ad70974d4f2e3f15fb297f9e5927268864d0f649ed0eed02dcf890fc3a878d",
+      "component_count": 113,
+      "net_nodes": 363,
+      "result": "EXACT_CONNECTIVITY_VALUES_FOOTPRINTS_AND_FIT_FLAGS_MATCH"
+    },
+    {
+      "board": "alec-controls",
+      "netlist_sha256": "d997bbcc0a0e4377d52f0be973de6c15e6f851f31035c6da5c296a552405ee45",
+      "component_count": 5,
+      "net_nodes": 16,
+      "result": "EXACT_CONNECTIVITY_VALUES_FOOTPRINTS_AND_FIT_FLAGS_MATCH"
+    },
+    {
+      "board": "alec-front",
+      "netlist_sha256": "16695d630e2bbd819465a87a8222dc24344e00530d2b8ea8ce3c91ff9f39afba",
+      "component_count": 3,
+      "net_nodes": 12,
+      "result": "EXACT_CONNECTIVITY_VALUES_FOOTPRINTS_AND_FIT_FLAGS_MATCH"
+    },
+    {
+      "board": "alec-sensor",
+      "netlist_sha256": "18501a6e065ac97ca3de34b705bbac720f6d79332c4859e3ea243574cfe06c53",
+      "component_count": 88,
+      "net_nodes": 289,
+      "result": "EXACT_CONNECTIVITY_VALUES_FOOTPRINTS_AND_FIT_FLAGS_MATCH"
+    }
+  ]
+}

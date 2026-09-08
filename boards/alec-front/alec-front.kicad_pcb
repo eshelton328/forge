@@ -374,6 +374,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Wurth Elektronik" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "658d3d31-fdf8-5ac2-9b76-684ff02ad36e") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C5342281" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f7dc2d9a-38f0-555d-8313-1ea7f0e792a0") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Button_Switch_SMD:SW_SPST_B3U-1000P"
 		(layer "F.Cu")
@@ -636,6 +638,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Omron Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "97f702b1-8bc1-5b52-b969-f2d03b53c789") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C231329" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "c708f5ce-4b62-5af2-8eb6-58e0314e0c79") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "MountingHole_2.2mm_M2"
 		(layer "F.Cu")
@@ -922,7 +926,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "BM06B-GHS-TBT"
+		(property "MPN" "BM06B-GHS-TBT(LF)(SN)"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -1372,6 +1376,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "JST" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "09775ab0-1817-51e8-8d0e-63c92ff873ca") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C189892" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "c42e7aad-b288-5af8-a6ee-3ebe8093004a") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(gr_line
 		(start 0 0)

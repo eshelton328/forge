@@ -10,12 +10,16 @@ import csv
 import datetime
 import hashlib
 import json
+import io
 import re
+import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parents[1]
 ROOT = HERE.parents[2]
+sys.path.insert(0, str(ROOT / 'scripts/alarm'))
+from order_parts import baseline_source, verify_transition, native_order_fields, expected_fields
 
 
 def sha(path):
@@ -57,14 +61,18 @@ def main():
     rows = list(csv.DictReader((HERE / 'sourcing.csv').open()))
     assert len(rows) == len({(r['board'], r['reference']) for r in rows}) == 208
     audit = json.loads((HERE / 'assembly-audit.json').read_text())
-    sources, fields, hashes = {}, {}, {}
+    sources, fields, hashes = {}, {}, verify_transition()
+    current_boms, pcbs = {}, {}
     for board, saved in audit['boards'].items():
         bp = ROOT / 'boards' / board
         native = bp / (board + '.kicad_pcb')
-        assert sha(native) == saved['source_sha256'], board
+        assert hashlib.sha256(baseline_source(native.relative_to(ROOT)).encode()).hexdigest() == saved['source_sha256'], board
         hashes[str(native.relative_to(ROOT))] = sha(native)
-        for r in csv.DictReader((bp / 'review/bom.csv').open()):
+        for r in csv.DictReader(io.StringIO(baseline_source(bp.relative_to(ROOT) / 'review/bom.csv'))):
             sources[board, r['Reference']] = r
+        current_boms.update({(board, r['Reference']): r for r in csv.DictReader((bp / 'review/bom.csv').open())})
+        hashes[str((bp / 'review/bom.csv').relative_to(ROOT))] = sha(bp / 'review/bom.csv')
+        pcbs.update({(board, ref): props for ref, props in native_order_fields(board).items()})
         netlist = bp / 'review/netlist.xml'
         hashes[str(netlist.relative_to(ROOT))] = sha(netlist)
         root = ET.parse(netlist).getroot()
@@ -83,6 +91,9 @@ def main():
             counts['source_dnp_retained'] += 1
             continue
         mpn = r['proposed_mpn']
+        for name, expected in expected_fields(r).items():
+            assert fields[key].get(name) == current_boms[key].get(name) == pcbs[key].get(name) == expected, (key, name)
+        counts['native_bom_schematic_pcb_selections_reconciled'] += 1
         capture = HERE / r['catalog_capture']
         d = json.loads(capture.read_text())
         hits = [m for q in d['queries'] for m in q.get('matches', []) if m['componentCode'] == r['supplier_part_id']]
@@ -121,10 +132,12 @@ def main():
         hashes[str(capture.relative_to(ROOT))] = sha(capture)
     hashes[str((HERE / 'sourcing.csv').relative_to(ROOT))] = sha(HERE / 'sourcing.csv')
     hashes[str((HERE / 'proposed-parts.json').relative_to(ROOT))] = sha(HERE / 'proposed-parts.json')
+    for script in [Path(__file__).resolve(), ROOT / 'scripts/alarm/order_parts.py']:
+        hashes[str(script.relative_to(ROOT))] = sha(script)
     result = {'captured_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
               'command': 'python3 docs/rooster/prototype-order/tools/verify_sourcing.py',
               'result': 'PASS_WITH_OPEN_ENGINEERING_AND_PROCUREMENT_GATES',
-              'scope': 'Original source BOM fields, catalog manufacturer/MPN identity, independently decoded passive nominal values, declared voltage/dielectric constraints, native board hash continuity. Does not validate DC-bias curves, current/thermal margin, all component drawings, assembly rotations, supplier commitments or final manufacturing files.',
+              'scope': 'Historical source BOM fields, current native schematic/PCB/BOM ordering-field agreement, catalog manufacturer/MPN identity, independently decoded passive nominal values, declared voltage/dielectric constraints, and unchanged non-ordering source tokens against the reviewed baseline. Does not validate DC-bias curves, current/thermal margin, all component drawings, assembly rotations, supplier commitments or final manufacturing files.',
               'checks': dict(counts), 'no_ready_catalog_stock_references': no_stock, 'input_sha256': hashes}
     (HERE / 'selection-audit.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps({'checks': dict(counts), 'no_ready_catalog_stock_references': no_stock}))

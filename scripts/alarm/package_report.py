@@ -1,5 +1,6 @@
 """Package completed evidence. Refuses failed/stale native-board and assembly results."""
 from design import *
+from order_parts import verify_evidence_pcb
 import json,hashlib,zipfile,shutil,argparse
 E=ROOT/'enclosures/alec/pcb-revision'
 parser=argparse.ArgumentParser()
@@ -10,7 +11,7 @@ args=parser.parse_args()
 def read(p):return json.loads(p.read_text())
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 physical=read(MAIN/'review/physical-screening/summary.json' if args.reuse_physics else args.physics_results/'results/summary.json')
-assert physical['manifest']['pcb_sha256']==sha(MAIN/(MAIN.name+'.kicad_pcb'))
+verify_evidence_pcb(MAIN/(MAIN.name+'.kicad_pcb'),physical['manifest']['pcb_sha256'])
 physical['comparison_note']='The original key means the merged esp32s3-devkit-5v bench board in this run, not the older pre-compaction reference.'
 d=MAIN/'review/physical-screening';d.mkdir(exist_ok=True)
 (d/'summary.json').write_text(json.dumps(physical,indent=2)+'\n')
@@ -47,13 +48,15 @@ text=f'''# V4.2 PCB and enclosure test report
 
 **Prototype review passed the listed software checks. Physical qualification and manufacturing release have not been performed.** Tests refer to the actual saved boards and v4.2 Blender assembly, with source hashes in [qa-manifest.json](qa-manifest.json). No battery endurance, wake-up reliability, acoustic quality, ESP-NOW range, emissions compliance or junction-temperature pass is claimed.
 
+The prototype ordering-field update is recorded in [source-metadata-transition.json](../../../docs/rooster/prototype-order/source-metadata-transition.json). All other source tokens, including values, nets, fit flags, copper and 3D transforms, are preserved. Historical enclosure exports and nominal physical simulations keep their original source hashes; the transition checker verifies their unchanged geometry against the current sources. This does not qualify substituted real components. See the separate [power-component selection review](../../../docs/rooster/prototype-order/power-component-review.md).
+
 ## Electrical and layout checks
 
 | Board | ERC violations | DRC/parity/unconnected violations | Fabrication rules |
 |---|---:|---:|---|
 {chr(10).join(boardrows)}
 
-The full local repository suite reports **117 passed, 1 skipped**.
+The original v4.2 local repository suite reported **117 passed, 1 skipped**. Current ordering-update checks and suite results are recorded in the [prototype order work package](../../../docs/rooster/prototype-order/source-integration-review.md).
 
 All three also pass the repository's filled-copper connectivity guard. The bottom board uses explicit ground traces as well as its filled planes. Board intent validation passes on all three projects.
 
@@ -104,7 +107,7 @@ Before ordering a production batch: assemble a fit sample with the actual holder
 print('Packaged report')
 # Bind reviewed evidence to committed inputs; generated working decks are deliberately omitted.
 files=[];evidence=[]
-for d in sorted((ROOT/'boards').glob('alec-*')):
+for d in [ROOT/'boards'/name for name in ['alec-controls','alec-front','alec-main']]:
  files+=[p for p in d.glob('*.kicad_*') if p.suffix in ['.kicad_pcb','.kicad_sch','.kicad_pro','.kicad_dru']]+[d/'checks.yml',d/'board.yml']+list((d/'3dmodels').glob('*.step'))
  evidence += [d/'review'/n for n in ['netlist.xml','erc.json','drc.json','fab-drc.json','3d-model-audit.json','bom.csv']]
 files += [p for p in (MAIN/'sim').glob('*.cir') if p.name not in ['assembled.cir','kicad_export.cir']]+[MAIN/'sim.yml']
@@ -113,5 +116,6 @@ files += [E/n for n in ['build_assembly.py','verify_assembly.py','render_views.p
 evidence += [MAIN/'review'/n for n in ['interface-validation.json','layout-validation.json','harness-simulation.json','spice-report.metrics.json','physical-screening/summary.json']]
 if physical['manifest'].get('name_migration'):evidence.append(MAIN/'review/physical-screening'/physical['manifest']['name_migration'])
 evidence += [E/n for n in ['assembly-sources.json','verification.json','alec-cube-v4-2.blend']]
+evidence += [ROOT/'docs/rooster/prototype-order'/n for n in ['source-metadata-transition.json','native-geometry-comparison.json']]
 def hashed(paths):return {str(p.relative_to(ROOT)):sha(p) for p in sorted(set(paths))}
 (MAIN/'review/qa-manifest.json').write_text(json.dumps({'manufacturing_release':False,'files':hashed(files),'evidence':hashed(evidence)},indent=2)+'\n')

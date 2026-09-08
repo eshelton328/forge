@@ -2,6 +2,8 @@
 
 **Prototype review passed the listed software checks. Physical qualification and manufacturing release have not been performed.** Tests refer to the actual saved boards and v4.2 Blender assembly, with source hashes in [qa-manifest.json](qa-manifest.json). No battery endurance, wake-up reliability, acoustic quality, ESP-NOW range, emissions compliance or junction-temperature pass is claimed.
 
+The prototype ordering-field update is recorded in [source-metadata-transition.json](../../../docs/rooster/prototype-order/source-metadata-transition.json). All other source tokens, including values, nets, fit flags, copper and 3D transforms, are preserved. Historical enclosure exports and nominal physical simulations keep their original source hashes; the transition checker verifies their unchanged geometry against the current sources. This does not qualify substituted real components. See the separate [power-component selection review](../../../docs/rooster/prototype-order/power-component-review.md).
+
 ## Electrical and layout checks
 
 | Board | ERC violations | DRC/parity/unconnected violations | Fabrication rules |
@@ -10,7 +12,7 @@
 | controls | 0 | 0 | jlcpcb-2layer-standard: pass |
 | front | 0 | 0 | jlcpcb-2layer-standard: pass |
 
-The full local repository suite reports **117 passed, 1 skipped**.
+The original v4.2 local repository suite reported **117 passed, 1 skipped**. Current ordering-update checks and suite results are recorded in the [prototype order work package](../../../docs/rooster/prototype-order/source-integration-review.md).
 
 All three also pass the repository's filled-copper connectivity guard. The bottom board uses explicit ground traces as well as its filled planes. Board intent validation passes on all three projects.
 

@@ -604,11 +604,21 @@
   },
   "input_sha256": {
     "docs/rooster/prototype-order/murata-curves-20260908.json": "51676986769e81a48db9262f38a6b0019db1f01fe0ca651ad7f24ffbb09f4ebe",
-    "docs/rooster/prototype-order/sourcing.csv": "b566e2de004563efa81bfa4c7a2ab09860e29121fe074b9c362e6ce77e3d407b",
-    "docs/rooster/prototype-order/tools/review_power_parts.py": "74bb123c000cf945aaab68fb95af29008e8748db75ca0d4f112fbe1f4fc51330",
-    "boards/alec-main/alec-main.kicad_pcb": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
-    "boards/alec-main/review/netlist.xml": "6818c499924dfde0510a367441c0e0063546d32ed85b6ca4e4f3857d6fd83120",
-    "boards/alec-sensor/alec-sensor.kicad_pcb": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
-    "boards/alec-sensor/review/netlist.xml": "cce1531ad74592a6bd64e6cfed84fc99fa8340e9adc4e8e7e027d10fd2e9a10d"
+    "docs/rooster/prototype-order/sourcing.csv": "783fd33eddcad12fdd3c3c79c38288130f4aec428d066fc50aba44c37ccf5333",
+    "docs/rooster/prototype-order/tools/review_power_parts.py": "410ebef988944cf4458e8dbe92ab6c9bad4937f8542535f2a3aa7116e09e26f1",
+    "docs/rooster/prototype-order/source-metadata-transition.json": "469d1a46976762b5dbdafff05a3c4a76b7123ef9d21b8aafa4e2c4f82e9b513d",
+    "boards/alec-main/alec-main.kicad_sch": "9dfc6a7542597bb4ab83f2b5273b3765fc697abe5baf0f580fc89624ae62c133",
+    "boards/alec-main/power-monitor.kicad_sch": "c25bdcba58a10931965244103a798e34f4175227711c894bee149acf9d699e85",
+    "boards/alec-main/alec-main.kicad_pcb": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+    "boards/alec-controls/alec-controls.kicad_sch": "891e420c2496bc20f0cdbfcf18f78d227da845dab8c56915daaa06b8ea8ba5e9",
+    "boards/alec-controls/alec-controls.kicad_pcb": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546",
+    "boards/alec-front/alec-front.kicad_sch": "1b61f784eb131e592435c8ab8069c9a3f5bfe06ffd0030789b9164db26749ae6",
+    "boards/alec-front/alec-front.kicad_pcb": "240c970c5cc23b727603920523cf404c60033e7f39d4fcd2d857255c3b6efa35",
+    "boards/alec-sensor/alec-sensor.kicad_sch": "289a43797a8be689ec2a772060e79c5d3d420aa0f0929bf3e84b6a45d25e7975",
+    "boards/alec-sensor/power-monitor.kicad_sch": "c2365cae3ada7d4e67c0b2e1e01dbc3d2efbc7c149faf7bb998c94e07f7c0150",
+    "boards/alec-sensor/radar.kicad_sch": "690dd79c26bb8449df1f78a978c46062ac9b2b17629c1a57a32fae68d10a018d",
+    "boards/alec-sensor/alec-sensor.kicad_pcb": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
+    "boards/alec-main/review/netlist.xml": "20ad70974d4f2e3f15fb297f9e5927268864d0f649ed0eed02dcf890fc3a878d",
+    "boards/alec-sensor/review/netlist.xml": "18501a6e065ac97ca3de34b705bbac720f6d79332c4859e3ea243574cfe06c53"
   }
 }

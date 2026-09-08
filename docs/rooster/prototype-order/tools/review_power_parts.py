@@ -8,11 +8,14 @@ import csv
 import hashlib
 import json
 import math
+import sys
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
 HERE = Path(__file__).resolve().parents[1]
 ROOT = HERE.parents[2]
+sys.path.insert(0, str(ROOT / 'scripts/alarm'))
+from order_parts import baseline_source, verify_transition, native_order_fields
 CURVES = HERE / "murata-curves-20260908.json"
 
 
@@ -73,12 +76,14 @@ def main():
               str((HERE / "sourcing.csv").relative_to(ROOT)): sha(HERE / "sourcing.csv"),
               str(Path(__file__).resolve().relative_to(ROOT)): sha(Path(__file__))}
     audit = json.loads((HERE / "assembly-audit.json").read_text())
+    hashes.update(verify_transition())
     banks = []
     rails = {}
     for board in ["alec-main", "alec-sensor"]:
         bp = ROOT / "boards" / board
         native = bp / (board + ".kicad_pcb")
-        assert sha(native) == audit["boards"][board]["source_sha256"]
+        assert hashlib.sha256(baseline_source(native.relative_to(ROOT)).encode()).hexdigest() == audit["boards"][board]["source_sha256"]
+        native_order_fields(board)
         netpath = bp / "review/netlist.xml"
         hashes[str(native.relative_to(ROOT))] = sha(native)
         hashes[str(netpath.relative_to(ROOT))] = sha(netpath)
