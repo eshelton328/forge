@@ -1,11 +1,17 @@
 # JLCPCB quote progress — September 7, 2026
 
-**No complete four-board landed quote, reservation, checkout, payment or order exists.**
+**No complete four-board landed quote, paid reservation, payment or submitted order exists.**
 All four signed-in drafts now contain Gerbers, BOMs and complete placement files.
 Main has **41 of 42 BOM groups confirmed** and Beacon **37 of 38**; the remaining
 group in each is the unavailable RTC. Their incomplete price previews exclude it.
 Erik must explicitly approve the exact items, quantities and total before any
 order or paid parts procurement.
+
+September 8: [stackup/USB requirements](stackup-review/README.md) now recommend
+the named JLC041611-7628 construction for the main/Beacon prototype quotes.
+The native USB routing is retained as a disclosed functional-test risk; it has
+not been certified at 90 Ω. The current via attachments were reproduced exactly
+and committed as `b3818f9`. Actual supplier uploads and repricing are in progress.
 
 Controls and front have all fitted parts matched. The four price previews and
 the controls/header placement corrections are recorded below. No PCB Save to Cart

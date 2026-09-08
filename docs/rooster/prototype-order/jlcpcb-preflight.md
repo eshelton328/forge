@@ -46,6 +46,14 @@ layers, above the 0.10 mm requirement. Retain uniform native 1:1 openings for th
 prototype, including U6, with supplier mask changes subject to manual production
 review. This does not claim NSMD geometry or whole-board fabrication acceptance.
 
+The September 8 [stackup/USB disposition](stackup-review/README.md) recommends
+JLC041611-7628 at nominal 1.6 mm and 1 oz outer/inner copper for main/Beacon.
+It retains the short native full-speed USB routes for prototype testing, with
+explicitly unverified 90 Ω impedance and possible rework disclosed in the
+purchase proposal. This does not certify Espressif layout compliance. Record
+the named stackup in the actual quotes; historical physical screening remains
+based on its original assumed stackup. Beacon has no routed UART0 service pads.
+
 - Available fitted parts are matched on all four designs, including both faces and through-hole parts. Resolve RTC procurement/assembly intake and restore U5 in both incomplete supplier previews, then recheck final eligibility. JLCPCB’s FAQ describes supported through-hole assembly through its assembly-parts library. [Assembly FAQ](https://jlcpcb.com/help/article/pcb-assembly-faqs).
 - Account for detachable rails/panelization and final board outline/clearance on the small Standard boards. Do not enlarge the functional PCB or move connectors merely to meet a processing-size requirement.
 - The dedicated BOM/CPL files include both faces and THT locations, covering 111/5/3/88 fitted references. Use the corrected [controls r2 and headers r2 CPLs](supplier-placement-candidates/README.md), which correct the button/header centers and main J4 rotation. The shared repository exporter uses `only_smd: true` and omits THT locations. U3 model alignment, other origins, rotations and final placement review remain open.
