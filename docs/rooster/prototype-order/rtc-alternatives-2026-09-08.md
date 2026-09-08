@@ -1,4 +1,4 @@
-# RTC alternatives — September 8, 2026
+# RTC supply, temperature and manufacturer comparison — September 8, 2026
 
 **Investigate the RV-3028-C7 TA-QA grade first for the current boards; consider
 RV-3032-C7 if accepting a PCB/firmware revision.** The present QC selection,
@@ -93,3 +93,87 @@ For production, qualify both acceptable RV-3028 grades/order presentations and
 check distributor breadth, replenishment lead time and lifecycle over time.
 Today's stock proves a current sourcing opportunity, not generally superior
 future availability. No enquiry, order, cart change or board substitution was made.
+
+## Heat in the shower and enclosure
+
+**Temperature was screened, but neither assembled product has passed a physical
+thermal test.** The [Beacon report](../../../boards/alec-sensor/TEST-REPORT.md#thermal-screen)
+estimates a 45.1–48.5°C lumped surface temperature at 40°C ambient for its example
+0.775 W load. Its sustained 3.53 W stress case reaches 63.4–78.9°C under the same
+two assumed cooling conditions; that is not an approved operating mode. These
+are surface estimates, not temperatures at the RTC, cells or regulator junctions.
+
+The [Cube report](../../../boards/alec-main/review/TEST-REPORT.md#fresh-copperthermal-screening)
+also contains a nominal PCB thermal model: approximately 33.61°C peak rise with
+its assumed loads and cooling. It does not model enclosure cooling or package
+junction temperatures. Neither historical screen validates the current assembled
+boards or authorizes prolonged high-load use in a sealed housing.
+
+The present RV-3028 TA grade operates from −40 to +85°C. Its **±1 ppm is specified
+at 25°C**, and its quartz has a parabolic temperature characteristic. Using the
+datasheet's nominal coefficient −0.035 ppm/°C² and 25°C turnover, a crystal held
+at 50°C has approximately −21.9 ppm thermal offset: about 1.89 seconds/day if
+held there all day, or 0.039 seconds during a 30-minute exposure. These are
+illustrations, not worst-case guarantees; turnover/coefficient tolerances,
+initial error, aging and actual crystal temperature also matter. Brief shower
+heating does not imply two seconds of added error every day. Changing QC to QA
+does not add temperature compensation or raise this TA temperature limit.
+
+Temperature therefore favors considering a compensated clock, rather than
+retaining RV-3028 specifically for heat. More urgent system checks are regulator,
+radio/radar/audio and cell heating, fuse derating, accessible case temperatures
+and moisture/condensation. The Beacon's selected C&K 1101M2S3CQE2 switch belongs
+to a family rated only to **65°C** ([manufacturer datasheet](https://www.ckswitches.com/media/1429/1000.pdf),
+p. 1); this is a component ceiling, not a safe case-temperature target.
+
+After delivery, instrument both assembled housings at the agreed maximum ambient,
+normal duty and longest supported alarm/radar operation. Log RTC, converters,
+cells, radar/amplifier and case temperatures, supply stability, elapsed-time
+drift and alarm wake behavior. Use measured margins to establish load/duty limits.
+Wet/condensation and sealing validation remain part of ROO-017 after the fit work
+in ROO-016; these physical tests are not newly imposed prerequisites to purchasing
+engineering prototype PCBs.
+
+## Other RTC manufacturers
+
+All candidates below integrate their timing resonator and support 3.3 V, I2C and
+alarm interrupts. **All require board and driver changes from RV-3028.** The
+accuracy column covers −40 to +85°C; aging and other separately specified effects
+must still enter the finished-product error budget. Currents are typical idle
+timekeeping values in the stated configurations, not whole-device sleep current
+or a guarantee at elevated temperature.
+
+| Manufacturer / candidate | Accuracy across temperature | Typical supply current and conditions | Assessment for Rooster |
+| --- | --- | --- | --- |
+| [Micro Crystal RV-3032-C7](https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3032-C7.pdf) | ±2.5 ppm | 0.160 µA at 3 V, 25°C | Best balance identified here of size, accuracy and already-observed JLCPCB stock; different pinout despite same 3.2 × 1.5 mm body. |
+| [Epson RX8901CE XS](https://download.epsondevice.com/td/pdf/brief/RX8901CE_en.pdf) | ±3 ppm; XS is the tighter grade | 0.40 µA from VDD at 3 V, clock output off, 2 s compensation | Credible independent manufacturer. 3.2 × 2.5 mm / 10 pins, requires a VOUT capacitor and new power/initialization review. XS also specifies ±5 ppm above 85 to 105°C; cheaper XB has looser accuracy. |
+| [NXP PCF2131TFY](https://www.nxp.com/docs/en/data-sheet/PCF2131.pdf) | ±3 ppm typical, **±8 ppm limits** | 0.070 µA at 3.3 V with compensation on, CLKOUT/hundredths counter/power management off | Strong supply/cost candidate with exceptionally low current. 4.5 × 3.5 mm / 16 pins and a looser worst-case accuracy budget than RV-3032 or Epson XS. |
+| [Analog Devices MAX31343ETAY+T](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX31343.pdf) | ±5 ppm | 0.940 µA at 3.3 V, 25°C, clock output off, 32 s compensation | Integrated MEMS timing, two alarms; 3 × 4 mm / 8-pin TDFN. Higher current and observed small-quantity price make it less attractive here. |
+
+The [Epson application manual](https://download.epsondevice.com/td/pdf/app/RX8901CE_en.pdf),
+Table 5.4, gives the 0.40 µA VDD figure; the advertised 0.24 µA is **backup** current.
+NXP Rev. 2.5, Table 89, gives 70 nA with compensation enabled in the configuration
+above; its 64 nA figure disables compensation. NXP's ±3 ppm typical figure must
+not be compared as a guaranteed limit against competitors' maximum errors.
+Epson's brief and NXP's current table were visually checked. ADI's datasheet
+current includes averaged temperature conversions. Its April 2026 PIN 2571D
+concerns shipping packaging, not an electrical erratum.
+
+### Additional live distributor observations
+
+Checked September 8, 2026 in the rendered US DigiKey product pages. USD per part,
+**cut tape**, with shipping, tariff, tax, reeling, assembly and supplier intake
+fees separate. These quantities supersede older search-index results.
+
+| Exact orderable part / source | Stock observed | Each at 1 / 100 | Listed standard manufacturer lead time |
+| --- | --- | --- | --- |
+| [RX8901CE XS B06](https://www.digikey.com/en/products/detail/epson/RX8901CE-XS-B06/16630058) | 415 | $6.40 / $4.1105 | 30 weeks |
+| [PCF2131TFY](https://www.digikey.com/en/products/detail/nxp-usa-inc/PCF2131TFY/15216480) | 2,573 | $3.66 / $2.2761 | 16 weeks |
+| [MAX31343ETAY+T](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX31343ETAY-T/17885235) | 1,499 | $7.32 / $4.7600 | 10 weeks |
+
+Listed standard lead time is not a promised delivery date for stocked material.
+Distributor stock is not JLCPCB warehouse stock; JLCPCB intake for these three
+has not been established. No conclusion of generally better long-term supply
+follows from a brand name or today's count. Exact variant, lifecycle, replenishment,
+assembly acceptance and an agreed clock-drift budget still determine selection.
+The comparison expands the options; the existing native design remains unchanged.
