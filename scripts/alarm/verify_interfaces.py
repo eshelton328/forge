@@ -15,7 +15,11 @@ def check(name,ok):
  checks.append({'name':name,'passed':True})
 check('Exactly the six relocated main-board user parts were removed',set(new)==common|{'J5','J6','J7','R50','R51','R52','R53'})
 for ref in common:
- check(ref+' value and footprint preserved',all(old[ref].findtext(k)==new[ref].findtext(k) for k in ['value','footprint']))
+ if ref=='J4':
+  from header_fit import OLD,NEW
+  check('J4 value retained with reviewed finished-hole footprint',old[ref].findtext('value')==new[ref].findtext('value') and old[ref].findtext('footprint')==OLD and new[ref].findtext('footprint')==NEW)
+ else:
+  check(ref+' value and footprint preserved',all(old[ref].findtext(k)==new[ref].findtext(k) for k in ['value','footprint']))
 for pin in op:
  if pin[0] not in common:continue
  check('Existing circuit peers '+'.'.join(pin),{p for p in on[op[pin]] if p[0] in common}=={p for p in nn[np[pin]] if p[0] in common})

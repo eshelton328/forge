@@ -22,3 +22,12 @@ The fixed custom footprints derive from the [E-Switch EG1218 drawing](https://co
 `order_parts.py` applies the reviewed [purchasing selections](../../docs/rooster/prototype-order/sourcing.csv) to MPN, Manufacturer, LCSC# and Datasheet fields only. Both creation scripts apply this overlay at the end; updating the overlay does not require regenerating routing. Run `python3 scripts/alarm/order_parts.py --check` to detect drift, or omit `--check` to apply a deliberate selection change. Export fresh netlists, then call `export_bom(board)` from this module to refresh a board's review BOM; `export_review.py` does this for all three Cube boards.
 
 The first migration has a [source-token transition record](../../docs/rooster/prototype-order/source-metadata-transition.json) and an independent KiCad copper/placement comparison. `package_report.py --reuse-physics` accepts this explicit transition while retaining the historical solver and enclosure source hashes. The original model assumptions remain unchanged; real component substitution is covered separately by part review and later bench testing. A future source change must pass a new review, not reuse or overwrite this transition record.
+
+The subsequent [J4 fit correction](../../docs/rooster/prototype-order/header-fit/README.md)
+has its own byte-bound transition and KiCad geometry comparison. Both generators
+apply `header_fit.py` before the ordering overlay: only main J4 changes to the
+local 1.10 mm-hole footprint. Copper, pin order and component position remain
+unchanged. Its historical solver results are retained because the quantities
+consumed by that solver are identical; the solver does not model these connector
+holes. This is not a name-only migration or a new physical run. New manufacturing
+files must nevertheless be generated for the changed drills.

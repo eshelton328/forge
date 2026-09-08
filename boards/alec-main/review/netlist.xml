@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/erik/Workspaces/the-forge-rooster-orders/boards/alec-main/alec-main.kicad_sch</source>
-    <date>2026-09-07T19:36:48</date>
+    <date>2026-09-07T23:35:26</date>
     <tool>Eeschema 10.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1357,14 +1357,14 @@
     </comp>
     <comp ref="J4">
       <value>Conn_01x04_Pin</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <footprint>Board:Samtec_TSW-104-07-G-S_Drill1.10mm</footprint>
       <datasheet>https://www.samtec.com/products/tsw-104-07-g-s</datasheet>
       <description>Generic connector, single row, 01x04, script generated</description>
       <fields>
         <field name="MPN">TSW-104-07-G-S</field>
         <field name="Manufacturer">Samtec</field>
         <field name="LCSC#">C3335156</field>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Footprint">Board:Samtec_TSW-104-07-G-S_Drill1.10mm</field>
         <field name="Datasheet">https://www.samtec.com/products/tsw-104-07-g-s</field>
         <field name="Description">Generic connector, single row, 01x04, script generated</field>
       </fields>

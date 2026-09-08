@@ -6,7 +6,7 @@ E=ROOT/'enclosures/alec/pcb-revision'
 parser=argparse.ArgumentParser()
 physical_source=parser.add_mutually_exclusive_group(required=True)
 physical_source.add_argument('--physics-results',type=Path)
-physical_source.add_argument('--reuse-physics',action='store_true',help='Retain archived solver results already bound to this PCB, including documented name-only migrations')
+physical_source.add_argument('--reuse-physics',action='store_true',help='Retain archived solver results through explicit source transitions; no new physical run is claimed')
 args=parser.parse_args()
 def read(p):return json.loads(p.read_text())
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -112,10 +112,12 @@ for d in [ROOT/'boards'/name for name in ['alec-controls','alec-front','alec-mai
  evidence += [d/'review'/n for n in ['netlist.xml','erc.json','drc.json','fab-drc.json','3d-model-audit.json','bom.csv']]
 files += [p for p in (MAIN/'sim').glob('*.cir') if p.name not in ['assembled.cir','kicad_export.cir']]+[MAIN/'sim.yml']
 files += list((ROOT/'scripts/alarm').glob('*.py'))+list((ROOT/'libs/footprints/Alarm.pretty').glob('*.kicad_mod'))
+files += list((MAIN/'footprints/Board.pretty').glob('*.kicad_mod'))
 files += [E/n for n in ['build_assembly.py','verify_assembly.py','render_views.py']]
 evidence += [MAIN/'review'/n for n in ['interface-validation.json','layout-validation.json','harness-simulation.json','spice-report.metrics.json','physical-screening/summary.json']]
 if physical['manifest'].get('name_migration'):evidence.append(MAIN/'review/physical-screening'/physical['manifest']['name_migration'])
 evidence += [E/n for n in ['assembly-sources.json','verification.json','alec-cube-v4-2.blend']]
 evidence += [ROOT/'docs/rooster/prototype-order'/n for n in ['source-metadata-transition.json','native-geometry-comparison.json']]
+evidence += [ROOT/'docs/rooster/prototype-order/header-fit'/n for n in ['source-transition.json','geometry-review.json']]
 def hashed(paths):return {str(p.relative_to(ROOT)):sha(p) for p in sorted(set(paths))}
 (MAIN/'review/qa-manifest.json').write_text(json.dumps({'manufacturing_release':False,'files':hashed(files),'evidence':hashed(evidence)},indent=2)+'\n')

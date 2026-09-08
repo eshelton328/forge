@@ -1,5 +1,11 @@
 # Fabrication candidates for quote review
 
+**Main r1 is now historical only:** the [J4 finished-hole correction](../header-fit/README.md)
+changes its four connector drills to 1.10 mm. A newly named main fabrication
+candidate and placement binding are required before order release. The three
+other boards' native geometry remains unchanged. The r1 inventory below describes
+the preserved original files, not the corrected main board.
+
 `4d8e65d-r1` contains four Gerber/drill archives plus matching BOM/CPL pairs,
 exported from committed native sources at `4d8e65d327e1dd0e45adc906855b9b2ccb610a91`.
 These are quote candidates, not an approved manufacturing release. **The r1
@@ -41,7 +47,8 @@ stencil, mask and assembly review; their existence does not close that review.
 
 The [amplifier copper-pad review](../assembly-drawing-review.md) now records a
 prototype disposition retaining the native pattern and verifies its 17-pin map.
-Its supplier orientation and mask/via/process checks remain open.
+Its supplier orientation and final production data remain open. Source mask and
+via-process decisions are now recorded in the separate reviews.
 
 Still required before order release: remaining component dispositions, supplier
 pin-1/rotation review, stackup and via treatment, Standard-board rails/fiducials

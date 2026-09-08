@@ -18,6 +18,7 @@ HERE = Path(__file__).resolve().parents[1]
 ROOT = HERE.parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/alarm'))
 from order_parts import native_order_fields
+from header_fit import expected_footprint
 
 
 def sha(p):
@@ -63,7 +64,8 @@ def main():
         cpl = []
         for pos in positions:
             r = fitted[pos['Ref']]
-            assert pos['Val'] == r['value'] and pos['Package'] == r['footprint'].split(':')[-1], (board, pos['Ref'])
+            expected = expected_footprint(f'boards/{board}/', pos['Ref'], r['footprint'])
+            assert pos['Val'] == r['value'] and pos['Package'] == expected.split(':')[-1], (board, pos['Ref'])
             fields = native_fields[pos['Ref']]
             groups[fields['MPN'], fields['LCSC#'], pos['Package']].append(pos['Ref'])
             assert pos['Side'] in ['top', 'bottom']

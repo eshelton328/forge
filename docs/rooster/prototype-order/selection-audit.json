@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-08T00:51:54.110783+00:00",
+  "captured_at": "2026-09-08T04:38:41.925863+00:00",
   "command": "python3 docs/rooster/prototype-order/tools/verify_sourcing.py",
   "result": "PASS_WITH_OPEN_ENGINEERING_AND_PROCUREMENT_GATES",
   "scope": "Historical source BOM fields, current native schematic/PCB/BOM ordering-field agreement, catalog manufacturer/MPN identity, independently decoded passive nominal values, declared voltage/dielectric constraints, and unchanged non-ordering source tokens against the reviewed baseline. Does not validate DC-bias curves, current/thermal margin, all component drawings, assembly rotations, supplier commitments or final manufacturing files.",
@@ -18,9 +18,11 @@
   ],
   "input_sha256": {
     "docs/rooster/prototype-order/source-metadata-transition.json": "469d1a46976762b5dbdafff05a3c4a76b7123ef9d21b8aafa4e2c4f82e9b513d",
-    "boards/alec-main/alec-main.kicad_sch": "9dfc6a7542597bb4ab83f2b5273b3765fc697abe5baf0f580fc89624ae62c133",
+    "docs/rooster/prototype-order/header-fit/source-transition.json": "5d728a0d1e9ea6350355a808026fe3bab6ed9cb7ccb552c0645974cd1afca0a9",
+    "boards/alec-main/footprints/Board.pretty/Samtec_TSW-104-07-G-S_Drill1.10mm.kicad_mod": "b28d410b40444a5012f6a55e02e0b17a076ff477a4b9b340e4535531c2592cb7",
+    "boards/alec-main/alec-main.kicad_sch": "2bba9e41dbff1f589ffbef185a32e0a81000e437c7ad60d0b7d85e348f5bb35b",
     "boards/alec-main/power-monitor.kicad_sch": "c25bdcba58a10931965244103a798e34f4175227711c894bee149acf9d699e85",
-    "boards/alec-main/alec-main.kicad_pcb": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+    "boards/alec-main/alec-main.kicad_pcb": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a",
     "boards/alec-controls/alec-controls.kicad_sch": "891e420c2496bc20f0cdbfcf18f78d227da845dab8c56915daaa06b8ea8ba5e9",
     "boards/alec-controls/alec-controls.kicad_pcb": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546",
     "boards/alec-front/alec-front.kicad_sch": "1b61f784eb131e592435c8ab8069c9a3f5bfe06ffd0030789b9164db26749ae6",
@@ -29,8 +31,8 @@
     "boards/alec-sensor/power-monitor.kicad_sch": "c2365cae3ada7d4e67c0b2e1e01dbc3d2efbc7c149faf7bb998c94e07f7c0150",
     "boards/alec-sensor/radar.kicad_sch": "690dd79c26bb8449df1f78a978c46062ac9b2b17629c1a57a32fae68d10a018d",
     "boards/alec-sensor/alec-sensor.kicad_pcb": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
-    "boards/alec-main/review/bom.csv": "f4356bce538d4ed0853cdd00bbb45a5d534c912f274d9fec4a980754284c0e5d",
-    "boards/alec-main/review/netlist.xml": "20ad70974d4f2e3f15fb297f9e5927268864d0f649ed0eed02dcf890fc3a878d",
+    "boards/alec-main/review/bom.csv": "22c56304644716573d849ae8e9b8cdcf593189ec102d2ab52f0eb00219f1a850",
+    "boards/alec-main/review/netlist.xml": "2b03be57f5550cc539ea2eb0e6658974b429a027da80cfc58063989c66d66868",
     "boards/alec-controls/review/bom.csv": "000713fecf329d70b00d1673d267c08c3b2e8f49086282a6ca080e8e535aef9a",
     "boards/alec-controls/review/netlist.xml": "d997bbcc0a0e4377d52f0be973de6c15e6f851f31035c6da5c296a552405ee45",
     "boards/alec-front/review/bom.csv": "31afa22f62e7bdfa597efda5e6a9d3af8ac6fb9dadfaacf311d089d67d9db2c6",
@@ -47,6 +49,6 @@
     "docs/rooster/prototype-order/sourcing.csv": "783fd33eddcad12fdd3c3c79c38288130f4aec428d066fc50aba44c37ccf5333",
     "docs/rooster/prototype-order/proposed-parts.json": "63b3040f25802bc3ad8a082bb80abf6af215a4e144d8a4e8c554d8f4a933f523",
     "docs/rooster/prototype-order/tools/verify_sourcing.py": "1533edde6b6cb06378b2f08249ed6d12772d4a1db893cb94713bd88854c29260",
-    "scripts/alarm/order_parts.py": "ac4a72f3aaba459fac4c4da169320f46780475fc9413fe12b8d0a616f719a7b0"
+    "scripts/alarm/order_parts.py": "8b8d27bc9dfcf31bc5bcb88b6fdd3a41266ece28a868a78dcbc91733ed0d5bd6"
   }
 }

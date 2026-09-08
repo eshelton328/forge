@@ -15861,7 +15861,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Footprint"
-			"Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			"Board:Samtec_TSW-104-07-G-S_Drill1.10mm"
 			(at 363.22 189.23 0)
 			(hide yes)
 			(show_name no)

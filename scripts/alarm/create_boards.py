@@ -125,5 +125,7 @@ for kind in ['controls','front']:
  b.BuildConnectivity();p.SaveBoard(str(d/(d.name+'.kicad_pcb')),b)
  print(d.name,dims)
 from order_parts import synchronize_board
+from header_fit import apply_to_main
+apply_to_main('kicad_pcb')
 for board in ['alec-main', 'alec-controls', 'alec-front']:
  synchronize_board(board, schematics=False)

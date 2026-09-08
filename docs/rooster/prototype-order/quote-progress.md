@@ -254,6 +254,11 @@ cannot prove RGB pin orientation. Neither draft is a full placement sign-off.
 
 ## Next work
 
+The [J4 hole correction](header-fit/README.md) now changes main's four plated
+header holes from 1.00 to 1.10 mm, preserving its lands and placement. Main's
+uploaded r1 archive is historical only and must be replaced by a newly named
+candidate before ordering. The saved price remains an incomplete observation.
+
 All four archives have been uploaded. The [amplifier review](assembly-drawing-review.md)
 now supports retaining its native copper land pattern and verifies all 17 pad
 nets; rounded thermal paste coverage is 62.552%, correcting the earlier 66.1%.
@@ -275,8 +280,9 @@ production approval was submitted during this review.
 The latest drawing pass supports retaining main D1's LED pads and Beacon F1 for
 dry prototype evaluation with the recorded current and temperature envelope.
 Main J4's nonlocking header variant was distinguished from the catalog's locking
-lead option; its finished-hole fit remains open. No native source or manufacturing
-package changed. The supplier viewer remained on **Generating PCB...** during
+lead option in that earlier pass, which did not change source or manufacturing
+files. Its fit question is now resolved by the subsequent 1.10 mm hole correction
+above. The supplier viewer remained on **Generating PCB...** during
 the follow-up and was returned to the BOM tab; this provides no new placement
 verification or basis to change U6's rotation.
 

@@ -20694,11 +20694,11 @@
 		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "fbd2b7ca-b177-5893-a4f1-659a4dbe8020") (effects (font (size 1 1) (thickness 0.15))))
 		(property "LCSC#" "C84416" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b86cea7c-1954-5eab-9ced-dbec88300398") (effects (font (size 1 1) (thickness 0.15))))
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+	(footprint "Board:Samtec_TSW-104-07-G-S_Drill1.10mm"
 		(layer "F.Cu")
 		(uuid "d2bbdf4a-51bc-4e75-940b-75ea36a05bf2")
 		(at 161 86)
-		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
+		(descr "Samtec TSW-104-07-G-S, four 1.10mm finished holes for JLCPCB tolerance; 1.70mm lands, 2.54mm pitch")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J4"
 			(at 0 3 0)
@@ -20898,7 +20898,7 @@
 		(pad "1" thru_hole rect
 			(at 0 0)
 			(size 1.7 1.7)
-			(drill 1)
+			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
@@ -20907,7 +20907,7 @@
 		(pad "2" thru_hole circle
 			(at 0 2.54)
 			(size 1.7 1.7)
-			(drill 1)
+			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/OLED_3V3")
@@ -20916,7 +20916,7 @@
 		(pad "3" thru_hole circle
 			(at 0 5.08)
 			(size 1.7 1.7)
-			(drill 1)
+			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/OLED_SCL")
@@ -20925,7 +20925,7 @@
 		(pad "4" thru_hole circle
 			(at 0 7.62)
 			(size 1.7 1.7)
-			(drill 1)
+			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/OLED_SDA")

@@ -186,6 +186,14 @@ No locking lead, alternate socket, hole enlargement or purchasing substitution
 was silently applied. The **-07** drawing specifies a 5.84 mm mating post; the
 external display cable still needs a female contact that accepts this post.
 
+**Resolved by the subsequent [finished-hole correction](header-fit/README.md):**
+main J4 now has four 1.10 mm plated holes in a dedicated local footprint. All
+copper lands, coordinates, nets and the selected nonlocking MPN are preserved.
+The stated supplier tolerance gives a 1.02 mm lower bound, matching Samtec's
+recommended nominal hole. This supersedes the preceding instruction to retain
+the 1.00 mm source while reviewing fit. A new main fabrication candidate is
+required; the original uploaded archive must not be ordered.
+
 Sources visually read: [Samtec footprint Rev.A](https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf),
 [series print Rev.DS, page 6](https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf),
 and [catalog, page 2](https://suddendocs.samtec.com/catalog_english/tsw_th.pdf).

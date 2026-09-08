@@ -75,5 +75,7 @@ for kind in ['controls','front']:
 f=MAIN/'fp-lib-table';a=parse(f.read_text());a.append(node('(lib (name "Alarm") (type "KiCad") (uri "${KIPRJMOD}/../../libs/footprints/Alarm.pretty") (options "") (descr "Alarm interface parts"))'));f.write_text(dump(a)+'\n')
 print('service pin order',SERVICE)
 from order_parts import synchronize_board
+from header_fit import apply_to_main
+apply_to_main('kicad_sch')
 for board in ['alec-main', 'alec-controls', 'alec-front']:
  synchronize_board(board, pcb=False)

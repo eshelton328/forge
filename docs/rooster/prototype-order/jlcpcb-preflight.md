@@ -23,6 +23,12 @@ After switching the main quote to Standard, JLCPCB proposed a **74 × 70 mm proc
 
 ## Remaining preflight work
 
+Main's [J4 finished-hole correction](header-fit/README.md) is checked in native
+source: four 1.10 mm plated holes, with existing pads/placement preserved. Its
+previous uploaded Gerber archive is superseded. Generate and independently check
+a newly named fabrication candidate and rebind the supplier placement corrections
+before replacing that draft.
+
 The [via-process specification](via-process/README.md) now calls for epoxy fill
 and copper cap on main/Beacon, preserving all component holes. Their draft
 Plugged setting is superseded and needs updating/repricing; controls/front retain

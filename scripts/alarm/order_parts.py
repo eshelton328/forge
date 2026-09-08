@@ -109,7 +109,11 @@ def baseline_source(relative, commit=None):
 
 
 def verify_transition(board=None, verify_baseline=True):
-    """Prove current sources retain the original reviewed non-ordering tokens."""
+    """Check original ordering-only transition plus the explicit J4 fit change."""
+    try:
+        from .header_fit import historical_source, RECORD
+    except ImportError:
+        from header_fit import historical_source, RECORD
     path = ORDER / "source-metadata-transition.json"
     report = json.loads(path.read_text())
     assert set(report["ordering_fields"]) == FIELDS
@@ -119,26 +123,33 @@ def verify_transition(board=None, verify_baseline=True):
                       + [ROOT / "boards" / b / (b+".kicad_pcb")]}
     assert len(report["files"]) == len(expected_paths)
     assert {r["path"] for r in report["files"]} == expected_paths
-    hashes = {str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()}
+    hashes = {str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest(),
+              str(RECORD.relative_to(ROOT)): hashlib.sha256(RECORD.read_bytes()).hexdigest()}
+    mechanical = json.loads(RECORD.read_text())
+    library = ROOT / mechanical['library']['path']
+    assert hashlib.sha256(library.read_bytes()).hexdigest() == mechanical['library']['sha256']
+    hashes[str(library.relative_to(ROOT))] = mechanical['library']['sha256']
     for record in report["files"]:
         if board and Path(record["path"]).parts[1] != board:
             continue
-        current = (ROOT / record["path"]).read_text()
+        native = (ROOT / record["path"]).read_text()
+        current = historical_source(native, record['path'])
         assert hashlib.sha256(current.encode()).hexdigest() == record["after_sha256"], record["path"]
         assert non_ordering_signature(current) == record["non_ordering_signature"], record["path"]
         if verify_baseline:
             original = baseline_source(record["path"], report["baseline_commit"])
             assert hashlib.sha256(original.encode()).hexdigest() == record["before_sha256"], record["path"]
             assert non_ordering_signature(original) == record["non_ordering_signature"], record["path"]
-        hashes[record["path"]] = record["after_sha256"]
+        hashes[record["path"]] = hashlib.sha256(native.encode()).hexdigest()
     assert len(hashes) > 1, board
     return hashes
 
 
 def verify_evidence_pcb(path, expected_sha256):
-    """Accept unchanged bytes or the recorded, structurally checked metadata update.
+    """Accept recorded metadata and J4-hole changes for retained-layout evidence.
 
-    Historical geometry/nominal-model evidence retains its original source hash.
+    Historical geometry/nominal-model evidence retains its original source hash;
+    it is not new physical qualification of the enlarged connector holes.
     The stored transition also works in shallow CI checkouts. Full baseline
     reconstruction is separately required by verify_sourcing.py before export.
     """
@@ -203,6 +214,10 @@ def export_bom(board):
 
 
 def synchronize_text(text, rows, identity):
+    try:
+        from .header_fit import expected_footprint
+    except ImportError:
+        from header_fit import expected_footprint
     root = parse(text)
     pcb = root[0] == "kicad_pcb"
     assert pcb or root[0] == "kicad_sch"
@@ -217,7 +232,7 @@ def synchronize_text(text, rows, identity):
         row = rows[ref]
         assert value(props["Value"][2]) == row["value"], (identity, ref, "value")
         footprint = value(component[1]) if pcb else value(props["Footprint"][2])
-        assert footprint == row["footprint"], (identity, ref, "footprint")
+        assert footprint == expected_footprint(identity, ref, row["footprint"]), (identity, ref, "footprint")
         found.append(ref)
         additions = []
         for key, val in expected_fields(row).items():

@@ -37,9 +37,9 @@
       "placement_rows_by_side": {
         "top": 111
       },
-      "native_pcb_sha256": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+      "native_pcb_sha256": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a",
       "files": {
-        "alec-main-bom.csv": "153ec012b9fe56b4870893b4fa386cf9a4153043c0a8c51719e08ce69e8b8154",
+        "alec-main-bom.csv": "9e2f10a6fd418bff844181ae03c07c44b041786fba7198782cb7e382b9ab5507",
         "alec-main-cpl.csv": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188"
       }
     },
