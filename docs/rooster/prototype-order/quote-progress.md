@@ -253,6 +253,20 @@ summary counter (43 confirmed against 42 detected). The actual DOM contains
 file references, not that counter, when checking coverage. Both drafts were left
 on their full BOM views with U5 still showing two-part shortfalls and cart count 0.
 
+## September 8 — same-day order readiness follow-up
+
+The [order checklist](order-readiness-2026-09-08.md) records a fresh live recheck:
+main 41/42 and Beacon 37/38 BOM groups confirmed, each short two exact U5 RTCs.
+The existing five-RTC cart and settled checkout still show $10.76 initial total;
+no order or payment was submitted. Published preorder terms require warehouse
+receipt before assembly ordering. This is a timing dependency, not merely an
+extra line to add to the current incomplete price previews.
+
+Erik asked to keep the technical enquiry unsent. The amplifier library viewer
+did not provide a usable numbered map; placement remains open. The four-board
+$791.07 figure above remains its dated incomplete manufacturing estimate; this
+follow-up did not refresh every final manufacturing fee, shipping or tax.
+
 ## RTC procurement candidates
 
 Four fitted RTCs are required across the two main and two Beacon assemblies,

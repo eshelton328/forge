@@ -2,6 +2,8 @@
 
 September 8, 2026; native PCB source `090b207`. This is the ROO-010 access and
 equipment handoff to ROO-011, not an executed test or a complete powered run sheet.
+The [prototype power disposition](prototype-power-disposition.md) records the
+retained dry bench scope and the protection work required before battery use.
 Use the existing Obsidian ROO-005 bench plan B01–B06 and ROO-011 acceptance criteria;
 the detailed test program does not need to finish before PCB purchase.
 

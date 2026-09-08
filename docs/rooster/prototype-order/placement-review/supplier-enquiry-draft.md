@@ -1,5 +1,8 @@
 # Proposed technical enquiry to JLCPCB
 
+**September 8 decision: Erik chose “Keep the enquiry unsent.”** Retain this draft
+locally. No supplier enquiry was sent and no reply is pending.
+
 **Draft only, not sent.** Sending this to supplier support requires Erik's
 permission. It requests placement information only: no order, reservation,
 purchase, substitution, rework or production approval.

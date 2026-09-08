@@ -23,6 +23,11 @@ After switching the main quote to Standard, JLCPCB proposed a **74 × 70 mm proc
 
 ## Remaining preflight work
 
+The [September 8 execution checklist](order-readiness-2026-09-08.md) separates
+RTC procurement/intake and placement blockers from work that follows purchase.
+The [prototype power disposition](prototype-power-disposition.md) records the
+retained supervised bench scope and the protection handoff before battery use.
+
 Main's [J4 finished-hole correction](header-fit/README.md) is checked in native
 source: four 1.10 mm plated holes, with existing pads/placement preserved. Its
 previous uploaded Gerber archive is superseded. The new

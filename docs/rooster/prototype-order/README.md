@@ -8,6 +8,14 @@ Erik explicitly instructed on September 7: **"Please don't place the order witho
 
 ## Current state
 
+The [September 8 order checklist](order-readiness-2026-09-08.md) records the
+critical path: RTC warehouse receipt, placement reconciliation, final quote,
+Erik's purchase decision, then manual production confirmation. A parts preorder
+today does not make the complete assembly order ready tonight. The
+[prototype power scope](prototype-power-disposition.md) retains the current
+circuitry for supervised current-limited bench evaluation, with battery
+protection and real-load testing explicitly handed off before battery use.
+
 Order preparation is on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2c60616f77a5116eba637098acf98`. All four designs have signed-in Standard-assembly drafts and price previews. Controls/front have all fitted parts matched; main has 41 of 42 BOM groups and Beacon 37 of 38, with only the RTC unavailable. Main/Beacon previews are explicitly **INCOMPLETE RTC - REVIEW ONLY**. Their full BOMs still require U5. The current four draft estimates sum to **$791.07 including separately listed rail removal, before RTCs and related fee changes, shipping, tax and external parts**. Main/Beacon now use the current source and fill/cap process; controls/front retain September 7 observations. No complete landed quote, manufacturing release or order exists.
 
 Separate [supplier CPL candidates](supplier-placement-candidates/README.md) correct the controls buttons and main/Beacon header centers; main J4 also rotates to match its vertical holes. Native geometry is unchanged. U3 model/placement alignment, remaining manufacturing dispositions and missing-model orientation checks remain open. [Quote progress](quote-progress.md) records exact inputs, services, prices and review scope.
