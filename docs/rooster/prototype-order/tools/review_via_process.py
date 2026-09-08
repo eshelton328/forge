@@ -28,14 +28,19 @@ def point(v):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output-dir', type=Path, required=True)
-    out = parser.parse_args().output_dir
+    parser.add_argument('--candidate', type=Path, default=BASE / 'fabrication-candidates/4d8e65d-r1')
+    parser.add_argument('--cam-reference', type=Path, default=BASE / 'cam-review/4d8e65d-r1/native-reference.json')
+    args = parser.parse_args()
+    out = args.output_dir
+    assert not out.exists(), 'Refusing to overwrite an existing process attachment set'
     out.mkdir(parents=True, exist_ok=True)
-    manifest_path = BASE / 'fabrication-candidates/4d8e65d-r1/manifest.json'
+    manifest_path = args.candidate / 'manifest.json'
     manifest = json.loads(manifest_path.read_text())
-    cam_reference = json.loads((BASE / 'cam-review/4d8e65d-r1/native-reference.json').read_text())
+    cam_reference = json.loads(args.cam_reference.read_text())
     assert cam_reference['candidate_manifest_sha256'] == sha(manifest_path)
     report = {'scope': __doc__, 'generator_sha256': sha(Path(__file__)),
               'candidate_manifest_sha256': sha(manifest_path),
+              'cam_reference_sha256': sha(args.cam_reference),
               'mask_polygon_max_error_mm': 0.001, 'boards': {}}
     for name, entry in manifest['boards'].items():
         source = ROOT / 'boards' / name / (name + '.kicad_pcb')

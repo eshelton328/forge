@@ -28,8 +28,8 @@ source: four 1.10 mm plated holes, with existing pads/placement preserved. Its
 previous uploaded Gerber archive is superseded. The new
 [090b207-r1 fabrication candidate](fabrication-candidates/README.md) passes the
 independent native/CAM checks, with the same supplier placement corrections
-rebound to its hashes. Regenerate source-bound via attachments and replace the
-supplier draft before ordering.
+rebound to its hashes. Source-bound via attachments now match this candidate, including the enlarged
+open J4 holes. Replace/reprice the supplier draft before ordering.
 
 The [via-process specification](via-process/README.md) now calls for epoxy fill
 and copper cap on main/Beacon, preserving all component holes. Their draft

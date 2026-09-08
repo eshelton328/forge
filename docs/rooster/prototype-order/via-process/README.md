@@ -1,7 +1,7 @@
 # Prototype via fabrication process
 
-Source: native PCB commit `4d8e65d327e1dd0e45adc906855b9b2ccb610a91` and its
-immutable r1 fabrication candidate. **Specify epoxy-filled and copper-capped
+Current source: native PCB commit `090b207` and fabrication candidate
+`090b207-r1`. The original `4d8e65d-r1` attachments remain historical. **Specify epoxy-filled and copper-capped
 vias for main and Beacon.** This supersedes the solder-mask **Plugged** option
 used in the earlier cost drafts. Retain tented vias on controls and front.
 No native copper, drill, mask or placement geometry changes in this disposition.
@@ -60,11 +60,17 @@ the resulting engineering and cost comparison.
 
 ## Supplier attachment and verification
 
-- [Main exact fill coordinates](4d8e65d-r1/alec-main-fill-holes.csv) and
-  [main drill map](4d8e65d-r1/alec-main-via-process.svg).
-- [Beacon exact fill coordinates](4d8e65d-r1/alec-sensor-fill-holes.csv) and
-  [Beacon drill map](4d8e65d-r1/alec-sensor-via-process.svg).
-- [Source-bound inventory](4d8e65d-r1/via-process-review.json), including holes
+The current attachment set was regenerated against `090b207-r1` and its matching
+CAM reference. All four fill-coordinate CSVs match the earlier set byte-for-byte.
+The inventory now records the four main J4 holes as **1.10 mm / leave open**;
+all fill counts and locations remain unchanged. The updated main drill map was
+rendered and inspected. No PCB bytes were changed by this process audit.
+
+- [Main exact fill coordinates](090b207-r1/alec-main-fill-holes.csv) and
+  [main drill map](090b207-r1/alec-main-via-process.svg).
+- [Beacon exact fill coordinates](090b207-r1/alec-sensor-fill-holes.csv) and
+  [Beacon drill map](090b207-r1/alec-sensor-via-process.svg).
+- [Source-bound inventory](090b207-r1/via-process-review.json), including holes
   excluded from filling, mask-intersection evidence and artifact hashes.
 
 CSV coordinates include both native downward-positive Y and Gerber
@@ -82,7 +88,10 @@ remain disabled. No supplier production approval is claimed here.
 Reproduce using KiCad Python:
 
 ```sh
-python tools/review_via_process.py --output-dir via-process/4d8e65d-r1
+python tools/review_via_process.py \
+  --candidate fabrication-candidates/090b207-r1 \
+  --cam-reference cam-review/090b207-r1/native-reference.json \
+  --output-dir via-process/090b207-r1-new
 ```
 
 Run from `docs/rooster/prototype-order`. The audit checks source/manifest hashes,

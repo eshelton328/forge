@@ -28,9 +28,9 @@ inspected, and current native fabrication/DRC/connectivity checks pass. These
 small export contour differences do not change the prototype disposition.
 
 The mask comparison preserves the earlier 0.10 mm bridge-separation evidence.
-The via fill/cap **requirement** remains applicable, but regenerate its source-bound
-attachments for this candidate so J4's open-hole diameter is recorded correctly.
-Then replace/reprice supplier drafts with the selected fill/cap process. Remaining
+The [via attachments](../via-process/README.md) now match this candidate and
+record J4's 1.10 mm holes as open; fill locations are unchanged. Replace/reprice
+supplier drafts with the selected fill/cap process. Remaining
 placement, RTC supply, stackup, rail and first-power work is recorded in preflight.
 
 ## Historical candidate: 4d8e65d-r1

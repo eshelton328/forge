@@ -258,8 +258,8 @@ The [J4 hole correction](header-fit/README.md) now changes main's four plated
 header holes from 1.00 to 1.10 mm, preserving its lands and placement. The new
 [090b207-r1 candidate](fabrication-candidates/README.md) has passed native/CAM
 checks and has rebound supplier CPLs. Main's uploaded original archive is
-historical only; replace it before ordering. Regenerate the via attachments for
-the new source and update/reprice the fabrication process. The saved price remains
+historical only; replace it before ordering. The via attachments now match
+the new source; update/reprice the fabrication process. The saved price remains
 an incomplete observation.
 
 All four archives have been uploaded. The [amplifier review](assembly-drawing-review.md)
