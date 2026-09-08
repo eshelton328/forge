@@ -1,6 +1,6 @@
 # JLCPCB prototype assembly preflight
 
-September 7, 2026. Quote target: five fabricated and two assembled copies of each design. No quote or order submitted.
+September 7, 2026. Quote target: five fabricated and two assembled copies of each design. The main-board candidate has been uploaded for quotation; sign-in is required to reach assembly pricing. No complete quote or order exists. [Quote progress](quote-progress.md).
 
 JLCPCB publishes a five-board fabrication minimum and assembly quantities starting at two. [Fabrication FAQ](https://jlcpcb.com/resources/pcb-prototyping), [PCBA capabilities](https://jlcpcb.com/capabilities/pcb-assembly-capabilities).
 

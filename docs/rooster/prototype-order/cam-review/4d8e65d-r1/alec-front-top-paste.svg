@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="28.0mm" height="14.0mm" viewBox="-2.0 -12.0 28.0 14.0" style="background-color:white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke-linejoin="round" stroke-linecap="round" id="l-mechanical-outline" transform="translate(0 -10.0) scale(1 -1)">
+    <path d="M 0.0 0.0 L 24.0 0.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 0.0 -10.0 L 0.0 0.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 24.0 0.0 L 24.0 -10.0 L 0.0 -10.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+  </g>
+  <g stroke-linejoin="round" stroke-linecap="round" id="l-top-paste" transform="translate(0 -10.0) scale(1 -1)">
+    <rect x="18.8" y="-4.75" width="1.5" height="0.9" fill="#111111"/>
+    <rect x="18.8" y="-6.15" width="1.5" height="0.9" fill="#111111"/>
+    <rect x="15.7" y="-4.75" width="1.5" height="0.9" fill="#111111"/>
+    <rect x="15.7" y="-6.15" width="1.5" height="0.9" fill="#111111"/>
+    <rect x="3.85" y="-5.85" width="0.9" height="1.7" fill="#111111"/>
+    <rect x="7.25" y="-5.85" width="0.9" height="1.7" fill="#111111"/>
+  </g>
+</svg>

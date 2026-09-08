@@ -1,0 +1,52 @@
+# Fabrication candidates for quote review
+
+`4d8e65d-r1` contains four Gerber/drill archives plus matching BOM/CPL pairs,
+exported from committed native sources at `4d8e65d327e1dd0e45adc906855b9b2ccb610a91`.
+These are quote candidates, not an approved manufacturing release. The manifest
+binds the native inputs, exporter, layer list and every output file by SHA-256.
+Archives contain fabrication layers and separate plated/unplated drill files;
+the export logs, drill reports and job metadata remain outside the uploaded ZIP.
+
+The [independent CAM check](../cam-review/4d8e65d-r1/cam-check.json) compares every
+exported round hole and slot with KiCad-loaded native geometry, preserving
+plating classes and multiplicities. All outline segments, layer counts and
+207 fitted BOM/CPL references agree. No source geometry changed during export.
+
+| Board | Outline (mm) | Copper layers | Plated holes, including slots | Unplated holes | Fitted references |
+| --- | --- | --- | --- | --- | --- |
+| alec-main | 64 × 56 | 4 | 263 (4 slots) | 6 | 111 |
+| alec-controls | 27 × 34 | 2 | 26 | 4 | 5 |
+| alec-front | 24 × 10 | 2 | 6 | 2 | 3 |
+| alec-sensor | 64 × 56 | 4 | 211 (4 slots) | 6 | 88 |
+
+The comparator allows 0.00051 mm drill rounding and 0.0000011 mm outline rounding.
+Gerbonara 1.6.3 reports KiCad's `G90` position after the Excellon header as a syntax
+warning; the parsed absolute coordinates and all hole geometries match the native
+reference. This is not a supplier acceptance claim. Temporary-directory cleanup
+warnings are also retained verbatim in the report.
+
+Top/bottom PNGs in the CAM directory show copper and drills from the actual ZIP;
+bottom overviews are mirrored into the viewing convention of a flipped board.
+Separate mask, paste and silkscreen SVGs use the Gerber top-view coordinate
+convention. Plain SVG rendering avoids filter-dependent solder-mask effects and
+uses explicit board bounds so empty layers cannot expand the viewport to zero.
+The copper overviews were visually inspected for gross truncation, outline/hole
+alignment and recognizable placement. The per-layer SVGs support the remaining
+stencil, mask and assembly review; their existence does not close that review.
+
+Still required before order release: remaining component dispositions (including
+the [amplifier land-pattern difference](../assembly-drawing-review.md)), supplier
+pin-1/rotation review, stackup and via treatment, Standard-board rails/fiducials
+and detachment, complete THT/both-face assembly coverage, RTC supply, external
+parts and first-power readiness, final checks and an accepted complete quote.
+No rails or panels have been added to the functional board outlines.
+
+The first main-board ZIP was uploaded to JLCPCB for quoting on September 7, 2026.
+See [quote progress](../quote-progress.md) for the supplier response and sign-in
+boundary. Candidate files must not be replaced in place if source geometry changes.
+
+Reproduce with `tools/build_fabrication_candidate.py`; run
+`tools/review_fabrication_candidate.py native <candidate> <review-dir>` using
+KiCad Python, followed by `cam` using Python 3.12 with Gerbonara 1.6.3 and
+CairoSVG 2.9.1. The current macOS runtime requires KiCad's Frameworks directory
+in `DYLD_FALLBACK_LIBRARY_PATH` for CairoSVG.

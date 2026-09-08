@@ -4,13 +4,14 @@
 
 ## Current state
 
-Order preparation has started on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2c60616f77a5116eba637098acf98`. No quote, supplier submission, manufacturing release or order exists yet. The existing design reviews supply the starting evidence; this directory is an order workspace, not an upload-ready release.
+Order preparation is on `codex/rooster-prototype-orders`, based on `0d0d8af3b1d2c60616f77a5116eba637098acf98`. Four source-bound fabrication candidates now exist; the main-board ZIP has been uploaded for quoting and correctly recognized by JLCPCB. Component/assembly pricing requires sign-in. No complete quote, manufacturing release or order exists. [Quote progress](quote-progress.md) records the exact submitted archive and incomplete cost observations.
 
 - [Input audit](input-audit.json): at kickoff, 69 source-map hashes matched the baseline checkout, 136 Cube saved bindings matched, and 214 Sensor bindings matched their preserved review inputs. PRs #126/#127 were merged, with no open PRs at capture. The subsequent native purchasing-field changes are recorded separately below.
 - [Sourcing inventory](sourcing.csv): 208 original review BOM rows across the four boards, including one explicit DNP. All 207 fitted rows have exact selected MPNs and manufacturer-specific catalog IDs, including the 95 populated main-board rows missing MPNs in the original review. [Part selection review](part-selection-review.md) records substitutions and remaining checks. Of the 51 selected unique parts, the RTC has no ready catalog stock in the dated capture.
 - [Source integration](source-integration-review.md): selected purchasing fields now reconcile across the eleven native files, fresh netlists and review BOMs. Independent source-token and KiCad geometry checks confirm that values, circuits, copper, fit flags and models are preserved. The CSV remains a sourcing record, not a supplier-upload BOM.
 - [Draft quote BOM/CPL inputs](draft-quote-inputs/README.md): four BOMs and four placement files cover all 207 fitted references, including both faces and through-hole parts. They now use reconciled native purchasing fields and native positions; remaining component checks, supplier rotations and fabrication outputs still gate release.
 - [Power-component review](power-component-review.md): eight local converter capacitor banks pass the source-bound selection calculation using manufacturer bias models and explicit tolerance/reserve assumptions. Nine proposed 0603 capacitor references change to GRT188R61A106KE13D; inductors and layout are retained. Actual startup, transients, depleted-cell operation and temperatures remain first-board measurements.
+- [Fabrication candidates and CAM check](fabrication-candidates/README.md): four Gerber/drill/BOM/CPL sets agree with native holes, slots, outlines, copper-layer counts and all 207 fitted references. The [additional drawing review](assembly-drawing-review.md) records JST PH pad agreement and the open amplifier land-pattern difference.
 
 ## Board scope
 

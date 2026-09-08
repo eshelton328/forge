@@ -1,0 +1,32 @@
+Drill report for alec-main.kicad_pcb
+Created on 2026-09-07T20:03:13
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'alec-main-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.200mm  0.0079"  (14 holes))
+    T2  0.250mm  0.0098"  (192 holes))
+    T3  0.300mm  0.0118"  (8 holes))
+    T4  0.300mm  0.0118"  (12 holes))
+    T5  0.400mm  0.0157"  (29 holes))
+    T6  0.600mm  0.0236"  (4 holes)  (with 4 slots)
+    T7  1.000mm  0.0394"  (4 holes))
+
+    Total plated holes count 263
+
+
+Drill file 'alec-main-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0.650mm  0.0256"  (2 holes))
+    T2  3.200mm  0.1260"  (4 holes))
+
+    Total unplated holes count 6

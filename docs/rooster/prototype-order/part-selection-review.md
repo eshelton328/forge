@@ -32,7 +32,11 @@ The [DigiKey 1,000-reel/cut-tape product listing](https://www.digikey.com/en/pro
 
 Next action is a concrete JLCPCB preorder or Global Sourcing availability/lead-time quote for this exact part, including attrition and any per-order allocation. JLCPCB's [Global Sourcing instructions](https://jlcpcb.com/help/article/how-to-use-jlcpcb-global-sourcing-parts-service) describe selecting an external distributor and receiving parts into its assembly warehouse; this is not a way to obtain loose radar modules delivered to Erik. The parts cost and timing must be included in the reviewable spending decision. No preorder, supplier message, cart checkout, payment or order has been made.
 
-## Remaining work before upload
+## Remaining work before order release
+
+The main fabrication candidate has now been uploaded for quotation only. This
+does not close the component gates below; see [quote progress](quote-progress.md)
+and the [additional drawing review](assembly-drawing-review.md).
 
 1. Finish remaining electrical/package review: shared battery/load envelope; component pin/EP, switches, fuse, LEDs, custom USB/PH footprints and exact header/socket drawings. The [power-component review](power-component-review.md) now dispositions the local capacitor banks and inductors for prototype selection, with measured stability/thermal/depleted-cell validation assigned to first-board tests. Per-IC decoupling and the Beacon's Samsung bulk capacitor remain within the applicable device review; the Murata model pass is not whole-BOM approval. Use prior reviews wherever their inputs and scope still match.
 2. Native exact MPN/LCSC integration is complete and checked. Keep the sourcing overlay and native fields synchronized when resolving any remaining part-review finding; a demonstrated geometry issue requires a new source review and affected checks.
