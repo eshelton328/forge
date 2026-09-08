@@ -1,4 +1,4 @@
-# JLCPCB quote progress — September 7, 2026
+# JLCPCB quote progress — September 7–8, 2026
 
 **No complete four-board landed quote, paid reservation, payment or submitted order exists.**
 All four signed-in drafts now contain Gerbers, BOMs and complete placement files.
@@ -11,7 +11,57 @@ September 8: [stackup/USB requirements](stackup-review/README.md) now recommend
 the named JLC041611-7628 construction for the main/Beacon prototype quotes.
 The native USB routing is retained as a disclosed functional-test risk; it has
 not been certified at 90 Ω. The current via attachments were reproduced exactly
-and committed as `b3818f9`. Actual supplier uploads and repricing are in progress.
+and committed as `b3818f9`; stackup/USB evidence is in `d957338`. Main's new upload
+and revised price are recorded immediately below. Beacon's update remains open.
+
+## September 8 — current main draft, 090b207-r1
+
+A new saved supplier draft replaces the superseded main Gerbers. Its title is
+**alec-main 090b207 - INCOMPLETE RTC - REVIEW ONLY**. The account-specific URL
+is retained in the private Rooster note; it is a draft identifier, not an order.
+
+| Uploaded input | SHA-256 |
+| --- | --- |
+| `fabrication-candidates/090b207-r1/alec-main/alec-main-gerbers.zip` | `fdf29a45b08e7f7863141c78b3ecf48b4a34069a986c37b83001055218727ae0` |
+| Adjacent `alec-main-bom.csv` | `9e2f10a6fd418bff844181ae03c07c44b041786fba7198782cb7e382b9ab5507` |
+| `supplier-placement-candidates/090b207-r1-headers/alec-main-cpl.csv` | `b8118c464899128b6c40f13c5f933c3c276592ff2955c50fab9680f62cd7576e` |
+
+The supplier detects **four layers / 64 × 56 mm**. The quote retains five
+fabricated and two assembled, Standard / Top Side, Single PCB, with supplier
+processing dimensions **74 × 70 mm**. Native outlines are unchanged. Selected:
+nominal 1.6 mm, green/white, FR4 TG155, 1 oz outer and inner, ENIG 1 µin,
+**JLC041611-7628**, impedance control **No requirement**, **Epoxy Filled & Capped**,
+required Horizontal Electroless Copper Plating, 0.2 mm minimum drill option,
+Kelvin/flying-probe tests and ±0.2 mm outline tolerance. Named stackup selection
+does not certify trace impedance. Both production-file and placement dialogs
+were set to Yes with **Do not confirm automatically checked**. Factory rail
+removal is Yes. The saved PCB tab confirms Standard / Top Side / quantity 2.
+
+After processing the matching BOM/CPL, restored both PH connector rows and
+selected exact J5 C5305068 (4,069 stock shown). The final BOM summary reads
+**42 detected / 41 confirmed / 1 inventory shortage**; the DOM contains no
+unchecked available component row. U5 still has a two-part shortfall. J4's
+matched footprint now explicitly reads **Samtec_TSW-104-07-G-S_Drill1.10mm**.
+As in the earlier draft, U5 was temporarily excluded only to inspect placements
+and prices. Its native/uploaded BOM/CPL entries remain required. No incomplete
+assembly is approved for purchase.
+
+The settled Quote & Order page shows **$257.31 = $99.41 fabrication/options +
+$157.90 Standard assembly excluding RTC**. The assembly amount includes $2.30
+depaneling; all its other fees match the earlier main breakdown below. The
+$20.41 fabrication increase is now confirmed on this actual new assembly draft,
+not merely inferred from the separate calculator. It consists of $17.06 fill/cap
+and $3.35 horizontal plating. No separate stackup fee appears. The displayed
+times are PCB 3 days and assembly 5–6 days plus one advanced-option day; no rush
+was selected. Shipping, tax, RTC procurement and related assembly adjustments
+remain excluded. No landed total or arrival date is established.
+
+The new 3D preview renders, but U3 still appears vertically displaced relative
+to its native land pattern. Switching to 2D does not expose an authoritative
+numbered-pin datum. No speculative U3 offset or U6 rotation was applied. These
+placement issues remain for reconciliation against native pad coordinates and
+supplier production data with manual approval. No Save to Cart, order, paid
+reservation, payment, supplier outreach or production approval was submitted.
 
 Controls and front have all fitted parts matched. The four price previews and
 the controls/header placement corrections are recorded below. No PCB Save to Cart
@@ -33,7 +83,7 @@ draft URL are in the private Rooster task note. Postal-code-specific shipping/ta
 has not been reached. These are live UI observations from September 7; stock,
 pricing and lead times may change.
 
-## Main-board draft
+## September 7 — historical main-board draft
 
 - Uploaded `fabrication-candidates/4d8e65d-r1/alec-main/alec-main-gerbers.zip`,
   SHA-256 `abee31e91877f17234b467d81afb02f6149a3f7133e2fabc4cf0385453742ac9`.
