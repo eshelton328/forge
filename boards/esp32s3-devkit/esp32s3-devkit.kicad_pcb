@@ -8343,7 +8343,7 @@
 			(uuid "643041d3-8009-41c6-b437-ce01604fe022")
 		)
 		(embedded_fonts no)
-		(model "/Users/erik/Workspaces/the-forge/libs/footprints/TPS63070.pretty/XFL4020-152MEC.step"
+		(model "${KIPRJMOD}/../../libs/footprints/TPS63070.pretty/XFL4020-152MEC.step"
 			(offset
 				(xyz 0 0 0)
 			)

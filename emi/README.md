@@ -11,7 +11,7 @@ This folder wires **[openEMS](https://www.openems.de/)** (FDTD field solver) and
 [`emi/docker/Dockerfile`](docker/Dockerfile) builds a self-contained image from build context [`emi/docker/`](docker/). **Pinned revisions:** one file of record for openEMS commit and gerber2ems SHA: [`emi/docker/emi-pinned-versions.env`](docker/emi-pinned-versions.env). The Dockerfile and [`scripts/ci/run-emi-fixture.sh`](../scripts/ci/run-emi-fixture.sh) both read those values (`GERBER2EMS_SHA` may be set in the environment before the fixture script runs to override the file).
 
 ```bash
-docker build -t the-forge-open-ems:local -f emi/docker/Dockerfile emi/docker
+docker build -t forge-open-ems:local -f emi/docker/Dockerfile emi/docker
 ```
 
 ## Fixture (upstream example)
@@ -19,7 +19,7 @@ docker build -t the-forge-open-ems:local -f emi/docker/Dockerfile emi/docker
 We do **not** vendor Gerber slices under `emi/` yet. The CI/local script does a shallow fetch of **gerber2ems** at the pinned SHA (from [`emi/docker/emi-pinned-versions.env`](docker/emi-pinned-versions.env), unless overridden) and runs **`examples/stub_short`**:
 
 ```bash
-bash scripts/ci/run-emi-fixture.sh the-forge-open-ems:local
+bash scripts/ci/run-emi-fixture.sh forge-open-ems:local
 ```
 
 Or from the Makefile: **`make emi-fixture-docker`**.

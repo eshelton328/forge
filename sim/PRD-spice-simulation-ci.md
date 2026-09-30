@@ -1,6 +1,6 @@
 # PRD: Schematic and layout-aware SPICE simulation in CI
 
-Tracking issue: https://github.com/eshelton328/the-forge/issues/43
+Tracking issue: https://github.com/eshelton328/forge/issues/43
 
 ---
 

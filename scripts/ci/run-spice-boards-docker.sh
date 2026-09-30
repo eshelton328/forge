@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Run export + run_sim.py for each board in BOARDS_JSON (JSON array of folder names).
-# Requires a pre-built image tag (default the-forge-sim:ci) with KiCad + ngspice + Python venv.
+# Requires a pre-built image tag (default forge-sim:ci) with KiCad + ngspice + Python venv.
 set -euo pipefail
 
 : "${BOARDS_JSON:?BOARDS_JSON must be set to a JSON array of board names}"
 : "${GITHUB_WORKSPACE:?GITHUB_WORKSPACE must be set}"
 ROOT="${GITHUB_WORKSPACE}"
-IMAGE="${SIM_DOCKER_IMAGE:-the-forge-sim:ci}"
+IMAGE="${SIM_DOCKER_IMAGE:-forge-sim:ci}"
 SIM_KICAD_DOCKER_IMAGE="${SIM_KICAD_DOCKER_IMAGE:-$IMAGE}"
 
 failed=0

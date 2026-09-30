@@ -4,7 +4,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
-IMAGE="${SIM_DOCKER_IMAGE:-the-forge-sim:local}"
+IMAGE="${SIM_DOCKER_IMAGE:-forge-sim:local}"
 
 ensure_image() {
   if ! docker image inspect "${IMAGE}" >/dev/null 2>&1; then

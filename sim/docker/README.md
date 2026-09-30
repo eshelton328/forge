@@ -3,7 +3,7 @@
 Derived from the same digest-pinned `kicad/kicad:10.0` image used in CI (see [`Dockerfile`](./Dockerfile): `FROM …@sha256:…`), with:
 
 - **ngspice** — Debian package version pinned via `NGSPICE_DEB_VERSION` (`ARG` in the Dockerfile; bump when the base OS changes packages).
-- **Python** — virtualenv at `/opt/the-forge-sim` with [`requirements.txt`](../../requirements.txt) (`pyyaml`, `pytest`, `matplotlib`) for `scripts/sim/run_sim.py`.
+- **Python** — virtualenv at `/opt/forge-sim` with [`requirements.txt`](../../requirements.txt) (`pyyaml`, `pytest`, `matplotlib`) for `scripts/sim/run_sim.py`.
 
 ## Pins (keep in sync)
 
@@ -17,7 +17,7 @@ Derived from the same digest-pinned `kicad/kicad:10.0` image used in CI (see [`D
 From the **repository root**:
 
 ```bash
-docker build -t the-forge-sim:local -f sim/docker/Dockerfile .
+docker build -t forge-sim:local -f sim/docker/Dockerfile .
 ```
 
 ## Run export + board sim (one shot)
@@ -29,10 +29,10 @@ docker run --rm \
   --user "$(id -u):$(id -g)" \
   -e HOME=/workspace/.kicad-ci-home \
   -e BOARD=tps63070-breakout \
-  -e SIM_KICAD_DOCKER_IMAGE=the-forge-sim:local \
+  -e SIM_KICAD_DOCKER_IMAGE=forge-sim:local \
   -v "$PWD:/workspace" \
   -w /workspace \
-  the-forge-sim:local \
+  forge-sim:local \
   bash -c '
     set -euo pipefail
     source /workspace/scripts/ci/setup-kicad-env.sh
@@ -53,7 +53,7 @@ docker compose run --rm \
   --user "$(id -u):$(id -g)" \
   -e HOME=/workspace/.kicad-ci-home \
   -e BOARD=tps63070-breakout \
-  -e SIM_KICAD_DOCKER_IMAGE=the-forge-sim:local \
+  -e SIM_KICAD_DOCKER_IMAGE=forge-sim:local \
   sim \
   bash -c '
     set -euo pipefail
@@ -79,8 +79,8 @@ docker compose run --rm \
 
 ## Convenience wrapper
 
-[`scripts/sim/run-spice-in-docker.sh`](../../scripts/sim/run-spice-in-docker.sh) — `--board <name>` or `--fixture` (builds the image if `the-forge-sim:local` is missing).
+[`scripts/sim/run-spice-in-docker.sh`](../../scripts/sim/run-spice-in-docker.sh) — `--board <name>` or `--fixture` (builds the image if `forge-sim:local` is missing).
 
 The unified image uses **Python 3.13** (KiCad base); **`pytest.yml`** still runs tests on **3.12** — simulation numerics should be engine-driven, not Python-version–sensitive.
 
-Tracks [#62](https://github.com/eshelton328/the-forge/issues/62).
+Tracks [#62](https://github.com/eshelton328/forge/issues/62).

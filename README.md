@@ -1,11 +1,13 @@
-# The Forge
+# forge
 
 Hardware design monorepo for KiCad PCB projects with automated CI/CD.
+
+Repository: [eshelton328/forge](https://github.com/eshelton328/forge).
 
 ## Repository Structure
 
 ```
-the-forge/
+forge/
 ├── Makefile          # make check / erc / drc / fab-drc
 ├── boards/           # Individual board projects
 ├── designs/          # Schematic studies before PCB layout
@@ -145,3 +147,20 @@ DRC rules for each fab house are stored in `fab-rules/` as `.kicad_dru` files. C
 | PCBWay 2L Advanced | `pcbway-2layer-advanced.kicad_dru` | 0.2mm via drill, 0.35mm via pad |
 | PCBWay 4L Standard | `pcbway-4layer.kicad_dru` | |
 | PCBWay 4L Advanced | `pcbway-4layer-advanced.kicad_dru` | 0.2mm via drill, 0.35mm via pad vs standard 4L |
+
+## Naming compatibility
+
+The repository and checkout directory are named `forge`. The local and CI Docker
+images use `forge-sim` and `forge-open-ems`.
+
+A few references intentionally retain the previous name:
+
+- The GitHub environment `the-forge` holds `FORGE_PAT`, used by the README publishing
+  workflow. Keep the workflow attached to it until the secret is migrated.
+- `scripts/alarm/design.py` uses `the-forge/alec/` as a deterministic UUID namespace.
+  Changing it would regenerate KiCad component, pin and wire IDs.
+- Recorded simulation reports, exported netlists and test transcripts retain the
+  image names and paths used when they were produced. The physics report and its
+  `scripts/physics/render_report.py` renderer retain their original GitHub link;
+  the renderer is covered by the archived verification source hashes. Update these
+  records through their normal regeneration and verification workflows.

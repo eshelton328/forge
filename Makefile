@@ -1,4 +1,4 @@
-# the-forge — local KiCad checks
+# forge — local KiCad checks
 #
 # One board at a time. Pick the board in either form:
 #   make drc BOARD=my-board
@@ -64,7 +64,7 @@ endif
 .PHONY: help versions erc drc copper-check fab-drc check clean list-boards check-all validate validate-all update-readmes board-images sim-fixture sim-export-board sim-board sim-board-docker sim-fixture-docker emi-fixture-docker
 
 help:
-	@echo "the-forge — KiCad local checks (one board per command)"
+	@echo "forge — KiCad local checks (one board per command)"
 	@echo ""
 	@echo "  default BOARD: $(DEFAULT_BOARD)"
 	@echo ""
@@ -197,8 +197,8 @@ sim-fixture-docker:
 
 emi-fixture-docker:
 	@command -v docker >/dev/null 2>&1 || { echo "docker required"; exit 1; }; \
-	docker build -t the-forge-open-ems:local -f emi/docker/Dockerfile emi/docker && \
-	bash scripts/ci/run-emi-fixture.sh the-forge-open-ems:local
+	docker build -t forge-open-ems:local -f emi/docker/Dockerfile emi/docker && \
+	bash scripts/ci/run-emi-fixture.sh forge-open-ems:local
 
 check-all:
 	@set -e; for d in boards/*/; do \
