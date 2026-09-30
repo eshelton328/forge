@@ -6,7 +6,7 @@ services:
     build:
       context: ../..
       dockerfile: sim/docker/Dockerfile
-    image: the-forge-sim:local
+    image: forge-sim:local
     volumes:
       - ../..:/workspace
     working_dir: /workspace

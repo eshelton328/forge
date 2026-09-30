@@ -18,13 +18,13 @@ RUN apt-get update \
 WORKDIR /workspace
 
 # Build context is the repository root (see sim/docker/README.md).
-COPY requirements.txt /tmp/the-forge-requirements.txt
-RUN python3 -m venv /opt/the-forge-sim \
-  && /opt/the-forge-sim/bin/pip install --disable-pip-version-check --no-cache-dir -r /tmp/the-forge-requirements.txt \
-  && rm /tmp/the-forge-requirements.txt \
-  && chmod -R a+rX /opt/the-forge-sim
+COPY requirements.txt /tmp/forge-requirements.txt
+RUN python3 -m venv /opt/forge-sim \
+  && /opt/forge-sim/bin/pip install --disable-pip-version-check --no-cache-dir -r /tmp/forge-requirements.txt \
+  && rm /tmp/forge-requirements.txt \
+  && chmod -R a+rX /opt/forge-sim
 
-ENV PATH="/opt/the-forge-sim/bin:${PATH}"
+ENV PATH="/opt/forge-sim/bin:${PATH}"
 
 # Match upstream image default for bare `docker run` without `--user` (CI passes `--user "$(id -u):$(id -g)"`).
 USER kicad

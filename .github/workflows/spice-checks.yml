@@ -16,7 +16,7 @@ concurrency:
 env:
   KICAD_IMAGE: "kicad/kicad:10.0@sha256:feb600e931ca7ad8ae684566131edbea32218cb90ab54bb2ea0944cee257eea6"
   # Built from sim/docker/Dockerfile; reports use SIM_KICAD_DOCKER_IMAGE for toolchain line.
-  SIM_DOCKER_IMAGE: the-forge-sim:ci
+  SIM_DOCKER_IMAGE: forge-sim:ci
 
 jobs:
   detect-spice:

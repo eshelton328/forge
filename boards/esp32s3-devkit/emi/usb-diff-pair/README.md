@@ -36,10 +36,10 @@ intermediate.)
 ## Running
 
 ```bash
-docker build -t the-forge-open-ems:local -f emi/docker/Dockerfile emi/docker
+docker build -t forge-open-ems:local -f emi/docker/Dockerfile emi/docker
 docker run --rm --user "$(id -u):$(id -g)" \
   -v "$PWD/boards/esp32s3-devkit/emi/usb-diff-pair:/work" -w /work \
-  the-forge-open-ems:local -a
+  forge-open-ems:local -a
 ```
 
 On Apple Silicon add `--platform linux/amd64` to both commands — the

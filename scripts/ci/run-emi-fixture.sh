@@ -4,7 +4,7 @@
 # Revisions come from emi/docker/emi-pinned-versions.env unless GERBER2EMS_SHA is preset.
 set -euo pipefail
 
-IMAGE="${1:-the-forge-open-ems:local}"
+IMAGE="${1:-forge-open-ems:local}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"

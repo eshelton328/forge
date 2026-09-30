@@ -21,7 +21,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  OPEN_EMS_IMAGE: the-forge-open-ems:ci
+  OPEN_EMS_IMAGE: forge-open-ems:ci
 
 jobs:
   open-ems-fixture:

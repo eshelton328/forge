@@ -34,7 +34,7 @@ The output voltage is set by the feedback resistor divider (R2/R3): `V_OUT = V_R
 | Output Voltage | R2 (upper) | R3 (lower) | Status |
 |---------------|-----|-----|--------|
 | 3.3V | 470kΩ | 150kΩ | Default configuration |
-| 5V | — | — | Planned ([#4](https://github.com/eshelton328/the-forge/issues/4)) |
+| 5V | — | — | Planned ([#4](https://github.com/eshelton328/forge/issues/4)) |
 
 <!-- board-images-start -->
 ## Board Images
@@ -106,19 +106,19 @@ CI uploads **`docs/spice-report.md`**, **`docs/spice-report.metrics.json`**, and
 
 **Flow:** KiCad exports **`sim/kicad_export.cir`** (gitignored); assembly merges vendor **`libs/spice`** → export → **`overlay.cir`**. The TI model in-repo is an **ngspice behavioral stub** — see [`libs/spice/README.md`](../../libs/spice/README.md) for what that implies.
 
-Context: [#76](https://github.com/eshelton328/the-forge/issues/76) (transient regression), [#79](https://github.com/eshelton328/the-forge/issues/79) (multi-pass `.ac`), [#74](https://github.com/eshelton328/the-forge/issues/74) (overlay fragments).
+Context: [#76](https://github.com/eshelton328/forge/issues/76) (transient regression), [#79](https://github.com/eshelton328/forge/issues/79) (multi-pass `.ac`), [#74](https://github.com/eshelton328/forge/issues/74) (overlay fragments).
 
 ### Simulation roadmap (long-term)
 
 Goals for automated **design evidence** beyond today’s transient limits (not necessarily all in ngspice alone):
 
 1. **Expected voltage output** — richer reporting vs nominal/datasheet-style bands (line/load tables, ripple budgets, multi-point summaries in artifacts).
-2. **Impedance** — frequency-domain or port metrics (e.g. output impedance, PDN **|Z(f)|**) using `.ac` / richer models and, where needed, layout-linked overlays ([`sim/OVERLAY-PARASITICS.md`](../../sim/OVERLAY-PARASITICS.md), [#74](https://github.com/eshelton328/the-forge/issues/74)).
-3. **EMI-oriented reporting** — structured EMI-adjacent summaries where the toolchain supports them (e.g. harmonic estimates, documented coupling assumptions); **not** chamber certification or guaranteed emissions compliance ([PRD #43](https://github.com/eshelton328/the-forge/issues/43) scope boundaries).
+2. **Impedance** — frequency-domain or port metrics (e.g. output impedance, PDN **|Z(f)|**) using `.ac` / richer models and, where needed, layout-linked overlays ([`sim/OVERLAY-PARASITICS.md`](../../sim/OVERLAY-PARASITICS.md), [#74](https://github.com/eshelton328/forge/issues/74)).
+3. **EMI-oriented reporting** — structured EMI-adjacent summaries where the toolchain supports them (e.g. harmonic estimates, documented coupling assumptions); **not** chamber certification or guaranteed emissions compliance ([PRD #43](https://github.com/eshelton328/forge/issues/43) scope boundaries).
 
-**Today:** transient + load-step regression ([#76](https://github.com/eshelton328/the-forge/issues/76)); **extended rail** (duty-cycled load bursts, low-VIN + heavy load, overshoot probes); **startup ramp** + **stub-cap corner** secondaries; AC **line-response** + Norton **|Zout| / |Zin|** (`ac_small_signal.cir`, `ac_z_out.cir`, `ac_z_in.cir`; [#79](https://github.com/eshelton328/the-forge/issues/79)).
+**Today:** transient + load-step regression ([#76](https://github.com/eshelton328/forge/issues/76)); **extended rail** (duty-cycled load bursts, low-VIN + heavy load, overshoot probes); **startup ramp** + **stub-cap corner** secondaries; AC **line-response** + Norton **|Zout| / |Zin|** (`ac_small_signal.cir`, `ac_z_out.cir`, `ac_z_in.cir`; [#79](https://github.com/eshelton328/forge/issues/79)).
 
-**Repo tracking (scope / prioritization):** EMI-adjacent documentation expectations — [#81](https://github.com/eshelton328/the-forge/issues/81); scheduling non-sim backlog (PRD remainder, hardware variants such as [#4](https://github.com/eshelton328/the-forge/issues/4)) — [#82](https://github.com/eshelton328/the-forge/issues/82).
+**Repo tracking (scope / prioritization):** EMI-adjacent documentation expectations — [#81](https://github.com/eshelton328/forge/issues/81); scheduling non-sim backlog (PRD remainder, hardware variants such as [#4](https://github.com/eshelton328/forge/issues/4)) — [#82](https://github.com/eshelton328/forge/issues/82).
 
 <!-- spice-regression-start -->
 ## SPICE regression (ngspice)

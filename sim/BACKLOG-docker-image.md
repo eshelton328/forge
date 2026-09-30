@@ -1,6 +1,6 @@
 # Unified KiCad + ngspice Docker image
 
-**Status:** **Done** — [#62](https://github.com/eshelton328/the-forge/issues/62).
+**Status:** **Done** — [#62](https://github.com/eshelton328/forge/issues/62).
 
 Delivered:
 

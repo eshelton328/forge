@@ -1,6 +1,6 @@
 # Board overlay (`sim/overlay.cir`) and parasitic evolution
 
-**Tracks:** [issue #63](https://github.com/eshelton328/the-forge/issues/63) (research), [issue #74](https://github.com/eshelton328/the-forge/issues/74) (extraction hook / fragments), [PRD #43](https://github.com/eshelton328/the-forge/issues/43) (US 14, 25).
+**Tracks:** [issue #63](https://github.com/eshelton328/forge/issues/63) (research), [issue #74](https://github.com/eshelton328/forge/issues/74) (extraction hook / fragments), [PRD #43](https://github.com/eshelton328/forge/issues/43) (US 14, 25).
 
 ## Why this exists
 
@@ -35,7 +35,7 @@ All `.include` paths in `assembled.cir` are **relative to `sim/`**, so nested in
 | **B — Manual parasitics** | Overlay adds small L/R/C (or `.subckt` wrappers) for “hot” loops or filters; optionally split into `sim/manual_parasitics.cir` included from overlay for readability. | Unchanged. |
 | **C — Extraction-backed fragments** | Offline tool emits `sim/extracted_*.cir`; overlay adds `.include` of those files (or selective merges). Reviewers see **diffs** on tracked fragments. | **Still unchanged** — same `assemble.py` order; no second pipeline. |
 
-First reference board hook: **[#74](https://github.com/eshelton328/the-forge/issues/74)** — `boards/tps63070-breakout/sim/extracted_hotloop_fragment.cir`, pulled into **`overlay.cir`** (assembled transient deck) and into **`ac_small_signal.cir`** so **secondary `.ac` passes** see the same layout-adjacent elements.
+First reference board hook: **[#74](https://github.com/eshelton328/forge/issues/74)** — `boards/tps63070-breakout/sim/extracted_hotloop_fragment.cir`, pulled into **`overlay.cir`** (assembled transient deck) and into **`ac_small_signal.cir`** so **secondary `.ac` passes** see the same layout-adjacent elements.
 
 Choosing a specific extractor (KiCad-adjacent field solver exports, third-party RLGC, etc.) is **optional per board**; record it under § **Extracted fragments** below once pinned.
 
