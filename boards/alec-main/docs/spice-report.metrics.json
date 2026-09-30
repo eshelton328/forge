@@ -1,7 +1,7 @@
 {
   "baseline": null,
   "exit_code_hint": 0,
-  "generated_at": "2026-09-07T15:31:26Z",
+  "generated_at": "2026-09-30T03:48:49Z",
   "measures": [
     {
       "bounds_max": 4.85,
@@ -1181,7 +1181,7 @@
   "toolchain": {
     "baseline_compare_enabled": false,
     "kicad_cli_version_line": "10.0.1",
-    "kicad_docker_image": "the-forge-sim:ci",
+    "kicad_docker_image": "forge-sim:ci",
     "ngspice_version_line": "******",
     "simulator_exit_code": 0
   },
