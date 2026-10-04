@@ -1,0 +1,94 @@
+{
+  "source_revision": "36b0c3715bcd07e869eb22892a511c2589145204",
+  "scope": "First Cube read-only diagnostic slice of ROO-011; full ticket incomplete",
+  "host": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6",
+  "host_compiler": "Apple clang 21.0.0 (clang-2100.1.1.101)",
+  "kicad_cli": "10.0.1",
+  "physical_test": "NOT_RUN",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "pytest",
+        "tests/",
+        "-q",
+        "-ra"
+      ],
+      "result": "PASS",
+      "passed": 181,
+      "skipped": 1,
+      "warnings": 14,
+      "skip_reason": "Optional tests/test_physical_screening.py requires unavailable scipy",
+      "log": "pytest.log"
+    },
+    {
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "--output",
+        "/Users/erik/.codex/worktrees/rooster-cube-diagnostics/forge/.cache/roo-011/main-netlist.xml",
+        "boards/alec-main/alec-main.kicad_sch"
+      ],
+      "result": "PASS",
+      "output_sha256": "588bdba13dfe34cd574146217841dcafdc076acc1ce9dc5fd571f1998b7cf389",
+      "note": "Fontconfig warnings; source files were not changed"
+    },
+    {
+      "command": [
+        "python3",
+        "firmware/rooster/tools/contract.py",
+        "--netlist",
+        "/Users/erik/.codex/worktrees/rooster-cube-diagnostics/forge/.cache/roo-011/main-netlist.xml"
+      ],
+      "result": "PASS",
+      "log": "contract.log"
+    },
+    {
+      "command": [
+        "python3",
+        "docs/rooster/baselines/2026-09-07/verify.py",
+        "--compare-originals"
+      ],
+      "result": "PASS",
+      "log": "preservation.log"
+    },
+    {
+      "command": [
+        "python3",
+        "firmware/rooster/tools/build.py",
+        "--cli",
+        "/Applications/Arduino IDE.app/Contents/Resources/app/lib/backend/resources/arduino-cli"
+      ],
+      "result": "PASS",
+      "manifest": "build-manifest.json",
+      "log": "compile.log"
+    },
+    {
+      "command": [
+        "python3",
+        "firmware/rooster/tools/build.py",
+        "--verify",
+        "/Users/erik/.codex/worktrees/rooster-cube-diagnostics/forge/.cache/rooster-cube/f18ec0dd306e-1__8q4dv/manifest.json"
+      ],
+      "result": "PASS",
+      "note": "Application, bootloader, partition, ELF and all other emitted artifact hashes checked"
+    },
+    {
+      "command": [
+        "/Users/erik/Library/Arduino15/packages/esp32/tools/esptool_py/5.1.0/esptool",
+        "image-info",
+        "/Users/erik/.codex/worktrees/rooster-cube-diagnostics/forge/.cache/rooster-cube/f18ec0dd306e-1__8q4dv/artifacts/cube_diag.ino.bin"
+      ],
+      "result": "PASS",
+      "log": "image-info.log",
+      "embedded_elf_sha256": "6a4752c830570cca9f02bee044d5f4bdcb3cfd42d2f3e3c94e384a07012bd8c9",
+      "note": "Offline image inspection; embedded ELF SHA-256 matches artifact hash; no board access"
+    }
+  ]
+}
