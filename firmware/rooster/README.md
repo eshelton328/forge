@@ -1,15 +1,17 @@
 # Rooster firmware
 
-Stable paths for ROO-011 diagnostics and ROO-015 applications. These directories
-currently contain documentation only; no PCB firmware, build target or flashing
-command is implemented. Choose and pin the toolchain when implementing ROO-011.
+Stable paths for ROO-011 diagnostics and ROO-015 applications. The first
+[Cube diagnostic image](diagnostics/alarm/README.md) now has a pinned build,
+read-only digital commands and a first-power run sheet. It is compiled and
+host-tested; custom-board operation remains unverified. Application, shared
+protocol and Sensor diagnostic paths remain documentation placeholders.
 
 | Path | Intended responsibility |
 | --- | --- |
 | [alarm](alarm/README.md) | Cube application, UI and alarm behavior |
 | [sensor](sensor/README.md) | Beacon presence application |
 | [shared](shared/README.md) | Explicit protocol types and shared behavior |
-| [diagnostics/alarm](diagnostics/alarm/README.md) | First Cube programming and bench firmware |
+| [diagnostics/alarm](diagnostics/alarm/README.md) | Initial Cube startup/input diagnostics; physical tests pending |
 | [diagnostics/sensor](diagnostics/sensor/README.md) | Beacon programming and bench firmware |
 
 Start from the [product map](../../projects/rooster/README.md), native board
