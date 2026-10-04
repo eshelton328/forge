@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/Users/erik/Workspaces/the-forge-alec/boards/alec-controls/alec-controls.kicad_sch</source>
-    <date>2026-09-07T09:51:00</date>
+    <source>/Users/erik/Workspaces/the-forge-rooster-orders/boards/alec-controls/alec-controls.kicad_sch</source>
+    <date>2026-09-07T19:36:48</date>
     <tool>Eeschema 10.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -29,13 +29,17 @@
       <footprint>Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical</footprint>
       <datasheet>https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</datasheet>
       <fields>
-        <field name="MPN">BM07B-GHS-TBT</field>
+        <field name="MPN">BM07B-GHS-TBT(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC#">C5305068</field>
         <field name="Footprint">Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical</field>
         <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x07" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="BM07B-GHS-TBT"/>
+      <property name="MPN" value="BM07B-GHS-TBT(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC#" value="C5305068"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-controls.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -59,15 +63,19 @@
     <comp ref="SW1">
       <value>VOL-</value>
       <footprint>Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x</footprint>
-      <datasheet>https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf</datasheet>
       <fields>
         <field name="MPN">B3F-1060</field>
+        <field name="Manufacturer">Omron Electronics</field>
+        <field name="LCSC#">C726010</field>
         <field name="Footprint">Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x</field>
-        <field name="Datasheet">https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="B3F-1060"/>
+      <property name="Manufacturer" value="Omron Electronics"/>
+      <property name="LCSC#" value="C726010"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-controls.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -85,15 +93,19 @@
     <comp ref="SW2">
       <value>MODE</value>
       <footprint>Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x</footprint>
-      <datasheet>https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf</datasheet>
       <fields>
         <field name="MPN">B3F-1060</field>
+        <field name="Manufacturer">Omron Electronics</field>
+        <field name="LCSC#">C726010</field>
         <field name="Footprint">Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x</field>
-        <field name="Datasheet">https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="B3F-1060"/>
+      <property name="Manufacturer" value="Omron Electronics"/>
+      <property name="LCSC#" value="C726010"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-controls.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -111,15 +123,19 @@
     <comp ref="SW3">
       <value>VOL+</value>
       <footprint>Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x</footprint>
-      <datasheet>https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf</datasheet>
       <fields>
         <field name="MPN">B3F-1060</field>
+        <field name="Manufacturer">Omron Electronics</field>
+        <field name="LCSC#">C726010</field>
         <field name="Footprint">Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x</field>
-        <field name="Datasheet">https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Omron-Electronics-B3F-1060_C726010.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="B3F-1060"/>
+      <property name="Manufacturer" value="Omron Electronics"/>
+      <property name="LCSC#" value="C726010"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-controls.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -137,15 +153,19 @@
     <comp ref="SW4">
       <value>EG1218</value>
       <footprint>Alarm:EG1218</footprint>
-      <datasheet>https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1810091750_E-Switch-EG1218_C273394.pdf</datasheet>
       <fields>
         <field name="MPN">EG1218</field>
+        <field name="Manufacturer">E-Switch</field>
+        <field name="LCSC#">C273394</field>
         <field name="Footprint">Alarm:EG1218</field>
-        <field name="Datasheet">https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1810091750_E-Switch-EG1218_C273394.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
       <property name="MPN" value="EG1218"/>
+      <property name="Manufacturer" value="E-Switch"/>
+      <property name="LCSC#" value="C273394"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-controls.kicad_sch"/>
       <property name="ki_keywords" value="switch single-pole double-throw spdt ON-ON"/>

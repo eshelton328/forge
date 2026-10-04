@@ -51,6 +51,8 @@ export ALARM_GRID_LIBRARY=/tmp/alec-grid-search.so
 
 Then repeat every verification above. Routing is a geometric construction step, not an electrical signoff. `clean_retired_copper.py --initial` only belongs to the initial migration before routing; it refuses to cut a collision inside the reviewed switching-cell region. Do not use it to conceal a final routing error. `apply_rear_service.py` migrates an existing S1 layout to the rear-control positions from `interface.json`; follow it with the initial cleanup, routing, final cleanup and all verification above. `sync_fields.py` updates BOM metadata on an existing board without rerouting.
 
+The schematic and PCB generators now finish by applying the shared [prototype purchasing overlay](../../../docs/rooster/prototype-order/sourcing.csv) through `scripts/alarm/order_parts.py`. `parts.py` still supplies the underlying circuit/rating defaults. To update ordering fields on the reviewed routed board, use `python3 scripts/alarm/order_parts.py --board alec-sensor`; add `--check` for a read-only drift check. After exporting the native netlist, regenerate the review BOM with `python3 -c "from scripts.alarm.order_parts import export_bom; export_bom('alec-sensor')"`. Complete ERC, DRC/parity, copper, design and BOM checks before accepting the change. No router or enclosure regeneration is required for a verified change to hidden ordering fields alone.
+
 ## Mechanical models and evidence
 
 In a CadQuery 2.8.0 environment, `build_part_models.py` generates the drawing-based switch and socket STEP envelopes. The other model sources are in [3dmodels/README.md](../3dmodels/README.md).

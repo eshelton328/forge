@@ -1,0 +1,151 @@
+{
+  "source_commit": "c53fc800316b509785961fa476465852356e178d",
+  "validation_copy": "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/rooster-integration-check-76lripiy",
+  "commands": [
+    {
+      "name": "netlist-esp32s3-devkit-5v",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "boards/esp32s3-devkit-5v/review/netlist.xml",
+        "boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_sch"
+      ],
+      "started_at": "2026-10-04T20:29:52.958546+00:00",
+      "exit_code": 0,
+      "log": "netlist-esp32s3-devkit-5v.log"
+    },
+    {
+      "name": "netlist-alec-main",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "boards/alec-main/review/netlist.xml",
+        "boards/alec-main/alec-main.kicad_sch"
+      ],
+      "started_at": "2026-10-04T20:29:53.360898+00:00",
+      "exit_code": 0,
+      "log": "netlist-alec-main.log"
+    },
+    {
+      "name": "netlist-alec-controls",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "boards/alec-controls/review/netlist.xml",
+        "boards/alec-controls/alec-controls.kicad_sch"
+      ],
+      "started_at": "2026-10-04T20:29:53.746624+00:00",
+      "exit_code": 0,
+      "log": "netlist-alec-controls.log"
+    },
+    {
+      "name": "netlist-alec-front",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "boards/alec-front/review/netlist.xml",
+        "boards/alec-front/alec-front.kicad_sch"
+      ],
+      "started_at": "2026-10-04T20:29:54.056794+00:00",
+      "exit_code": 0,
+      "log": "netlist-alec-front.log"
+    },
+    {
+      "name": "netlist-alec-sensor",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "boards/alec-sensor/review/netlist.xml",
+        "boards/alec-sensor/alec-sensor.kicad_sch"
+      ],
+      "started_at": "2026-10-04T20:29:54.373700+00:00",
+      "exit_code": 0,
+      "log": "netlist-alec-sensor.log"
+    },
+    {
+      "name": "cube-interfaces",
+      "command": [
+        "python3",
+        "scripts/alarm/verify_interfaces.py"
+      ],
+      "started_at": "2026-10-04T20:29:54.794518+00:00",
+      "exit_code": 0,
+      "log": "cube-interfaces.log"
+    },
+    {
+      "name": "cube-layout",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3",
+        "scripts/alarm/verify_layout.py"
+      ],
+      "started_at": "2026-10-04T20:29:54.853393+00:00",
+      "exit_code": 0,
+      "log": "cube-layout.log"
+    },
+    {
+      "name": "sensor-interfaces",
+      "command": [
+        "python3",
+        "boards/alec-sensor/tools/check_design.py"
+      ],
+      "started_at": "2026-10-04T20:29:55.238695+00:00",
+      "exit_code": 0,
+      "log": "sensor-interfaces.log"
+    },
+    {
+      "name": "sensor-bom",
+      "command": [
+        "python3",
+        "boards/alec-sensor/tools/check_bom.py"
+      ],
+      "started_at": "2026-10-04T20:29:55.279644+00:00",
+      "exit_code": 0,
+      "log": "sensor-bom.log"
+    },
+    {
+      "name": "sensor-service",
+      "command": [
+        "python3",
+        "boards/alec-sensor/tools/check_service_interface.py"
+      ],
+      "started_at": "2026-10-04T20:29:55.387046+00:00",
+      "exit_code": 0,
+      "log": "sensor-service.log"
+    },
+    {
+      "name": "sensor-layout",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3",
+        "boards/alec-sensor/tools/check_layout.py"
+      ],
+      "started_at": "2026-10-04T20:29:55.482671+00:00",
+      "exit_code": 0,
+      "log": "sensor-layout.log"
+    }
+  ]
+}

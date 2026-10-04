@@ -966,7 +966,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://www.ti.com/lit/ds/symlink/tmux1511.pdf"
+			"https://www.ti.com/cn/lit/gpn/tmux1511"
 			(at 100.33 81.28 0)
 			(effects
 				(font
@@ -1028,7 +1028,9 @@
 			(uuid 897f135e-3d50-5f1d-a631-0f09b7d73cc2))
 		(pin
 			"14"
-			(uuid 9cd18849-1cf7-5a62-a1b2-9c3dfb23a907)))
+			(uuid 9cd18849-1cf7-5a62-a1b2-9c3dfb23a907))
+	(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C2866750" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 210.82 71.12)
@@ -1141,7 +1143,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://www.hlktech.com/en/Goods-239.html"
+			"https://www.samtec.com/products/ssw-105-01-f-s"
 			(at 215.9 76.2 0)
 			(effects
 				(font
@@ -1177,7 +1179,9 @@
 			(uuid 4135b55f-fc4a-5997-ae62-88b7c8ee445e))
 		(pin
 			"5"
-			(uuid b44b8605-43e5-5c47-ab99-e0a945edbe9e)))
+			(uuid b44b8605-43e5-5c47-ab99-e0a945edbe9e))
+	(property "Manufacturer" "Samtec" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C5930350" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 43.18 107.95)
@@ -1242,7 +1246,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			""
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 43.18 111.76 0)
 			(effects
 				(font
@@ -1268,7 +1272,9 @@
 			(uuid 36f1877c-722c-5a66-8871-593d1261d76a))
 		(pin
 			"2"
-			(uuid 125a52de-1b14-5a11-bb15-8e4d47eb80ae)))
+			(uuid 125a52de-1b14-5a11-bb15-8e4d47eb80ae))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 43.18 135.89)
@@ -1333,7 +1339,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			""
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 43.18 139.7 0)
 			(effects
 				(font
@@ -1359,7 +1365,9 @@
 			(uuid 188f8bb6-01e7-58db-b859-337f9fbf41e3))
 		(pin
 			"2"
-			(uuid 91d0de47-1157-5b8e-865f-912b58f963f2)))
+			(uuid 91d0de47-1157-5b8e-865f-912b58f963f2))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 93.98 135.89)
@@ -1424,7 +1432,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			""
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 93.98 139.7 0)
 			(effects
 				(font
@@ -1450,7 +1458,9 @@
 			(uuid e913597e-8340-5def-996d-9b9d82a6e132))
 		(pin
 			"2"
-			(uuid c45031c0-8ef2-5a2d-a7f2-0cce76d84a6c)))
+			(uuid c45031c0-8ef2-5a2d-a7f2-0cce76d84a6c))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 215.9 110.49)
@@ -1515,7 +1525,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 215.9 114.3 0)
 			(effects
 				(font
@@ -1523,7 +1533,7 @@
 				(hide yes)))
 		(property
 			"MPN"
-			"GRM188R61A106KAALD"
+			"GRT188R61A106KE13D"
 			(at 215.9 114.3 0)
 			(effects
 				(font
@@ -1549,7 +1559,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C782172" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 248.92 110.49)
@@ -1614,7 +1626,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D"
+			"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810311119_Murata-Electronics-GRM188R71C104KA01D_C45000.pdf"
 			(at 248.92 114.3 0)
 			(effects
 				(font
@@ -1648,7 +1660,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C45000" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 149.86 135.89)
@@ -1713,7 +1727,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D"
+			"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810311119_Murata-Electronics-GRM188R71C104KA01D_C45000.pdf"
 			(at 149.86 139.7 0)
 			(effects
 				(font
@@ -1747,7 +1761,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C45000" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(hierarchical_label
 		"3v3"
 		(shape bidirectional)

@@ -1,0 +1,32 @@
+{
+  "checked_markdown_files": 16,
+  "local_links_resolved": 106,
+  "manifest_entries": 45,
+  "manifest_paths_resolved": 76,
+  "ci_discovery": {
+    "kind": "local evaluation of existing shared-path rule, not a remote CI run",
+    "base": "a56d890",
+    "source_head": "c53fc80",
+    "shared_change_triggers": [
+      "scripts/alarm/README.md",
+      "scripts/alarm/create_boards.py",
+      "scripts/alarm/create_schematics.py",
+      "scripts/alarm/export_review.py",
+      "scripts/alarm/header_fit.py",
+      "scripts/alarm/order_parts.py",
+      "scripts/alarm/package_report.py",
+      "scripts/alarm/verify_interfaces.py",
+      "scripts/alarm/verify_layout.py"
+    ],
+    "selected_boards": [
+      "alec-controls",
+      "alec-front",
+      "alec-main",
+      "alec-sensor",
+      "esp32s3-devkit",
+      "esp32s3-devkit-5v",
+      "tps63070-breakout"
+    ]
+  },
+  "result": "pass"
+}

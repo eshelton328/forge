@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/Users/erik/Workspaces/the-forge-alec/boards/alec-front/alec-front.kicad_sch</source>
-    <date>2026-09-07T09:51:00</date>
+    <source>/Users/erik/Workspaces/the-forge-rooster-orders/boards/alec-front/alec-front.kicad_sch</source>
+    <date>2026-09-07T19:36:48</date>
     <tool>Eeschema 10.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -30,12 +30,16 @@
       <datasheet>https://www.we-online.com/components/products/datasheet/150141M173100.pdf</datasheet>
       <fields>
         <field name="MPN">150141M173100</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="LCSC#">C5342281</field>
         <field name="Footprint">LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100</field>
         <field name="Datasheet">https://www.we-online.com/components/products/datasheet/150141M173100.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Review" part="WE_150141M173100" description="RGB LED, red/green/blue/anode"/>
       <property name="MPN" value="150141M173100"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="LCSC#" value="C5342281"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-front.kicad_sch"/>
       <property name="ki_keywords" value="LED RGB diode"/>
@@ -58,13 +62,17 @@
       <footprint>Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical</footprint>
       <datasheet>https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</datasheet>
       <fields>
-        <field name="MPN">BM06B-GHS-TBT</field>
+        <field name="MPN">BM06B-GHS-TBT(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC#">C189892</field>
         <field name="Footprint">Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical</field>
         <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="BM06B-GHS-TBT"/>
+      <property name="MPN" value="BM06B-GHS-TBT(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC#" value="C189892"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-front.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -90,12 +98,16 @@
       <datasheet>https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf</datasheet>
       <fields>
         <field name="MPN">B3U-1000P</field>
+        <field name="Manufacturer">Omron Electronics</field>
+        <field name="LCSC#">C231329</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_B3U-1000P</field>
         <field name="Datasheet">https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="B3U-1000P"/>
+      <property name="Manufacturer" value="Omron Electronics"/>
+      <property name="LCSC#" value="C231329"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-front.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>

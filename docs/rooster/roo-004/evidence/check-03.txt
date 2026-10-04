@@ -1,0 +1,5 @@
+COMMAND: ['/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3', 'scripts/ci/check_copper_connectivity.py', 'boards/alec-main']
+EXIT: 0
+./src/common/stdpbase.cpp(59): assert ""traits"" failed in Get(): create wxApp before calling this
+copper connectivity: checked 355 pad-nodes across 76 nets
+OK: every pad on a multi-pad net has same-net copper.

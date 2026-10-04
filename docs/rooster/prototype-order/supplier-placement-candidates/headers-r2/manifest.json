@@ -1,0 +1,103 @@
+{
+  "status": "SUPPLIER_PLACEMENT_CANDIDATE_NOT_ORDER_RELEASE",
+  "generator_sha256": "def89425e31765f6c04306c474a5907d9729545b30161498112686f3758a1a3c",
+  "boards": {
+    "alec-main": {
+      "native_pcb_sha256": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+      "input_cpl_sha256": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188",
+      "gerber_zip_sha256": "abee31e91877f17234b467d81afb02f6149a3f7133e2fabc4cf0385453742ac9",
+      "bom_sha256": "153ec012b9fe56b4870893b4fa386cf9a4153043c0a8c51719e08ce69e8b8154",
+      "changed_reference": "J4",
+      "native_holes_mm": [
+        [
+          161.0,
+          86.0
+        ],
+        [
+          161.0,
+          88.54
+        ],
+        [
+          161.0,
+          91.08
+        ],
+        [
+          161.0,
+          93.62
+        ]
+      ],
+      "body_center_board_mm": [
+        161.0,
+        89.81
+      ],
+      "before": {
+        "Designator": "J4",
+        "Mid X": "161.000000",
+        "Mid Y": "-86.000000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      },
+      "after": {
+        "Designator": "J4",
+        "Mid X": "161.000000",
+        "Mid Y": "-89.810000",
+        "Layer": "top",
+        "Rotation": "270.000000"
+      },
+      "unchanged_reference_count": 110,
+      "reason": "Native pin-one origin differs from body center. Main supplier model is horizontal at 0 degrees; use 270 degrees for the vertical, unkeyed four-pin header.",
+      "output_cpl_sha256": "b8118c464899128b6c40f13c5f933c3c276592ff2955c50fab9680f62cd7576e"
+    },
+    "alec-sensor": {
+      "native_pcb_sha256": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
+      "input_cpl_sha256": "edfcaef0ea36800f88cd003cc8c3064e933b5b7dc2554b1f834cb7963b12426d",
+      "gerber_zip_sha256": "0763d0b54402151a925ea1437c293f5484da0f6d5a1f63483d3d5ebcf1df1f85",
+      "bom_sha256": "c7a9010b88b9de347d351e8ef81565ee74a5a164eebab3a9e8bcc791b92a947b",
+      "changed_reference": "J3",
+      "native_holes_mm": [
+        [
+          145.0,
+          108.0
+        ],
+        [
+          147.54,
+          108.0
+        ],
+        [
+          150.08,
+          108.0
+        ],
+        [
+          152.62,
+          108.0
+        ],
+        [
+          155.16,
+          108.0
+        ]
+      ],
+      "body_center_board_mm": [
+        150.07999999999998,
+        108.0
+      ],
+      "before": {
+        "Designator": "J3",
+        "Mid X": "145.000000",
+        "Mid Y": "-108.000000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      },
+      "after": {
+        "Designator": "J3",
+        "Mid X": "150.080000",
+        "Mid Y": "-108.000000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      },
+      "unchanged_reference_count": 87,
+      "reason": "Native pin-one origin differs from socket body center. Supplier has only a placeholder; do not infer socket pin orientation from it.",
+      "output_cpl_sha256": "f0f5540f6d4730df6a70341bc655e5509eb487768cac2a0f7cf5dac1813e9b6c"
+    }
+  },
+  "remaining": "Re-upload and inspect. U3 supplier model alignment, other component origins/rotations, missing models, rails and final supplier DFM remain open. Full BOM still requires U5 RTC."
+}

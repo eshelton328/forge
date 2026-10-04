@@ -1,0 +1,158 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-07T23:03:23",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "alec-sensor.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Footprint 'Samtec_SSW-105-01-F-S' not found in library 'Sensor'",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 108.0
+                    },
+                    "uuid": "0544031d-1014-423a-8680-ec4ce8e691df"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Board'",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 88.0
+                    },
+                    "uuid": "341d86c1-036f-4de7-9e4c-e14247a3b243"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'TPS63070' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 102.0
+                    },
+                    "uuid": "3f47c909-6f4b-4bba-84fd-52f950b5a24e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'TPS63070' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4eccdd3d-5a47-4261-b8f0-bf2ca2af409f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Board'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 76.5
+                    },
+                    "uuid": "a3a4d35c-daaa-45bc-9556-b2b99e60a795"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'TPS63070' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint L1",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 96.9
+                    },
+                    "uuid": "b863d99a-f9df-4ef5-b90b-d42d3b3ea2ab"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'TPS63070' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint L2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 96.9
+                    },
+                    "uuid": "c1e7274f-f5d2-4c9f-b6ba-bac7a2e7c77b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'SW_CK_1101M2S3CQE2' not found in library 'Sensor'",
+            "items": [
+                {
+                    "description": "Footprint SW1",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 86.5
+                    },
+                    "uuid": "3b07d47a-7932-49ee-a867-af592f23080e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

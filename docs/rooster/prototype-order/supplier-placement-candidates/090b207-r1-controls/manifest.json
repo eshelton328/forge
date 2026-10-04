@@ -1,0 +1,152 @@
+{
+  "status": "SUPPLIER_PLACEMENT_CANDIDATE_NOT_ORDER_RELEASE",
+  "reason": "JLCPCB preview centers each B3F model on the native pin-1 anchor; use the actual four-hole/body center.",
+  "native_pcb_sha256": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546",
+  "input_cpl_sha256": "36bf46703c9fad097278a26ef31dbb926549fe4f63c4d01e60ef65d9c00439a7",
+  "gerber_zip_sha256": "529461b9adb3052c03213ddea4c40104b1ca71ff780083a8c29e3018234f3cef",
+  "bom_sha256": "cf1dae5fb846a7b46c06053ef42e4042a8389bc0ac45f953aec3a94f5f53a880",
+  "generator_sha256": "45fbe649aaa49ee9fa8ae1a2a30d2c73f474766b3493c9b9fdc8e1fe27d01d9a",
+  "output_cpl_sha256": "e9d49c056b6b012c332c8ca27a95382bf7f17ff4d8ce052d39db43d77efc5de9",
+  "unchanged_references": [
+    "J1",
+    "SW4"
+  ],
+  "corrections": [
+    {
+      "reference": "SW1",
+      "part": "B3F-1060",
+      "jlcpcb_part": "C726010",
+      "native_anchor_mm": [
+        16.75,
+        3.75
+      ],
+      "native_holes_mm": [
+        [
+          16.75,
+          3.75
+        ],
+        [
+          16.75,
+          8.25
+        ],
+        [
+          23.25,
+          3.75
+        ],
+        [
+          23.25,
+          8.25
+        ]
+      ],
+      "body_center_board_mm": [
+        20.0,
+        6.0
+      ],
+      "before": {
+        "Designator": "SW1",
+        "Mid X": "16.750000",
+        "Mid Y": "-3.750000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      },
+      "after": {
+        "Designator": "SW1",
+        "Mid X": "20.000000",
+        "Mid Y": "-6.000000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      }
+    },
+    {
+      "reference": "SW2",
+      "part": "B3F-1060",
+      "jlcpcb_part": "C726010",
+      "native_anchor_mm": [
+        16.75,
+        15.75
+      ],
+      "native_holes_mm": [
+        [
+          16.75,
+          15.75
+        ],
+        [
+          16.75,
+          20.25
+        ],
+        [
+          23.25,
+          15.75
+        ],
+        [
+          23.25,
+          20.25
+        ]
+      ],
+      "body_center_board_mm": [
+        20.0,
+        18.0
+      ],
+      "before": {
+        "Designator": "SW2",
+        "Mid X": "16.750000",
+        "Mid Y": "-15.750000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      },
+      "after": {
+        "Designator": "SW2",
+        "Mid X": "20.000000",
+        "Mid Y": "-18.000000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      }
+    },
+    {
+      "reference": "SW3",
+      "part": "B3F-1060",
+      "jlcpcb_part": "C726010",
+      "native_anchor_mm": [
+        16.75,
+        27.75
+      ],
+      "native_holes_mm": [
+        [
+          16.75,
+          27.75
+        ],
+        [
+          16.75,
+          32.25
+        ],
+        [
+          23.25,
+          27.75
+        ],
+        [
+          23.25,
+          32.25
+        ]
+      ],
+      "body_center_board_mm": [
+        20.0,
+        30.0
+      ],
+      "before": {
+        "Designator": "SW3",
+        "Mid X": "16.750000",
+        "Mid Y": "-27.750000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      },
+      "after": {
+        "Designator": "SW3",
+        "Mid X": "20.000000",
+        "Mid Y": "-30.000000",
+        "Layer": "top",
+        "Rotation": "0.000000"
+      }
+    }
+  ],
+  "remaining": "Re-upload and inspect supplier preview. Other part origins/pin-1/rotations, rails, and final supplier DFM remain open."
+}

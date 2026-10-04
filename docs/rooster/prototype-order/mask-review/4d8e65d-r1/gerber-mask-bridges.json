@@ -1,0 +1,370 @@
+{
+  "status": "PASS_SEPARATION_BETWEEN_DISTINCT_GERBER_MASK_OPENINGS",
+  "scope": "Measure separation of actual Gerber mask openings after merging overlaps.\n\nRequires Gerbonara and Shapely 2. Uses the immutable fabrication ZIPs, not a\nproject rule whose application has not been established. No native files change.\n",
+  "required_separation_mm": 0.1,
+  "arc_max_error_mm": 0.0001,
+  "distance_error_allowance_mm": 0.0002,
+  "manifest_sha256": "fe02d4dc756ed4f7fe2383627d9eaee172d7d21eb333b86d471af82e27ed2e29",
+  "generator_sha256": "9e588cee9ebb49f686d4db3669ce4ca854d69d71d155eb4b6ccc996dbe14fcf5",
+  "libraries": {
+    "gerbonara": "1.6.3",
+    "shapely": "2.1.2"
+  },
+  "boards": {
+    "alec-main": {
+      "native_sha256": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+      "archive_sha256": "abee31e91877f17234b467d81afb02f6149a3f7133e2fabc4cf0385453742ac9",
+      "parser_warnings": [
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpyxwtjdqe/input/alec-main-NPTH.drl:14 \"G90\": G90 header statement found after end of header",
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpyxwtjdqe/input/alec-main-PTH.drl:24 \"G90\": G90 header statement found after end of header"
+      ],
+      "sides": {
+        "top": {
+          "primitive_count": 408,
+          "primitive_types": {
+            "ArcPoly": 326,
+            "Circle": 27,
+            "Line": 4,
+            "Rectangle": 51
+          },
+          "merged_opening_count": 376,
+          "minimum_separation_mm": 0.15000000000000568,
+          "conservative_lower_bound_mm": 0.14980000000000568,
+          "nearest_points_gerber_mm": [
+            [
+              155.0625,
+              -98.075
+            ],
+            [
+              155.0625,
+              -97.925
+            ]
+          ],
+          "nearest_points_native_mm": [
+            [
+              155.0625,
+              98.075
+            ],
+            [
+              155.0625,
+              97.925
+            ]
+          ],
+          "nonconvex_opening_bounds_gerber_mm": [
+            [
+              114.1,
+              -100.725,
+              114.7,
+              -99.975
+            ],
+            [
+              111.3,
+              -100.725,
+              111.9,
+              -99.975
+            ],
+            [
+              134.3,
+              -100.725,
+              134.9,
+              -99.975
+            ],
+            [
+              137.1,
+              -100.725,
+              137.7,
+              -99.975
+            ]
+          ],
+          "enclosed_mask_islands": 0
+        },
+        "bottom": {
+          "primitive_count": 22,
+          "primitive_types": {
+            "Circle": 17,
+            "Line": 4,
+            "Rectangle": 1
+          },
+          "merged_opening_count": 22,
+          "minimum_separation_mm": 0.6050248587988847,
+          "conservative_lower_bound_mm": 0.6048248587988847,
+          "nearest_points_gerber_mm": [
+            [
+              105.00401965189059,
+              -91.82
+            ],
+            [
+              105.00401965189059,
+              -91.21497514120111
+            ]
+          ],
+          "nearest_points_native_mm": [
+            [
+              105.00401965189059,
+              91.82
+            ],
+            [
+              105.00401965189059,
+              91.21497514120111
+            ]
+          ],
+          "nonconvex_opening_bounds_gerber_mm": [],
+          "enclosed_mask_islands": 0
+        }
+      }
+    },
+    "alec-controls": {
+      "native_sha256": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546",
+      "archive_sha256": "30b3bcdc1e32aa878103131e073683cbf03005fcceb10b3ce7d4aa82f133ac42",
+      "parser_warnings": [
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpwzoi7n6a/input/alec-controls-NPTH.drl:12 \"G90\": G90 header statement found after end of header",
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpwzoi7n6a/input/alec-controls-PTH.drl:16 \"G90\": G90 header statement found after end of header",
+        "Implicitly cleaning up <TemporaryDirectory '/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpyxwtjdqe'>"
+      ],
+      "sides": {
+        "top": {
+          "primitive_count": 19,
+          "primitive_types": {
+            "Circle": 19
+          },
+          "merged_opening_count": 19,
+          "minimum_separation_mm": 0.8000499055484553,
+          "conservative_lower_bound_mm": 0.7998499055484554,
+          "nearest_points_gerber_mm": [
+            [
+              3.9934870057926437,
+              -17.650024952774228
+            ],
+            [
+              3.9934870057926437,
+              -16.849975047225772
+            ]
+          ],
+          "nearest_points_native_mm": [
+            [
+              3.9934870057926437,
+              17.650024952774228
+            ],
+            [
+              3.9934870057926437,
+              16.849975047225772
+            ]
+          ],
+          "nonconvex_opening_bounds_gerber_mm": [],
+          "enclosed_mask_islands": 0
+        },
+        "bottom": {
+          "primitive_count": 28,
+          "primitive_types": {
+            "Circle": 19,
+            "ArcPoly": 9
+          },
+          "merged_opening_count": 28,
+          "minimum_separation_mm": 0.6499999999999986,
+          "conservative_lower_bound_mm": 0.6497999999999986,
+          "nearest_points_gerber_mm": [
+            [
+              8.05,
+              -25.75
+            ],
+            [
+              8.7,
+              -25.75
+            ]
+          ],
+          "nearest_points_native_mm": [
+            [
+              8.05,
+              25.75
+            ],
+            [
+              8.7,
+              25.75
+            ]
+          ],
+          "nonconvex_opening_bounds_gerber_mm": [],
+          "enclosed_mask_islands": 0
+        }
+      }
+    },
+    "alec-front": {
+      "native_sha256": "240c970c5cc23b727603920523cf404c60033e7f39d4fcd2d857255c3b6efa35",
+      "archive_sha256": "8383200dbdea613da26a868e13bb37d42dc2287e3cb5b6eb36b30f117c6c9e67",
+      "parser_warnings": [
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmp184yhdu8/input/alec-front-NPTH.drl:12 \"G90\": G90 header statement found after end of header",
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmp184yhdu8/input/alec-front-PTH.drl:12 \"G90\": G90 header statement found after end of header",
+        "Implicitly cleaning up <TemporaryDirectory '/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpwzoi7n6a'>"
+      ],
+      "sides": {
+        "top": {
+          "primitive_count": 8,
+          "primitive_types": {
+            "Rectangle": 6,
+            "Circle": 2
+          },
+          "merged_opening_count": 8,
+          "minimum_separation_mm": 0.5,
+          "conservative_lower_bound_mm": 0.4998,
+          "nearest_points_gerber_mm": [
+            [
+              15.7,
+              -5.25
+            ],
+            [
+              15.7,
+              -4.75
+            ]
+          ],
+          "nearest_points_native_mm": [
+            [
+              15.7,
+              5.25
+            ],
+            [
+              15.7,
+              4.75
+            ]
+          ],
+          "nonconvex_opening_bounds_gerber_mm": [],
+          "enclosed_mask_islands": 0
+        },
+        "bottom": {
+          "primitive_count": 10,
+          "primitive_types": {
+            "Circle": 2,
+            "ArcPoly": 8
+          },
+          "merged_opening_count": 10,
+          "minimum_separation_mm": 0.6499999999999986,
+          "conservative_lower_bound_mm": 0.6497999999999986,
+          "nearest_points_gerber_mm": [
+            [
+              15.175,
+              -4.75
+            ],
+            [
+              15.825,
+              -4.75
+            ]
+          ],
+          "nearest_points_native_mm": [
+            [
+              15.175,
+              4.75
+            ],
+            [
+              15.825,
+              4.75
+            ]
+          ],
+          "nonconvex_opening_bounds_gerber_mm": [],
+          "enclosed_mask_islands": 0
+        }
+      }
+    },
+    "alec-sensor": {
+      "native_sha256": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
+      "archive_sha256": "0763d0b54402151a925ea1437c293f5484da0f6d5a1f63483d3d5ebcf1df1f85",
+      "parser_warnings": [
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpglh2zyuc/input/alec-sensor-NPTH.drl:14 \"G90\": G90 header statement found after end of header",
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpglh2zyuc/input/alec-sensor-PTH.drl:26 \"G90\": G90 header statement found after end of header",
+        "Implicitly cleaning up <TemporaryDirectory '/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmp184yhdu8'>"
+      ],
+      "sides": {
+        "top": {
+          "primitive_count": 322,
+          "primitive_types": {
+            "ArcPoly": 243,
+            "Rectangle": 51,
+            "Circle": 24,
+            "Line": 4
+          },
+          "merged_opening_count": 290,
+          "minimum_separation_mm": 0.19999999999998863,
+          "conservative_lower_bound_mm": 0.19979999999998863,
+          "nearest_points_gerber_mm": [
+            [
+              105.795,
+              -89.6
+            ],
+            [
+              105.795,
+              -89.4
+            ]
+          ],
+          "nearest_points_native_mm": [
+            [
+              105.795,
+              89.6
+            ],
+            [
+              105.795,
+              89.4
+            ]
+          ],
+          "nonconvex_opening_bounds_gerber_mm": [
+            [
+              111.3,
+              -100.725,
+              111.9,
+              -99.975
+            ],
+            [
+              114.1,
+              -100.725,
+              114.7,
+              -99.975
+            ],
+            [
+              134.3,
+              -100.725,
+              134.9,
+              -99.975
+            ],
+            [
+              137.1,
+              -100.725,
+              137.7,
+              -99.975
+            ]
+          ],
+          "enclosed_mask_islands": 0
+        },
+        "bottom": {
+          "primitive_count": 34,
+          "primitive_types": {
+            "Rectangle": 10,
+            "Circle": 20,
+            "Line": 4
+          },
+          "merged_opening_count": 34,
+          "minimum_separation_mm": 0.6050248587988847,
+          "conservative_lower_bound_mm": 0.6048248587988847,
+          "nearest_points_gerber_mm": [
+            [
+              105.00401965189059,
+              -91.82
+            ],
+            [
+              105.00401965189059,
+              -91.21497514120111
+            ]
+          ],
+          "nearest_points_native_mm": [
+            [
+              105.00401965189059,
+              91.82
+            ],
+            [
+              105.00401965189059,
+              91.21497514120111
+            ]
+          ],
+          "nonconvex_opening_bounds_gerber_mm": [],
+          "enclosed_mask_islands": 0
+        }
+      }
+    }
+  },
+  "converter_detail_sha256": "6fa09c37626b7bffbc1498343f6a00a4684622e13af4fb695994d77cbb04c552"
+}

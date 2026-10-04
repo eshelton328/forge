@@ -10,6 +10,10 @@ def check(name,ok,**details):
  checks.append(dict(name=name,passed=True,**details))
 for ref in set(old)-REMOVE:
  check(ref+' retained placement',xy(old[ref].GetPosition())==xy(fps[ref].GetPosition()) and old[ref].GetOrientationDegrees()==fps[ref].GetOrientationDegrees())
+for pad in fps['J4'].Pads():
+ drill=xy(pad.GetDrillSize());size=xy(pad.GetSize())
+ check('J4.'+pad.GetNumber()+' finished-hole allowance',drill[0]==drill[1] and drill[0]-.08>=1.02-1e-9,nominal_hole_mm=drill[0],minimum_finished_hole_mm=round(drill[0]-.08,3),samtec_recommended_hole_mm=1.02)
+ check('J4.'+pad.GetNumber()+' annular ring retained',(min(size)-drill[0])/2>=.20,nominal_annular_ring_mm=round((min(size)-drill[0])/2,3))
 critical={'GND','/PFET','/3v3','/5v','/speaker +','/speaker -','/D+','/D-'}
 for ref in ['U1','U2']:
  for pd in old[ref].Pads():

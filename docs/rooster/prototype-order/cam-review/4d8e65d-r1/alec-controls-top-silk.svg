@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="31.0mm" height="38.0mm" viewBox="-2.0 -36.0 31.0 38.0" style="background-color:white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke-linejoin="round" stroke-linecap="round" id="l-mechanical-outline" transform="translate(0 -34.0) scale(1 -1)">
+    <path d="M 0.0 0.0 L 27.0 0.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 0.0 -34.0 L 0.0 0.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 27.0 0.0 L 27.0 -34.0 L 0.0 -34.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+  </g>
+  <g stroke-linejoin="round" stroke-linecap="round" id="l-top-silk" transform="translate(0 -34.0) scale(1 -1)">
+    <path d="M 16.88 -19.1 L 16.88 -16.9" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 17.5 -14.88 L 22.5 -14.88" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 17.5 -21.12 L 22.5 -21.12" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 23.12 -16.9 L 23.12 -19.1" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 21.75 -18.0 A 1.75 1.75 0 0 0 18.25 -18.0" fill="none" stroke="#111111" stroke-width="0.12" stroke-linecap="round"/>
+    <path d="M 18.25 -18.0 A 1.75 1.75 0 0 0 21.75 -18.0" fill="none" stroke="#111111" stroke-width="0.12" stroke-linecap="round"/>
+    <path d="M 16.88 -31.1 L 16.88 -28.9" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 17.5 -26.88 L 22.5 -26.88" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 17.5 -33.12 L 22.5 -33.12" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 23.12 -28.9 L 23.12 -31.1" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 21.75 -30.0 A 1.75 1.75 0 0 0 18.25 -30.0" fill="none" stroke="#111111" stroke-width="0.12" stroke-linecap="round"/>
+    <path d="M 18.25 -30.0 A 1.75 1.75 0 0 0 21.75 -30.0" fill="none" stroke="#111111" stroke-width="0.12" stroke-linecap="round"/>
+    <path d="M 16.88 -7.1 L 16.88 -4.9" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 17.5 -2.88 L 22.5 -2.88" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 17.5 -9.12 L 22.5 -9.12" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 23.12 -4.9 L 23.12 -7.1" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 21.75 -6.0 A 1.75 1.75 0 0 0 18.25 -6.0" fill="none" stroke="#111111" stroke-width="0.12" stroke-linecap="round"/>
+    <path d="M 18.25 -6.0 A 1.75 1.75 0 0 0 21.75 -6.0" fill="none" stroke="#111111" stroke-width="0.12" stroke-linecap="round"/>
+    <circle cx="24.5" cy="-12.0" r="1.1" fill="white"/>
+    <circle cx="16.75" cy="-15.75" r="0.85" fill="white"/>
+    <circle cx="23.25" cy="-15.75" r="0.85" fill="white"/>
+    <circle cx="16.75" cy="-20.25" r="0.85" fill="white"/>
+    <circle cx="23.25" cy="-20.25" r="0.85" fill="white"/>
+    <circle cx="2.0" cy="-3.0" r="1.1" fill="white"/>
+    <circle cx="16.75" cy="-27.75" r="0.85" fill="white"/>
+    <circle cx="23.25" cy="-27.75" r="0.85" fill="white"/>
+    <circle cx="16.75" cy="-32.25" r="0.85" fill="white"/>
+    <circle cx="23.25" cy="-32.25" r="0.85" fill="white"/>
+    <circle cx="16.75" cy="-3.75" r="0.85" fill="white"/>
+    <circle cx="23.25" cy="-3.75" r="0.85" fill="white"/>
+    <circle cx="16.75" cy="-8.25" r="0.85" fill="white"/>
+    <circle cx="23.25" cy="-8.25" r="0.85" fill="white"/>
+    <circle cx="4.0" cy="-18.5" r="0.85" fill="white"/>
+    <circle cx="4.0" cy="-16.0" r="0.85" fill="white"/>
+    <circle cx="4.0" cy="-13.5" r="0.85" fill="white"/>
+    <circle cx="2.0" cy="-30.0" r="1.1" fill="white"/>
+    <circle cx="24.5" cy="-24.0" r="1.1" fill="white"/>
+  </g>
+</svg>

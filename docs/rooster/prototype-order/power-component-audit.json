@@ -1,0 +1,624 @@
+{
+  "status": "COMPONENT_SELECTION_SCREEN_COMPLETE_BENCH_VALIDATION_PENDING",
+  "scope": "Near-converter capacitor banks and selected inductor under explicit cases. Typical models and arithmetic, not hardware qualification or all BOM electrical approval.",
+  "limits": [
+    "Temperature samples -55,25,85 C do not prove every intervening temperature.",
+    "20% reserve is an engineering allowance; no guaranteed age or model-error bound is claimed.",
+    "Input screen is up to 5.4 V at protected VIN; cold start requires at least 3 V there.",
+    "Real low-battery stability, load steps, PFM ripple and temperatures require first-board tests.",
+    "The 4.1 A inductor rating is at 25 C. It is not a hot/short-circuit guarantee.",
+    "Regulator current limit is average input current, not an absolute peak clamp.",
+    "Combined battery/holder/fuse load and audio limits remain a separate system review."
+  ],
+  "manufacturer_svg_crosscheck": [
+    {
+      "voltage": 0,
+      "svg_uF": 23.227333333333334,
+      "api_uF": 23.227333333333334
+    },
+    {
+      "voltage": 4,
+      "svg_uF": 15.154993188005776,
+      "api_uF": 15.154993188005774
+    },
+    {
+      "voltage": 8,
+      "svg_uF": 8.328792472733092,
+      "api_uF": 8.328792472733092
+    },
+    {
+      "voltage": 12,
+      "svg_uF": 4.949603553098696,
+      "api_uF": 4.949603553098702
+    },
+    {
+      "voltage": 16,
+      "svg_uF": 3.319949778098062,
+      "api_uF": 3.319949778098061
+    }
+  ],
+  "rail_static_bounds": {
+    "alec-main/U1": {
+      "static_max_V": 3.50549558922559,
+      "capacitor_screen_bias_V": 3.6
+    },
+    "alec-main/U2": {
+      "static_max_V": 5.289907661227661,
+      "capacitor_screen_bias_V": 5.4
+    },
+    "alec-sensor/U1": {
+      "static_max_V": 3.50549558922559,
+      "capacitor_screen_bias_V": 3.6
+    },
+    "alec-sensor/U2": {
+      "static_max_V": 5.289907661227661,
+      "capacitor_screen_bias_V": 5.4
+    }
+  },
+  "capacitor_banks": [
+    {
+      "board": "alec-main",
+      "converter": "U1",
+      "role": "input",
+      "net": "/PFET",
+      "members": [
+        {
+          "reference": "C1",
+          "mpn": "GRM21BR61E106KA73L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.603042488169358,
+            "25": 3.670444609023933,
+            "85": 3.9731921625717868
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.8741905914819381
+        },
+        {
+          "reference": "C2",
+          "mpn": "GRM21BR61E106KA73L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.603042488169358,
+            "25": 3.670444609023933,
+            "85": 3.9731921625717868
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.8741905914819381
+        },
+        {
+          "reference": "C3",
+          "mpn": "GRT188R61A106KE13D",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.28153655642202,
+            "25": 2.849249021444384,
+            "85": 2.908906333269441
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.6427063206238544
+        }
+      ],
+      "screen_total_uF": 5.39108750358773,
+      "TI_minimum_uF": 4.7,
+      "ratio_to_minimum": 1.1470398943803681
+    },
+    {
+      "board": "alec-main",
+      "converter": "U2",
+      "role": "input",
+      "net": "/PFET",
+      "members": [
+        {
+          "reference": "C9",
+          "mpn": "GRM21BR61E106KA73L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.603042488169358,
+            "25": 3.670444609023933,
+            "85": 3.9731921625717868
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.8741905914819381
+        },
+        {
+          "reference": "C10",
+          "mpn": "GRM21BR61E106KA73L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.603042488169358,
+            "25": 3.670444609023933,
+            "85": 3.9731921625717868
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.8741905914819381
+        },
+        {
+          "reference": "C11",
+          "mpn": "GRT188R61A106KE13D",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.28153655642202,
+            "25": 2.849249021444384,
+            "85": 2.908906333269441
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.6427063206238544
+        }
+      ],
+      "screen_total_uF": 5.39108750358773,
+      "TI_minimum_uF": 4.7,
+      "ratio_to_minimum": 1.1470398943803681
+    },
+    {
+      "board": "alec-main",
+      "converter": "U1",
+      "role": "output",
+      "net": "/3v3",
+      "members": [
+        {
+          "reference": "C5",
+          "mpn": "GRT188R61A106KE13D",
+          "bias_V": 3.6,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 3.3325020719002274,
+            "25": 4.327625868095506,
+            "85": 4.351876312184618
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 2.399401491768164
+        },
+        {
+          "reference": "C6",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 3.6,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 10.428471968006106,
+            "25": 14.11115683737878,
+            "85": 15.411579579065213
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 7.508499816964397
+        },
+        {
+          "reference": "C7",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 3.6,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 10.428471968006106,
+            "25": 14.11115683737878,
+            "85": 15.411579579065213
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 7.508499816964397
+        },
+        {
+          "reference": "C8",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 3.6,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 10.428471968006106,
+            "25": 14.11115683737878,
+            "85": 15.411579579065213
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 7.508499816964397
+        }
+      ],
+      "screen_total_uF": 24.924900942661353,
+      "TI_minimum_uF": 18.0,
+      "ratio_to_minimum": 1.3847167190367418
+    },
+    {
+      "board": "alec-main",
+      "converter": "U2",
+      "role": "output",
+      "net": "/5v",
+      "members": [
+        {
+          "reference": "C13",
+          "mpn": "GRT188R61A106KE13D",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.28153655642202,
+            "25": 2.849249021444384,
+            "85": 2.908906333269441
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.6427063206238544
+        },
+        {
+          "reference": "C14",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 8.48486528495534,
+            "25": 11.241107060121749,
+            "85": 11.828399272767946
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 6.109103005167846
+        },
+        {
+          "reference": "C15",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 8.48486528495534,
+            "25": 11.241107060121749,
+            "85": 11.828399272767946
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 6.109103005167846
+        },
+        {
+          "reference": "C16",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 8.48486528495534,
+            "25": 11.241107060121749,
+            "85": 11.828399272767946
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 6.109103005167846
+        }
+      ],
+      "screen_total_uF": 19.970015336127393,
+      "TI_minimum_uF": 18.0,
+      "ratio_to_minimum": 1.1094452964515218
+    },
+    {
+      "board": "alec-sensor",
+      "converter": "U1",
+      "role": "input",
+      "net": "/PFET",
+      "members": [
+        {
+          "reference": "C1",
+          "mpn": "GRM21BR61E106KA73L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.603042488169358,
+            "25": 3.670444609023933,
+            "85": 3.9731921625717868
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.8741905914819381
+        },
+        {
+          "reference": "C2",
+          "mpn": "GRM21BR61E106KA73L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.603042488169358,
+            "25": 3.670444609023933,
+            "85": 3.9731921625717868
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.8741905914819381
+        },
+        {
+          "reference": "C3",
+          "mpn": "GRT188R61A106KE13D",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.28153655642202,
+            "25": 2.849249021444384,
+            "85": 2.908906333269441
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.6427063206238544
+        }
+      ],
+      "screen_total_uF": 5.39108750358773,
+      "TI_minimum_uF": 4.7,
+      "ratio_to_minimum": 1.1470398943803681
+    },
+    {
+      "board": "alec-sensor",
+      "converter": "U2",
+      "role": "input",
+      "net": "/PFET",
+      "members": [
+        {
+          "reference": "C9",
+          "mpn": "GRM21BR61E106KA73L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.603042488169358,
+            "25": 3.670444609023933,
+            "85": 3.9731921625717868
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.8741905914819381
+        },
+        {
+          "reference": "C10",
+          "mpn": "GRM21BR61E106KA73L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.603042488169358,
+            "25": 3.670444609023933,
+            "85": 3.9731921625717868
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.8741905914819381
+        },
+        {
+          "reference": "C11",
+          "mpn": "GRT188R61A106KE13D",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.28153655642202,
+            "25": 2.849249021444384,
+            "85": 2.908906333269441
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.6427063206238544
+        }
+      ],
+      "screen_total_uF": 5.39108750358773,
+      "TI_minimum_uF": 4.7,
+      "ratio_to_minimum": 1.1470398943803681
+    },
+    {
+      "board": "alec-sensor",
+      "converter": "U1",
+      "role": "output",
+      "net": "/3v3",
+      "members": [
+        {
+          "reference": "C5",
+          "mpn": "GRT188R61A106KE13D",
+          "bias_V": 3.6,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 3.3325020719002274,
+            "25": 4.327625868095506,
+            "85": 4.351876312184618
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 2.399401491768164
+        },
+        {
+          "reference": "C6",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 3.6,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 10.428471968006106,
+            "25": 14.11115683737878,
+            "85": 15.411579579065213
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 7.508499816964397
+        },
+        {
+          "reference": "C7",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 3.6,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 10.428471968006106,
+            "25": 14.11115683737878,
+            "85": 15.411579579065213
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 7.508499816964397
+        },
+        {
+          "reference": "C8",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 3.6,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 10.428471968006106,
+            "25": 14.11115683737878,
+            "85": 15.411579579065213
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 7.508499816964397
+        }
+      ],
+      "screen_total_uF": 24.924900942661353,
+      "TI_minimum_uF": 18.0,
+      "ratio_to_minimum": 1.3847167190367418
+    },
+    {
+      "board": "alec-sensor",
+      "converter": "U2",
+      "role": "output",
+      "net": "/5v",
+      "members": [
+        {
+          "reference": "C13",
+          "mpn": "GRT188R61A106KE13D",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 2.28153655642202,
+            "25": 2.849249021444384,
+            "85": 2.908906333269441
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 1.6427063206238544
+        },
+        {
+          "reference": "C14",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 8.48486528495534,
+            "25": 11.241107060121749,
+            "85": 11.828399272767946
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 6.109103005167846
+        },
+        {
+          "reference": "C15",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 8.48486528495534,
+            "25": 11.241107060121749,
+            "85": 11.828399272767946
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 6.109103005167846
+        },
+        {
+          "reference": "C16",
+          "mpn": "GRM31CR61C226KE15L",
+          "bias_V": 5.4,
+          "typical_uF_at_sampled_temperatures_C": {
+            "-55": 8.48486528495534,
+            "25": 11.241107060121749,
+            "85": 11.828399272767946
+          },
+          "nominal_tolerance_fraction": 0.1,
+          "additional_engineering_reserve_fraction": 0.2,
+          "screen_uF": 6.109103005167846
+        }
+      ],
+      "screen_total_uF": 19.970015336127393,
+      "TI_minimum_uF": 18.0,
+      "ratio_to_minimum": 1.1094452964515218
+    }
+  ],
+  "inductor": {
+    "mpn": "XFL4020-152MEC",
+    "inductance_nominal_uH": 1.5,
+    "Isat_10_20_30_percent_drop_A_at_25C": [
+      4.1,
+      4.4,
+      4.6
+    ],
+    "Irms_20_40C_rise_A": [
+      6.7,
+      9.1
+    ],
+    "DCR_max_mOhm_at_25C": 15.8,
+    "cases": [
+      {
+        "case": "digital_reference",
+        "VIN_V": 3,
+        "VOUT_V": 3.3,
+        "IOUT_A": 0.25,
+        "estimated_peak_A": 0.40387506012506,
+        "Isat_required_with_TI_20_percent_margin_A": 0.484650072150072,
+        "below_4p1A_10_percent_drop_rating": true,
+        "RHP_zero_Hz": 964575.4126781537,
+        "above_TI_400kHz_recommendation": true
+      },
+      {
+        "case": "digital_stress",
+        "VIN_V": 3,
+        "VOUT_V": 3.3,
+        "IOUT_A": 0.5,
+        "estimated_peak_A": 0.7476250601250599,
+        "Isat_required_with_TI_20_percent_margin_A": 0.8971500721500719,
+        "below_4p1A_10_percent_drop_rating": true,
+        "RHP_zero_Hz": 482287.70633907686,
+        "above_TI_400kHz_recommendation": true
+      },
+      {
+        "case": "cube_5V_allowance_for_1W_audio",
+        "VIN_V": 3,
+        "VOUT_V": 5,
+        "IOUT_A": 0.3,
+        "estimated_peak_A": 0.8895502645502645,
+        "Isat_required_with_TI_20_percent_margin_A": 1.0674603174603174,
+        "below_4p1A_10_percent_drop_rating": true,
+        "RHP_zero_Hz": 530516.4769729845,
+        "above_TI_400kHz_recommendation": true
+      },
+      {
+        "case": "beacon_5V_200mA_supply_allowance",
+        "VIN_V": 3,
+        "VOUT_V": 5,
+        "IOUT_A": 0.2,
+        "estimated_peak_A": 0.6812169312169312,
+        "Isat_required_with_TI_20_percent_margin_A": 0.8174603174603173,
+        "below_4p1A_10_percent_drop_rating": true,
+        "RHP_zero_Hz": 795774.7154594766,
+        "above_TI_400kHz_recommendation": true
+      },
+      {
+        "case": "depleted_cube_5V_stress",
+        "VIN_V": 2,
+        "VOUT_V": 5,
+        "IOUT_A": 0.3,
+        "estimated_peak_A": 1.2020502645502642,
+        "Isat_required_with_TI_20_percent_margin_A": 1.442460317460317,
+        "below_4p1A_10_percent_drop_rating": true,
+        "RHP_zero_Hz": 235785.10087688203,
+        "above_TI_400kHz_recommendation": false
+      },
+      {
+        "case": "depleted_digital_stress",
+        "VIN_V": 2,
+        "VOUT_V": 3.3,
+        "IOUT_A": 0.5,
+        "estimated_peak_A": 1.2049446181390626,
+        "Isat_required_with_TI_20_percent_margin_A": 1.445933541766875,
+        "below_4p1A_10_percent_drop_rating": true,
+        "RHP_zero_Hz": 214350.09170625635,
+        "above_TI_400kHz_recommendation": false
+      },
+      {
+        "case": "not_supported_2A_5V_from_2V",
+        "VIN_V": 2,
+        "VOUT_V": 5,
+        "IOUT_A": 2,
+        "estimated_peak_A": 6.514550264550263,
+        "Isat_required_with_TI_20_percent_margin_A": 7.8174603174603154,
+        "below_4p1A_10_percent_drop_rating": false,
+        "RHP_zero_Hz": 35367.76513153231,
+        "above_TI_400kHz_recommendation": false
+      }
+    ]
+  },
+  "input_sha256": {
+    "docs/rooster/prototype-order/murata-curves-20260908.json": "51676986769e81a48db9262f38a6b0019db1f01fe0ca651ad7f24ffbb09f4ebe",
+    "docs/rooster/prototype-order/sourcing.csv": "783fd33eddcad12fdd3c3c79c38288130f4aec428d066fc50aba44c37ccf5333",
+    "docs/rooster/prototype-order/tools/review_power_parts.py": "410ebef988944cf4458e8dbe92ab6c9bad4937f8542535f2a3aa7116e09e26f1",
+    "docs/rooster/prototype-order/source-metadata-transition.json": "469d1a46976762b5dbdafff05a3c4a76b7123ef9d21b8aafa4e2c4f82e9b513d",
+    "boards/alec-main/alec-main.kicad_sch": "9dfc6a7542597bb4ab83f2b5273b3765fc697abe5baf0f580fc89624ae62c133",
+    "boards/alec-main/power-monitor.kicad_sch": "c25bdcba58a10931965244103a798e34f4175227711c894bee149acf9d699e85",
+    "boards/alec-main/alec-main.kicad_pcb": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+    "boards/alec-controls/alec-controls.kicad_sch": "891e420c2496bc20f0cdbfcf18f78d227da845dab8c56915daaa06b8ea8ba5e9",
+    "boards/alec-controls/alec-controls.kicad_pcb": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546",
+    "boards/alec-front/alec-front.kicad_sch": "1b61f784eb131e592435c8ab8069c9a3f5bfe06ffd0030789b9164db26749ae6",
+    "boards/alec-front/alec-front.kicad_pcb": "240c970c5cc23b727603920523cf404c60033e7f39d4fcd2d857255c3b6efa35",
+    "boards/alec-sensor/alec-sensor.kicad_sch": "289a43797a8be689ec2a772060e79c5d3d420aa0f0929bf3e84b6a45d25e7975",
+    "boards/alec-sensor/power-monitor.kicad_sch": "c2365cae3ada7d4e67c0b2e1e01dbc3d2efbc7c149faf7bb998c94e07f7c0150",
+    "boards/alec-sensor/radar.kicad_sch": "690dd79c26bb8449df1f78a978c46062ac9b2b17629c1a57a32fae68d10a018d",
+    "boards/alec-sensor/alec-sensor.kicad_pcb": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
+    "boards/alec-main/review/netlist.xml": "20ad70974d4f2e3f15fb297f9e5927268864d0f649ed0eed02dcf890fc3a878d",
+    "boards/alec-sensor/review/netlist.xml": "18501a6e065ac97ca3de34b705bbac720f6d79332c4859e3ea243574cfe06c53"
+  }
+}

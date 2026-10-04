@@ -1,0 +1,833 @@
+{
+  "captured_at": "2026-09-07T23:21:37.057954+00:00",
+  "endpoint": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "scope": "Public read-only catalog search; no purchase, reservation or quote. Radar results are sourcing candidates, not approved module variants.",
+  "queries": [
+    {
+      "query": "HLK-LD2410C",
+      "total_search_matches": 3,
+      "matches": [
+        {
+          "componentCode": "C18197927",
+          "componentModelEn": "HLK-LD2410C",
+          "componentBrandEn": "HI-LINK",
+          "componentSpecificationEn": "\u63d2\u4ef6,16X22mm",
+          "describe": "\u63d2\u4ef6,16x22mm New Arrivals ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0395
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0204
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0381
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0196
+            }
+          ],
+          "minPurchaseNum": 100,
+          "preMinPurchaseNum": 100,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HILINK-HLKLD2410C/C18197927",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HILINK-HLKLD2410C/C18197927",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C19723500",
+          "componentModelEn": "HLK-LD2410C-P",
+          "componentBrandEn": "HI-LINK",
+          "componentSpecificationEn": "SMD,22x16mm",
+          "describe": "-40\u2103~+85\u2103 16mm 22mm 5V~12V 79mA Human sensing \u6570\u5b57\u901a\u4fe1\u63a5\u53e3\u3001\u9608\u503c\u68c0\u6d4b/\u4e8b\u4ef6\u68c0\u6d4b SMD,22x16mm Sensor Modules ROHS",
+          "stockCount": 355,
+          "canPresaleNumber": 338,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 5.4823
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 4.8131
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 71,
+              "productPrice": 4.4151
+            },
+            {
+              "startNumber": 72,
+              "endNumber": 503,
+              "productPrice": 3.715
+            },
+            {
+              "startNumber": 504,
+              "endNumber": 1007,
+              "productPrice": 3.5298
+            },
+            {
+              "startNumber": 1008,
+              "endNumber": -1,
+              "productPrice": 3.4453
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 72,
+              "endNumber": 503,
+              "productPrice": 3.5787
+            },
+            {
+              "startNumber": 1008,
+              "endNumber": -1,
+              "productPrice": 3.3189
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 71,
+              "productPrice": 4.2531
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 5.2811
+            },
+            {
+              "startNumber": 504,
+              "endNumber": 1007,
+              "productPrice": 3.4003
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 4.6364
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 2,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HILINK-HLK_LD2410CP/C19723500",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221750_HI-LINK-HLK-LD2410C-P_C19723500.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HILINK-HLK_LD2410CP/C19723500",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C9900203152",
+          "componentModelEn": "HLK-LD2410C-P",
+          "componentBrandEn": "JLCPCB Assembly",
+          "componentSpecificationEn": "SMD,16x16mm",
+          "describe": "SMD,16x16mm SMT ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0395
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0204
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0381
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0196
+            }
+          ],
+          "minPurchaseNum": 439,
+          "preMinPurchaseNum": 439,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "JLCPCBAssembly-HLK_LD2410CP/C9900203152",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JLCPCBAssembly-HLK_LD2410CP/C9900203152",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "LD2410C",
+      "total_search_matches": 3,
+      "matches": [
+        {
+          "componentCode": "C18197927",
+          "componentModelEn": "HLK-LD2410C",
+          "componentBrandEn": "HI-LINK",
+          "componentSpecificationEn": "\u63d2\u4ef6,16X22mm",
+          "describe": "\u63d2\u4ef6,16x22mm New Arrivals ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0395
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0204
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0381
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0196
+            }
+          ],
+          "minPurchaseNum": 100,
+          "preMinPurchaseNum": 100,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HILINK-HLKLD2410C/C18197927",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HILINK-HLKLD2410C/C18197927",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C19723500",
+          "componentModelEn": "HLK-LD2410C-P",
+          "componentBrandEn": "HI-LINK",
+          "componentSpecificationEn": "SMD,22x16mm",
+          "describe": "-40\u2103~+85\u2103 16mm 22mm 5V~12V 79mA Human sensing \u6570\u5b57\u901a\u4fe1\u63a5\u53e3\u3001\u9608\u503c\u68c0\u6d4b/\u4e8b\u4ef6\u68c0\u6d4b SMD,22x16mm Sensor Modules ROHS",
+          "stockCount": 355,
+          "canPresaleNumber": 338,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 5.4823
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 4.8131
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 71,
+              "productPrice": 4.4151
+            },
+            {
+              "startNumber": 72,
+              "endNumber": 503,
+              "productPrice": 3.715
+            },
+            {
+              "startNumber": 504,
+              "endNumber": 1007,
+              "productPrice": 3.5298
+            },
+            {
+              "startNumber": 1008,
+              "endNumber": -1,
+              "productPrice": 3.4453
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 72,
+              "endNumber": 503,
+              "productPrice": 3.5787
+            },
+            {
+              "startNumber": 1008,
+              "endNumber": -1,
+              "productPrice": 3.3189
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 71,
+              "productPrice": 4.2531
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 5.2811
+            },
+            {
+              "startNumber": 504,
+              "endNumber": 1007,
+              "productPrice": 3.4003
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 4.6364
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 2,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HILINK-HLK_LD2410CP/C19723500",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221750_HI-LINK-HLK-LD2410C-P_C19723500.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HILINK-HLK_LD2410CP/C19723500",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C9900203152",
+          "componentModelEn": "HLK-LD2410C-P",
+          "componentBrandEn": "JLCPCB Assembly",
+          "componentSpecificationEn": "SMD,16x16mm",
+          "describe": "SMD,16x16mm SMT ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0395
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0204
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0381
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0196
+            }
+          ],
+          "minPurchaseNum": 439,
+          "preMinPurchaseNum": 439,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "JLCPCBAssembly-HLK_LD2410CP/C9900203152",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JLCPCBAssembly-HLK_LD2410CP/C9900203152",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "SSW-105-01-F-S",
+      "total_search_matches": 5,
+      "matches": [
+        {
+          "componentCode": "C5930350",
+          "componentModelEn": "SSW-105-01-F-S",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 1x5P 2.54mm 4.7A 5P 655V 8.51mm Phosphor bronze Square Hole Through Hole Tin Top Plugin,P=2.54mm Female Headers ROHS",
+          "stockCount": 33,
+          "canPresaleNumber": 32,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.9487
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.9227
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.9064
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 101,
+              "productPrice": 0.8886
+            },
+            {
+              "startNumber": 102,
+              "endNumber": 103,
+              "productPrice": 0.8886
+            },
+            {
+              "startNumber": 104,
+              "endNumber": -1,
+              "productPrice": 0.8886
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.8888
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.8732
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 101,
+              "productPrice": 0.856
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.9139
+            },
+            {
+              "startNumber": 104,
+              "endNumber": -1,
+              "productPrice": 0.856
+            },
+            {
+              "startNumber": 102,
+              "endNumber": 103,
+              "productPrice": 0.856
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 10,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-SSW_105_01_FS/C5930350",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312040508_Samtec-SSW-105-01-F-S_C5930350.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-SSW_105_01_FS/C5930350",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C6497128",
+          "componentModelEn": "SSW-105-01-F-S-LL",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 4.7A 5P 8.51mm Through Hole Tin Plugin,P=2.54mm Female Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.1513
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.1513
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.1513
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.2573
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.2167
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.1956
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.1517
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.2112
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.0357
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.0357
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.1721
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.0357
+            }
+          ],
+          "minPurchaseNum": 3,
+          "preMinPurchaseNum": 3,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-SSW_105_01_F_SLL/C6497128",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-SSW_105_01_F_SLL/C6497128",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C5930352",
+          "componentModelEn": "SSW-105-01-F-S-002",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 4.7A 5P 8.51mm Through Hole Tin Plugin,P=2.54mm Female Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.4165
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.3694
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.345
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.2957
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.3645
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.419
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.419
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.3191
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.419
+            }
+          ],
+          "minPurchaseNum": 3,
+          "preMinPurchaseNum": 3,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-SSW_105_01_F_S002/C5930352",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-SSW_105_01_F_S002/C5930352",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C5930354",
+          "componentModelEn": "SSW-105-01-F-S-005",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 4.7A 5P 8.51mm Through Hole Tin Plugin,P=2.54mm Female Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.4165
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.3694
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.345
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.2957
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.3645
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.419
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.419
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.3191
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.419
+            }
+          ],
+          "minPurchaseNum": 3,
+          "preMinPurchaseNum": 3,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-SSW_105_01_F_S005/C5930354",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-SSW_105_01_F_S005/C5930354",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6497125",
+          "componentModelEn": "SSW-105-01-F-S-003",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 4.7A 5P 8.51mm Through Hole Tin Plugin,P=2.54mm Female Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.5493
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.4165
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.3694
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.345
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.2957
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.3645
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.419
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.419
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.3191
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.419
+            }
+          ],
+          "minPurchaseNum": 3,
+          "preMinPurchaseNum": 3,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-SSW_105_01_F_S003/C6497125",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-SSW_105_01_F_S003/C6497125",
+          "exact_model_match": false
+        }
+      ]
+    }
+  ]
+}

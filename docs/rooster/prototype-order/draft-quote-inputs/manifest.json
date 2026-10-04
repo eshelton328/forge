@@ -1,0 +1,60 @@
+{
+  "status": "DRAFT_REVIEW_ONLY_NOT_MANUFACTURING_RELEASE",
+  "tool_version": "10.0.1",
+  "source_mpn_fields_updated": true,
+  "placement_basis": "Native KiCad auxiliary drill/place origin, both faces, no bottom X negation. Native rotation preserved; no supplier-specific rotation or centroid correction has been verified. Fabrication files must use a matching origin.",
+  "sourcing_sha256": "783fd33eddcad12fdd3c3c79c38288130f4aec428d066fc50aba44c37ccf5333",
+  "boards": {
+    "alec-controls": {
+      "fitted_references": 5,
+      "bom_rows": 3,
+      "placement_rows_by_side": {
+        "bottom": 1,
+        "top": 4
+      },
+      "native_pcb_sha256": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546",
+      "files": {
+        "alec-controls-bom.csv": "cf1dae5fb846a7b46c06053ef42e4042a8389bc0ac45f953aec3a94f5f53a880",
+        "alec-controls-cpl.csv": "36bf46703c9fad097278a26ef31dbb926549fe4f63c4d01e60ef65d9c00439a7"
+      }
+    },
+    "alec-front": {
+      "fitted_references": 3,
+      "bom_rows": 3,
+      "placement_rows_by_side": {
+        "bottom": 1,
+        "top": 2
+      },
+      "native_pcb_sha256": "240c970c5cc23b727603920523cf404c60033e7f39d4fcd2d857255c3b6efa35",
+      "files": {
+        "alec-front-bom.csv": "95c5a5655fad0aa6fe18f3eac570b5d3e27f6e35203d5661d52f055063d28b12",
+        "alec-front-cpl.csv": "e34cd5a56e41e99f62d1fb0a1f658c430032dd233e04b873a47fcd25b6e53d04"
+      }
+    },
+    "alec-main": {
+      "fitted_references": 111,
+      "bom_rows": 42,
+      "placement_rows_by_side": {
+        "top": 111
+      },
+      "native_pcb_sha256": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a",
+      "files": {
+        "alec-main-bom.csv": "9e2f10a6fd418bff844181ae03c07c44b041786fba7198782cb7e382b9ab5507",
+        "alec-main-cpl.csv": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188"
+      }
+    },
+    "alec-sensor": {
+      "fitted_references": 88,
+      "bom_rows": 38,
+      "placement_rows_by_side": {
+        "bottom": 3,
+        "top": 85
+      },
+      "native_pcb_sha256": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
+      "files": {
+        "alec-sensor-bom.csv": "c7a9010b88b9de347d351e8ef81565ee74a5a164eebab3a9e8bcc791b92a947b",
+        "alec-sensor-cpl.csv": "edfcaef0ea36800f88cd003cc8c3064e933b5b7dc2554b1f834cb7963b12426d"
+      }
+    }
+  }
+}

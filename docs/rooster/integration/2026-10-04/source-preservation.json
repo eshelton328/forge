@@ -1,0 +1,3380 @@
+{
+  "scope": "Byte-for-byte import and preservation. Hash agreement is not engineering or manufacturing approval. The before-check snapshot includes the root README audit additions.",
+  "source_merge_ref": "c53fc800316b509785961fa476465852356e178d",
+  "original_firmware_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+  "reachable_firmware_ref": "c60d876f2c7a0563a317e5f6b79920fdf1cb2ae2",
+  "original_acceptance_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+  "reachable_acceptance_ref": "cbf10f071828e851d8beab42f8a29ca1a52301da",
+  "counts": {
+    "firmware": 58,
+    "acceptance": 14,
+    "ordering": 407
+  },
+  "main_rename_files_unchanged": 18,
+  "tracked_files_changed_by_checks": [],
+  "frozen_package_checks": [
+    {
+      "manifest": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/manifest.json",
+      "matched_hash_bindings": 87
+    },
+    {
+      "manifest": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/manifest.json",
+      "matched_hash_bindings": 17
+    }
+  ],
+  "files": [
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/.gitattributes",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "a1341d638579987bf1811cf9dbf67685cc66e973",
+      "sha256": "8c58f0938b77a8ba96c781d2d25e62b89768d407282f7d7fc7b0b13a21de6566"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/.gitignore",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "8e69767d8dd1b07e030abd0a44f2d9ec6eee04fd",
+      "sha256": "fa8bd8fd275ad82350bcdfebd1a874c195c06e2039839928cc95b248dc2942a6"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/BUILD-REPORT.md",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "4c191df438963cdc2e0008dd4e6323d3ec1ca9b2",
+      "sha256": "b9cbe244d542abdb195debe77f85b43075c4cb08b0b1d7f9f70e9d082f2e8ee8"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/CANDIDATES.md",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "7ca57650b795ecd4d320337be34bcf3c05958271",
+      "sha256": "42eb2cf9303c8b6c534f36296c0ba8e30e7c82283e728f02a5d61b014cdfbf34"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/COMPATIBILITY.md",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "2eb5447dd20084c9f8df1bbf94cb87bf31b2ea56",
+      "sha256": "92359779afe3686e5b9599384f8432e42d4122e116a137d9f25a02459a762dbc"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/PHYSICAL-LEDGER.md",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "8dc0516be1c6d3b2746a8e85f7ad82ece8dd15b1",
+      "sha256": "6603d6fe0d3766ef0fb6ec79943d2e8ff8a85ee252fd6302df04d5a085da6555"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/README.md",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "76d5760cedb971d19310288d462544c99d44e3de",
+      "sha256": "e668a58f6d01e5531044165f6f2ce086683a303c0f8bfbd926b1784bc7dcbfd2"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/arduino-cli.yaml",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "50ce14ea9d9d9a5df367aaff35f84a57823eea52",
+      "sha256": "c4ff11ed430d1df868162a9aa4be9adf3db221338f52f5e2c7789606e635cb4a"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/beacon_connected__beacon_connected.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "023fe45853771bde30187ae4e18daeb069d85ec7",
+      "sha256": "cd21e316dac121c42f0bfb7f243c6acae875a78cb3794c9e3c8a966d1aa0dd3f"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/beacon_connected__beacon_connected.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "ee0969493c151ee2b9f8ecf1013fef5ce3e9718d",
+      "sha256": "012a93fce1a4cdcddf562b5e62e7b0b6b4e4183df9d9dc2ae70d3e2fced401d4"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/beacon_cursor__beacon_cursor.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "a5145de79b4465bd30e422f4cda71bb16b126037",
+      "sha256": "7f187d0bc5eb2f06ad47dd5a52a5bb7317b4a11494a0ff248112af23f3dd1147"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/beacon_cursor__beacon_cursor.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "9606046be27863b3269570032a0ad2bff2a1134d",
+      "sha256": "0052188b484f2348045c44085c4bd3e8cd790e933705d74d2ebe898060a26068"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/beacon_esp_now__beacon_esp_now.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "632626ddb508e71a4073a0b17173416fc71629b2",
+      "sha256": "e57a38dd02d27c7873cb95a66a47ca83456a17393b882c6ee50440328ccad3c0"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/beacon_esp_now__beacon_esp_now.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "a3ee546251043850b1347ee4aa258a6043f54fb8",
+      "sha256": "6d712a268b512cc79b4c81cd325e4dc668bca743fe44186f69225667a8da97bc"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/beacon_working_backup__beacon_working_backup.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "ac01b96c0bf9e38cf7a7cab963d25119082ec13f",
+      "sha256": "fccd9541d230457852e2e3bb8012171b8f6876c133ec3f00895e04291e4fe57c"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/beacon_working_backup__beacon_working_backup.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "40bc2a8e8d285cf0c4b6d355d92d31ba3b4a0736",
+      "sha256": "6a9edf8858864e0e1b576d1f032d2e6c971f78c9f6b766c57199ed0aac172a29"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/c3-board.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "bbf85893a5c5b89c657cd8e0d8bcda7d3c0925e1",
+      "sha256": "1d50490e93cc36c1d427ff46349719c3cf7a6c5e2f424ec7498fbbe29aa08858"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/c3_beacon__c3_beacon.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "19866d7b1c9702d29111b906184641ef56ba1914",
+      "sha256": "f9aae69c624c543531f045bac1bfad99fc5228c05614dd17b51754c2693dcc05"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/c3_beacon__c3_beacon.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "637ec0274aae2f79edc978d3d0ece291e8563cfe",
+      "sha256": "dfcf57d04dd55ee77e8a8253668f002b24b27e891ad0200184d91ab2b8ec60df"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cli-version.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "e53faddb98af0c1c00086875bb2bb8b33f3e944c",
+      "sha256": "683149934a90d22c6556c265706b7d3648c2dfc1e6e2a12b150e6c248c97633a"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/config.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "09e7165adc6d42b7a92ec44b91faf54f410f086a",
+      "sha256": "a62ea1fa4e193a935b49030c8e9f23ad06ac5ddad50b2daa133dbfc5daef980f"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cores.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "79846c4daf7af23861c941671a4fbcfafe872a18",
+      "sha256": "1893a4199d27a468dc6a528cfe5be729393b88200f3c27b44c383a6e2600687f"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_MAX98357__cube_MAX98357.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "2810364b6d8530b04a98cfbd9d0a87a8bfe4bd67",
+      "sha256": "5d607a14746734035f1c816de789b2a63bec6264597022f4cbabf70e8bcdf7ed"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_MAX98357__cube_MAX98357.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "c01a4b26c792e6088a6ff314eee735da762d6baa",
+      "sha256": "95d1518e1fb3da89bdf14ba93baa6da6f4bb53a509761577763d294e095aa9e5"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_browns__beacon_browns.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "7d38bf62ab65f544a50f028f0633249ab50a4b82",
+      "sha256": "84ba3c1181bc5a7573f146988ef5edf7b29a9c1e548508160b099178dca03c28"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_browns__beacon_browns.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "e21006a79c95f0b8eaf6f0668efd0f3e6ab2a706",
+      "sha256": "dd4832abc4ac9516429216ddd1ef98a823349bd05eb5a5b641c06090e44dfaf1"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_browns__cube_browns.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "06bf2faa995408d6110fb8016e02b141e8c2d149",
+      "sha256": "ec499d6aa12aa23269fac057202e676eb4d558de2628be3f2aea741ddebf115e"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_browns__cube_browns.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "b163394a9c864a5ba9960eb9f2ee929a5fd6fce6",
+      "sha256": "06d9cbcd126328495b551530fbe1ad062f01b45d4a1f1de993eb5f93d02fc17c"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_browns_combined.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "c94443ba74de23604f64a234b6cf8f4d60eb5368",
+      "sha256": "a5c4171ad3dbc7450ea9d1deaabe902a4d89be514a77160b0742d378e2a88b98"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_browns_combined.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "0d9b6d44bb15aa5a4370b7922ef8bd8ebfb43a95",
+      "sha256": "861e8a2f951d5f288ede12dba09ad4f507cbd497d29d570ed98fe208ff4d2890"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_connected__cube_connected.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "85490273921daf4d22806d42a5a07469e1772a91",
+      "sha256": "132b98544512796465c4ead73b8e6efd31aa9c52643b55b8052aa971c0791e68"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_connected__cube_connected.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "4791de994f1bbcb622a7ab37aa7fd5bd5ca5b4e0",
+      "sha256": "e45ac803a08866cfb7b8f52b61a072aa87d0b5aad7a3b1904862f970b457037c"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_cursor__cube_cursor.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "de5d3f75b2b61624ff6f1d9425c89b92412b8592",
+      "sha256": "c80a375ea1e1b1c6605085751b8c858d49884c00b748728294bb50c173994e2e"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_cursor__cube_cursor.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "63259ed3232a6670f0f425f334f369a2e3ae3c87",
+      "sha256": "aea741d975ddcf5b5ea01e93c781b4412743ccdcc35cea3e0e328af77911bbb3"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_display_test__cube_display_test.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "5c6d15d3f1872e8500bf59728096e8467a8cd715",
+      "sha256": "ac867cea030e3e1485df79c44ad65f2820dc497378980b92dad9b079c281a4bf"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_display_test__cube_display_test.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "cfceea31a5e849946e4a1c6df0a681893036ce28",
+      "sha256": "864f834798795ff3d270a3539c3f1099b59b4c3754a472f36bb68adbb609f0a3"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_esp_now__cube_esp_now.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "0efceb4a13aa47a77238a12d9cda509bdd63b545",
+      "sha256": "c825d9fb81dd651a9cf94f8ea8699e0bbf63fe4993375761493a64cb599782a2"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_esp_now__cube_esp_now.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "14cb9a18bd25cc74e608497abf886732013d4488",
+      "sha256": "ff6ab46638eb906d3ba0f74ce58d0532ff35d68416340fff0d608ea331a13f53"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_merge__cube_merge.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "0353433fa1ce97ce67f6f60275193da23060424d",
+      "sha256": "33679baeb209a327c34a4838143f49e4a504fe0c6e41651fc2ac661c970965f7"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_merge__cube_merge.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "9911896108decab081de239f3982ec388f4f5409",
+      "sha256": "c6b5bcaa1bf826f23d6b3eab9957dfb6b4ddf6cb4e78d9dd837af93c235479f2"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_settings_save__cube_settings_save.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "8cc6baf5adca4291af44568edd6741305147a4ac",
+      "sha256": "c0805cccb61f6e939846d358044a37df90be5efe51bd399c2bce2eb0527d355d"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_settings_save__cube_settings_save.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "888148c245afec46f40b3897ec9d68217a89c1ed",
+      "sha256": "31c7d56e3c7ed117cdee5352c2de202bdd1230258b920c74fd51f2289605eee5"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_working_backup__cube_working_backup.log",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "c86c32567c37713a6bd6238eb7a00c048780fdf6",
+      "sha256": "ace24c72e3b28a1eccb5739f59446ad3314f43085ca173aa2d9bd519ba1be897"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/cube_working_backup__cube_working_backup.properties.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "5122eb6bc33950e17176e1d18f58b1371fa41ee5",
+      "sha256": "6d30e10e476a1748fac41e2f34b892dd6fbf5fdcb32b79e3d7a18bbf87552a82"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/results.json",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "f845e1d987263975cf60492451b81ce8eafaa218",
+      "sha256": "00be527b5ec10dbf0798443b689423f2f8e9f69d4b25737965c417dbb6fa5f40"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/s3-board.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "8a191ac9b8f23699923669a66ccbd9a02caea61e",
+      "sha256": "71729aac82f562abb7601f38b61eb654e0348a979f91ce854a8be5b83231ae83"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build-records/installed-core-3.3.7/tool-identities.json",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "fe40ac4fb3973dada087d10becf8d5bb1e0bd03e",
+      "sha256": "da322f8c39bb9aaf0e43a7c044566fd8dd8ba89e97ce152f6cf9d40c84ac5846"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/build_candidates.py",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "46280d65572f0b21e2490936c6be33913f96ef80",
+      "sha256": "7bbb346245918a1b1c19a9084f6e30ef319307d7f9995fbe43f3c41cd137fcf8"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/candidate-analysis.json",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "c95124fce6687b177dc4a553ef94ec2e8ef49dac",
+      "sha256": "62fda2e4d73221d2f9e91ca71dd83bf8434dc29da7b543d31a052918791a260c"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/capture.py",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "a47c1e2299d1b537964847054caf9d51bb09bb34",
+      "sha256": "f3d7dd015b03c275d3289b2fdca83777a3df693d97b4e012d7a07837f14dd49f"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/evidence/hardware-inputs.json",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "155e7013b09df118068d90efcf9328a5211ec7b5",
+      "sha256": "bdaf768654ae201391c7ade12a513dbcef2dd8cfaf4f43c20b3785145a4bdd03"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/evidence/vbat-fix-commit.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "7560302112159c64b4ad9918518f89e4e645e00b",
+      "sha256": "6d22691815bc1c9a971cd52b48b46dee6948c55e424c1ca6bc748bf1c804dce9"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/evidence/vbat-fix-pcb-diff.txt",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "17e90e0e792da5f2eadcaeb6075c41ed3ebac494",
+      "sha256": "7e24dbb73fde9541a6b725ef3e1e29a559a16f29732850b8f4686f55605a65ca"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/manifest.json",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "1e102aa5767397897735bc8aafab50e483620ed4",
+      "sha256": "eeeb4139650f7c815d0248a7a3ed9e763e9489db3783d5ee3835eb8cfe987a2d"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/originals-2026-09-07.tar.gz",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "a7d47457b20b29e50d36c5c3e7f425818a1bfe34",
+      "sha256": "f281711b3b2c08c187c220e718618285ba8e4165403789cf4ee905dfc42791d5"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/originals-2026-09-07.tar.gz.sha256",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "dcf9d8ce05476393966908b4073f4c4211516151",
+      "sha256": "4071be23c2408ba8bd33e76a900b67acb1ba013e2f9f2c5140c605a302e0ce4e"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/selected-reference.json",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "1bfeb2d80c850071ce5c6b5f4f6bd80e0a634a47",
+      "sha256": "decfc9bf55c9f81b478fc278e4b771b9d02ee1816577bcc495ef2aaee935e1a2"
+    },
+    {
+      "package": "firmware",
+      "path": "docs/rooster/baselines/2026-09-07/verify.py",
+      "source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+      "git_blob": "5e49c64a5ccaeebeb727727d319cbfa99972395f",
+      "sha256": "586a6d2a38a736fc8051a1445565031a6a294e5129972b0a50312fa4b5634977"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/BENCH.md",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "ed6b38b879093205da7cef53f9fe764de0167707",
+      "sha256": "479a526e3dfd51b7bdfc133a51436a75bb41389e1630644c68f377a753576d8e"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/README.md",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "37678005218809dfa7230acfadedce6ad5a284d9",
+      "sha256": "0bc6392d49a85466c4655883d9374952464aab2c820575f9beab031d98fa0742"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/SOURCES.md",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "85e592f9d8d0c7df5d5e51a43bc40dc1f77a6c8d",
+      "sha256": "d2e3d2859adf95a5efa995af5e9b3a277527a2fe182b802e19bc872a40256b2b"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/bench-results.csv",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "eb4a2e8bba4e3279da49418ba7ffaf939cd695c4",
+      "sha256": "76250dcd2bd1e08cd4467f0740c27cd9af6cbd54cb22ccdb6abac9289d2440fb"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/collect_evidence.py",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "bf6e3e9f95aa8eafaf7cc55a12c040ffa795014b",
+      "sha256": "1daf026ad388db293bb73bc03f7e15103e411069f5bf0db2acbf550736daadc9"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/check-01.txt",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "e7b95bfc509589d794939cd0d77ddcf9162954eb",
+      "sha256": "4f14c9ac038bd213c134ec3df06c2bb89ce9bb4455e636972a3ff23d21e4e612"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/check-02.txt",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "57fd0e871dbfa75e566872c7c32fd27e53096616",
+      "sha256": "07a789d8acc1abbeb69bfff3a69b964345b4e596443b9bce287495ffa1a27188"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/check-03.txt",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "848eeaf03a9f478a9c05efd15a1a1a3c478e1170",
+      "sha256": "6d311edd80886988f685c0e28fce0f4a914314320d86f876c9787dc52e17313e"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/check-04.txt",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "b36f0df4d15f5e056d3c81925e69ee54c97c4045",
+      "sha256": "fab0d4a6176ae175dd10030c2152c3c3da4d9be6aa8190c4a6349f5f63e2cc3d"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/check-05.txt",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "2df8829d6271e626dc8453c67f0d2c2b532f4a9e",
+      "sha256": "021d4e9e13905e1058513c99c1387c7e8ac63c3ae6ef8380cda80165a4ce2167"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/check-06.txt",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "da6a0fc060c7177afc6f60fd2fef764ea48bf80c",
+      "sha256": "4bcd7e728c978f0d0d95887a2d87542bb7188aa2e81c8ac193e31accfbd5527c"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/check-07.txt",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "c4b1a723d0242713e6d840448f85a88524fe5955",
+      "sha256": "f10bef4b3d571725e3d72e59699f071c075346ceb80cc043765e71c1330e77c8"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/check-08.txt",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "25697f72960bf98b3f47bf0a9ef5c5607644eb17",
+      "sha256": "b1dcd7affbb4f9bdddd82d7e45f9e60af35f517f94c7994a493fb4f77ca87feb"
+    },
+    {
+      "package": "acceptance",
+      "path": "docs/rooster/roo-004/evidence/source-review.json",
+      "source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+      "git_blob": "38453057c13686844091ea760720be910800e8c9",
+      "sha256": "29a70141c18bd28ad8c5a6afd22b75c984cb188d1574139f8be3caf54b785ee6"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-controls/alec-controls.kicad_pcb",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "75d0347a8afdfc9ef2b31a1d9cb10ef1f4cb457f",
+      "sha256": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-controls/alec-controls.kicad_sch",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "02700f6352a2811648eb9e20f0d72d201c8f3b3b",
+      "sha256": "891e420c2496bc20f0cdbfcf18f78d227da845dab8c56915daaa06b8ea8ba5e9"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-controls/review/bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "cb5a251f3a7d99aca53be0de2d6f695370947e55",
+      "sha256": "000713fecf329d70b00d1673d267c08c3b2e8f49086282a6ca080e8e535aef9a"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-controls/review/drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "aee534b287356f298af075274d262f61694369c8",
+      "sha256": "bcdde3f7f917c7978b1ab4c791e023dcf4cd8d4d31fb13ed6abf2b1f71669b39"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-controls/review/erc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e2cf18702b0fdedb531e924e4cca00915d064707",
+      "sha256": "7f1b0f8077bcb07ace09fb483779fd664bc51850189c7a68bfc95b1ba695a382"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-controls/review/fab-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "abc821d8a8ba31dfe0c031bfb8252a628cb1cd6b",
+      "sha256": "e7122328902fd9f968612e8d62a3e063dd102f5a9da91b3f16d755a4edc1ec72"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-controls/review/netlist.xml",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ffd9b28924bef30d427cc0e0a8321492ec548a09",
+      "sha256": "d997bbcc0a0e4377d52f0be973de6c15e6f851f31035c6da5c296a552405ee45"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-front/alec-front.kicad_pcb",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4a2a663b075679da4983b012cc2c081e716e4f92",
+      "sha256": "240c970c5cc23b727603920523cf404c60033e7f39d4fcd2d857255c3b6efa35"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-front/alec-front.kicad_sch",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a26b0060975acd5cb8050ac1cf77051fdcf619e6",
+      "sha256": "1b61f784eb131e592435c8ab8069c9a3f5bfe06ffd0030789b9164db26749ae6"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-front/review/bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ae89907bc34725831ae1318c705184546f9a7a83",
+      "sha256": "31afa22f62e7bdfa597efda5e6a9d3af8ac6fb9dadfaacf311d089d67d9db2c6"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-front/review/drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "46bf6a0f630655c5165b52f7b827f074a67ecbae",
+      "sha256": "1141c37f9121fd8d997e650fc24ba4e008fe6be4a5c63d983089b16117538692"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-front/review/erc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c0a85a0af9abcbadd9ef031d03886fe610622fdb",
+      "sha256": "e706ff2907dd524e98a77c74a73dca53e365bd808db8c273c3fbc26a7549a72a"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-front/review/fab-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0d420812b4d3cba3971b7eec82f10de447a3e5a6",
+      "sha256": "90c30bd2e38edb00203c9324495e4d340f83710e435d9c994b9d528ceab9870e"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-front/review/netlist.xml",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "959667492664e31cdd409e54b9fd862ebd6bb5a5",
+      "sha256": "16695d630e2bbd819465a87a8222dc24344e00530d2b8ea8ce3c91ff9f39afba"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/alec-main.kicad_pcb",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "051c435a80ebd8b099c3fababd950493e44a0426",
+      "sha256": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/alec-main.kicad_sch",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "820ef454dc2f888031f839c95fa8f2194b4814b1",
+      "sha256": "2bba9e41dbff1f589ffbef185a32e0a81000e437c7ad60d0b7d85e348f5bb35b"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/footprints/Board.pretty/Samtec_TSW-104-07-G-S_Drill1.10mm.kicad_mod",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a4de88ea2f20e3f3a2039e0b79c05c04f97ceb7f",
+      "sha256": "b28d410b40444a5012f6a55e02e0b17a076ff477a4b9b340e4535531c2592cb7"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/power-monitor.kicad_sch",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9141698bca7dbee5c6b704409a23288abe5d5c97",
+      "sha256": "c25bdcba58a10931965244103a798e34f4175227711c894bee149acf9d699e85"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/TEST-REPORT.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "dfbb7ba2fbe0796e2357becf98bfb7edf7aab190",
+      "sha256": "16f7760d59a2832b5369cfc536e895b653a589cdd1f3f8a1faa421fad4200d83"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "55a70488322c923042576f553ca6a544ccc954f4",
+      "sha256": "22c56304644716573d849ae8e9b8cdcf593189ec102d2ab52f0eb00219f1a850"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "795b49bf2430772905e92a4a94106382d4767710",
+      "sha256": "cb30f8398d5aa217fe40f6f2cee8e8b250b68490d40f8a57f54dc2813adcb0ea"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/erc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "314fe4e1204b080ef745809b90d626f7935160b9",
+      "sha256": "a2e8548e84caea4f7e20fdf635f76e1583813d3f5eea10793a2b4d1459bda9d3"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/fab-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d5d8fe56f4b7ee4f3f78b1d604b56db93be889bd",
+      "sha256": "53ef1ebcdc42c9246b02f56ab9a57593efa806f160a1ede334f4ddcf979d0a0d"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/interface-validation.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "af588df4ad4f5e2e06414b5d98e920cd4e42afbb",
+      "sha256": "d63ff9078c606c19203c28f0e418c9bab56671a105c0e9c344eca3a3cee98cde"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/layout-validation.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f0152fe8e8d20001c6b7d77c7dec3d99b52c95f4",
+      "sha256": "5cb5d4b231bd449202a4a0a1fdfc69af2f0e3de3be3e70f546b5835f7549e923"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/netlist.xml",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f1453f58b60f1e161cec8ce7d1efb89db7eb9f8e",
+      "sha256": "2b03be57f5550cc539ea2eb0e6658974b429a027da80cfc58063989c66d66868"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-main/review/qa-manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1bb9cbf426e63751681f4a1992e2d886e98291c6",
+      "sha256": "4dbfcbd843571c1c7431131695858320831fab79f7a474c66c00bf500f69fb9b"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/alec-sensor.kicad_pcb",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2cf51c43535d4c61a11147c32ac456c847e4f9be",
+      "sha256": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/alec-sensor.kicad_sch",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "af964a51a05e670315ca3fb66f913a0a56ef880b",
+      "sha256": "289a43797a8be689ec2a772060e79c5d3d420aa0f0929bf3e84b6a45d25e7975"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/power-monitor.kicad_sch",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2f4d63c9ec651041ab3d466e71c6dee6f35ebcb3",
+      "sha256": "c2365cae3ada7d4e67c0b2e1e01dbc3d2efbc7c149faf7bb998c94e07f7c0150"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/radar.kicad_sch",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f68c70c67d1ffd19d1136dd23eff4f160485ccaf",
+      "sha256": "690dd79c26bb8449df1f78a978c46062ac9b2b17629c1a57a32fae68d10a018d"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/review/bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a22dbaca5dc8e3d7caf3c9d7b47663d549c52256",
+      "sha256": "8265f8565a426ab38e2b0a69dbe6fde624766d2dbf29fb393d472eb3ad61bd6d"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/review/drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "52badba0e11634d42ea27d7491e9de6aced155be",
+      "sha256": "948477fd48d0e902daeeeda9d7d0a1437aea527838fb616ccf2b6df4a7b678e4"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/review/erc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "28ee2ed498cf61241a6358d5bc86cc962654f0ce",
+      "sha256": "3329b63a1abe8bab5a123bfc5359aed63b60574cde0884c468fe58a027974aa5"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/review/fab-jlcpcb-4layer-advanced.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "974fcc679b4897f0a1b5bac2411008d8890ac2e8",
+      "sha256": "9b29f5f184125e74f7bcb14de5538ee461dfcf8f1b7ec238577882b471913fe8"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/review/netlist.xml",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f038bb12cf05bb52b8bf49467e25bd59a00e5fa9",
+      "sha256": "18501a6e065ac97ca3de34b705bbac720f6d79332c4859e3ea243574cfe06c53"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/review/source-hashes.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7027f5a6c16aa69cf841bb0de78a00bc7211ad90",
+      "sha256": "6284601e12aff0e0878cfc10a6f62f313b9144a4c46f5229441f317d84cc9e37"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/tools/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "55320339449f4ece2e4386166819a7b00180c808",
+      "sha256": "9d567e09e0ccdf026f669754a5ef801051718672d7177b954332cc77ce321af6"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/tools/check_bom.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "db1b38eae370051ceb2b6058db33d5096f06e82d",
+      "sha256": "d05e530a98a8c7722752f221001d57db1bdbec930743d6cba00942e2eb504337"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/tools/create_pcb.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b7d2faee0729446ce00e7891f7c8ca3adcaa8a3f",
+      "sha256": "e040e9fa48617a040f566f7c2163e938e2db69a2a2c26f3d8289de05fbca4df4"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/tools/create_schematic.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f4de73d41b310124b5d95901d94413966a8162c4",
+      "sha256": "fc325596c1fb26579829f98dc0a0b43470b2ae00de61ee038df9bb0869511137"
+    },
+    {
+      "package": "ordering",
+      "path": "boards/alec-sensor/tools/hash_evidence.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "61460521c85ffe81c63319c63088b8c701e8bfba",
+      "sha256": "937dfc9c786a7c9d04aba8a9a0a401229fb364d797ce66d21bbd27ce2cc3d06a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b25b25a741fa6d37c834c7e2bdf51a238b3ecbdf",
+      "sha256": "a05682037844ae85f545f1eafea38e82f6cca96a4d62d69e619bc7e42843108c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/amplifier-assembly-review.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c8ecb3c19409f62afc17fa716ba16aedd14f61d7",
+      "sha256": "5a64450845c9b93f7ba37d091d7ecd2de957a2eb12888aed271cbc354bd83177"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/assembly-audit.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e815f49ff654bd42b257c4ee7412f393686752b2",
+      "sha256": "afa0390d4c4bed53bdbb805040afef25601826d2f710eb8035f45ae1cc432c80"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/assembly-drawing-review.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "24e854f01832ae96dbc0d07560d21fb2c44be02c",
+      "sha256": "42ba3d9e13221df302938455f076c6efe404b3a6ec692e732080b83e46f2849f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/beacon-radar-procurement.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "49487ee945484af7693554f21bd8477db7c63179",
+      "sha256": "a9f15677fe3eb3fe4c8abada9c23a97ae60d2c333bbe9e0eff1cb0225a6216b8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-controls-bottom-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f720c28bbd866f60ca8bd167ad9dac344b1512b5",
+      "sha256": "b53e3a3b774e88dee2ea53fef067185c6d5521846aa14b77fceade6a575538cc"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-controls-bottom-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ce0f3fc7e1b9abce56a2822cccf0ef2e1e1c9d37",
+      "sha256": "a4074c0b8a4653f6d8f279fc30af6ca5c6f0bd87c956281744016c46c29a4820"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-controls-bottom-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2c5b6ee9ef0fcb58b5be0b7c7ce23bc52105d243",
+      "sha256": "a40407aa11296c75ed5cffdaa9c70c7e2bd46bac6f327922881876b9a8e5f0a0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-controls-bottom.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f5a1d7a7e89248d7b6d763eab04cef2515a0e0e1",
+      "sha256": "6a03dda04b756fb7e7aaef760b6dda504b0a761c6bca76367e2f244faa988791"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-controls-top-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fadd54a15fc285ad723653f6015ac51e813d68f7",
+      "sha256": "ee344571041bc0daadbecf04712be9035969d32b8681a8fc4dbee08d0ab98b83"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-controls-top-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7a61104dd37d59dbfed6addb1a60afb7075ba687",
+      "sha256": "e7d36ff60aaeaa97a1bf5c305191a24220a921da015495d6ab2ecbd0c8fc9de5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-controls-top-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2035fbcb2939fbe8766a63477d2a24222fa5da9e",
+      "sha256": "5e31ac8cd28f84676d7e306b71a42afbf14545d55a1a336e29742f936610f583"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-controls-top.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e327f13d96f886b5a9707ebfb9a5ee6a0c2183af",
+      "sha256": "59ce1ce1c70332419239be24a91d91cb511f7c64b7ea61802c5163823acd58b0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-front-bottom-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "330a72ecff4c920f9532898a3e0006456a94db92",
+      "sha256": "1b549e8f1584242c0d13d94f62bad54413801120d4614d72afdb83b069365dde"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-front-bottom-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3d8cf6b17457fc527c1e14c0f48b32d7cb42b260",
+      "sha256": "a5c5658f36f9971fe9e4224d3ed47b718f77c4bd992e8a17fc54f5150f986576"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-front-bottom-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1bb2172591c86ce34db8eb0821c3c236974b5576",
+      "sha256": "7fedd5e5d3e70fe5d4b783a2726978d6b3eab91ad2f14dda63e5facfb9581492"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-front-bottom.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "41308e7a5dd923dec072ef530c0ff8902c6f20c8",
+      "sha256": "83d3f173374281dcc41f1fa0d391ae6d5b5fb79dda475be1dbd915e43570a163"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-front-top-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5e6b3c1947c4856f121b7194c33ca56bebc04b5c",
+      "sha256": "9edbd5a22a9675275a268fba7938afc2b5bedf422335c25b5bc722815d231ea2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-front-top-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "82dfb0f628c87542c81806312c4b9adf5e7dab50",
+      "sha256": "a93cac365b3948a1b3f71aff76f0d45e39c81e89c41f6f322fb74541b0ea4198"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-front-top-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5bcd9bc9cf81147097abc379d691c7d5e76a1642",
+      "sha256": "48ee91b812df7dfcb59dcc5e313a0be89b3620fbab657d41782128b881ef0f1f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-front-top.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d409c3513cd1b9aefeed56b0446ece61cf716cdd",
+      "sha256": "b0d21f176d3828bcc37834baec7e7590772911c752c5d3c7887e9abfabd0d06e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-main-bottom-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "956cda4d51caf981dcbb6acfac1b86590eecdf40",
+      "sha256": "d2f40d6dfd55c7a78eef628eedd80a7f86c93739a153eecd8e5763deafce6676"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-main-bottom-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6d365a5a3a1f45f413e53fea795851e5b759387b",
+      "sha256": "c3a7f64bc5052e5d66925190cb5f26b467d9f27e7b3ecd8b30477e3f066b59e4"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-main-bottom-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "219f0855454092d5e1de2eff2d9ff3bd9b4a173a",
+      "sha256": "2e89bda44d0640b3826fec3dee171c5d02c6561a04505b8cc6681be18ef70976"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-main-bottom.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d2a62dbd40c9af9c75fdc5d646a4a50dd55a0660",
+      "sha256": "c092dd41875f583836f14b15c19e9947f75e131c670a599cc56cfd13941b56ee"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-main-top-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "412ec5cbfe5614117fcef9c15ec9931ccb36219b",
+      "sha256": "d8d535d746b7e875905c065e0a32dfb2cb919b0c40d36d5ea0f01ca55dc336fc"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-main-top-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7717e2cf83eaceee67afd56b407c960fba9f5e69",
+      "sha256": "167139f12e1c4e778ac9bef590215e7dff66d26e582e70c01db6993f6be497a8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-main-top-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ea5deda761ced5cbadc55f5267cec75a834082f0",
+      "sha256": "c195710112cda5b7cca6e6c09873fa59c4f6cb97a748a24178795ed5e08d321b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-main-top.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2c746c1ba3426ac69d1d5069e2521f10b0504610",
+      "sha256": "e3427af364405efaff68095c7c242e30ced5ae7fc506e1488a9ee585a9be2439"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-sensor-bottom-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3a5cb86b95f28fb2cfe305a15de6182f5ea91653",
+      "sha256": "8c74550e957e6e002dc12acf6b9a68a7757ca28762cfcfb4d675f0b2b8cff2d8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-sensor-bottom-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d415f84dd7062c10fe0e9d2d2af9a8fe48c23cec",
+      "sha256": "893666a35b2dbf95a9a4aa0f2fd1550ba5366a8b6187783bed96f768a6781a1c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-sensor-bottom-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c2cbeb1e24c1930911d39390d7afdf6bedc6268e",
+      "sha256": "dc787aa71240428e4c86922c814b346658b31cae7ebca1e2c01d39a8e3153aee"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-sensor-bottom.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7bf85783ca165d2f14139bcc5f272c825d5f3618",
+      "sha256": "f76596eda957bd2220bfaf889ea8707b3df5f0aa4407bcd65b8deb790a54cacc"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-sensor-top-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c5be45da43f83f8c03ebddaf314d7cc435fcb422",
+      "sha256": "4857adbd9db2197ab41d2d129e0fa7358a8ebe9bdd00f02be232827e68248752"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-sensor-top-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2650ae9614c16e909d54e31a39a356b311912e6a",
+      "sha256": "31d4c5fe50eae653f7cfa7e02be8e675bb5dd97489e709421803f8e36cc80548"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-sensor-top-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "8632825a11ed8febc2a7f38051b546e9fc4d706d",
+      "sha256": "37a7f3f4ba3de95682f1c31f52f4a6c64e83e3b08da5263ab88718f4db535a04"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/alec-sensor-top.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "44d92ac8955af9468151c6c5a34f6eae4148ebd5",
+      "sha256": "1d4070d183d1d0c2a6219394a0ee7d56604d214c9b463382855fe25e7c685152"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/cam-check.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "639e6fb41d254cf9357e70cd6c343a5277c32a46",
+      "sha256": "39b2166c85a775a164d7ecf3b2b8b55b2ef9ba7b1c4759fd5ab44d8b9299b795"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/graphic-layer-continuity.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "12e8ff80d53599e7f1013f92e56ec53c4e3656b6",
+      "sha256": "4ab43353cc12c4e33d303c0286cfebc0098e92cdf04d9a9930be46171af7b84c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/090b207-r1/native-reference.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d3a3a71423cb4a79a2bbcddfa7dbe73092c5f038",
+      "sha256": "3c36623918fd1e1540cc5916ef5ba60f59eaf31498512ba8261c96524692c419"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-controls-bottom-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f720c28bbd866f60ca8bd167ad9dac344b1512b5",
+      "sha256": "b53e3a3b774e88dee2ea53fef067185c6d5521846aa14b77fceade6a575538cc"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-controls-bottom-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ce0f3fc7e1b9abce56a2822cccf0ef2e1e1c9d37",
+      "sha256": "a4074c0b8a4653f6d8f279fc30af6ca5c6f0bd87c956281744016c46c29a4820"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-controls-bottom-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2c5b6ee9ef0fcb58b5be0b7c7ce23bc52105d243",
+      "sha256": "a40407aa11296c75ed5cffdaa9c70c7e2bd46bac6f327922881876b9a8e5f0a0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-controls-bottom.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f5a1d7a7e89248d7b6d763eab04cef2515a0e0e1",
+      "sha256": "6a03dda04b756fb7e7aaef760b6dda504b0a761c6bca76367e2f244faa988791"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-controls-top-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fadd54a15fc285ad723653f6015ac51e813d68f7",
+      "sha256": "ee344571041bc0daadbecf04712be9035969d32b8681a8fc4dbee08d0ab98b83"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-controls-top-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7a61104dd37d59dbfed6addb1a60afb7075ba687",
+      "sha256": "e7d36ff60aaeaa97a1bf5c305191a24220a921da015495d6ab2ecbd0c8fc9de5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-controls-top-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2035fbcb2939fbe8766a63477d2a24222fa5da9e",
+      "sha256": "5e31ac8cd28f84676d7e306b71a42afbf14545d55a1a336e29742f936610f583"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-controls-top.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e327f13d96f886b5a9707ebfb9a5ee6a0c2183af",
+      "sha256": "59ce1ce1c70332419239be24a91d91cb511f7c64b7ea61802c5163823acd58b0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-front-bottom-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "330a72ecff4c920f9532898a3e0006456a94db92",
+      "sha256": "1b549e8f1584242c0d13d94f62bad54413801120d4614d72afdb83b069365dde"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-front-bottom-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3d8cf6b17457fc527c1e14c0f48b32d7cb42b260",
+      "sha256": "a5c5658f36f9971fe9e4224d3ed47b718f77c4bd992e8a17fc54f5150f986576"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-front-bottom-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1bb2172591c86ce34db8eb0821c3c236974b5576",
+      "sha256": "7fedd5e5d3e70fe5d4b783a2726978d6b3eab91ad2f14dda63e5facfb9581492"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-front-bottom.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "41308e7a5dd923dec072ef530c0ff8902c6f20c8",
+      "sha256": "83d3f173374281dcc41f1fa0d391ae6d5b5fb79dda475be1dbd915e43570a163"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-front-top-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5e6b3c1947c4856f121b7194c33ca56bebc04b5c",
+      "sha256": "9edbd5a22a9675275a268fba7938afc2b5bedf422335c25b5bc722815d231ea2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-front-top-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "82dfb0f628c87542c81806312c4b9adf5e7dab50",
+      "sha256": "a93cac365b3948a1b3f71aff76f0d45e39c81e89c41f6f322fb74541b0ea4198"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-front-top-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5bcd9bc9cf81147097abc379d691c7d5e76a1642",
+      "sha256": "48ee91b812df7dfcb59dcc5e313a0be89b3620fbab657d41782128b881ef0f1f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-front-top.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d409c3513cd1b9aefeed56b0446ece61cf716cdd",
+      "sha256": "b0d21f176d3828bcc37834baec7e7590772911c752c5d3c7887e9abfabd0d06e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-main-bottom-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "956cda4d51caf981dcbb6acfac1b86590eecdf40",
+      "sha256": "d2f40d6dfd55c7a78eef628eedd80a7f86c93739a153eecd8e5763deafce6676"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-main-bottom-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6d365a5a3a1f45f413e53fea795851e5b759387b",
+      "sha256": "c3a7f64bc5052e5d66925190cb5f26b467d9f27e7b3ecd8b30477e3f066b59e4"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-main-bottom-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "219f0855454092d5e1de2eff2d9ff3bd9b4a173a",
+      "sha256": "2e89bda44d0640b3826fec3dee171c5d02c6561a04505b8cc6681be18ef70976"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-main-bottom.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "00305c71b50385cb636beed503f1ad4e24402ad3",
+      "sha256": "5457a94c2f7dca546876b276e65e0e68db87731ae48133ba1cbee6bccfcdc8cf"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-main-top-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "412ec5cbfe5614117fcef9c15ec9931ccb36219b",
+      "sha256": "d8d535d746b7e875905c065e0a32dfb2cb919b0c40d36d5ea0f01ca55dc336fc"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-main-top-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7717e2cf83eaceee67afd56b407c960fba9f5e69",
+      "sha256": "167139f12e1c4e778ac9bef590215e7dff66d26e582e70c01db6993f6be497a8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-main-top-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ea5deda761ced5cbadc55f5267cec75a834082f0",
+      "sha256": "c195710112cda5b7cca6e6c09873fa59c4f6cb97a748a24178795ed5e08d321b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-main-top.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4ab8b7eb5960caef5f9e484dcc3449f9e5b6697c",
+      "sha256": "7116b71c220bbc3147dbc3316d2cc8195f4fee18c1184de7bb6b02e7258b06c4"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-sensor-bottom-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3a5cb86b95f28fb2cfe305a15de6182f5ea91653",
+      "sha256": "8c74550e957e6e002dc12acf6b9a68a7757ca28762cfcfb4d675f0b2b8cff2d8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-sensor-bottom-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d415f84dd7062c10fe0e9d2d2af9a8fe48c23cec",
+      "sha256": "893666a35b2dbf95a9a4aa0f2fd1550ba5366a8b6187783bed96f768a6781a1c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-sensor-bottom-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c2cbeb1e24c1930911d39390d7afdf6bedc6268e",
+      "sha256": "dc787aa71240428e4c86922c814b346658b31cae7ebca1e2c01d39a8e3153aee"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-sensor-bottom.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7bf85783ca165d2f14139bcc5f272c825d5f3618",
+      "sha256": "f76596eda957bd2220bfaf889ea8707b3df5f0aa4407bcd65b8deb790a54cacc"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-sensor-top-mask.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c5be45da43f83f8c03ebddaf314d7cc435fcb422",
+      "sha256": "4857adbd9db2197ab41d2d129e0fa7358a8ebe9bdd00f02be232827e68248752"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-sensor-top-paste.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2650ae9614c16e909d54e31a39a356b311912e6a",
+      "sha256": "31d4c5fe50eae653f7cfa7e02be8e675bb5dd97489e709421803f8e36cc80548"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-sensor-top-silk.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "8632825a11ed8febc2a7f38051b546e9fc4d706d",
+      "sha256": "37a7f3f4ba3de95682f1c31f52f4a6c64e83e3b08da5263ab88718f4db535a04"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/alec-sensor-top.png",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "44d92ac8955af9468151c6c5a34f6eae4148ebd5",
+      "sha256": "1d4070d183d1d0c2a6219394a0ee7d56604d214c9b463382855fe25e7c685152"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/cam-check.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "690cddd2ff773770ef502da4dcf218dd697f9850",
+      "sha256": "afafa2750cfbf3453f54c67c5888d6d88cb8a096f4d8e65bbc1782d5ceb3cb49"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cam-review/4d8e65d-r1/native-reference.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d2e5d2a83395021a6abc1d103da1d0a2aa6792c7",
+      "sha256": "2c7fca4b656cf3b8eedf3c64dd637edda206233d01cbdb6ec66d619afc2b27af"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/catalog-queries.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "48af13b595d1437e796abfd85375244e587e2b06",
+      "sha256": "9fdf2101bba36fcfc014f7f4d27b5918627e23fad47af790c91ce35e61349391"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-first-pass-2026-09-08.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b3aa33f0df74e91c68538fae07ae9413af253dd3",
+      "sha256": "7102abc35ab160313af0cbd7052db680c4310c3d3bc55be8c8d50f54bc2ea496"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "cc6aa27e05b4ae403e29f96d48b30b3aec44278d",
+      "sha256": "65cb25eb3ecfce5435dba123aee112c4e797a3c4318b0576f3318bd0fcabedda"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/RFQ.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "784ad9dd730a15d92b157948f82d379b338960d8",
+      "sha256": "b8d97ab2166aa934f75f0a749d3a63a707a46587a1af26171dc0626a66b29f56"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-controls/alec-controls-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "bc5d6842b1fb4d10fe50a124dd17632494618314",
+      "sha256": "529461b9adb3052c03213ddea4c40104b1ca71ff780083a8c29e3018234f3cef"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-controls/alec-controls-native-placement.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ac7d0c21fa998b40438363817e272d54ed033985",
+      "sha256": "36bf46703c9fad097278a26ef31dbb926549fe4f63c4d01e60ef65d9c00439a7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-controls/alec-controls-quote-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c45c18bb070dd105b1715521ae3db5156e475e53",
+      "sha256": "fd81274a9a09ed0fafcfba82a3c9d854f39c7a8701ea8305d07d6000b69b8d88"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-controls/alec-controls-quote-bom.xlsx",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "8f62d1814d9ee9f2711d4178064417b3dd0edbe5",
+      "sha256": "80be709b0d3e75250b37e10864308f568c24c3bc3ddc2d811bc69d3c27adb781"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-controls/alec-controls-seeed-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2f91b2558fc39907c67087bda6cec0051321f600",
+      "sha256": "933df4bc2b18add52e048bc16848c5b588fd2036689dc5f6d5fa2a61be0d8b65"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-front/alec-front-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "794009bf29faba164ac8ce05ccfc46e03ecaa9ef",
+      "sha256": "e4cda9bedc90f52dd172ddd6269f6b90651437c1e56ac7e96f1588ad0200f8ea"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-front/alec-front-native-placement.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "389e55c765fa6bc8d4700bad3622ae9d06119d76",
+      "sha256": "e34cd5a56e41e99f62d1fb0a1f658c430032dd233e04b873a47fcd25b6e53d04"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-front/alec-front-quote-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "751ddcfa2ecd525e7223ce3e828178474f2ad3b1",
+      "sha256": "10c3a546a172df332da3c83041ba370c6d74fa86508ea5a3b21ff09a4e7f552a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-front/alec-front-quote-bom.xlsx",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0d7bcea83b4a3f1f20d558cfe306366fb8a81ce8",
+      "sha256": "1e1af3d49329d8410c0315b43eaa684e807024ab5b077e00f5213591b0dddfba"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-front/alec-front-seeed-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0fd01cfe12566f032a8584315b965008b7a4d1e7",
+      "sha256": "69085850891cbbf8ce9a93aece01aee938e2a73dc99ce829884c0e40a2795f5b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-main/alec-main-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1a5701abada85b08967713fc0ffd0fd1ad911dd6",
+      "sha256": "23963364d46125bd0ba7e6a2c8013a29c5e269f72cc32cbd61ade0db344eddb7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-main/alec-main-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9138272508ac64535634dbfc891528c14303c5d7",
+      "sha256": "fdf29a45b08e7f7863141c78b3ecf48b4a34069a986c37b83001055218727ae0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-main/alec-main-native-placement.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7050a956e3c47eae69d526cf359402f6d765d892",
+      "sha256": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-main/alec-main-quote-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f5cb1c8d1ce0ab4b20eeab27c33509aaad9eb608",
+      "sha256": "2e53562eba4f059fd732fc261747ceb062a257430674af23f48be8a05388001f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-main/alec-main-quote-bom.xlsx",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fac16e8b5a242c6a0f8f65eb5f648fa12d391e87",
+      "sha256": "81d141e94d429919602c97eb42deec872f24da0f8ef5980125fb56cd65ee64d8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-main/alec-main-seeed-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "27b60f916a4091732de644319a9ac4eb3a670fef",
+      "sha256": "26a7e2fd4448db6a93a2cf4d7395d458ff663caa0026560d74064013c7571e11"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/alec-main/alec-main-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "48ee06cf1ff5baa6201619850bd734c833a9e2bd",
+      "sha256": "4206a310c27dcb54efae18881225b38af5961645dd57b9efcf39fb106ef1536c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c60c568899967f3a0b34d62d7717db8e41094626",
+      "sha256": "a1e7c79259048837f8724a4779d5dfb98a602d57ae7fdc9c2229bb25352db555"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/cube-supplier-quotes-2026-09-08/rooster-cube-quote-package.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "103008e60a6b4685428a1b80bbf6af5fcedfe46f",
+      "sha256": "b7e2f0fa6012e868caf0c8489ba017b125b132429544adb5c8c8317dac1afd77"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/datasheet-retrieval.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "34f9b6c10472c879f90ee25c884ab69b47152d30",
+      "sha256": "4bf3e1b4785a1bbc8704d6ed876d3c2c6cca7acaff6a6b3f4bb4cfc6aff3bf2d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "995ed28fd3599eda89cae2359212aaafb5831a7f",
+      "sha256": "1fdcc64774e44e04fb3e9ddbefa0ebf0170c25ed57790cb7b5963e29f37911e1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/alec-controls-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "eab39d101408014fee303b4d1656cd47ae040836",
+      "sha256": "cf1dae5fb846a7b46c06053ef42e4042a8389bc0ac45f953aec3a94f5f53a880"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/alec-controls-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ac7d0c21fa998b40438363817e272d54ed033985",
+      "sha256": "36bf46703c9fad097278a26ef31dbb926549fe4f63c4d01e60ef65d9c00439a7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/alec-front-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "05af2078c57f492a119f6fd1244e08811ffa14b5",
+      "sha256": "95c5a5655fad0aa6fe18f3eac570b5d3e27f6e35203d5661d52f055063d28b12"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/alec-front-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "389e55c765fa6bc8d4700bad3622ae9d06119d76",
+      "sha256": "e34cd5a56e41e99f62d1fb0a1f658c430032dd233e04b873a47fcd25b6e53d04"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/alec-main-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "51742ee7a8636480718e80ce5299f8c81e2cda52",
+      "sha256": "9e2f10a6fd418bff844181ae03c07c44b041786fba7198782cb7e382b9ab5507"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/alec-main-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7050a956e3c47eae69d526cf359402f6d765d892",
+      "sha256": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/alec-sensor-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5aa2cd86199b60054d0ffcfd3fb445f02637f366",
+      "sha256": "c7a9010b88b9de347d351e8ef81565ee74a5a164eebab3a9e8bcc791b92a947b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/alec-sensor-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d1007b0d16ee84ceb95f341e0720609807c4a5ca",
+      "sha256": "edfcaef0ea36800f88cd003cc8c3064e933b5b7dc2554b1f834cb7963b12426d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/draft-quote-inputs/manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2b44c7fcb552347c0b16726a0ad0f414a575bbca",
+      "sha256": "5ca6769a4b164ae993b475599969f86fba019e27ee59d4a825afb437828c066f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/external-parts.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9e818e91e3817ee5dddd656f6d86bf051564d4e9",
+      "sha256": "8c0414c7ccf46f9f411e26c9f72fc1cf0972a150e0e9881a7bf48f5aa3c021ee"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/alec-controls-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "eab39d101408014fee303b4d1656cd47ae040836",
+      "sha256": "cf1dae5fb846a7b46c06053ef42e4042a8389bc0ac45f953aec3a94f5f53a880"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/alec-controls-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ac7d0c21fa998b40438363817e272d54ed033985",
+      "sha256": "36bf46703c9fad097278a26ef31dbb926549fe4f63c4d01e60ef65d9c00439a7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/alec-controls-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "bc5d6842b1fb4d10fe50a124dd17632494618314",
+      "sha256": "529461b9adb3052c03213ddea4c40104b1ca71ff780083a8c29e3018234f3cef"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/drill-report.txt",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3b012a4bc53a959e7e61fa0506986c9b11e64872",
+      "sha256": "d9fb3b70c2831a6241506240f2dccbea131f06cdd7b9da971eac98dd4cdde46b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/export-log.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7d3090c716675b3dfb3289a306f9235f0daaddbd",
+      "sha256": "166f2df66c111b51b99e94e67cd6f43d0e1592e0abe21f20d98272cb13df3dcb"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-B_Cu.gbl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "06bb0a4cdc41847d6fa1462690167fcb412b4885",
+      "sha256": "e07dab16556fbbd9ef9375de33dbc62ff93b687031ddae05e9b57fac674b73b1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-B_Mask.gbs",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1401ad6c641de79adef9f1eea050fdddae889d7c",
+      "sha256": "2d5011ece1f8761b461787515c3ec907f2d19b9f78c9c8084f8cf52fd8b5c51f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-B_Paste.gbp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3c12932d77da8e6cbf21ff67a257da6b0588814d",
+      "sha256": "e2284c7d26fd0c8b3f743e5a61f2fa48e20e5bd05973c6a767294295a8724f0f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-B_Silkscreen.gbo",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0b7927a60a11f8a018711e2ab17577d8096eaf03",
+      "sha256": "7533afa6170a91b6aa1462af1e216da8f7a36d0d29eb8f0969ea9ce2c2b4fc75"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-Edge_Cuts.gm1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2e743c1d944a3d9bad6a0cacad69ef24f7d2ed6c",
+      "sha256": "a251bf76cd9e02b327eb6ae195bb487d54c75dd0533951308e551ce35142a231"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-F_Cu.gtl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5ef516631ca2387bff9990f859ce6892bf94a6f3",
+      "sha256": "23cfe77776b2b63dc432db9a949d57f48aa75b612d29fef3d6f82021d45010bb"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-F_Mask.gts",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fe318d30beea445435bf7ad3e3f3f1ae76f531e3",
+      "sha256": "47891589b1b213368ead836e88c8a888885aa31c7058979b3a104ab0e26f6f5a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-F_Paste.gtp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f89c80cafce4709ca2c96d71898de4180d2a038e",
+      "sha256": "6eb79e2a1a30aae9894acccbff1e2c63606cb92e93bf1b39ca218555ee33240f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-F_Silkscreen.gto",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "bd8dbfea8f9a2e644a6f4de147f563977b07c5a7",
+      "sha256": "440484eb5253a3dc35093fb14c91dca61d43c3237c7f802868dcd8c6b498df0f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-NPTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "20d5ae78783540bbc3c86c3e5b0c22d5f03ae113",
+      "sha256": "81e246931ae6dafb9bc0e8a2c6e26ec29d0e082e2f48fe430edafb211c061e99"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-PTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "de62495bc55b963aa8506a7cf11431f215138a21",
+      "sha256": "4d036c0540b9e6d285db0de010c4dce3679e5f1a74e837188b1c0113923122e9"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-job.gbrjob",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "904ed552bd2f67d441e4c6e4757bae79783cc896",
+      "sha256": "5413b8e9ee1d134be536d99b806eeff6d16a09cce21af7e3a29f7b34f223c563"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/alec-front-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "05af2078c57f492a119f6fd1244e08811ffa14b5",
+      "sha256": "95c5a5655fad0aa6fe18f3eac570b5d3e27f6e35203d5661d52f055063d28b12"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/alec-front-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "389e55c765fa6bc8d4700bad3622ae9d06119d76",
+      "sha256": "e34cd5a56e41e99f62d1fb0a1f658c430032dd233e04b873a47fcd25b6e53d04"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/alec-front-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "794009bf29faba164ac8ce05ccfc46e03ecaa9ef",
+      "sha256": "e4cda9bedc90f52dd172ddd6269f6b90651437c1e56ac7e96f1588ad0200f8ea"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/drill-report.txt",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "317e072aafef800d999196bc193ddf2dc0f37b11",
+      "sha256": "2725c68e5999f729a011a0092b3571062365c88113e4f8b8634d43fdaaea4d31"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/export-log.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fa038869a665c8ff31d528c4e47fe889f16bea43",
+      "sha256": "8ae0c99c5822997642db333dd6e21bf927a78cb4ba329a8dedfc3721e7c216ef"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-B_Cu.gbl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d6b469573616a515d6403912020f1f61c3288c08",
+      "sha256": "40223cbe520a4f56b545db05e1a53dbf46db69867aec457c1f88b9165188f371"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-B_Mask.gbs",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ce984650cc3c745ab8cac867201e3d688aa7a038",
+      "sha256": "664508aaa123f4b3488ce0ef263aba7a261d70fc52321e14da3880ab3f7520bf"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-B_Paste.gbp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "71b01a40ad399fbebc3a3167c9be78eb7371e723",
+      "sha256": "cbf9ef2154b77b9d15ca5cd4f836c562ab56fab9f671cc7f0b801ebf43622d90"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-B_Silkscreen.gbo",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f4c29d692b96a725389e598a2ad31769ab2fcf41",
+      "sha256": "4b86c5d32a872cb3d5129b6dc7266ea910cae1f6e9f642c4a34e7a8fe1aaaeaf"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-Edge_Cuts.gm1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4ef7c1f0e78d6778f07d1d95b29db56af144d480",
+      "sha256": "469df86cff61dcc3160d6b801781c18c7fc8df45f6ab271578ac448eb137be48"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-F_Cu.gtl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "80b1b866ff690fe0392405fa4ed7438c9da886b3",
+      "sha256": "aba3c400b081799e196b23cb23d7b5359fa3490a6d1662258f870601fd46f91a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-F_Mask.gts",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d648f8ab18a1706691d523d8870b3507a0808584",
+      "sha256": "bf564b466cba92147701f7656b02386a5ee059d89a351d74c5d835d62c88eaa7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-F_Paste.gtp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "52d44ebf30bd0be2ce0fab19ee8074c45f04ae7f",
+      "sha256": "fd84d99a8ee5006bd14cd366af332ebadbb4e3d251cb9833405eec57d4c6c69e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-F_Silkscreen.gto",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "72f8076e7c30d69e6cd9470c0aafd2f830648c28",
+      "sha256": "6b35c38a8645541d23b41a829381506ee526ebc9ba000e1b554822ce4b8a1b4b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-NPTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fbf00e29e4d04b89af8894818fbf696403ae403f",
+      "sha256": "4520e93065dbbcad1246fe2301f1d403dab4a819b85f9965c646bf51c2d0f9ca"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-PTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "12ee02e7da35f518d44804e1c20c902251609bd1",
+      "sha256": "7129628f5ae580ba73d1d6eb24ae25238395750dd79d3e9e5c577168275763fa"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-front/gerbers/alec-front-job.gbrjob",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0af57774be80449f5748623bb1b315ba402dd7a5",
+      "sha256": "312b877f89a7808ba71453e4effe88a4eeb51c4c389406c18d23986b09e54f21"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/alec-main-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "51742ee7a8636480718e80ce5299f8c81e2cda52",
+      "sha256": "9e2f10a6fd418bff844181ae03c07c44b041786fba7198782cb7e382b9ab5507"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/alec-main-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7050a956e3c47eae69d526cf359402f6d765d892",
+      "sha256": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/alec-main-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9138272508ac64535634dbfc891528c14303c5d7",
+      "sha256": "fdf29a45b08e7f7863141c78b3ecf48b4a34069a986c37b83001055218727ae0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/drill-report.txt",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2e6a30cb815e56322a1e2362f147b2ca8a9f8277",
+      "sha256": "17f4b1f231faac494fe832ae3d331c3eda707985a48400e613a3f745be1a9f50"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/export-log.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6ac44c0514c7316ef3ad0520224a7b285a0f8329",
+      "sha256": "4762ef1d853c93fe35a40a9c1992cf9a104b3efa3f1de7ab0a39dbbda392809b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-B_Cu.gbl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "aae2a1b49a1d2f65fa07569115a91db09ae7358b",
+      "sha256": "10fddf7e4bb29538a540d256c9aad4f66e12ee6f18c5e299267f8c30673e325e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-B_Mask.gbs",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "72a3c2fd6ac0579b22460eb191b2a670e76d51f7",
+      "sha256": "053a7b821c60fa99090dbaf5ec30f580fb9a227c494030efc0b063b61c7c6737"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-B_Paste.gbp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "188a4edcf16053e49f702dd9f07f2cbbdd72998d",
+      "sha256": "3bbd17f8d9dd956e3e9573c968afef3ba74da61a108b5c22edd473f29d93b524"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-B_Silkscreen.gbo",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c424f8623b3e231b42a9bbdded048ad83d1e2345",
+      "sha256": "b92ce19f1342cb33264417d9172a4310133462658d162b511425966d829b2972"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-Edge_Cuts.gm1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "721cfc2ee7a44548912ee28a5635dbfc53084208",
+      "sha256": "a1df4e7b9a0031e9802dafa6b1aa5a37ff4cd448b890b73eb6058865f8990941"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-F_Cu.gtl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "406798b4e229a7b58cb20f8e3b9268b10eae4bcf",
+      "sha256": "dfeeabbb2eb707e1eeb4d99d77406cc6d11307278c076ffa7be55c0e22dfcc2b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-F_Mask.gts",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "57b6afe726c84df88ae15a941f6160ae99041ad2",
+      "sha256": "bd85a65304286792e96619d5cff2b1cc920c3f716f5a518729e9ee2eb9fd25f8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-F_Paste.gtp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2e6345b5420795a2b07b50cd845771b590e58d21",
+      "sha256": "dcce8f12898311c34457bd0b4a84865d9e49495f74727e3ca762343bb538da32"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-F_Silkscreen.gto",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "960f9f29834d87742efefb99c615c9cd66d0c39f",
+      "sha256": "6bc6152e30369f5b8c8a71e78db7e544801bf836ae6a47da773de5d8f6b4af01"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-In1_Cu.g1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "84ae408c121f48529d2e7c86d97a4570fdea85eb",
+      "sha256": "ea6dd05f2ef31e4666c51f1eeb7cf5fe6c9d498d039645d419465599348215fb"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-In2_Cu.g2",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9f353d92602bd377dcf7f4ccf3a398fea282e03f",
+      "sha256": "3e7cae178337a406fb9622250c17e1e525fd9b17bda4350651f600e899b1e4ab"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-NPTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1f0527e289c01f6a98d5cdc4342b2792f2a8b926",
+      "sha256": "05579d34507201a67b9336cf6107b25c66c32bdd840c14dd89c90278395a4da8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-PTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "277f7bc186ebf6a7af7488c7b77c3736b79d1269",
+      "sha256": "a7e42d222218875d6fb8b4da2269cfd6899e24367707ccbc16f37c831bb2950a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-main/gerbers/alec-main-job.gbrjob",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "640fb348464da70dbe0aff7457aadf6a662df537",
+      "sha256": "816f8dadfbd51e79e7087f91152354e1bc757d84e10de537f034471ce6dc6fe5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/alec-sensor-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5aa2cd86199b60054d0ffcfd3fb445f02637f366",
+      "sha256": "c7a9010b88b9de347d351e8ef81565ee74a5a164eebab3a9e8bcc791b92a947b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/alec-sensor-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d1007b0d16ee84ceb95f341e0720609807c4a5ca",
+      "sha256": "edfcaef0ea36800f88cd003cc8c3064e933b5b7dc2554b1f834cb7963b12426d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/alec-sensor-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "02003883a3df86ec95f825df518764699340ccc7",
+      "sha256": "ec6e25d9eb399ee1a5e95eb94d4714c771c721c467dbd2f87d9307b50056540f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/drill-report.txt",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6f53ebb12aec9631a11c7210768f1141ff853456",
+      "sha256": "1257dc5de761f9f35ef67c4cf3dd9b4a5445eaa564013d30e66972262bd08be0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/export-log.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "54c9ff231b729bca9bbf4dd2188244e3d3edeb5e",
+      "sha256": "97acebb5a4acdfa039f3408a4d148508307affc7127b8a3a7b3556213f4d6774"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-B_Cu.gbl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d8db4b37b26dacdf80b8164cbd6b267dfcb10fe4",
+      "sha256": "314335b3fc62b7d52b907c02676dc924a3bb9241b9f2912b298163c1f7d99f00"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-B_Mask.gbs",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "387792a63d7547d6cc4c3028b1677b6eca10e73b",
+      "sha256": "de64c46bf8c1ed2bde29d3682015ed425f7d81334758acd89a7411398c54f5c2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-B_Paste.gbp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3d147e69266828e65897e4ad135442f52d001a6c",
+      "sha256": "2e19c2adf598c0013cb5b922c721c3b7ba7caaa3ab2049e44b50a539baebd0aa"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-B_Silkscreen.gbo",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ed5871c7f1cac23fdf692a70f00fee81ac69fb19",
+      "sha256": "bf22cfeaf5b7388c3fbb2c6fe18569bdc81fa45fce8f8db60688f084ef5bb5cd"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-Edge_Cuts.gm1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b864e733992a75bb5fc76a8be97afdf4c030016f",
+      "sha256": "09ab1db406099f22982522c6731685e54e822de74c2ee50528e5fd3a50bbd214"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-F_Cu.gtl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "999ebeee9ef05f8f02fcfc9134782d6feb41658b",
+      "sha256": "c9a000bf2df81aa419c4a655cfa9df93b08437a0c1ebd04b58382f1e6940132f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-F_Mask.gts",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4d4a5ba3e5f725d369f9732283fa19cef18c8b3b",
+      "sha256": "272a6154b3e14d6a96b9dd7c47c3e6595800121d96a92d931fecd5e8c3832bf4"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-F_Paste.gtp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1d5c6579fed5b700489e00eeac2838549bcc4231",
+      "sha256": "bc101dd5e02f98cc42a4c44011aada3d8e7f725fb06afd7f0005d2dbe8cd5ade"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-F_Silkscreen.gto",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f60c34680e0af953c71523116fcf5b61245c772c",
+      "sha256": "9861a599caf707d33ebb6eda59d855d3fdf210ae9d369515dff8ec3781618b43"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-In1_Cu.g1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3afe1bfed8b5cf81992931f08ba5fdfb74d4cc71",
+      "sha256": "431d45c341accfc3be05692ea55475f0ed5d4568cb0bcdc20ec4373835c73d9d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-In2_Cu.g2",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "014e0ba287038221497c060086c638b2ce71624e",
+      "sha256": "07dd3e9c7a3a2270e55132c959b3e7f7defa6516f3148602538b564194f6ac54"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-NPTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ac412d2ce4e6ef877dd11a7cc45ec8a4c3d3e3ed",
+      "sha256": "b48a1533f8486987df83e8bf51cdf49feda97ba5c8c6fa76bd8f868edaa0854c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-PTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b725f47e41f5987db06f0fd1df90f34a6bea78bb",
+      "sha256": "e05c2e37c1df43c8f8a52d887c2de430b72126e034804872149c1cba3c3a72f9"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-sensor/gerbers/alec-sensor-job.gbrjob",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "050638a0d5061d53241bd18ec8b69cb808083d6d",
+      "sha256": "fecc3c47d8bba3c0c085d1717034879d3f10002441d8ce0555273c87ec79c9c5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/090b207-r1/manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5ac92d03987fd5fee9c0f9662200447d81063277",
+      "sha256": "aba18a0eb6d27c9088ffa64e95fc8ccc410689c0ab80ed0cf243141664bb3fe5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/alec-controls-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "eab39d101408014fee303b4d1656cd47ae040836",
+      "sha256": "cf1dae5fb846a7b46c06053ef42e4042a8389bc0ac45f953aec3a94f5f53a880"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/alec-controls-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ac7d0c21fa998b40438363817e272d54ed033985",
+      "sha256": "36bf46703c9fad097278a26ef31dbb926549fe4f63c4d01e60ef65d9c00439a7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/alec-controls-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "75d3ab063203c54429a0dbbe5ab2c5346267a7a9",
+      "sha256": "30b3bcdc1e32aa878103131e073683cbf03005fcceb10b3ce7d4aa82f133ac42"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/drill-report.txt",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9f65a2167f64702267824609cd1779f6b4947e32",
+      "sha256": "827881a640a868fdcaeb4203012a2f5af2c644ef62a8ac7998bd84b735b5d65f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/export-log.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "85e34b73f69f1323dbfc43a93c4f8f2c42e4169d",
+      "sha256": "0d7ce500ac51c679f8973d760869eaafbb20f286db01164cb92fe1b2f91c83a4"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-B_Cu.gbl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1a7e72e16f3bf9331ab298ad4965ea04f783c766",
+      "sha256": "dabb3ebe8d568becf90817b55d88ef90a78fbf343b951b423b2e003cc049ff13"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-B_Mask.gbs",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6376c1efb7a91fd0eb1b26a23dde2b633e8333c5",
+      "sha256": "5bdda8f5bc2fee1bd7246b2e75268d37121161a55190fbbfe25179c38ead2afd"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-B_Paste.gbp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "34bb48a3eb592903f4984f4c6f885b58a0688867",
+      "sha256": "cb6ab5a4c1f0fe5df3415260619b58344f59f64ddfdaf46417d9d918e51c4461"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-B_Silkscreen.gbo",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f6e8f514ffa1258caa1335913fdb40380db045db",
+      "sha256": "9e5edd843bb6daa966714792625bc7a671a7cbe58a0a3e38afe8bf5cbd1c1149"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-Edge_Cuts.gm1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f9387072d45785db9161b610ff8e05b1cad318aa",
+      "sha256": "468d8986f41169e0ebf418f5aae73f8b0b2c3537fa26223eddfaed36985aaeb4"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-F_Cu.gtl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "dcc805ad4acc85ed6422e85cc166c676df8dd979",
+      "sha256": "9be8c4af6d7642ac01be29275a22fc0c91f4b5b25db7a8f23553e8bf73b0dcb3"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-F_Mask.gts",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6cd093aa0d30c24e05de052bdd38570878c6e103",
+      "sha256": "385e76dcfc1f7ae717eca4664867009552654bf56113649f6ec330bc02e2362d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-F_Paste.gtp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0e5c9846fc77f26edf5b87ba7c6ebc4d8ba99359",
+      "sha256": "50f24e4ab60ef0f1aa899e9bb50128c33d34d7a4dca917826dace3001057e0c8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-F_Silkscreen.gto",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "8ba84c455ce9a74593a5c1e34d2147d01808858b",
+      "sha256": "08e90ec439025d4081a694204b441384348ab85b2190487c93b806193e7c6c7b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-NPTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4e0d5249c0c9a72e48201d1f049af0a3a5f2422d",
+      "sha256": "f8fde3b4bc4f4d447b196f5b9da7ada9398f29d87d70facfdf0335de8004fe60"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-PTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "99b4d4e85fcfbc088dd891f5a776c8f08862e676",
+      "sha256": "32b4d3e2c18baab853bed896edf37a6ca8021b73116201e3ff0f343d85327c8b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-controls/gerbers/alec-controls-job.gbrjob",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "811fa1ef1bad6ae345e535846196bd5c37d4de8c",
+      "sha256": "5804a7e0b37b38ed18b67ce896c73ee5a8fa8291028fa56908360ccdfed0dda6"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/alec-front-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "05af2078c57f492a119f6fd1244e08811ffa14b5",
+      "sha256": "95c5a5655fad0aa6fe18f3eac570b5d3e27f6e35203d5661d52f055063d28b12"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/alec-front-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "389e55c765fa6bc8d4700bad3622ae9d06119d76",
+      "sha256": "e34cd5a56e41e99f62d1fb0a1f658c430032dd233e04b873a47fcd25b6e53d04"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/alec-front-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9309225bbf28f68e3323461acb2f01a1bd270528",
+      "sha256": "8383200dbdea613da26a868e13bb37d42dc2287e3cb5b6eb36b30f117c6c9e67"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/drill-report.txt",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9d5c19015973fd83cacc2f2ea398aa24ac7fea8c",
+      "sha256": "652793edbe37c5ae1c84b2a77f9732c716991301ca329669935a8acb9de591c2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/export-log.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c4655302040499457de8aacdc7cb2bd09094892d",
+      "sha256": "f5a52881366bbc7b0deaf8190a0313c92ded1a924dcc4cf407cccedecf54c8cd"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-B_Cu.gbl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f91e937e9e7a25e8c24576260492de6a0b4196fe",
+      "sha256": "2edf5091ee36385e3a082fc25b04591a20315de7d0c09389f5bdb26d8dc38afa"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-B_Mask.gbs",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3b3102f27e592d720b575867e2d8be4703d34ca5",
+      "sha256": "44458721448fc25dd00f63c0e2da26a13b6b72fd82ebff8b729fe7d2ce7544e6"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-B_Paste.gbp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1c7c15da2e069065765aa19bbdc72d7114f066e6",
+      "sha256": "23e49516365cc0f573d603bafa0011261b15a9964a0c4ee1cfde3ae3e26c78cf"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-B_Silkscreen.gbo",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5f38887e082d2794d21592cbc938134b3d625443",
+      "sha256": "37f237f6477133405a1cf6aba1f0b2d9f673f535f5118eabb40fbb92424b42e9"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-Edge_Cuts.gm1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "bd580789a2edc7dea623ba99317bb28df12eebf4",
+      "sha256": "b8aa1945fddcd64ac27dd638063d102ee50e679019e6699f6f58dd1aefe78e0f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-F_Cu.gtl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "96e4a0875719a073ff130f60bd37884f04f38960",
+      "sha256": "b1fa9e40147808317066ecd81b92eb492babaed68954fd349e2e58a2dc9fa412"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-F_Mask.gts",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0a31b4cfdd66658c6836f5e7fa8a6008af4a5476",
+      "sha256": "8919af0f386ec8723c842608caba610f6a325634b74097881e566852666889ff"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-F_Paste.gtp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d69f10a21f138202fa7748880fca8a4f8b6f1d27",
+      "sha256": "35eb0fb75591435816e524c6c0b6fda1c31545795e188cda4f134df6620367f0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-F_Silkscreen.gto",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2f2b93e0864ab9f8696904bbe432c26d6aa606f2",
+      "sha256": "32dc811598f8719e6441e2065cf3952d3e30cc563911271557b51487769a081a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-NPTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d16d865a434c98a844c141e6d2960991f145bd2e",
+      "sha256": "b5b18c36aa72f126f5a2b69dd813135809a6f4c73fb57a19970105d806c010af"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-PTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ad704d948e430d35def3f344e14641e68a5de8bd",
+      "sha256": "ad95d0035c69250547bbcd12f89477a17d5118bd86759051f0f099c0cb10ca89"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-front/gerbers/alec-front-job.gbrjob",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "48cb7de23d3681e7d050b9117c5e07b831e00fa1",
+      "sha256": "ae1f30f1dc95670c4f4dcd6d7edcabe5e260cff5c7e69c2958ee1bedcc5f8aed"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/alec-main-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "75e3dfb91e72c196ea937c3e4fe245c6b72b5989",
+      "sha256": "153ec012b9fe56b4870893b4fa386cf9a4153043c0a8c51719e08ce69e8b8154"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/alec-main-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7050a956e3c47eae69d526cf359402f6d765d892",
+      "sha256": "acbdaf97c5c550c8876e920fec16350935a9df4787803f163b404ba0d79d3188"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/alec-main-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6c2ff9836279da7a05a019c253dc8e5011f1e8ec",
+      "sha256": "abee31e91877f17234b467d81afb02f6149a3f7133e2fabc4cf0385453742ac9"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/drill-report.txt",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c7b8e21ba49c2d067c170f5c6a0855fff3cd85c2",
+      "sha256": "2dadaa526e364b2e349b11d6bb6efd71bf155b7c2b6a030855d486ac5313bd09"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/export-log.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c12e6dd9621ebcfd1c5de997066a2c895cb6738f",
+      "sha256": "b464c50de199c94259baf48da969929e7a6ade56889edd6c30a8db3e9925bdc2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-B_Cu.gbl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "976e639a02ddf498e2b27506dfd3d0ca964a7f5e",
+      "sha256": "2c84986005cb89386a81a4dca413b11bb1ea9632684e3d78920922479cebabdf"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-B_Mask.gbs",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d224fcbff48af9e247751d77109b40089d9058f3",
+      "sha256": "390bd397399de699dc8d5715a5ea3ec50e24f76ca3bdaa1a4f183e3b9b16ffa2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-B_Paste.gbp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0988a2aaca3076569462d43c3ce878c94f8a36cf",
+      "sha256": "ffd1525e3da2f99953a86b7643b219281bde898c65db6362a968636fbcfd9241"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-B_Silkscreen.gbo",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4bfa441d0a06308fd647aa0b4ed6c5f310e23399",
+      "sha256": "1bd0bc180e745a561c415e8100383b2b5aabd03eb859eea413894175cd5b9ebd"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-Edge_Cuts.gm1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3798837b22d0fe747f8611a0803b2abc3e705693",
+      "sha256": "6462fb995f075379286be3d1b6fd30bdb99025bf1698a274da06cac235abe20f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-F_Cu.gtl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "312a5978bf8673bf696f8273308f72b72bc74b1d",
+      "sha256": "f07a1246965129dd47a358d880372012c162b46ae0455d31c0a6ec704d08e9e2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-F_Mask.gts",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "84b727ef40c307ec612a1225170abecdc8088439",
+      "sha256": "49d86b43f00a6c8d96c951151a345c09a4fb945866d958c372559b30865a52b1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-F_Paste.gtp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "04b79233ecc988722d35934ba393ee035725b1ad",
+      "sha256": "10887d4cd28418889a48e1d38cdfdfebd33fcdef47e2dbb2197094316482c176"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-F_Silkscreen.gto",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "8bda923aaac4b53716a31bf89f8eb29cdf9d8d44",
+      "sha256": "fdf7d41c8f67a4be2ccade8026c97f8cbe768570315aaa03426ab33e39afa546"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-In1_Cu.g1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7148cfad9d4d24cfed818156429ddbc331b0b05b",
+      "sha256": "37cf9bac2e18ed9db276a2600e64dc6d7a4af007faec76da096e56de0688cfde"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-In2_Cu.g2",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a8a36340d96c9424876322aeb7e5a60a5d278d18",
+      "sha256": "325b128335ce7937f282afac113cdb2c3fbf30ac2aa17caf18862101f00964b5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-NPTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ab4fc1b6739c7191dfa9c05c6f8b89a37dca986d",
+      "sha256": "df8887935ffdd8a5b87d7ea6d219758931fc5bbc40d17a639ef3f37948e3a550"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-PTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "867a6a5fce18c51520c88bab9e922ce78e1dd3ef",
+      "sha256": "e6ac6a060428259a3bffd3d228f82b4a2be41163b6cb1a97f8b84f160724e631"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-main/gerbers/alec-main-job.gbrjob",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e0c75bf80023c700e3f9ea2028c55ecc9f46ab42",
+      "sha256": "5f48a635d5f0dce7871924d39bb4bd418a54e4d48496e7d0f97e2dafb14bb6bd"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/alec-sensor-bom.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5aa2cd86199b60054d0ffcfd3fb445f02637f366",
+      "sha256": "c7a9010b88b9de347d351e8ef81565ee74a5a164eebab3a9e8bcc791b92a947b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/alec-sensor-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d1007b0d16ee84ceb95f341e0720609807c4a5ca",
+      "sha256": "edfcaef0ea36800f88cd003cc8c3064e933b5b7dc2554b1f834cb7963b12426d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/alec-sensor-gerbers.zip",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ab40d6fafc84e3c6bca49f1c2c51397c19a0a1fb",
+      "sha256": "0763d0b54402151a925ea1437c293f5484da0f6d5a1f63483d3d5ebcf1df1f85"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/drill-report.txt",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c343e57577ec65f1821d07a5deeb288adf6a3d8d",
+      "sha256": "ab00fc3700c96bcb3a376ecdc38296475cd663f8b5c1b76fa67c1fd31a709c46"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/export-log.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "590557d77b3ffcde5df15a5592c8eea3d1815e8f",
+      "sha256": "49a5f68e301cee96cc90eff95aeef812adada5cf124f8b5b30ba54073999d747"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-B_Cu.gbl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "aadc87dad380a3ab76c87800aff272d803b4c5be",
+      "sha256": "abab65f5eca8fdb786c9060187f6ac05419cc4da19b974e5991472ca3f162efc"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-B_Mask.gbs",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1ee67c1d17d7fbed6d1ec501df452ac3b672c17c",
+      "sha256": "d449efbf0dcc1fba0433ac9ac23153ff409661ff5da22870bd3b4675f8fe099a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-B_Paste.gbp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1e075bdb164ffb47abaf0ed6f34da6f8f842f528",
+      "sha256": "ac2755c92263b2ed4329df0fdba75c0c2fddf3d6ff65fed28634c888701f1f18"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-B_Silkscreen.gbo",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "82f846abee887bc162b42a39d79ef81c10012531",
+      "sha256": "2db839a506bf2a101cb8165050c667bb0ade43fd66c7fc30ca0089e93abef949"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-Edge_Cuts.gm1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5b75e1bf21f0216a45880230b14cf1287debcf84",
+      "sha256": "8d527465fc62e4b508e161b142ec8aa70ea0471dae956bce4e3204b13e1eddc6"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-F_Cu.gtl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "49b53af6cf9118ea51e16fd60fb3ce4a24d7a50b",
+      "sha256": "472e6cb4967e41b2863ee560ab46969be8ff6fd577631279e6c6ba24080a37c2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-F_Mask.gts",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1f166bb9fde35abdd5d6d158b3a88c5772348fc1",
+      "sha256": "37c0bf96b62f52523ffecb7c360cfa7f61843b3038735a9236f6ad341f7136f1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-F_Paste.gtp",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "29aa79483f7e4f4b391276916fe38da226b59fd5",
+      "sha256": "5faf40e9c3a4f208f11e836f68ea22949b429797d4ad4896b5165826df8c1618"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-F_Silkscreen.gto",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7116342266e347e003c86e8d9e1916edca507fea",
+      "sha256": "3ddd83f217e49170c188223e992c938cab0406821de057353dd0ac9c8eb46285"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-In1_Cu.g1",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d1e5003f75b44e6dfaf333053e5b0706e0f1e792",
+      "sha256": "8abf59571dd506bd8cbe979235cacb4c32c6068bd777902770a02a7625220904"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-In2_Cu.g2",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e495e25153ca3ab68bf70e04371dcc21b8bd1926",
+      "sha256": "29b05e2be14c1075ccb30004f0441018ce6d1b6e0efd37e90872f1ae7cf3a91b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-NPTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "8062d0b9995ee41a15d214d8498ae4c21c0a2e53",
+      "sha256": "42e33dbde93f809f072df1d07f0a39919b7d3adedf9f64e642123f3d49681c30"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-PTH.drl",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "09bbf5d0f030d733e07ff7f3576f594f4acac098",
+      "sha256": "90d0e5f588917d12b1774cc64f3b48ff5eed951c34ce58e2554fb03aa0fb2e20"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/alec-sensor/gerbers/alec-sensor-job.gbrjob",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4321e33b67339d11d01da004f1fc0f0e62d1f4a8",
+      "sha256": "0d2d1f6a3248f1f42ca7ba66fa97ead1b2b080e209589ef47b887bf6b6519b64"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/4d8e65d-r1/manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f80bd65d7027e1b5fd3144cb79635b2150884508",
+      "sha256": "fe02d4dc756ed4f7fe2383627d9eaee172d7d21eb333b86d471af82e27ed2e29"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/fabrication-candidates/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "49c4ed6c09c5da1f2bf38c3e6c42b12834cb784c",
+      "sha256": "1f026ee0a938befc1026af1ff112c5718c6c95db1ab158cc2dda2de8dd82b8a7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/first-power-access.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "cd1e0e5309e8af23a2842927ef05d8c905cba2ad",
+      "sha256": "2599b8b9e2237d2a6fa7a808b8d717fd3c9ac0566d59488e87d944244146a412"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/header-fit/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "cf043d0d265eeb5caaf256428dfc3e1e0f30e143",
+      "sha256": "aa21683db44b5aa718353ecd68a788b1bc33edba671dacc552c8cc02868e5278"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/header-fit/geometry-review.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "808402ca476661adc7de069342902de51e98e5a5",
+      "sha256": "c716be1338f0a23573821837949fa186915bbb9fd4714161548e44704b1e17e4"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/header-fit/source-transition.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0126ed4f41dd8477983c1e1c565a8d205691262c",
+      "sha256": "5d728a0d1e9ea6350355a808026fe3bab6ed9cb7ccb552c0645974cd1afca0a9"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/input-audit.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2a6c216b25045234c0e991114ba04c7e18817cf8",
+      "sha256": "68aa4d1a92b28b3fc617b00c0829b06df09797fd216606447e1a97580737ac9c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/jlc-capacitor-followup-20260908.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "40602bb44cef4c3c83a853e8128dfa70c3163dba",
+      "sha256": "d2e14e4f60e50424453a80b49716b835a063dd0c47c28f79c033296062d3215b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/jlc-catalog-20260907.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1991f21119e8a052544daad479aa1e3c15e3f088",
+      "sha256": "2ed107ce195372f0994844b00e60436065696714fb4c64c79b0998e14a9b4795"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/jlc-catalog-followup-20260907.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "dfa7a0729205e7c372acfca884fdcd3edf85453c",
+      "sha256": "eae8c9bfe6c80dcd381ff98a2412efcc692a45ca0eb1fc1efd94c576e70bc066"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/jlc-header-catalog-20260907.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "21f05cece66be5902881e5c05ef7cf2669f71b8a",
+      "sha256": "7be2ddefbd8d162871134495170eec8d4b93427676b7e72e33ef4b2767d34ca1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/jlc-radar-catalog-20260907.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "63b0986fa4973f1b920b51c23ada1d8b75000440",
+      "sha256": "e0ecd8ceeeeaedc496e0ab077a06f0e129b525e1c14c62b7efc3032139bd7c95"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/jlc-resistor-catalog-20260907.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "13bf9f72809e3466952eb592190f8dbb23532410",
+      "sha256": "63bb53a37da93dd712c3ea639b39685fa11d373e05ed532204f9a03010fefe09"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/jlc-rtc-detail-20260907.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "635147406be14b7f9bc9eda889399dc99bc10b4e",
+      "sha256": "ffb6e5b318bd68a739b04f93d2e6c4e2c38e5e3d3107b84e17c504c73141a7d6"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/jlcpcb-preflight.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c80f5dee67719792ab18f6f57c07ab96084bd082",
+      "sha256": "5ce6f484b73b914bac059752bae747c1f2545b084fd3997b7bf7e550641083e1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/manufacturing-supplier-report-2026-09-08.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "dcb3819fc968a053dadb805616a48c33b82511b1",
+      "sha256": "bd5a306865718cf00b4d2999d43c7cbfb0e8433d260cbdd4e0682242ed26123e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/alec-controls-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "bfeba7375b757e05710d4dbc9d995d89b1b18b92",
+      "sha256": "f616e03dd34c3b57ea5ac5c87569d1907d9d0a1e3ad5d59cb856fb791750a79a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/alec-controls-temporary.kicad_pro",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "db3afa5f3c2faea2dd9f7483da54d7d9cfbbc590",
+      "sha256": "8529d58dfb72f19a3d5eb10c67c138aee5574dec6423d9370410eea7d16ec4f3"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/alec-front-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "be4d2d249bbf5773eb2a369976f85bd490ad7364",
+      "sha256": "47244e65bb8e8fa489847d6aad0f0c056d6bbc38f6c929b9a784f5b08964b09d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/alec-front-temporary.kicad_pro",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "db3afa5f3c2faea2dd9f7483da54d7d9cfbbc590",
+      "sha256": "8529d58dfb72f19a3d5eb10c67c138aee5574dec6423d9370410eea7d16ec4f3"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/alec-main-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fc2b553b93a3fb11ea5844f9d2bbcf42410c8000",
+      "sha256": "e597746852c5ab8e6d71fccc0fcf39c68aaace8939f029d40c4974319d03b369"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/alec-main-temporary.kicad_pro",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6aeb8e2e40983fbc6f44e160b2af1615f60016d2",
+      "sha256": "0cb7963f2326cace09d5fe1780ea035d156c58c3212d93bcc59045ba3a863ef7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/alec-sensor-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7bc481b0c77d557923a710e5b3c5063e83eca0fb",
+      "sha256": "5271ab91c561506faee001961ff5874dfe3addae5c340a7a2b245814cc8e7ab7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/alec-sensor-temporary.kicad_pro",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "bb19828bf0980a9426bc7d6589fcea59b984d376",
+      "sha256": "ac2c7eb21b5d21aecbddbc5e39f96883a411840ce9f65d5ace2a14fdb4413fb7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/converter-mask-detail.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6c467ecdf9385ced0ed8ba8a0a9a213e272a763d",
+      "sha256": "6fa09c37626b7bffbc1498343f6a00a4684622e13af4fb695994d77cbb04c552"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/gerber-mask-bridges.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0a03dbfe7b519f20a4c0c6e5651faf8778fbd717",
+      "sha256": "42f4f7f2e04af3d7b8ea1be5c2272bf2db6541267586b07e1bf332b95cd7e2c1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/mask-review.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "390d846ec1745ef55701a630871742b5889d4fcd",
+      "sha256": "c49b019c0bc4724d1b63f628ed87bc9a7201fe9079d998dd98435a3289e4c2a0"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/negative-bridge-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4fdd4ad045fc36e7ca43f3c314321169f3c19572",
+      "sha256": "8a6286eaa4aa2dbb08d4c691403f07c45c81394cc0b3af168263da0090be1385"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/4d8e65d-r1/negative-clearance-drc.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9d11af0ac5cf7d778fbe3eb11c674309d37609d6",
+      "sha256": "c03408445e4c54c2a0212ce563797df463adf53f0e50839ae18634ce335af038"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/mask-review/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fc36878e13c648a783b7e9a44c0980cdfb536326",
+      "sha256": "283be04bb8f9ed5134f0185b5348c714fce0f92342ac8708568e5ddf92cb471b"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/murata-curves-20260908.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f8bc0af900d1020cab32adfb7218b37e32c34810",
+      "sha256": "51676986769e81a48db9262f38a6b0019db1f01fe0ca651ad7f24ffbb09f4ebe"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/native-geometry-comparison.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "bd778ccf0ab1d898693b898bb9b3f770e897e098",
+      "sha256": "29af4d0d2cef10df2f27f2848ee92bac8154ee5e4a76103586dcfe8a9e3cb208"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/native-netlist-comparison.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fac74ba162c4b85d3f6f0c8d9085fba8163ec9ee",
+      "sha256": "e285525da8c067d0ad864b1e7d029f1fc7c9eda17c9de59fb8e5f2fb953e3705"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/order-readiness-2026-09-08.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "585f785dc8b5dac29566a28e0611851daf30a602",
+      "sha256": "ed84e7c5f91b20336b2a13cd8f1548810efb4772ceefa6b2099cc36423b475ad"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/order-target.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "46b661443deefe8dc0be838be8c5e3cc31781eb1",
+      "sha256": "dcceaa798b53bc418e31e7ac77dba0812f0a3d7598a8a1ae556eb8cf00496fce"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/part-selection-review.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "7c227bad4e30c9029ef1758791b6c7575090c69f",
+      "sha256": "b9a24ed501c4d0a18693cd9298850efc7f21dc837f3e0be28a063904075958c1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/placement-review/090b207-r1/native-placement-reference.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a1a69958a9a5dc7373b67d36e9286d49ccc26943",
+      "sha256": "5003673bbe8c715064a9f1fe92f22d475ca27dc97e9d4b1cf80030b01be2d0b5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/placement-review/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1239dac3bc99d63e166a70b95186c43d0944bad8",
+      "sha256": "e4268a31278c8df6040fcd7d9b249bde48f6cc5a77bec16a143e23163f8c5b52"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/placement-review/supplier-enquiry-draft.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e156ba1e59a589ee2eb3755ca1bed73ed5463f2c",
+      "sha256": "1e165b3c8256cb66d2351b0515b0666fb117f828412c9e88cb40bd390d694c7f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/power-component-audit.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fb84280949b0f3805353ecc4ec2d13415477564f",
+      "sha256": "9b24c0eb65c8f56130f62add8092d07454cfdc2f8f64cc1cd4808df24e9e6e4d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/power-component-review.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b19366d9e86a81b0393848d0825676fbafbf1a40",
+      "sha256": "3321a8821e6ee5aa2a245ef2c909d8fa0615241e9cbfd0524a80d1233b299eed"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/proposed-parts.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b468322ae3f6665892430f352d578313af2d7c56",
+      "sha256": "63b3040f25802bc3ad8a082bb80abf6af215a4e144d8a4e8c554d8f4a933f523"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/prototype-power-disposition.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a2162cceed5447a40de47653eea30bbd4e6b2831",
+      "sha256": "9a3adc76b7dee60da39900028a8a39c6dcba091c44c05807f4d7b5a4e933d14c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/quote-progress.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "8482cc8d091a59eb8360e2debfe3f89fcffb3320",
+      "sha256": "9c6c5a0b5ed0ecd3b1d845dfd49f1f985e486f4bdcf0df5e6abbc03aeb69cec5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/rtc-alternatives-2026-09-08.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1dad1c63144316006d7ff6e5664248434318c4eb",
+      "sha256": "39cfaba1a6bff23342051b4d52611ae9419ddf3bf3b9a2035dc41d67d7e3370d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/selected-footprint-audit.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9ecb0cd13796e4b78ce3b2fd513f378851317fc8",
+      "sha256": "8894d1fe0ca86f33719e17f35078d852fb16818b9a5d1e16efdf91e2ce589d21"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/selection-audit.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4fc609adb794531536a69df626fcc898697f6d83",
+      "sha256": "acff7bf18b5f6a24dceed2415a398055f9a99f3cffbdadcf4dcc2b845da10333"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/source-integration-review.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a56a0da2e3d7eae16e71734bd6dec3323554078b",
+      "sha256": "0981cd18ea0e4dc2a87f7b01255a4de17c2086d709d866f33dca452776c94c93"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/source-metadata-transition.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "183a1a4780251bef2380808f0bfd83ff65f647dd",
+      "sha256": "469d1a46976762b5dbdafff05a3c4a76b7123ef9d21b8aafa4e2c4f82e9b513d"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/sourcing.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "156dc3abb69e7a59a62976096dc176a619ca3f43",
+      "sha256": "783fd33eddcad12fdd3c3c79c38288130f4aec428d066fc50aba44c37ccf5333"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/stackup-review/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fe72186196f468f12fea2ad84fb549d9201c6088",
+      "sha256": "9cbfd95f9026511b18866877d539e064cb1250530f7693b58f4dbc7ee00be97c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/stackup-review/usb-native-routing.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "5add6b2424bdafd52005d682ec13c1e71a974a30",
+      "sha256": "07cff6f87291f27b79b411cfebda7a9ff393a2755bca535838b1eacb30d4debc"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-comparison-enquiry-draft.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c37287c2473e17e52a2ce15826ffd7b453db1f92",
+      "sha256": "cebac4cdbf3740b1bf69178cff396b7cf495b1c5f18e7c3e1b0350cb71d7bf3e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/090b207-r1-controls/alec-controls-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ce31bb41d3ce89d1d5511dfb8db7a25449dceb56",
+      "sha256": "e9d49c056b6b012c332c8ca27a95382bf7f17ff4d8ce052d39db43d77efc5de9"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/090b207-r1-controls/manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "04ed9dff12a048250390964743af4922795460ba",
+      "sha256": "ac3b245ccd4962a6628f622c96346d8dd8a33eca3555528d15a78534096c6cf4"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/090b207-r1-headers/alec-main-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1e7350b9bd4da727631ccf9645cab53fd1a85e41",
+      "sha256": "b8118c464899128b6c40f13c5f933c3c276592ff2955c50fab9680f62cd7576e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/090b207-r1-headers/alec-sensor-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a87f5598032e301d3014aab3db8b49a80f750729",
+      "sha256": "f0f5540f6d4730df6a70341bc655e5509eb487768cac2a0f7cf5dac1813e9b6c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/090b207-r1-headers/manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3f4182723bde8b78130adc82ce693dbcdabf18fa",
+      "sha256": "231fe6381e61abef217fa349fc638ecf1393c3f4a1a27756eda4d0e79b9f074e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b253fceee0c97e40bdfe594dcff2bd2784684e8b",
+      "sha256": "ac6ca50855170a1a0a3b69d08b4e649c230ed31284ff03b2919078d1c96d0938"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/controls-r2/alec-controls-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ce31bb41d3ce89d1d5511dfb8db7a25449dceb56",
+      "sha256": "e9d49c056b6b012c332c8ca27a95382bf7f17ff4d8ce052d39db43d77efc5de9"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/controls-r2/manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "9b0507ae4501f9acc1e9e96655f504d548c959d9",
+      "sha256": "c2746edec7aad0844d3f20b6e88a2ad1d3da534b1b9818faf775d4c0658725a3"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/headers-r2/alec-main-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1e7350b9bd4da727631ccf9645cab53fd1a85e41",
+      "sha256": "b8118c464899128b6c40f13c5f933c3c276592ff2955c50fab9680f62cd7576e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/headers-r2/alec-sensor-cpl.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a87f5598032e301d3014aab3db8b49a80f750729",
+      "sha256": "f0f5540f6d4730df6a70341bc655e5509eb487768cac2a0f7cf5dac1813e9b6c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/supplier-placement-candidates/headers-r2/manifest.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "625264f91328dc89be891ffd0492311414b4c20f",
+      "sha256": "a75abc1bd78dd40f75a87fe9c0942f09bf0abed0cea99ef709960bfb6ae8adc7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/build_controls_placement_candidate.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "05d3e9e21704524f9936082f7617cf0ca0cfb41c",
+      "sha256": "45fbe649aaa49ee9fa8ae1a2a30d2c73f474766b3493c9b9fdc8e1fe27d01d9a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/build_fabrication_candidate.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "980293c22fb378bfc4939c4320fc8d92ae1bd4f9",
+      "sha256": "0680b6f7fcab992a232d755bf87dd5117740f2695498b3aa4d11c7fbb5ece076"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/build_header_placement_candidate.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2adb0f2bf58c3034f59c12c92e37c5c4a2dbb84a",
+      "sha256": "3d9a06e30369f79796e461bc8aa13d91f5097ccc1cd7983160a296aef9242be9"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/build_placement_reference.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4b3d22d041c4e62f0e5b788a0cd7d563755072f6",
+      "sha256": "d046976503e7a5c93f19c84fe7f835130a53cc71cb4d583934d26479ccf64e67"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/build_quote_inputs.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "d71d4880ef53b8cd4d63b21a578623b9c8453049",
+      "sha256": "468760cadae11d50e5183efe821317726ffe87f453ff15a719074d2bcc9d0fe5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/compare_native_sources.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f02306a990933748419668b0a2b741c5c372a269",
+      "sha256": "aa04d70509be6a06ed5a7778c750e479905a9adf119d5c1b2802a4bbc8e0559a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/query_jlc_parts.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c15d02757c2c3d76cf3d821642af9d8555af9082",
+      "sha256": "01097d8109deec61fd2e189a0024380f5e0bc238388f0fb758ef5971a4fa1d10"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/query_murata_curves.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b20efb607c4e1e676d944050ed160cc10c237647",
+      "sha256": "969083953161308016abfa981917835163f096af15c3c46fdb7367b4a00bcdaa"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/review_amplifier_assembly.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4f06a7c38f3e4b1ec24ab3bdc7332bbd12451354",
+      "sha256": "3a0dcfa351bad626bc02eea28cc9d2a76f912572715c5ef3961615f767fa6a91"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/review_fabrication_candidate.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "94c564d4106cbb3d11b594481780563899569520",
+      "sha256": "10c8c33aef2ebce9fe96b7629582e879011ad0f1bb1d500ae837511608782785"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/review_header_fit.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "09b7535865145b760ce06b18172f23ef341d52d8",
+      "sha256": "74e1ec74225d50d30bf937a7bf5dfc3ef90ce4ea03aa740321d0cd7e8508cf1a"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/review_mask_bridges.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "40df78e53d56025ac04868fe3a90476733920131",
+      "sha256": "9e588cee9ebb49f686d4db3669ce4ca854d69d71d155eb4b6ccc996dbe14fcf5"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/review_power_parts.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "225272ce433c7ba84df712249890696013efe463",
+      "sha256": "410ebef988944cf4458e8dbe92ab6c9bad4937f8542535f2a3aa7116e09e26f1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/review_usb_routing.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "b030a06c7876c5c0e6c537fbc8bdd72fb1e4d6e0",
+      "sha256": "7913a019e776e20a823a97620593475518d5968d3e30bd645b96a3425ec756e8"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/review_via_process.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3863420772dce1f607e7eee88433b30a4d98cd09",
+      "sha256": "813bafdee7e89c4cc9665d8bd116b69ef3b8645b13707064c008d26cf5b1d019"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/tools/verify_sourcing.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "8a8a7ad334d210c137d1028fde1ba8356ef47025",
+      "sha256": "1533edde6b6cb06378b2f08249ed6d12772d4a1db893cb94713bd88854c29260"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/alec-controls-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "88edeb6d7e0f38f0a404467c31554ca177b7683c",
+      "sha256": "32846dbd2e92e666b67bcb935fccd0a0f60c87530d2502b8638ef935a71a1a46"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/alec-controls-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6e92db9a03a39e29c1eb26e858d45edd32b21e97",
+      "sha256": "815ea0810ba0a8c7001f00386b014b3f78c620a9fadb830b2ee8393a47c7b785"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/alec-front-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "88edeb6d7e0f38f0a404467c31554ca177b7683c",
+      "sha256": "32846dbd2e92e666b67bcb935fccd0a0f60c87530d2502b8638ef935a71a1a46"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/alec-front-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2db3fde6a987be4934cfbed1a9ef9c23bc6401b2",
+      "sha256": "98533a99bc5795213395afac02599c1e093b97bccddcae03f05d59bb1d827798"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/alec-main-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1a5701abada85b08967713fc0ffd0fd1ad911dd6",
+      "sha256": "23963364d46125bd0ba7e6a2c8013a29c5e269f72cc32cbd61ade0db344eddb7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/alec-main-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "48ee06cf1ff5baa6201619850bd734c833a9e2bd",
+      "sha256": "4206a310c27dcb54efae18881225b38af5961645dd57b9efcf39fb106ef1536c"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/alec-sensor-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "45df4964853d4d5b75dc6402778aa5e497d4d919",
+      "sha256": "ac64620dddc3f07b3c7f3f59df061d81724378e4d1893cbe85762304f936e4e2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/alec-sensor-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4010bf7bd874ca97ab6ccaa93b534fc50d45572c",
+      "sha256": "cacc9b4367e3ee3c79d0188f8aeea89a6360c469be0c8158a397b1667c84f7a1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/090b207-r1/via-process-review.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1bc3ed6b755f94ab9d1086b40aace9cf4b579265",
+      "sha256": "082a48230d6372073ceee33ec0f00d63bb714a7469a72b99e795406cf3e7a16e"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/alec-controls-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "88edeb6d7e0f38f0a404467c31554ca177b7683c",
+      "sha256": "32846dbd2e92e666b67bcb935fccd0a0f60c87530d2502b8638ef935a71a1a46"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/alec-controls-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "6e92db9a03a39e29c1eb26e858d45edd32b21e97",
+      "sha256": "815ea0810ba0a8c7001f00386b014b3f78c620a9fadb830b2ee8393a47c7b785"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/alec-front-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "88edeb6d7e0f38f0a404467c31554ca177b7683c",
+      "sha256": "32846dbd2e92e666b67bcb935fccd0a0f60c87530d2502b8638ef935a71a1a46"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/alec-front-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2db3fde6a987be4934cfbed1a9ef9c23bc6401b2",
+      "sha256": "98533a99bc5795213395afac02599c1e093b97bccddcae03f05d59bb1d827798"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/alec-main-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "1a5701abada85b08967713fc0ffd0fd1ad911dd6",
+      "sha256": "23963364d46125bd0ba7e6a2c8013a29c5e269f72cc32cbd61ade0db344eddb7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/alec-main-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "26c0ce96f3019effaf543b7f1bfbd4e3e58ebfec",
+      "sha256": "52f2311a2f9fe430e2d1f04c9efb8627262c1eb3bd0002dd33c02986b67a793f"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/alec-sensor-fill-holes.csv",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "45df4964853d4d5b75dc6402778aa5e497d4d919",
+      "sha256": "ac64620dddc3f07b3c7f3f59df061d81724378e4d1893cbe85762304f936e4e2"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/alec-sensor-via-process.svg",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "4010bf7bd874ca97ab6ccaa93b534fc50d45572c",
+      "sha256": "cacc9b4367e3ee3c79d0188f8aeea89a6360c469be0c8158a397b1667c84f7a1"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/4d8e65d-r1/via-process-review.json",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "3a215743135d768fd3f21fa13fb1f0c7c853a832",
+      "sha256": "8f9c48c91fd7314f50c810faac3d29e5b21525ebe2b782f327c052fcc57428c7"
+    },
+    {
+      "package": "ordering",
+      "path": "docs/rooster/prototype-order/via-process/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a364542592349f1a792ddf1852e099cd8cbee731",
+      "sha256": "af3e75e99b8cbe9ee2c5bdf1ef939ef7ab81b05379c8e52fc658b643c9ee6092"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/README.md",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "fc21fcbefbcb5b196d3ecca9127fd06765a03501",
+      "sha256": "1eecd7346aada76ccda25397fb3b3d4362ee7980916a918eb3028cb5b3d291c0"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/create_boards.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "449e4531665dd32c5e1f5658f3545563b7f3334e",
+      "sha256": "634c37b89532747786a90c5a53fa62f4471c49d633f2bf850e07a5b2a5f92074"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/create_schematics.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "af8c47ac6ce271052d7d1a187bb11877a3e47b4e",
+      "sha256": "a6e1eeb8563bc84acbac5778d5ba786fbb6dc6569564c839d1a1fb58f33ee15e"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/export_review.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "0c1054323b35c2a83be93082cc7013502131edf6",
+      "sha256": "d100a1ed442e57160bb46981c6e6ff759972c981f7df69ab152e9843868b66d1"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/header_fit.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e5957312ed8d3c4bff84a960866eea84ef2ad091",
+      "sha256": "a86c6b14e9cc00224e7d597cca1a482450952e21c869d3e480c56dd968a414c0"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/order_parts.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "c745f90a13ad1a8848a7bc2bfe1eec938356dd68",
+      "sha256": "8b8d27bc9dfcf31bc5bcb88b6fdd3a41266ece28a868a78dcbc91733ed0d5bd6"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/package_report.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "ce630a083d66b62c2814cfa35d6be0d29f2dabc0",
+      "sha256": "1c852e7fc2ce9a0e19b7d81dc780f5b6b42e7b5ade7705dc39685287e31bbbe9"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/verify_interfaces.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "445d35b753c6dd89e72d5cbb27b917ab0e4d8a7e",
+      "sha256": "67d3453a2560b04eb6b667285bf070f46eedd94e485b13969559fee2eb3f2e50"
+    },
+    {
+      "package": "ordering",
+      "path": "scripts/alarm/verify_layout.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "f75e96cdabab80e22410f2e0fe351e772d8e00e8",
+      "sha256": "847ef03e73bea78b71cd3df5c7c48a3cb58279d5f5cefd13ccc9dc62fe0dd9f4"
+    },
+    {
+      "package": "ordering",
+      "path": "tests/test_alarm_pcbs.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "e475036725fc1464fff3a73a4317f069ec834679",
+      "sha256": "cea8a81fe7a0e7f094e591058201b7a4923f6d0b85e225cdc0f2e4e7a4c8c7ad"
+    },
+    {
+      "package": "ordering",
+      "path": "tests/test_rooster_header_fit.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "a97e6250f3a1612096dffaadd7d8bfd8225d4dd0",
+      "sha256": "72c2f97b8d01abb167d7021d5bb1630668091798a7eeb1c368f985fdb1a416a2"
+    },
+    {
+      "package": "ordering",
+      "path": "tests/test_rooster_order_parts.py",
+      "source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+      "git_blob": "2c0424403920edeb9e39fbef5335b5d10bddb355",
+      "sha256": "0e87085296d9bf6648907376640030b3f7a4de8862d5a0ce8f06fb0709f2425a"
+    }
+  ]
+}

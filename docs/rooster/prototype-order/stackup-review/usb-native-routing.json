@@ -1,0 +1,1617 @@
+{
+  "scope": "Read-only USB routing inventory; does not certify impedance or USB operation.",
+  "generator_sha256": "7913a019e776e20a823a97620593475518d5968d3e30bd645b96a3425ec756e8",
+  "sample_step_mm": 0.05,
+  "limitations": [
+    "Centerline samples do not check the whole return-current corridor.",
+    "Segment totals include USB-C orientation branches; they are not path skew.",
+    "No field-solver, impedance coupon or physical USB test is represented."
+  ],
+  "boards": {
+    "alec-main": {
+      "source_sha256": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a",
+      "usb_via_count": 0,
+      "all_usb_tracks_top": true,
+      "nets": {
+        "Net-(J2-D+-PadA6)": {
+          "segment_length_total_mm": 7.990342712474619,
+          "sample_count": 168,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                107.9,
+                88.75
+              ],
+              "end_mm": [
+                108.1,
+                88.95
+              ],
+              "length_mm": 0.28284271247461906,
+              "width_mm": 0.15,
+              "ground_sample_count": 7,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                108.1,
+                88.95
+              ],
+              "end_mm": [
+                111.1625,
+                88.95
+              ],
+              "length_mm": 3.0625,
+              "width_mm": 0.15,
+              "ground_sample_count": 63,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                106.445,
+                87.75
+              ],
+              "end_mm": [
+                105.35,
+                87.75
+              ],
+              "length_mm": 1.095,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                105.35,
+                87.75
+              ],
+              "end_mm": [
+                105.35,
+                88.75
+              ],
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "ground_sample_count": 21,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                105.35,
+                88.75
+              ],
+              "end_mm": [
+                106.445,
+                88.75
+              ],
+              "length_mm": 1.095,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                106.445,
+                88.75
+              ],
+              "end_mm": [
+                107.9,
+                88.75
+              ],
+              "length_mm": 1.455,
+              "width_mm": 0.15,
+              "ground_sample_count": 31,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "Net-(J2-D--PadA7)": {
+          "segment_length_total_mm": 7.269556274847714,
+          "sample_count": 153,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                107.5,
+                87.25
+              ],
+              "end_mm": [
+                107.5,
+                88.25
+              ],
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "ground_sample_count": 21,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                108.7,
+                87.05
+              ],
+              "end_mm": [
+                111.1625,
+                87.05
+              ],
+              "length_mm": 2.4625,
+              "width_mm": 0.15,
+              "ground_sample_count": 51,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                106.445,
+                87.25
+              ],
+              "end_mm": [
+                107.5,
+                87.25
+              ],
+              "length_mm": 1.055,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                107.5,
+                88.25
+              ],
+              "end_mm": [
+                108.7,
+                87.05
+              ],
+              "length_mm": 1.6970562748477143,
+              "width_mm": 0.15,
+              "ground_sample_count": 35,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                107.5,
+                88.25
+              ],
+              "end_mm": [
+                106.445,
+                88.25
+              ],
+              "length_mm": 1.055,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "/USB_MCU_P": {
+          "segment_length_total_mm": 2.74,
+          "sample_count": 56,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                121.51,
+                87.75
+              ],
+              "end_mm": [
+                124.25,
+                87.75
+              ],
+              "length_mm": 2.74,
+              "width_mm": 0.15,
+              "ground_sample_count": 56,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "/D+": {
+          "segment_length_total_mm": 7.549556274847713,
+          "sample_count": 158,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                115.75,
+                87.85
+              ],
+              "end_mm": [
+                119.0,
+                87.85
+              ],
+              "length_mm": 3.25,
+              "width_mm": 0.15,
+              "ground_sample_count": 66,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                119.1,
+                87.75
+              ],
+              "end_mm": [
+                120.49,
+                87.75
+              ],
+              "length_mm": 1.39,
+              "width_mm": 0.15,
+              "ground_sample_count": 29,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                119.0,
+                87.85
+              ],
+              "end_mm": [
+                119.1,
+                87.75
+              ],
+              "length_mm": 0.14142135623730953,
+              "width_mm": 0.15,
+              "ground_sample_count": 4,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                114.65,
+                88.95
+              ],
+              "end_mm": [
+                115.75,
+                87.85
+              ],
+              "length_mm": 1.5556349186104048,
+              "width_mm": 0.15,
+              "ground_sample_count": 33,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                113.4375,
+                88.95
+              ],
+              "end_mm": [
+                114.65,
+                88.95
+              ],
+              "length_mm": 1.2125,
+              "width_mm": 0.15,
+              "ground_sample_count": 26,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "/USB_MCU_N": {
+          "segment_length_total_mm": 2.740072991728505,
+          "sample_count": 56,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                121.51,
+                86.5
+              ],
+              "end_mm": [
+                124.25,
+                86.48
+              ],
+              "length_mm": 2.740072991728505,
+              "width_mm": 0.15,
+              "ground_sample_count": 56,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "/D-": {
+          "segment_length_total_mm": 7.694531021678298,
+          "sample_count": 161,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                118.5,
+                87.55
+              ],
+              "end_mm": [
+                119.55,
+                86.5
+              ],
+              "length_mm": 1.48492424049175,
+              "width_mm": 0.15,
+              "ground_sample_count": 31,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                115.0,
+                87.55
+              ],
+              "end_mm": [
+                118.5,
+                87.55
+              ],
+              "length_mm": 3.5,
+              "width_mm": 0.15,
+              "ground_sample_count": 71,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                113.4375,
+                87.05
+              ],
+              "end_mm": [
+                114.5,
+                87.05
+              ],
+              "length_mm": 1.0625,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                114.5,
+                87.05
+              ],
+              "end_mm": [
+                115.0,
+                87.55
+              ],
+              "length_mm": 0.7071067811865476,
+              "width_mm": 0.15,
+              "ground_sample_count": 16,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                119.55,
+                86.5
+              ],
+              "end_mm": [
+                120.49,
+                86.5
+              ],
+              "length_mm": 0.94,
+              "width_mm": 0.15,
+              "ground_sample_count": 20,
+              "samples_without_in1_ground": []
+            }
+          ]
+        }
+      },
+      "interface_pads": {
+        "J2": {
+          "value": "USB_C_Receptacle_USB2.0_16P",
+          "pads": [
+            {
+              "pin": "",
+              "net": "",
+              "position_mm": [
+                105.0,
+                85.11
+              ]
+            },
+            {
+              "pin": "",
+              "net": "",
+              "position_mm": [
+                105.0,
+                90.89
+              ]
+            },
+            {
+              "pin": "A1",
+              "net": "GND",
+              "position_mm": [
+                106.445,
+                84.75
+              ]
+            },
+            {
+              "pin": "A4",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                106.445,
+                85.55
+              ]
+            },
+            {
+              "pin": "A5",
+              "net": "/USB_CC1",
+              "position_mm": [
+                106.445,
+                86.75
+              ]
+            },
+            {
+              "pin": "A6",
+              "net": "Net-(J2-D+-PadA6)",
+              "position_mm": [
+                106.445,
+                87.75
+              ]
+            },
+            {
+              "pin": "A7",
+              "net": "Net-(J2-D--PadA7)",
+              "position_mm": [
+                106.445,
+                88.25
+              ]
+            },
+            {
+              "pin": "A8",
+              "net": "unconnected-(J2-SBU1-PadA8)",
+              "position_mm": [
+                106.445,
+                89.25
+              ]
+            },
+            {
+              "pin": "A9",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                106.445,
+                90.45
+              ]
+            },
+            {
+              "pin": "A12",
+              "net": "GND",
+              "position_mm": [
+                106.445,
+                91.25
+              ]
+            },
+            {
+              "pin": "B1",
+              "net": "GND",
+              "position_mm": [
+                106.445,
+                91.25
+              ]
+            },
+            {
+              "pin": "B4",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                106.445,
+                90.45
+              ]
+            },
+            {
+              "pin": "B5",
+              "net": "Net-(J2-CC2)",
+              "position_mm": [
+                106.445,
+                89.75
+              ]
+            },
+            {
+              "pin": "B6",
+              "net": "Net-(J2-D+-PadA6)",
+              "position_mm": [
+                106.445,
+                88.75
+              ]
+            },
+            {
+              "pin": "B7",
+              "net": "Net-(J2-D--PadA7)",
+              "position_mm": [
+                106.445,
+                87.25
+              ]
+            },
+            {
+              "pin": "B8",
+              "net": "unconnected-(J2-SBU2-PadB8)",
+              "position_mm": [
+                106.445,
+                86.25
+              ]
+            },
+            {
+              "pin": "B9",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                106.445,
+                85.55
+              ]
+            },
+            {
+              "pin": "B12",
+              "net": "GND",
+              "position_mm": [
+                106.445,
+                84.75
+              ]
+            },
+            {
+              "pin": "SH",
+              "net": "GND",
+              "position_mm": [
+                105.53,
+                83.68
+              ]
+            },
+            {
+              "pin": "SH",
+              "net": "GND",
+              "position_mm": [
+                101.35,
+                83.68
+              ]
+            },
+            {
+              "pin": "SH",
+              "net": "GND",
+              "position_mm": [
+                105.53,
+                92.32
+              ]
+            },
+            {
+              "pin": "SH",
+              "net": "GND",
+              "position_mm": [
+                101.35,
+                92.32
+              ]
+            }
+          ]
+        },
+        "R35": {
+          "value": "22\u03a9",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "/USB_MCU_P",
+              "position_mm": [
+                121.51,
+                87.75
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/D+",
+              "position_mm": [
+                120.49,
+                87.75
+              ]
+            }
+          ]
+        },
+        "J7": {
+          "value": "UNPOPULATED_TEST_PADS",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                125.0,
+                121.0
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/3v3",
+              "position_mm": [
+                127.0,
+                121.0
+              ]
+            },
+            {
+              "pin": "3",
+              "net": "/UART_TX",
+              "position_mm": [
+                125.0,
+                123.0
+              ]
+            },
+            {
+              "pin": "4",
+              "net": "/UART_RX",
+              "position_mm": [
+                127.0,
+                123.0
+              ]
+            },
+            {
+              "pin": "5",
+              "net": "/EN",
+              "position_mm": [
+                125.0,
+                125.0
+              ]
+            },
+            {
+              "pin": "6",
+              "net": "/GPIO0",
+              "position_mm": [
+                127.0,
+                125.0
+              ]
+            }
+          ]
+        },
+        "SW3": {
+          "value": "BOOT",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                148.0,
+                86.125
+              ]
+            },
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                154.0,
+                86.125
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/GPIO0",
+              "position_mm": [
+                148.0,
+                89.875
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/GPIO0",
+              "position_mm": [
+                154.0,
+                89.875
+              ]
+            }
+          ]
+        },
+        "U3": {
+          "value": "ESP32-S3-WROOM-1-N16",
+          "pads": [
+            {
+              "pin": "3",
+              "net": "/EN",
+              "position_mm": [
+                124.25,
+                73.78
+              ]
+            },
+            {
+              "pin": "13",
+              "net": "/USB_MCU_N",
+              "position_mm": [
+                124.25,
+                86.48
+              ]
+            },
+            {
+              "pin": "14",
+              "net": "/USB_MCU_P",
+              "position_mm": [
+                124.25,
+                87.75
+              ]
+            },
+            {
+              "pin": "27",
+              "net": "/GPIO0",
+              "position_mm": [
+                141.75,
+                87.75
+              ]
+            },
+            {
+              "pin": "36",
+              "net": "/UART_RX",
+              "position_mm": [
+                141.75,
+                76.32
+              ]
+            },
+            {
+              "pin": "37",
+              "net": "/UART_TX",
+              "position_mm": [
+                141.75,
+                75.05
+              ]
+            }
+          ]
+        },
+        "U4": {
+          "value": "USBLC6-2SC6",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "Net-(J2-D--PadA7)",
+              "position_mm": [
+                111.1625,
+                87.05
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "GND",
+              "position_mm": [
+                111.1625,
+                88.0
+              ]
+            },
+            {
+              "pin": "3",
+              "net": "Net-(J2-D+-PadA6)",
+              "position_mm": [
+                111.1625,
+                88.95
+              ]
+            },
+            {
+              "pin": "4",
+              "net": "/D+",
+              "position_mm": [
+                113.4375,
+                88.95
+              ]
+            },
+            {
+              "pin": "5",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                113.4375,
+                88.0
+              ]
+            },
+            {
+              "pin": "6",
+              "net": "/D-",
+              "position_mm": [
+                113.4375,
+                87.05
+              ]
+            }
+          ]
+        },
+        "SW2": {
+          "value": "RESET",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                109.0,
+                72.125
+              ]
+            },
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                115.0,
+                72.125
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/EN",
+              "position_mm": [
+                109.0,
+                75.875
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/EN",
+              "position_mm": [
+                115.0,
+                75.875
+              ]
+            }
+          ]
+        },
+        "R34": {
+          "value": "22\u03a9",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "/USB_MCU_N",
+              "position_mm": [
+                121.51,
+                86.5
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/D-",
+              "position_mm": [
+                120.49,
+                86.5
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "alec-sensor": {
+      "source_sha256": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
+      "usb_via_count": 0,
+      "all_usb_tracks_top": true,
+      "nets": {
+        "Net-(J2-D+-PadA6)": {
+          "segment_length_total_mm": 7.990342712474619,
+          "sample_count": 168,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                107.9,
+                88.75
+              ],
+              "end_mm": [
+                108.1,
+                88.95
+              ],
+              "length_mm": 0.28284271247461906,
+              "width_mm": 0.15,
+              "ground_sample_count": 7,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                108.1,
+                88.95
+              ],
+              "end_mm": [
+                111.1625,
+                88.95
+              ],
+              "length_mm": 3.0625,
+              "width_mm": 0.15,
+              "ground_sample_count": 63,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                106.445,
+                87.75
+              ],
+              "end_mm": [
+                105.35,
+                87.75
+              ],
+              "length_mm": 1.095,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                105.35,
+                87.75
+              ],
+              "end_mm": [
+                105.35,
+                88.75
+              ],
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "ground_sample_count": 21,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                105.35,
+                88.75
+              ],
+              "end_mm": [
+                106.445,
+                88.75
+              ],
+              "length_mm": 1.095,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                106.445,
+                88.75
+              ],
+              "end_mm": [
+                107.9,
+                88.75
+              ],
+              "length_mm": 1.455,
+              "width_mm": 0.15,
+              "ground_sample_count": 31,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "Net-(J2-D--PadA7)": {
+          "segment_length_total_mm": 7.269556274847714,
+          "sample_count": 153,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                107.5,
+                87.25
+              ],
+              "end_mm": [
+                107.5,
+                88.25
+              ],
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "ground_sample_count": 21,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                108.7,
+                87.05
+              ],
+              "end_mm": [
+                111.1625,
+                87.05
+              ],
+              "length_mm": 2.4625,
+              "width_mm": 0.15,
+              "ground_sample_count": 51,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                106.445,
+                87.25
+              ],
+              "end_mm": [
+                107.5,
+                87.25
+              ],
+              "length_mm": 1.055,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                107.5,
+                88.25
+              ],
+              "end_mm": [
+                108.7,
+                87.05
+              ],
+              "length_mm": 1.6970562748477143,
+              "width_mm": 0.15,
+              "ground_sample_count": 35,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                107.5,
+                88.25
+              ],
+              "end_mm": [
+                106.445,
+                88.25
+              ],
+              "length_mm": 1.055,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "/USB_MCU_P": {
+          "segment_length_total_mm": 2.74,
+          "sample_count": 56,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                121.51,
+                87.75
+              ],
+              "end_mm": [
+                124.25,
+                87.75
+              ],
+              "length_mm": 2.74,
+              "width_mm": 0.15,
+              "ground_sample_count": 56,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "/D+": {
+          "segment_length_total_mm": 7.549556274847713,
+          "sample_count": 158,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                115.75,
+                87.85
+              ],
+              "end_mm": [
+                119.0,
+                87.85
+              ],
+              "length_mm": 3.25,
+              "width_mm": 0.15,
+              "ground_sample_count": 66,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                119.1,
+                87.75
+              ],
+              "end_mm": [
+                120.49,
+                87.75
+              ],
+              "length_mm": 1.39,
+              "width_mm": 0.15,
+              "ground_sample_count": 29,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                119.0,
+                87.85
+              ],
+              "end_mm": [
+                119.1,
+                87.75
+              ],
+              "length_mm": 0.14142135623730953,
+              "width_mm": 0.15,
+              "ground_sample_count": 4,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                114.65,
+                88.95
+              ],
+              "end_mm": [
+                115.75,
+                87.85
+              ],
+              "length_mm": 1.5556349186104048,
+              "width_mm": 0.15,
+              "ground_sample_count": 33,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                113.4375,
+                88.95
+              ],
+              "end_mm": [
+                114.65,
+                88.95
+              ],
+              "length_mm": 1.2125,
+              "width_mm": 0.15,
+              "ground_sample_count": 26,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "/USB_MCU_N": {
+          "segment_length_total_mm": 2.740072991728505,
+          "sample_count": 56,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                121.51,
+                86.5
+              ],
+              "end_mm": [
+                124.25,
+                86.48
+              ],
+              "length_mm": 2.740072991728505,
+              "width_mm": 0.15,
+              "ground_sample_count": 56,
+              "samples_without_in1_ground": []
+            }
+          ]
+        },
+        "/D-": {
+          "segment_length_total_mm": 7.694531021678298,
+          "sample_count": 161,
+          "gap_sample_count": 0,
+          "tracks": [
+            {
+              "start_mm": [
+                118.5,
+                87.55
+              ],
+              "end_mm": [
+                119.55,
+                86.5
+              ],
+              "length_mm": 1.48492424049175,
+              "width_mm": 0.15,
+              "ground_sample_count": 31,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                115.0,
+                87.55
+              ],
+              "end_mm": [
+                118.5,
+                87.55
+              ],
+              "length_mm": 3.5,
+              "width_mm": 0.15,
+              "ground_sample_count": 71,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                113.4375,
+                87.05
+              ],
+              "end_mm": [
+                114.5,
+                87.05
+              ],
+              "length_mm": 1.0625,
+              "width_mm": 0.15,
+              "ground_sample_count": 23,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                114.5,
+                87.05
+              ],
+              "end_mm": [
+                115.0,
+                87.55
+              ],
+              "length_mm": 0.7071067811865476,
+              "width_mm": 0.15,
+              "ground_sample_count": 16,
+              "samples_without_in1_ground": []
+            },
+            {
+              "start_mm": [
+                119.55,
+                86.5
+              ],
+              "end_mm": [
+                120.49,
+                86.5
+              ],
+              "length_mm": 0.94,
+              "width_mm": 0.15,
+              "ground_sample_count": 20,
+              "samples_without_in1_ground": []
+            }
+          ]
+        }
+      },
+      "interface_pads": {
+        "J2": {
+          "value": "USB_C_Receptacle_USB2.0_16P",
+          "pads": [
+            {
+              "pin": "",
+              "net": "",
+              "position_mm": [
+                105.0,
+                85.11
+              ]
+            },
+            {
+              "pin": "",
+              "net": "",
+              "position_mm": [
+                105.0,
+                90.89
+              ]
+            },
+            {
+              "pin": "A1",
+              "net": "GND",
+              "position_mm": [
+                106.445,
+                84.75
+              ]
+            },
+            {
+              "pin": "A4",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                106.445,
+                85.55
+              ]
+            },
+            {
+              "pin": "A5",
+              "net": "/USB_CC1",
+              "position_mm": [
+                106.445,
+                86.75
+              ]
+            },
+            {
+              "pin": "A6",
+              "net": "Net-(J2-D+-PadA6)",
+              "position_mm": [
+                106.445,
+                87.75
+              ]
+            },
+            {
+              "pin": "A7",
+              "net": "Net-(J2-D--PadA7)",
+              "position_mm": [
+                106.445,
+                88.25
+              ]
+            },
+            {
+              "pin": "A8",
+              "net": "unconnected-(J2-SBU1-PadA8)",
+              "position_mm": [
+                106.445,
+                89.25
+              ]
+            },
+            {
+              "pin": "A9",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                106.445,
+                90.45
+              ]
+            },
+            {
+              "pin": "A12",
+              "net": "GND",
+              "position_mm": [
+                106.445,
+                91.25
+              ]
+            },
+            {
+              "pin": "B1",
+              "net": "GND",
+              "position_mm": [
+                106.445,
+                91.25
+              ]
+            },
+            {
+              "pin": "B4",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                106.445,
+                90.45
+              ]
+            },
+            {
+              "pin": "B5",
+              "net": "Net-(J2-CC2)",
+              "position_mm": [
+                106.445,
+                89.75
+              ]
+            },
+            {
+              "pin": "B6",
+              "net": "Net-(J2-D+-PadA6)",
+              "position_mm": [
+                106.445,
+                88.75
+              ]
+            },
+            {
+              "pin": "B7",
+              "net": "Net-(J2-D--PadA7)",
+              "position_mm": [
+                106.445,
+                87.25
+              ]
+            },
+            {
+              "pin": "B8",
+              "net": "unconnected-(J2-SBU2-PadB8)",
+              "position_mm": [
+                106.445,
+                86.25
+              ]
+            },
+            {
+              "pin": "B9",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                106.445,
+                85.55
+              ]
+            },
+            {
+              "pin": "B12",
+              "net": "GND",
+              "position_mm": [
+                106.445,
+                84.75
+              ]
+            },
+            {
+              "pin": "SH",
+              "net": "GND",
+              "position_mm": [
+                105.53,
+                83.68
+              ]
+            },
+            {
+              "pin": "SH",
+              "net": "GND",
+              "position_mm": [
+                101.35,
+                83.68
+              ]
+            },
+            {
+              "pin": "SH",
+              "net": "GND",
+              "position_mm": [
+                105.53,
+                92.32
+              ]
+            },
+            {
+              "pin": "SH",
+              "net": "GND",
+              "position_mm": [
+                101.35,
+                92.32
+              ]
+            }
+          ]
+        },
+        "R35": {
+          "value": "22\u03a9",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "/USB_MCU_P",
+              "position_mm": [
+                121.51,
+                87.75
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/D+",
+              "position_mm": [
+                120.49,
+                87.75
+              ]
+            }
+          ]
+        },
+        "U3": {
+          "value": "ESP32-S3-WROOM-1-N16",
+          "pads": [
+            {
+              "pin": "3",
+              "net": "Net-(U3-EN)",
+              "position_mm": [
+                124.25,
+                73.78
+              ]
+            },
+            {
+              "pin": "13",
+              "net": "/USB_MCU_N",
+              "position_mm": [
+                124.25,
+                86.48
+              ]
+            },
+            {
+              "pin": "14",
+              "net": "/USB_MCU_P",
+              "position_mm": [
+                124.25,
+                87.75
+              ]
+            },
+            {
+              "pin": "27",
+              "net": "Net-(U3-IO0)",
+              "position_mm": [
+                141.75,
+                87.75
+              ]
+            },
+            {
+              "pin": "36",
+              "net": "unconnected-(U3-RXD0-Pad36)",
+              "position_mm": [
+                141.75,
+                76.32
+              ]
+            },
+            {
+              "pin": "37",
+              "net": "unconnected-(U3-TXD0-Pad37)",
+              "position_mm": [
+                141.75,
+                75.05
+              ]
+            }
+          ]
+        },
+        "U4": {
+          "value": "USBLC6-2SC6",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "Net-(J2-D--PadA7)",
+              "position_mm": [
+                111.1625,
+                87.05
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "GND",
+              "position_mm": [
+                111.1625,
+                88.0
+              ]
+            },
+            {
+              "pin": "3",
+              "net": "Net-(J2-D+-PadA6)",
+              "position_mm": [
+                111.1625,
+                88.95
+              ]
+            },
+            {
+              "pin": "4",
+              "net": "/D+",
+              "position_mm": [
+                113.4375,
+                88.95
+              ]
+            },
+            {
+              "pin": "5",
+              "net": "/USB_VBUS",
+              "position_mm": [
+                113.4375,
+                88.0
+              ]
+            },
+            {
+              "pin": "6",
+              "net": "/D-",
+              "position_mm": [
+                113.4375,
+                87.05
+              ]
+            }
+          ]
+        },
+        "R34": {
+          "value": "22\u03a9",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "/USB_MCU_N",
+              "position_mm": [
+                121.51,
+                86.5
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "/D-",
+              "position_mm": [
+                120.49,
+                86.5
+              ]
+            }
+          ]
+        },
+        "SW3": {
+          "value": "BOOT",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                133.0,
+                83.125
+              ]
+            },
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                127.0,
+                83.125
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "Net-(U3-IO0)",
+              "position_mm": [
+                133.0,
+                86.875
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "Net-(U3-IO0)",
+              "position_mm": [
+                127.0,
+                86.875
+              ]
+            }
+          ]
+        },
+        "SW2": {
+          "value": "RESET",
+          "pads": [
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                118.0,
+                83.125
+              ]
+            },
+            {
+              "pin": "1",
+              "net": "GND",
+              "position_mm": [
+                112.0,
+                83.125
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "Net-(U3-EN)",
+              "position_mm": [
+                118.0,
+                86.875
+              ]
+            },
+            {
+              "pin": "2",
+              "net": "Net-(U3-EN)",
+              "position_mm": [
+                112.0,
+                86.875
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

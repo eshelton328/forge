@@ -1,313 +1,9 @@
 {
   "passed": true,
-  "pcb_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+  "pcb_sha256": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a",
   "checks": [
     {
-      "name": "R13 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R41 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C9 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C4 retained placement",
-      "passed": true
-    },
-    {
-      "name": "U6 retained placement",
-      "passed": true
-    },
-    {
-      "name": "Q2 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R32 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R21 retained placement",
-      "passed": true
-    },
-    {
-      "name": "U2 retained placement",
-      "passed": true
-    },
-    {
-      "name": "TP1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C22 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R29 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R11 retained placement",
-      "passed": true
-    },
-    {
-      "name": "U4 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R3 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R42 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C33 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R22 retained placement",
-      "passed": true
-    },
-    {
-      "name": "TP4 retained placement",
-      "passed": true
-    },
-    {
-      "name": "H1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C13 retained placement",
-      "passed": true
-    },
-    {
-      "name": "TP3 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C5 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R18 retained placement",
-      "passed": true
-    },
-    {
-      "name": "D1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R33 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C11 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R23 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C18 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R38 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R44 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R25 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R28 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R16 retained placement",
-      "passed": true
-    },
-    {
-      "name": "U3 retained placement",
-      "passed": true
-    },
-    {
-      "name": "TP5 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R9 retained placement",
-      "passed": true
-    },
-    {
-      "name": "SW2 retained placement",
-      "passed": true
-    },
-    {
-      "name": "L2 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "U8 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R47 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R6 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R5 retained placement",
-      "passed": true
-    },
-    {
-      "name": "Q1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C34 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C16 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C21 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R8 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R14 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C32 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R45 retained placement",
-      "passed": true
-    },
-    {
-      "name": "J3 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C24 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R19 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R43 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R10 retained placement",
-      "passed": true
-    },
-    {
-      "name": "TP7 retained placement",
-      "passed": true
-    },
-    {
-      "name": "J4 retained placement",
-      "passed": true
-    },
-    {
-      "name": "TP8 retained placement",
-      "passed": true
-    },
-    {
-      "name": "U5 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R26 retained placement",
-      "passed": true
-    },
-    {
-      "name": "J1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R49 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R31 retained placement",
-      "passed": true
-    },
-    {
-      "name": "Q5 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R27 retained placement",
-      "passed": true
-    },
-    {
-      "name": "H4 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C6 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C31 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R34 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R48 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C26 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R7 retained placement",
-      "passed": true
-    },
-    {
-      "name": "SW3 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R40 retained placement",
+      "name": "R24 retained placement",
       "passed": true
     },
     {
@@ -315,83 +11,11 @@
       "passed": true
     },
     {
-      "name": "R24 retained placement",
+      "name": "U2 retained placement",
       "passed": true
     },
     {
-      "name": "R17 retained placement",
-      "passed": true
-    },
-    {
-      "name": "U7 retained placement",
-      "passed": true
-    },
-    {
-      "name": "Q7 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R15 retained placement",
-      "passed": true
-    },
-    {
-      "name": "Q4 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R37 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C29 retained placement",
-      "passed": true
-    },
-    {
-      "name": "J2 retained placement",
-      "passed": true
-    },
-    {
-      "name": "U1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C20 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C12 retained placement",
-      "passed": true
-    },
-    {
-      "name": "Q6 retained placement",
-      "passed": true
-    },
-    {
-      "name": "Q3 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C25 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R4 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C28 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C27 retained placement",
-      "passed": true
-    },
-    {
-      "name": "H2 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C15 retained placement",
+      "name": "J1 retained placement",
       "passed": true
     },
     {
@@ -399,67 +23,7 @@
       "passed": true
     },
     {
-      "name": "C2 retained placement",
-      "passed": true
-    },
-    {
-      "name": "H3 retained placement",
-      "passed": true
-    },
-    {
-      "name": "TP2 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C17 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C8 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R46 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C3 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R36 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R35 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C23 retained placement",
-      "passed": true
-    },
-    {
-      "name": "L1 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R12 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R39 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C10 retained placement",
-      "passed": true
-    },
-    {
-      "name": "C19 retained placement",
-      "passed": true
-    },
-    {
-      "name": "R30 retained placement",
+      "name": "R43 retained placement",
       "passed": true
     },
     {
@@ -467,12 +31,496 @@
       "passed": true
     },
     {
+      "name": "U4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C19 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R36 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C27 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R19 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R18 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C20 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C34 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R37 retained placement",
+      "passed": true
+    },
+    {
+      "name": "H4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R13 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R39 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C28 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R12 retained placement",
+      "passed": true
+    },
+    {
+      "name": "J2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "SW3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R34 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R14 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C25 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C22 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R30 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R16 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R17 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "H1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "H3 retained placement",
+      "passed": true
+    },
+    {
       "name": "TP6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q6 retained placement",
       "passed": true
     },
     {
       "name": "R20 retained placement",
       "passed": true
+    },
+    {
+      "name": "R40 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R48 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R38 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R10 retained placement",
+      "passed": true
+    },
+    {
+      "name": "J3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R33 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C18 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP8 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C13 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C16 retained placement",
+      "passed": true
+    },
+    {
+      "name": "L1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R47 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R11 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U8 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R25 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R44 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C21 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R32 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C23 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R27 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C10 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C17 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R41 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C32 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C12 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R9 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R8 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R21 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R35 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C24 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R45 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R22 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R26 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R15 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C31 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C15 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C26 retained placement",
+      "passed": true
+    },
+    {
+      "name": "J4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C29 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R42 retained placement",
+      "passed": true
+    },
+    {
+      "name": "SW2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R46 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R29 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R23 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R31 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C11 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C33 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C9 retained placement",
+      "passed": true
+    },
+    {
+      "name": "D1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C8 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R28 retained placement",
+      "passed": true
+    },
+    {
+      "name": "L2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R49 retained placement",
+      "passed": true
+    },
+    {
+      "name": "H2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "J4.1 finished-hole allowance",
+      "passed": true,
+      "nominal_hole_mm": 1.1,
+      "minimum_finished_hole_mm": 1.02,
+      "samtec_recommended_hole_mm": 1.02
+    },
+    {
+      "name": "J4.1 annular ring retained",
+      "passed": true,
+      "nominal_annular_ring_mm": 0.3
+    },
+    {
+      "name": "J4.2 finished-hole allowance",
+      "passed": true,
+      "nominal_hole_mm": 1.1,
+      "minimum_finished_hole_mm": 1.02,
+      "samtec_recommended_hole_mm": 1.02
+    },
+    {
+      "name": "J4.2 annular ring retained",
+      "passed": true,
+      "nominal_annular_ring_mm": 0.3
+    },
+    {
+      "name": "J4.3 finished-hole allowance",
+      "passed": true,
+      "nominal_hole_mm": 1.1,
+      "minimum_finished_hole_mm": 1.02,
+      "samtec_recommended_hole_mm": 1.02
+    },
+    {
+      "name": "J4.3 annular ring retained",
+      "passed": true,
+      "nominal_annular_ring_mm": 0.3
+    },
+    {
+      "name": "J4.4 finished-hole allowance",
+      "passed": true,
+      "nominal_hole_mm": 1.1,
+      "minimum_finished_hole_mm": 1.02,
+      "samtec_recommended_hole_mm": 1.02
+    },
+    {
+      "name": "J4.4 annular ring retained",
+      "passed": true,
+      "nominal_annular_ring_mm": 0.3
     },
     {
       "name": "Reviewed power, local return, USB and BTL copper retained",

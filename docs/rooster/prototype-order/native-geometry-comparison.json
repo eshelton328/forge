@@ -1,0 +1,50 @@
+{
+  "scope": "KiCad-loaded original/current outlines, footprint positions/values/pads, tracks, vias and saved filled copper; exact equality after removing only PCB file hash. Hidden ordering fields and model transforms separately covered by source-token comparison. No physical measurement.",
+  "verifier_sha256": "aa04d70509be6a06ed5a7778c750e479905a9adf119d5c1b2802a4bbc8e0559a",
+  "boards": [
+    {
+      "board": "alec-main",
+      "baseline_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+      "current_sha256": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+      "geometry_sha256": "658ac09f0ecb04725edaa4856adcc06d3e8448d70f90bc4d56b25897d314594e",
+      "footprints": 125,
+      "tracks": 3572,
+      "vias": 243,
+      "copper_polygons_records": 492,
+      "result": "EXACT_GEOMETRY_MATCH"
+    },
+    {
+      "board": "alec-controls",
+      "baseline_sha256": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4",
+      "current_sha256": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546",
+      "geometry_sha256": "6b67b0b7835c7fa51b3d8f7fab65efaabe2b5de1202c166068b6d4b919ed8587",
+      "footprints": 9,
+      "tracks": 285,
+      "vias": 11,
+      "copper_polygons_records": 87,
+      "result": "EXACT_GEOMETRY_MATCH"
+    },
+    {
+      "board": "alec-front",
+      "baseline_sha256": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0",
+      "current_sha256": "240c970c5cc23b727603920523cf404c60033e7f39d4fcd2d857255c3b6efa35",
+      "geometry_sha256": "762376bd5e420d67d244b29f7722de54404e2eb01641681ba0c4cd8c8146a8f8",
+      "footprints": 5,
+      "tracks": 87,
+      "vias": 6,
+      "copper_polygons_records": 24,
+      "result": "EXACT_GEOMETRY_MATCH"
+    },
+    {
+      "board": "alec-sensor",
+      "baseline_sha256": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "current_sha256": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
+      "geometry_sha256": "1588a8890e7140deeea070a69f5630ec79a5b86ea6ea58be4835741f48a053c4",
+      "footprints": 100,
+      "tracks": 2905,
+      "vias": 187,
+      "copper_polygons_records": 426,
+      "result": "EXACT_GEOMETRY_MATCH"
+    }
+  ]
+}

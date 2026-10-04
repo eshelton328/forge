@@ -1,0 +1,82 @@
+{
+  "scope": "Temporary project copies; mask-to-copper clearance 0.09 mm and mask bridge width 0.10 mm. Native boards unchanged. Full DRC reports may include unrelated existing rules.",
+  "boards": {
+    "alec-main": {
+      "native_pcb_sha256": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+      "native_project_sha256": "83a582a3fae3624640dd863005bab515236b3f1d36f956721f94c43da0c6d65d",
+      "temporary_project_sha256": "0cb7963f2326cace09d5fe1780ea035d156c58c3212d93bcc59045ba3a863ef7",
+      "previous_mask_rules": {
+        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_min_width": null
+      },
+      "violations_by_type": {
+        "lib_footprint_issues": 8
+      },
+      "report_sha256": "e597746852c5ab8e6d71fccc0fcf39c68aaace8939f029d40c4974319d03b369"
+    },
+    "alec-controls": {
+      "native_pcb_sha256": "a5d60ce4e9ed25f712ff47dc1c827ae0d5563ac790bffb31a57974efc927e546",
+      "native_project_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "temporary_project_sha256": "8529d58dfb72f19a3d5eb10c67c138aee5574dec6423d9370410eea7d16ec4f3",
+      "previous_mask_rules": {
+        "solder_mask_to_copper_clearance": null,
+        "solder_mask_min_width": null
+      },
+      "violations_by_type": {
+        "lib_footprint_issues": 1
+      },
+      "report_sha256": "f616e03dd34c3b57ea5ac5c87569d1907d9d0a1e3ad5d59cb856fb791750a79a"
+    },
+    "alec-front": {
+      "native_pcb_sha256": "240c970c5cc23b727603920523cf404c60033e7f39d4fcd2d857255c3b6efa35",
+      "native_project_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "temporary_project_sha256": "8529d58dfb72f19a3d5eb10c67c138aee5574dec6423d9370410eea7d16ec4f3",
+      "previous_mask_rules": {
+        "solder_mask_to_copper_clearance": null,
+        "solder_mask_min_width": null
+      },
+      "violations_by_type": {},
+      "report_sha256": "47244e65bb8e8fa489847d6aad0f0c056d6bbc38f6c929b9a784f5b08964b09d"
+    },
+    "alec-sensor": {
+      "native_pcb_sha256": "0cd6d94268dd98a2468f06f09f5391f12dfc55366e281d82fc6d259cd20e8564",
+      "native_project_sha256": "3c90f5e8ce3cc55f8ee40221d632e37d85033dc90a4c6c45c1387ab706590906",
+      "temporary_project_sha256": "ac2c7eb21b5d21aecbddbc5e39f96883a411840ce9f65d5ace2a14fdb4413fb7",
+      "previous_mask_rules": {
+        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_min_width": null
+      },
+      "violations_by_type": {
+        "lib_footprint_issues": 8
+      },
+      "report_sha256": "5271ab91c561506faee001961ff5874dfe3addae5c340a7a2b245814cc8e7ab7"
+    }
+  },
+  "status": "NO_MASK_TO_COPPER_VIOLATIONS_AT_0_09_MM; MASK_BRIDGE_WIDTH_NOT_ESTABLISHED",
+  "tool": "KiCad CLI 10.0.1 pcb drc",
+  "command": "kicad-cli pcb drc --format json --severity-all --all-track-errors --exit-code-violations -o drc.json <temporary-board.kicad_pcb>",
+  "limitations": [
+    "No native files changed. Temporary copies lack original footprint library paths, producing library-only warnings on main/controls/sensor.",
+    "No schematic parity or new zone fill requested; prior source-bound checks cover those unchanged inputs.",
+    "The project solder_mask_min_width key did not trigger violations when independently increased to 1.0 mm; no minimum mask-bridge-width pass is claimed."
+  ],
+  "independent_negative_controls": {
+    "clearance": {
+      "changed_threshold_mm": 1.0,
+      "violations_by_type": {
+        "solder_mask_bridge": 210,
+        "lib_footprint_issues": 8
+      },
+      "temporary_project_sha256": "fff9c530a173a5b45fe3a48e915b9a6081ea66ede05e94f5fba8469b9716d1c9",
+      "report_sha256": "c03408445e4c54c2a0212ce563797df463adf53f0e50839ae18634ce335af038"
+    },
+    "bridge": {
+      "changed_threshold_mm": 1.0,
+      "violations_by_type": {
+        "lib_footprint_issues": 8
+      },
+      "temporary_project_sha256": "6076abdfbe6d99085423aa4f9c342264232b71b6d7b2d6957e8b4887df7ceded",
+      "report_sha256": "8a6286eaa4aa2dbb08d4c691403f07c45c81394cc0b3af168263da0090be1385"
+    }
+  }
+}
