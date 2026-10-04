@@ -6314,7 +6314,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.farnell.com/datasheets/1747469.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf"
 			(at 38.1 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -6368,7 +6368,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C84416" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 283.21 152.4 0)
@@ -6624,7 +6626,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.helloxkb.com/Home/Goods/goodsInfoxq/id/1913"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf"
 			(at 241.3 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -6662,7 +6664,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "XKB Connection" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C318884" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "RF_Module:ESP32-S3-WROOM-1")
 		(at 281.94 74.93 0)
@@ -6707,7 +6711,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+			"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206281830_Espressif-Systems-ESP32-S3-WROOM-1-N16_C2913199.pdf"
 			(at 281.94 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -6862,7 +6866,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Espressif Systems" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C2913199" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 250.19 140.97 0)
@@ -6906,7 +6912,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf"
 			(at 250.19 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6944,7 +6950,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C105871" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 49.53 102.87 0)
@@ -7180,12 +7188,14 @@
 					(unit 1))))
 		(property
 			"MPN"
-			"RV-3028-C7"
+			"RV-3028-C7-32.768kHz-1ppm-TA-QC"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Micro Crystal" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C3019759" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "TPS63070 Buck-Boost:TPS63070RNMR")
 		(at 106.68 204.47 0)
@@ -7229,7 +7239,7 @@
 					(italic yes))))
 		(property
 			"Datasheet"
-			"https://www.ti.com/lit/gpn/tps63070"
+			"https://www.ti.com/cn/lit/gpn/tps63070"
 			(at 106.68 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -7347,7 +7357,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C109322" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 229.87 228.6 0)
@@ -7391,7 +7403,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 82.55 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -7445,7 +7457,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C71629" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 146.05 205.74 0)
@@ -7490,7 +7504,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07130KL_C93946.pdf"
 			(at 146.05 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -7536,7 +7550,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C93946" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 80.01 222.25 0)
@@ -7720,7 +7736,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 194.31 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -7774,7 +7790,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C77088" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 80.01 130.81 0)
@@ -7819,7 +7837,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 80.01 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -7873,7 +7891,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C71629" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 229.87 232.41 0)
@@ -7987,7 +8007,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 240.03 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -8020,12 +8040,14 @@
 					(unit 1))))
 		(property
 			"MPN"
-			"RC0402FR-07150RL"
+			"0402WGF1500TCE"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C25082" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 382.27 50.8 0)
@@ -8070,7 +8092,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-075K1L_C105872.pdf"
 			(at 382.27 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -8116,7 +8138,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C105872" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 49.53 186.69 0)
@@ -8160,7 +8184,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.farnell.com/datasheets/1747469.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf"
 			(at 49.53 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -8214,7 +8238,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C84416" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 213.36 224.79 0)
@@ -8257,7 +8283,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.helloxkb.com/Home/Goods/goodsInfoxq/id/1913"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf"
 			(at 213.36 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -8295,7 +8321,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "XKB Connection" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C318884" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 92.71 49.53 0)
@@ -8410,7 +8438,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 80.01 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -8464,7 +8492,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C71629" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 275.59 129.54 0)
@@ -8648,7 +8678,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07470KL_C137976.pdf"
 			(at 146.05 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -8694,7 +8724,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C137976" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 181.61 110.49 0)
@@ -8879,7 +8911,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 92.71 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8917,7 +8949,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 246.38 62.23 90)
@@ -8962,7 +8996,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.helloxkb.com/Home/Goods/goodsInfoxq/id/1913"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf"
 			(at 241.3 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -9000,7 +9034,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "XKB Connection" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C318884" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 392.43 48.26 0)
@@ -9045,7 +9081,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-075K1L_C105872.pdf"
 			(at 392.43 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -9091,7 +9127,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C105872" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Power_Protection:USBLC6-2SC6")
 		(at 379.73 68.58 0)
@@ -9137,7 +9175,7 @@
 				(justify left)))
 		(property
 			"Datasheet"
-			"https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf"
 			(at 381 76.835 0)
 			(hide yes)
 			(show_name no)
@@ -9188,7 +9226,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "STMicroelectronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C7519" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 271.78 31.75 0)
@@ -9233,7 +9273,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 271.78 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -9287,7 +9327,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C71629" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 38.1 102.87 0)
@@ -9403,7 +9445,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61A226ME44-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2410010301_Murata-Electronics-GRM21BR61A226ME44L_C441864.pdf"
 			(at 257.81 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -9457,7 +9499,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C441864" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 168.91 194.31 0)
@@ -9501,7 +9545,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 168.91 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9555,7 +9599,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C77088" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "TPS63070 Buck-Boost:TPS63070RNMR")
 		(at 106.68 116.84 0)
@@ -9599,7 +9645,7 @@
 					(italic yes))))
 		(property
 			"Datasheet"
-			"https://www.ti.com/lit/gpn/tps63070"
+			"https://www.ti.com/cn/lit/gpn/tps63070"
 			(at 106.68 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9717,7 +9763,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C109322" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 267.97 144.78 0)
@@ -9830,7 +9878,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/xfl4020-152/"
+			"https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf"
 			(at 106.68 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -9868,7 +9916,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Coilcraft" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C3033018" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 146.05 194.31 0)
@@ -9912,7 +9962,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07680KL_C163456.pdf"
 			(at 146.05 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9958,7 +10008,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C163456" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 52.07 205.74 0)
@@ -10002,7 +10054,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 52.07 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -10040,7 +10092,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 275.59 125.73 0)
@@ -10084,7 +10138,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://product.samsungsem.com/mlcc/CL31A107MQHNNN.do"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf"
 			(at 275.59 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -10138,7 +10192,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Samsung Electro-Mechanics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C15008" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 134.62 194.31 0)
@@ -10182,7 +10238,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 134.62 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -10231,12 +10287,14 @@
 				(hide yes)))
 		(property
 			"MPN"
-			"GRM188R61A106KAALD"
+			"GRT188R61A106KE13D"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C782172" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 127 132.08 0)
@@ -10350,7 +10408,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 237.49 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -10388,7 +10446,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 372.11 55.88 0)
@@ -10432,7 +10492,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 372.11 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10486,7 +10546,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C71629" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 344.17 67.31 0)
@@ -10529,7 +10591,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.lcsc.com/datasheet/C165948.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf"
 			(at 347.98 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -10612,7 +10674,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Korean Hroparts Elec" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C165948" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 261.62 143.51 0)
@@ -10656,7 +10720,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf"
 			(at 261.62 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -10694,7 +10758,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C105871" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 127 137.16 0)
@@ -10809,7 +10875,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC0402FR-07150KL_C93947.pdf"
 			(at 146.05 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -10855,7 +10921,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C93947" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 134.62 110.49 0)
@@ -10970,7 +11038,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 302.26 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -11008,7 +11076,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 281.94 102.87 0)
@@ -11403,7 +11473,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 247.65 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -11436,12 +11506,14 @@
 					(unit 1))))
 		(property
 			"MPN"
-			"RC0402FR-07150RL"
+			"0402WGF1500TCE"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C25082" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 336.55 90.17 0)
@@ -11599,7 +11671,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Wurth Elektronik" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C5342281" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 168.91 198.12 0)
@@ -11714,7 +11788,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07330RL_C105875.pdf"
 			(at 255.27 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -11752,7 +11826,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C105875" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 181.61 194.31 0)
@@ -11796,7 +11872,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 181.61 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -11850,7 +11926,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C77088" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Transistor_FET:Q_PMOS_GSD")
 		(at 92.71 36.83 90)
@@ -11894,7 +11972,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf"
 			(at 92.71 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -11935,7 +12013,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Alpha & Omega Semicon" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C15127" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 38.1 99.06 0)
@@ -11979,7 +12059,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.farnell.com/datasheets/1747469.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf"
 			(at 38.1 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12033,7 +12113,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C84416" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 372.11 59.69 0)
@@ -12147,7 +12229,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 168.91 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -12201,7 +12283,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C77088" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 72.39 186.69 0)
@@ -12245,7 +12329,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 72.39 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -12294,12 +12378,14 @@
 				(hide yes)))
 		(property
 			"MPN"
-			"GRM188R61A106KAALD"
+			"GRT188R61A106KE13D"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C782172" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 220.98 228.6 180)
@@ -12343,7 +12429,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 241.3 220.98 0)
 			(hide yes)
 			(show_name no)
@@ -12381,7 +12467,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 86.36 201.93 0)
@@ -12496,7 +12584,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 60.96 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12534,7 +12622,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 157.48 201.93 0)
@@ -12578,7 +12668,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 157.48 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -12616,7 +12706,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 60.96 186.69 0)
@@ -12661,7 +12753,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 60.96 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -12699,7 +12791,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 257.81 35.56 0)
@@ -12813,7 +12907,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 157.48 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -12851,7 +12945,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 127 219.71 0)
@@ -13105,7 +13201,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.murata.com/en-us/products/productdetail?partno=GRM155R61A105KE15D"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1810201320_Murata-Electronics-GRM155R61A105KE15D_C76999.pdf"
 			(at 256.54 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -13159,7 +13255,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C76999" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 194.31 198.12 0)
@@ -13274,7 +13372,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 246.38 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -13312,7 +13410,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:L")
 		(at 106.68 167.64 90)
@@ -13355,7 +13455,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/xfl4020-152/"
+			"https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf"
 			(at 106.68 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -13393,7 +13493,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Coilcraft" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C3033018" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 392.43 52.07 0)
@@ -13647,7 +13749,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 134.62 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -13696,12 +13798,14 @@
 				(hide yes)))
 		(property
 			"MPN"
-			"GRM188R61A106KAALD"
+			"GRT188R61A106KE13D"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C782172" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 97.7900 34.2900 0)
@@ -14095,7 +14199,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_JST-B2B-PH-SM4-TB-LF-SN_C160352.pdf"
 			(at 35.56 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -14133,7 +14237,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "JST" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C160352" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 49.53 99.06 0)
@@ -14177,7 +14283,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.farnell.com/datasheets/1747469.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf"
 			(at 49.53 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14231,7 +14337,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C84416" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:GND")
 		(at 344.17 90.17 0)
@@ -14416,7 +14524,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 181.61 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -14470,7 +14578,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C77088" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 194.31 106.68 0)
@@ -14514,7 +14624,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 194.31 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -14568,7 +14678,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C77088" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 72.39 99.06 0)
@@ -14612,7 +14724,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 72.39 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14661,12 +14773,14 @@
 				(hide yes)))
 		(property
 			"MPN"
-			"GRM188R61A106KAALD"
+			"GRT188R61A106KE13D"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C782172" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 52.07 34.29 0)
@@ -14888,7 +15002,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 152.4000 35.5600 0)
 			(hide yes)
 			(show_name no)
@@ -14926,7 +15040,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 152.4 31.75)
@@ -15003,7 +15119,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 170.1800 35.5600 0)
 			(hide yes)
 			(show_name no)
@@ -15041,7 +15157,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 170.18 31.75)
@@ -15126,7 +15244,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 306.0700 123.1900 0)
 			(hide yes)
 			(show_name no)
@@ -15164,7 +15282,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 306.07 119.38)
@@ -15312,7 +15432,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 251.4600 125.7300 0)
 			(hide yes)
 			(show_name no)
@@ -15358,7 +15478,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C71629" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 251.46 121.92)
@@ -15435,7 +15557,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0722RL_C114765.pdf"
 			(at 322.5800 81.2800 0)
 			(hide yes)
 			(show_name no)
@@ -15473,7 +15595,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C114765" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 322.58 77.47)
@@ -15550,7 +15674,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0722RL_C114765.pdf"
 			(at 322.5800 99.0600 0)
 			(hide yes)
 			(show_name no)
@@ -15588,7 +15712,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C114765" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 322.58 95.25)
@@ -16100,7 +16226,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://www.littelfuse.com/assetdocs/littelfuse-c-k-slide-1000-series-datasheet?assetguid=68a2b41e-19a4-4cf4-821b-aca78a430f00"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2410121839_C-K-1101M2S3CQE2_C221538.pdf"
 			(at 121.92 40.64 0)
 			(effects
 				(font
@@ -16129,7 +16255,9 @@
 			(uuid bea2a3d7-80e9-5d32-95ac-8f8bb3d3f8dc))
 		(pin
 			"3"
-			(uuid 272b9bb1-2a32-5221-8a66-5387f74b4b8c)))
+			(uuid 272b9bb1-2a32-5221-8a66-5387f74b4b8c))
+	(property "Manufacturer" "C&K" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C221538" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(no_connect
 		(at 127.0 43.18)
 		(uuid f02a8318-6559-5c09-9dc9-a98ddcffca2a))
@@ -16197,7 +16325,7 @@
 				(hide yes)))
 		(property
 			"Datasheet"
-			"https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Littelfuse-046701-5NRHF_C187608.pdf"
 			(at 62.23 55.88 0)
 			(effects
 				(font
@@ -16223,7 +16351,9 @@
 			(uuid fbb8ffe2-d2c8-53e4-9a78-0de30e532f96))
 		(pin
 			"2"
-			(uuid ed467353-0d00-50ef-8824-1956f8d178aa)))
+			(uuid ed467353-0d00-50ef-8824-1956f8d178aa))
+	(property "Manufacturer" "Littelfuse" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C187608" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 345.44 129.54)

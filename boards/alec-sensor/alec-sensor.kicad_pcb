@@ -119,7 +119,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -153,7 +153,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07150RL"
+		(property "MPN" "0402WGF1500TCE"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -251,6 +251,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "7b14a998-cf30-549c-bacf-cdda41393a39") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C25082" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "830a88e3-c6fc-525c-91d6-966ada65581a") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Sensor:Samtec_SSW-105-01-F-S"
 		(layer "F.Cu")
@@ -278,7 +280,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.hlktech.com/en/Goods-239.html"
+		(property "Datasheet" "https://www.samtec.com/products/ssw-105-01-f-s"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -493,6 +495,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Samtec" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3bd254c2-3397-5a67-ae33-73b60bff6886") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C5930350" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "86548347-58fc-55c9-b3ff-b7d31f194424") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -524,7 +528,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -656,6 +660,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "715f20c9-99e2-5975-b6a7-8f5e6e68a95a") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C105871" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "359ee508-880b-5bd0-80fb-bf133643dbbe") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -687,7 +693,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1039,6 +1045,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Alpha & Omega Semicon" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "0c2d9614-156b-5620-bb70-ecfb18044c9e") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C15127" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e30b8f42-3f06-54b6-b77f-c87eb049f298") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -1070,7 +1078,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1202,6 +1210,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "82d64e63-8c0a-5485-9174-e8f369152508") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "cefbf181-fa18-59ef-b7aa-6e550f094191") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "MountingHole_3.2mm_M3"
 		(layer "F.Cu")
@@ -1342,7 +1352,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1474,6 +1484,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "8d434e52-a273-5f37-84a7-6a72b509fb2c") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3dff921b-619e-5f43-921d-acceec54f739") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -1505,7 +1517,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC0402FR-07150KL_C93947.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1649,6 +1661,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e4ebc23a-e866-5c33-b64c-642cca9c5354") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C93947" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "5f4579fc-2433-5030-9ab1-b60c108eff05") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -1680,7 +1694,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1714,7 +1728,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07150RL"
+		(property "MPN" "0402WGF1500TCE"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1812,6 +1826,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "fedee60d-ffa9-58a4-a8f3-ce615bec2ddd") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C25082" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "313aa018-a85a-533c-9e4c-879323f07d5a") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -1843,7 +1859,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1975,6 +1991,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "303e4558-c862-5854-8e2b-47faefb4cb3a") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f5c8c43e-2687-56c5-a982-a5dca086d6f6") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -2006,7 +2024,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810311119_Murata-Electronics-GRM188R71C104KA01D_C45000.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2148,6 +2166,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e1f9157e-979c-55c3-9c7f-61636063c5fe") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C45000" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "41d67da3-65d1-54d0-81e4-70fb555734a0") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -2179,7 +2199,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2311,6 +2331,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "470627bf-aa28-56c3-ba73-852b036ac511") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b21c6b11-80c6-5f4e-b230-9e534cda748e") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Package_SON:MicroCrystal_C7_SON-8_1.5x3.2mm_P0.9mm"
 		(layer "F.Cu")
@@ -2376,7 +2398,7 @@
 				)
 			)
 		)
-		(property "MPN" "RV-3028-C7"
+		(property "MPN" "RV-3028-C7-32.768kHz-1ppm-TA-QC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2535,6 +2557,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Micro Crystal" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a0e88612-3786-55ff-b85b-95a21101f7d8") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C3019759" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3057db1c-5544-52fe-883b-12c51c8a4067") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Fuse:Fuse_0603_1608Metric"
 		(layer "F.Cu")
@@ -2566,7 +2590,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Littelfuse-046701-5NRHF_C187608.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2696,6 +2720,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Littelfuse" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f8054657-bb02-5128-96af-44474cf1daf1") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C187608" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "7512ac1f-00bb-5a22-810f-d3160864655b") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -2727,7 +2753,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2859,6 +2885,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "509eccc0-b50f-56f8-a394-9305cec681dd") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C105871" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "ea9f80d0-dd49-510c-95ba-438800bc1eb1") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Board:USB_C_HRO_Overhang"
 		(layer "F.Cu")
@@ -2890,7 +2918,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C165948.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3268,6 +3296,8 @@
 				(xyz -90 0 0)
 			)
 		)
+		(property "Manufacturer" "Korean Hroparts Elec" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "bf380af9-1ac9-59de-8f59-c7ce8b9066f4") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C165948" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "30dde8bf-feb9-5f21-83f9-dbf5716eac3c") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -3299,7 +3329,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3431,6 +3461,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "d12121c4-1a16-510d-a732-c4c8e478cfc0") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "ccadfd9d-1e88-50a7-93bc-20e56f1299f6") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -3462,7 +3494,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0722RL_C114765.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -3594,6 +3626,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "8c584a45-9374-5477-89dc-da8ac39edb99") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C114765" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "be00f2d1-09f0-5caa-9f3d-d85c2f0fc990") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -3683,7 +3717,7 @@
 				)
 			)
 		)
-		(property "MPN" "MMBT3904"
+		(property "MPN" "MMBT3904LT1G"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -4001,6 +4035,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "onsemi" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a9e900a1-d5ac-5963-86ca-258a170f8758") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C81464" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "ef105b15-a988-5926-8561-2b515e4daeaa") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -4032,7 +4068,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -4188,6 +4224,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "6d4e5ab6-1051-5025-b21a-ba7a3f1df6c7") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C71629" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "bb708cb4-e00b-5c4f-891c-a97321443f8a") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -4219,7 +4257,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4375,6 +4413,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "5a77f910-9098-5c74-8ed7-66529ef7db02") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C77088" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "cb69ce5c-ba0c-571f-a274-8743dc981f80") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "TPS63070:TPS63070"
 		(layer "F.Cu")
@@ -4406,7 +4446,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/tps63070"
+		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/tps63070"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4983,6 +5023,8 @@
 				(xyz -90 0 -90)
 			)
 		)
+		(property "Manufacturer" "Texas Instruments" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "73ad8c78-b03a-54b7-9f14-0754e79525c3") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C109322" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3e9fbfc1-c546-5d82-b239-8a1ebd5bbb67") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -5014,7 +5056,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -5170,6 +5212,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "ca117ceb-dd1d-5df8-ad0d-c07dfc322c48") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C71629" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "4eef75c3-72e3-5eb2-bdf8-8446ce4ccc0c") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "TPS63070:TPS63070"
 		(layer "F.Cu")
@@ -5201,7 +5245,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/tps63070"
+		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/tps63070"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5778,6 +5822,8 @@
 				(xyz -90 0 -90)
 			)
 		)
+		(property "Manufacturer" "Texas Instruments" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "2f5da812-7a8e-5215-8733-a1645b63a9b0") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C109322" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e0ef8698-e658-5a28-9644-8b27e2080244") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -5809,7 +5855,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0402BRD0733KL_C728559.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5953,6 +5999,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "bd8bd8c0-8c6d-5b95-8b9d-826bf86a3d74") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C728559" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e1863026-0672-5ebf-afa9-2d176fb60b66") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -5984,7 +6032,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6116,6 +6164,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e904aa00-5fd0-5c43-82d2-c9f32b226525") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "5077008f-45e3-5bc1-8c53-0861b7a63a95") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -6147,7 +6197,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6499,6 +6549,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Alpha & Omega Semicon" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b32f6573-87af-5bd4-aa64-f4d2ce8eea7b") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C15127" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "8ac2395e-5d5c-5251-8ef6-8bcc6a0f17f3") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -6530,7 +6582,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM155R61A105KE15D"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810201320_Murata-Electronics-GRM155R61A105KE15D_C76999.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6686,6 +6738,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "29875929-9bd9-5dfb-9f10-84d16c4859dd") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C76999" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b7fdd4e3-e7e8-5f1e-bdb2-e4f1492d882c") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -6717,7 +6771,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0747KL_C93943.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6849,6 +6903,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "1b61fa46-3781-5476-84ee-006c7117339d") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C93943" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f5763e1a-de35-5cfc-9a63-27dd9f211f9d") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -6938,7 +6994,7 @@
 				)
 			)
 		)
-		(property "MPN" "MMBT3904"
+		(property "MPN" "MMBT3904LT1G"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7256,6 +7312,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "onsemi" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a10bbc9f-9a56-517d-b812-375e103873af") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C81464" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a821a7e1-a983-53ac-bbbf-5a2e3153dd59") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -7287,7 +7345,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7417,6 +7475,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "13be49ac-10b2-5338-b80c-f49ceac04057") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3f6be213-d208-5027-ba80-0fcee0d3651b") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -7448,7 +7508,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07130KL_C93946.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7592,6 +7652,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "8508cd6b-dc90-55a7-aee1-6054b09933ec") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C93946" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "789b0c6c-cf22-573f-97fe-e64dd494a292") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -7623,7 +7685,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7681,7 +7743,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R61A106KAALD"
+		(property "MPN" "GRT188R61A106KE13D"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7779,6 +7841,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "07410848-338f-5506-8b4d-55e0e3e774b7") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C782172" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b6c88911-2b1c-5043-8819-ea8b74073d80") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -7810,7 +7874,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07330RL_C105875.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7942,6 +8006,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "967bb696-f2d7-5864-89d7-1a52cd1d8a06") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C105875" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "26cb3cd3-8da1-5d7f-abcd-5f886ec37c1c") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -7973,7 +8039,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8105,6 +8171,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "0318bd1b-dd13-5798-a19d-66d4ecbf132d") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "8e74c974-6d4b-5cf6-9665-cb512d536293") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -8136,7 +8204,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8292,6 +8360,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e3e65c39-832b-58ce-b4bc-23dfb786edc7") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C77088" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "83933b01-9df7-5aa1-9b7f-c076bbb43b0c") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -8323,7 +8393,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0747KL_C93943.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8455,6 +8525,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "846bca06-8b6a-5a8f-93dc-4c102e020eff") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C93943" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e59cb97f-d5a5-5740-a7a7-fe78c59d1755") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -8486,7 +8558,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RT0402BRD0710KL_C190095.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8630,6 +8702,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "5bef48b0-471c-5f3d-9d66-a9416aec4176") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C190095" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a687e6b5-e5af-5d41-95e9-6b55ad61320d") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -8661,7 +8735,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8793,6 +8867,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "1fa86f9e-9e79-5d66-9986-5c1cb10feef3") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "8af985bf-e576-5694-8dce-104bff603125") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -8824,7 +8900,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8858,7 +8934,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R61A106KAALD"
+		(property "MPN" "GRT188R61A106KE13D"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -8966,6 +9042,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "024e9b93-b271-5e17-9c0c-5b340e4f73c8") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C782172" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "12051fe3-8a8a-558f-81bf-91f545c3e4c4") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -8997,7 +9075,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07680KL_C163456.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -9141,6 +9219,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "9419692d-29dc-531e-99fa-8d07948d8578") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C163456" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "579a575b-f904-50e5-8893-85f9effea680") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -9172,7 +9252,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9328,6 +9408,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f6fe1119-3b4d-520c-bfd4-a7066e7b1c6f") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C77088" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "092b26a1-c4d6-54ad-a9c0-9980e1419ed6") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -9359,7 +9441,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9515,6 +9597,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "6d69d6b0-f5b1-5f09-852f-131ee2ecdf8f") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C77088" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b54ff592-0ab1-5a35-b5eb-c2af6b2591e0") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -9546,7 +9630,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9676,6 +9760,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "2309e5a9-765e-517f-bbeb-450ee431dda4") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "7afc534d-ff31-5846-8540-0fafcf5a6e3e") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -9707,7 +9793,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9765,7 +9851,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R61A106KAALD"
+		(property "MPN" "GRT188R61A106KE13D"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -9863,6 +9949,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "0fcc3287-6d2f-5c09-b9f1-f8d146ace187") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C782172" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "fa32a4d7-6362-5daa-976d-7111c8ccb32e") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -9894,7 +9982,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.farnell.com/datasheets/1747469.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10050,6 +10138,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "5e12b601-63b1-50ea-93e2-cd4dc1de8eec") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C84416" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "847bd047-aa31-5709-95fb-9367f4fcccf3") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100"
 		(layer "F.Cu")
@@ -10338,6 +10428,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Wurth Elektronik" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "6a613684-30c9-59fa-a800-f4f3f0b4cdbd") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C5342281" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "44e93b2f-1042-5b80-a7cf-11e596e1b5ad") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -10369,7 +10461,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-075K1L_C105872.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10513,6 +10605,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "de5b1ff2-07c1-5c3a-81c3-c66778c5ba90") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C105872" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "c3cc85cc-5f14-52bb-8099-db0a74cdb844") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -10544,7 +10638,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.farnell.com/datasheets/1747469.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10700,6 +10794,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f4e17b83-48b0-58c4-a402-ea524848beec") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C84416" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "35361a8f-e8e3-504f-b31e-2e95983d1be6") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -10731,7 +10827,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10863,6 +10959,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "69a2d1da-b454-53ec-b7a8-c894a8dd294e") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "999a9878-2ae6-55c2-9015-6db6ecc69979") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -10952,7 +11050,7 @@
 				)
 			)
 		)
-		(property "MPN" "MMBT3904"
+		(property "MPN" "MMBT3904LT1G"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11270,6 +11368,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "onsemi" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b0a5bf5d-b85c-5c59-acd4-b3b9b28070bf") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C81464" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "53c5ba2e-ae37-535a-a652-6e2fa984487a") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -11301,7 +11401,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.farnell.com/datasheets/1747469.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11457,6 +11557,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "73a37dcb-d332-5c4d-a13b-8d93574c9b01") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C84416" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "8a27ef60-a494-5e6e-aaf3-8ddd38d0a4b9") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Board:ESP32-S3-WROOM-1_Overhang"
 		(layer "F.Cu")
@@ -11490,7 +11592,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206281830_Espressif-Systems-ESP32-S3-WROOM-1-N16_C2913199.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12296,6 +12398,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Espressif Systems" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "20deb372-7ba2-5ce7-b7a6-5cb6b4ae9d55") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C2913199" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "21c20705-8992-5bef-94e0-0a10d611c014") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -12327,7 +12431,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-071ML_C138033.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12459,6 +12563,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b4efdd1b-15db-5eb4-9be7-39eca8595369") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C138033" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "2be344c2-5a43-5cc8-84f9-403e585290b4") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
 		(layer "F.Cu")
@@ -12490,7 +12596,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_JST-B2B-PH-SM4-TB-LF-SN_C160352.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12916,6 +13022,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "JST" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "16dfe574-8b1a-5894-b823-a6ae345df203") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C160352" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "56356f25-3b5b-506c-bdf9-090ee44a1a61") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -12947,7 +13055,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13079,6 +13187,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "46ed612e-8f5d-5852-93f9-6b25f3af6c4e") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e3d895f1-5f3c-5c0f-ad93-328b20384414") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -13110,7 +13220,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13242,6 +13352,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "d3999b97-82f1-5001-8432-ecd7ef7d7648") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "84e6cb15-897f-55d4-9004-111c418aba5d") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -13273,7 +13385,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13405,6 +13517,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "58e898fe-6a95-5e64-b4f3-56f8f647444c") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "fad82ca9-c294-501c-a7e9-25b819b31829") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -13436,7 +13550,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13592,6 +13706,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a31cafc3-b4ff-5394-bc42-e8d50021d00f") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C71629" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b3d127eb-3e36-5503-9620-be680088a1bf") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -13623,7 +13739,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13681,7 +13797,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R61A106KAALD"
+		(property "MPN" "GRT188R61A106KE13D"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -13779,6 +13895,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "48dd7ead-112c-536a-afce-6875882c0e09") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C782172" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "37aab0d1-65d6-5c36-94d1-7787a7abf0c7") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
@@ -13810,7 +13928,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14136,6 +14254,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "STMicroelectronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "c2845640-eae6-524d-9ea9-2d8b7e4e677b") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C7519" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "4ceeb38e-d4e7-54be-8e20-df47e9febb54") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -14167,7 +14287,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14323,6 +14443,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "0da57d9a-9c21-514c-8e71-c8925013feca") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C77088" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "944de661-ab8a-5992-8411-c3d06f506588") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "TPS63070:IND_XFL4020-152MEC"
 		(layer "F.Cu")
@@ -14352,7 +14474,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/xfl4020-152/"
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14561,6 +14683,8 @@
 				(xyz -90 0 0)
 			)
 		)
+		(property "Manufacturer" "Coilcraft" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "6012a571-a866-5963-9547-a3f30969767f") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C3033018" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "fe0dd3ce-5b2a-52ad-b26f-dce40452c425") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -14592,7 +14716,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07470KL_C137976.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -14736,6 +14860,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "0e863a87-554c-5e1b-a963-147259596ea5") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C137976" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "26c7deb8-7e7e-51a3-90c1-6beba727584f") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "TPS63070:IND_XFL4020-152MEC"
 		(layer "F.Cu")
@@ -14765,7 +14891,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/xfl4020-152/"
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14974,6 +15100,8 @@
 				(xyz -90 0 0)
 			)
 		)
+		(property "Manufacturer" "Coilcraft" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3cc7ba72-3271-5bf2-937a-4de1bf9a2a3a") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C3033018" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b75f8d73-930f-51b9-8343-929d2d74bc0d") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -15005,7 +15133,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15137,6 +15265,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "646b5540-7107-560d-936f-4339cf791546") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b28ab5fb-828a-586d-b3a7-dccfd0c07a0c") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -15168,7 +15298,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15298,6 +15428,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "50099b06-715b-5537-b797-d49eaa98251f") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "5705b7c6-79e6-5411-a335-7198dc6570ef") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "MountingHole_3.2mm_M3"
 		(layer "F.Cu")
@@ -15438,7 +15570,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmux1511.pdf"
+		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/tmux1511"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15826,6 +15958,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Texas Instruments" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "65c90f7e-c369-5d04-8c38-99d7a511e774") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C2866750" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "d31f3252-4608-5a4a-a3db-6e9c1d3fe0c0") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -15857,7 +15991,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.farnell.com/datasheets/1747469.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16013,6 +16147,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "9c79ae89-3ea7-5484-b012-2bf1acc05876") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C84416" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a283cd31-bd15-5579-be4a-8590b27089e0") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -16044,7 +16180,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16176,6 +16312,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "dc39c97b-8d79-5a3e-9902-df829edaab11") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "6eea5df1-d201-554c-940c-b86419bc95df") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -16207,7 +16345,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61A226ME44-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410010301_Murata-Electronics-GRM21BR61A226ME44L_C441864.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16363,6 +16501,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "71214636-76ac-5749-a112-6f4d3765a6ae") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C441864" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "c905735d-ed1d-5dda-a6c1-3f75b04d18c9") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -16394,7 +16534,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16526,6 +16666,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "501c703f-0d58-5f7a-aca6-c6f4c33019e6") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "da52f38d-7ef9-562d-b4dc-631e86c732e8") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
 		(layer "F.Cu")
@@ -16557,7 +16699,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.helloxkb.com/Home/Goods/goodsInfoxq/id/1913"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17016,6 +17158,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "XKB Connection" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "c5b7ef9c-b0d8-5504-9990-195809ec9e8a") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C318884" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e344bcda-5e6b-543d-84a6-4a90e4337f3a") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -17047,7 +17191,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17203,6 +17347,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "df4c82be-d58b-55a9-b131-eea2bf03081d") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C77088" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "7595b049-fdf2-50be-9ec3-6a5072b76faa") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -17234,7 +17380,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-075K1L_C105872.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17378,6 +17524,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "21ebf1ed-613a-508b-ac18-d6280843ff99") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C105872" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f1a5f422-2e56-5cb6-8c52-1df969c7c0bb") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -17409,7 +17557,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17565,6 +17713,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "45db702a-8424-5670-af44-a85ce987b683") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C71629" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "583fbe8e-fc19-5b0b-b6b2-29d53c11c14e") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -17596,7 +17746,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17654,7 +17804,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R61A106KAALD"
+		(property "MPN" "GRT188R61A106KE13D"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -17752,6 +17902,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a18445b6-7883-54bc-8204-0577419638ca") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C782172" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "d2e00475-fd98-5223-99ad-7cf651eb977f") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -17783,7 +17935,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17927,6 +18079,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "470b0e6c-bd7b-5201-b7f4-dea12b97cda1") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C71629" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "16e16e12-e216-5b27-a47b-48210b233ca0") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -17958,7 +18112,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18090,6 +18244,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f76cafa8-6b48-5c96-974a-019f193bf2b1") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "4ead5278-7778-5e28-99e7-516dbd69b2b6") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "MountingHole_3.2mm_M3"
 		(layer "F.Cu")
@@ -18230,7 +18386,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18386,6 +18542,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "07da94d6-4da5-573e-b330-920321d0c87a") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C71629" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f6d94e8d-8372-534b-b9d4-5ac3426cd946") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -18417,7 +18575,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810311119_Murata-Electronics-GRM188R71C104KA01D_C45000.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18559,6 +18717,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "df71e221-9c7a-53e7-9702-bec46a2291d3") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C45000" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f443b7e1-d78b-5e56-9d08-8d3785a77c8d") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -18590,7 +18750,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A107MQHNNN.do"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18746,6 +18906,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "18fca9b3-1aaf-59b6-a89b-f6a6444eeb35") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C15008" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "101f3bca-31a5-504f-bbf0-f40f37dba8ff") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -18777,7 +18939,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18909,6 +19071,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "45c598da-d676-589e-96be-df05d906279d") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60491" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "60cec53c-5fda-5b01-9255-dedcc6b5cb17") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -18940,7 +19104,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0722RL_C114765.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -19072,6 +19236,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "483b19a6-ec9e-5384-9702-310844cb1c40") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C114765" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b58cdb79-1a04-5423-ba08-d0f7f62e06b9") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "MountingHole_3.2mm_M3"
 		(layer "F.Cu")
@@ -19212,7 +19378,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -19368,6 +19534,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "bf90b88d-501a-5e31-bded-8b45e5def411") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C71629" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a88bf67d-754d-51ce-845d-1490023e0178") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -19399,7 +19567,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/en/Product/Index/rchip/rc"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19531,6 +19699,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "efdc9e1c-365d-5071-b597-0dd095ab6b47") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C60490" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "cd181a4e-45bd-5cbb-9076-8af7a8eb73c7") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "TestPoint_Pad_D1.0mm"
 		(layer "B.Cu")
@@ -19875,7 +20045,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-c-k-slide-1000-series-datasheet?assetguid=68a2b41e-19a4-4cf4-821b-aca78a430f00"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121839_C-K-1101M2S3CQE2_C221538.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -20075,6 +20245,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "C&K" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "179aaa55-dcb4-5eee-b019-511f905c62b4") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C221538" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "9a693dbb-7aa6-59e8-a440-a0af90d76a91") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
 		(layer "B.Cu")
@@ -20108,7 +20280,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.helloxkb.com/Home/Goods/goodsInfoxq/id/1913"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -20573,6 +20745,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "XKB Connection" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "a9008d21-e138-5fee-aaf6-b73a36cbb3b9") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C318884" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "edcc9efb-1f20-561d-8443-f9779c09105f") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "TestPoint_Pad_D1.0mm"
 		(layer "B.Cu")
@@ -20921,7 +21095,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.helloxkb.com/Home/Goods/goodsInfoxq/id/1913"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -21386,6 +21560,8 @@
 				(xyz 0 0 0)
 			)
 		)
+		(property "Manufacturer" "XKB Connection" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "4d0960de-eef4-529d-9e4e-f1faa98281ec") (effects (font (size 1 1) (thickness 0.15))))
+		(property "LCSC#" "C318884" (at 0 0 0) (layer "B.Fab") (hide yes) (uuid "61de5af6-2520-5456-9797-d591c1a61bbe") (effects (font (size 1 1) (thickness 0.15))))
 	)
 	(footprint "TestPoint_Pad_D1.0mm"
 		(layer "B.Cu")

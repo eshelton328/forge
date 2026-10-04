@@ -1,0 +1,26 @@
+{
+  "scope": "Only main J4 footprint identifier/description and four drills change; schematic footprint selection follows. Native pad copper, mask, placements, nets and all other tokens remain unchanged. Local library has matching geometry.",
+  "old_footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+  "new_footprint": "Board:Samtec_TSW-104-07-G-S_Drill1.10mm",
+  "old_description": "Through hole straight pin header, 1x04, 2.54mm pitch, single row",
+  "new_description": "Samtec TSW-104-07-G-S, four 1.10mm finished holes for JLCPCB tolerance; 1.70mm lands, 2.54mm pitch",
+  "old_drill_mm": 1.0,
+  "new_drill_mm": 1.1,
+  "files": [
+    {
+      "path": "boards/alec-main/alec-main.kicad_pcb",
+      "before_sha256": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+      "after_sha256": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a"
+    },
+    {
+      "path": "boards/alec-main/alec-main.kicad_sch",
+      "before_sha256": "9dfc6a7542597bb4ab83f2b5273b3765fc697abe5baf0f580fc89624ae62c133",
+      "after_sha256": "2bba9e41dbff1f589ffbef185a32e0a81000e437c7ad60d0b7d85e348f5bb35b"
+    }
+  ],
+  "library": {
+    "path": "boards/alec-main/footprints/Board.pretty/Samtec_TSW-104-07-G-S_Drill1.10mm.kicad_mod",
+    "sha256": "b28d410b40444a5012f6a55e02e0b17a076ff477a4b9b340e4535531c2592cb7"
+  },
+  "source_base_commit": "221a2e7"
+}

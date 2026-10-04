@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="28.0mm" height="14.0mm" viewBox="-2.0 -12.0 28.0 14.0" style="background-color:white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke-linejoin="round" stroke-linecap="round" id="l-mechanical-outline" transform="translate(0 -10.0) scale(1 -1)">
+    <path d="M 0.0 0.0 L 24.0 0.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 0.0 -10.0 L 0.0 0.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 24.0 0.0 L 24.0 -10.0 L 0.0 -10.0" fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+  </g>
+  <g stroke-linejoin="round" stroke-linecap="round" id="l-bottom-silk" transform="translate(0 -10.0) scale(1 -1)">
+    <path d="M 12.515 -3.76 L 12.515 -5.36 L 14.315 -5.36" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 21.685 -5.36 L 21.685 -6.3" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 22.215 -0.89 L 13.785 -0.89" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <path d="M 23.485 -3.76 L 23.485 -5.36 L 21.685 -5.36" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12"/>
+    <circle cx="22.3" cy="-8.5" r="1.1" fill="white"/>
+    <circle cx="1.7" cy="-1.7" r="1.1" fill="white"/>
+    <path d="M 21.425 -4.75 L 21.425 -6.15 A 0.15 0.15 0 0 0 21.275 -6.3 L 20.975 -6.3 A 0.15 0.15 0 0 0 20.825 -6.15 L 20.825 -4.75 A 0.15 0.15 0 0 0 20.975 -4.6 L 21.275 -4.6 A 0.15 0.15 0 0 0 21.425 -4.75" fill="white"/>
+    <path d="M 20.175 -4.75 L 20.175 -6.15 A 0.15 0.15 0 0 0 20.025 -6.3 L 19.725 -6.3 A 0.15 0.15 0 0 0 19.575 -6.15 L 19.575 -4.75 A 0.15 0.15 0 0 0 19.725 -4.6 L 20.025 -4.6 A 0.15 0.15 0 0 0 20.175 -4.75" fill="white"/>
+    <path d="M 18.925 -4.75 L 18.925 -6.15 A 0.15 0.15 0 0 0 18.775 -6.3 L 18.475 -6.3 A 0.15 0.15 0 0 0 18.325 -6.15 L 18.325 -4.75 A 0.15 0.15 0 0 0 18.475 -4.6 L 18.775 -4.6 A 0.15 0.15 0 0 0 18.925 -4.75" fill="white"/>
+    <path d="M 17.675 -4.75 L 17.675 -6.15 A 0.15 0.15 0 0 0 17.525 -6.3 L 17.225 -6.3 A 0.15 0.15 0 0 0 17.075 -6.15 L 17.075 -4.75 A 0.15 0.15 0 0 0 17.225 -4.6 L 17.525 -4.6 A 0.15 0.15 0 0 0 17.675 -4.75" fill="white"/>
+    <path d="M 16.425 -4.75 L 16.425 -6.15 A 0.15 0.15 0 0 0 16.275 -6.3 L 15.975 -6.3 A 0.15 0.15 0 0 0 15.825 -6.15 L 15.825 -4.75 A 0.15 0.15 0 0 0 15.975 -4.6 L 16.275 -4.6 A 0.15 0.15 0 0 0 16.425 -4.75" fill="white"/>
+    <path d="M 15.175 -4.75 L 15.175 -6.15 A 0.15 0.15 0 0 0 15.025 -6.3 L 14.725 -6.3 A 0.15 0.15 0 0 0 14.575 -6.15 L 14.575 -4.75 A 0.15 0.15 0 0 0 14.725 -4.6 L 15.025 -4.6 A 0.15 0.15 0 0 0 15.175 -4.75" fill="white"/>
+    <path d="M 23.475 -0.95 L 23.475 -3.25 A 0.25 0.25 0 0 0 23.225 -3.5 L 22.725 -3.5 A 0.25 0.25 0 0 0 22.475 -3.25 L 22.475 -0.95 A 0.25 0.25 0 0 0 22.725 -0.7 L 23.225 -0.7 A 0.25 0.25 0 0 0 23.475 -0.95" fill="white"/>
+    <path d="M 13.525 -0.95 L 13.525 -3.25 A 0.25 0.25 0 0 0 13.275 -3.5 L 12.775 -3.5 A 0.25 0.25 0 0 0 12.525 -3.25 L 12.525 -0.95 A 0.25 0.25 0 0 0 12.775 -0.7 L 13.275 -0.7 A 0.25 0.25 0 0 0 13.525 -0.95" fill="white"/>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+[
+  {
+    "command": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "--layers",
+      "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts",
+      "--exclude-value",
+      "--no-x2",
+      "--no-netlist",
+      "--subtract-soldermask",
+      "--disable-aperture-macros",
+      "--use-drill-file-origin",
+      "--precision",
+      "6",
+      "--check-zones",
+      "-o",
+      "/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/",
+      "/Users/erik/Workspaces/the-forge-rooster-orders/boards/alec-controls/alec-controls.kicad_pcb"
+    ],
+    "stdout": "Plotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-F_Cu.gtl'.\nPlotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-B_Cu.gbl'.\nPlotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-F_Paste.gtp'.\nPlotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-B_Paste.gbp'.\nPlotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-F_Silkscreen.gto'.\nPlotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-B_Silkscreen.gbo'.\nPlotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-F_Mask.gts'.\nPlotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-B_Mask.gbs'.\nPlotted to '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-Edge_Cuts.gm1'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "--format",
+      "excellon",
+      "--drill-origin",
+      "plot",
+      "--excellon-units",
+      "mm",
+      "--excellon-zeros-format",
+      "decimal",
+      "--excellon-oval-format",
+      "alternate",
+      "--excellon-separate-th",
+      "--generate-report",
+      "--report-path",
+      "/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/drill-report.txt",
+      "-o",
+      "/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/",
+      "/Users/erik/Workspaces/the-forge-rooster-orders/boards/alec-controls/alec-controls.kicad_pcb"
+    ],
+    "stdout": "Created file '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-PTH.drl'\nCreated file '/Users/erik/Workspaces/the-forge-rooster-orders/docs/rooster/prototype-order/fabrication-candidates/090b207-r1/alec-controls/gerbers/alec-controls-NPTH.drl'\nDone.\n",
+    "stderr": ""
+  }
+]

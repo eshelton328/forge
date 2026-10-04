@@ -1,0 +1,59 @@
+# Component sourcing proposal — September 7, 2026
+
+**All 207 fitted native BOM references now have a proposed exact manufacturer MPN and JLCPCB catalog ID.** There are 51 unique proposed parts and 414 fitted components for two complete sets, before assembly attrition, minimum purchase quantities or external items. This resolves the missing-identity inventory into a concrete review candidate; it does not release the boards for ordering.
+
+[sourcing.csv](sourcing.csv) preserves the original `candidate_mpn`, value, footprint and review datasheet. The `proposed_mpn` and manufacturer fields identify the selected prototype candidates; `order_gate` states the remaining check for each reference. [proposed-parts.json](proposed-parts.json) groups the same references and fitted quantities by supplier ID. These selections are now synchronized into the native schematics, PCBs and fresh review BOMs; [source integration](source-integration-review.md) records validation. R11 remains DNP, and J7/test pads remain unpopulated. CSV line endings were normalized to LF during the original inventory update.
+
+Catalog search results are dated evidence, not reservations or assembly commitments. Exact manufacturer identity is deliberate: AOS AO3401A C15127, onsemi MMBT3904LT1G C81464 and STMicroelectronics USBLC6-2SC6 C7519 are used instead of selecting same-named parts from other manufacturers by search rank.
+
+## Choices and evidence
+
+| References | Proposed part / decision | Evidence and remaining work |
+| --- | --- | --- |
+| Main C21, C26 | Murata **GRM31CR61A107MEA8L**, C883598 | Native requirement is 100 µF, 1206, **10 V minimum**. Manufacturer sheet confirms 100 µF ±20%, 10 V, X5R, 3.2 × 1.6 × 1.6 mm nominal, 1.9 mm maximum thickness. Reference sheet actually retrieved is dated June 25, 2026; its second page was visually inspected. Typical manufacturer models now give about 48.1 µF at 3.3 V and 32.6 µF at 5 V, 25°C/10 mVrms. These downstream capacitors are not credited to the local converter-bank minimum. Do not substitute the Beacon's 6.3-V part here. [Power review](power-component-review.md), [Murata sheet](https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf) |
+| Main other previously unnamed capacitors | Reuse matching Murata families already proposed for Beacon; C31 uses GRM188R61A105KA61D | Values and footprint sizes determine the mapping, not reference numbers. The 10-µF 0805 choice is rated 25 V; the 0603 choice is 10 V; the 0402 100-nF choice is 16-V X7R. Existing main C6–8/C14–16 22-µF 16-V parts are retained. Per-role DC-bias/rail review remains. |
+| Main C3/C5/C11/C13; Sensor C3/C5/C11/C13/C35 | **GRT188R61A106KE13D**, C782172, replaces the working GRM188R61A106KAALD proposal | Same 10 µF, 10 V, X5R, ±10% and 0603 dimensions; manufacturer drawing visually checked. Current bias models are available and the public JLC query shows 9,799 parts. The previous exact part has no current SimSurfing model. All eight near-converter banks now pass the documented selection screen with this substitution. Native metadata and exports are synchronized; real-board transient checks remain. [Power-component review](power-component-review.md) |
+| Main/Sensor R29, R30 | Royalohm **0402WGF1500TCE**, C25082, replaces proposed Yageo RC0402FR-07150RL | The Yageo listing has no stock. Royalohm's manufacturer catalog pages 10/12, visually inspected, confirm 0402 = 1.0 × 0.5 mm, WG = 1/16 W, F = ±1%, 1500 = 150 Ω, with ±100 ppm/°C at this resistance. Nominal resistance, tolerance and footprint size are preserved. The reviewed substitution is applied to native metadata; complete the LED-current/power and final assembly checks before release. [Manufacturer catalog](https://www.royalohm.com/assets/pdf/products/smd/1.pdf) |
+| Main J5 / controls J1; main J6 / front J1 | **BM07B-GHS-TBT(LF)(SN)** C5305068; **BM06B-GHS-TBT(LF)(SN)** C189892 | JST's current GH catalog p3 explicitly says the product label includes `(LF)(SN)`; these resolve the abbreviated existing MPNs. Six/seven circuits, 1.25-mm pitch and top entry are retained. Visual drawing and native pad extraction agree on 0.6 × 1.7-mm signal pads, 1.0 × 2.8-mm retention pads and their relative spans. Back-side connectors are mirrored in KiCad; supplier CPL rotation and mounting-surface view still require the final assembly-preview check. [JST GH catalog](https://www.jst-mfg.com/product/pdf/eng/eGH.pdf) |
+| Main Q3/Q4/Q5/Q7; Sensor Q4/Q5/Q7 | onsemi **MMBT3904LT1G**, C81464 | The full tape/reel ordering suffix selects SOT-23. Manufacturer pins 1 base / 2 emitter / 3 collector match the native netlists. The Case 318 Issue AU drawing was visually inspected; it has the expected 1.90-mm two-lead pitch, and the native footprint uses 0.95-mm offsets. The KiCad pad envelope differs from the vendor's example solder footprint; final rotation and circuit load disposition remain, with no pin-function mismatch found. [onsemi Rev.14 datasheet and package drawing](https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf) |
+| Main U6 | **MAX98357AETE+T**, C910544 | Selected I2S A version, 16-pin 3 × 3-mm TQFN exposed-pad package. Retain native copper and uniform 1:1 mask on the [recorded prototype basis](assembly-drawing-review.md); all 17 native pad nets and rounded thermal paste coverage (62.552%) are verified. Exposed vias require fill/cap. Supplier model orientation and final production data remain open. Do not substitute the B audio-format version or WLP package. [ADI product page](https://www.analog.com/en/products/MAX98357A.html) |
+| Main/Sensor U5 | **RV-3028-C7-32.768kHz-1ppm-TA-QC**, C3019759 | Explicitly choose commercial TA/QC, C7 package. Native eight-pin functions match the manufacturer: CLKOUT, INT, SCL, SDA, ground, backup, VDD, EVI. This is the one proposed part with no ready JLCPCB stock; see sourcing route below. [Micro Crystal v1.3 sheet](https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf) |
+| Main J4 | Candidate **Samtec TSW-104-07-G-S**, C3335156 | Native J4 and the selected EastRising display both have male headers; the mating female connectors belong to an external female-to-female cable. An SSW female socket must not silently replace main J4. TSW is a four-position 2.54-mm male header with 5.84-mm post; exact tail, hole and mating-height review remains. The separately researched Wuerth 61300411121 is an alternative, not the current proposal. [Samtec part](https://www.samtec.com/products/tsw-104-07-g-s), [existing interface contract](../../../enclosures/alec/PCB-INTERFACE.md) |
+| Main D1 | Candidate **LTST-C190KGKT**, C125094 | Green 0603 indicator candidate. Original R11 is DNP, so the fitted indicator has no normal feed; retain that low-power intent. Full LED drawing/reflow/polarity check remains because the direct manufacturer's PDF retrieval did not return a usable PDF in this pass. |
+| Sensor J3 and radar | Samtec socket C5930350; separate LD2410C header module | J3 still prices only the socket. Separate two-module requirement and variant checks are in [radar procurement](beacon-radar-procurement.md). |
+
+The generic main resistors use matching 0402 1% Yageo RC candidates; existing 0.1% R48/R49 on both boards retain their explicit Yageo RT MPNs. Remaining ICs, modules, switches, fuse and inductor candidates retain their source identities where already complete. Catalog matches alone do not close their remaining per-reference drawing/rating/assembly checks.
+
+## RTC supply route
+
+Four fitted RTCs are required, before attrition/MOQ. The [public JLCPCB detail](https://jlcpcb.com/partdetail/C3019759) reports zero local/overseas stock and minimum purchase five, with no definite arrival date. [Captured detail](jlc-rtc-detail-20260907.json). Other C7 catalog listings do not provide enough ready stock either; the C8 package and evaluation boards are not substitutes.
+
+The [DigiKey 1,000-reel/cut-tape product listing](https://www.digikey.com/en/products/detail/micro-crystal-ag/RV-3028-C7-32-768KHZ-1PPM-TA-QC/10431070) also reports zero available, with **1,000 expected September 11, 2026** and cut-tape pricing starting at $2.55 for one. This is a dated supplier forecast, not a guaranteed arrival or JLCPCB price. Its separate 3,000-reel listing is a distinct inventory entry.
+
+The exact JLCPCB preorder is now staged: **five C3019759 parts, $10.76 displayed
+initial checkout total**, with no firm arrival date. The exact-part calculator
+reports two parts for the single-sided main order and two for the double-sided
+Beacon order, zero attrition in each; MOQ five covers its four-part total.
+[Quote progress](quote-progress.md) records the inputs and checkout boundary.
+JLCPCB confirms pricing and lead time after initial payment; a later increase
+needs further approval. **No order submission, supplier message, reservation or
+payment has happened.** Erik must approve this specific purchase first.
+
+JLCPCB's [Global Sourcing instructions](https://jlcpcb.com/help/article/how-to-use-jlcpcb-global-sourcing-parts-service)
+describe a separate external-distributor route into its assembly warehouse. The
+CoreStaff offer did not produce a cart line. Neither route delivers loose radar
+modules to Erik; the RTCs are for later PCBA use. After stock arrives, select U5
+in both full assembly drafts and recalculate complete quotes.
+
+## Remaining work before order release
+
+The main fabrication candidate has now been uploaded for quotation only. This
+does not close the component gates below; see [quote progress](quote-progress.md)
+and the [additional drawing review](assembly-drawing-review.md).
+
+1. Finish remaining electrical/package review: shared battery/load envelope; component pin/EP, switches, fuse, LEDs, custom USB/PH footprints and exact header/socket drawings. The [power-component review](power-component-review.md) now dispositions the local capacitor banks and inductors for prototype selection, with measured stability/thermal/depleted-cell validation assigned to first-board tests. Per-IC decoupling and the Beacon's Samsung bulk capacitor remain within the applicable device review; the Murata model pass is not whole-BOM approval. Use prior reviews wherever their inputs and scope still match.
+2. Native exact MPN/LCSC integration is complete and checked. Keep the sourcing overlay and native fields synchronized when resolving any remaining part-review finding; a demonstrated geometry issue requires a new source review and affected checks.
+3. Finalize source-bound BOM/CPL files including both sides and through-hole references. [Draft quote inputs](draft-quote-inputs/README.md) already reconcile 111/5/3/88 native placements to all fitted sourcing rows and use explicit native DNP/exclusion flags. Review actual supplier placement images, stackup/rails and assembly exclusions, then generate/hash the final four board packages.
+4. Complete external parts/harnesses and the first-power/programming equipment disposition, then obtain actual service/shipping/tax quotes and Erik's spending selection.
+
+Evidence: [selected footprint dimensions](selected-footprint-audit.json), [sourcing validation](selection-audit.json), [retrieved manufacturer-document hashes](datasheet-retrieval.json), and the dated catalog captures named by each CSV row. No physical test or final order-release check is claimed by this sourcing pass.

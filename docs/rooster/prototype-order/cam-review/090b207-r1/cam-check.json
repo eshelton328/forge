@@ -1,0 +1,150 @@
+{
+  "status": "EXPORT_GEOMETRY_CHECK_PASSED_NOT_ORDER_RELEASE",
+  "scope": "All exported drill centers/slot endpoints/diameters and plating classes, outline centerlines, layer presence, file hashes, BOM/CPL reference counts. Rendered from the actual ZIP. No electrical or supplier placement acceptance implied.",
+  "drill_tolerance_mm": 0.00051,
+  "outline_tolerance_mm": 1.1e-06,
+  "candidate_manifest_sha256": "aba18a0eb6d27c9088ffa64e95fc8ccc410689c0ab80ed0cf243141664bb3fe5",
+  "native_reference_sha256": "3c36623918fd1e1540cc5916ef5ba60f59eaf31498512ba8261c96524692c419",
+  "reviewer_script_sha256": "10c8c33aef2ebce9fe96b7629582e879011ad0f1bb1d500ae837511608782785",
+  "boards": {
+    "alec-main": {
+      "archive_sha256": "fdf29a45b08e7f7863141c78b3ecf48b4a34069a986c37b83001055218727ae0",
+      "copper_layers": 4,
+      "drills": {
+        "pth": {
+          "holes_including_slots": 263,
+          "slots": 4
+        },
+        "npth": {
+          "holes_including_slots": 6,
+          "slots": 0
+        }
+      },
+      "outline_segments": 4,
+      "outline_width_height_mm": [
+        64.0,
+        56.0
+      ],
+      "fitted_references": 111,
+      "render_sha256": {
+        "alec-main-top.png": "e3427af364405efaff68095c7c242e30ced5ae7fc506e1488a9ee585a9be2439",
+        "alec-main-top-mask.svg": "d8d535d746b7e875905c065e0a32dfb2cb919b0c40d36d5ea0f01ca55dc336fc",
+        "alec-main-top-paste.svg": "167139f12e1c4e778ac9bef590215e7dff66d26e582e70c01db6993f6be497a8",
+        "alec-main-top-silk.svg": "c195710112cda5b7cca6e6c09873fa59c4f6cb97a748a24178795ed5e08d321b",
+        "alec-main-bottom.png": "c092dd41875f583836f14b15c19e9947f75e131c670a599cc56cfd13941b56ee",
+        "alec-main-bottom-mask.svg": "d2f40d6dfd55c7a78eef628eedd80a7f86c93739a153eecd8e5763deafce6676",
+        "alec-main-bottom-paste.svg": "c3a7f64bc5052e5d66925190cb5f26b467d9f27e7b3ecd8b30477e3f066b59e4",
+        "alec-main-bottom-silk.svg": "2e89bda44d0640b3826fec3dee171c5d02c6561a04505b8cc6681be18ef70976"
+      },
+      "parser_warnings": [
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpj5rh5m3r/input/alec-main-NPTH.drl:14 \"G90\": G90 header statement found after end of header",
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpj5rh5m3r/input/alec-main-PTH.drl:24 \"G90\": G90 header statement found after end of header"
+      ]
+    },
+    "alec-controls": {
+      "archive_sha256": "529461b9adb3052c03213ddea4c40104b1ca71ff780083a8c29e3018234f3cef",
+      "copper_layers": 2,
+      "drills": {
+        "pth": {
+          "holes_including_slots": 26,
+          "slots": 0
+        },
+        "npth": {
+          "holes_including_slots": 4,
+          "slots": 0
+        }
+      },
+      "outline_segments": 4,
+      "outline_width_height_mm": [
+        27.0,
+        34.0
+      ],
+      "fitted_references": 5,
+      "render_sha256": {
+        "alec-controls-top.png": "59ce1ce1c70332419239be24a91d91cb511f7c64b7ea61802c5163823acd58b0",
+        "alec-controls-top-mask.svg": "ee344571041bc0daadbecf04712be9035969d32b8681a8fc4dbee08d0ab98b83",
+        "alec-controls-top-paste.svg": "e7d36ff60aaeaa97a1bf5c305191a24220a921da015495d6ab2ecbd0c8fc9de5",
+        "alec-controls-top-silk.svg": "5e31ac8cd28f84676d7e306b71a42afbf14545d55a1a336e29742f936610f583",
+        "alec-controls-bottom.png": "6a03dda04b756fb7e7aaef760b6dda504b0a761c6bca76367e2f244faa988791",
+        "alec-controls-bottom-mask.svg": "b53e3a3b774e88dee2ea53fef067185c6d5521846aa14b77fceade6a575538cc",
+        "alec-controls-bottom-paste.svg": "a4074c0b8a4653f6d8f279fc30af6ca5c6f0bd87c956281744016c46c29a4820",
+        "alec-controls-bottom-silk.svg": "a40407aa11296c75ed5cffdaa9c70c7e2bd46bac6f327922881876b9a8e5f0a0"
+      },
+      "parser_warnings": [
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpizqhvx4_/input/alec-controls-NPTH.drl:12 \"G90\": G90 header statement found after end of header",
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpizqhvx4_/input/alec-controls-PTH.drl:16 \"G90\": G90 header statement found after end of header",
+        "Implicitly cleaning up <TemporaryDirectory '/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpj5rh5m3r'>"
+      ]
+    },
+    "alec-front": {
+      "archive_sha256": "e4cda9bedc90f52dd172ddd6269f6b90651437c1e56ac7e96f1588ad0200f8ea",
+      "copper_layers": 2,
+      "drills": {
+        "pth": {
+          "holes_including_slots": 6,
+          "slots": 0
+        },
+        "npth": {
+          "holes_including_slots": 2,
+          "slots": 0
+        }
+      },
+      "outline_segments": 4,
+      "outline_width_height_mm": [
+        24.0,
+        10.0
+      ],
+      "fitted_references": 3,
+      "render_sha256": {
+        "alec-front-top.png": "b0d21f176d3828bcc37834baec7e7590772911c752c5d3c7887e9abfabd0d06e",
+        "alec-front-top-mask.svg": "9edbd5a22a9675275a268fba7938afc2b5bedf422335c25b5bc722815d231ea2",
+        "alec-front-top-paste.svg": "a93cac365b3948a1b3f71aff76f0d45e39c81e89c41f6f322fb74541b0ea4198",
+        "alec-front-top-silk.svg": "48ee91b812df7dfcb59dcc5e313a0be89b3620fbab657d41782128b881ef0f1f",
+        "alec-front-bottom.png": "83d3f173374281dcc41f1fa0d391ae6d5b5fb79dda475be1dbd915e43570a163",
+        "alec-front-bottom-mask.svg": "1b549e8f1584242c0d13d94f62bad54413801120d4614d72afdb83b069365dde",
+        "alec-front-bottom-paste.svg": "a5c5658f36f9971fe9e4224d3ed47b718f77c4bd992e8a17fc54f5150f986576",
+        "alec-front-bottom-silk.svg": "7fedd5e5d3e70fe5d4b783a2726978d6b3eab91ad2f14dda63e5facfb9581492"
+      },
+      "parser_warnings": [
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmp70hxz1_l/input/alec-front-NPTH.drl:12 \"G90\": G90 header statement found after end of header",
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmp70hxz1_l/input/alec-front-PTH.drl:12 \"G90\": G90 header statement found after end of header",
+        "Implicitly cleaning up <TemporaryDirectory '/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpizqhvx4_'>"
+      ]
+    },
+    "alec-sensor": {
+      "archive_sha256": "ec6e25d9eb399ee1a5e95eb94d4714c771c721c467dbd2f87d9307b50056540f",
+      "copper_layers": 4,
+      "drills": {
+        "pth": {
+          "holes_including_slots": 211,
+          "slots": 4
+        },
+        "npth": {
+          "holes_including_slots": 6,
+          "slots": 0
+        }
+      },
+      "outline_segments": 4,
+      "outline_width_height_mm": [
+        64.0,
+        56.0
+      ],
+      "fitted_references": 88,
+      "render_sha256": {
+        "alec-sensor-top.png": "1d4070d183d1d0c2a6219394a0ee7d56604d214c9b463382855fe25e7c685152",
+        "alec-sensor-top-mask.svg": "4857adbd9db2197ab41d2d129e0fa7358a8ebe9bdd00f02be232827e68248752",
+        "alec-sensor-top-paste.svg": "31d4c5fe50eae653f7cfa7e02be8e675bb5dd97489e709421803f8e36cc80548",
+        "alec-sensor-top-silk.svg": "37a7f3f4ba3de95682f1c31f52f4a6c64e83e3b08da5263ab88718f4db535a04",
+        "alec-sensor-bottom.png": "f76596eda957bd2220bfaf889ea8707b3df5f0aa4407bcd65b8deb790a54cacc",
+        "alec-sensor-bottom-mask.svg": "8c74550e957e6e002dc12acf6b9a68a7757ca28762cfcfb4d675f0b2b8cff2d8",
+        "alec-sensor-bottom-paste.svg": "893666a35b2dbf95a9a4aa0f2fd1550ba5366a8b6187783bed96f768a6781a1c",
+        "alec-sensor-bottom-silk.svg": "dc787aa71240428e4c86922c814b346658b31cae7ebca1e2c01d39a8e3153aee"
+      },
+      "parser_warnings": [
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpiq2098qf/input/alec-sensor-NPTH.drl:14 \"G90\": G90 header statement found after end of header",
+        "/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmpiq2098qf/input/alec-sensor-PTH.drl:26 \"G90\": G90 header statement found after end of header",
+        "Implicitly cleaning up <TemporaryDirectory '/var/folders/4y/l8rgbvqj5c5dhlpkd2r_70jc0000gn/T/tmp70hxz1_l'>"
+      ]
+    }
+  }
+}

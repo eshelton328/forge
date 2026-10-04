@@ -121,3 +121,5 @@ text('ON',157.7,93.5,p.B_SilkS);text('OFF',148.3,93.5,p.B_SilkS)
 b.BuildConnectivity();p.SaveBoard(str(D/(D.name+'.kicad_pcb')),b)
 (D/'review/migration.json').write_text(json.dumps({'source_board':str(BASE.relative_to(ROOT)),'source_revision':'0bce752','removed_components':sorted(removed),'moved_low_speed_parts':positions,'removed_track_items':removed_tracks,'rerouted_original_nets':sorted(reroute),'net_renames':{k:v for k,v in renames.items() if k!=v},'power_cells':'U1/U2/L1/L2/C1-C16/R3-R10 preserved at original locations. Run check_layout.py after final routing.'},indent=2)+'\n')
 print('Created PCB with',len(b.GetFootprints()),'footprints and',len(b.GetTracks()),'retained copper items')
+from order_parts import synchronize_board
+synchronize_board(D.name, schematics=False)

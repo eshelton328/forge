@@ -182,3 +182,5 @@ pro.setdefault('meta',{})['filename']=NAME+'.kicad_pro'
 pro.setdefault('erc',{})['erc_exclusions']=[]
 (DEST/(NAME+'.kicad_pro')).write_text(json.dumps(pro,indent=2)+'\n')
 print('Generated S1 prototype schematic:',DEST)
+from order_parts import synchronize_board
+synchronize_board(NAME, pcb=False)

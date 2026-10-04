@@ -946,7 +946,7 @@
 				(hide yes)))
 		(property
 			"MPN"
-			"BM06B-GHS-TBT"
+			"BM06B-GHS-TBT(LF)(SN)"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -977,7 +977,9 @@
 			(uuid 293d8bcc-63ab-599c-bcc2-1e5a0ecb4541))
 		(pin
 			"6"
-			(uuid 43f87de5-0aca-5915-b11d-b00934400481)))
+			(uuid 43f87de5-0aca-5915-b11d-b00934400481))
+	(property "Manufacturer" "JST" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C189892" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 119.38 49.53)
@@ -1068,7 +1070,9 @@
 			(uuid 1e7eee01-8136-5ef8-a3c9-b5779f1d0485))
 		(pin
 			"2"
-			(uuid 08905192-db71-5159-96e8-abbd303cef6d)))
+			(uuid 08905192-db71-5159-96e8-abbd303cef6d))
+	(property "Manufacturer" "Omron Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C231329" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 129.54 90.17)
@@ -1197,7 +1201,9 @@
 			(uuid 14d37b2b-c4e4-52b8-8ce9-e1d09a1d6898))
 		(pin
 			"1"
-			(uuid 777d0a1c-b228-5079-8633-b4a53aad6612)))
+			(uuid 777d0a1c-b228-5079-8633-b4a53aad6612))
+	(property "Manufacturer" "Wurth Elektronik" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C5342281" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(text
 		"1:1 GH harness to main J6; LED series resistors on main"
 		(at 40 170 0)

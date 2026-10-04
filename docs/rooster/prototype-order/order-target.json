@@ -1,0 +1,41 @@
+{
+  "recorded_date": "2026-09-07",
+  "supplier_preference": "JLCPCB",
+  "status": "quote_target_not_purchase_authorization",
+  "boards": {
+    "alec-main": {
+      "fabricated": 5,
+      "assembled": 2,
+      "spare_bare": 3
+    },
+    "alec-controls": {
+      "fabricated": 5,
+      "assembled": 2,
+      "spare_bare": 3
+    },
+    "alec-front": {
+      "fabricated": 5,
+      "assembled": 2,
+      "spare_bare": 3
+    },
+    "alec-sensor": {
+      "fabricated": 5,
+      "assembled": 2,
+      "spare_bare": 3
+    }
+  },
+  "complete_assembled_sets": 2,
+  "equipment_confirmed": [
+    "multimeter",
+    "oscilloscope"
+  ],
+  "equipment_unconfirmed": [
+    "instrument models and probes",
+    "current-limited source",
+    "programming cables/adapters",
+    "soldering tools"
+  ],
+  "selected_cost": null,
+  "assembly_service": "pending per-board preflight and quote",
+  "source": "Erik selected the minimum-batch option and reported multimeter and oscilloscope."
+}

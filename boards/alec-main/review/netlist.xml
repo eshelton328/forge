@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/Users/erik/Workspaces/the-forge-alec/boards/alec-main/alec-main.kicad_sch</source>
-    <date>2026-09-07T09:51:00</date>
+    <source>/Users/erik/Workspaces/the-forge-rooster-orders/boards/alec-main/alec-main.kicad_sch</source>
+    <date>2026-09-07T23:35:26</date>
     <tool>Eeschema 10.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -45,17 +45,24 @@
     <comp ref="C1">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM21BR61E106KA73L</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C84416</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM21BR61E106KA73L"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C84416"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -74,17 +81,24 @@
     <comp ref="C2">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM21BR61E106KA73L</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C84416</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM21BR61E106KA73L"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C84416"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -103,17 +117,24 @@
     <comp ref="C3">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRT188R61A106KE13D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C782172</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRT188R61A106KE13D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C782172"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -132,17 +153,24 @@
     <comp ref="C4">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -161,17 +189,24 @@
     <comp ref="C5">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRT188R61A106KE13D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C782172</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRT188R61A106KE13D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C782172"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -190,20 +225,24 @@
     <comp ref="C6">
       <value>22µF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="MPN">GRM31CR61C226KE15L</field>
         <field name="Voltage">16V</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C77088</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="GRM31CR61C226KE15L"/>
       <property name="Voltage" value="16V"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C77088"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -222,20 +261,24 @@
     <comp ref="C7">
       <value>22µF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="MPN">GRM31CR61C226KE15L</field>
         <field name="Voltage">16V</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C77088</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="GRM31CR61C226KE15L"/>
       <property name="Voltage" value="16V"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C77088"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -254,20 +297,24 @@
     <comp ref="C8">
       <value>22µF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="MPN">GRM31CR61C226KE15L</field>
         <field name="Voltage">16V</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C77088</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="GRM31CR61C226KE15L"/>
       <property name="Voltage" value="16V"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C77088"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -286,17 +333,24 @@
     <comp ref="C9">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM21BR61E106KA73L</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C84416</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM21BR61E106KA73L"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C84416"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -315,17 +369,24 @@
     <comp ref="C10">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM21BR61E106KA73L</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C84416</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM21BR61E106KA73L"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C84416"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -344,17 +405,24 @@
     <comp ref="C11">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRT188R61A106KE13D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C782172</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRT188R61A106KE13D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C782172"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -373,17 +441,24 @@
     <comp ref="C12">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -402,17 +477,24 @@
     <comp ref="C13">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRT188R61A106KE13D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C782172</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61A106KE13-01A.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRT188R61A106KE13D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C782172"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -431,20 +513,24 @@
     <comp ref="C14">
       <value>22µF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="MPN">GRM31CR61C226KE15L</field>
         <field name="Voltage">16V</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C77088</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="GRM31CR61C226KE15L"/>
       <property name="Voltage" value="16V"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C77088"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -463,20 +549,24 @@
     <comp ref="C15">
       <value>22µF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="MPN">GRM31CR61C226KE15L</field>
         <field name="Voltage">16V</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C77088</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="GRM31CR61C226KE15L"/>
       <property name="Voltage" value="16V"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C77088"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -495,20 +585,24 @@
     <comp ref="C16">
       <value>22µF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="MPN">GRM31CR61C226KE15L</field>
         <field name="Voltage">16V</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C77088</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM31CR61C226KE15L_C77088.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="GRM31CR61C226KE15L"/>
       <property name="Voltage" value="16V"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C77088"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -527,17 +621,24 @@
     <comp ref="C17">
       <value>22µF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2410010301_Murata-Electronics-GRM21BR61A226ME44L_C441864.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM21BR61A226ME44L</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C441864</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2410010301_Murata-Electronics-GRM21BR61A226ME44L_C441864.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM21BR61A226ME44L"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C441864"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -556,17 +657,24 @@
     <comp ref="C18">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -585,17 +693,24 @@
     <comp ref="C19">
       <value>1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1810201320_Murata-Electronics-GRM155R61A105KE15D_C76999.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C76999</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1810201320_Murata-Electronics-GRM155R61A105KE15D_C76999.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C76999"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -614,17 +729,24 @@
     <comp ref="C20">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -643,17 +765,24 @@
     <comp ref="C21">
       <value>100µF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM31CR61A107MEA8L</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C883598</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM31CR61A107MEA8L"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C883598"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -672,17 +801,24 @@
     <comp ref="C22">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -701,17 +837,24 @@
     <comp ref="C23">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -730,17 +873,24 @@
     <comp ref="C24">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -759,17 +909,24 @@
     <comp ref="C25">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -788,17 +945,24 @@
     <comp ref="C26">
       <value>100µF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM31CR61A107MEA8L</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C883598</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM31CR61A107MEA8L"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C883598"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -817,17 +981,24 @@
     <comp ref="C27">
       <value>10µF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM21BR61E106KA73L</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C84416</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM21BR61E106KA73L_C84416.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM21BR61E106KA73L"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C84416"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -846,17 +1017,24 @@
     <comp ref="C28">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">10V minimum</field>
         <field name="Dielectric">X5R or X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="10V minimum"/>
       <property name="Dielectric" value="X5R or X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -875,13 +1053,20 @@
     <comp ref="C29">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -900,13 +1085,20 @@
     <comp ref="C30">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -925,13 +1117,20 @@
     <comp ref="C31">
       <value>1µF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Murata-Electronics-GRM188R61A105KA61D_C86012.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="MPN">GRM188R61A105KA61D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C86012</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Murata-Electronics-GRM188R61A105KA61D_C86012.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R61A105KA61D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C86012"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -950,13 +1149,20 @@
     <comp ref="C32">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -975,13 +1181,20 @@
     <comp ref="C33">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1000,15 +1213,22 @@
     <comp ref="D1">
       <value>LED</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1810231512_Lite-On-LTST-C190KGKT_C125094.pdf</datasheet>
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
+        <field name="MPN">LTST-C190KGKT</field>
+        <field name="Manufacturer">Lite-On</field>
+        <field name="LCSC#">C125094</field>
         <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1810231512_Lite-On-LTST-C190KGKT_C125094.pdf</field>
         <field name="Description">Light emitting diode</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="MPN" value="LTST-C190KGKT"/>
+      <property name="Manufacturer" value="Lite-On"/>
+      <property name="LCSC#" value="C125094"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1027,14 +1247,20 @@
     <comp ref="J1">
       <value>Conn_01x02_Pin</value>
       <footprint>Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</footprint>
-      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_JST-B2B-PH-SM4-TB-LF-SN_C160352.pdf</datasheet>
       <description>Generic connector, single row, 01x02, script generated</description>
       <fields>
+        <field name="MPN">B2B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC#">C160352</field>
         <field name="Footprint">Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</field>
-        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_JST-B2B-PH-SM4-TB-LF-SN_C160352.pdf</field>
         <field name="Description">Generic connector, single row, 01x02, script generated</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="MPN" value="B2B-PH-SM4-TB(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC#" value="C160352"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -1053,14 +1279,20 @@
     <comp ref="J2">
       <value>USB_C_Receptacle_USB2.0_16P</value>
       <footprint>Board:USB_C_HRO_Overhang</footprint>
-      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf</datasheet>
       <description>USB 2.0-only 16P Type-C Receptacle connector</description>
       <fields>
+        <field name="MPN">TYPE-C-31-M-12</field>
+        <field name="Manufacturer">Korean Hroparts Elec</field>
+        <field name="LCSC#">C165948</field>
         <field name="Footprint">Board:USB_C_HRO_Overhang</field>
-        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf</field>
         <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
       </fields>
       <libsource lib="Connector" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
+      <property name="MPN" value="TYPE-C-31-M-12"/>
+      <property name="Manufacturer" value="Korean Hroparts Elec"/>
+      <property name="LCSC#" value="C165948"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
@@ -1094,14 +1326,20 @@
     <comp ref="J3">
       <value>Conn_01x02_Pin</value>
       <footprint>Board:JST_PH_Speaker_Overhang</footprint>
-      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_JST-B2B-PH-SM4-TB-LF-SN_C160352.pdf</datasheet>
       <description>Generic connector, single row, 01x02, script generated</description>
       <fields>
+        <field name="MPN">B2B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC#">C160352</field>
         <field name="Footprint">Board:JST_PH_Speaker_Overhang</field>
-        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_JST-B2B-PH-SM4-TB-LF-SN_C160352.pdf</field>
         <field name="Description">Generic connector, single row, 01x02, script generated</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="MPN" value="B2B-PH-SM4-TB(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC#" value="C160352"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -1119,14 +1357,21 @@
     </comp>
     <comp ref="J4">
       <value>Conn_01x04_Pin</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <footprint>Board:Samtec_TSW-104-07-G-S_Drill1.10mm</footprint>
+      <datasheet>https://www.samtec.com/products/tsw-104-07-g-s</datasheet>
       <description>Generic connector, single row, 01x04, script generated</description>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</field>
-        <field name="Datasheet"/>
+        <field name="MPN">TSW-104-07-G-S</field>
+        <field name="Manufacturer">Samtec</field>
+        <field name="LCSC#">C3335156</field>
+        <field name="Footprint">Board:Samtec_TSW-104-07-G-S_Drill1.10mm</field>
+        <field name="Datasheet">https://www.samtec.com/products/tsw-104-07-g-s</field>
         <field name="Description">Generic connector, single row, 01x04, script generated</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x04_Pin" description="Generic connector, single row, 01x04, script generated"/>
+      <property name="MPN" value="TSW-104-07-G-S"/>
+      <property name="Manufacturer" value="Samtec"/>
+      <property name="LCSC#" value="C3335156"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -1149,13 +1394,17 @@
       <footprint>Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical</footprint>
       <datasheet>https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</datasheet>
       <fields>
-        <field name="MPN">BM07B-GHS-TBT</field>
+        <field name="MPN">BM07B-GHS-TBT(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC#">C5305068</field>
         <field name="Footprint">Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical</field>
         <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x07" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="BM07B-GHS-TBT"/>
+      <property name="MPN" value="BM07B-GHS-TBT(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC#" value="C5305068"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -1181,13 +1430,17 @@
       <footprint>Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical</footprint>
       <datasheet>https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</datasheet>
       <fields>
-        <field name="MPN">BM06B-GHS-TBT</field>
+        <field name="MPN">BM06B-GHS-TBT(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC#">C189892</field>
         <field name="Footprint">Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical</field>
         <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="BM06B-GHS-TBT"/>
+      <property name="MPN" value="BM06B-GHS-TBT(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC#" value="C189892"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -1242,16 +1495,20 @@
     <comp ref="L1">
       <value>1.5µH</value>
       <footprint>TPS63070:IND_XFL4020-152MEC</footprint>
-      <datasheet>https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/xfl4020-152/</datasheet>
+      <datasheet>https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf</datasheet>
       <description>Inductor</description>
       <fields>
         <field name="MPN">XFL4020-152MEC</field>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="LCSC#">C3033018</field>
         <field name="Footprint">TPS63070:IND_XFL4020-152MEC</field>
-        <field name="Datasheet">https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/xfl4020-152/</field>
+        <field name="Datasheet">https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf</field>
         <field name="Description">Inductor</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <property name="MPN" value="XFL4020-152MEC"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="LCSC#" value="C3033018"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -1270,16 +1527,20 @@
     <comp ref="L2">
       <value>1.5µH</value>
       <footprint>TPS63070:IND_XFL4020-152MEC</footprint>
-      <datasheet>https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/xfl4020-152/</datasheet>
+      <datasheet>https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf</datasheet>
       <description>Inductor</description>
       <fields>
         <field name="MPN">XFL4020-152MEC</field>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="LCSC#">C3033018</field>
         <field name="Footprint">TPS63070:IND_XFL4020-152MEC</field>
-        <field name="Datasheet">https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/xfl4020-152/</field>
+        <field name="Datasheet">https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf</field>
         <field name="Description">Inductor</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <property name="MPN" value="XFL4020-152MEC"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="LCSC#" value="C3033018"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -1298,14 +1559,20 @@
     <comp ref="Q1">
       <value>AO3401A</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf</datasheet>
       <description>P-MOSFET transistor, gate/source/drain</description>
       <fields>
+        <field name="MPN">AO3401A</field>
+        <field name="Manufacturer">Alpha &amp; Omega Semicon</field>
+        <field name="LCSC#">C15127</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf</field>
         <field name="Description">P-MOSFET transistor, gate/source/drain</field>
       </fields>
       <libsource lib="Transistor_FET" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="MPN" value="AO3401A"/>
+      <property name="Manufacturer" value="Alpha &amp; Omega Semicon"/>
+      <property name="LCSC#" value="C15127"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="transistor PMOS P-MOS P-MOSFET"/>
@@ -1324,14 +1591,20 @@
     <comp ref="Q2">
       <value>AO3401A</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf</datasheet>
       <description>-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23</description>
       <fields>
+        <field name="MPN">AO3401A</field>
+        <field name="Manufacturer">Alpha &amp; Omega Semicon</field>
+        <field name="LCSC#">C15127</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf</field>
         <field name="Description">-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="AO3401A"/>
+      <property name="Manufacturer" value="Alpha &amp; Omega Semicon"/>
+      <property name="LCSC#" value="C15127"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="P-Channel MOSFET"/>
@@ -1356,6 +1629,9 @@
       <fields>
         <field name="Sim.Device">NPN</field>
         <field name="Sim.Pins">1=B 2=E 3=C</field>
+        <field name="MPN">MMBT3904LT1G</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="LCSC#">C81464</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf</field>
         <field name="Description">0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23</field>
@@ -1363,6 +1639,9 @@
       <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
       <property name="Sim.Device" value="NPN"/>
       <property name="Sim.Pins" value="1=B 2=E 3=C"/>
+      <property name="MPN" value="MMBT3904LT1G"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC#" value="C81464"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="NPN Transistor"/>
@@ -1382,13 +1661,20 @@
     <comp ref="R1">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1407,13 +1693,20 @@
     <comp ref="R3">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1432,15 +1725,22 @@
     <comp ref="R4">
       <value>470kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07470KL_C137976.pdf</datasheet>
       <description>Resistor</description>
       <fields>
         <field name="Tolerance">1%</field>
+        <field name="MPN">RC0402FR-07470KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C137976</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07470KL_C137976.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
+      <property name="MPN" value="RC0402FR-07470KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C137976"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1459,15 +1759,22 @@
     <comp ref="R5">
       <value>150kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC0402FR-07150KL_C93947.pdf</datasheet>
       <description>Resistor</description>
       <fields>
         <field name="Tolerance">1%</field>
+        <field name="MPN">RC0402FR-07150KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C93947</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC0402FR-07150KL_C93947.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
+      <property name="MPN" value="RC0402FR-07150KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C93947"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1486,13 +1793,20 @@
     <comp ref="R6">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1511,13 +1825,20 @@
     <comp ref="R7">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1536,15 +1857,22 @@
     <comp ref="R8">
       <value>680kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07680KL_C163456.pdf</datasheet>
       <description>Resistor</description>
       <fields>
         <field name="Tolerance">1%</field>
+        <field name="MPN">RC0402FR-07680KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C163456</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07680KL_C163456.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
+      <property name="MPN" value="RC0402FR-07680KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C163456"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1563,15 +1891,22 @@
     <comp ref="R9">
       <value>130kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07130KL_C93946.pdf</datasheet>
       <description>Resistor</description>
       <fields>
         <field name="Tolerance">1%</field>
+        <field name="MPN">RC0402FR-07130KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C93946</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07130KL_C93946.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
+      <property name="MPN" value="RC0402FR-07130KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C93946"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1590,13 +1925,20 @@
     <comp ref="R10">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1643,13 +1985,20 @@
     <comp ref="R12">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1668,13 +2017,20 @@
     <comp ref="R13">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1693,15 +2049,22 @@
     <comp ref="R14">
       <value>5.1kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-075K1L_C105872.pdf</datasheet>
       <description>Resistor</description>
       <fields>
         <field name="Tolerance">1%</field>
+        <field name="MPN">RC0402FR-075K1L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C105872</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-075K1L_C105872.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
+      <property name="MPN" value="RC0402FR-075K1L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C105872"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1720,15 +2083,22 @@
     <comp ref="R15">
       <value>5.1kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-075K1L_C105872.pdf</datasheet>
       <description>Resistor</description>
       <fields>
         <field name="Tolerance">1%</field>
+        <field name="MPN">RC0402FR-075K1L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C105872</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-075K1L_C105872.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
+      <property name="MPN" value="RC0402FR-075K1L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C105872"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1747,13 +2117,20 @@
     <comp ref="R16">
       <value>4.7kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C105871</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C105871"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1772,13 +2149,20 @@
     <comp ref="R17">
       <value>4.7kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C105871</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C105871"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1797,13 +2181,20 @@
     <comp ref="R18">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1822,13 +2213,20 @@
     <comp ref="R19">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1847,13 +2245,20 @@
     <comp ref="R20">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1872,13 +2277,20 @@
     <comp ref="R21">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1897,13 +2309,20 @@
     <comp ref="R22">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1922,13 +2341,20 @@
     <comp ref="R23">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1947,13 +2373,20 @@
     <comp ref="R24">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1972,13 +2405,20 @@
     <comp ref="R25">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1997,13 +2437,20 @@
     <comp ref="R26">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2022,13 +2469,20 @@
     <comp ref="R27">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2047,13 +2501,20 @@
     <comp ref="R28">
       <value>330Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07330RL_C105875.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07330RL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C105875</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07330RL_C105875.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07330RL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C105875"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2072,13 +2533,20 @@
     <comp ref="R29">
       <value>150Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.royalohm.com/assets/pdf/products/smd/1.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">0402WGF1500TCE</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="LCSC#">C25082</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.royalohm.com/assets/pdf/products/smd/1.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1500TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="LCSC#" value="C25082"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2097,13 +2565,20 @@
     <comp ref="R30">
       <value>150Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.royalohm.com/assets/pdf/products/smd/1.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">0402WGF1500TCE</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="LCSC#">C25082</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.royalohm.com/assets/pdf/products/smd/1.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1500TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="LCSC#" value="C25082"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2122,13 +2597,20 @@
     <comp ref="R31">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2147,13 +2629,20 @@
     <comp ref="R32">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2172,13 +2661,20 @@
     <comp ref="R33">
       <value>10kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2197,13 +2693,20 @@
     <comp ref="R34">
       <value>22Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0722RL_C114765.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0722RL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C114765</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0722RL_C114765.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0722RL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C114765"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2222,13 +2725,20 @@
     <comp ref="R35">
       <value>22Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0722RL_C114765.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0722RL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C114765</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0722RL_C114765.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0722RL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C114765"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2247,13 +2757,20 @@
     <comp ref="R36">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2272,13 +2789,20 @@
     <comp ref="R37">
       <value>4.7kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C105871</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C105871"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2297,13 +2821,20 @@
     <comp ref="R38">
       <value>4.7kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C105871</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K7L_C105871.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C105871"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2322,13 +2853,20 @@
     <comp ref="R39">
       <value>100kΩ</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2347,15 +2885,19 @@
     <comp ref="R50">
       <value>100Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/pyu-rc-group_51_rohs_l.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100RL_C106232.pdf</datasheet>
       <fields>
         <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C106232</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/pyu-rc-group_51_rohs_l.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100RL_C106232.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C106232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2374,15 +2916,19 @@
     <comp ref="R51">
       <value>100Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/pyu-rc-group_51_rohs_l.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100RL_C106232.pdf</datasheet>
       <fields>
         <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C106232</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/pyu-rc-group_51_rohs_l.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100RL_C106232.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C106232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2401,15 +2947,19 @@
     <comp ref="R52">
       <value>100Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/pyu-rc-group_51_rohs_l.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100RL_C106232.pdf</datasheet>
       <fields>
         <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C106232</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/pyu-rc-group_51_rohs_l.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100RL_C106232.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C106232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2428,15 +2978,19 @@
     <comp ref="R53">
       <value>100Ω</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/pyu-rc-group_51_rohs_l.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100RL_C106232.pdf</datasheet>
       <fields>
         <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C106232</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/pyu-rc-group_51_rohs_l.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100RL_C106232.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C106232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2455,13 +3009,20 @@
     <comp ref="SW2">
       <value>RESET</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf</datasheet>
       <description>Push button switch, generic, two pins</description>
       <fields>
+        <field name="MPN">TS-1187A-B-A-B</field>
+        <field name="Manufacturer">XKB Connection</field>
+        <field name="LCSC#">C318884</field>
         <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf</field>
         <field name="Description">Push button switch, generic, two pins</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="TS-1187A-B-A-B"/>
+      <property name="Manufacturer" value="XKB Connection"/>
+      <property name="LCSC#" value="C318884"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -2479,13 +3040,20 @@
     <comp ref="SW3">
       <value>BOOT</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf</datasheet>
       <description>Push button switch, generic, two pins</description>
       <fields>
+        <field name="MPN">TS-1187A-B-A-B</field>
+        <field name="Manufacturer">XKB Connection</field>
+        <field name="LCSC#">C318884</field>
         <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf</field>
         <field name="Description">Push button switch, generic, two pins</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="TS-1187A-B-A-B"/>
+      <property name="Manufacturer" value="XKB Connection"/>
+      <property name="LCSC#" value="C318884"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -2503,14 +3071,17 @@
     <comp ref="U1">
       <value>TPS63070RNMR</value>
       <footprint>TPS63070:TPS63070</footprint>
-      <datasheet>https://www.ti.com/lit/gpn/tps63070</datasheet>
+      <datasheet>https://www.ti.com/cn/lit/gpn/tps63070</datasheet>
       <fields>
         <field name="Sim.Type">SUBCKT</field>
         <field name="Sim.Name">TPS63070_TRANS</field>
         <field name="Sim.Pins">1=PS_SYNC 2=PG 3=VAUX 4=GND 5=FB 6=FB2 7=VOUT_0 8=VOUT_1 9=L2 10=PGND 11=L1 12=VIN_0 13=VIN_1 14=EN 15=VSEL</field>
         <field name="Sim.Library">../../libs/spice/tps63070/TPS63070_TRANS.LIB</field>
+        <field name="MPN">TPS63070RNMR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC#">C109322</field>
         <field name="Footprint">TPS63070:TPS63070</field>
-        <field name="Datasheet">https://www.ti.com/lit/gpn/tps63070</field>
+        <field name="Datasheet">https://www.ti.com/cn/lit/gpn/tps63070</field>
         <field name="Description"/>
       </fields>
       <libsource lib="TPS63070 Buck-Boost" part="TPS63070RNMR" description=""/>
@@ -2518,6 +3089,9 @@
       <property name="Sim.Name" value="TPS63070_TRANS"/>
       <property name="Sim.Pins" value="1=PS_SYNC 2=PG 3=VAUX 4=GND 5=FB 6=FB2 7=VOUT_0 8=VOUT_1 9=L2 10=PGND 11=L1 12=VIN_0 13=VIN_1 14=EN 15=VSEL"/>
       <property name="Sim.Library" value="../../libs/spice/tps63070/TPS63070_TRANS.LIB"/>
+      <property name="MPN" value="TPS63070RNMR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC#" value="C109322"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="TPS63070RNMR"/>
@@ -2549,14 +3123,17 @@
     <comp ref="U2">
       <value>TPS63070RNMR</value>
       <footprint>TPS63070:TPS63070</footprint>
-      <datasheet>https://www.ti.com/lit/gpn/tps63070</datasheet>
+      <datasheet>https://www.ti.com/cn/lit/gpn/tps63070</datasheet>
       <fields>
         <field name="Sim.Type">SUBCKT</field>
         <field name="Sim.Name">TPS63070_TRANS</field>
         <field name="Sim.Pins">1=PS_SYNC 2=PG 3=VAUX 4=GND 5=FB 6=FB2 7=VOUT_0 8=VOUT_1 9=L2 10=PGND 11=L1 12=VIN_0 13=VIN_1 14=EN 15=VSEL</field>
         <field name="Sim.Library">../../libs/spice/tps63070/TPS63070_TRANS.LIB</field>
+        <field name="MPN">TPS63070RNMR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC#">C109322</field>
         <field name="Footprint">TPS63070:TPS63070</field>
-        <field name="Datasheet">https://www.ti.com/lit/gpn/tps63070</field>
+        <field name="Datasheet">https://www.ti.com/cn/lit/gpn/tps63070</field>
         <field name="Description"/>
       </fields>
       <libsource lib="TPS63070 Buck-Boost" part="TPS63070RNMR" description=""/>
@@ -2564,6 +3141,9 @@
       <property name="Sim.Name" value="TPS63070_TRANS"/>
       <property name="Sim.Pins" value="1=PS_SYNC 2=PG 3=VAUX 4=GND 5=FB 6=FB2 7=VOUT_0 8=VOUT_1 9=L2 10=PGND 11=L1 12=VIN_0 13=VIN_1 14=EN 15=VSEL"/>
       <property name="Sim.Library" value="../../libs/spice/tps63070/TPS63070_TRANS.LIB"/>
+      <property name="MPN" value="TPS63070RNMR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC#" value="C109322"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="TPS63070RNMR"/>
@@ -2595,14 +3175,20 @@
     <comp ref="U3">
       <value>ESP32-S3-WROOM-1-N16</value>
       <footprint>Board:ESP32-S3-WROOM-1_Overhang</footprint>
-      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</datasheet>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206281830_Espressif-Systems-ESP32-S3-WROOM-1-N16_C2913199.pdf</datasheet>
       <description>RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD</description>
       <fields>
+        <field name="MPN">ESP32-S3-WROOM-1-N16</field>
+        <field name="Manufacturer">Espressif Systems</field>
+        <field name="LCSC#">C2913199</field>
         <field name="Footprint">Board:ESP32-S3-WROOM-1_Overhang</field>
-        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206281830_Espressif-Systems-ESP32-S3-WROOM-1-N16_C2913199.pdf</field>
         <field name="Description">RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD</field>
       </fields>
       <libsource lib="RF_Module" part="ESP32-S3-WROOM-1" description="RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD"/>
+      <property name="MPN" value="ESP32-S3-WROOM-1-N16"/>
+      <property name="Manufacturer" value="Espressif Systems"/>
+      <property name="LCSC#" value="C2913199"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna"/>
@@ -2660,14 +3246,20 @@
     <comp ref="U4">
       <value>USBLC6-2SC6</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
-      <datasheet>https://www.st.com/resource/en/datasheet/usblc6-2.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf</datasheet>
       <description>Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</description>
       <fields>
+        <field name="MPN">USBLC6-2SC6</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="LCSC#">C7519</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
-        <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf</field>
         <field name="Description">Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</field>
       </fields>
       <libsource lib="Power_Protection" part="USBLC6-2SC6" description="Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"/>
+      <property name="MPN" value="USBLC6-2SC6"/>
+      <property name="Manufacturer" value="STMicroelectronics"/>
+      <property name="LCSC#" value="C7519"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="usb ethernet video"/>
@@ -2693,11 +3285,17 @@
       <datasheet>https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf</datasheet>
       <description>Realtime Clock/Calendar I2C Interface, Extreme Low Power, 1.1 V to 5.5 V, MicroCrystal C7</description>
       <fields>
+        <field name="MPN">RV-3028-C7-32.768kHz-1ppm-TA-QC</field>
+        <field name="Manufacturer">Micro Crystal</field>
+        <field name="LCSC#">C3019759</field>
         <field name="Footprint">Package_SON:MicroCrystal_C7_SON-8_1.5x3.2mm_P0.9mm</field>
         <field name="Datasheet">https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf</field>
         <field name="Description">Realtime Clock/Calendar I2C Interface, Extreme Low Power, 1.1 V to 5.5 V, MicroCrystal C7</field>
       </fields>
       <libsource lib="Timer_RTC" part="RV-3028-C7" description="Realtime Clock/Calendar I2C Interface, Extreme Low Power, 1.1 V to 5.5 V, MicroCrystal C7"/>
+      <property name="MPN" value="RV-3028-C7-32.768kHz-1ppm-TA-QC"/>
+      <property name="Manufacturer" value="Micro Crystal"/>
+      <property name="LCSC#" value="C3019759"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="Low-power RTC I2C"/>
@@ -2722,14 +3320,20 @@
     <comp ref="U6">
       <value>MAX98357A</value>
       <footprint>Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm</footprint>
-      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2201242100_Analog-Devices-Inc--Maxim-Integrated-MAX98357AETE-T_C910544.pdf</datasheet>
       <description>Mono DAC with amplifier, I2S, PCM, TDM, 32-bit, 96khz, 3.2W, TQFP-16</description>
       <fields>
+        <field name="MPN">MAX98357AETE+T</field>
+        <field name="Manufacturer">Analog Devices Inc./Maxim Integrated</field>
+        <field name="LCSC#">C910544</field>
         <field name="Footprint">Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm</field>
-        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2201242100_Analog-Devices-Inc--Maxim-Integrated-MAX98357AETE-T_C910544.pdf</field>
         <field name="Description">Mono DAC with amplifier, I2S, PCM, TDM, 32-bit, 96khz, 3.2W, TQFP-16</field>
       </fields>
       <libsource lib="Audio" part="MAX98357A" description="Mono DAC with amplifier, I2S, PCM, TDM, 32-bit, 96khz, 3.2W, TQFP-16"/>
+      <property name="MPN" value="MAX98357AETE+T"/>
+      <property name="Manufacturer" value="Analog Devices Inc./Maxim Integrated"/>
+      <property name="LCSC#" value="C910544"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <property name="ki_keywords" value="pcm tdm i2s left-justified amplifier audio dac"/>
@@ -2763,13 +3367,19 @@
     <comp ref="U7">
       <value>SN74LVC2G66DCUR</value>
       <footprint>Package_SO:VSSOP-8_2.3x2mm_P0.5mm</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf</datasheet>
+      <datasheet>https://www.ti.com/cn/lit/gpn/sn74lvc2g66</datasheet>
       <fields>
+        <field name="MPN">SN74LVC2G66DCUR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC#">C181970</field>
         <field name="Footprint">Package_SO:VSSOP-8_2.3x2mm_P0.5mm</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf</field>
+        <field name="Datasheet">https://www.ti.com/cn/lit/gpn/sn74lvc2g66</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Review" part="SN74LVC2G66DCUR" description=""/>
+      <property name="MPN" value="SN74LVC2G66DCUR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC#" value="C181970"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2792,13 +3402,19 @@
     <comp ref="U8">
       <value>SN74LVC1T45DBVR</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf</datasheet>
+      <datasheet>https://www.ti.com/cn/lit/gpn/sn74lvc1t45</datasheet>
       <fields>
+        <field name="MPN">SN74LVC1T45DBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC#">C7843</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf</field>
+        <field name="Datasheet">https://www.ti.com/cn/lit/gpn/sn74lvc1t45</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Review" part="SN74LVC1T45DBVR" description=""/>
+      <property name="MPN" value="SN74LVC1T45DBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC#" value="C7843"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-main.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2819,17 +3435,24 @@
     <comp ref="C34">
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">16V</field>
         <field name="Dielectric">X7R</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="LCSC#">C71629</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="16V"/>
       <property name="Dielectric" value="X7R"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="LCSC#" value="C71629"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2853,6 +3476,9 @@
       <fields>
         <field name="Sim.Device">NPN</field>
         <field name="Sim.Pins">1=B 2=E 3=C</field>
+        <field name="MPN">MMBT3904LT1G</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="LCSC#">C81464</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf</field>
         <field name="Description">0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23</field>
@@ -2860,6 +3486,9 @@
       <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
       <property name="Sim.Device" value="NPN"/>
       <property name="Sim.Pins" value="1=B 2=E 3=C"/>
+      <property name="MPN" value="MMBT3904LT1G"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC#" value="C81464"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="NPN Transistor"/>
@@ -2884,6 +3513,9 @@
       <fields>
         <field name="Sim.Device">NPN</field>
         <field name="Sim.Pins">1=B 2=E 3=C</field>
+        <field name="MPN">MMBT3904LT1G</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="LCSC#">C81464</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf</field>
         <field name="Description">0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23</field>
@@ -2891,6 +3523,9 @@
       <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
       <property name="Sim.Device" value="NPN"/>
       <property name="Sim.Pins" value="1=B 2=E 3=C"/>
+      <property name="MPN" value="MMBT3904LT1G"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC#" value="C81464"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="NPN Transistor"/>
@@ -2910,14 +3545,20 @@
     <comp ref="Q6">
       <value>AO3401A</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf</datasheet>
       <description>-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23</description>
       <fields>
+        <field name="MPN">AO3401A</field>
+        <field name="Manufacturer">Alpha &amp; Omega Semicon</field>
+        <field name="LCSC#">C15127</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf</field>
         <field name="Description">-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="AO3401A"/>
+      <property name="Manufacturer" value="Alpha &amp; Omega Semicon"/>
+      <property name="LCSC#" value="C15127"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="P-Channel MOSFET"/>
@@ -2942,6 +3583,9 @@
       <fields>
         <field name="Sim.Device">NPN</field>
         <field name="Sim.Pins">1=B 2=E 3=C</field>
+        <field name="MPN">MMBT3904LT1G</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="LCSC#">C81464</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf</field>
         <field name="Description">0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23</field>
@@ -2949,6 +3593,9 @@
       <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
       <property name="Sim.Device" value="NPN"/>
       <property name="Sim.Pins" value="1=B 2=E 3=C"/>
+      <property name="MPN" value="MMBT3904LT1G"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC#" value="C81464"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="NPN Transistor"/>
@@ -2968,13 +3615,20 @@
     <comp ref="R40">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2993,13 +3647,20 @@
     <comp ref="R41">
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-071ML_C138033.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-071ML</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C138033</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-071ML_C138033.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-071ML"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C138033"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3018,13 +3679,20 @@
     <comp ref="R42">
       <value>47k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0747KL_C93943.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0747KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C93943</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0747KL_C93943.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0747KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C93943"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3043,13 +3711,20 @@
     <comp ref="R43">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3068,13 +3743,20 @@
     <comp ref="R44">
       <value>47k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0747KL_C93943.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0747KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C93943</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0747KL_C93943.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0747KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C93943"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3093,13 +3775,20 @@
     <comp ref="R45">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3118,13 +3807,20 @@
     <comp ref="R46">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60490</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60490"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3143,13 +3839,20 @@
     <comp ref="R47">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C60491</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C60491"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3168,17 +3871,22 @@
     <comp ref="R48">
       <value>33k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0402BRD0733KL_C728559.pdf</datasheet>
       <description>Resistor</description>
       <fields>
         <field name="Tolerance">0.1%</field>
         <field name="MPN">RT0402BRD0733KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C728559</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0402BRD0733KL_C728559.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="0.1%"/>
       <property name="MPN" value="RT0402BRD0733KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C728559"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3197,17 +3905,22 @@
     <comp ref="R49">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RT0402BRD0710KL_C190095.pdf</datasheet>
       <description>Resistor</description>
       <fields>
         <field name="Tolerance">0.1%</field>
         <field name="MPN">RT0402BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC#">C190095</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RT0402BRD0710KL_C190095.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="0.1%"/>
       <property name="MPN" value="RT0402BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC#" value="C190095"/>
       <property name="Sheetname" value="Power monitoring"/>
       <property name="Sheetfile" value="power-monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>

@@ -1,0 +1,275 @@
+{
+  "scope": "Exact parsed primitive comparison for mask, paste, silk and outline. Copper primitives compared separately; differing ArcPoly regions measured as planar polygon sets after resolving zero-area stitch segments with make_valid. This does not assert byte-identical copper Gerbers or complete fabrication acceptance.",
+  "method": {
+    "parser": "Gerbonara 1.6.3",
+    "geometry": "Shapely 2.1.2",
+    "arc_approximation_max_error_mm": 0.0001,
+    "difference_metrics": "Symmetric-difference area and Hausdorff distance of areal polygon geometry; non-areal zero-width stitch segments excluded."
+  },
+  "old_manifest_sha256": "fe02d4dc756ed4f7fe2383627d9eaee172d7d21eb333b86d471af82e27ed2e29",
+  "new_manifest_sha256": "aba18a0eb6d27c9088ffa64e95fc8ccc410689c0ab80ed0cf243141664bb3fe5",
+  "boards": {
+    "alec-main": {
+      "old_archive_sha256": "abee31e91877f17234b467d81afb02f6149a3f7133e2fabc4cf0385453742ac9",
+      "new_archive_sha256": "fdf29a45b08e7f7863141c78b3ecf48b4a34069a986c37b83001055218727ae0",
+      "graphic_layers": {
+        "top/copper": {
+          "primitive_count": 2790,
+          "exact_primitive_equality": false,
+          "region_differences": [
+            {
+              "primitive_index": 2772,
+              "symmetric_difference_area_mm2": 4.99999997472703e-13,
+              "hausdorff_distance_mm": 1.12544227438453e-12
+            },
+            {
+              "primitive_index": 2777,
+              "symmetric_difference_area_mm2": 4.8114020372878657e-08,
+              "hausdorff_distance_mm": 1.0294043179377859e-06
+            },
+            {
+              "primitive_index": 2781,
+              "symmetric_difference_area_mm2": 4.5939579936535896e-05,
+              "hausdorff_distance_mm": 0.002342535521744519
+            },
+            {
+              "primitive_index": 2784,
+              "symmetric_difference_area_mm2": 2.99926122016036e-09,
+              "hausdorff_distance_mm": 1.4820620843463387e-07
+            },
+            {
+              "primitive_index": 2785,
+              "symmetric_difference_area_mm2": 3.940149977501358e-08,
+              "hausdorff_distance_mm": 9.454255436541753e-07
+            }
+          ]
+        },
+        "top/mask": {
+          "primitive_count": 408,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/silk": {
+          "primitive_count": 1056,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/paste": {
+          "primitive_count": 381,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/copper": {
+          "primitive_count": 1035,
+          "exact_primitive_equality": false,
+          "region_differences": [
+            {
+              "primitive_index": 1034,
+              "symmetric_difference_area_mm2": 2.0078917781045464e-07,
+              "hausdorff_distance_mm": 1.2727981052862407e-06
+            }
+          ]
+        },
+        "bottom/mask": {
+          "primitive_count": 22,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/silk": {
+          "primitive_count": 195,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/paste": {
+          "primitive_count": 0,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "inner_1/copper": {
+          "primitive_count": 264,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "inner_2/copper": {
+          "primitive_count": 941,
+          "exact_primitive_equality": false,
+          "region_differences": [
+            {
+              "primitive_index": 940,
+              "symmetric_difference_area_mm2": 3.343694873652712e-07,
+              "hausdorff_distance_mm": 4.9490355240751675e-06
+            }
+          ]
+        },
+        "mechanical/outline": {
+          "primitive_count": 4,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        }
+      }
+    },
+    "alec-controls": {
+      "old_archive_sha256": "30b3bcdc1e32aa878103131e073683cbf03005fcceb10b3ce7d4aa82f133ac42",
+      "new_archive_sha256": "529461b9adb3052c03213ddea4c40104b1ca71ff780083a8c29e3018234f3cef",
+      "graphic_layers": {
+        "top/copper": {
+          "primitive_count": 241,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/mask": {
+          "primitive_count": 19,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/silk": {
+          "primitive_count": 37,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/paste": {
+          "primitive_count": 0,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/copper": {
+          "primitive_count": 107,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/mask": {
+          "primitive_count": 28,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/silk": {
+          "primitive_count": 34,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/paste": {
+          "primitive_count": 9,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "mechanical/outline": {
+          "primitive_count": 4,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        }
+      }
+    },
+    "alec-front": {
+      "old_archive_sha256": "8383200dbdea613da26a868e13bb37d42dc2287e3cb5b6eb36b30f117c6c9e67",
+      "new_archive_sha256": "e4cda9bedc90f52dd172ddd6269f6b90651437c1e56ac7e96f1588ad0200f8ea",
+      "graphic_layers": {
+        "top/copper": {
+          "primitive_count": 51,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/mask": {
+          "primitive_count": 8,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/silk": {
+          "primitive_count": 19,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/paste": {
+          "primitive_count": 6,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/copper": {
+          "primitive_count": 64,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/mask": {
+          "primitive_count": 10,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/silk": {
+          "primitive_count": 16,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/paste": {
+          "primitive_count": 8,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "mechanical/outline": {
+          "primitive_count": 4,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        }
+      }
+    },
+    "alec-sensor": {
+      "old_archive_sha256": "0763d0b54402151a925ea1437c293f5484da0f6d5a1f63483d3d5ebcf1df1f85",
+      "new_archive_sha256": "ec6e25d9eb399ee1a5e95eb94d4714c771c721c467dbd2f87d9307b50056540f",
+      "graphic_layers": {
+        "top/copper": {
+          "primitive_count": 2118,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/mask": {
+          "primitive_count": 322,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/silk": {
+          "primitive_count": 982,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "top/paste": {
+          "primitive_count": 294,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/copper": {
+          "primitive_count": 1090,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/mask": {
+          "primitive_count": 34,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/silk": {
+          "primitive_count": 318,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "bottom/paste": {
+          "primitive_count": 8,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "inner_2/copper": {
+          "primitive_count": 641,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "inner_1/copper": {
+          "primitive_count": 212,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        },
+        "mechanical/outline": {
+          "primitive_count": 4,
+          "exact_primitive_equality": true,
+          "region_differences": []
+        }
+      }
+    }
+  }
+}

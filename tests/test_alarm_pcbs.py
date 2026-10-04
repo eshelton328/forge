@@ -10,6 +10,7 @@ MAIN=ROOT/'boards/alec-main'
 ASSEMBLY=ROOT/'enclosures/alec/pcb-revision'
 sys.path.insert(0,str(ROOT/'scripts/alarm'))
 from design import parse,children,child,prop,val
+from order_parts import verify_evidence_pcb
 
 def read(path):return json.loads(path.read_text())
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -66,9 +67,9 @@ def test_geometry_and_physics_are_bound_to_current_sources_without_release_claim
     assert g['status']=='NOMINAL_GEOMETRY_PASS' and all(c['passed'] for c in g['checks'])
     assert not g['physical_qualification_performed'] and not g['manufacturing_release']
     for kind,row in read(ASSEMBLY/'assembly-sources.json').items():
-        assert row['pcb_sha256']==sha(ROOT/row['pcb'])
+        verify_evidence_pcb(ROOT/row['pcb'],row['pcb_sha256'])
         assert row['glb_sha256']==sha(ASSEMBLY/'sources'/f'{kind}.glb')
     p=read(MAIN/'review/physical-screening/summary.json')
-    assert p['manifest']['pcb_sha256']==sha(MAIN/(MAIN.name+'.kicad_pcb'))
+    verify_evidence_pcb(MAIN/(MAIN.name+'.kicad_pcb'),p['manifest']['pcb_sha256'])
     assert p['manifest']['physical_release_approved'] is False
     assert p['gates']['not_demonstrated']

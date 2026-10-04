@@ -2,6 +2,8 @@
 
 **Prototype review passed the listed software checks. Physical qualification and manufacturing release have not been performed.** Tests refer to the actual saved boards and v4.2 Blender assembly, with source hashes in [qa-manifest.json](qa-manifest.json). No battery endurance, wake-up reliability, acoustic quality, ESP-NOW range, emissions compliance or junction-temperature pass is claimed.
 
+The prototype ordering-field update is recorded in [source-metadata-transition.json](../../../docs/rooster/prototype-order/source-metadata-transition.json). All other source tokens, including values, nets, fit flags, copper and 3D transforms, are preserved. Historical enclosure exports and nominal physical simulations keep their original source hashes; the transition checker verifies their unchanged geometry against the current sources. This does not qualify substituted real components. See the separate [power-component selection review](../../../docs/rooster/prototype-order/power-component-review.md).
+
 ## Electrical and layout checks
 
 | Board | ERC violations | DRC/parity/unconnected violations | Fabrication rules |
@@ -10,12 +12,12 @@
 | controls | 0 | 0 | jlcpcb-2layer-standard: pass |
 | front | 0 | 0 | jlcpcb-2layer-standard: pass |
 
-The full local repository suite reports **117 passed, 1 skipped**.
+The original v4.2 local repository suite reported **117 passed, 1 skipped**. Current ordering-update checks and suite results are recorded in the [prototype order work package](../../../docs/rooster/prototype-order/source-integration-review.md).
 
 All three also pass the repository's filled-copper connectivity guard. The bottom board uses explicit ground traces as well as its filled planes. Board intent validation passes on all three projects.
 
 - 487 circuit/interface checks: retained circuit peers and component values/footprints, full cable pin maps, hardware-enable throws, LED polarity/current limiting, display order and UART connections.
-- 145 layout checks: retained placements, 1,094 inherited power/return/USB/BTL track or via geometries, In1 ground-plane use, local bypass connections, mounts and inward-facing daughterboard connectors. The local capacitor pad-to-pad separation remains approximately 1.81 mm.
+- 153 layout checks: retained placements, 1,094 inherited power/return/USB/BTL track or via geometries, In1 ground-plane use, local bypass connections, mounts and inward-facing daughterboard connectors. The local capacitor pad-to-pad separation remains approximately 1.81 mm.
 - 105 SPICE measurements passed. This includes the inherited 25 behavioral power/load checks and 80 measurements across sixteen damped remote-button corners. The TPS63070 model is the repository approximation, not a validated TI switching model.
 - 52 saved-assembly checks passed, including actual board sizes/orientations, switch-to-panel alignment, OLED rear/socket clearance, RF keepout, mated connector/cable envelopes, cap clearance at rest, and the programming-fixture corridor. The unchanged exterior/acoustic/battery objects are fingerprinted against v4.1.
 

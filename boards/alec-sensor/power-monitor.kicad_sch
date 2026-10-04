@@ -851,12 +851,14 @@
 					(unit 1))))
 		(property
 			"MPN"
-			"MMBT3904"
+			"MMBT3904LT1G"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "onsemi" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C81464" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Transistor_BJT:MMBT3904")
 		(at 114.3 66.04 0)
@@ -959,12 +961,14 @@
 					(unit 1))))
 		(property
 			"MPN"
-			"MMBT3904"
+			"MMBT3904LT1G"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "onsemi" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C81464" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 45.72 66.04 90)
@@ -1008,7 +1012,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 45.72 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -1046,7 +1050,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 53.34 82.55 0)
@@ -1090,7 +1096,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-071ML_C138033.pdf"
 			(at 53.34 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1128,7 +1134,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C138033" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 66.04 48.26 0)
@@ -1172,7 +1180,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0747KL_C93943.pdf"
 			(at 66.04 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -1210,7 +1218,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C93943" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 91.44 66.04 90)
@@ -1254,7 +1264,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 91.44 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -1292,7 +1302,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 116.84 48.26 0)
@@ -1336,7 +1348,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0747KL_C93943.pdf"
 			(at 116.84 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -1374,7 +1386,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C93943" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 41.91 66.04)
@@ -1621,7 +1635,7 @@
 				(justify left)))
 		(property
 			"Datasheet"
-			"https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf"
 			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -1663,7 +1677,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Alpha & Omega Semicon" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C15127" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 106.68 138.43 0)
@@ -1707,7 +1723,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 106.68 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -1745,7 +1761,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Transistor_BJT:MMBT3904")
 		(at 119.38 165.1 0)
@@ -1848,12 +1866,14 @@
 					(unit 1))))
 		(property
 			"MPN"
-			"MMBT3904"
+			"MMBT3904LT1G"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "onsemi" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C81464" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 99.06 165.1 90)
@@ -1897,7 +1917,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
 			(at 99.06 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -1935,7 +1955,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60490" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 109.22 179.07 0)
@@ -1979,7 +2001,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.yageo.com/en/Product/Index/rchip/rc"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07100KL_C60491.pdf"
 			(at 109.22 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -2017,7 +2039,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C60491" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 132.07999999999998 149.86 0)
@@ -2061,7 +2085,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			""
+			"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0402BRD0733KL_C728559.pdf"
 			(at 132.07999999999998 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -2107,7 +2131,9 @@
 				(path
 					"/7924bd8b-2498-4d76-899d-c0ad5a514485/7c84093a-5796-4504-a572-6cccb77c9bc7"
 					(reference "R48")
-					(unit 1)))))
+					(unit 1))))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C728559" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 132.07999999999998 175.26 0)
@@ -2151,7 +2177,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			""
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RT0402BRD0710KL_C190095.pdf"
 			(at 132.07999999999998 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -2197,7 +2223,9 @@
 				(path
 					"/7924bd8b-2498-4d76-899d-c0ad5a514485/7c84093a-5796-4504-a572-6cccb77c9bc7"
 					(reference "R49")
-					(unit 1)))))
+					(unit 1))))
+	(property "Manufacturer" "YAGEO" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C190095" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 154.94 175.26 0)
@@ -2241,7 +2269,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
+			"https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_Murata-Electronics-GRM155R71C104KA88D_C71629.pdf"
 			(at 154.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -2297,7 +2325,9 @@
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes))))
+				(hide yes)))
+	(property "Manufacturer" "Murata Electronics" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "LCSC#" "C71629" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(wire
 		(pts
 			(xy 86.36 142.24)

@@ -1,0 +1,32 @@
+{
+  "captured_at": "2026-09-07T23:27:25.579354+00:00",
+  "endpoint": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C3019759",
+  "scope": "Public read-only detail; no orders.",
+  "code": 200,
+  "catalog": {
+    "componentCode": "C3019759",
+    "componentModelEn": "RV-3028-C7-32.768kHz-1ppm-TA-QC",
+    "componentBrandEn": "Micro Crystal",
+    "componentSpecificationEn": "SMD3215-8P",
+    "describe": "-40\u2103~+85\u2103 1.1V~5.5V 45nA 45nA Backup power management and battery charging\u3001InsideSRAM/NVRAM\u3001Timestamp function\u3001Programmable clock output\u3001Alarm function\u3001Power-off retention of registers\u3001Locking and tamper-proof Built-in I2C Yes SMD3215-8P Real Time Clocks ROHS",
+    "stockCount": 0,
+    "canPresaleNumber": 0,
+    "componentLibraryType": "expand",
+    "componentProductType": 0,
+    "minPurchaseNum": 5,
+    "preMinPurchaseNum": 5,
+    "leastPatchNumber": 0,
+    "lossNumber": 0,
+    "isBuyComponent": "1",
+    "noBuyReason": null,
+    "allowPostFlag": true,
+    "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302171010_Micro-Crystal-RV-3028-C7-32-768kHz-1ppm-TA-QC_C3019759.pdf",
+    "dataManualOfficialLink": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf",
+    "assemblyMode": "smtWeld",
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": "",
+    "specialComponentFee": 0.0,
+    "overseasStockCount": 0
+  }
+}

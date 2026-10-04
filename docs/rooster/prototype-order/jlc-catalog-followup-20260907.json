@@ -1,0 +1,3467 @@
+{
+  "captured_at": "2026-09-07T23:25:48.602530+00:00",
+  "endpoint": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "scope": "Public read-only candidate search. No purchasing or approved substitutions.",
+  "queries": [
+    {
+      "query": "C3216X5R1A107M160AC",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C2167823",
+          "componentModelEn": "C3216X5R1A107M160AC",
+          "componentBrandEn": "TDK",
+          "componentSpecificationEn": "1206",
+          "describe": "100uF 10V X5R \u00b120% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 2.3797
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 2.037
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 1.8226
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 1.6033
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.5042
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.4604
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.4068
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.9623
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 1.5445
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 2.2924
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.449
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 1.7557
+            }
+          ],
+          "minPurchaseNum": 4,
+          "preMinPurchaseNum": 4,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "TDK-C3216X5R1A107M160AC/C2167823",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-C3216X5R1A107M160AC_C2167823.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/TDK-C3216X5R1A107M160AC/C2167823",
+          "exact_model_match": true
+        }
+      ]
+    },
+    {
+      "query": "CL31A107MPHNNNE",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C52922",
+          "componentModelEn": "CL31A107MPHNNNE",
+          "componentBrandEn": "Samsung Electro-Mechanics",
+          "componentSpecificationEn": "1206",
+          "describe": "100uF 10V X5R \u00b120% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1945
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1562
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1396
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.119
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1099
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1043
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1058
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1874
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1345
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1504
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1146
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1005
+            }
+          ],
+          "minPurchaseNum": 47,
+          "preMinPurchaseNum": 47,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "53937-CL31A107MPHNNNE/C52922",
+          "dataManualUrl": "https://datasheet.lcsc.com/lcsc/1810221110_Samsung-Electro-Mechanics-CL31A107MPHNNNE_C52922.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/53937-CL31A107MPHNNNE/C52922",
+          "exact_model_match": true
+        }
+      ]
+    },
+    {
+      "query": "GRM31CR61A107MEA8L",
+      "total_search_matches": 2,
+      "matches": [
+        {
+          "componentCode": "C312983",
+          "componentModelEn": "GRM31CR61A107ME05L",
+          "componentBrandEn": "Murata Electronics",
+          "componentSpecificationEn": "1206",
+          "describe": "100uF 10V X5R \u00b120% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "stockCount": 81849,
+          "canPresaleNumber": 69259,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.3486
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2918
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.264
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 1999,
+              "productPrice": 0.2392
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.2323
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.2283
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2811
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.2543
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.3358
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.2238
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 1999,
+              "productPrice": 0.2304
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.2199
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 26,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "295691-GRM31CR61A107ME05L/C312983",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811061115_Murata-Electronics-GRM31CR61A107ME05L_C312983.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/295691-GRM31CR61A107ME05L/C312983",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C883598",
+          "componentModelEn": "GRM31CR61A107MEA8L",
+          "componentBrandEn": "Murata Electronics",
+          "componentSpecificationEn": "1206",
+          "describe": "100uF 10V X5R \u00b120% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "stockCount": 243955,
+          "canPresaleNumber": 229650,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2715
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2146
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1869
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 1999,
+              "productPrice": 0.162
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.1552
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.1511
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 500,
+              "endNumber": 1999,
+              "productPrice": 0.1561
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2615
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.18
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.1495
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.1456
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2068
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 33,
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "948963-GRM31CR61A107MEA8L/C883598",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2203190030_Murata-Electronics-GRM31CR61A107MEA8L_C883598.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/948963-GRM31CR61A107MEA8L/C883598",
+          "exact_model_match": true
+        }
+      ]
+    },
+    {
+      "query": "RC0402FR-07150R",
+      "total_search_matches": 2,
+      "matches": [
+        {
+          "componentCode": "C138054",
+          "componentModelEn": "RC0402FR-07150RL",
+          "componentBrandEn": "YAGEO",
+          "componentSpecificationEn": "0402",
+          "describe": "-55\u2103~+155\u2103 150\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chip Resistor - Surface Mount ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": -4591,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0017
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.0015
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0014
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0014
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 50199,
+              "productPrice": 0.0013
+            },
+            {
+              "startNumber": 50200,
+              "endNumber": -1,
+              "productPrice": 0.0013
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0016
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0013
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 50199,
+              "productPrice": 0.0013
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0014
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.0015
+            },
+            {
+              "startNumber": 50200,
+              "endNumber": -1,
+              "productPrice": 0.0013
+            }
+          ],
+          "minPurchaseNum": 6397,
+          "preMinPurchaseNum": 6397,
+          "leastPatchNumber": 20,
+          "lossNumber": 10,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "YAGEO-RC0402FR07150RL/C138054",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-07150RL_C138054.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07150RL/C138054",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C851818",
+          "componentModelEn": "RC0402FR-07150RP",
+          "componentBrandEn": "YAGEO",
+          "componentSpecificationEn": "0402",
+          "describe": "-55\u2103~+155\u2103 150\u03a9 63mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chip Resistor - Surface Mount ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.0017
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.0017
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.0017
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0007
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0007
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0007
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0006
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0007
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.0016
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.0016
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.0016
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0006
+            }
+          ],
+          "minPurchaseNum": 10000,
+          "preMinPurchaseNum": 10000,
+          "leastPatchNumber": 10,
+          "lossNumber": 5,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "YAGEO-RC0402FR07150RP/C851818",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/YAGEO-RC0402FR07150RP/C851818",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "RT0402FRE07150RL",
+      "total_search_matches": 1,
+      "matches": [
+        {
+          "componentCode": "C854127",
+          "componentModelEn": "RT0402FRE07150RL",
+          "componentBrandEn": "YAGEO",
+          "componentSpecificationEn": "0402",
+          "describe": "-55\u2103~+155\u2103 150\u03a9 63mW Thin Film Resistor \u00b11% \u00b150ppm/\u2103 0402 Chip Resistor - Surface Mount ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": -17,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 499,
+              "productPrice": 0.0109
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 1499,
+              "productPrice": 0.0087
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 9999,
+              "productPrice": 0.0075
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 19999,
+              "productPrice": 0.0068
+            },
+            {
+              "startNumber": 20000,
+              "endNumber": 49999,
+              "productPrice": 0.0062
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": -1,
+              "productPrice": 0.0058
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 10000,
+              "endNumber": 19999,
+              "productPrice": 0.0065
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 1499,
+              "productPrice": 0.0084
+            },
+            {
+              "startNumber": 20000,
+              "endNumber": 49999,
+              "productPrice": 0.0059
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 9999,
+              "productPrice": 0.0072
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 499,
+              "productPrice": 0.0105
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": -1,
+              "productPrice": 0.0056
+            }
+          ],
+          "minPurchaseNum": 1030,
+          "preMinPurchaseNum": 1030,
+          "leastPatchNumber": 20,
+          "lossNumber": 10,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "YAGEO-RT0402FRE07150RL/C854127",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210190330_YAGEO-RT0402FRE07150RL_C854127.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/YAGEO-RT0402FRE07150RL/C854127",
+          "exact_model_match": true
+        }
+      ]
+    },
+    {
+      "query": "MMBT3904LT1G",
+      "total_search_matches": 6,
+      "matches": [
+        {
+          "componentCode": "C2926158",
+          "componentModelEn": "MMBT3904",
+          "componentBrandEn": "FOSAN",
+          "componentSpecificationEn": "SOT-23",
+          "describe": "-55\u2103~+150\u2103 1 NPN 200mA 200mW 300MHz 300mV 40V 50nA 6V 70 Independent NPN SOT-23 Bipolar (BJT) ROHS",
+          "stockCount": 76854,
+          "canPresaleNumber": 76837,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 499,
+              "productPrice": 0.0085
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2999,
+              "productPrice": 0.0066
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 5999,
+              "productPrice": 0.0059
+            },
+            {
+              "startNumber": 6000,
+              "endNumber": 23999,
+              "productPrice": 0.0053
+            },
+            {
+              "startNumber": 24000,
+              "endNumber": 50999,
+              "productPrice": 0.0048
+            },
+            {
+              "startNumber": 51000,
+              "endNumber": -1,
+              "productPrice": 0.0045
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 51000,
+              "endNumber": -1,
+              "productPrice": 0.0043
+            },
+            {
+              "startNumber": 6000,
+              "endNumber": 23999,
+              "productPrice": 0.0051
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 499,
+              "productPrice": 0.0082
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 5999,
+              "productPrice": 0.0057
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2999,
+              "productPrice": 0.0063
+            },
+            {
+              "startNumber": 24000,
+              "endNumber": 50999,
+              "productPrice": 0.0046
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 1357,
+          "leastPatchNumber": 10,
+          "lossNumber": 5,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "FOSAN-MMBT3904/C2926158",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2112031830_FOSAN-MMBT3904_C2926158.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/FOSAN-MMBT3904/C2926158",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C7434274",
+          "componentModelEn": "MMBT3904M",
+          "componentBrandEn": "MSKSEMI",
+          "componentSpecificationEn": "SOT-723",
+          "describe": "-55\u2103~+150\u2103 1 NPN 100 100mW 100nA 200mA 300MHz 300mV 40V 6V NPN SOT-723 Bipolar (BJT) ROHS",
+          "stockCount": 1275,
+          "canPresaleNumber": 1235,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 199,
+              "productPrice": 0.0259
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 599,
+              "productPrice": 0.0205
+            },
+            {
+              "startNumber": 600,
+              "endNumber": 1999,
+              "productPrice": 0.0176
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 7999,
+              "productPrice": 0.0159
+            },
+            {
+              "startNumber": 8000,
+              "endNumber": 15999,
+              "productPrice": 0.0135
+            },
+            {
+              "startNumber": 16000,
+              "endNumber": -1,
+              "productPrice": 0.0127
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 8000,
+              "endNumber": 15999,
+              "productPrice": 0.0131
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 199,
+              "productPrice": 0.0249
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 7999,
+              "productPrice": 0.0153
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 599,
+              "productPrice": 0.0198
+            },
+            {
+              "startNumber": 16000,
+              "endNumber": -1,
+              "productPrice": 0.0123
+            },
+            {
+              "startNumber": 600,
+              "endNumber": 1999,
+              "productPrice": 0.0169
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 437,
+          "leastPatchNumber": 10,
+          "lossNumber": 5,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "MSKSEMI-MMBT3904M/C7434274",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2307051800_MSKSEMI-MMBT3904M_C7434274.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/MSKSEMI-MMBT3904M/C7434274",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C81464",
+          "componentModelEn": "MMBT3904LT1G",
+          "componentBrandEn": "onsemi",
+          "componentSpecificationEn": "SOT-23",
+          "describe": "-55\u2103~+150\u2103 1 NPN 200mA 200mV 225mW 300MHz 40 40V 50nA 6V NPN SOT-23 Bipolar (BJT) ROHS",
+          "stockCount": 1868124,
+          "canPresaleNumber": 1864350,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 499,
+              "productPrice": 0.0169
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2999,
+              "productPrice": 0.0135
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 5999,
+              "productPrice": 0.0097
+            },
+            {
+              "startNumber": 6000,
+              "endNumber": 23999,
+              "productPrice": 0.0085
+            },
+            {
+              "startNumber": 24000,
+              "endNumber": 50999,
+              "productPrice": 0.0081
+            },
+            {
+              "startNumber": 51000,
+              "endNumber": -1,
+              "productPrice": 0.0078
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 500,
+              "endNumber": 2999,
+              "productPrice": 0.013
+            },
+            {
+              "startNumber": 24000,
+              "endNumber": 50999,
+              "productPrice": 0.0078
+            },
+            {
+              "startNumber": 51000,
+              "endNumber": -1,
+              "productPrice": 0.0075
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 499,
+              "productPrice": 0.0163
+            },
+            {
+              "startNumber": 6000,
+              "endNumber": 23999,
+              "productPrice": 0.0082
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 5999,
+              "productPrice": 0.0093
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 664,
+          "leastPatchNumber": 10,
+          "lossNumber": 5,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "onsemi-MMBT3904LT1G/C81464",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_onsemi-MMBT3904LT1G_C81464.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/onsemi-MMBT3904LT1G/C81464",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C7422625",
+          "componentModelEn": "MMBT3904LT1G",
+          "componentBrandEn": "FUXINSEMI",
+          "componentSpecificationEn": "SOT-23",
+          "describe": "-55\u2103~+150\u2103 1 NPN 100nA 200mA 200mW 300 300MHz 300mV 40V 6V NPN SOT-23 Bipolar (BJT) ROHS",
+          "stockCount": 44052,
+          "canPresaleNumber": 43916,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 499,
+              "productPrice": 0.0143
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2999,
+              "productPrice": 0.0117
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 5999,
+              "productPrice": 0.0102
+            },
+            {
+              "startNumber": 6000,
+              "endNumber": 23999,
+              "productPrice": 0.0093
+            },
+            {
+              "startNumber": 24000,
+              "endNumber": 50999,
+              "productPrice": 0.0086
+            },
+            {
+              "startNumber": 51000,
+              "endNumber": -1,
+              "productPrice": 0.0081
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 51000,
+              "endNumber": -1,
+              "productPrice": 0.0078
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 499,
+              "productPrice": 0.0138
+            },
+            {
+              "startNumber": 6000,
+              "endNumber": 23999,
+              "productPrice": 0.009
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 5999,
+              "productPrice": 0.0098
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2999,
+              "productPrice": 0.0112
+            },
+            {
+              "startNumber": 24000,
+              "endNumber": 50999,
+              "productPrice": 0.0082
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 766,
+          "leastPatchNumber": 10,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "FUXINSEMI-MMBT3904LT1G/C7422625",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2306191402_FUXINSEMI-MMBT3904LT1G_C7422625.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/FUXINSEMI-MMBT3904LT1G/C7422625",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C84555",
+          "componentModelEn": "SMMBT3904LT1G",
+          "componentBrandEn": "onsemi",
+          "componentSpecificationEn": "SOT-23",
+          "describe": "-55\u2103~+150\u2103 1 NPN 200mA 200mV 225mW 300MHz 40 40V 50nA 6V NPN SOT-23 Bipolar (BJT) ROHS",
+          "stockCount": 26132,
+          "canPresaleNumber": 25820,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0426
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0338
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 2999,
+              "productPrice": 0.0293
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 5999,
+              "productPrice": 0.0244
+            },
+            {
+              "startNumber": 6000,
+              "endNumber": 8999,
+              "productPrice": 0.0218
+            },
+            {
+              "startNumber": 9000,
+              "endNumber": -1,
+              "productPrice": 0.0204
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.041
+            },
+            {
+              "startNumber": 9000,
+              "endNumber": -1,
+              "productPrice": 0.0196
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0326
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 5999,
+              "productPrice": 0.0235
+            },
+            {
+              "startNumber": 6000,
+              "endNumber": 8999,
+              "productPrice": 0.021
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 2999,
+              "productPrice": 0.0282
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 265,
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "onsemi-SMMBT3904LT1G/C84555",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811032002_onsemi-SMMBT3904LT1G_C84555.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/onsemi-SMMBT3904LT1G/C84555",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C46682377",
+          "componentModelEn": "SMMBT3904LT1G-HXY",
+          "componentBrandEn": "HXY MOSFET",
+          "componentSpecificationEn": "SOT-23",
+          "describe": "1 NPN 100nA 200mA 200mW 300 300MHz 300mV 40V 6V NPN SOT-23 Bipolar (BJT) ROHS",
+          "stockCount": 381,
+          "canPresaleNumber": 381,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 199,
+              "productPrice": 0.022
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 599,
+              "productPrice": 0.0173
+            },
+            {
+              "startNumber": 600,
+              "endNumber": 2999,
+              "productPrice": 0.0147
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 8999,
+              "productPrice": 0.0131
+            },
+            {
+              "startNumber": 9000,
+              "endNumber": 20999,
+              "productPrice": 0.0117
+            },
+            {
+              "startNumber": 21000,
+              "endNumber": -1,
+              "productPrice": 0.011
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 600,
+              "endNumber": 2999,
+              "productPrice": 0.0141
+            },
+            {
+              "startNumber": 9000,
+              "endNumber": 20999,
+              "productPrice": 0.0113
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 599,
+              "productPrice": 0.0166
+            },
+            {
+              "startNumber": 21000,
+              "endNumber": -1,
+              "productPrice": 0.0106
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 8999,
+              "productPrice": 0.0126
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 199,
+              "productPrice": 0.0212
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 518,
+          "leastPatchNumber": 10,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HXYMOSFET-SMMBT3904LT1GHXY/C46682377",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HXYMOSFET-SMMBT3904LT1GHXY/C46682377",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "RV-3028",
+      "total_search_matches": 5,
+      "matches": [
+        {
+          "componentCode": "C2829066",
+          "componentModelEn": "RV-3028-C7",
+          "componentBrandEn": "Micro Crystal",
+          "componentSpecificationEn": "DFN-8(1.5x3.2)",
+          "describe": "DFN-8(1.5x3.2) Real Time Clocks ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0007
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0003
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0002
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0007
+            }
+          ],
+          "minPurchaseNum": 1000,
+          "preMinPurchaseNum": 1000,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "MicroCrystal-RV_3028C7/C2829066",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/MicroCrystal-RV_3028C7/C2829066",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3304278",
+          "componentModelEn": "RV-3028-C7-32.768KHZ-1PPM-TA-QA",
+          "componentBrandEn": "Micro Crystal",
+          "componentSpecificationEn": "SMD3215-8P",
+          "describe": "-40\u2103~+85\u2103 1.1V~5.5V 45nA 45nA Backup power management and battery charging\u3001InsideSRAM/NVRAM\u3001Timestamp function\u3001Programmable clock output\u3001Alarm function\u3001Locking and tamper-proof Built-in I2C Yes SMD3215-8P Real Time Clocks ROHS",
+          "stockCount": 1,
+          "canPresaleNumber": -355,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.0035
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 2.5601
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 2.2807
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 1.9964
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.8681
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.8112
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.7448
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 2.4661
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 2.197
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 2.8933
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.7995
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 1.9231
+            }
+          ],
+          "minPurchaseNum": 3,
+          "preMinPurchaseNum": 3,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": "30",
+          "urlSuffix": "C3304278",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031425_Micro-Crystal-RV-3028-C7-32-768KHZ-1PPM-TA-QA_C3304278.pdf",
+          "dataManualOfficialLink": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf",
+          "url": "https://jlcpcb.com/partdetail/C3304278",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C17356995",
+          "componentModelEn": "RV-3028-C7-EVALUATION-BOARD",
+          "componentBrandEn": "Micro Crystal",
+          "componentSpecificationEn": "-",
+          "describe": "Timing - Development Boards & Kits ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 34.9873
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 34.9873
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 34.9873
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 13.9615
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 13.9615
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 13.9615
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 13.4492
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 13.4492
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 33.7034
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 33.7034
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 13.4492
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 33.7034
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 1,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "C17356995",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Demoboard/RV-3028-C7_Demo-Board.pdf",
+          "url": "https://jlcpcb.com/partdetail/C17356995",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3019759",
+          "componentModelEn": "RV-3028-C7-32.768kHz-1ppm-TA-QC",
+          "componentBrandEn": "Micro Crystal",
+          "componentSpecificationEn": "SMD3215-8P",
+          "describe": "-40\u2103~+85\u2103 1.1V~5.5V 45nA 45nA Backup power management and battery charging\u3001InsideSRAM/NVRAM\u3001Timestamp function\u3001Programmable clock output\u3001Alarm function\u3001Power-off retention of registers\u3001Locking and tamper-proof Built-in I2C Yes SMD3215-8P Real Time Clocks ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": -1473,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 2.2303
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.946
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 1.7446
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 1.5611
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.4766
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.4425
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 1.8746
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.4224
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.3896
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 1.6806
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 2.1485
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 1.5038
+            }
+          ],
+          "minPurchaseNum": 5,
+          "preMinPurchaseNum": 5,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": "41",
+          "urlSuffix": "C3019759",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302171010_Micro-Crystal-RV-3028-C7-32-768kHz-1ppm-TA-QC_C3019759.pdf",
+          "dataManualOfficialLink": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf",
+          "url": "https://jlcpcb.com/partdetail/C3019759",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C46471039",
+          "componentModelEn": "RV-3028-C8-32.768kHz-1PPM-TA-QC",
+          "componentBrandEn": "Micro Crystal",
+          "componentSpecificationEn": "SMD2012-8P",
+          "describe": "SMD2012-8P Real Time Clocks ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.3625
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.3625
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.3625
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.3418
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.2979
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.2752
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.2925
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.2284
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.2391
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.2391
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.2503
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.2391
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 1,
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "C46471039",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C8.pdf",
+          "url": "https://jlcpcb.com/partdetail/C46471039",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "SSW-104-01-F-S",
+      "total_search_matches": 3,
+      "matches": [
+        {
+          "componentCode": "C3323178",
+          "componentModelEn": "SSW-104-01-F-S",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 4.7A 4P 8.51mm Phosphor bronze Square Hole Through Hole Tin \u63d2\u4ef6,P=2.54mm Female Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.7002
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.7002
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.7002
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.2713
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.2616
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.2567
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.2473
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.2614
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.6745
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.6745
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.252
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.6745
+            }
+          ],
+          "minPurchaseNum": 7,
+          "preMinPurchaseNum": 7,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-SSW_104_01_FS/C3323178",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031710_Samtec-SSW-104-01-F-S_C3323178.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-SSW_104_01_FS/C3323178",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C7370857",
+          "componentModelEn": "SSW-104-01-F-S-LL",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 4.7A 4P 8.51mm Through Hole Tin \u63d2\u4ef6,P=2.54mm Female Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.0945
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.0945
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.0945
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.2346
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.194
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.1728
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.1298
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.1893
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 2.9809
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 2.9809
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.1501
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 2.9809
+            }
+          ],
+          "minPurchaseNum": 3,
+          "preMinPurchaseNum": 3,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-SSW_104_01_F_SLL/C7370857",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-SSW_104_01_F_SLL/C7370857",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C6302294",
+          "componentModelEn": "SSW-104-01-F-S-001",
+          "componentBrandEn": "Samtec",
+          "componentSpecificationEn": "Plugin,P=2.54mm",
+          "describe": "-55\u2103~+125\u2103 1 2.54mm 4.7A 4P 8.51mm Through Hole Tin Plugin,P=2.54mm Female Headers ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.4924
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.4924
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.4924
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.3938
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.3467
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.3239
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 1.2753
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 1.3426
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 3.3643
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 3.3643
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 1.2972
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 3.3643
+            }
+          ],
+          "minPurchaseNum": 3,
+          "preMinPurchaseNum": 3,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "Samtec-SSW_104_01_F_S001/C6302294",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/Samtec-SSW_104_01_F_S001/C6302294",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "BM07B-GHS-TBT(LF)(SN)",
+      "total_search_matches": 7,
+      "matches": [
+        {
+          "componentCode": "C225123",
+          "componentModelEn": "A1257WV-S-7P",
+          "componentBrandEn": "CJT(Changjiang Connectors)",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-40\u2103~+105\u2103 1 1.25mm 1A 1x7P 50V 7 7P GH PA9T Phosphor Bronze Surface Mount,Vertical Tin UL94V-0 SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 9674,
+          "canPresaleNumber": 8940,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2382
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1898
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.169
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.1381
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.1266
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1196
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.1628
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1828
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2294
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1152
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.1219
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.1331
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 38,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "225406-A1257WV_S7P/C225123",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_CJT-Changjiang-Connectors-A1257WV-S-7P_C225123.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/225406-A1257WV_S7P/C225123",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3041132",
+          "componentModelEn": "HDGC1257WV-S-7P",
+          "componentBrandEn": "HDGC",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x7P 4.2mm 4.95mm 50V 7 7P Auxiliary Solder Pin GH PA9T Phosphor bronze Surface Mount,Vertical Tin UL94V-0 White SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 1012,
+          "canPresaleNumber": 910,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2054
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1623
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.144
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.1209
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.1107
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1045
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.1066
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1007
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.1387
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1978
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1564
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.1165
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 44,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HDGC-HDGC1257WV_S7P/C3041132",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206211730_HDGC-HDGC1257WV-S-7P_C3041132.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HDGC-HDGC1257WV_S7P/C3041132",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C20617482",
+          "componentModelEn": "GH-7AWB",
+          "componentBrandEn": "DLL",
+          "componentSpecificationEn": "SMD,P=1.25mm,Surface Mount\uff0cRight Angle",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x7P 50V 7 7P Auxiliary Solder Pin Beige GH LCP Phosphor bronze Surface Mount, Right Angle Tin UL94V-0 SMD,P=1.25mm,Surface Mount\uff0cRight Angle Wire To Board Connector ROHS",
+          "stockCount": 1265,
+          "canPresaleNumber": 1264,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1396
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.11
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.0952
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.0842
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.0753
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.0709
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.0811
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.0725
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.0683
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1345
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.0917
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.106
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 82,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "DLL-GH7AWB/C20617482",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401301618_DLL-GH-7AWB_C20617482.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/DLL-GH7AWB/C20617482",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C22472752",
+          "componentModelEn": "GT-A1257WVS-107SBT01",
+          "componentBrandEn": "G-Switch",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x7P 4.13mm 50V 7 7P Beige GH LCP Phosphor bronze Surface Mount,Vertical Tin UL94V-0 SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 1792,
+          "canPresaleNumber": 1792,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1682
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1321
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.1165
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0973
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0887
+            },
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.0835
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.0805
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0855
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.162
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1273
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0938
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.1122
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 68,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "GSwitch-GT_A1257WVS107SBT01/C22472752",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2406271507_G-Switch-GT-A1257WVS-107SBT01_C22472752.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/GSwitch-GT_A1257WVS107SBT01/C22472752",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C2845411",
+          "componentModelEn": "HC-GH-7PLT",
+          "componentBrandEn": "HCTL",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x7P 50V 7 7P Auxiliary Solder Pin GH LCP Phosphor Bronze Surface Mount,Vertical Tin SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1575
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.123
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.1084
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0879
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0796
+            },
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.0748
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.1044
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1185
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1517
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0767
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0847
+            },
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.072
+            }
+          ],
+          "minPurchaseNum": 73,
+          "preMinPurchaseNum": 73,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HCTL-HC_GH7PLT/C2845411",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HCTL-HC_GH7PLT/C2845411",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C5305068",
+          "componentModelEn": "BM07B-GHS-TBT(LF)(SN)",
+          "componentBrandEn": "JST",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 12mm 1A 1x7P 4.05mm 4.32mm 50V 7 7P Auxiliary Solder Pin GH PA9T Phosphor bronze Surface Mount,Vertical Tin UL94V-0 White SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 4069,
+          "canPresaleNumber": 3901,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.6238
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.5052
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.4549
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 0.3915
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.3623
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.346
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.4867
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.349
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 0.3772
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.6009
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.4382
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.3333
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 18,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "JST-BM07B_GHS_TBT_LF_SN/C5305068",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JST-BM07B_GHS_TBT_LF_SN/C5305068",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C378970",
+          "componentModelEn": "BM07B-GHS-TBT(LF)(SN)(N)",
+          "componentBrandEn": "JST",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 12mm 1A 1x7P 4.05mm 4.32mm 50V 7 7P Auxiliary Solder Pin GH PA9T Phosphor bronze Surface Mount,Vertical Tin UL94V-0 White SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 12626,
+          "canPresaleNumber": 12543,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.3027
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2372
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.2093
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1743
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1588
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1493
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2285
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1529
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.2016
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2916
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1439
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1679
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 30,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "JST-BM07B_GHS_TBT_LF_SN_N/C378970",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_JST-BM07B-GHS-TBT-LF-SN-N_C378970.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JST-BM07B_GHS_TBT_LF_SN_N/C378970",
+          "exact_model_match": false
+        }
+      ]
+    },
+    {
+      "query": "BM06B-GHS-TBT(LF)(SN)",
+      "total_search_matches": 12,
+      "matches": [
+        {
+          "componentCode": "C225122",
+          "componentModelEn": "A1257WV-S-6P-LCP",
+          "componentBrandEn": "CJT(Changjiang Connectors)",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-40\u2103~+105\u2103 1 1.25mm 1A 1x6P 50V 6 6P GH LCP Phosphor Bronze Surface Mount,Vertical Tin UL94V-0 SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 233384,
+          "canPresaleNumber": 229703,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1981
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1579
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.1384
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.117
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.1121
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1092
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.1334
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1521
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.108
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1052
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1908
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.1127
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 46,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "225405-A1257WV_S_6PLCP/C225122",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_CJT-Changjiang-Connectors-A1257WV-S-6P-LCP_C225122.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/225405-A1257WV_S_6PLCP/C225122",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C2763661",
+          "componentModelEn": "GH-6PLT",
+          "componentBrandEn": "FG",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x6P 6 6P Beige Brass GH Surface Mount,Vertical Tin SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 6694,
+          "canPresaleNumber": 6461,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.0964
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.086
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.0808
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0736
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0705
+            },
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.0689
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.068
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0709
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.0778
+            },
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.0664
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.0928
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.0828
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 105,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "FG-GH6PLT/C2763661",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406271401_FG-GH-6PLT_C2763661.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/FG-GH6PLT/C2763661",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C3041131",
+          "componentModelEn": "HDGC1257WV-S-6P",
+          "componentBrandEn": "HDGC",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x6P 4.2mm 4.95mm 50V 6 6P Auxiliary Solder Pin GH PA9T Phosphor bronze Surface Mount,Vertical Tin UL94V-0 White SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 1325,
+          "canPresaleNumber": 1250,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1838
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1436
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.1266
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.1017
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.0922
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.0865
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.0888
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.0833
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.1219
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.177
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1384
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.098
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 49,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HDGC-HDGC1257WV_S6P/C3041131",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206211730_HDGC-HDGC1257WV-S-6P_C3041131.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HDGC-HDGC1257WV_S6P/C3041131",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C20617481",
+          "componentModelEn": "GH-6AWB",
+          "componentBrandEn": "DLL",
+          "componentSpecificationEn": "SMD,P=1.25mm,Surface Mount\uff0cRight Angle",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x6P 50V 6 6P Auxiliary Solder Pin Beige GH LCP Phosphor bronze Surface Mount, Right Angle Tin UL94V-0 SMD,P=1.25mm,Surface Mount\uff0cRight Angle Wire To Board Connector ROHS",
+          "stockCount": 945,
+          "canPresaleNumber": 917,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1341
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.106
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.092
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.0814
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.073
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.0688
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": 1999,
+              "productPrice": 0.0784
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 4999,
+              "productPrice": 0.0703
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.0662
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1291
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 999,
+              "productPrice": 0.0886
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1021
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 85,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "DLL-GH6AWB/C20617481",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401301618_DLL-GH-6AWB_C20617481.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/DLL-GH6AWB/C20617481",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C22472751",
+          "componentModelEn": "GT-A1257WVS-106SBT01",
+          "componentBrandEn": "G-Switch",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x6P 4.13mm 50V 6 6P Beige GH LCP Phosphor bronze Surface Mount,Vertical Tin UL94V-0 SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 1934,
+          "canPresaleNumber": 1873,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1552
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1219
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.1076
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0897
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0819
+            },
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.077
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.0742
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0789
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1495
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1174
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0864
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.1036
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 74,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "GSwitch-GT_A1257WVS106SBT01/C22472751",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2406271507_G-Switch-GT-A1257WVS-106SBT01_C22472751.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/GSwitch-GT_A1257WVS106SBT01/C22472751",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C2845410",
+          "componentModelEn": "HC-GH-6PLT",
+          "componentBrandEn": "HCTL",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 1A 1x6P 50V 6 6P Auxiliary Solder Pin GH LCP Phosphor Bronze Surface Mount,Vertical Tin SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1423
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.112
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.0969
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0827
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0736
+            },
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.0691
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 150,
+              "endNumber": 1499,
+              "productPrice": 0.0933
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1371
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1079
+            },
+            {
+              "startNumber": 1500,
+              "endNumber": 2999,
+              "productPrice": 0.0797
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 4499,
+              "productPrice": 0.0709
+            },
+            {
+              "startNumber": 4500,
+              "endNumber": -1,
+              "productPrice": 0.0666
+            }
+          ],
+          "minPurchaseNum": 80,
+          "preMinPurchaseNum": 80,
+          "leastPatchNumber": 5,
+          "lossNumber": 2,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "HCTL-HC_GH6PLT/C2845410",
+          "dataManualUrl": "",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/HCTL-HC_GH6PLT/C2845410",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C189892",
+          "componentModelEn": "BM06B-GHS-TBT(LF)(SN)",
+          "componentBrandEn": "JST",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 10.75mm 1A 1x6P 4.05mm 4.32mm 50V 6 6P Auxiliary Solder Pin GH PA9T Phosphor bronze Surface Mount,Vertical Tin UL94V-0 White SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 2984,
+          "canPresaleNumber": 2440,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.3004
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2341
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.2057
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1703
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1545
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1451
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2894
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2255
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1398
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1489
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1981
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1641
+            }
+          ],
+          "minPurchaseNum": 1,
+          "preMinPurchaseNum": 30,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": "12",
+          "urlSuffix": "JST-BM06B_GHS_TBT_LF_SN/C189892",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_JST-BM06B-GHS-TBT-LF-SN_C189892.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JST-BM06B_GHS_TBT_LF_SN/C189892",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C495534",
+          "componentModelEn": "BM06B-GHS-TBT(LF)(SN)",
+          "componentBrandEn": "JST",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 10.75mm 1A 1x6P 4.05mm 4.32mm 50V 6 6P Auxiliary Solder Pin GH PA9T Phosphor bronze Surface Mount,Vertical Tin UL94V-0 White SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": -94,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.316
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.2533
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.2265
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1929
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.178
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.169
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1714
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.244
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.2182
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.3044
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1628
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1858
+            }
+          ],
+          "minPurchaseNum": 29,
+          "preMinPurchaseNum": 29,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "JST-BM06B_GHS_TBT_LF_SN/C495534",
+          "dataManualUrl": "https://datasheet.lcsc.com/lcsc/2004111131_JST-BM06B-GHS-TBT-LF-SN_C495534.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JST-BM06B_GHS_TBT_LF_SN/C495534",
+          "exact_model_match": true
+        },
+        {
+          "componentCode": "C485353",
+          "componentModelEn": "BM06B-GHS-TBT(LF)(SN)(N)",
+          "componentBrandEn": "JST",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "-25\u2103~+85\u2103 1 1.25mm 10.75mm 1A 1x6P 4.05mm 4.32mm 50V 6 6P Auxiliary Solder Pin GH PA9T Phosphor bronze Surface Mount,Vertical Tin UL94V-0 White SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": -5,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.1743
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.1706
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.1681
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 101,
+              "productPrice": 0.1656
+            },
+            {
+              "startNumber": 102,
+              "endNumber": 103,
+              "productPrice": 0.1656
+            },
+            {
+              "startNumber": 104,
+              "endNumber": -1,
+              "productPrice": 0.1656
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.1619
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.1679
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 101,
+              "productPrice": 0.1595
+            },
+            {
+              "startNumber": 104,
+              "endNumber": -1,
+              "productPrice": 0.1595
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.1643
+            },
+            {
+              "startNumber": 102,
+              "endNumber": 103,
+              "productPrice": 0.1595
+            }
+          ],
+          "minPurchaseNum": 54,
+          "preMinPurchaseNum": 54,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "JST-BM06B_GHS_TBT_LF_SN_N/C485353",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404071726_JST-BM06B-GHS-TBT-LF-SN-N--SMT_C485353.pdf",
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JST-BM06B_GHS_TBT_LF_SN_N/C485353",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C2845126",
+          "componentModelEn": "BM06B-GHS-TBT(LF)(SN)(N)",
+          "componentBrandEn": "JST",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 4,
+              "productPrice": 0.1144
+            },
+            {
+              "startNumber": 5,
+              "endNumber": 1999,
+              "productPrice": 0.1144
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.1144
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.1144
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 5,
+              "endNumber": 1999,
+              "productPrice": 0.1102
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 4,
+              "productPrice": 0.1102
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.1102
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.1102
+            }
+          ],
+          "minPurchaseNum": 79,
+          "preMinPurchaseNum": 79,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "JST-BM06B_GHS_TBT_LF_SN_N/C2845126",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JST-BM06B_GHS_TBT_LF_SN_N/C2845126",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C2879703",
+          "componentModelEn": "BM06B-GHS-TBT(LF)(SN)(N)",
+          "componentBrandEn": "JST",
+          "componentSpecificationEn": "SMD,P=1.25mm",
+          "describe": "SMD,P=1.25mm Wire To Board Connector ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 4,
+              "productPrice": 0.1144
+            },
+            {
+              "startNumber": 5,
+              "endNumber": 1999,
+              "productPrice": 0.1144
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.1144
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.1144
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 5,
+              "endNumber": 1999,
+              "productPrice": 0.1102
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 4,
+              "productPrice": 0.1102
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.1102
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.1102
+            }
+          ],
+          "minPurchaseNum": 79,
+          "preMinPurchaseNum": 79,
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "JST-BM06B_GHS_TBT_LF_SN_N/C2879703",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/JST-BM06B_GHS_TBT_LF_SN_N/C2879703",
+          "exact_model_match": false
+        },
+        {
+          "componentCode": "C9900141395",
+          "componentModelEn": "BM06B-GHS-TBT(LF)(SN)(N)",
+          "componentBrandEn": "JLCPCB Assembly",
+          "componentSpecificationEn": "SMD,P=1.25mm,6P",
+          "describe": "SMD,P=1.25mm,6P New Arrivals ROHS",
+          "stockCount": 0,
+          "canPresaleNumber": 0,
+          "componentLibraryType": "expand",
+          "componentProductType": 0,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0395
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0204
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0381
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0196
+            }
+          ],
+          "minPurchaseNum": 439,
+          "preMinPurchaseNum": 439,
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "allowPostFlag": true,
+          "estimateDate": null,
+          "urlSuffix": "43168413-BM06B_GHS_TBT_LF_SN_N/C9900141395",
+          "dataManualUrl": null,
+          "dataManualOfficialLink": "",
+          "url": "https://jlcpcb.com/partdetail/43168413-BM06B_GHS_TBT_LF_SN_N/C9900141395",
+          "exact_model_match": false
+        }
+      ]
+    }
+  ]
+}

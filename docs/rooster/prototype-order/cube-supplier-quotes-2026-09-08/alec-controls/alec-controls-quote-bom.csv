@@ -1,0 +1,4 @@
+Designator,Quantity,Manufacturer,MPN,Footprint,LCSC Part #
+"SW1,SW2,SW3",3,Omron Electronics,B3F-1060,SW_TH_Tactile_Omron_B3F-106x,C726010
+J1,1,JST,BM07B-GHS-TBT(LF)(SN),JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical,C5305068
+SW4,1,E-Switch,EG1218,EG1218,C273394

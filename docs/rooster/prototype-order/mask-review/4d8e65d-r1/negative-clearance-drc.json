@@ -1,0 +1,4988 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-07T23:05:00",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "alec-main.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.9500 mm",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "ff98e61a-7748-4c3d-8919-637be5c03d36"
+                },
+                {
+                    "description": "Pad 4 [/BTN_VOL_PLUS] of J5 on F.Cu",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 123.95
+                    },
+                    "uuid": "fe0c59bf-8bc0-4734-b6cf-e5c230c673a5"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 121.2,
+                        "y": 114.2
+                    },
+                    "uuid": "a606308b-11d5-4afd-8b0a-930f9f622b90"
+                },
+                {
+                    "description": "Pad 2 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 112.5
+                    },
+                    "uuid": "86ac95c2-0db3-488f-b7d4-ec6dac9ef20b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 140.65,
+                        "y": 76.15
+                    },
+                    "uuid": "7765428c-c2a4-41bf-a747-fab23796249c"
+                },
+                {
+                    "description": "Pad 35 [unconnected-(U3-IO42-Pad35)] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 77.59
+                    },
+                    "uuid": "23b5cbc2-2955-4504-9a4d-385898a99a31"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.9500 mm",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "ff98e61a-7748-4c3d-8919-637be5c03d36"
+                },
+                {
+                    "description": "Pad 6 [/SW_ON] of J5 on F.Cu",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 123.95
+                    },
+                    "uuid": "b18dfcc3-fad9-4d71-942a-ed2b9cdc1b54"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.9899 mm",
+                    "pos": {
+                        "x": 150.65,
+                        "y": 100.05
+                    },
+                    "uuid": "225c6ea0-a545-4d0d-b985-1fa1e2233650"
+                },
+                {
+                    "description": "Pad 1 [/5v] of C16 on F.Cu",
+                    "pos": {
+                        "x": 148.9,
+                        "y": 100.475
+                    },
+                    "uuid": "fb0b474e-0972-4338-8fa0-abae26bd8571"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 92.0
+                    },
+                    "uuid": "01114bd8-898f-41a0-b2ce-a2800fd4f3c8"
+                },
+                {
+                    "description": "Pad 2 [Net-(D1-A)] of R11 on F.Cu",
+                    "pos": {
+                        "x": 115.01,
+                        "y": 92.0
+                    },
+                    "uuid": "1b743dfc-c45f-4b20-a8a9-80d46fb9f5da"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 111.7,
+                        "y": 122.6
+                    },
+                    "uuid": "9efcb611-3ce1-482d-97cc-fddc51faab05"
+                },
+                {
+                    "description": "Pad 5 [GND] of J5 on F.Cu",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "64747ad1-9f25-449b-940a-6f93631e8f63"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 131.449999,
+                        "y": 106.0
+                    },
+                    "uuid": "a7abddd6-23ff-4a9e-92d2-001bbb86368d"
+                },
+                {
+                    "description": "Pad 1 [/GPIO18] of R19 on F.Cu",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 105.51
+                    },
+                    "uuid": "8ab975ab-b1de-4c10-ab7d-1c74e245381e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.1500 mm",
+                    "pos": {
+                        "x": 139.95,
+                        "y": 100.8
+                    },
+                    "uuid": "c7c9614e-2b03-43f4-918c-a389b649449d"
+                },
+                {
+                    "description": "Pad 2 [GND] of C13 on F.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 99.225
+                    },
+                    "uuid": "828eefcb-f02d-44a1-b05e-9032a96e6853"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.65,
+                        "y": 99.2
+                    },
+                    "uuid": "25cd59ec-4a67-4c78-b7c7-b1a3465e2ab6"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R37 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 98.51
+                    },
+                    "uuid": "95abc74e-b57b-4d11-9abb-11b934a579bb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.1500 mm",
+                    "pos": {
+                        "x": 139.95,
+                        "y": 100.8
+                    },
+                    "uuid": "c7c9614e-2b03-43f4-918c-a389b649449d"
+                },
+                {
+                    "description": "Pad 2 [GND] of R9 on F.Cu",
+                    "pos": {
+                        "x": 139.81,
+                        "y": 103.5
+                    },
+                    "uuid": "d4c92a63-5dc4-4db2-a33d-d279d20224b2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 140.65,
+                        "y": 76.15
+                    },
+                    "uuid": "7765428c-c2a4-41bf-a747-fab23796249c"
+                },
+                {
+                    "description": "Pad 36 [/UART_RX] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 76.32
+                    },
+                    "uuid": "1d389328-cb63-4739-9060-9db72fe98e79"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 99.5
+                    },
+                    "uuid": "2c49026c-b710-4ec5-8dff-c50b54536d59"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R38 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 100.51
+                    },
+                    "uuid": "ef23259e-c4cc-4fcc-bce0-13ebac067978"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.7778 mm",
+                    "pos": {
+                        "x": 107.95,
+                        "y": 99.65
+                    },
+                    "uuid": "2421edfd-dcf8-45b5-b682-f7c35c4a7a8c"
+                },
+                {
+                    "description": "Pad 2 [GND] of C2 on F.Cu",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 98.55
+                    },
+                    "uuid": "07ff7110-9a66-4d18-b80e-72638e9c87f0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 109.51,
+                        "y": 106.5
+                    },
+                    "uuid": "ffafa70c-41c4-4d8c-a41f-bd5691c340d5"
+                },
+                {
+                    "description": "Pad 1 [Net-(Q1-G)] of Q1 on F.Cu",
+                    "pos": {
+                        "x": 111.0625,
+                        "y": 107.05
+                    },
+                    "uuid": "03021eb3-91c0-46de-a4db-cabca1812113"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 112.75,
+                        "y": 102.0
+                    },
+                    "uuid": "1698584b-4857-4e86-9f2e-290d773d4805"
+                },
+                {
+                    "description": "Pad 10 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 100.71
+                    },
+                    "uuid": "e28b68b3-6e82-4dcd-8db6-170013cc71f7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 154.1,
+                        "y": 102.0
+                    },
+                    "uuid": "3d72f4ef-87ed-42a2-94dd-cf2da8be7a87"
+                },
+                {
+                    "description": "Pad 3 [Net-(Q2-G)] of Q3 on F.Cu",
+                    "pos": {
+                        "x": 152.9375,
+                        "y": 101.5
+                    },
+                    "uuid": "ff1e9add-ca77-4ba7-8187-5b6b9b8e6d20"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 99.5
+                    },
+                    "uuid": "2c49026c-b710-4ec5-8dff-c50b54536d59"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R37 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 98.51
+                    },
+                    "uuid": "95abc74e-b57b-4d11-9abb-11b934a579bb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [Net-(Q6-G)] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.3,
+                        "y": 92.7
+                    },
+                    "uuid": "8a8c4a62-1a7b-42f9-b474-d2af047dc601"
+                },
+                {
+                    "description": "Pad 1 [Net-(Q7-B)] of Q7 on F.Cu",
+                    "pos": {
+                        "x": 142.0625,
+                        "y": 92.55
+                    },
+                    "uuid": "07b83084-4b2b-4d58-9bb3-06b110087106"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.5657 mm",
+                    "pos": {
+                        "x": 117.3,
+                        "y": 98.65
+                    },
+                    "uuid": "026e8a16-4d84-48c4-9b14-d6fbb19f479b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C5 on F.Cu",
+                    "pos": {
+                        "x": 116.2,
+                        "y": 99.225
+                    },
+                    "uuid": "f8fb6951-bfef-4805-8e9d-8c784fc1373d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO1] on F.Cu, length 0.7778 mm",
+                    "pos": {
+                        "x": 142.3,
+                        "y": 73.05
+                    },
+                    "uuid": "f2c36606-0f7f-4112-b342-8c921b49194a"
+                },
+                {
+                    "description": "Pad 38 [/GPIO2] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 73.78
+                    },
+                    "uuid": "1dbb6404-e2ea-437c-a442-a0b6259e66f7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 1.6971 mm",
+                    "pos": {
+                        "x": 145.95,
+                        "y": 90.0
+                    },
+                    "uuid": "a7f6d01a-f9af-4bdb-a88c-b82d89957e95"
+                },
+                {
+                    "description": "Pad 2 [/GPIO0] of R12 on F.Cu",
+                    "pos": {
+                        "x": 145.51,
+                        "y": 88.0
+                    },
+                    "uuid": "35ad7c1c-1648-4013-8c38-a2158b5f39e5"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.1500 mm",
+                    "pos": {
+                        "x": 139.95,
+                        "y": 100.8
+                    },
+                    "uuid": "c7c9614e-2b03-43f4-918c-a389b649449d"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-FB)] of R8 on F.Cu",
+                    "pos": {
+                        "x": 138.79,
+                        "y": 102.1
+                    },
+                    "uuid": "90ed9a3a-30aa-4331-b9a9-6c1ce49987a3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 109.51,
+                        "y": 106.5
+                    },
+                    "uuid": "ffafa70c-41c4-4d8c-a41f-bd5691c340d5"
+                },
+                {
+                    "description": "Pad 1 [/EN_3V3] of R32 on F.Cu",
+                    "pos": {
+                        "x": 108.49,
+                        "y": 106.5
+                    },
+                    "uuid": "68b44fb2-6cb3-4c1f-93ee-431ee8b46f9b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 2 [/3v3] of J7 on F.Cu",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 121.0
+                    },
+                    "uuid": "14f78c35-9327-41a6-a689-9482d82e41c9"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 70.5
+                    },
+                    "uuid": "f4a3a88c-9ae5-47e4-9361-79c6e1334622"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 161.2,
+                        "y": 99.35
+                    },
+                    "uuid": "331a6646-28d3-4ea0-9c40-527b7dfcb99c"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R38 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 100.51
+                    },
+                    "uuid": "ef23259e-c4cc-4fcc-bce0-13ebac067978"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 131.3,
+                        "y": 102.45
+                    },
+                    "uuid": "251f1df5-9557-498f-a10d-308fcf474d72"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-PS_SYNC)] of R7 on F.Cu",
+                    "pos": {
+                        "x": 132.709999,
+                        "y": 102.7
+                    },
+                    "uuid": "f4f7fe9c-4d0c-429c-87ab-0b2b5c27109b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 0.0125 mm",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 108.95
+                    },
+                    "uuid": "2215dd82-96d3-481b-8409-313c527f0f83"
+                },
+                {
+                    "description": "Pad 2 [GND] of U8 on F.Cu",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 108.0
+                    },
+                    "uuid": "0773cf90-007b-4ea7-96db-690a35420935"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 149.95,
+                        "y": 98.85
+                    },
+                    "uuid": "3e7f5a1a-6480-4c1a-938c-44a1a8ebfead"
+                },
+                {
+                    "description": "Pad 2 [GND] of C16 on F.Cu",
+                    "pos": {
+                        "x": 148.9,
+                        "y": 97.525
+                    },
+                    "uuid": "4b55cd44-6e46-4eaf-9d28-7b757bd8cfb4"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 148.6,
+                        "y": 95.25
+                    },
+                    "uuid": "436bd886-6b37-468e-92c7-a06886ae4d3e"
+                },
+                {
+                    "description": "Pad 2 [/3v3] of Q2 on F.Cu",
+                    "pos": {
+                        "x": 150.0625,
+                        "y": 94.95
+                    },
+                    "uuid": "d2643372-ff5b-41f1-9cad-3fea7b823e88"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 112.75,
+                        "y": 102.0
+                    },
+                    "uuid": "1698584b-4857-4e86-9f2e-290d773d4805"
+                },
+                {
+                    "description": "Pad 1 [Net-(U1-VAUX)] of C4 on F.Cu",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 103.52
+                    },
+                    "uuid": "5fb7f164-f0df-4ab1-9c58-42a9968b65d9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 112.75,
+                        "y": 102.0
+                    },
+                    "uuid": "1698584b-4857-4e86-9f2e-290d773d4805"
+                },
+                {
+                    "description": "Pad 1 [Net-(U1-PS_SYNC)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 112.25,
+                        "y": 102.0
+                    },
+                    "uuid": "2786b90e-9893-40f6-8bbe-1473ce81a268"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 0.5500 mm",
+                    "pos": {
+                        "x": 125.15,
+                        "y": 122.85
+                    },
+                    "uuid": "ba5e299f-0443-46da-b167-985462c84117"
+                },
+                {
+                    "description": "Pad 4 [/UART_RX] of J7 on F.Cu",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 123.0
+                    },
+                    "uuid": "fd62cab8-2f5f-4fac-8f7d-20c64ce6247a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 128.5,
+                        "y": 95.85
+                    },
+                    "uuid": "270e67a4-3644-4ee8-9acd-95a9feffdbc5"
+                },
+                {
+                    "description": "Pad 2 [GND] of C9 on F.Cu",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 94.55
+                    },
+                    "uuid": "de4a4c93-0c2d-414e-a62b-f246fdbba86b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 111.0
+                    },
+                    "uuid": "2926d180-3a94-478e-afb5-2590b3681ed8"
+                },
+                {
+                    "description": "Pad 2 [GND] of R39 on F.Cu",
+                    "pos": {
+                        "x": 147.01,
+                        "y": 111.0
+                    },
+                    "uuid": "074e8d60-6819-4bb1-9a6a-fcd006263acf"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO1] on F.Cu, length 0.7778 mm",
+                    "pos": {
+                        "x": 142.3,
+                        "y": 73.05
+                    },
+                    "uuid": "f2c36606-0f7f-4112-b342-8c921b49194a"
+                },
+                {
+                    "description": "Pad 40 [GND] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 71.24
+                    },
+                    "uuid": "20391ab0-5bbf-4e07-a54a-6eb25351f6e8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 5.3000 mm",
+                    "pos": {
+                        "x": 137.95,
+                        "y": 99.1
+                    },
+                    "uuid": "2b51ff68-29c7-4057-98a1-5c775a553c75"
+                },
+                {
+                    "description": "Pad 7 [/5v] of U2 on F.Cu",
+                    "pos": {
+                        "x": 137.4,
+                        "y": 100.6
+                    },
+                    "uuid": "b22069fd-1d8d-469d-a0a3-fd9b8b4ff4c8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 118.2,
+                        "y": 103.1
+                    },
+                    "uuid": "02a5de21-ee69-46b9-9c60-43d902b187ee"
+                },
+                {
+                    "description": "Pad 2 [GND] of R5 on F.Cu",
+                    "pos": {
+                        "x": 116.81,
+                        "y": 103.5
+                    },
+                    "uuid": "8d78b3c6-db87-439c-afea-01ab79814cc0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 2.2627 mm",
+                    "pos": {
+                        "x": 121.7,
+                        "y": 93.7
+                    },
+                    "uuid": "28069ff5-4967-4d6c-9fca-b97b814844fe"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q6-G)] of R45 on F.Cu",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 93.49
+                    },
+                    "uuid": "704005ea-604f-45b2-83d4-b08313465f8a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 2.2627 mm",
+                    "pos": {
+                        "x": 121.7,
+                        "y": 93.7
+                    },
+                    "uuid": "28069ff5-4967-4d6c-9fca-b97b814844fe"
+                },
+                {
+                    "description": "Pad 2 [Net-(D1-A)] of D1 on F.Cu",
+                    "pos": {
+                        "x": 118.7875,
+                        "y": 92.0
+                    },
+                    "uuid": "219d930e-588b-4595-9aab-5cd92f48b8bd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 1 [/GPIO14] of U6 on F.Cu",
+                    "pos": {
+                        "x": 151.5625,
+                        "y": 105.25
+                    },
+                    "uuid": "5e664e87-b950-439c-8166-fa34df423292"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 161.2,
+                        "y": 99.35
+                    },
+                    "uuid": "331a6646-28d3-4ea0-9c40-527b7dfcb99c"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R37 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 98.51
+                    },
+                    "uuid": "95abc74e-b57b-4d11-9abb-11b934a579bb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/USB_MCU_P] on F.Cu, length 2.7400 mm",
+                    "pos": {
+                        "x": 121.51,
+                        "y": 87.75
+                    },
+                    "uuid": "d3ad9e11-b013-42f2-b99c-7ac8e9497fbc"
+                },
+                {
+                    "description": "Pad 2 [/D+] of R35 on F.Cu",
+                    "pos": {
+                        "x": 120.49,
+                        "y": 87.75
+                    },
+                    "uuid": "3531427e-89b2-4321-b619-effb9eec11bf"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 5.3000 mm",
+                    "pos": {
+                        "x": 137.95,
+                        "y": 99.1
+                    },
+                    "uuid": "2b51ff68-29c7-4057-98a1-5c775a553c75"
+                },
+                {
+                    "description": "Pad 8 [/5v] of U2 on F.Cu",
+                    "pos": {
+                        "x": 137.4,
+                        "y": 100.1
+                    },
+                    "uuid": "ab3485f3-97c2-44c7-8a4f-4fcd3bf18e8d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.1,
+                        "y": 99.4
+                    },
+                    "uuid": "7997d03e-a9c8-4c30-804a-6844103a259a"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R38 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 100.51
+                    },
+                    "uuid": "ef23259e-c4cc-4fcc-bce0-13ebac067978"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 4 [/AMP_SD] of U6 on F.Cu",
+                    "pos": {
+                        "x": 151.5625,
+                        "y": 106.75
+                    },
+                    "uuid": "f3acb25f-9c14-4e86-befa-c8f03a8dc7d6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.8485 mm",
+                    "pos": {
+                        "x": 107.45,
+                        "y": 107.8
+                    },
+                    "uuid": "2897d7fd-9bd0-4466-9f3a-a8a5d3ee4aae"
+                },
+                {
+                    "description": "Pad 2 [GND] of R1 on F.Cu",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 108.49
+                    },
+                    "uuid": "a413072a-a1f6-412b-9c63-2bc72b22a4da"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/USB_MCU_P] on F.Cu, length 2.7400 mm",
+                    "pos": {
+                        "x": 121.51,
+                        "y": 87.75
+                    },
+                    "uuid": "d3ad9e11-b013-42f2-b99c-7ac8e9497fbc"
+                },
+                {
+                    "description": "Pad 13 [/USB_MCU_N] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 86.48
+                    },
+                    "uuid": "60a4e0bd-717b-4aac-b089-56208141c12a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.9500 mm",
+                    "pos": {
+                        "x": 153.95,
+                        "y": 100.9
+                    },
+                    "uuid": "4ae504f0-9ac2-4557-bbfb-acc5bb478bc0"
+                },
+                {
+                    "description": "Pad 3 [Net-(Q2-G)] of Q3 on F.Cu",
+                    "pos": {
+                        "x": 152.9375,
+                        "y": 101.5
+                    },
+                    "uuid": "ff1e9add-ca77-4ba7-8187-5b6b9b8e6d20"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/USB_MCU_P] on F.Cu, length 2.7400 mm",
+                    "pos": {
+                        "x": 121.51,
+                        "y": 87.75
+                    },
+                    "uuid": "d3ad9e11-b013-42f2-b99c-7ac8e9497fbc"
+                },
+                {
+                    "description": "Pad 1 [/USB_MCU_N] of R34 on F.Cu",
+                    "pos": {
+                        "x": 121.51,
+                        "y": 86.5
+                    },
+                    "uuid": "601f5888-a1af-441c-91d8-017d7e120719"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.9192 mm",
+                    "pos": {
+                        "x": 152.85,
+                        "y": 116.35
+                    },
+                    "uuid": "a835ce03-668b-4a0c-b463-c9a14db658bf"
+                },
+                {
+                    "description": "Pad 1 [/5v] of C26 on F.Cu",
+                    "pos": {
+                        "x": 151.525,
+                        "y": 115.0
+                    },
+                    "uuid": "60d566d7-13cf-4ec6-8c90-048204f3e663"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.9192 mm",
+                    "pos": {
+                        "x": 152.85,
+                        "y": 116.35
+                    },
+                    "uuid": "a835ce03-668b-4a0c-b463-c9a14db658bf"
+                },
+                {
+                    "description": "Pad 2 [/GPIO10] of R27 on F.Cu",
+                    "pos": {
+                        "x": 154.51,
+                        "y": 117.0
+                    },
+                    "uuid": "b4fdac5d-bb4b-437a-bade-e75f36607a05"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 0.6000 mm",
+                    "pos": {
+                        "x": 140.25,
+                        "y": 99.85
+                    },
+                    "uuid": "cc9fcd19-c520-489a-b2b2-7b46054ab82f"
+                },
+                {
+                    "description": "Pad 2 [GND] of C13 on F.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 99.225
+                    },
+                    "uuid": "828eefcb-f02d-44a1-b05e-9032a96e6853"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 112.75,
+                        "y": 102.0
+                    },
+                    "uuid": "1698584b-4857-4e86-9f2e-290d773d4805"
+                },
+                {
+                    "description": "Pad 3 [Net-(U1-VAUX)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 102.0
+                    },
+                    "uuid": "49dfe542-ea12-445e-9a5d-91647e4342a0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.8485 mm",
+                    "pos": {
+                        "x": 107.45,
+                        "y": 107.8
+                    },
+                    "uuid": "2897d7fd-9bd0-4466-9f3a-a8a5d3ee4aae"
+                },
+                {
+                    "description": "Pad 2 [/SW_ON] of R31 on F.Cu",
+                    "pos": {
+                        "x": 107.51,
+                        "y": 106.5
+                    },
+                    "uuid": "4a318125-86c8-4d31-b6a2-8236c7533ce6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.9192 mm",
+                    "pos": {
+                        "x": 152.85,
+                        "y": 116.35
+                    },
+                    "uuid": "a835ce03-668b-4a0c-b463-c9a14db658bf"
+                },
+                {
+                    "description": "Pad 2 [GND] of C26 on F.Cu",
+                    "pos": {
+                        "x": 154.475,
+                        "y": 115.0
+                    },
+                    "uuid": "0ff5da91-c8a6-480e-82c0-699ba3b44fe8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.1,
+                        "y": 99.4
+                    },
+                    "uuid": "7997d03e-a9c8-4c30-804a-6844103a259a"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R37 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 98.51
+                    },
+                    "uuid": "95abc74e-b57b-4d11-9abb-11b934a579bb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.8485 mm",
+                    "pos": {
+                        "x": 107.45,
+                        "y": 107.8
+                    },
+                    "uuid": "2897d7fd-9bd0-4466-9f3a-a8a5d3ee4aae"
+                },
+                {
+                    "description": "Pad 1 [Net-(Q1-G)] of R1 on F.Cu",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 109.51
+                    },
+                    "uuid": "dce50299-9e94-4744-9a3a-f3533d0763c8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 5 [unconnected-(U6-NC-Pad5)] of U6 on F.Cu",
+                    "pos": {
+                        "x": 152.25,
+                        "y": 107.4375
+                    },
+                    "uuid": "2804a338-9bc5-4c17-8e1a-0c62151c0233"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.3536 mm",
+                    "pos": {
+                        "x": 112.05,
+                        "y": 123.1
+                    },
+                    "uuid": "bce54b57-7632-4bbc-a4a9-a100c61d1e2c"
+                },
+                {
+                    "description": "Pad 5 [GND] of J5 on F.Cu",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "64747ad1-9f25-449b-940a-6f93631e8f63"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 6 [unconnected-(U6-NC-Pad6)] of U6 on F.Cu",
+                    "pos": {
+                        "x": 152.75,
+                        "y": 107.4375
+                    },
+                    "uuid": "109ae2d2-16a0-4062-bd7c-74517b169c82"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 112.75,
+                        "y": 102.0
+                    },
+                    "uuid": "1698584b-4857-4e86-9f2e-290d773d4805"
+                },
+                {
+                    "description": "Pad 15 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 111.6,
+                        "y": 101.6
+                    },
+                    "uuid": "e5a79458-fcd6-417d-9e90-45e17376b37c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.4950 mm",
+                    "pos": {
+                        "x": 152.15,
+                        "y": 100.55
+                    },
+                    "uuid": "4cd70dbf-def4-4755-af2a-80b828df7ab4"
+                },
+                {
+                    "description": "Pad 3 [Net-(Q2-G)] of Q3 on F.Cu",
+                    "pos": {
+                        "x": 152.9375,
+                        "y": 101.5
+                    },
+                    "uuid": "ff1e9add-ca77-4ba7-8187-5b6b9b8e6d20"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 112.75,
+                        "y": 102.0
+                    },
+                    "uuid": "1698584b-4857-4e86-9f2e-290d773d4805"
+                },
+                {
+                    "description": "Pad 4 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 113.75,
+                        "y": 102.0
+                    },
+                    "uuid": "49b62d08-d932-4ac0-87ef-ddd6183ac688"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 140.65,
+                        "y": 79.85
+                    },
+                    "uuid": "cc049388-8601-4f70-ac23-290a51e34e04"
+                },
+                {
+                    "description": "Pad 33 [/GPIO40] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 80.13
+                    },
+                    "uuid": "a67cb1f1-9711-446e-847f-d65b1620f5de"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 3 [/UART_TX] of J7 on F.Cu",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 123.0
+                    },
+                    "uuid": "8f5f01db-cc00-419d-b5fb-af6190dd084d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 70.5
+                    },
+                    "uuid": "f4a3a88c-9ae5-47e4-9361-79c6e1334622"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.0250 mm",
+                    "pos": {
+                        "x": 131.424999,
+                        "y": 99.4
+                    },
+                    "uuid": "29008947-6965-40f9-9898-c9500e4a46d7"
+                },
+                {
+                    "description": "Pad 2 [GND] of C11 on F.Cu",
+                    "pos": {
+                        "x": 132.8,
+                        "y": 99.225
+                    },
+                    "uuid": "c20ddf70-7a12-4c83-b6b4-0db116c1ba74"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 102.5
+                    },
+                    "uuid": "779a0cd7-db4f-4a0c-9983-ac6bd8fadc40"
+                },
+                {
+                    "description": "Pad 2 [GND] of R23 on F.Cu",
+                    "pos": {
+                        "x": 155.51,
+                        "y": 102.5
+                    },
+                    "uuid": "cc0ff3fb-4a58-4f46-8b7b-bbdd611d2d36"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO1] on F.Cu, length 0.5657 mm",
+                    "pos": {
+                        "x": 152.2,
+                        "y": 76.8
+                    },
+                    "uuid": "fcf18134-d72f-4be3-90cb-bf9dab4bef59"
+                },
+                {
+                    "description": "Pad 1 [unconnected-(U5-CLKOUT-Pad1)] of U5 on F.Cu",
+                    "pos": {
+                        "x": 153.35,
+                        "y": 76.65
+                    },
+                    "uuid": "da8a39ec-1692-4dad-a4f1-6019a47e29fa"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.0250 mm",
+                    "pos": {
+                        "x": 131.424999,
+                        "y": 99.4
+                    },
+                    "uuid": "29008947-6965-40f9-9898-c9500e4a46d7"
+                },
+                {
+                    "description": "Pad 2 [GND] of C10 on F.Cu",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 98.55
+                    },
+                    "uuid": "0d011b18-f042-40e5-9081-b094416f8e14"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 140.65,
+                        "y": 79.85
+                    },
+                    "uuid": "cc049388-8601-4f70-ac23-290a51e34e04"
+                },
+                {
+                    "description": "Pad 34 [/GPIO41] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 78.86
+                    },
+                    "uuid": "02c9f710-7524-4464-9c47-3db6480a9de2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 108.45,
+                        "y": 99.35
+                    },
+                    "uuid": "2918f3a7-5c50-4ac2-94b7-d7e988437d21"
+                },
+                {
+                    "description": "Pad 2 [GND] of C3 on F.Cu",
+                    "pos": {
+                        "x": 109.8,
+                        "y": 99.225
+                    },
+                    "uuid": "f9807618-d5fa-4113-a435-aa6f6d8b1c7c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 140.65,
+                        "y": 79.85
+                    },
+                    "uuid": "cc049388-8601-4f70-ac23-290a51e34e04"
+                },
+                {
+                    "description": "Pad 35 [unconnected-(U3-IO42-Pad35)] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 77.59
+                    },
+                    "uuid": "23b5cbc2-2955-4504-9a4d-385898a99a31"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO1] on F.Cu, length 0.5657 mm",
+                    "pos": {
+                        "x": 152.2,
+                        "y": 76.8
+                    },
+                    "uuid": "fcf18134-d72f-4be3-90cb-bf9dab4bef59"
+                },
+                {
+                    "description": "Pad 3 [/GPIO9] of U5 on F.Cu",
+                    "pos": {
+                        "x": 153.35,
+                        "y": 78.45
+                    },
+                    "uuid": "922e4e29-4c44-4447-9fd3-b1baa7b80987"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 140.65,
+                        "y": 79.85
+                    },
+                    "uuid": "cc049388-8601-4f70-ac23-290a51e34e04"
+                },
+                {
+                    "description": "Pad 36 [/UART_RX] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 76.32
+                    },
+                    "uuid": "1d389328-cb63-4739-9060-9db72fe98e79"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 103.65
+                    },
+                    "uuid": "31ce8904-adb8-4c62-9922-93fe9bbd7129"
+                },
+                {
+                    "description": "Pad 1 [Net-(U1-VAUX)] of C4 on F.Cu",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 103.52
+                    },
+                    "uuid": "5fb7f164-f0df-4ab1-9c58-42a9968b65d9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 108.45,
+                        "y": 99.35
+                    },
+                    "uuid": "2918f3a7-5c50-4ac2-94b7-d7e988437d21"
+                },
+                {
+                    "description": "Pad 2 [GND] of C2 on F.Cu",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 98.55
+                    },
+                    "uuid": "07ff7110-9a66-4d18-b80e-72638e9c87f0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.75
+                    },
+                    "uuid": "aea19a04-aba6-4301-977a-0853f1299a03"
+                },
+                {
+                    "description": "Pad 5 [/GPIO8] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 98.25
+                    },
+                    "uuid": "7d5db5d2-b2ef-4fb7-bf35-1ee1563a24cc"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/D+] on F.Cu, length 1.3900 mm",
+                    "pos": {
+                        "x": 119.1,
+                        "y": 87.75
+                    },
+                    "uuid": "4431db9b-de3b-4c65-b2f4-a4e2ff4a5b97"
+                },
+                {
+                    "description": "Pad 1 [/USB_MCU_P] of R35 on F.Cu",
+                    "pos": {
+                        "x": 121.51,
+                        "y": 87.75
+                    },
+                    "uuid": "267b33ff-d098-4e32-acd0-7583bce5887a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 7 [/5v] of U6 on F.Cu",
+                    "pos": {
+                        "x": 153.25,
+                        "y": 107.4375
+                    },
+                    "uuid": "3d04822d-8e10-4eed-bddb-a3253da6b51e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 4 [/UART_RX] of J7 on F.Cu",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 123.0
+                    },
+                    "uuid": "fd62cab8-2f5f-4fac-8f7d-20c64ce6247a"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 70.5
+                    },
+                    "uuid": "f4a3a88c-9ae5-47e4-9361-79c6e1334622"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 8 [/5v] of U6 on F.Cu",
+                    "pos": {
+                        "x": 153.75,
+                        "y": 107.4375
+                    },
+                    "uuid": "4606c99a-fa38-4b12-a8e3-d8ab6b6f96b3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.75
+                    },
+                    "uuid": "aea19a04-aba6-4301-977a-0853f1299a03"
+                },
+                {
+                    "description": "Pad 7 [/GPIO11] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.25
+                    },
+                    "uuid": "6d01b52b-75d4-4c52-ba3e-39acf6fbe31a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 82.99
+                    },
+                    "uuid": "040342bb-66ed-46b2-9ac0-6e1998fe2b50"
+                },
+                {
+                    "description": "Pad 1 [/GPIO8] of R17 on F.Cu",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 84.01
+                    },
+                    "uuid": "6efd556b-1dcb-4a46-a04e-6c08c9008927"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 9 [/speaker +] of U6 on F.Cu",
+                    "pos": {
+                        "x": 154.4375,
+                        "y": 106.75
+                    },
+                    "uuid": "854bb95d-67cc-4856-af43-c4444c52fd22"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 140.4,
+                        "y": 99.7
+                    },
+                    "uuid": "d453d126-8076-4ba8-9fdf-421acb6159c7"
+                },
+                {
+                    "description": "Pad 2 [GND] of C13 on F.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 99.225
+                    },
+                    "uuid": "828eefcb-f02d-44a1-b05e-9032a96e6853"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 112.05,
+                        "y": 123.05
+                    },
+                    "uuid": "c5f2911f-b0f0-4b02-b2a0-977da83f9fff"
+                },
+                {
+                    "description": "Pad 5 [GND] of J5 on F.Cu",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "64747ad1-9f25-449b-940a-6f93631e8f63"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 5.3000 mm",
+                    "pos": {
+                        "x": 137.95,
+                        "y": 99.1
+                    },
+                    "uuid": "2b51ff68-29c7-4057-98a1-5c775a553c75"
+                },
+                {
+                    "description": "Pad 2 [GND] of C13 on F.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 99.225
+                    },
+                    "uuid": "828eefcb-f02d-44a1-b05e-9032a96e6853"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 10 [/speaker -] of U6 on F.Cu",
+                    "pos": {
+                        "x": 154.4375,
+                        "y": 106.25
+                    },
+                    "uuid": "225a2160-d01d-4611-a071-3c3363dcf199"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 12 [unconnected-(U6-NC-Pad12)] of U6 on F.Cu",
+                    "pos": {
+                        "x": 154.4375,
+                        "y": 105.25
+                    },
+                    "uuid": "e79bddd6-ee57-4b29-8fb5-6d77b0529031"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 13 [unconnected-(U6-NC-Pad13)] of U6 on F.Cu",
+                    "pos": {
+                        "x": 153.75,
+                        "y": 104.5625
+                    },
+                    "uuid": "eb56a2b7-4b79-4447-94ee-3f161f048cfd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 14 [/GPIO48] of U6 on F.Cu",
+                    "pos": {
+                        "x": 153.25,
+                        "y": 104.5625
+                    },
+                    "uuid": "d759c647-a38d-4d5b-8109-5efa3af1ed41"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 141.0,
+                        "y": 102.85
+                    },
+                    "uuid": "daa3478d-7e3c-4cd4-adfc-6c986e517514"
+                },
+                {
+                    "description": "Pad 2 [GND] of R9 on F.Cu",
+                    "pos": {
+                        "x": 139.81,
+                        "y": 103.5
+                    },
+                    "uuid": "d4c92a63-5dc4-4db2-a33d-d279d20224b2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "00f210f7-9f43-45f4-a9f8-64823cc41497"
+                },
+                {
+                    "description": "Pad 16 [/GPIO47] of U6 on F.Cu",
+                    "pos": {
+                        "x": 152.25,
+                        "y": 104.5625
+                    },
+                    "uuid": "2765bb3d-650f-4ca3-8e51-adf42ac8dec6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.4243 mm",
+                    "pos": {
+                        "x": 123.9,
+                        "y": 94.9
+                    },
+                    "uuid": "2b5dddb8-a303-4833-a1d8-06db8242962d"
+                },
+                {
+                    "description": "Pad 1 [Net-(Q6-G)] of Q6 on F.Cu",
+                    "pos": {
+                        "x": 124.5625,
+                        "y": 93.05
+                    },
+                    "uuid": "695b0091-06eb-40a6-870d-e69b3fac5a02"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 145.45,
+                        "y": 106.95
+                    },
+                    "uuid": "a8a4ad3b-31d6-45b3-b1e9-e62a2f27e91e"
+                },
+                {
+                    "description": "Pad 2 [GND] of U8 on F.Cu",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 108.0
+                    },
+                    "uuid": "0773cf90-007b-4ea7-96db-690a35420935"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/D+] on F.Cu, length 1.3900 mm",
+                    "pos": {
+                        "x": 119.1,
+                        "y": 87.75
+                    },
+                    "uuid": "4431db9b-de3b-4c65-b2f4-a4e2ff4a5b97"
+                },
+                {
+                    "description": "Pad 2 [/D-] of R34 on F.Cu",
+                    "pos": {
+                        "x": 120.49,
+                        "y": 86.5
+                    },
+                    "uuid": "a2683701-4e24-44b8-abbc-57c39dd4e3b7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.1500 mm",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 117.8
+                    },
+                    "uuid": "cc7cc156-956d-4458-b63f-7fc9c656f5a4"
+                },
+                {
+                    "description": "Pad 1 [/3v3] of R24 on F.Cu",
+                    "pos": {
+                        "x": 108.49,
+                        "y": 117.0
+                    },
+                    "uuid": "72253c38-a6cd-423f-a706-8de3521fe17b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 119.05,
+                        "y": 80.15
+                    },
+                    "uuid": "0be75aee-7967-45f2-9c67-27768c60d31c"
+                },
+                {
+                    "description": "Pad 1 [Net-(Q5-B)] of Q5 on F.Cu",
+                    "pos": {
+                        "x": 119.0625,
+                        "y": 79.05
+                    },
+                    "uuid": "b75f65f1-5d5e-4faa-a1c6-4678b8bcb7b6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.75
+                    },
+                    "uuid": "aea19a04-aba6-4301-977a-0853f1299a03"
+                },
+                {
+                    "description": "Pad 8 [/3v3] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 96.75
+                    },
+                    "uuid": "95dc6ab8-e3e0-4e28-b12d-a629f6295478"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 94.5
+                    },
+                    "uuid": "97a43bb0-94dd-425e-a921-e399c5980b03"
+                },
+                {
+                    "description": "Pad 2 [/GPIO41] of R22 on F.Cu",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 93.49
+                    },
+                    "uuid": "b4cfa60e-93cb-4f81-81a9-31eaeefe40c6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 119.05,
+                        "y": 80.15
+                    },
+                    "uuid": "0be75aee-7967-45f2-9c67-27768c60d31c"
+                },
+                {
+                    "description": "Pad 3 [/GPIO7] of Q5 on F.Cu",
+                    "pos": {
+                        "x": 120.9375,
+                        "y": 80.0
+                    },
+                    "uuid": "7210c476-9a69-4264-9f10-f0463a1d9bb9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 99.2
+                    },
+                    "uuid": "c1582eef-7daa-4ba5-8635-62b1cb25b82e"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R37 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 98.51
+                    },
+                    "uuid": "95abc74e-b57b-4d11-9abb-11b934a579bb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 140.45,
+                        "y": 99.5
+                    },
+                    "uuid": "dba7e36b-9912-4c15-a61d-5f80c3ae5587"
+                },
+                {
+                    "description": "Pad 2 [GND] of C13 on F.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 99.225
+                    },
+                    "uuid": "828eefcb-f02d-44a1-b05e-9032a96e6853"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 150.35,
+                        "y": 78.45
+                    },
+                    "uuid": "0583fa05-c4ce-4aa0-933f-c1bfe0ef09a5"
+                },
+                {
+                    "description": "Pad 1 [/GPIO1] of R18 on F.Cu",
+                    "pos": {
+                        "x": 150.3,
+                        "y": 79.51
+                    },
+                    "uuid": "2fe42296-2a7e-434b-8a13-3befdb71b45d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 161.15,
+                        "y": 99.4
+                    },
+                    "uuid": "c6ce4a7e-e94a-4eb4-9178-9cdd57a2919e"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R38 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 100.51
+                    },
+                    "uuid": "ef23259e-c4cc-4fcc-bce0-13ebac067978"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 112.3,
+                        "y": 123.35
+                    },
+                    "uuid": "da46bcb1-574b-4239-9e1c-667d3b432e04"
+                },
+                {
+                    "description": "Pad 5 [GND] of J5 on F.Cu",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "64747ad1-9f25-449b-940a-6f93631e8f63"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 148.6,
+                        "y": 95.3
+                    },
+                    "uuid": "a0a24ebe-6882-4c38-9c70-1387578ea87b"
+                },
+                {
+                    "description": "Pad 2 [/3v3] of Q2 on F.Cu",
+                    "pos": {
+                        "x": 150.0625,
+                        "y": 94.95
+                    },
+                    "uuid": "d2643372-ff5b-41f1-9cad-3fea7b823e88"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 161.15,
+                        "y": 99.4
+                    },
+                    "uuid": "c6ce4a7e-e94a-4eb4-9178-9cdd57a2919e"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R37 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 98.51
+                    },
+                    "uuid": "95abc74e-b57b-4d11-9abb-11b934a579bb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/GPIO1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 152.2,
+                        "y": 76.8
+                    },
+                    "uuid": "36df2f90-efbd-4977-865a-7463a64b1438"
+                },
+                {
+                    "description": "Pad 1 [unconnected-(U5-CLKOUT-Pad1)] of U5 on F.Cu",
+                    "pos": {
+                        "x": 153.35,
+                        "y": 76.65
+                    },
+                    "uuid": "da8a39ec-1692-4dad-a4f1-6019a47e29fa"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/D+] on F.Cu, length 1.5556 mm",
+                    "pos": {
+                        "x": 114.65,
+                        "y": 88.95
+                    },
+                    "uuid": "b1b8c717-5b62-4550-88e0-6e259685b0de"
+                },
+                {
+                    "description": "Pad 5 [/USB_VBUS] of U4 on F.Cu",
+                    "pos": {
+                        "x": 113.4375,
+                        "y": 88.0
+                    },
+                    "uuid": "2a203e5f-d3d1-44a7-b064-87af804dbf6b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 140.7,
+                        "y": 76.1
+                    },
+                    "uuid": "e364e9f5-cdd7-4fc8-9042-ecb089916832"
+                },
+                {
+                    "description": "Pad 36 [/UART_RX] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 76.32
+                    },
+                    "uuid": "1d389328-cb63-4739-9060-9db72fe98e79"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 154.65,
+                        "y": 75.85
+                    },
+                    "uuid": "0d73a311-1ab8-4957-b940-63e0beef66d8"
+                },
+                {
+                    "description": "Pad 1 [unconnected-(U5-CLKOUT-Pad1)] of U5 on F.Cu",
+                    "pos": {
+                        "x": 153.35,
+                        "y": 76.65
+                    },
+                    "uuid": "da8a39ec-1692-4dad-a4f1-6019a47e29fa"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/GPIO1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 151.45,
+                        "y": 78.5
+                    },
+                    "uuid": "616770ee-caf2-4511-8a75-ca8e55f8b37a"
+                },
+                {
+                    "description": "Pad 2 [/3v3] of R18 on F.Cu",
+                    "pos": {
+                        "x": 150.3,
+                        "y": 78.49
+                    },
+                    "uuid": "3813c5a5-ae9f-400f-ad06-2bc25214c9ef"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 111.7,
+                        "y": 122.65
+                    },
+                    "uuid": "df952f3b-ab00-491c-abf2-12f4c5a1951d"
+                },
+                {
+                    "description": "Pad 5 [GND] of J5 on F.Cu",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "64747ad1-9f25-449b-940a-6f93631e8f63"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/D+] on F.Cu, length 1.2125 mm",
+                    "pos": {
+                        "x": 113.4375,
+                        "y": 88.95
+                    },
+                    "uuid": "ff3ac91a-00b8-4fb1-a137-09e7569c643f"
+                },
+                {
+                    "description": "Pad 5 [/USB_VBUS] of U4 on F.Cu",
+                    "pos": {
+                        "x": 113.4375,
+                        "y": 88.0
+                    },
+                    "uuid": "2a203e5f-d3d1-44a7-b064-87af804dbf6b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 112.3,
+                        "y": 123.4
+                    },
+                    "uuid": "e679ecf9-8922-4510-a533-60cbc518502a"
+                },
+                {
+                    "description": "Pad 5 [GND] of J5 on F.Cu",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "64747ad1-9f25-449b-940a-6f93631e8f63"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 71.8
+                    },
+                    "uuid": "05dedf82-e4cf-4628-b2a3-ef04e2ca59df"
+                },
+                {
+                    "description": "Pad 2 [GND] of C17 on F.Cu",
+                    "pos": {
+                        "x": 119.95,
+                        "y": 73.0
+                    },
+                    "uuid": "c6db772b-e547-49e2-b847-ad7f38acadb3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 112.3,
+                        "y": 123.4
+                    },
+                    "uuid": "e679ecf9-8922-4510-a533-60cbc518502a"
+                },
+                {
+                    "description": "Pad 7 [/EN_3V3] of J5 on F.Cu",
+                    "pos": {
+                        "x": 113.75,
+                        "y": 123.95
+                    },
+                    "uuid": "38628311-3c06-4d20-bfb3-c795896aa5a2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.55,
+                        "y": 103.5
+                    },
+                    "uuid": "0ecc2745-c978-47b3-bac7-016d5ebbba68"
+                },
+                {
+                    "description": "Pad 1 [/3v3] of R4 on F.Cu",
+                    "pos": {
+                        "x": 116.81,
+                        "y": 102.1
+                    },
+                    "uuid": "17cdda7c-5540-4903-ab8a-16910c339c0b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 71.8
+                    },
+                    "uuid": "05dedf82-e4cf-4628-b2a3-ef04e2ca59df"
+                },
+                {
+                    "description": "Pad 2 [GND] of C18 on F.Cu",
+                    "pos": {
+                        "x": 122.48,
+                        "y": 71.8
+                    },
+                    "uuid": "670c97ab-7f88-4f97-8217-5b5c1440c61e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/3v3] of R42 on F.Cu",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 77.51
+                    },
+                    "uuid": "a1592d90-6245-40fe-b5bd-107cb451ba44"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 70.5
+                    },
+                    "uuid": "f4a3a88c-9ae5-47e4-9361-79c6e1334622"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 99.49
+                    },
+                    "uuid": "c7a6c7e0-a405-4485-94af-c46893570b81"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R38 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 100.51
+                    },
+                    "uuid": "ef23259e-c4cc-4fcc-bce0-13ebac067978"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 112.45,
+                        "y": 123.9
+                    },
+                    "uuid": "ec401673-ad4e-4e2e-bf1f-8e1ece931fe1"
+                },
+                {
+                    "description": "Pad 5 [GND] of J5 on F.Cu",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 123.95
+                    },
+                    "uuid": "64747ad1-9f25-449b-940a-6f93631e8f63"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.7774 mm",
+                    "pos": {
+                        "x": 153.25,
+                        "y": 107.4375
+                    },
+                    "uuid": "e2ebe62a-4714-44ec-bd74-6df8cdd3b005"
+                },
+                {
+                    "description": "Pad 5 [unconnected-(U6-NC-Pad5)] of U6 on F.Cu",
+                    "pos": {
+                        "x": 152.25,
+                        "y": 107.4375
+                    },
+                    "uuid": "2804a338-9bc5-4c17-8e1a-0c62151c0233"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 99.49
+                    },
+                    "uuid": "c7a6c7e0-a405-4485-94af-c46893570b81"
+                },
+                {
+                    "description": "Pad 1 [/OLED_3V3] of R37 on F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 98.51
+                    },
+                    "uuid": "95abc74e-b57b-4d11-9abb-11b934a579bb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.4243 mm",
+                    "pos": {
+                        "x": 123.9,
+                        "y": 94.9
+                    },
+                    "uuid": "2b5dddb8-a303-4833-a1d8-06db8242962d"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q6-G)] of R45 on F.Cu",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 93.49
+                    },
+                    "uuid": "704005ea-604f-45b2-83d4-b08313465f8a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 103.65
+                    },
+                    "uuid": "31ce8904-adb8-4c62-9922-93fe9bbd7129"
+                },
+                {
+                    "description": "Pad 2 [GND] of C4 on F.Cu",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 104.48
+                    },
+                    "uuid": "89535322-f85e-4573-8e9e-f7088c489f5d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 112.45,
+                        "y": 123.9
+                    },
+                    "uuid": "ec401673-ad4e-4e2e-bf1f-8e1ece931fe1"
+                },
+                {
+                    "description": "Pad 7 [/EN_3V3] of J5 on F.Cu",
+                    "pos": {
+                        "x": 113.75,
+                        "y": 123.95
+                    },
+                    "uuid": "38628311-3c06-4d20-bfb3-c795896aa5a2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 108.05,
+                        "y": 102.25
+                    },
+                    "uuid": "2e41fd4f-c388-4c5b-9ad9-2c9a1c7080b0"
+                },
+                {
+                    "description": "Pad 2 [Net-(U1-PS_SYNC)] of R3 on F.Cu",
+                    "pos": {
+                        "x": 109.71,
+                        "y": 102.7
+                    },
+                    "uuid": "11a7a741-593e-44a4-90fb-77d72118c2ee"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0125 mm",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 107.05
+                    },
+                    "uuid": "05fb74da-2b27-44c5-b9fa-c53b39c58df2"
+                },
+                {
+                    "description": "Pad 2 [GND] of U8 on F.Cu",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 108.0
+                    },
+                    "uuid": "0773cf90-007b-4ea7-96db-690a35420935"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.9899 mm",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 83.15
+                    },
+                    "uuid": "327751aa-81d5-4729-b9d3-701d34f888a2"
+                },
+                {
+                    "description": "Pad 9 [unconnected-(U3-IO16-Pad9)] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 81.4
+                    },
+                    "uuid": "fe028509-72e1-47ef-bb95-783a999ee713"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 112.1,
+                        "y": 105.31
+                    },
+                    "uuid": "061faa8c-0bee-4813-b6cc-d4a962621b46"
+                },
+                {
+                    "description": "Pad 2 [GND] of C4 on F.Cu",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 104.48
+                    },
+                    "uuid": "89535322-f85e-4573-8e9e-f7088c489f5d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.9899 mm",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 83.15
+                    },
+                    "uuid": "327751aa-81d5-4729-b9d3-701d34f888a2"
+                },
+                {
+                    "description": "Pad 10 [unconnected-(U3-IO17-Pad10)] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 82.67
+                    },
+                    "uuid": "0b292eeb-3662-4ab9-b5be-e4f1d2787c03"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 112.1,
+                        "y": 105.31
+                    },
+                    "uuid": "061faa8c-0bee-4813-b6cc-d4a962621b46"
+                },
+                {
+                    "description": "Pad 2 [/GPIO15] of R6 on F.Cu",
+                    "pos": {
+                        "x": 112.1,
+                        "y": 104.29
+                    },
+                    "uuid": "6d938a4b-8c93-49a8-a631-4e4a366adf99"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.9899 mm",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 83.15
+                    },
+                    "uuid": "327751aa-81d5-4729-b9d3-701d34f888a2"
+                },
+                {
+                    "description": "Pad 11 [/GPIO18] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 83.94
+                    },
+                    "uuid": "edd125ee-f6c6-4646-b6a4-88e39b6cd537"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.7774 mm",
+                    "pos": {
+                        "x": 153.25,
+                        "y": 107.4375
+                    },
+                    "uuid": "e2ebe62a-4714-44ec-bd74-6df8cdd3b005"
+                },
+                {
+                    "description": "Pad 6 [unconnected-(U6-NC-Pad6)] of U6 on F.Cu",
+                    "pos": {
+                        "x": 152.75,
+                        "y": 107.4375
+                    },
+                    "uuid": "109ae2d2-16a0-4062-bd7c-74517b169c82"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 112.1,
+                        "y": 104.29
+                    },
+                    "uuid": "39f9fa11-9fe8-43bd-ba50-7527e6f9ecd0"
+                },
+                {
+                    "description": "Pad 1 [Net-(U1-VAUX)] of C4 on F.Cu",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 103.52
+                    },
+                    "uuid": "5fb7f164-f0df-4ab1-9c58-42a9968b65d9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.4950 mm",
+                    "pos": {
+                        "x": 128.85,
+                        "y": 96.2
+                    },
+                    "uuid": "307d52f6-0932-406d-8500-0f8b0cf1d154"
+                },
+                {
+                    "description": "Pad 2 [GND] of C9 on F.Cu",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 94.55
+                    },
+                    "uuid": "de4a4c93-0c2d-414e-a62b-f246fdbba86b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.7774 mm",
+                    "pos": {
+                        "x": 153.25,
+                        "y": 107.4375
+                    },
+                    "uuid": "e2ebe62a-4714-44ec-bd74-6df8cdd3b005"
+                },
+                {
+                    "description": "Pad 2 [GND] of C28 on F.Cu",
+                    "pos": {
+                        "x": 153.98,
+                        "y": 109.2
+                    },
+                    "uuid": "c6cbdaa0-3c38-4dbd-9cc6-add0d94a708c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.7774 mm",
+                    "pos": {
+                        "x": 153.25,
+                        "y": 107.4375
+                    },
+                    "uuid": "e2ebe62a-4714-44ec-bd74-6df8cdd3b005"
+                },
+                {
+                    "description": "Pad 9 [/speaker +] of U6 on F.Cu",
+                    "pos": {
+                        "x": 154.4375,
+                        "y": 106.75
+                    },
+                    "uuid": "854bb95d-67cc-4856-af43-c4444c52fd22"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.7774 mm",
+                    "pos": {
+                        "x": 153.25,
+                        "y": 107.4375
+                    },
+                    "uuid": "e2ebe62a-4714-44ec-bd74-6df8cdd3b005"
+                },
+                {
+                    "description": "Pad 17 [GND] of U6 on F.Cu",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 106.0
+                    },
+                    "uuid": "a2964773-57ec-47d6-b978-c8b86cb5cacd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 108.35,
+                        "y": 102.5
+                    },
+                    "uuid": "31b074e9-12b1-4285-8a6c-ca198635767d"
+                },
+                {
+                    "description": "Pad 2 [Net-(U1-PS_SYNC)] of R3 on F.Cu",
+                    "pos": {
+                        "x": 109.71,
+                        "y": 102.7
+                    },
+                    "uuid": "11a7a741-593e-44a4-90fb-77d72118c2ee"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 5.3000 mm",
+                    "pos": {
+                        "x": 137.95,
+                        "y": 99.1
+                    },
+                    "uuid": "2b51ff68-29c7-4057-98a1-5c775a553c75"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-L2)] of L2 on F.Cu",
+                    "pos": {
+                        "x": 137.185,
+                        "y": 96.9
+                    },
+                    "uuid": "8a0576ba-66b7-480b-8f61-45bf5da4321b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 73.75
+                    },
+                    "uuid": "10525d98-d835-47fd-81af-dcb4628f4bba"
+                },
+                {
+                    "description": "Pad 1 [/Power monitoring/BAT_MEAS] of R48 on F.Cu",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 73.01
+                    },
+                    "uuid": "1f117603-aee4-4a63-9823-4b2c26a74107"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 130.35,
+                        "y": 100.2
+                    },
+                    "uuid": "357bcf3c-6419-483d-a507-45f3a73c0b6f"
+                },
+                {
+                    "description": "Pad 2 [GND] of C10 on F.Cu",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 98.55
+                    },
+                    "uuid": "0d011b18-f042-40e5-9081-b094416f8e14"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 1.2000 mm",
+                    "pos": {
+                        "x": 140.575,
+                        "y": 100.6
+                    },
+                    "uuid": "e5244883-733c-4698-be88-a9d0cb2f4ffb"
+                },
+                {
+                    "description": "Pad 2 [GND] of C13 on F.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 99.225
+                    },
+                    "uuid": "828eefcb-f02d-44a1-b05e-9032a96e6853"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 1.1314 mm",
+                    "pos": {
+                        "x": 146.75,
+                        "y": 85.4
+                    },
+                    "uuid": "06aa2f28-cc2a-4a42-be30-2433fdf17361"
+                },
+                {
+                    "description": "Pad 1 [GND] of SW3 on F.Cu",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 86.125
+                    },
+                    "uuid": "0546551c-ca69-49f4-bc26-c3df1bb4a7bf"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 112.1,
+                        "y": 104.29
+                    },
+                    "uuid": "39f9fa11-9fe8-43bd-ba50-7527e6f9ecd0"
+                },
+                {
+                    "description": "Pad 2 [GND] of C4 on F.Cu",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 104.48
+                    },
+                    "uuid": "89535322-f85e-4573-8e9e-f7088c489f5d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SW_ON] on F.Cu, length 0.1500 mm",
+                    "pos": {
+                        "x": 107.95,
+                        "y": 107.1
+                    },
+                    "uuid": "f0e616f3-b049-485f-a54c-e2f8c1a74f1a"
+                },
+                {
+                    "description": "Pad 1 [/EN_3V3] of R32 on F.Cu",
+                    "pos": {
+                        "x": 108.49,
+                        "y": 106.5
+                    },
+                    "uuid": "68b44fb2-6cb3-4c1f-93ee-431ee8b46f9b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.2500 mm",
+                    "pos": {
+                        "x": 154.8,
+                        "y": 95.45
+                    },
+                    "uuid": "aa2d4dd2-16ea-42da-baf2-1d412f77ab63"
+                },
+                {
+                    "description": "Pad 1 [/GPIO9] of U7 on F.Cu",
+                    "pos": {
+                        "x": 155.6,
+                        "y": 96.75
+                    },
+                    "uuid": "05414c00-3295-4662-b312-db350d2f37d2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 112.1,
+                        "y": 104.29
+                    },
+                    "uuid": "39f9fa11-9fe8-43bd-ba50-7527e6f9ecd0"
+                },
+                {
+                    "description": "Pad 1 [/3v3] of R6 on F.Cu",
+                    "pos": {
+                        "x": 112.1,
+                        "y": 105.31
+                    },
+                    "uuid": "b4d9063a-92f4-4544-98c4-539542df0294"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 147.55,
+                        "y": 84.6
+                    },
+                    "uuid": "07744bad-cf24-46db-8d9d-48f3ccb84ec9"
+                },
+                {
+                    "description": "Pad 1 [GND] of SW3 on F.Cu",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 86.125
+                    },
+                    "uuid": "0546551c-ca69-49f4-bc26-c3df1bb4a7bf"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 0.5500 mm",
+                    "pos": {
+                        "x": 145.2,
+                        "y": 108.8
+                    },
+                    "uuid": "3a08f169-fb41-4091-ba4d-607d44992d47"
+                },
+                {
+                    "description": "Pad 2 [GND] of U8 on F.Cu",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 108.0
+                    },
+                    "uuid": "0773cf90-007b-4ea7-96db-690a35420935"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 159.3,
+                        "y": 97.75
+                    },
+                    "uuid": "d5e2468a-a9af-4cf4-8634-4fb184ff3c99"
+                },
+                {
+                    "description": "Pad 5 [/GPIO8] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 98.25
+                    },
+                    "uuid": "7d5db5d2-b2ef-4fb7-bf35-1ee1563a24cc"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/SW_ON] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.25,
+                        "y": 105.15
+                    },
+                    "uuid": "984e9343-c4ac-461e-8970-3e6ee0c250ee"
+                },
+                {
+                    "description": "Pad 1 [/PFET] of R31 on F.Cu",
+                    "pos": {
+                        "x": 106.49,
+                        "y": 106.5
+                    },
+                    "uuid": "08e861b6-bf72-4a4c-b0be-69ea0cf399c1"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/UART_TX] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 122.55
+                    },
+                    "uuid": "dd12772c-cf5e-4feb-a8e0-790fd5697ac4"
+                },
+                {
+                    "description": "Pad 4 [/UART_RX] of J7 on F.Cu",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 123.0
+                    },
+                    "uuid": "fd62cab8-2f5f-4fac-8f7d-20c64ce6247a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/SW_ON] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 107.3
+                    },
+                    "uuid": "9c6a8863-feae-48f4-adc0-508d3cfbdf64"
+                },
+                {
+                    "description": "Pad 2 [GND] of R1 on F.Cu",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 108.49
+                    },
+                    "uuid": "a413072a-a1f6-412b-9c63-2bc72b22a4da"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 0.0250 mm",
+                    "pos": {
+                        "x": 140.575,
+                        "y": 99.4
+                    },
+                    "uuid": "e8d57f89-5566-4583-8b97-7e17f915f726"
+                },
+                {
+                    "description": "Pad 2 [GND] of C13 on F.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 99.225
+                    },
+                    "uuid": "828eefcb-f02d-44a1-b05e-9032a96e6853"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 148.5,
+                        "y": 95.0
+                    },
+                    "uuid": "a1cf9b1f-a5a9-4da2-b452-38c147299f01"
+                },
+                {
+                    "description": "Pad 2 [/3v3] of Q2 on F.Cu",
+                    "pos": {
+                        "x": 150.0625,
+                        "y": 94.95
+                    },
+                    "uuid": "d2643372-ff5b-41f1-9cad-3fea7b823e88"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 0.0250 mm",
+                    "pos": {
+                        "x": 136.2,
+                        "y": 89.0
+                    },
+                    "uuid": "3e77e5a4-a518-4994-a604-b26a378157fa"
+                },
+                {
+                    "description": "Pad 22 [/GPIO14] of U3 on F.Cu",
+                    "pos": {
+                        "x": 134.905,
+                        "y": 89.0
+                    },
+                    "uuid": "0e0be3d1-cff0-4140-af00-79f4dc9f12c3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO7] on F.Cu, length 1.7500 mm",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 78.85
+                    },
+                    "uuid": "130b485b-e9a5-4531-b0d3-f99e0e393172"
+                },
+                {
+                    "description": "Pad 6 [/GPIO6] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 77.59
+                    },
+                    "uuid": "2af11463-f79b-4ab8-846a-7e444b3b059a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 1.2021 mm",
+                    "pos": {
+                        "x": 152.3,
+                        "y": 84.1
+                    },
+                    "uuid": "07dab950-3596-4583-ad73-73e676fbe330"
+                },
+                {
+                    "description": "Pad 1 [/GPIO9] of R16 on F.Cu",
+                    "pos": {
+                        "x": 154.0,
+                        "y": 84.01
+                    },
+                    "uuid": "d31ec306-6441-4fde-8595-62cb22f46ba7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 0.0250 mm",
+                    "pos": {
+                        "x": 136.2,
+                        "y": 89.0
+                    },
+                    "uuid": "3e77e5a4-a518-4994-a604-b26a378157fa"
+                },
+                {
+                    "description": "Pad 24 [/GPIO47] of U3 on F.Cu",
+                    "pos": {
+                        "x": 137.445,
+                        "y": 89.0
+                    },
+                    "uuid": "c8abf179-ab10-430d-8adc-a59086ee9e52"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO7] on F.Cu, length 1.7500 mm",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 78.85
+                    },
+                    "uuid": "130b485b-e9a5-4531-b0d3-f99e0e393172"
+                },
+                {
+                    "description": "Pad 8 [/GPIO15] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 80.13
+                    },
+                    "uuid": "3d0c960e-5931-4b24-aff2-50cbafde78dd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.2500 mm",
+                    "pos": {
+                        "x": 154.8,
+                        "y": 95.45
+                    },
+                    "uuid": "aa2d4dd2-16ea-42da-baf2-1d412f77ab63"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q2-G)] of R21 on F.Cu",
+                    "pos": {
+                        "x": 154.0,
+                        "y": 94.49
+                    },
+                    "uuid": "99c437aa-ad5b-44e6-834f-13d21cc0148d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/GPIO1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.1,
+                        "y": 73.2
+                    },
+                    "uuid": "686079ae-e6be-42c9-a550-7ad10a9979d7"
+                },
+                {
+                    "description": "Pad 38 [/GPIO2] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 73.78
+                    },
+                    "uuid": "1dbb6404-e2ea-437c-a442-a0b6259e66f7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 112.65,
+                        "y": 102.6
+                    },
+                    "uuid": "484cad92-33ec-4517-9227-bd95e45cf6a3"
+                },
+                {
+                    "description": "Pad 1 [Net-(U1-VAUX)] of C4 on F.Cu",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 103.52
+                    },
+                    "uuid": "5fb7f164-f0df-4ab1-9c58-42a9968b65d9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO7] on F.Cu, length 1.7500 mm",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 78.86
+                    },
+                    "uuid": "184d4fd4-d0e3-4a37-9855-8ab1e796b8fe"
+                },
+                {
+                    "description": "Pad 6 [/GPIO6] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 77.59
+                    },
+                    "uuid": "2af11463-f79b-4ab8-846a-7e444b3b059a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 0.0200 mm",
+                    "pos": {
+                        "x": 149.02,
+                        "y": 105.5
+                    },
+                    "uuid": "eedcc3aa-581a-423f-8be6-5ce7e7b4910a"
+                },
+                {
+                    "description": "Pad 2 [GND] of C33 on F.Cu",
+                    "pos": {
+                        "x": 149.98,
+                        "y": 105.5
+                    },
+                    "uuid": "aa8f6394-d071-4a0e-b176-a6508b32b4d7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO7] on F.Cu, length 1.7500 mm",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 78.86
+                    },
+                    "uuid": "184d4fd4-d0e3-4a37-9855-8ab1e796b8fe"
+                },
+                {
+                    "description": "Pad 8 [/GPIO15] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 80.13
+                    },
+                    "uuid": "3d0c960e-5931-4b24-aff2-50cbafde78dd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 159.3,
+                        "y": 97.75
+                    },
+                    "uuid": "d5e2468a-a9af-4cf4-8634-4fb184ff3c99"
+                },
+                {
+                    "description": "Pad 7 [/GPIO11] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.25
+                    },
+                    "uuid": "6d01b52b-75d4-4c52-ba3e-39acf6fbe31a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 112.65,
+                        "y": 102.6
+                    },
+                    "uuid": "484cad92-33ec-4517-9227-bd95e45cf6a3"
+                },
+                {
+                    "description": "Pad 1 [Net-(U1-PS_SYNC)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 112.25,
+                        "y": 102.0
+                    },
+                    "uuid": "2786b90e-9893-40f6-8bbe-1473ce81a268"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/SW_ON] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 107.3
+                    },
+                    "uuid": "9c6a8863-feae-48f4-adc0-508d3cfbdf64"
+                },
+                {
+                    "description": "Pad 1 [/EN_3V3] of R32 on F.Cu",
+                    "pos": {
+                        "x": 108.49,
+                        "y": 106.5
+                    },
+                    "uuid": "68b44fb2-6cb3-4c1f-93ee-431ee8b46f9b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO7] on F.Cu, length 1.5000 mm",
+                    "pos": {
+                        "x": 121.45,
+                        "y": 81.45
+                    },
+                    "uuid": "2991837c-2b29-4c3b-9bd4-3438b63b4496"
+                },
+                {
+                    "description": "Pad 1 [/3v3] of R44 on F.Cu",
+                    "pos": {
+                        "x": 120.49,
+                        "y": 83.0
+                    },
+                    "uuid": "3e8f324c-d720-4c28-b670-08027db9e4a8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 1.1314 mm",
+                    "pos": {
+                        "x": 109.55,
+                        "y": 97.85
+                    },
+                    "uuid": "35830e2f-4eb0-4954-aad3-7132d5eaf540"
+                },
+                {
+                    "description": "Pad 2 [GND] of C3 on F.Cu",
+                    "pos": {
+                        "x": 109.8,
+                        "y": 99.225
+                    },
+                    "uuid": "f9807618-d5fa-4113-a435-aa6f6d8b1c7c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_RX] on F.Cu, length 0.0200 mm",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 76.3
+                    },
+                    "uuid": "4c1c1b0d-0a55-4d02-b0ae-a37a27d7fb35"
+                },
+                {
+                    "description": "Pad 35 [unconnected-(U3-IO42-Pad35)] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 77.59
+                    },
+                    "uuid": "23b5cbc2-2955-4504-9a4d-385898a99a31"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO7] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 121.45,
+                        "y": 82.95
+                    },
+                    "uuid": "5b8d3d1a-dc6b-4fe1-9048-dce4d89144cd"
+                },
+                {
+                    "description": "Pad 1 [/3v3] of R44 on F.Cu",
+                    "pos": {
+                        "x": 120.49,
+                        "y": 83.0
+                    },
+                    "uuid": "3e8f324c-d720-4c28-b670-08027db9e4a8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 145.35,
+                        "y": 108.95
+                    },
+                    "uuid": "4d5b7872-1f8b-4d27-970f-5af06d86d899"
+                },
+                {
+                    "description": "Pad 2 [GND] of U8 on F.Cu",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 108.0
+                    },
+                    "uuid": "0773cf90-007b-4ea7-96db-690a35420935"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 116.25
+                    },
+                    "uuid": "aa760660-f7ed-44e9-8102-d942c0da53b7"
+                },
+                {
+                    "description": "Pad 2 [/GPIO6] of R26 on F.Cu",
+                    "pos": {
+                        "x": 139.51,
+                        "y": 117.0
+                    },
+                    "uuid": "c11f9ba8-9cd5-497e-9530-7062ca7e397a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_RX] on F.Cu, length 0.0200 mm",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 76.3
+                    },
+                    "uuid": "4c1c1b0d-0a55-4d02-b0ae-a37a27d7fb35"
+                },
+                {
+                    "description": "Pad 37 [/UART_TX] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 75.05
+                    },
+                    "uuid": "8d8e544d-f541-4b7b-98c8-f69e6eac167a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 112.65,
+                        "y": 102.6
+                    },
+                    "uuid": "484cad92-33ec-4517-9227-bd95e45cf6a3"
+                },
+                {
+                    "description": "Pad 3 [Net-(U1-VAUX)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 102.0
+                    },
+                    "uuid": "49dfe542-ea12-445e-9a5d-91647e4342a0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 159.3,
+                        "y": 97.75
+                    },
+                    "uuid": "d5e2468a-a9af-4cf4-8634-4fb184ff3c99"
+                },
+                {
+                    "description": "Pad 8 [/3v3] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 96.75
+                    },
+                    "uuid": "95dc6ab8-e3e0-4e28-b12d-a629f6295478"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO7] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 78.85
+                    },
+                    "uuid": "75da4b2a-5746-4372-946b-6a17c6cb895e"
+                },
+                {
+                    "description": "Pad 6 [/GPIO6] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 77.59
+                    },
+                    "uuid": "2af11463-f79b-4ab8-846a-7e444b3b059a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_RX] on F.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 76.3
+                    },
+                    "uuid": "5a25b9db-2e96-4eed-83e5-da38eff3769e"
+                },
+                {
+                    "description": "Pad 35 [unconnected-(U3-IO42-Pad35)] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 77.59
+                    },
+                    "uuid": "23b5cbc2-2955-4504-9a4d-385898a99a31"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 0.0125 mm",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 108.95
+                    },
+                    "uuid": "54056c77-c4ce-4c4c-a163-4f7bfc45c246"
+                },
+                {
+                    "description": "Pad 2 [GND] of U8 on F.Cu",
+                    "pos": {
+                        "x": 145.3625,
+                        "y": 108.0
+                    },
+                    "uuid": "0773cf90-007b-4ea7-96db-690a35420935"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 131.4,
+                        "y": 102.5
+                    },
+                    "uuid": "363d98c2-ca18-4fd6-99eb-2bc920b7585e"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-PS_SYNC)] of R7 on F.Cu",
+                    "pos": {
+                        "x": 132.709999,
+                        "y": 102.7
+                    },
+                    "uuid": "f4f7fe9c-4d0c-429c-87ab-0b2b5c27109b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO7] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 78.85
+                    },
+                    "uuid": "75da4b2a-5746-4372-946b-6a17c6cb895e"
+                },
+                {
+                    "description": "Pad 8 [/GPIO15] of U3 on F.Cu",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 80.13
+                    },
+                    "uuid": "3d0c960e-5931-4b24-aff2-50cbafde78dd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/GPIO1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 145.95,
+                        "y": 75.45
+                    },
+                    "uuid": "75574136-0eb0-47e7-8814-72791805144a"
+                },
+                {
+                    "description": "Pad 1 [/GPIO2] of R49 on F.Cu",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 75.51
+                    },
+                    "uuid": "6a7333aa-83c8-421b-99b8-a340871f0c94"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/5v] on F.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 140.25,
+                        "y": 100.45
+                    },
+                    "uuid": "eee17652-ad72-430c-94d3-24f21c3bcc7d"
+                },
+                {
+                    "description": "Pad 2 [GND] of C13 on F.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 99.225
+                    },
+                    "uuid": "828eefcb-f02d-44a1-b05e-9032a96e6853"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q7-B)] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 144.05,
+                        "y": 92.15
+                    },
+                    "uuid": "07799f62-dfc4-4dd2-ab8b-a597e8a4dbb4"
+                },
+                {
+                    "description": "Pad 3 [Net-(Q6-G)] of Q7 on F.Cu",
+                    "pos": {
+                        "x": 143.9375,
+                        "y": 93.5
+                    },
+                    "uuid": "bc880c24-05c5-4f27-b06e-072dda2de42f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 148.5,
+                        "y": 95.0
+                    },
+                    "uuid": "a1cf9b1f-a5a9-4da2-b452-38c147299f01"
+                },
+                {
+                    "description": "Pad 2 [/GPIO41] of R22 on F.Cu",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 93.49
+                    },
+                    "uuid": "b4cfa60e-93cb-4f81-81a9-31eaeefe40c6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q7-B)] on F.Cu, length 0.0100 mm",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 93.0
+                    },
+                    "uuid": "0d9f24f2-e27f-424e-b631-abd4da4a06f6"
+                },
+                {
+                    "description": "Pad 1 [/GPIO12] of R46 on F.Cu",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 94.01
+                    },
+                    "uuid": "985e4cf1-d515-43b9-8951-3cca43075d2a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_RX] on F.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 76.3
+                    },
+                    "uuid": "5a25b9db-2e96-4eed-83e5-da38eff3769e"
+                },
+                {
+                    "description": "Pad 37 [/UART_TX] of U3 on F.Cu",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 75.05
+                    },
+                    "uuid": "8d8e544d-f541-4b7b-98c8-f69e6eac167a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 154.65,
+                        "y": 80.15
+                    },
+                    "uuid": "10e7db72-dbc2-46d5-99b3-719feb607a20"
+                },
+                {
+                    "description": "Pad 4 [/GPIO8] of U5 on F.Cu",
+                    "pos": {
+                        "x": 153.35,
+                        "y": 79.35
+                    },
+                    "uuid": "f717f219-a75a-471a-9a4f-96341c0af867"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 71.8
+                    },
+                    "uuid": "09d8c26d-a0e4-4c3e-9bbf-63bc12ed2b23"
+                },
+                {
+                    "description": "Pad 2 [GND] of C17 on F.Cu",
+                    "pos": {
+                        "x": 119.95,
+                        "y": 73.0
+                    },
+                    "uuid": "c6db772b-e547-49e2-b847-ad7f38acadb3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(Q4-C)] of R42 on F.Cu",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 76.49
+                    },
+                    "uuid": "9116e36b-c5cb-4e0f-960c-8a51d53bd66b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 70.5
+                    },
+                    "uuid": "f4a3a88c-9ae5-47e4-9361-79c6e1334622"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 155.6,
+                        "y": 98.9
+                    },
+                    "uuid": "1121e761-d76c-46e2-8faa-ffb628252638"
+                },
+                {
+                    "description": "Pad 3 [/GPIO11] of U7 on F.Cu",
+                    "pos": {
+                        "x": 155.6,
+                        "y": 97.75
+                    },
+                    "uuid": "9a76e95e-9440-4714-a529-c6cf2f7a1e71"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.1500 mm",
+                    "pos": {
+                        "x": 108.1,
+                        "y": 99.65
+                    },
+                    "uuid": "39c11c22-a124-43cf-9c62-6a7c4c720891"
+                },
+                {
+                    "description": "Pad 2 [GND] of C3 on F.Cu",
+                    "pos": {
+                        "x": 109.8,
+                        "y": 99.225
+                    },
+                    "uuid": "f9807618-d5fa-4113-a435-aa6f6d8b1c7c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/GPIO1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 145.95,
+                        "y": 75.45
+                    },
+                    "uuid": "75574136-0eb0-47e7-8814-72791805144a"
+                },
+                {
+                    "description": "Pad 2 [GND] of R49 on F.Cu",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 74.49
+                    },
+                    "uuid": "86ac5c34-6173-4ad7-bb77-351e2468fe00"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 71.8
+                    },
+                    "uuid": "09d8c26d-a0e4-4c3e-9bbf-63bc12ed2b23"
+                },
+                {
+                    "description": "Pad 2 [GND] of C18 on F.Cu",
+                    "pos": {
+                        "x": 122.48,
+                        "y": 71.8
+                    },
+                    "uuid": "670c97ab-7f88-4f97-8217-5b5c1440c61e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO21] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 145.85,
+                        "y": 110.1
+                    },
+                    "uuid": "61e1ecf7-4608-42b9-959c-9cab05f16230"
+                },
+                {
+                    "description": "Pad 2 [GND] of R39 on F.Cu",
+                    "pos": {
+                        "x": 147.01,
+                        "y": 111.0
+                    },
+                    "uuid": "074e8d60-6819-4bb1-9a6a-fcd006263acf"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/GPIO1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 145.95,
+                        "y": 75.45
+                    },
+                    "uuid": "75574136-0eb0-47e7-8814-72791805144a"
+                },
+                {
+                    "description": "Pad 2 [GND] of C34 on F.Cu",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 76.52
+                    },
+                    "uuid": "7e1b24d8-4829-4061-a27a-70296172ea52"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.75
+                    },
+                    "uuid": "ddbfa150-91f2-4b1b-9fd2-7ff078e0fa48"
+                },
+                {
+                    "description": "Pad 5 [/GPIO8] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 98.25
+                    },
+                    "uuid": "7d5db5d2-b2ef-4fb7-bf35-1ee1563a24cc"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/3v3] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 120.4,
+                        "y": 83.1
+                    },
+                    "uuid": "aa91d2ba-151b-4a6d-8270-636b116ed3f9"
+                },
+                {
+                    "description": "Pad 2 [/GPIO7] of R44 on F.Cu",
+                    "pos": {
+                        "x": 121.51,
+                        "y": 83.0
+                    },
+                    "uuid": "0a3d0ddc-3b8d-45f9-8618-b5db57fdea3b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.75
+                    },
+                    "uuid": "ddbfa150-91f2-4b1b-9fd2-7ff078e0fa48"
+                },
+                {
+                    "description": "Pad 7 [/GPIO11] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.25
+                    },
+                    "uuid": "6d01b52b-75d4-4c52-ba3e-39acf6fbe31a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/PFET] on F.Cu, length 0.1500 mm",
+                    "pos": {
+                        "x": 108.1,
+                        "y": 99.65
+                    },
+                    "uuid": "39c11c22-a124-43cf-9c62-6a7c4c720891"
+                },
+                {
+                    "description": "Pad 2 [GND] of C2 on F.Cu",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 98.55
+                    },
+                    "uuid": "07ff7110-9a66-4d18-b80e-72638e9c87f0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/GPIO15] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 112.65,
+                        "y": 102.6
+                    },
+                    "uuid": "484cad92-33ec-4517-9227-bd95e45cf6a3"
+                },
+                {
+                    "description": "Pad 4 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 113.75,
+                        "y": 102.0
+                    },
+                    "uuid": "49b62d08-d932-4ac0-87ef-ddd6183ac688"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-B)] on F.Cu, length 0.3536 mm",
+                    "pos": {
+                        "x": 150.9,
+                        "y": 100.35
+                    },
+                    "uuid": "b669ed08-27e8-4064-b5df-0a02b4b45dfc"
+                },
+                {
+                    "description": "Pad 1 [/5v] of C16 on F.Cu",
+                    "pos": {
+                        "x": 148.9,
+                        "y": 100.475
+                    },
+                    "uuid": "fb0b474e-0972-4338-8fa0-abae26bd8571"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/OLED_SDA] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 97.75
+                    },
+                    "uuid": "ddbfa150-91f2-4b1b-9fd2-7ff078e0fa48"
+                },
+                {
+                    "description": "Pad 8 [/3v3] of U7 on F.Cu",
+                    "pos": {
+                        "x": 158.4,
+                        "y": 96.75
+                    },
+                    "uuid": "95dc6ab8-e3e0-4e28-b12d-a629f6295478"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Board'",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 88.0
+                    },
+                    "uuid": "341d86c1-036f-4de7-9e4c-e14247a3b243"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'TPS63070' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 102.0
+                    },
+                    "uuid": "3f47c909-6f4b-4bba-84fd-52f950b5a24e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'TPS63070' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4eccdd3d-5a47-4261-b8f0-bf2ca2af409f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Alarm'",
+            "items": [
+                {
+                    "description": "Footprint J7",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 123.0
+                    },
+                    "uuid": "5a7c13ee-f8cb-4e2a-a11f-d7dd1fbbec21"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Board'",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 106.5
+                    },
+                    "uuid": "7c036976-c254-46dc-b28f-8b3241e9d8a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Board'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 76.5
+                    },
+                    "uuid": "a3a4d35c-daaa-45bc-9556-b2b99e60a795"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'TPS63070' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint L1",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 96.9
+                    },
+                    "uuid": "b863d99a-f9df-4ef5-b90b-d42d3b3ea2ab"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'TPS63070' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint L2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 96.9
+                    },
+                    "uuid": "c1e7274f-f5d2-4c9f-b6ba-bac7a2e7c77b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

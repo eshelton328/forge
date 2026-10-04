@@ -1,0 +1,89 @@
+{
+  "status": "PASS_BOUNDED_J4_FINISHED_HOLE_CHANGE",
+  "scope": "Exactly four J4 hole diameters and its footprint identity differ in the KiCad geometry export. All pad copper polygons, saved filled copper, tracks, vias, placements, nets and board bounds match. This is not physical fit or solder-joint qualification.",
+  "before_pcb_sha256": "1ce81a92e2393423ce08ee530847ae21b940397600d7748b9f4f72150a692dbe",
+  "after_pcb_sha256": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a",
+  "transition_sha256": "5d728a0d1e9ea6350355a808026fe3bab6ed9cb7ccb552c0645974cd1afca0a9",
+  "library_sha256": "b28d410b40444a5012f6a55e02e0b17a076ff477a4b9b340e4535531c2592cb7",
+  "generator_sha256": "74e1ec74225d50d30bf937a7bf5dfc3ef90ce4ea03aa740321d0cd7e8508cf1a",
+  "geometry_exporter_sha256": "17452642fcfbedd74d99041a7d5ecc37b57914ca0b783cc648981dd1b09969ea",
+  "unchanged_copper_records": 492,
+  "unchanged_tracks": 3572,
+  "unchanged_vias": 243,
+  "header_pads": [
+    {
+      "number": "1",
+      "net": "GND",
+      "xy": [
+        161.0,
+        86.0
+      ],
+      "size": [
+        1.7,
+        1.7
+      ],
+      "drill": [
+        1.1,
+        1.1
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/OLED_3V3",
+      "xy": [
+        161.0,
+        88.54
+      ],
+      "size": [
+        1.7,
+        1.7
+      ],
+      "drill": [
+        1.1,
+        1.1
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/OLED_SCL",
+      "xy": [
+        161.0,
+        91.08
+      ],
+      "size": [
+        1.7,
+        1.7
+      ],
+      "drill": [
+        1.1,
+        1.1
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/OLED_SDA",
+      "xy": [
+        161.0,
+        93.62
+      ],
+      "size": [
+        1.7,
+        1.7
+      ],
+      "drill": [
+        1.1,
+        1.1
+      ]
+    }
+  ],
+  "nominal_finished_hole_mm": 1.1,
+  "supplier_finished_hole_range_mm": [
+    1.02,
+    1.23
+  ],
+  "samtec_recommended_hole_mm": 1.02,
+  "nominal_annular_ring_mm": 0.3,
+  "annular_ring_at_max_hole_minus_0_05mm_position_offset_mm": 0.185,
+  "supplier_multilayer_1oz_absolute_minimum_annular_ring_mm": 0.15,
+  "retained_physical_screening": "The present solver uses copper polygons, tracks, vias and selected power-pad positions/values; these inputs are unchanged. The J4 footprint name and pad.drill records are not consumed by that solver. Retaining its historical nominal results does not claim a new run, a model of the connector holes or physical qualification."
+}

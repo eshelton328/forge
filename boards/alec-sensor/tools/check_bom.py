@@ -11,7 +11,7 @@ sys.path.insert(0,str(D.parents[1]/'scripts/alarm'))
 from design import parse,children,prop
 
 def capacitor_package(mpn):
- for prefix,size in [('GRM15','0402_1005'),('GRM18','0603_1608'),('GRM21','0805_2012'),('GRM31','1206_3216'),('CL31','1206_3216')]:
+ for prefix,size in [('GRM15','0402_1005'),('GRM18','0603_1608'),('GRT18','0603_1608'),('GRM21','0805_2012'),('GRM31','1206_3216'),('CL31','1206_3216')]:
   if mpn.startswith(prefix):return size
  raise AssertionError('Unreviewed capacitor package family: '+mpn)
 
