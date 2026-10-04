@@ -116,11 +116,13 @@
       "id": "firmware.diagnostics.alarm",
       "path": "firmware/rooster/diagnostics/alarm",
       "kind": "firmware-target",
-      "owner": "ROO-011 / ROO-015",
-      "status": "planned",
+      "owner": "ROO-011",
+      "status": "current",
       "entrypoint": "firmware/rooster/diagnostics/alarm/README.md",
-      "implementation": "not-started",
-      "authority": "reference-or-tooling"
+      "implementation": "initial-read-only-diagnostics",
+      "authority": "firmware-source",
+      "verification": "host-tested-and-compiled; physical tests NOT RUN",
+      "contract": "firmware/rooster/diagnostics/alarm/board-contract.json"
     },
     {
       "id": "firmware.diagnostics.sensor",

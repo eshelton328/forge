@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "id": "cube-bringup-v1",
+  "source_ref": "01c1450a3d19dbdb252cece7d9ff4742afbc0fcf",
+  "board": "alec-main",
+  "mcu": "ESP32-S3-WROOM-1-N16",
+  "source_sha256": {
+    "boards/alec-main/alec-main.kicad_sch": "2bba9e41dbff1f589ffbef185a32e0a81000e437c7ad60d0b7d85e348f5bb35b",
+    "boards/alec-main/power-monitor.kicad_sch": "c25bdcba58a10931965244103a798e34f4175227711c894bee149acf9d699e85",
+    "boards/alec-main/alec-main.kicad_pcb": "8f235d4b8cdf8c90b3755afa6698f442a208d7b2558923721ee1c3d6dd5e5e2a",
+    "boards/alec-main/HARNESS.md": "8b9e3a9ce7394d0d724c0b935ec66aed4a3e2cf7ad1ce6eb41149afef3d7338c",
+    "boards/alec-main/review/netlist.xml": "2b03be57f5550cc539ea2eb0e6658974b429a027da80cfc58063989c66d66868",
+    "boards/alec-controls/alec-controls.kicad_sch": "891e420c2496bc20f0cdbfcf18f78d227da845dab8c56915daaa06b8ea8ba5e9",
+    "boards/alec-front/alec-front.kicad_sch": "1b61f784eb131e592435c8ab8069c9a3f5bfe06ffd0030789b9164db26749ae6"
+  },
+  "scope": "Read-only digital diagnostics after setup; no guarantee for ROM/reset interval, physical rails or assembled operation.",
+  "outputs": [
+    {
+      "name": "amp_enable",
+      "gpio": 18,
+      "inactive_level": 0,
+      "peer": "U2.14"
+    },
+    {
+      "name": "amp_shutdown",
+      "gpio": 21,
+      "inactive_level": 0,
+      "peer": "U8.3"
+    },
+    {
+      "name": "i2s_bclk",
+      "gpio": 47,
+      "inactive_level": 0,
+      "peer": "U6.16"
+    },
+    {
+      "name": "i2s_lrclk",
+      "gpio": 48,
+      "inactive_level": 0,
+      "peer": "U6.14"
+    },
+    {
+      "name": "i2s_data",
+      "gpio": 14,
+      "inactive_level": 0,
+      "peer": "U6.1"
+    },
+    {
+      "name": "display_bus_enable",
+      "gpio": 11,
+      "inactive_level": 0,
+      "peer": "U7.7"
+    },
+    {
+      "name": "display_power",
+      "gpio": 41,
+      "inactive_level": 0,
+      "peer": "R22.2"
+    },
+    {
+      "name": "battery_measure_enable",
+      "gpio": 12,
+      "inactive_level": 0,
+      "peer": "R46.1"
+    },
+    {
+      "name": "led_red",
+      "gpio": 38,
+      "inactive_level": 1,
+      "peer": "R28.2"
+    },
+    {
+      "name": "led_green",
+      "gpio": 39,
+      "inactive_level": 1,
+      "peer": "R29.2"
+    },
+    {
+      "name": "led_blue",
+      "gpio": 40,
+      "inactive_level": 1,
+      "peer": "R30.2"
+    }
+  ],
+  "inputs": [
+    {
+      "name": "volume_minus",
+      "gpio": 4,
+      "active_level": 0,
+      "peer": "R50.2",
+      "debounce_ms": 10
+    },
+    {
+      "name": "mode",
+      "gpio": 5,
+      "active_level": 0,
+      "peer": "R51.2",
+      "debounce_ms": 10
+    },
+    {
+      "name": "volume_plus",
+      "gpio": 6,
+      "active_level": 0,
+      "peer": "R52.2",
+      "debounce_ms": 10
+    },
+    {
+      "name": "battery_button",
+      "gpio": 10,
+      "active_level": 0,
+      "peer": "R53.2",
+      "debounce_ms": 10
+    },
+    {
+      "name": "pg_3v3",
+      "gpio": 15,
+      "active_level": 1,
+      "peer": "U1.2",
+      "debounce_ms": 0
+    },
+    {
+      "name": "pg_5v",
+      "gpio": 13,
+      "active_level": 1,
+      "peer": "U2.2",
+      "debounce_ms": 0
+    },
+    {
+      "name": "usb_present",
+      "gpio": 7,
+      "active_level": 1,
+      "peer": "Q5.3",
+      "debounce_ms": 0
+    },
+    {
+      "name": "rtc_interrupt",
+      "gpio": 1,
+      "active_level": 0,
+      "peer": "U5.2",
+      "debounce_ms": 0
+    }
+  ],
+  "quiet_inputs": [
+    {
+      "name": "battery_adc",
+      "gpio": 2,
+      "peer": "R48.2"
+    },
+    {
+      "name": "i2c_sda",
+      "gpio": 8,
+      "peer": "U5.4"
+    },
+    {
+      "name": "i2c_scl",
+      "gpio": 9,
+      "peer": "U5.3"
+    }
+  ],
+  "reserved_gpio": [
+    0,
+    19,
+    20,
+    43,
+    44
+  ],
+  "usb": {
+    "mode": "hardware-cdc-jtag",
+    "d_minus_gpio": 19,
+    "d_plus_gpio": 20
+  },
+  "uart": {
+    "tx_gpio": 43,
+    "rx_gpio": 44,
+    "baud": 115200
+  },
+  "notes": [
+    "External button/RTC/PG pulls are retained; no internal pulls enabled.",
+    "GPIO7 is input-only USB detection; historical OLED pin7 must never be used.",
+    "RGB is common-anode: HIGH is off.",
+    "I2C, ADC, audio, radio, sleep and active load tests are not implemented."
+  ]
+}

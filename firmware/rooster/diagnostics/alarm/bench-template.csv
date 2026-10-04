@@ -1,0 +1,10 @@
+case,status,unit_id,main_revision,controls_revision,front_revision,firmware_manifest,chip_id,instruments,conditions,observations,raw_evidence,disposition
+B01-inspection,NOT RUN,,,,,,,,,,,
+B01-harness-and-J4,NOT RUN,,,,,,,,,,,
+B02-input-short-screen,NOT RUN,,,,,,,,,,,
+B02-reset-held-3v3,NOT RUN,,,,,,,,,,,
+B03-boot-and-inactive-outputs,NOT RUN,,,,,,,,,,,
+B04-upload-and-identity,NOT RUN,,,,,,,,,,,
+B04-reset-and-recovery,NOT RUN,,,,,,,,,,,
+B10-buttons-input-subset,NOT RUN,,,,,,,,,,,
+USB-detection-and-console-continuity,NOT RUN,,,,,,,,,,,

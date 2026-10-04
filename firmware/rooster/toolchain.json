@@ -1,0 +1,6 @@
+{
+  "arduino_cli": "1.4.1",
+  "esp32_core": "3.3.7",
+  "external_libraries": [],
+  "profile": "cube"
+}

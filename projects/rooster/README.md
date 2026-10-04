@@ -52,10 +52,11 @@ replies or prices. Frozen packages remain at their existing paths; see
 [release conventions](../../releases/rooster/README.md).
 
 The Browns sketches are historical references, not firmware validated on the
-ALEC PCBs. [Firmware paths](../../firmware/rooster/README.md) now exist as
-documentation: separate alarm, sensor, shared and diagnostic locations. There
-is no implemented application or diagnostic target yet. The two Browns programs
-must be built separately; their old pin definitions do not override the PCB.
+ALEC PCBs. The [first Cube diagnostic target](../../firmware/rooster/diagnostics/alarm/README.md)
+now builds with pinned tools and provides inactive startup plus serial digital
+input inspection. It is host-tested, with physical operation still unverified.
+Application, Sensor diagnostic and shared protocol paths remain planned. The two
+Browns programs must be built separately; their old pins do not override the PCB.
 
 ## Immediate order blockers
 
@@ -85,9 +86,10 @@ The personal-use product comes first. Cube's minimum monthly battery target is
 a requirement; actual runtime, new-board bring-up, assembled fit, radio/presence
 behavior and everyday use still need physical evidence in the inspected records.
 
-The next implementation is ROO-011 Cube diagnostics at
+The current ROO-011 implementation is the first Cube diagnostic slice at
 [`firmware/rooster/diagnostics/alarm`](../../firmware/rooster/diagnostics/alarm/README.md),
-using the current harness/power contracts and bench plan. Close the remaining
+using the current harness/power contracts and bench plan. Complete its physical
+bring-up and add reviewed peripheral diagnostics incrementally. Close remaining
 order/first-power inputs alongside that work, then measure before selecting a
 cost-reduction revision. The [audit](../../docs/audits/2026-10-04-forge-rooster.md)
 is the preserved pre-integration snapshot, not the current task-status record.
