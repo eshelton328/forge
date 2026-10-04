@@ -9,7 +9,7 @@ Each **scenario** matches a block in `sim.yml`. **Bounds** repeat those limits; 
 | Config | `/workspace/boards/alec-main/sim.yml` |
 | Netlist | `/workspace/boards/alec-main/sim/assembled.cir` |
 | KiCad CLI | `10.0.1` |
-| KiCad Docker image (CI) | `the-forge-sim:ci` |
+| KiCad Docker image (CI) | `forge-sim:ci` |
 | ngspice | `******` |
 | Simulator exit | 0 |
 
