@@ -1,0 +1,58 @@
+[
+  {
+    "name": "pytest",
+    "command": [
+      "python3",
+      "-m",
+      "pytest",
+      "tests/",
+      "-q",
+      "-ra"
+    ],
+    "started_at": "2026-10-04T20:25:54.505384+00:00",
+    "exit_code": 0,
+    "log": "pytest.log"
+  },
+  {
+    "name": "firmware-archive",
+    "command": [
+      "python3",
+      "docs/rooster/baselines/2026-09-07/verify.py",
+      "--compare-originals"
+    ],
+    "started_at": "2026-10-04T20:26:06.449984+00:00",
+    "exit_code": 0,
+    "log": "firmware-archive.log"
+  },
+  {
+    "name": "purchasing-fields",
+    "command": [
+      "python3",
+      "scripts/alarm/order_parts.py",
+      "--check"
+    ],
+    "started_at": "2026-10-04T20:26:06.711583+00:00",
+    "exit_code": 0,
+    "log": "purchasing-fields.log"
+  },
+  {
+    "name": "board-intent",
+    "command": [
+      "make",
+      "validate-all"
+    ],
+    "started_at": "2026-10-04T20:26:17.648868+00:00",
+    "exit_code": 0,
+    "log": "board-intent.log"
+  },
+  {
+    "name": "board-checks",
+    "command": [
+      "make",
+      "check-all"
+    ],
+    "started_at": "2026-10-04T20:26:18.166982+00:00",
+    "exit_code": 0,
+    "log": "board-checks.log"
+  }
+]

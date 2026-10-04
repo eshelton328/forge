@@ -1,0 +1,22 @@
+{
+  "esp32s3-devkit-5v": {
+    "fresh_sha256": "bfdc2d1d2d1a5e12d794dacbdc22511fc053e7fd39819667d8758b9f3ca67e10",
+    "saved_sha256": "6f48ae1f7cf6a776377498705befbfcba7132d32bb5823951fc0eae2df7bc456"
+  },
+  "alec-main": {
+    "fresh_sha256": "17e6289bb100520f662223cc5881a9325ab68971a5f478b23ef3fc24c957f74d",
+    "saved_sha256": "2b03be57f5550cc539ea2eb0e6658974b429a027da80cfc58063989c66d66868"
+  },
+  "alec-controls": {
+    "fresh_sha256": "99aebc41f38c67b21d1f6bef9d17d138963cf18b683bb2af9ce55fb9b248fb40",
+    "saved_sha256": "d997bbcc0a0e4377d52f0be973de6c15e6f851f31035c6da5c296a552405ee45"
+  },
+  "alec-front": {
+    "fresh_sha256": "90696366cfd15d9f3792867e463315b46246cad359cb012c985c599eb31c5ab9",
+    "saved_sha256": "16695d630e2bbd819465a87a8222dc24344e00530d2b8ea8ce3c91ff9f39afba"
+  },
+  "alec-sensor": {
+    "fresh_sha256": "dc290f1af995eb2bfe54ca0c616f8eaa53325bb97e462640000c50360c381616",
+    "saved_sha256": "18501a6e065ac97ca3de34b705bbac720f6d79332c4859e3ea243574cfe06c53"
+  }
+}

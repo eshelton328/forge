@@ -4,6 +4,10 @@ Hardware design monorepo for KiCad PCB projects with automated CI/CD.
 
 Repository: [eshelton328/forge](https://github.com/eshelton328/forge).
 
+For the alarm product, start with the [Rooster engineering map](projects/rooster/README.md).
+Agent guidance is in [AGENTS.md](AGENTS.md). The [October 4 audit](docs/audits/2026-10-04-forge-rooster.md)
+covers source consolidation, hardware readiness, costs and the development workflow.
+
 ## Repository Structure
 
 ```
@@ -13,8 +17,11 @@ forge/
 ├── designs/          # Schematic studies before PCB layout
 ├── enclosures/       # Product packaging, Blender models and fit evidence
 ├── fab-rules/        # DRC rule templates per fab house
+├── firmware/rooster/ # Reserved application, diagnostics and shared-code paths
 ├── kibot/            # KiBot output generation configs
 ├── libs/             # Shared libraries (symbols, footprints, 3D models)
+├── projects/rooster/ # Product entry point and source manifest
+├── releases/rooster/ # Release conventions; no product release declared
 ├── scripts/          # Automation scripts
 ├── emi/              # openEMS + gerber2ems (FDTD / EMI-adjacent smoke; see emi/README.md)
 └── .github/workflows # CI/CD pipelines
@@ -61,10 +68,14 @@ Every pull request automatically runs:
 
 The KiCad workflow always runs, but it only **executes** ERC/DRC for boards that are in scope: changes under `boards/<name>/` check only those boards, while changes to `libs/`, `fab-rules/`, `kibot/`, `scripts/`, the root `Makefile`, or `.github/workflows/pr-checks.yml` trigger checks on all boards. Doc-only diffs (e.g. just `README.md`) skip the heavy KiCad jobs to save time. **`pytest`** (see **`pytest.yml`**) runs on every PR regardless, so Python regressions cannot slip through doc-only merges.
 
-On release tags, the pipeline generates:
+The manually dispatched [fabrication workflow](.github/workflows/release.yml) generates files for a selected board; it does not currently run on release tags. Its outputs include:
 - Fab-ready Gerber/drill ZIPs per fab house
 - BOM and component placement files
 - Schematic PDFs and board renders
+
+These exports are not an approved Rooster manufacturing release. The product's
+reviewed supplier packages and remaining assembly work are tracked separately;
+see the [Rooster map](projects/rooster/README.md).
 
 ## Local Development
 

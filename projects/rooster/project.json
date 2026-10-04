@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "document_status": "integrated-navigation",
+  "ticket": "ROO-007",
+  "product": {
+    "id": "ROO",
+    "name": "Rooster",
+    "hardware_family": "ALEC",
+    "repository": "https://github.com/eshelton328/forge",
+    "devices": [
+      {
+        "id": "alarm",
+        "name": "Alarm",
+        "historical_aliases": [
+          "Cube"
+        ]
+      },
+      {
+        "id": "sensor",
+        "name": "Sensor",
+        "historical_aliases": [
+          "Beacon"
+        ]
+      }
+    ]
+  },
+  "entrypoint": {
+    "path": "projects/rooster/README.md",
+    "status": "current"
+  },
+  "path_policy": "Repository-relative paths. Current means the navigation target exists, not that its engineering evidence covers the latest native revision. Planned firmware paths contain documentation only. Producing hashes and limitations remain in each evidence package; this manifest is neither a BOM nor a task-status database.",
+  "sources": [
+    {
+      "id": "board.main",
+      "path": "boards/alec-main",
+      "kind": "native-board",
+      "owner": "Alarm electronics",
+      "status": "current",
+      "entrypoint": "boards/alec-main/README.md",
+      "native_stem": "alec-main",
+      "authority": "design-source"
+    },
+    {
+      "id": "board.controls",
+      "path": "boards/alec-controls",
+      "kind": "native-board",
+      "owner": "Alarm electronics",
+      "status": "current",
+      "entrypoint": "boards/alec-controls/README.md",
+      "native_stem": "alec-controls",
+      "authority": "design-source"
+    },
+    {
+      "id": "board.front",
+      "path": "boards/alec-front",
+      "kind": "native-board",
+      "owner": "Alarm electronics",
+      "status": "current",
+      "entrypoint": "boards/alec-front/README.md",
+      "native_stem": "alec-front",
+      "authority": "design-source"
+    },
+    {
+      "id": "board.sensor",
+      "path": "boards/alec-sensor",
+      "kind": "native-board",
+      "owner": "Sensor electronics",
+      "status": "current",
+      "entrypoint": "boards/alec-sensor/README.md",
+      "native_stem": "alec-sensor",
+      "authority": "design-source"
+    },
+    {
+      "id": "firmware.breadboard",
+      "path": "docs/rooster/baselines/2026-09-07",
+      "kind": "historical-reference",
+      "owner": "Firmware historian",
+      "status": "historical",
+      "availability": "Integrated unchanged; historical breadboard reference, not PCB firmware",
+      "entrypoint": "docs/rooster/baselines/2026-09-07/README.md",
+      "selection": "docs/rooster/baselines/2026-09-07/selected-reference.json",
+      "archive_sha256": "f281711b3b2c08c187c220e718618285ba8e4165403789cf4ee905dfc42791d5",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "firmware.alarm",
+      "path": "firmware/rooster/alarm",
+      "kind": "firmware-target",
+      "owner": "ROO-011 / ROO-015",
+      "status": "planned",
+      "entrypoint": "firmware/rooster/alarm/README.md",
+      "implementation": "not-started",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "firmware.sensor",
+      "path": "firmware/rooster/sensor",
+      "kind": "firmware-target",
+      "owner": "ROO-011 / ROO-015",
+      "status": "planned",
+      "entrypoint": "firmware/rooster/sensor/README.md",
+      "implementation": "not-started",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "firmware.shared",
+      "path": "firmware/rooster/shared",
+      "kind": "shared-protocol",
+      "owner": "ROO-011 / ROO-015",
+      "status": "planned",
+      "entrypoint": "firmware/rooster/shared/README.md",
+      "implementation": "not-started",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "firmware.diagnostics.alarm",
+      "path": "firmware/rooster/diagnostics/alarm",
+      "kind": "firmware-target",
+      "owner": "ROO-011 / ROO-015",
+      "status": "planned",
+      "entrypoint": "firmware/rooster/diagnostics/alarm/README.md",
+      "implementation": "not-started",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "firmware.diagnostics.sensor",
+      "path": "firmware/rooster/diagnostics/sensor",
+      "kind": "firmware-target",
+      "owner": "ROO-011 / ROO-015",
+      "status": "planned",
+      "entrypoint": "firmware/rooster/diagnostics/sensor/README.md",
+      "implementation": "not-started",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "enclosure.alarm",
+      "path": "enclosures/alec/pcb-revision",
+      "kind": "native-assembly",
+      "owner": "Alarm mechanical",
+      "status": "current",
+      "entrypoint": "enclosures/alec/pcb-revision/README.md",
+      "source_files": [
+        "enclosures/alec/pcb-revision/build_assembly.py",
+        "enclosures/alec/pcb-revision/alec-cube-v4-2.blend"
+      ],
+      "requires": [
+        "enclosures/alec/alec-cube-v4-1.blend",
+        "enclosures/alec/geometry_helpers.py",
+        "enclosures/alec/pcb-revision/sources/main.glb",
+        "enclosures/alec/pcb-revision/sources/controls.glb",
+        "enclosures/alec/pcb-revision/sources/front.glb"
+      ],
+      "authority": "design-source"
+    },
+    {
+      "id": "enclosure.sensor",
+      "path": "enclosures/alec-sensor",
+      "kind": "native-mechanical-workflow",
+      "owner": "Sensor mechanical",
+      "status": "current",
+      "entrypoint": "enclosures/alec-sensor/README.md",
+      "source_files": [
+        "enclosures/alec-sensor/interface.json",
+        "enclosures/alec-sensor/tools/build_cad.py",
+        "enclosures/alec-sensor/tools/build_blender.py"
+      ],
+      "requires": [
+        "boards/alec-sensor/docs/assembly.glb",
+        "enclosures/alec/geometry_helpers.py",
+        "enclosures/alec/sources/BH3AAW.glb",
+        "enclosures/alec-sensor/sources/HLK-LD2410C.glb"
+      ],
+      "generated_geometry": [
+        "enclosures/alec-sensor/alec-sensor-s1-mechanical.step",
+        "enclosures/alec-sensor/cad"
+      ],
+      "generated_visualization": [
+        "enclosures/alec-sensor/alec-sensor-s1.blend"
+      ],
+      "authority": "design-source"
+    },
+    {
+      "id": "libraries.symbols",
+      "path": "libs/symbols",
+      "kind": "shared-component-library",
+      "owner": "Shared library maintainer",
+      "status": "current",
+      "authority": "design-source"
+    },
+    {
+      "id": "libraries.footprints",
+      "path": "libs/footprints",
+      "kind": "shared-component-library",
+      "owner": "Shared library maintainer",
+      "status": "current",
+      "authority": "design-source"
+    },
+    {
+      "id": "libraries.3d-models",
+      "path": "libs/3d-models",
+      "kind": "shared-component-library",
+      "owner": "Shared library maintainer",
+      "status": "current",
+      "authority": "design-source"
+    },
+    {
+      "id": "libraries.spice",
+      "path": "libs/spice",
+      "kind": "shared-component-library",
+      "owner": "Shared library maintainer",
+      "status": "current",
+      "authority": "design-source"
+    },
+    {
+      "id": "models.main",
+      "path": "boards/alec-main/3dmodels",
+      "kind": "board-component-models",
+      "owner": "Board electronics",
+      "status": "current",
+      "provenance": "Preserve board-local model attribution and variants",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "pcb-export.main",
+      "path": "boards/alec-main/docs/assembly.glb",
+      "kind": "generated-board-assembly",
+      "owner": "Board export tooling",
+      "status": "current",
+      "provenance": "Resolve the exact export hash separately from the native PCB hash",
+      "authority": "generated-reference"
+    },
+    {
+      "id": "models.controls",
+      "path": "boards/alec-controls/3dmodels",
+      "kind": "board-component-models",
+      "owner": "Board electronics",
+      "status": "current",
+      "provenance": "Preserve board-local model attribution and variants",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "pcb-export.controls",
+      "path": "boards/alec-controls/docs/assembly.glb",
+      "kind": "generated-board-assembly",
+      "owner": "Board export tooling",
+      "status": "current",
+      "provenance": "Resolve the exact export hash separately from the native PCB hash",
+      "authority": "generated-reference"
+    },
+    {
+      "id": "models.front",
+      "path": "boards/alec-front/3dmodels",
+      "kind": "board-component-models",
+      "owner": "Board electronics",
+      "status": "current",
+      "provenance": "Preserve board-local model attribution and variants",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "pcb-export.front",
+      "path": "boards/alec-front/docs/assembly.glb",
+      "kind": "generated-board-assembly",
+      "owner": "Board export tooling",
+      "status": "current",
+      "provenance": "Resolve the exact export hash separately from the native PCB hash",
+      "authority": "generated-reference"
+    },
+    {
+      "id": "models.sensor",
+      "path": "boards/alec-sensor/3dmodels",
+      "kind": "board-component-models",
+      "owner": "Board electronics",
+      "status": "current",
+      "provenance": "Preserve board-local model attribution and variants",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "pcb-export.sensor",
+      "path": "boards/alec-sensor/docs/assembly.glb",
+      "kind": "generated-board-assembly",
+      "owner": "Board export tooling",
+      "status": "current",
+      "provenance": "Resolve the exact export hash separately from the native PCB hash",
+      "authority": "generated-reference"
+    },
+    {
+      "id": "mechanical.alarm",
+      "path": "enclosures/alec/sources",
+      "kind": "vendor-and-derived-reference",
+      "owner": "Mechanical reference maintainer",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "mechanical.sensor",
+      "path": "enclosures/alec-sensor/sources",
+      "kind": "vendor-and-derived-reference",
+      "owner": "Mechanical reference maintainer",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "alarm.generator",
+      "path": "scripts/alarm/README.md",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "sensor.generator",
+      "path": "boards/alec-sensor/tools/README.md",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "alarm.evidence",
+      "path": "boards/alec-main/review/qa-manifest.json",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "historical-evidence"
+    },
+    {
+      "id": "sensor.evidence",
+      "path": "boards/alec-sensor/review/source-hashes.json",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "historical-evidence"
+    },
+    {
+      "id": "alarm.assembly.evidence",
+      "path": "enclosures/alec/pcb-revision/verification.json",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "historical-evidence"
+    },
+    {
+      "id": "sensor.cad.evidence",
+      "path": "enclosures/alec-sensor/cad-checks.json",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "historical-evidence"
+    },
+    {
+      "id": "shared.tests",
+      "path": "tests",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "ci.boards",
+      "path": ".github/workflows/pr-checks.yml",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "ci.sensor",
+      "path": ".github/workflows/alec-sensor-study.yml",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "fabrication.config",
+      "path": "kibot",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "fabrication.workflow",
+      "path": ".github/workflows/release.yml",
+      "kind": "runbook-or-evidence",
+      "owner": "Producing engineering owner",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "history.board.esp32s3-devkit-5v",
+      "path": "boards/esp32s3-devkit-5v",
+      "kind": "historical-board",
+      "owner": "Hardware historian",
+      "status": "historical",
+      "still_consumed_by_generators": true,
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "history.board.esp32s3-devkit",
+      "path": "boards/esp32s3-devkit",
+      "kind": "historical-board",
+      "owner": "Hardware historian",
+      "status": "historical",
+      "still_consumed_by_generators": false,
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "history.board.tps63070-breakout",
+      "path": "boards/tps63070-breakout",
+      "kind": "historical-board",
+      "owner": "Hardware historian",
+      "status": "historical",
+      "still_consumed_by_generators": false,
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "history.alarm.v4-1",
+      "path": "enclosures/alec",
+      "kind": "historical-enclosure-and-current-generator-input",
+      "owner": "Alarm mechanical",
+      "status": "historical",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "history.sensor.s0",
+      "path": "designs/alec-sensor/README.md",
+      "kind": "redirect",
+      "owner": "Project integration",
+      "status": "historical",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "releases",
+      "path": "releases/rooster/README.md",
+      "kind": "release-convention",
+      "owner": "ROO-007 / ROO-010",
+      "status": "current",
+      "authority": "reference-or-tooling"
+    },
+    {
+      "id": "acceptance.alarm",
+      "path": "docs/rooster/roo-004",
+      "entrypoint": "docs/rooster/roo-004/README.md",
+      "kind": "acceptance-and-bench-specification",
+      "status": "current",
+      "authority": "historical-evidence",
+      "owner": "ROO-004 / ROO-011 / ROO-012",
+      "notes": "Review tied to September 7 native source; physical cases NOT RUN. Read ordering transitions for later source changes."
+    },
+    {
+      "id": "order.prototype",
+      "path": "docs/rooster/prototype-order",
+      "entrypoint": "docs/rooster/prototype-order/cube-first-pass-2026-09-08.md",
+      "kind": "sourcing-and-manufacturing-candidates",
+      "status": "current",
+      "authority": "reference-and-candidate-evidence",
+      "owner": "ROO-010",
+      "notes": "Cube first; Beacon deferred. Native RTC QC and RFQ QA differ. Candidate files are not a manufacturing release."
+    }
+  ],
+  "task_policy": {
+    "specification_authority": "Obsidian",
+    "current_status_authority": "Obsidian",
+    "handoff_required_fields": [
+      "ROO ID",
+      "actual issue URL",
+      "bounded acceptance scope",
+      "status authority",
+      "handoff date",
+      "evidence/PR links"
+    ],
+    "github_issue_by_roo": {},
+    "no_issue_number_inference": true
+  },
+  "releases": {
+    "current_firmware": null,
+    "current_manufacturing_bundle": null,
+    "release_id_policy": "Assigned by ROO-010/013; preserve exact bundle hashes and approval/order provenance.",
+    "root": "releases/rooster"
+  },
+  "integration": {
+    "date": "2026-10-04",
+    "branch": "codex/rooster-integrated-baseline",
+    "source_merge_ref": "c53fc800316b509785961fa476465852356e178d",
+    "main_base_ref": "a56d8900c386f5e4f612d92436ebecb11c258c24",
+    "firmware_source_ref": "59e0e42ede19a06d63609b489e1fb50a523c7e49",
+    "acceptance_source_ref": "f0b8dca2c0223e456426645712087c3667b4a6c1",
+    "ordering_source_ref": "1e8ee9512929b6ccc40a2d7a813928b0d3307015",
+    "record": "docs/rooster/integration/2026-10-04/README.md"
+  }
+}
