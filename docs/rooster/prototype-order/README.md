@@ -52,6 +52,14 @@ landed quote or purchase request.
 
 ## Board scope
 
+For current source continuity, run `tools/compare_native_sources.py` from this
+directory with KiCad Python. It checks all four boards against the original
+baseline, allowing only the recorded main J4 footprint and four drill changes
+in addition to ordering metadata. Saved netlists are compared without regeneration.
+The default run writes no reports; `--output-dir <new-directory>` saves new
+results and refuses an existing directory. Historical comparison reports retain
+their original source bindings.
+
 | Device | Board | Layers |
 | --- | --- | --- |
 | Cube | alec-main | 4 |
